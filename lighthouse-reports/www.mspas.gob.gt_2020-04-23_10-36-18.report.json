@@ -1,0 +1,4587 @@
+{
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 HeadlessChrome/80.0.3987.163 Safari/537.36",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/80.0.3987.163 HeadlessChrome/80.0.3987.163 Safari/537.36",
+    "benchmarkIndex": 462
+  },
+  "lighthouseVersion": "4.0.0",
+  "fetchTime": "2020-04-23T10:36:18.572Z",
+  "requestedUrl": "https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov",
+  "finalUrl": "https://www.mspas.gob.gt/index.php?Itemid=157",
+  "runWarnings": [],
+  "runtimeError": {
+    "code": "NO_ERROR",
+    "message": ""
+  },
+  "audits": {
+    "is-on-https": {
+      "id": "is-on-https",
+      "title": "Uses HTTPS",
+      "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/https).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "displayValue": "",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "redirects-http": {
+      "id": "redirects-http",
+      "title": "Does not redirect HTTP traffic to HTTPS",
+      "description": "If you've already set up HTTPS, make sure that you redirect all HTTP traffic to HTTPS. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/http-redirects-to-https).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false
+    },
+    "service-worker": {
+      "id": "service-worker",
+      "title": "Does not register a service worker that controls page and start_url",
+      "description": "The service worker is the technology that enables your app to use many Progressive Web App features, such as offline, add to homescreen, and push notifications. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/registered-service-worker).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false
+    },
+    "works-offline": {
+      "id": "works-offline",
+      "title": "Current page does not respond with a 200 when offline",
+      "description": "If you're building a Progressive Web App, consider using a service worker so that your app can work offline. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/http-200-when-offline).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "warnings": [
+        "You may be not loading offline because your test URL (https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov) was redirected to \"https://www.mspas.gob.gt/index.php?Itemid=157\". Try testing the second URL directly."
+      ]
+    },
+    "viewport": {
+      "id": "viewport",
+      "title": "Does not have a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+      "description": "Add a viewport meta tag to optimize your app for mobile screens. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/has-viewport-meta-tag).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "No viewport meta tag found"
+    },
+    "without-javascript": {
+      "id": "without-javascript",
+      "title": "Does not provide fallback content when JavaScript is not available",
+      "description": "Your app should display some content when JavaScript is disabled, even if it's just a warning to the user that JavaScript is required to use the app. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/no-js).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "The page body should render some content if its scripts are not available."
+    },
+    "first-contentful-paint": {
+      "id": "first-contentful-paint",
+      "title": "First Contentful Paint",
+      "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "first-meaningful-paint": {
+      "id": "first-meaningful-paint",
+      "title": "First Meaningful Paint",
+      "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-meaningful-paint).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "load-fast-enough-for-pwa": {
+      "id": "load-fast-enough-for-pwa",
+      "title": "Page load is not fast enough on mobile networks",
+      "description": "A fast page load over a cellular network ensures a good mobile user experience. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/fast-3g).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "speed-index": {
+      "id": "speed-index",
+      "title": "Speed Index",
+      "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/speed-index).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "screenshot-thumbnails": {
+      "id": "screenshot-thumbnails",
+      "title": "Screenshot Thumbnails",
+      "description": "This is what the load of your site looked like.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "final-screenshot": {
+      "id": "final-screenshot",
+      "title": "Final Screenshot",
+      "description": "The last screenshot captured of the pageload.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "rawValue": true,
+      "details": {
+        "type": "screenshot",
+        "timestamp": 783422678.504,
+        "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAH0ATgDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AKpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//9k="
+      }
+    },
+    "estimated-input-latency": {
+      "id": "estimated-input-latency",
+      "title": "Estimated Input Latency",
+      "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/estimated-input-latency).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "errors-in-console": {
+      "id": "errors-in-console",
+      "title": "No browser errors logged to the console",
+      "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns.",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": 0,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "time-to-first-byte": {
+      "id": "time-to-first-byte",
+      "title": "Server response times are low (TTFB)",
+      "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/ttfb).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": 286.71900000000005,
+      "displayValue": "Root document took 290 ms",
+      "details": {
+        "type": "opportunity",
+        "overallSavingsMs": -313.28099999999995,
+        "headings": [],
+        "items": []
+      }
+    },
+    "first-cpu-idle": {
+      "id": "first-cpu-idle",
+      "title": "First CPU Idle",
+      "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/first-interactive).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "interactive": {
+      "id": "interactive",
+      "title": "Time to Interactive",
+      "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/consistently-interactive).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "user-timings": {
+      "id": "user-timings",
+      "title": "User Timing marks and measures",
+      "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/user-timing).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "critical-request-chains": {
+      "id": "critical-request-chains",
+      "title": "Minimize Critical Requests Depth",
+      "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/critical-request-chains).",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "rawValue": false,
+      "displayValue": "1 chain found",
+      "details": {
+        "type": "criticalrequestchain",
+        "chains": {
+          "76F779B2660E6D4F308AF760D3249823": {
+            "request": {
+              "url": "https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov",
+              "startTime": 783411.3821,
+              "endTime": 783412.00888,
+              "responseReceivedTime": 783412.0068920001,
+              "transferSize": 417
+            },
+            "children": {
+              "76F779B2660E6D4F308AF760D3249823:redirect": {
+                "request": {
+                  "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                  "startTime": 783412.014404,
+                  "endTime": 783412.573385,
+                  "responseReceivedTime": 783412.571388,
+                  "transferSize": 310
+                },
+                "children": {
+                  "76F779B2660E6D4F308AF760D3249823:redirect:redirect": {
+                    "request": {
+                      "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                      "startTime": 783412.575785,
+                      "endTime": 783413.114102,
+                      "responseReceivedTime": 783413.112445,
+                      "transferSize": 216
+                    },
+                    "children": {
+                      "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect": {
+                        "request": {
+                          "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                          "startTime": 783413.115973,
+                          "endTime": 783413.662873,
+                          "responseReceivedTime": 783413.6612249999,
+                          "transferSize": 216
+                        },
+                        "children": {
+                          "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect": {
+                            "request": {
+                              "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                              "startTime": 783413.665065,
+                              "endTime": 783414.231087,
+                              "responseReceivedTime": 783414.2295629999,
+                              "transferSize": 216
+                            },
+                            "children": {
+                              "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect": {
+                                "request": {
+                                  "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                  "startTime": 783414.232789,
+                                  "endTime": 783414.782178,
+                                  "responseReceivedTime": 783414.780537,
+                                  "transferSize": 216
+                                },
+                                "children": {
+                                  "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                    "request": {
+                                      "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                      "startTime": 783414.784619,
+                                      "endTime": 783415.336408,
+                                      "responseReceivedTime": 783415.334871,
+                                      "transferSize": 216
+                                    },
+                                    "children": {
+                                      "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                        "request": {
+                                          "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                          "startTime": 783415.337932,
+                                          "endTime": 783415.883779,
+                                          "responseReceivedTime": 783415.882128,
+                                          "transferSize": 216
+                                        },
+                                        "children": {
+                                          "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                            "request": {
+                                              "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                              "startTime": 783415.885749,
+                                              "endTime": 783416.444171,
+                                              "responseReceivedTime": 783416.436064,
+                                              "transferSize": 216
+                                            },
+                                            "children": {
+                                              "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                "request": {
+                                                  "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                  "startTime": 783416.445173,
+                                                  "endTime": 783417.005719,
+                                                  "responseReceivedTime": 783417.004305,
+                                                  "transferSize": 216
+                                                },
+                                                "children": {
+                                                  "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                    "request": {
+                                                      "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                      "startTime": 783417.007559,
+                                                      "endTime": 783417.554794,
+                                                      "responseReceivedTime": 783417.553256,
+                                                      "transferSize": 216
+                                                    },
+                                                    "children": {
+                                                      "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                        "request": {
+                                                          "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                          "startTime": 783417.557223,
+                                                          "endTime": 783418.105665,
+                                                          "responseReceivedTime": 783418.104204,
+                                                          "transferSize": 216
+                                                        },
+                                                        "children": {
+                                                          "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                            "request": {
+                                                              "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                              "startTime": 783418.107438,
+                                                              "endTime": 783418.665188,
+                                                              "responseReceivedTime": 783418.663487,
+                                                              "transferSize": 216
+                                                            },
+                                                            "children": {
+                                                              "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                "request": {
+                                                                  "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                  "startTime": 783418.667294,
+                                                                  "endTime": 783419.214345,
+                                                                  "responseReceivedTime": 783419.2127240001,
+                                                                  "transferSize": 216
+                                                                },
+                                                                "children": {
+                                                                  "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                    "request": {
+                                                                      "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                      "startTime": 783419.216466,
+                                                                      "endTime": 783419.776749,
+                                                                      "responseReceivedTime": 783419.775086,
+                                                                      "transferSize": 216
+                                                                    },
+                                                                    "children": {
+                                                                      "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                        "request": {
+                                                                          "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                          "startTime": 783419.778682,
+                                                                          "endTime": 783420.329634,
+                                                                          "responseReceivedTime": 783420.327948,
+                                                                          "transferSize": 216
+                                                                        },
+                                                                        "children": {
+                                                                          "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                            "request": {
+                                                                              "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                              "startTime": 783420.331698,
+                                                                              "endTime": 783420.888739,
+                                                                              "responseReceivedTime": 783420.887138,
+                                                                              "transferSize": 216
+                                                                            },
+                                                                            "children": {
+                                                                              "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                                "request": {
+                                                                                  "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                                  "startTime": 783420.890604,
+                                                                                  "endTime": 783421.443195,
+                                                                                  "responseReceivedTime": 783421.4415869999,
+                                                                                  "transferSize": 216
+                                                                                },
+                                                                                "children": {
+                                                                                  "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                                    "request": {
+                                                                                      "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                                      "startTime": 783421.445341,
+                                                                                      "endTime": 783421.994797,
+                                                                                      "responseReceivedTime": 783421.993241,
+                                                                                      "transferSize": 216
+                                                                                    },
+                                                                                    "children": {
+                                                                                      "76F779B2660E6D4F308AF760D3249823:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect:redirect": {
+                                                                                        "request": {
+                                                                                          "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+                                                                                          "startTime": 783421.994797,
+                                                                                          "endTime": 783422.557672,
+                                                                                          "responseReceivedTime": -1,
+                                                                                          "transferSize": 0
+                                                                                        }
+                                                                                      }
+                                                                                    }
+                                                                                  }
+                                                                                }
+                                                                              }
+                                                                            }
+                                                                          }
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "longestChain": {
+          "duration": 11175.571999978274,
+          "length": 20,
+          "transferSize": 0
+        }
+      }
+    },
+    "redirects": {
+      "id": "redirects",
+      "title": "Avoid multiple page redirects",
+      "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/redirects).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "installable-manifest": {
+      "id": "installable-manifest",
+      "title": "Web app manifest does not meet the installability requirements",
+      "description": "Browsers can proactively prompt users to add your app to their homescreen, which can lead to higher engagement. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/install-prompt).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Failures: No manifest was fetched.",
+      "details": {
+        "items": [
+          {
+            "failures": [
+              "No manifest was fetched"
+            ],
+            "isParseFailure": true,
+            "parseFailureReason": "No manifest was fetched"
+          }
+        ]
+      }
+    },
+    "splash-screen": {
+      "id": "splash-screen",
+      "title": "Is not configured for a custom splash screen",
+      "description": "A themed splash screen ensures a high-quality experience when users launch your app from their homescreens. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/custom-splash-screen).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Failures: No manifest was fetched.",
+      "details": {
+        "items": [
+          {
+            "failures": [
+              "No manifest was fetched"
+            ],
+            "isParseFailure": true,
+            "parseFailureReason": "No manifest was fetched"
+          }
+        ]
+      }
+    },
+    "themed-omnibox": {
+      "id": "themed-omnibox",
+      "title": "Does not set an address-bar theme color",
+      "description": "The browser address bar can be themed to match your site. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/address-bar).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Failures: No manifest was fetched,\nNo `<meta name=\"theme-color\">` tag found.",
+      "details": {
+        "items": [
+          {
+            "failures": [
+              "No manifest was fetched",
+              "No `<meta name=\"theme-color\">` tag found"
+            ],
+            "themeColor": null,
+            "isParseFailure": true,
+            "parseFailureReason": "No manifest was fetched"
+          }
+        ]
+      }
+    },
+    "content-width": {
+      "id": "content-width",
+      "title": "Content is not sized correctly for the viewport",
+      "description": "If the width of your app's content doesn't match the width of the viewport, your app might not be optimized for mobile screens. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/content-sized-correctly-for-viewport).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "The viewport size is 981px, whereas the window size is 412px."
+    },
+    "image-aspect-ratio": {
+      "id": "image-aspect-ratio",
+      "title": "Displays images with correct aspect ratio",
+      "description": "Image display dimensions should match natural aspect ratio. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/aspect-ratio).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "warnings": [],
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "deprecations": {
+      "id": "deprecations",
+      "title": "Avoids deprecated APIs",
+      "description": "Deprecated APIs will eventually be removed from the browser. [Learn more](https://www.chromestatus.com/features#deprecated).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "displayValue": "",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "mainthread-work-breakdown": {
+      "id": "mainthread-work-breakdown",
+      "title": "Minimize main-thread work",
+      "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "bootup-time": {
+      "id": "bootup-time",
+      "title": "Reduce JavaScript execution time",
+      "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/bootup).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-rel-preload": {
+      "id": "uses-rel-preload",
+      "title": "Preload key requests",
+      "description": "Consider using <link rel=preload> to prioritize fetching resources that are currently requested later in page load. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/preload).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-rel-preconnect": {
+      "id": "uses-rel-preconnect",
+      "title": "Preconnect to required origins",
+      "description": "Consider adding preconnect or dns-prefetch resource hints to establish early connections to important third-party origins. [Learn more](https://developers.google.com/web/fundamentals/performance/resource-prioritization#preconnect).",
+      "score": 1,
+      "scoreDisplayMode": "numeric",
+      "rawValue": 0,
+      "displayValue": "",
+      "warnings": [],
+      "details": {
+        "type": "opportunity",
+        "headings": [],
+        "items": [],
+        "overallSavingsMs": 0
+      }
+    },
+    "font-display": {
+      "id": "font-display",
+      "title": "All text remains visible during webfont loads",
+      "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://developers.google.com/web/updates/2016/02/font-display).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "network-requests": {
+      "id": "network-requests",
+      "title": "Network Requests",
+      "description": "Lists the network requests that were made during page load.",
+      "score": null,
+      "scoreDisplayMode": "informative",
+      "rawValue": 20,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "itemType": "url",
+            "text": "URL"
+          },
+          {
+            "key": "startTime",
+            "itemType": "ms",
+            "granularity": 1,
+            "text": "Start Time"
+          },
+          {
+            "key": "endTime",
+            "itemType": "ms",
+            "granularity": 1,
+            "text": "End Time"
+          },
+          {
+            "key": "transferSize",
+            "itemType": "bytes",
+            "displayUnit": "kb",
+            "granularity": 1,
+            "text": "Transfer Size"
+          },
+          {
+            "key": "statusCode",
+            "itemType": "text",
+            "text": "Status Code"
+          },
+          {
+            "key": "mimeType",
+            "itemType": "text",
+            "text": "MIME Type"
+          },
+          {
+            "key": "resourceType",
+            "itemType": "text",
+            "text": "Resource Type"
+          }
+        ],
+        "items": [
+          {
+            "url": "https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov",
+            "startTime": 0,
+            "endTime": 626.7799999332055,
+            "transferSize": 417,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 632.3039999697357,
+            "endTime": 1191.2849999498576,
+            "transferSize": 310,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 1193.6849999474362,
+            "endTime": 1732.0019999751821,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 1733.8729999028146,
+            "endTime": 2280.7729999767616,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 2282.9649999039248,
+            "endTime": 2848.9869999466464,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 2850.6889999844134,
+            "endTime": 3400.0779999187216,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 3402.5189999956638,
+            "endTime": 3954.3079999275506,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 3955.8320000069216,
+            "endTime": 4501.678999979049,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 4503.648999962024,
+            "endTime": 5062.070999993011,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 5063.0729999393225,
+            "endTime": 5623.618999961764,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 5625.459000002593,
+            "endTime": 6172.693999949843,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 6175.122999935411,
+            "endTime": 6723.564999992959,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 6725.337999989279,
+            "endTime": 7283.087999909185,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 7285.193999996409,
+            "endTime": 7832.244999939576,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 7834.3659999081865,
+            "endTime": 8394.648999907076,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 8396.581999957561,
+            "endTime": 8947.53399991896,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 8949.597999919206,
+            "endTime": 9506.638999911956,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 9508.503999910317,
+            "endTime": 10061.095000011846,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 10063.240999937989,
+            "endTime": 10612.696999916807,
+            "transferSize": 216,
+            "statusCode": 303,
+            "mimeType": "text/html"
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "startTime": 10612.696999916807,
+            "endTime": 11175.571999978274,
+            "transferSize": 0,
+            "statusCode": -1,
+            "mimeType": "",
+            "resourceType": "Document"
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "id": "metrics",
+      "title": "Metrics",
+      "description": "Collects all available metrics.",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "offline-start-url": {
+      "id": "offline-start-url",
+      "title": "start_url does not respond with a 200 when offline",
+      "description": "A service worker enables your web app to be reliable in unpredictable network conditions. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/http-200-when-offline).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "No usable web app manifest found on page.",
+      "warnings": []
+    },
+    "pwa-cross-browser": {
+      "id": "pwa-cross-browser",
+      "title": "Site works cross-browser",
+      "description": "To reach the most number of users, sites should work across every major browser. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist#site-works-cross-browser).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "pwa-page-transitions": {
+      "id": "pwa-page-transitions",
+      "title": "Page transitions don't feel like they block on the network",
+      "description": "Transitions should feel snappy as you tap around, even on a slow network, a key to perceived performance. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist#page-transitions-dont-feel-like-they-block-on-the-network).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "pwa-each-page-has-url": {
+      "id": "pwa-each-page-has-url",
+      "title": "Each page has a URL",
+      "description": "Ensure individual pages are deep linkable via the URLs and that URLs are unique for the purpose of shareability on social media. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist#each-page-has-a-url).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "aria-allowed-attr": {
+      "id": "aria-allowed-attr",
+      "title": "`[aria-*]` attributes match their roles",
+      "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-allowed-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-required-attr": {
+      "id": "aria-required-attr",
+      "title": "`[role]`s have all required `[aria-*]` attributes",
+      "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-required-children": {
+      "id": "aria-required-children",
+      "title": "Elements with `[role]` that require specific children `[role]`s, are present",
+      "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-required-children?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-required-parent": {
+      "id": "aria-required-parent",
+      "title": "`[role]`s are contained by their required parent element",
+      "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-required-parent?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-roles": {
+      "id": "aria-roles",
+      "title": "`[role]` values are valid",
+      "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-roles?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-valid-attr-value": {
+      "id": "aria-valid-attr-value",
+      "title": "`[aria-*]` attributes have valid values",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr-value?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "aria-valid-attr": {
+      "id": "aria-valid-attr",
+      "title": "`[aria-*]` attributes are valid and not misspelled",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://dequeuniversity.com/rules/axe/3.1/aria-valid-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "audio-caption": {
+      "id": "audio-caption",
+      "title": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "Captions make audio elements usable for deaf or hearing-impaired users, providing critical information such as who is talking, what they're saying, and other non-speech information. [Learn more](https://dequeuniversity.com/rules/axe/3.1/audio-caption?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "button-name": {
+      "id": "button-name",
+      "title": "Buttons have an accessible name",
+      "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://dequeuniversity.com/rules/axe/3.1/button-name?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "bypass": {
+      "id": "bypass",
+      "title": "The page contains a heading, skip link, or landmark region",
+      "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://dequeuniversity.com/rules/axe/3.1/bypass?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "color-contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "definition-list": {
+      "id": "definition-list",
+      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
+      "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://dequeuniversity.com/rules/axe/3.1/definition-list?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "dlitem": {
+      "id": "dlitem",
+      "title": "Definition list items are wrapped in `<dl>` elements",
+      "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://dequeuniversity.com/rules/axe/3.1/dlitem?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "document-title": {
+      "id": "document-title",
+      "title": "Document doesn't have a `<title>` element",
+      "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/title).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "html",
+              "path": "0,HTML",
+              "snippet": "<html><head></head><body></body></html>",
+              "explanation": "Fix any of the following:\n  Document does not have a non-empty <title> element"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242"
+        ]
+      }
+    },
+    "duplicate-id": {
+      "id": "duplicate-id",
+      "title": "`[id]` attributes on the page are unique",
+      "description": "The value of an id attribute must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/3.1/duplicate-id?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "frame-title": {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements have a title",
+      "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/3.1/frame-title?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "html-has-lang": {
+      "id": "html-has-lang",
+      "title": "`<html>` element does not have a `[lang]` attribute",
+      "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "html",
+              "path": "0,HTML",
+              "snippet": "<html><head></head><body></body></html>",
+              "explanation": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      }
+    },
+    "html-lang-valid": {
+      "id": "html-lang-valid",
+      "title": "`<html>` element has a valid value for its `[lang]` attribute",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://dequeuniversity.com/rules/axe/3.1/valid-lang?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "image-alt": {
+      "id": "image-alt",
+      "title": "Image elements have `[alt]` attributes",
+      "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://dequeuniversity.com/rules/axe/3.1/image-alt?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "input-image-alt": {
+      "id": "input-image-alt",
+      "title": "`<input type=\"image\">` elements have `[alt]` text",
+      "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://dequeuniversity.com/rules/axe/3.1/input-image-alt?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "label": {
+      "id": "label",
+      "title": "Form elements have associated labels",
+      "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://dequeuniversity.com/rules/axe/3.1/label?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "layout-table": {
+      "id": "layout-table",
+      "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+      "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/3.1/layout-table?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "link-name": {
+      "id": "link-name",
+      "title": "Links have a discernible name",
+      "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/3.1/link-name?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "list": {
+      "id": "list",
+      "title": "Lists contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://dequeuniversity.com/rules/axe/3.1/list?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "listitem": {
+      "id": "listitem",
+      "title": "List items (`<li>`) are contained within `<ul>` or `<ol>` parent elements",
+      "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://dequeuniversity.com/rules/axe/3.1/listitem?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "meta-refresh": {
+      "id": "meta-refresh",
+      "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+      "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://dequeuniversity.com/rules/axe/3.1/meta-refresh?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "meta-viewport": {
+      "id": "meta-viewport",
+      "title": "`[user-scalable=\"no\"]` is not used in the `<meta name=\"viewport\">` element and the `[maximum-scale]` attribute is not less than 5.",
+      "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://dequeuniversity.com/rules/axe/3.1/meta-viewport?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "object-alt": {
+      "id": "object-alt",
+      "title": "`<object>` elements have `[alt]` text",
+      "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://dequeuniversity.com/rules/axe/3.1/object-alt?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "tabindex": {
+      "id": "tabindex",
+      "title": "No element has a `[tabindex]` value greater than 0",
+      "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/3.1/tabindex?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "td-headers-attr": {
+      "id": "td-headers-attr",
+      "title": "Cells in a `<table>` element that use the `[headers]` attribute only refer to other cells of that same table.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/3.1/td-headers-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "th-has-data-cells": {
+      "id": "th-has-data-cells",
+      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/3.1/th-has-data-cells?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "valid-lang": {
+      "id": "valid-lang",
+      "title": "`[lang]` attributes have a valid value",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://dequeuniversity.com/rules/axe/3.1/valid-lang?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "video-caption": {
+      "id": "video-caption",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://dequeuniversity.com/rules/axe/3.1/video-caption?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "video-description": {
+      "id": "video-description",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+      "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://dequeuniversity.com/rules/axe/3.1/video-description?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "accesskeys": {
+      "id": "accesskeys",
+      "title": "`[accesskey]` values are unique",
+      "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://dequeuniversity.com/rules/axe/3.1/accesskeys?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "custom-controls-labels": {
+      "id": "custom-controls-labels",
+      "title": "Custom controls have associated labels",
+      "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "custom-controls-roles": {
+      "id": "custom-controls-roles",
+      "title": "Custom controls have ARIA roles",
+      "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "focus-traps": {
+      "id": "focus-traps",
+      "title": "User focus is not accidentally trapped in a region",
+      "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "focusable-controls": {
+      "id": "focusable-controls",
+      "title": "Interactive controls are keyboard focusable",
+      "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "heading-levels": {
+      "id": "heading-levels",
+      "title": "Headings don't skip levels",
+      "description": "Headings are used to create an outline for the page and heading levels are not skipped. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#take_advantage_of_headings_and_landmarks).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "interactive-element-affordance": {
+      "id": "interactive-element-affordance",
+      "title": "Interactive elements indicate their purpose and state",
+      "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#interactive_elements_like_links_and_buttons_should_indicate_their_purpose_and_state).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "logical-tab-order": {
+      "id": "logical-tab-order",
+      "title": "The page has a logical tab order",
+      "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "managed-focus": {
+      "id": "managed-focus",
+      "title": "The user's focus is directed to new content added to the page",
+      "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "offscreen-content-hidden": {
+      "id": "offscreen-content-hidden",
+      "title": "Offscreen content is hidden from assistive technology",
+      "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "use-landmarks": {
+      "id": "use-landmarks",
+      "title": "HTML5 landmark elements are used to improve navigation",
+      "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#take_advantage_of_headings_and_landmarks).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "visual-order-follows-dom": {
+      "id": "visual-order-follows-dom",
+      "title": "Visual order on the page follows DOM order",
+      "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "uses-long-cache-ttl": {
+      "id": "uses-long-cache-ttl",
+      "title": "Uses efficient cache policy on static assets",
+      "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/cache-policy).",
+      "score": 1,
+      "scoreDisplayMode": "numeric",
+      "rawValue": 0,
+      "displayValue": "0 resources found",
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": [],
+        "summary": {
+          "wastedBytes": 0
+        }
+      }
+    },
+    "total-byte-weight": {
+      "id": "total-byte-weight",
+      "title": "Avoids enormous network payloads",
+      "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/network-payloads).",
+      "score": 1,
+      "scoreDisplayMode": "numeric",
+      "rawValue": 4399,
+      "displayValue": "Total size was 4 KB",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "itemType": "url",
+            "text": "URL"
+          },
+          {
+            "key": "totalBytes",
+            "itemType": "bytes",
+            "text": "Size (KB)"
+          }
+        ],
+        "items": [
+          {
+            "url": "https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov",
+            "totalBytes": 417
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 310
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          },
+          {
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157",
+            "totalBytes": 216
+          }
+        ]
+      }
+    },
+    "offscreen-images": {
+      "id": "offscreen-images",
+      "title": "Defer offscreen images",
+      "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/offscreen-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "render-blocking-resources": {
+      "id": "render-blocking-resources",
+      "title": "Eliminate render-blocking resources",
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/blocking-resources).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "unminified-css": {
+      "id": "unminified-css",
+      "title": "Minify CSS",
+      "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/minify-css).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "unminified-javascript": {
+      "id": "unminified-javascript",
+      "title": "Minify JavaScript",
+      "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://developers.google.com/speed/docs/insights/MinifyResources).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "unused-css-rules": {
+      "id": "unused-css-rules",
+      "title": "Defer unused CSS",
+      "description": "Remove unused rules from stylesheets to reduce unnecessary bytes consumed by network activity. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/unused-css).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-webp-images": {
+      "id": "uses-webp-images",
+      "title": "Serve images in next-gen formats",
+      "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/webp).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-optimized-images": {
+      "id": "uses-optimized-images",
+      "title": "Efficiently encode images",
+      "description": "Optimized images load faster and consume less cellular data. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/optimize-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-text-compression": {
+      "id": "uses-text-compression",
+      "title": "Enable text compression",
+      "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/text-compression).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "uses-responsive-images": {
+      "id": "uses-responsive-images",
+      "title": "Properly size images",
+      "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/oversized-images).",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "efficient-animated-content": {
+      "id": "efficient-animated-content",
+      "title": "Use video formats for animated content",
+      "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/replace-animated-gifs-with-video/)",
+      "score": null,
+      "scoreDisplayMode": "error",
+      "rawValue": null,
+      "errorMessage": "Something went wrong with recording the trace over your page load. Please run Lighthouse again. (NO_TRACING_STARTED)"
+    },
+    "appcache-manifest": {
+      "id": "appcache-manifest",
+      "title": "Avoids Application Cache",
+      "description": "Application Cache is deprecated. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/appcache).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "displayValue": ""
+    },
+    "doctype": {
+      "id": "doctype",
+      "title": "Page is missing the HTML doctype",
+      "description": "Specifying a doctype prevents the browser from switching to quirks-mode.Read more on the [MDN Web Docs page](https://developer.mozilla.org/en-US/docs/Glossary/Doctype)",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Document must contain a doctype"
+    },
+    "dom-size": {
+      "id": "dom-size",
+      "title": "Avoids an excessive DOM size",
+      "description": "Browser engineers recommend pages contain fewer than ~1,500 DOM nodes. The sweet spot is a tree depth < 32 elements and fewer than 60 children/parent element. A large DOM can increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://developers.google.com/web/tools/lighthouse/audits/dom-size).",
+      "score": 1,
+      "scoreDisplayMode": "numeric",
+      "rawValue": 3,
+      "displayValue": "3 nodes",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "statistic",
+            "itemType": "text",
+            "text": "Statistic"
+          },
+          {
+            "key": "element",
+            "itemType": "code",
+            "text": "Element"
+          },
+          {
+            "key": "value",
+            "itemType": "numeric",
+            "text": "Value"
+          }
+        ],
+        "items": [
+          {
+            "statistic": "Total DOM Nodes",
+            "element": "",
+            "value": "3"
+          },
+          {
+            "statistic": "Maximum DOM Depth",
+            "element": {
+              "type": "code",
+              "value": "<head>"
+            },
+            "value": "2"
+          },
+          {
+            "statistic": "Maximum Child Elements",
+            "element": {
+              "type": "code",
+              "value": "<html>"
+            },
+            "value": "2"
+          }
+        ]
+      }
+    },
+    "external-anchors-use-rel-noopener": {
+      "id": "external-anchors-use-rel-noopener",
+      "title": "Links to cross-origin destinations are safe",
+      "description": "Add `rel=\"noopener\"` or `rel=\"noreferrer\"` to any external links to improve performance and prevent security vulnerabilities. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/noopener).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "warnings": [],
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "geolocation-on-start": {
+      "id": "geolocation-on-start",
+      "title": "Avoids requesting the geolocation permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to user gestures instead. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/geolocation-on-load).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "no-document-write": {
+      "id": "no-document-write",
+      "title": "Avoids `document.write()`",
+      "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/document-write).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "no-vulnerable-libraries": {
+      "id": "no-vulnerable-libraries",
+      "title": "Avoids front-end JavaScript libraries with known security vulnerabilities",
+      "description": "Some third-party scripts may contain known security vulnerabilities that are easily identified and exploited by attackers. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/vulnerabilities).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true
+    },
+    "js-libraries": {
+      "id": "js-libraries",
+      "title": "Detected JavaScript libraries",
+      "description": "All front-end JavaScript libraries detected on the page.",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": [],
+        "summary": {}
+      }
+    },
+    "notification-on-start": {
+      "id": "notification-on-start",
+      "title": "Avoids requesting the notification permission on page load",
+      "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/notifications-on-load).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "password-inputs-can-be-pasted-into": {
+      "id": "password-inputs-can-be-pasted-into",
+      "title": "Allows users to paste into password fields",
+      "description": "Preventing password pasting undermines good security policy. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/password-pasting).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "uses-http2": {
+      "id": "uses-http2",
+      "title": "Does not use HTTP/2 for all of its resources",
+      "description": "HTTP/2 offers many benefits over HTTP/1.1, including binary headers, multiplexing, and server push. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/http2).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "displayValue": "2 requests not served via HTTP/2",
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "url",
+            "itemType": "url",
+            "text": "URL"
+          },
+          {
+            "key": "protocol",
+            "itemType": "text",
+            "text": "Protocol"
+          }
+        ],
+        "items": [
+          {
+            "protocol": "http/1.1",
+            "url": "https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov"
+          },
+          {
+            "protocol": "http/1.1",
+            "url": "https://www.mspas.gob.gt/index.php?Itemid=157"
+          }
+        ]
+      }
+    },
+    "uses-passive-event-listeners": {
+      "id": "uses-passive-event-listeners",
+      "title": "Uses passive listeners to improve scrolling performance",
+      "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/passive-event-listeners).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "meta-description": {
+      "id": "meta-description",
+      "title": "Document does not have a meta description",
+      "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/description).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false
+    },
+    "http-status-code": {
+      "id": "http-status-code",
+      "title": "Page has successful HTTP status code",
+      "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/successful-http-code).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true
+    },
+    "font-size": {
+      "id": "font-size",
+      "title": "Document doesn't use legible font sizes",
+      "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/font-sizes).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Text is illegible because of a missing viewport config"
+    },
+    "link-text": {
+      "id": "link-text",
+      "title": "Links have descriptive text",
+      "description": "Descriptive link text helps search engines understand your content. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/descriptive-link-text).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": [],
+        "summary": {}
+      }
+    },
+    "is-crawlable": {
+      "id": "is-crawlable",
+      "title": "Page isn’t blocked from indexing",
+      "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/indexing).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "robots-txt": {
+      "id": "robots-txt",
+      "title": "robots.txt is not valid",
+      "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed.",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "explanation": "Lighthouse was unable to download your robots.txt file"
+    },
+    "hreflang": {
+      "id": "hreflang",
+      "title": "Document has a valid `hreflang`",
+      "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/hreflang).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "plugins": {
+      "id": "plugins",
+      "title": "Document avoids plugins",
+      "description": "Search engines can't index plugin content, and many devices restrict plugins or don't support them. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/plugins).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "canonical": {
+      "id": "canonical",
+      "title": "Document has a valid `rel=canonical`",
+      "description": "Canonical links suggest which URL to show in search results. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/canonical).",
+      "score": null,
+      "scoreDisplayMode": "notApplicable",
+      "rawValue": true
+    },
+    "mobile-friendly": {
+      "id": "mobile-friendly",
+      "title": "Page is mobile friendly",
+      "description": "Take the [Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) to check for audits not covered by Lighthouse, like sizing tap targets appropriately. [Learn more](https://developers.google.com/search/mobile-sites/).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "structured-data": {
+      "id": "structured-data",
+      "title": "Structured data is valid",
+      "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more](https://developers.google.com/search/docs/guides/mark-up-content).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    }
+  },
+  "configSettings": {
+    "output": [
+      "json",
+      "html"
+    ],
+    "maxWaitForLoad": 45000,
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "auditMode": false,
+    "gatherMode": false,
+    "disableStorageReset": false,
+    "disableDeviceEmulation": false,
+    "emulatedFormFactor": "mobile",
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "onlyAudits": null,
+    "onlyCategories": null,
+    "skipAudits": null
+  },
+  "categories": {
+    "performance": {
+      "title": "Performance",
+      "auditRefs": [
+        {
+          "id": "first-contentful-paint",
+          "weight": 3,
+          "group": "metrics"
+        },
+        {
+          "id": "first-meaningful-paint",
+          "weight": 1,
+          "group": "metrics"
+        },
+        {
+          "id": "speed-index",
+          "weight": 4,
+          "group": "metrics"
+        },
+        {
+          "id": "interactive",
+          "weight": 5,
+          "group": "metrics"
+        },
+        {
+          "id": "first-cpu-idle",
+          "weight": 2,
+          "group": "metrics"
+        },
+        {
+          "id": "estimated-input-latency",
+          "weight": 0,
+          "group": "metrics"
+        },
+        {
+          "id": "render-blocking-resources",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-responsive-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "offscreen-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-css",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "unused-css-rules",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-optimized-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-webp-images",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-text-compression",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preconnect",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "time-to-first-byte",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "redirects",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "uses-rel-preload",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "efficient-animated-content",
+          "weight": 0,
+          "group": "load-opportunities"
+        },
+        {
+          "id": "total-byte-weight",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "uses-long-cache-ttl",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "dom-size",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "critical-request-chains",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "network-requests",
+          "weight": 0
+        },
+        {
+          "id": "metrics",
+          "weight": 0
+        },
+        {
+          "id": "user-timings",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "bootup-time",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "screenshot-thumbnails",
+          "weight": 0
+        },
+        {
+          "id": "final-screenshot",
+          "weight": 0
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "group": "diagnostics"
+        },
+        {
+          "id": "font-display",
+          "weight": 0,
+          "group": "diagnostics"
+        }
+      ],
+      "id": "performance",
+      "score": null
+    },
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+      "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+      "auditRefs": [
+        {
+          "id": "aria-allowed-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-children",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-parent",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-roles",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "audio-caption",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "button-name",
+          "weight": 0,
+          "group": "a11y-element-names"
+        },
+        {
+          "id": "bypass",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "color-contrast",
+          "weight": 0,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "definition-list",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "dlitem",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "document-title",
+          "weight": 2,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "duplicate-id",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "frame-title",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "html-has-lang",
+          "weight": 4,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-lang-valid",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "image-alt",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "input-image-alt",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "label",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "layout-table",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "link-name",
+          "weight": 0,
+          "group": "a11y-element-names"
+        },
+        {
+          "id": "list",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "listitem",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "meta-refresh",
+          "weight": 0,
+          "group": "a11y-meta"
+        },
+        {
+          "id": "meta-viewport",
+          "weight": 0,
+          "group": "a11y-meta"
+        },
+        {
+          "id": "object-alt",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "tabindex",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "td-headers-attr",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "th-has-data-cells",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "valid-lang",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "video-caption",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "video-description",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "accesskeys",
+          "weight": 0
+        },
+        {
+          "id": "logical-tab-order",
+          "weight": 0
+        },
+        {
+          "id": "focusable-controls",
+          "weight": 0
+        },
+        {
+          "id": "interactive-element-affordance",
+          "weight": 0
+        },
+        {
+          "id": "managed-focus",
+          "weight": 0
+        },
+        {
+          "id": "focus-traps",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-labels",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-roles",
+          "weight": 0
+        },
+        {
+          "id": "visual-order-follows-dom",
+          "weight": 0
+        },
+        {
+          "id": "offscreen-content-hidden",
+          "weight": 0
+        },
+        {
+          "id": "heading-levels",
+          "weight": 0
+        },
+        {
+          "id": "use-landmarks",
+          "weight": 0
+        }
+      ],
+      "id": "accessibility",
+      "score": 0
+    },
+    "best-practices": {
+      "title": "Best Practices",
+      "auditRefs": [
+        {
+          "id": "appcache-manifest",
+          "weight": 1
+        },
+        {
+          "id": "is-on-https",
+          "weight": 1
+        },
+        {
+          "id": "uses-http2",
+          "weight": 1
+        },
+        {
+          "id": "uses-passive-event-listeners",
+          "weight": 1
+        },
+        {
+          "id": "no-document-write",
+          "weight": 1
+        },
+        {
+          "id": "external-anchors-use-rel-noopener",
+          "weight": 1
+        },
+        {
+          "id": "geolocation-on-start",
+          "weight": 1
+        },
+        {
+          "id": "doctype",
+          "weight": 1
+        },
+        {
+          "id": "no-vulnerable-libraries",
+          "weight": 1
+        },
+        {
+          "id": "js-libraries",
+          "weight": 0
+        },
+        {
+          "id": "notification-on-start",
+          "weight": 1
+        },
+        {
+          "id": "deprecations",
+          "weight": 1
+        },
+        {
+          "id": "password-inputs-can-be-pasted-into",
+          "weight": 1
+        },
+        {
+          "id": "errors-in-console",
+          "weight": 1
+        },
+        {
+          "id": "image-aspect-ratio",
+          "weight": 1
+        }
+      ],
+      "id": "best-practices",
+      "score": 0.86
+    },
+    "seo": {
+      "title": "SEO",
+      "description": "These checks ensure that your page is optimized for search engine results ranking. There are additional factors Lighthouse does not check that may affect your search ranking. [Learn more](https://support.google.com/webmasters/answer/35769).",
+      "manualDescription": "Run these additional validators on your site to check additional SEO best practices.",
+      "auditRefs": [
+        {
+          "id": "viewport",
+          "weight": 1,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "document-title",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "http-status-code",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "link-text",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "is-crawlable",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "group": "seo-crawl"
+        },
+        {
+          "id": "hreflang",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "canonical",
+          "weight": 0,
+          "group": "seo-content"
+        },
+        {
+          "id": "font-size",
+          "weight": 1,
+          "group": "seo-mobile"
+        },
+        {
+          "id": "plugins",
+          "weight": 1,
+          "group": "seo-content"
+        },
+        {
+          "id": "mobile-friendly",
+          "weight": 0
+        },
+        {
+          "id": "structured-data",
+          "weight": 0
+        }
+      ],
+      "id": "seo",
+      "score": 0.5
+    },
+    "pwa": {
+      "title": "Progressive Web App",
+      "description": "These checks validate the aspects of a Progressive Web App. [Learn more](https://developers.google.com/web/progressive-web-apps/checklist).",
+      "manualDescription": "These checks are required by the baseline [PWA Checklist](https://developers.google.com/web/progressive-web-apps/checklist) but are not automatically checked by Lighthouse. They do not affect your score but it's important that you verify them manually.",
+      "auditRefs": [
+        {
+          "id": "load-fast-enough-for-pwa",
+          "weight": 7,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "works-offline",
+          "weight": 5,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "offline-start-url",
+          "weight": 1,
+          "group": "pwa-fast-reliable"
+        },
+        {
+          "id": "is-on-https",
+          "weight": 2,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "service-worker",
+          "weight": 1,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "installable-manifest",
+          "weight": 2,
+          "group": "pwa-installable"
+        },
+        {
+          "id": "redirects-http",
+          "weight": 2,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "splash-screen",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "themed-omnibox",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "content-width",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "viewport",
+          "weight": 2,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "without-javascript",
+          "weight": 1,
+          "group": "pwa-optimized"
+        },
+        {
+          "id": "pwa-cross-browser",
+          "weight": 0
+        },
+        {
+          "id": "pwa-page-transitions",
+          "weight": 0
+        },
+        {
+          "id": "pwa-each-page-has-url",
+          "weight": 0
+        }
+      ],
+      "id": "pwa",
+      "score": null
+    }
+  },
+  "categoryGroups": {
+    "metrics": {
+      "title": "Metrics"
+    },
+    "load-opportunities": {
+      "title": "Opportunities",
+      "description": "These optimizations can speed up your page load."
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "description": "More information about the performance of your application."
+    },
+    "pwa-fast-reliable": {
+      "title": "Fast and reliable"
+    },
+    "pwa-installable": {
+      "title": "Installable"
+    },
+    "pwa-optimized": {
+      "title": "PWA Optimized"
+    },
+    "a11y-color-contrast": {
+      "title": "Color Contrast Is Satisfactory",
+      "description": "These are opportunities to improve the legibility of your content."
+    },
+    "a11y-describe-contents": {
+      "title": "Elements Describe Contents Well",
+      "description": "These are opportunities to make your content easier to understand for a user of assistive technology, like a screen reader."
+    },
+    "a11y-well-structured": {
+      "title": "Elements Are Well Structured",
+      "description": "These are opportunities to make sure your HTML is appropriately structured."
+    },
+    "a11y-aria": {
+      "title": "ARIA Attributes Follow Best Practices",
+      "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-correct-attributes": {
+      "title": "Elements Use Attributes Correctly",
+      "description": "These are opportunities to improve the configuration of your HTML elements."
+    },
+    "a11y-element-names": {
+      "title": "Elements Have Discernible Names",
+      "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-language": {
+      "title": "Page Specifies Valid Language",
+      "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+    },
+    "a11y-meta": {
+      "title": "Meta Tags Used Properly",
+      "description": "These are opportunities to improve the user experience of your site."
+    },
+    "seo-mobile": {
+      "title": "Mobile Friendly",
+      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+    },
+    "seo-content": {
+      "title": "Content Best Practices",
+      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+    },
+    "seo-crawl": {
+      "title": "Crawling and Indexing",
+      "description": "To appear in search results, crawlers need access to your app."
+    }
+  },
+  "timing": {
+    "entries": [
+      {
+        "startTime": 1177.968125,
+        "name": "lh:init:config",
+        "duration": 364.6292199999998,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1185.58186,
+        "name": "lh:config:requireGatherers",
+        "duration": 39.134060999999974,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1225.157836,
+        "name": "lh:config:requireAudits",
+        "duration": 298.277102,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1543.758446,
+        "name": "lh:runner:run",
+        "duration": 57706.434760000004,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1548.446995,
+        "name": "lh:init:connect",
+        "duration": 69.03761299999996,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1619.789222,
+        "name": "lh:gather:getVersion",
+        "duration": 12.972533999999996,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1633.055273,
+        "name": "lh:gather:loadBlank",
+        "duration": 65.43162000000007,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 1698.714692,
+        "name": "lh:gather:getBenchmarkIndex",
+        "duration": 516.7524440000002,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2215.833428,
+        "name": "lh:gather:setupDriver",
+        "duration": 50.93968399999994,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2268.679755,
+        "name": "lh:gather:beforePass",
+        "duration": 10.898620999999821,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.082584,
+        "name": "lh:gather:beforePass:Scripts",
+        "duration": 0.1608459999997649,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.289027,
+        "name": "lh:gather:beforePass:CSSUsage",
+        "duration": 0.04934900000034759,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.360976,
+        "name": "lh:gather:beforePass:Viewport",
+        "duration": 0.03847200000018347,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.414508,
+        "name": "lh:gather:beforePass:ViewportDimensions",
+        "duration": 0.033025000000179716,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.462676,
+        "name": "lh:gather:beforePass:ThemeColor",
+        "duration": 0.033417000000099506,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.516407,
+        "name": "lh:gather:beforePass:Manifest",
+        "duration": 0.04151499999989028,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.566079,
+        "name": "lh:gather:beforePass:RuntimeExceptions",
+        "duration": 0.10332999999991443,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2270.678795,
+        "name": "lh:gather:beforePass:ChromeConsoleMessages",
+        "duration": 6.106058000000303,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2276.816331,
+        "name": "lh:gather:beforePass:ImageUsage",
+        "duration": 0.06545499999992899,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2276.892013,
+        "name": "lh:gather:beforePass:Accessibility",
+        "duration": 0.0409999999997126,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2276.945311,
+        "name": "lh:gather:beforePass:LinkElements",
+        "duration": 0.02796100000023216,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2276.980687,
+        "name": "lh:gather:beforePass:AnchorsWithNoRelNoopener",
+        "duration": 0.023808999999801017,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.011549,
+        "name": "lh:gather:beforePass:AppCacheManifest",
+        "duration": 0.02263100000027407,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.044269,
+        "name": "lh:gather:beforePass:Doctype",
+        "duration": 0.021948000000065804,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.131775,
+        "name": "lh:gather:beforePass:DOMStats",
+        "duration": 0.0394920000003367,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.189374,
+        "name": "lh:gather:beforePass:JSLibraries",
+        "duration": 0.028453999999783264,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.226474,
+        "name": "lh:gather:beforePass:OptimizedImages",
+        "duration": 0.024782999999843014,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.258411,
+        "name": "lh:gather:beforePass:PasswordInputsWithPreventedPaste",
+        "duration": 0.02140300000019124,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.286511,
+        "name": "lh:gather:beforePass:ResponseCompression",
+        "duration": 0.027578000000175962,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2277.320849,
+        "name": "lh:gather:beforePass:TagsBlockingFirstPaint",
+        "duration": 1.9844559999996818,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.329353,
+        "name": "lh:gather:beforePass:MetaDescription",
+        "duration": 0.034306999999898835,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.373006,
+        "name": "lh:gather:beforePass:FontSize",
+        "duration": 0.028064999999969586,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.40918,
+        "name": "lh:gather:beforePass:CrawlableLinks",
+        "duration": 0.018794999999954598,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.438672,
+        "name": "lh:gather:beforePass:MetaRobots",
+        "duration": 0.015078999999786902,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.465385,
+        "name": "lh:gather:beforePass:Hreflang",
+        "duration": 0.01576599999998507,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.49176,
+        "name": "lh:gather:beforePass:EmbeddedContent",
+        "duration": 0.017773999999917578,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.516873,
+        "name": "lh:gather:beforePass:Canonical",
+        "duration": 0.021341000000120403,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2279.545268,
+        "name": "lh:gather:beforePass:RobotsTxt",
+        "duration": 0.024777000000085536,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2280.389561,
+        "name": "lh:gather:loadPage-defaultPass",
+        "duration": 45101.203972999996,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 2291.347941,
+        "name": "lh:gather:getVersion",
+        "duration": 0.8059349999998631,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47381.633791,
+        "name": "lh:gather:pass",
+        "duration": 7.3164489999981015,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47389.713545,
+        "name": "lh:gather:getTrace",
+        "duration": 92.21052000000054,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47481.950276,
+        "name": "lh:gather:getDevtoolsLog",
+        "duration": 12.682600000000093,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47497.365357,
+        "name": "lh:gather:afterPass",
+        "duration": 295.36221999999543,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47497.420112,
+        "name": "lh:gather:afterPass:Scripts",
+        "duration": 0.9040049999966868,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47498.388848,
+        "name": "lh:gather:afterPass:CSSUsage",
+        "duration": 32.47267899999861,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47530.911055,
+        "name": "lh:gather:afterPass:Viewport",
+        "duration": 3.557838000000629,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47534.530911,
+        "name": "lh:gather:afterPass:ViewportDimensions",
+        "duration": 9.945844999994733,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47544.523389,
+        "name": "lh:gather:afterPass:ThemeColor",
+        "duration": 3.331877999997232,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47547.912882,
+        "name": "lh:gather:afterPass:Manifest",
+        "duration": 2.570863000000827,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47550.522106,
+        "name": "lh:gather:afterPass:RuntimeExceptions",
+        "duration": 0.5513670000000275,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47551.092482,
+        "name": "lh:gather:afterPass:ChromeConsoleMessages",
+        "duration": 2.7247280000010505,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47553.844236,
+        "name": "lh:gather:afterPass:ImageUsage",
+        "duration": 6.873444000004383,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47560.747668,
+        "name": "lh:gather:afterPass:Accessibility",
+        "duration": 136.92170699999406,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47697.708139,
+        "name": "lh:gather:afterPass:LinkElements",
+        "duration": 3.7466239999994286,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47701.483771,
+        "name": "lh:gather:afterPass:AnchorsWithNoRelNoopener",
+        "duration": 3.399411999998847,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47704.911814,
+        "name": "lh:gather:afterPass:AppCacheManifest",
+        "duration": 4.360975000003236,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47709.302183,
+        "name": "lh:gather:afterPass:Doctype",
+        "duration": 5.333471999998437,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47714.666616,
+        "name": "lh:gather:afterPass:DOMStats",
+        "duration": 10.966241999994963,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47725.665894,
+        "name": "lh:gather:afterPass:JSLibraries",
+        "duration": 23.590263000005507,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47749.286248,
+        "name": "lh:gather:afterPass:OptimizedImages",
+        "duration": 1.9003440000014962,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47751.221241,
+        "name": "lh:gather:afterPass:PasswordInputsWithPreventedPaste",
+        "duration": 3.3232649999990826,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47754.573579,
+        "name": "lh:gather:afterPass:ResponseCompression",
+        "duration": 1.1646289999989676,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47755.762277,
+        "name": "lh:gather:afterPass:TagsBlockingFirstPaint",
+        "duration": 4.570654999995895,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47760.36613,
+        "name": "lh:gather:afterPass:MetaDescription",
+        "duration": 3.513465999996697,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47763.907946,
+        "name": "lh:gather:afterPass:FontSize",
+        "duration": 7.682561000001442,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47771.620288,
+        "name": "lh:gather:afterPass:CrawlableLinks",
+        "duration": 3.706526000001759,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47775.367945,
+        "name": "lh:gather:afterPass:MetaRobots",
+        "duration": 3.2768570000043837,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47778.67468,
+        "name": "lh:gather:afterPass:Hreflang",
+        "duration": 3.6692330000005313,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47782.374309,
+        "name": "lh:gather:afterPass:EmbeddedContent",
+        "duration": 3.355870999999752,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47785.772567,
+        "name": "lh:gather:afterPass:Canonical",
+        "duration": 3.1244510000033188,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47788.924972,
+        "name": "lh:gather:afterPass:RobotsTxt",
+        "duration": 3.7685960000017076,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47794.380244,
+        "name": "lh:gather:loadBlank",
+        "duration": 105.51505500000349,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47899.950111,
+        "name": "lh:gather:beforePass",
+        "duration": 25.340785000000324,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47906.623606,
+        "name": "lh:gather:beforePass:ServiceWorker",
+        "duration": 11.686367000002065,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47918.357953,
+        "name": "lh:gather:beforePass:Offline",
+        "duration": 6.8009559999991325,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47925.21877,
+        "name": "lh:gather:beforePass:StartUrl",
+        "duration": 0.05328600000211736,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 47925.366365,
+        "name": "lh:gather:loadPage-offlinePass",
+        "duration": 110.91715799999656,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48036.318194,
+        "name": "lh:gather:pass",
+        "duration": 1.921691000003193,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48038.282149,
+        "name": "lh:gather:getDevtoolsLog",
+        "duration": 1.5744120000017574,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48046.149065,
+        "name": "lh:gather:afterPass",
+        "duration": 16.67241600000125,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48046.198775,
+        "name": "lh:gather:afterPass:ServiceWorker",
+        "duration": 2.2342640000060783,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48048.470118,
+        "name": "lh:gather:afterPass:Offline",
+        "duration": 4.989721000005375,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48053.498196,
+        "name": "lh:gather:afterPass:StartUrl",
+        "duration": 9.290260000001581,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48064.014605,
+        "name": "lh:gather:loadBlank",
+        "duration": 105.69107500000246,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48169.730752,
+        "name": "lh:gather:beforePass",
+        "duration": 7.599483999998483,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48176.837105,
+        "name": "lh:gather:beforePass:HTTPRedirect",
+        "duration": 0.3164279999982682,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48177.185376,
+        "name": "lh:gather:beforePass:HTMLWithoutJavaScript",
+        "duration": 0.13010299999587005,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 48177.394738,
+        "name": "lh:gather:loadPage-redirectPass",
+        "duration": 10741.172239,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58918.586497,
+        "name": "lh:gather:pass",
+        "duration": 0.6614140000019688,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58919.274333,
+        "name": "lh:gather:getDevtoolsLog",
+        "duration": 24.308938000001945,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58945.321447,
+        "name": "lh:gather:afterPass",
+        "duration": 12.798931999997876,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58945.35758,
+        "name": "lh:gather:afterPass:HTTPRedirect",
+        "duration": 8.319001999996544,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58953.710833,
+        "name": "lh:gather:afterPass:HTMLWithoutJavaScript",
+        "duration": 4.383723999999347,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58961.192021,
+        "name": "lh:gather:disconnect",
+        "duration": 22.695277999999234,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58987.937654,
+        "name": "lh:runner:auditing",
+        "duration": 259.66669099999854,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58991.450006,
+        "name": "lh:audit:is-on-https",
+        "duration": 10.82512300000235,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 58992.537236,
+        "name": "lh:computed:NetworkRecords",
+        "duration": 8.436928000002808,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59002.361268,
+        "name": "lh:audit:redirects-http",
+        "duration": 0.668798999999126,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59003.082626,
+        "name": "lh:audit:service-worker",
+        "duration": 0.7058759999999893,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59003.830566,
+        "name": "lh:audit:works-offline",
+        "duration": 0.658158000005642,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59004.524847,
+        "name": "lh:audit:viewport",
+        "duration": 0.5860719999982393,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59005.151926,
+        "name": "lh:audit:without-javascript",
+        "duration": 0.521946000000753,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59013.916733,
+        "name": "lh:audit:first-contentful-paint",
+        "duration": 29.636809000003268,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59014.870706,
+        "name": "lh:computed:FirstContentfulPaint",
+        "duration": 27.462562000000617,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59015.282177,
+        "name": "lh:computed:TraceOfTab",
+        "duration": 27.016701000000467,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59044.274074,
+        "name": "lh:audit:first-meaningful-paint",
+        "duration": 2.0787249999993946,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59045.233571,
+        "name": "lh:computed:FirstMeaningfulPaint",
+        "duration": 0.14002100000652717,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59046.896705,
+        "name": "lh:audit:load-fast-enough-for-pwa",
+        "duration": 2.3497219999990193,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59047.986952,
+        "name": "lh:computed:Interactive",
+        "duration": 0.12427800000295974,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59049.670777,
+        "name": "lh:audit:speed-index",
+        "duration": 1.897515000004205,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59050.560026,
+        "name": "lh:computed:SpeedIndex",
+        "duration": 0.12438500000280328,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59051.61704,
+        "name": "lh:audit:screenshot-thumbnails",
+        "duration": 3.259373000000778,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59053.702005,
+        "name": "lh:computed:Speedline",
+        "duration": 0.4929249999986496,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59054.918708,
+        "name": "lh:audit:final-screenshot",
+        "duration": 1.4042760000011185,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59055.456174,
+        "name": "lh:computed:Screenshots",
+        "duration": 0.7229979999974603,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59056.788443,
+        "name": "lh:audit:estimated-input-latency",
+        "duration": 1.8584010000049602,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59057.680838,
+        "name": "lh:computed:EstimatedInputLatency",
+        "duration": 0.14058099999965634,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59058.692162,
+        "name": "lh:audit:errors-in-console",
+        "duration": 0.7434570000041276,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59059.925707,
+        "name": "lh:audit:time-to-first-byte",
+        "duration": 1.8556489999973564,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59060.629238,
+        "name": "lh:computed:MainResource",
+        "duration": 0.44255600000178674,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59062.21198,
+        "name": "lh:audit:first-cpu-idle",
+        "duration": 1.687634000001708,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59062.975468,
+        "name": "lh:computed:FirstCPUIdle",
+        "duration": 0.15819900000497,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59064.243549,
+        "name": "lh:audit:interactive",
+        "duration": 1.6570130000036443,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59066.306596,
+        "name": "lh:audit:user-timings",
+        "duration": 1.7417989999958081,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59066.963542,
+        "name": "lh:computed:UserTimings",
+        "duration": 0.3475430000034976,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59068.53197,
+        "name": "lh:audit:critical-request-chains",
+        "duration": 5.1373380000004545,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59069.281334,
+        "name": "lh:computed:CriticalRequestChains",
+        "duration": 2.1396779999995488,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59074.052862,
+        "name": "lh:audit:redirects",
+        "duration": 1.5735600000043632,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59075.663832,
+        "name": "lh:audit:installable-manifest",
+        "duration": 1.35019199999806,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59076.160783,
+        "name": "lh:computed:ManifestValues",
+        "duration": 0.3098699999973178,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59077.042594,
+        "name": "lh:audit:splash-screen",
+        "duration": 0.5958680000039749,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59077.660341,
+        "name": "lh:audit:themed-omnibox",
+        "duration": 10.632560999998532,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59088.346785,
+        "name": "lh:audit:content-width",
+        "duration": 0.5441240000000107,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59088.92941,
+        "name": "lh:audit:image-aspect-ratio",
+        "duration": 0.46977200000401353,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59089.433637,
+        "name": "lh:audit:deprecations",
+        "duration": 0.5042370000010123,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59090.429034,
+        "name": "lh:audit:mainthread-work-breakdown",
+        "duration": 1.5998679999975138,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59091.112487,
+        "name": "lh:computed:MainThreadTasks",
+        "duration": 0.18660600000293925,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59092.3145,
+        "name": "lh:audit:bootup-time",
+        "duration": 2.169401999999536,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59094.710552,
+        "name": "lh:audit:uses-rel-preload",
+        "duration": 8.015007000001788,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59095.897253,
+        "name": "lh:computed:PageDependencyGraph",
+        "duration": 6.097992999995768,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59096.207567,
+        "name": "lh:computed:LoadSimulator",
+        "duration": 5.771035000005213,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59096.500964,
+        "name": "lh:computed:NetworkAnalysis",
+        "duration": 4.727506000002904,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59103.084829,
+        "name": "lh:audit:uses-rel-preconnect",
+        "duration": 1.7471210000003339,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59103.988689,
+        "name": "lh:computed:LoadSimulator",
+        "duration": 0.18530699999973876,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59105.126969,
+        "name": "lh:audit:font-display",
+        "duration": 1.2766980000014883,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59106.431472,
+        "name": "lh:audit:network-requests",
+        "duration": 1.350203000001784,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59107.806146,
+        "name": "lh:audit:metrics",
+        "duration": 1.2768549999964307,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59109.138387,
+        "name": "lh:audit:offline-start-url",
+        "duration": 0.561492000000726,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59109.786728,
+        "name": "lh:audit:pwa-cross-browser",
+        "duration": 0.41085900000325637,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59110.240664,
+        "name": "lh:audit:pwa-page-transitions",
+        "duration": 0.3750320000035572,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59110.67261,
+        "name": "lh:audit:pwa-each-page-has-url",
+        "duration": 0.3023570000004838,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59111.546378,
+        "name": "lh:audit:aria-allowed-attr",
+        "duration": 0.7386869999972987,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59112.61553,
+        "name": "lh:audit:aria-required-attr",
+        "duration": 0.585890999995172,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59113.694237,
+        "name": "lh:audit:aria-required-children",
+        "duration": 0.723441999994975,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59114.729168,
+        "name": "lh:audit:aria-required-parent",
+        "duration": 1.73094200000196,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59116.720535,
+        "name": "lh:audit:aria-roles",
+        "duration": 1.337640999998257,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59118.347154,
+        "name": "lh:audit:aria-valid-attr-value",
+        "duration": 0.9024099999951432,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59119.617357,
+        "name": "lh:audit:aria-valid-attr",
+        "duration": 1.0207969999974011,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59121.188203,
+        "name": "lh:audit:audio-caption",
+        "duration": 0.9070820000051754,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59122.340058,
+        "name": "lh:audit:button-name",
+        "duration": 0.8723549999995157,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59123.595832,
+        "name": "lh:audit:bypass",
+        "duration": 2.4360390000001644,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59126.608262,
+        "name": "lh:audit:color-contrast",
+        "duration": 1.200606999998854,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59128.444815,
+        "name": "lh:audit:definition-list",
+        "duration": 1.6379249999954482,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59130.536259,
+        "name": "lh:audit:dlitem",
+        "duration": 1.587430999999924,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59132.529351,
+        "name": "lh:audit:document-title",
+        "duration": 3.0813249999991967,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59136.982707,
+        "name": "lh:audit:duplicate-id",
+        "duration": 1.2890899999983958,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59138.795867,
+        "name": "lh:audit:frame-title",
+        "duration": 2.212585000001127,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59141.366651,
+        "name": "lh:audit:html-has-lang",
+        "duration": 3.537474000004295,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59145.865809,
+        "name": "lh:audit:html-lang-valid",
+        "duration": 1.4462129999956232,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59147.669637,
+        "name": "lh:audit:image-alt",
+        "duration": 1.460030000002007,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59149.734893,
+        "name": "lh:audit:input-image-alt",
+        "duration": 6.9213589999999385,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59157.054496,
+        "name": "lh:audit:label",
+        "duration": 1.9919340000051307,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59159.521216,
+        "name": "lh:audit:layout-table",
+        "duration": 1.4170499999963795,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59161.215056,
+        "name": "lh:audit:link-name",
+        "duration": 1.3704050000014831,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59163.01204,
+        "name": "lh:audit:list",
+        "duration": 1.1395990000019083,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59164.428326,
+        "name": "lh:audit:listitem",
+        "duration": 1.599328999996942,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59166.326731,
+        "name": "lh:audit:meta-refresh",
+        "duration": 1.2223369999992428,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59167.96448,
+        "name": "lh:audit:meta-viewport",
+        "duration": 1.3519699999960721,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59169.683828,
+        "name": "lh:audit:object-alt",
+        "duration": 1.7025339999963762,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59171.663095,
+        "name": "lh:audit:tabindex",
+        "duration": 1.3730779999968945,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59173.469692,
+        "name": "lh:audit:td-headers-attr",
+        "duration": 1.4740119999987655,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59175.319379,
+        "name": "lh:audit:th-has-data-cells",
+        "duration": 1.7265950000000885,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59177.459376,
+        "name": "lh:audit:valid-lang",
+        "duration": 1.7861940000002505,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59179.610167,
+        "name": "lh:audit:video-caption",
+        "duration": 2.0954429999983404,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59182.147729,
+        "name": "lh:audit:video-description",
+        "duration": 2.158891000006406,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59184.752898,
+        "name": "lh:audit:accesskeys",
+        "duration": 0.8330659999992349,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59185.656726,
+        "name": "lh:audit:custom-controls-labels",
+        "duration": 0.3836410000003525,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59186.079618,
+        "name": "lh:audit:custom-controls-roles",
+        "duration": 0.359638999994786,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59186.48135,
+        "name": "lh:audit:focus-traps",
+        "duration": 0.34327399999892805,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59186.866441,
+        "name": "lh:audit:focusable-controls",
+        "duration": 0.3199240000030841,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59187.229229,
+        "name": "lh:audit:heading-levels",
+        "duration": 0.3023640000028536,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59187.573547,
+        "name": "lh:audit:interactive-element-affordance",
+        "duration": 0.30870400000276277,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59187.920398,
+        "name": "lh:audit:logical-tab-order",
+        "duration": 0.3416240000005928,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59188.316391,
+        "name": "lh:audit:managed-focus",
+        "duration": 0.34506300000066403,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59188.702108,
+        "name": "lh:audit:offscreen-content-hidden",
+        "duration": 0.29463599999871803,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59189.039333,
+        "name": "lh:audit:use-landmarks",
+        "duration": 0.26073499999620253,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59189.341423,
+        "name": "lh:audit:visual-order-follows-dom",
+        "duration": 0.29147699999884935,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59190.187899,
+        "name": "lh:audit:uses-long-cache-ttl",
+        "duration": 2.686691000002611,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59193.262886,
+        "name": "lh:audit:total-byte-weight",
+        "duration": 2.3207930000062333,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59195.981683,
+        "name": "lh:audit:offscreen-images",
+        "duration": 2.462766000004194,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59198.885133,
+        "name": "lh:audit:render-blocking-resources",
+        "duration": 2.730006999998295,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59201.966666,
+        "name": "lh:audit:unminified-css",
+        "duration": 1.839786999997159,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59204.124743,
+        "name": "lh:audit:unminified-javascript",
+        "duration": 1.8657020000027842,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59206.308711,
+        "name": "lh:audit:unused-css-rules",
+        "duration": 2.127674000003026,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59208.818849,
+        "name": "lh:audit:uses-webp-images",
+        "duration": 1.8355229999942821,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59210.979613,
+        "name": "lh:audit:uses-optimized-images",
+        "duration": 1.6707379999934346,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59212.999573,
+        "name": "lh:audit:uses-text-compression",
+        "duration": 1.574637999998231,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59214.879905,
+        "name": "lh:audit:uses-responsive-images",
+        "duration": 1.5592199999955483,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59216.82798,
+        "name": "lh:audit:efficient-animated-content",
+        "duration": 1.4790050000010524,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59218.351425,
+        "name": "lh:audit:appcache-manifest",
+        "duration": 0.42763099999865517,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59218.812261,
+        "name": "lh:audit:doctype",
+        "duration": 0.4194199999983539,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59219.641546,
+        "name": "lh:audit:dom-size",
+        "duration": 3.583866000000853,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59223.286249,
+        "name": "lh:audit:external-anchors-use-rel-noopener",
+        "duration": 1.1047800000014831,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59224.440818,
+        "name": "lh:audit:geolocation-on-start",
+        "duration": 0.9688979999991716,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59225.453864,
+        "name": "lh:audit:no-document-write",
+        "duration": 0.5979149999984656,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59226.090651,
+        "name": "lh:audit:no-vulnerable-libraries",
+        "duration": 0.7010250000021188,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59226.833278,
+        "name": "lh:audit:js-libraries",
+        "duration": 0.5241290000049048,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59227.391383,
+        "name": "lh:audit:notification-on-start",
+        "duration": 0.4664779999948223,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59227.88945,
+        "name": "lh:audit:password-inputs-can-be-pasted-into",
+        "duration": 0.48691499999404186,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59228.410234,
+        "name": "lh:audit:uses-http2",
+        "duration": 2.154599999994389,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59230.607851,
+        "name": "lh:audit:uses-passive-event-listeners",
+        "duration": 0.5968700000012177,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59231.244147,
+        "name": "lh:audit:meta-description",
+        "duration": 0.4336780000012368,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59231.711597,
+        "name": "lh:audit:http-status-code",
+        "duration": 0.7005740000022342,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59237.578145,
+        "name": "lh:audit:font-size",
+        "duration": 3.172471999998379,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59240.805329,
+        "name": "lh:audit:link-text",
+        "duration": 0.8527949999988778,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59241.854156,
+        "name": "lh:audit:is-crawlable",
+        "duration": 1.1109749999959604,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59243.006739,
+        "name": "lh:audit:robots-txt",
+        "duration": 0.6210540000029141,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59243.66496,
+        "name": "lh:audit:hreflang",
+        "duration": 0.8839129999978468,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59244.586164,
+        "name": "lh:audit:plugins",
+        "duration": 0.6673880000016652,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59245.290576,
+        "name": "lh:audit:canonical",
+        "duration": 1.495677999999316,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59246.847311,
+        "name": "lh:audit:mobile-friendly",
+        "duration": 0.37296600000263425,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59247.264581,
+        "name": "lh:audit:structured-data",
+        "duration": 0.31366899999557063,
+        "entryType": "measure"
+      },
+      {
+        "startTime": 59247.626605,
+        "name": "lh:runner:generate",
+        "duration": 2.5411440000025323,
+        "entryType": "measure"
+      }
+    ],
+    "total": 57706.434760000004
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "auditGroupExpandTooltip": "Show audits",
+      "crcInitialNavigation": "Initial Navigation",
+      "crcLongestDurationLabel": "Maximum critical path latency:",
+      "errorLabel": "Error!",
+      "errorMissingAuditInfo": "Report error: no audit information",
+      "labDataTitle": "Lab Data",
+      "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+      "manualAuditsGroupTitle": "Additional items to manually check",
+      "notApplicableAuditsGroupTitle": "Not applicable",
+      "opportunityResourceColumnLabel": "Opportunity",
+      "opportunitySavingsColumnLabel": "Estimated Savings",
+      "passedAuditsGroupTitle": "Passed audits",
+      "scorescaleLabel": "Score scale:",
+      "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+      "varianceDisclaimer": "Values are estimated and may vary.",
+      "warningAuditsGroupTitle": "Passed audits but with warnings",
+      "warningHeader": "Warnings: "
+    },
+    "icuMessagePaths": {
+      "lighthouse-core/audits/metrics/first-contentful-paint.js | title": [
+        "audits[first-contentful-paint].title"
+      ],
+      "lighthouse-core/audits/metrics/first-contentful-paint.js | description": [
+        "audits[first-contentful-paint].description"
+      ],
+      "lighthouse-core/lib/lh-error.js | badTraceRecording": [
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[first-contentful-paint].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[first-meaningful-paint].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[load-fast-enough-for-pwa].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[speed-index].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[screenshot-thumbnails].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[estimated-input-latency].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[first-cpu-idle].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits.interactive.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[user-timings].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits.redirects.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[mainthread-work-breakdown].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[bootup-time].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[uses-rel-preload].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits.metrics.errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[offscreen-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[render-blocking-resources].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[unminified-css].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[unminified-javascript].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[unused-css-rules].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[uses-webp-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[uses-optimized-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[uses-text-compression].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[uses-responsive-images].errorMessage"
+        },
+        {
+          "values": {
+            "errorCode": "NO_TRACING_STARTED"
+          },
+          "path": "audits[efficient-animated-content].errorMessage"
+        }
+      ],
+      "lighthouse-core/audits/metrics/first-meaningful-paint.js | title": [
+        "audits[first-meaningful-paint].title"
+      ],
+      "lighthouse-core/audits/metrics/first-meaningful-paint.js | description": [
+        "audits[first-meaningful-paint].description"
+      ],
+      "lighthouse-core/audits/load-fast-enough-for-pwa.js | failureTitle": [
+        "audits[load-fast-enough-for-pwa].title"
+      ],
+      "lighthouse-core/audits/load-fast-enough-for-pwa.js | description": [
+        "audits[load-fast-enough-for-pwa].description"
+      ],
+      "lighthouse-core/audits/metrics/speed-index.js | title": [
+        "audits[speed-index].title"
+      ],
+      "lighthouse-core/audits/metrics/speed-index.js | description": [
+        "audits[speed-index].description"
+      ],
+      "lighthouse-core/audits/metrics/estimated-input-latency.js | title": [
+        "audits[estimated-input-latency].title"
+      ],
+      "lighthouse-core/audits/metrics/estimated-input-latency.js | description": [
+        "audits[estimated-input-latency].description"
+      ],
+      "lighthouse-core/audits/time-to-first-byte.js | title": [
+        "audits[time-to-first-byte].title"
+      ],
+      "lighthouse-core/audits/time-to-first-byte.js | description": [
+        "audits[time-to-first-byte].description"
+      ],
+      "lighthouse-core/audits/time-to-first-byte.js | displayValue": [
+        {
+          "values": {
+            "timeInMs": 286.71900000000005
+          },
+          "path": "audits[time-to-first-byte].displayValue"
+        }
+      ],
+      "lighthouse-core/audits/metrics/first-cpu-idle.js | title": [
+        "audits[first-cpu-idle].title"
+      ],
+      "lighthouse-core/audits/metrics/first-cpu-idle.js | description": [
+        "audits[first-cpu-idle].description"
+      ],
+      "lighthouse-core/audits/metrics/interactive.js | title": [
+        "audits.interactive.title"
+      ],
+      "lighthouse-core/audits/metrics/interactive.js | description": [
+        "audits.interactive.description"
+      ],
+      "lighthouse-core/audits/user-timings.js | title": [
+        "audits[user-timings].title"
+      ],
+      "lighthouse-core/audits/user-timings.js | description": [
+        "audits[user-timings].description"
+      ],
+      "lighthouse-core/audits/critical-request-chains.js | title": [
+        "audits[critical-request-chains].title"
+      ],
+      "lighthouse-core/audits/critical-request-chains.js | description": [
+        "audits[critical-request-chains].description"
+      ],
+      "lighthouse-core/audits/critical-request-chains.js | displayValue": [
+        {
+          "values": {
+            "itemCount": 1
+          },
+          "path": "audits[critical-request-chains].displayValue"
+        }
+      ],
+      "lighthouse-core/audits/redirects.js | title": [
+        "audits.redirects.title"
+      ],
+      "lighthouse-core/audits/redirects.js | description": [
+        "audits.redirects.description"
+      ],
+      "lighthouse-core/audits/mainthread-work-breakdown.js | failureTitle": [
+        "audits[mainthread-work-breakdown].title"
+      ],
+      "lighthouse-core/audits/mainthread-work-breakdown.js | description": [
+        "audits[mainthread-work-breakdown].description"
+      ],
+      "lighthouse-core/audits/bootup-time.js | failureTitle": [
+        "audits[bootup-time].title"
+      ],
+      "lighthouse-core/audits/bootup-time.js | description": [
+        "audits[bootup-time].description"
+      ],
+      "lighthouse-core/audits/uses-rel-preload.js | title": [
+        "audits[uses-rel-preload].title"
+      ],
+      "lighthouse-core/audits/uses-rel-preload.js | description": [
+        "audits[uses-rel-preload].description"
+      ],
+      "lighthouse-core/audits/uses-rel-preconnect.js | title": [
+        "audits[uses-rel-preconnect].title"
+      ],
+      "lighthouse-core/audits/uses-rel-preconnect.js | description": [
+        "audits[uses-rel-preconnect].description"
+      ],
+      "lighthouse-core/audits/font-display.js | title": [
+        "audits[font-display].title"
+      ],
+      "lighthouse-core/audits/font-display.js | description": [
+        "audits[font-display].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-allowed-attr.js | title": [
+        "audits[aria-allowed-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-allowed-attr.js | description": [
+        "audits[aria-allowed-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-attr.js | title": [
+        "audits[aria-required-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-attr.js | description": [
+        "audits[aria-required-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-children.js | title": [
+        "audits[aria-required-children].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-children.js | description": [
+        "audits[aria-required-children].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-parent.js | title": [
+        "audits[aria-required-parent].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-required-parent.js | description": [
+        "audits[aria-required-parent].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-roles.js | title": [
+        "audits[aria-roles].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-roles.js | description": [
+        "audits[aria-roles].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr-value.js | title": [
+        "audits[aria-valid-attr-value].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr-value.js | description": [
+        "audits[aria-valid-attr-value].description"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr.js | title": [
+        "audits[aria-valid-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/aria-valid-attr.js | description": [
+        "audits[aria-valid-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/audio-caption.js | title": [
+        "audits[audio-caption].title"
+      ],
+      "lighthouse-core/audits/accessibility/audio-caption.js | description": [
+        "audits[audio-caption].description"
+      ],
+      "lighthouse-core/audits/accessibility/button-name.js | title": [
+        "audits[button-name].title"
+      ],
+      "lighthouse-core/audits/accessibility/button-name.js | description": [
+        "audits[button-name].description"
+      ],
+      "lighthouse-core/audits/accessibility/bypass.js | title": [
+        "audits.bypass.title"
+      ],
+      "lighthouse-core/audits/accessibility/bypass.js | description": [
+        "audits.bypass.description"
+      ],
+      "lighthouse-core/audits/accessibility/color-contrast.js | title": [
+        "audits[color-contrast].title"
+      ],
+      "lighthouse-core/audits/accessibility/color-contrast.js | description": [
+        "audits[color-contrast].description"
+      ],
+      "lighthouse-core/audits/accessibility/definition-list.js | title": [
+        "audits[definition-list].title"
+      ],
+      "lighthouse-core/audits/accessibility/definition-list.js | description": [
+        "audits[definition-list].description"
+      ],
+      "lighthouse-core/audits/accessibility/dlitem.js | title": [
+        "audits.dlitem.title"
+      ],
+      "lighthouse-core/audits/accessibility/dlitem.js | description": [
+        "audits.dlitem.description"
+      ],
+      "lighthouse-core/audits/accessibility/document-title.js | failureTitle": [
+        "audits[document-title].title"
+      ],
+      "lighthouse-core/audits/accessibility/document-title.js | description": [
+        "audits[document-title].description"
+      ],
+      "lighthouse-core/audits/accessibility/axe-audit.js | failingElementsHeader": [
+        "audits[document-title].details.headings[0].text",
+        "audits[html-has-lang].details.headings[0].text"
+      ],
+      "lighthouse-core/audits/accessibility/duplicate-id.js | title": [
+        "audits[duplicate-id].title"
+      ],
+      "lighthouse-core/audits/accessibility/duplicate-id.js | description": [
+        "audits[duplicate-id].description"
+      ],
+      "lighthouse-core/audits/accessibility/frame-title.js | title": [
+        "audits[frame-title].title"
+      ],
+      "lighthouse-core/audits/accessibility/frame-title.js | description": [
+        "audits[frame-title].description"
+      ],
+      "lighthouse-core/audits/accessibility/html-has-lang.js | failureTitle": [
+        "audits[html-has-lang].title"
+      ],
+      "lighthouse-core/audits/accessibility/html-has-lang.js | description": [
+        "audits[html-has-lang].description"
+      ],
+      "lighthouse-core/audits/accessibility/html-lang-valid.js | title": [
+        "audits[html-lang-valid].title"
+      ],
+      "lighthouse-core/audits/accessibility/html-lang-valid.js | description": [
+        "audits[html-lang-valid].description"
+      ],
+      "lighthouse-core/audits/accessibility/image-alt.js | title": [
+        "audits[image-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/image-alt.js | description": [
+        "audits[image-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/input-image-alt.js | title": [
+        "audits[input-image-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/input-image-alt.js | description": [
+        "audits[input-image-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/label.js | title": [
+        "audits.label.title"
+      ],
+      "lighthouse-core/audits/accessibility/label.js | description": [
+        "audits.label.description"
+      ],
+      "lighthouse-core/audits/accessibility/layout-table.js | title": [
+        "audits[layout-table].title"
+      ],
+      "lighthouse-core/audits/accessibility/layout-table.js | description": [
+        "audits[layout-table].description"
+      ],
+      "lighthouse-core/audits/accessibility/link-name.js | title": [
+        "audits[link-name].title"
+      ],
+      "lighthouse-core/audits/accessibility/link-name.js | description": [
+        "audits[link-name].description"
+      ],
+      "lighthouse-core/audits/accessibility/list.js | title": [
+        "audits.list.title"
+      ],
+      "lighthouse-core/audits/accessibility/list.js | description": [
+        "audits.list.description"
+      ],
+      "lighthouse-core/audits/accessibility/listitem.js | title": [
+        "audits.listitem.title"
+      ],
+      "lighthouse-core/audits/accessibility/listitem.js | description": [
+        "audits.listitem.description"
+      ],
+      "lighthouse-core/audits/accessibility/meta-refresh.js | title": [
+        "audits[meta-refresh].title"
+      ],
+      "lighthouse-core/audits/accessibility/meta-refresh.js | description": [
+        "audits[meta-refresh].description"
+      ],
+      "lighthouse-core/audits/accessibility/meta-viewport.js | title": [
+        "audits[meta-viewport].title"
+      ],
+      "lighthouse-core/audits/accessibility/meta-viewport.js | description": [
+        "audits[meta-viewport].description"
+      ],
+      "lighthouse-core/audits/accessibility/object-alt.js | title": [
+        "audits[object-alt].title"
+      ],
+      "lighthouse-core/audits/accessibility/object-alt.js | description": [
+        "audits[object-alt].description"
+      ],
+      "lighthouse-core/audits/accessibility/tabindex.js | title": [
+        "audits.tabindex.title"
+      ],
+      "lighthouse-core/audits/accessibility/tabindex.js | description": [
+        "audits.tabindex.description"
+      ],
+      "lighthouse-core/audits/accessibility/td-headers-attr.js | title": [
+        "audits[td-headers-attr].title"
+      ],
+      "lighthouse-core/audits/accessibility/td-headers-attr.js | description": [
+        "audits[td-headers-attr].description"
+      ],
+      "lighthouse-core/audits/accessibility/th-has-data-cells.js | title": [
+        "audits[th-has-data-cells].title"
+      ],
+      "lighthouse-core/audits/accessibility/th-has-data-cells.js | description": [
+        "audits[th-has-data-cells].description"
+      ],
+      "lighthouse-core/audits/accessibility/valid-lang.js | title": [
+        "audits[valid-lang].title"
+      ],
+      "lighthouse-core/audits/accessibility/valid-lang.js | description": [
+        "audits[valid-lang].description"
+      ],
+      "lighthouse-core/audits/accessibility/video-caption.js | title": [
+        "audits[video-caption].title"
+      ],
+      "lighthouse-core/audits/accessibility/video-caption.js | description": [
+        "audits[video-caption].description"
+      ],
+      "lighthouse-core/audits/accessibility/video-description.js | title": [
+        "audits[video-description].title"
+      ],
+      "lighthouse-core/audits/accessibility/video-description.js | description": [
+        "audits[video-description].description"
+      ],
+      "lighthouse-core/audits/accessibility/manual/accesskeys.js | title": [
+        "audits.accesskeys.title"
+      ],
+      "lighthouse-core/audits/accessibility/manual/accesskeys.js | description": [
+        "audits.accesskeys.description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-long-cache-ttl.js | title": [
+        "audits[uses-long-cache-ttl].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-long-cache-ttl.js | description": [
+        "audits[uses-long-cache-ttl].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-long-cache-ttl.js | displayValue": [
+        {
+          "values": {
+            "itemCount": 0
+          },
+          "path": "audits[uses-long-cache-ttl].displayValue"
+        }
+      ],
+      "lighthouse-core/audits/byte-efficiency/total-byte-weight.js | title": [
+        "audits[total-byte-weight].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/total-byte-weight.js | description": [
+        "audits[total-byte-weight].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/total-byte-weight.js | displayValue": [
+        {
+          "values": {
+            "totalBytes": 4399
+          },
+          "path": "audits[total-byte-weight].displayValue"
+        }
+      ],
+      "lighthouse-core/lib/i18n/i18n.js | columnURL": [
+        "audits[total-byte-weight].details.headings[0].text"
+      ],
+      "lighthouse-core/lib/i18n/i18n.js | columnSize": [
+        "audits[total-byte-weight].details.headings[1].text"
+      ],
+      "lighthouse-core/audits/byte-efficiency/offscreen-images.js | title": [
+        "audits[offscreen-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/offscreen-images.js | description": [
+        "audits[offscreen-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/render-blocking-resources.js | title": [
+        "audits[render-blocking-resources].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/render-blocking-resources.js | description": [
+        "audits[render-blocking-resources].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-css.js | title": [
+        "audits[unminified-css].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-css.js | description": [
+        "audits[unminified-css].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-javascript.js | title": [
+        "audits[unminified-javascript].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unminified-javascript.js | description": [
+        "audits[unminified-javascript].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unused-css-rules.js | title": [
+        "audits[unused-css-rules].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/unused-css-rules.js | description": [
+        "audits[unused-css-rules].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-webp-images.js | title": [
+        "audits[uses-webp-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-webp-images.js | description": [
+        "audits[uses-webp-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-optimized-images.js | title": [
+        "audits[uses-optimized-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-optimized-images.js | description": [
+        "audits[uses-optimized-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-text-compression.js | title": [
+        "audits[uses-text-compression].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-text-compression.js | description": [
+        "audits[uses-text-compression].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-responsive-images.js | title": [
+        "audits[uses-responsive-images].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/uses-responsive-images.js | description": [
+        "audits[uses-responsive-images].description"
+      ],
+      "lighthouse-core/audits/byte-efficiency/efficient-animated-content.js | title": [
+        "audits[efficient-animated-content].title"
+      ],
+      "lighthouse-core/audits/byte-efficiency/efficient-animated-content.js | description": [
+        "audits[efficient-animated-content].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | title": [
+        "audits[dom-size].title"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | description": [
+        "audits[dom-size].description"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | displayValue": [
+        {
+          "values": {
+            "itemCount": 3
+          },
+          "path": "audits[dom-size].displayValue"
+        }
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | columnStatistic": [
+        "audits[dom-size].details.headings[0].text"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | columnElement": [
+        "audits[dom-size].details.headings[1].text"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | columnValue": [
+        "audits[dom-size].details.headings[2].text"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | statisticDOMNodes": [
+        "audits[dom-size].details.items[0].statistic"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | statisticDOMDepth": [
+        "audits[dom-size].details.items[1].statistic"
+      ],
+      "lighthouse-core/audits/dobetterweb/dom-size.js | statisticDOMWidth": [
+        "audits[dom-size].details.items[2].statistic"
+      ],
+      "lighthouse-core/audits/seo/font-size.js | failureTitle": [
+        "audits[font-size].title"
+      ],
+      "lighthouse-core/audits/seo/font-size.js | description": [
+        "audits[font-size].description"
+      ],
+      "lighthouse-core/config/default-config.js | performanceCategoryTitle": [
+        "categories.performance.title"
+      ],
+      "lighthouse-core/config/default-config.js | metricGroupTitle": [
+        "categoryGroups.metrics.title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupTitle": [
+        "categoryGroups[load-opportunities].title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupDescription": [
+        "categoryGroups[load-opportunities].description"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupTitle": [
+        "categoryGroups.diagnostics.title"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupDescription": [
+        "categoryGroups.diagnostics.description"
+      ],
+      "lighthouse-core/config/default-config.js | pwaFastReliableGroupTitle": [
+        "categoryGroups[pwa-fast-reliable].title"
+      ],
+      "lighthouse-core/config/default-config.js | pwaInstallableGroupTitle": [
+        "categoryGroups[pwa-installable].title"
+      ],
+      "lighthouse-core/config/default-config.js | pwaOptimizedGroupTitle": [
+        "categoryGroups[pwa-optimized].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yColorContrastGroupTitle": [
+        "categoryGroups[a11y-color-contrast].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yColorContrastGroupDescription": [
+        "categoryGroups[a11y-color-contrast].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yDescribeContentsGroupTitle": [
+        "categoryGroups[a11y-describe-contents].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yDescribeContentsGroupDescription": [
+        "categoryGroups[a11y-describe-contents].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yWellStructuredGroupTitle": [
+        "categoryGroups[a11y-well-structured].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yWellStructuredGroupDescription": [
+        "categoryGroups[a11y-well-structured].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAriaGroupTitle": [
+        "categoryGroups[a11y-aria].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yAriaGroupDescription": [
+        "categoryGroups[a11y-aria].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yCorrectAttributesGroupTitle": [
+        "categoryGroups[a11y-correct-attributes].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yCorrectAttributesGroupDescription": [
+        "categoryGroups[a11y-correct-attributes].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yElementNamesGroupTitle": [
+        "categoryGroups[a11y-element-names].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yElementNamesGroupDescription": [
+        "categoryGroups[a11y-element-names].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yLanguageGroupTitle": [
+        "categoryGroups[a11y-language].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yLanguageGroupDescription": [
+        "categoryGroups[a11y-language].description"
+      ],
+      "lighthouse-core/config/default-config.js | a11yMetaGroupTitle": [
+        "categoryGroups[a11y-meta].title"
+      ],
+      "lighthouse-core/config/default-config.js | a11yMetaGroupDescription": [
+        "categoryGroups[a11y-meta].description"
+      ]
+    }
+  }
+}
