@@ -34,9 +34,20 @@ def process_trafilatura(downloaded):
 def process_dragnet(downloaded):
   return dragnet.extract_content(downloaded)
 
-def get_standard(text):
+def get_scores(text):
+  scores = {}
   try:
-      return textstat.text_standard(text)
+    scores['flesch_reading_ease'] = textstat.flesch_reading_ease(text)
+    scores['smog'] = textstat.smog_index(text)
+    scores['flesch_kincaid_grade'] = textstat.flesch_kincaid_grade(text)
+    scores['coleman_liau'] = textstat.coleman_liau_index(text)
+    scores['automated_readability'] = textstat.automated_readability_index(text)
+    scores['dale_chall_readability'] = textstat.dale_chall_readability_score(text)
+    scores['difficult_words'] = textstat.difficult_words(text)
+    scores['linsear_write_formula'] = textstat.linsear_write_formula(text)
+    scores['gunning_fog'] = textstat.gunning_fog(text)
+    scores['standard'] = textstat.text_standard(text)
+    return scores
   except Exception as e:
       return repr(e)
 
@@ -79,19 +90,17 @@ for raw_url in fl:
 
   try:
     traf_text = process_trafilatura(downloaded)
-    traf_msg = get_standard(traf_text)
-    output_for_json[url]['trafilatura']['standard'] = traf_msg
+    output_for_json[url]['trafilatura'] = get_scores(traf_text)
+    traf_msg = output_for_json[url]['trafilatura']['standard']
   except Exception as e:
-    traf_msg = repr(e)
-    output_for_json[url]['trafilatura']['error'] = traf_msg
+      output_for_json[url]['trafilatura'] = {'error' : repr(e)}
 
   try:
     dragnet_text = process_dragnet(downloaded)
-    dragnet_msg = get_standard(dragnet_text)
-    output_for_json[url]['dragnet']['standard'] = dragnet_msg
+    output_for_json[url]['dragnet'] = get_scores(dragnet_text)
+    dragnet_msg = output_for_json[url]['dragnet']['standard']
   except Exception as e:
-    dragnet_msg = repr(e)
-    output_for_json[url]['dragnet']['error'] = dragnet_msg
+    output_for_json[url]['dragnet'] = {'error' : repr(e)}
 
   markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
   markdown_file.write("\n")

@@ -14,8 +14,8 @@
  | https://health.ri.gov/covid | 12th and 13th grade | -1th and 0th grade |
  | https://llyw.cymru/coronafeirws | 59th and 60th grade | 9th and 10th grade |
  | https://manitoba.ca/covid19/ | 11th and 12th grade | 8th and 9th grade |
- | https://novascotia.ca/coronavirus/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='novascotia.ca', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f60f983b2b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),) | | | https://coronavirus.in.gov/ | 13th and 14th grade | 11th and 12th grade |
- | https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx | TypeError("'NoneType' object is not iterable",) | -1th and 0th grade |
+ | https://novascotia.ca/coronavirus/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='novascotia.ca', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f0d9f608860>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),) | | | https://coronavirus.in.gov/ | 13th and 14th grade | 11th and 12th grade |
+ | https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx | 13th and 14th grade | -1th and 0th grade |
  | https://sf.gov/topics/coronavirus-covid-19 | 8th and 9th grade | -1th and 0th grade |
  | https://www.alberta.ca/coronavirus-info-for-albertans.aspx | 19th and 20th grade | 14th and 15th grade |
  | https://www.argentina.gob.ar/salud/coronavirus-COVID-19 | 8th and 9th grade | 13th and 14th grade |
@@ -23,8 +23,8 @@
  | https://www.bundesgesundheitsministerium.de/coronavirus.html | 11th and 12th grade | 9th and 10th grade |
  | https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html | 23rd and 24th grade | -1th and 0th grade |
  | https://www.covid.is/english | 9th and 10th grade | 11th and 12th grade |
- | https://www.doh.wa.gov/Coronavirus/Workplace | TypeError("'NoneType' object is not iterable",) | -1th and 0th grade |
- | https://www.doh.wa.gov/emergencies/coronavirus | TypeError("'NoneType' object is not iterable",) | -1th and 0th grade |
+ | https://www.doh.wa.gov/Coronavirus/Workplace | 11th and 12th grade | 6th and 7th grade |
+ | https://www.doh.wa.gov/emergencies/coronavirus | 11th and 12th grade | -1th and 0th grade |
  | https://www.fhi.no/en/op/novel-coronavirus-facts-advice/ | 71st and 72nd grade | 6th and 7th grade |
  | https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/communicable-disease-control/covid-19/ | 12th and 13th grade | 10th and 11th grade |
  | https://www.gob.pe/coronavirus | 20th and 21st grade | 9th and 10th grade |
@@ -34,7 +34,7 @@
  | https://www.gov.sg/features/covid-19 | 14th and 15th grade | 13th and 14th grade |
  | https://www.gov.uk/coronavirus | 6th and 7th grade | 5th and 6th grade |
  | https://www.government.nl/topics/coronavirus-covid-19 | 6th and 7th grade | 13th and 14th grade |
- | https://www.govt.nz/covid-19-novel-coronavirus/ | TypeError("'NoneType' object is not iterable",) | -1th and 0th grade |
+ | https://www.govt.nz/covid-19-novel-coronavirus/ | 6th and 7th grade | -1th and 0th grade |
  | https://www.health.ny.gov/diseases/communicable/coronavirus/ | 10th and 11th grade | 10th and 11th grade |
  | https://www.info-coronavirus.be/fr/ | 13th and 14th grade | 15th and 16th grade |
  | https://www.london.gov.uk/about-us/organisations-we-work/london-prepared | 19th and 20th grade | 8th and 9th grade |
@@ -49,7 +49,7 @@
  | https://www.quebec.ca/en/health/health-issues/a-z/2019-coronavirus/ | 38th and 39th grade | 10th and 11th grade |
  | https://www2.gnb.ca/content/gnb/en/departments/ocmoh/cdc/content/respiratory_diseases/coronavirus.html | 7th and 8th grade | 15th and 16th grade |
  | https://www2.hse.ie/coronavirus/ | 21st and 22nd grade | 8th and 9th grade |
- | http://www.health.go.ke/covid-19/ | TypeError("'NoneType' object is not iterable",) | 1st and 2nd grade |
+ | http://www.health.go.ke/covid-19/ | 21st and 22nd grade | 1st and 2nd grade |
  | https://www.gouv.bj/coronavirus/ | 18th and 19th grade | 16th and 17th grade |
  | https://covid19.ncdc.gov.ng | 116th and 117th grade | 59th and 60th grade |
  | https://www.health.go.ug/covid/ | 10th and 11th grade | 5th and 6th grade |
@@ -57,9 +57,10 @@
  | https://yukon.ca/covid-19 | 108th and 109th grade | -1th and 0th grade |
  | https://ab.gov.ag/detail_page.php?page=42 | 13th and 14th grade | -1th and 0th grade |
  | https://www.gov.bb/coronaviru | 3rd and 4th grade | 1st and 2nd grade |
- | https://boliviasegura.gob.bo/ | TypeError("'NoneType' object is not iterable",) | -1th and 0th grade |
+ | https://boliviasegura.gob.bo/ | 3rd and 4th grade | -1th and 0th grade |
  | https://coronavirus.saude.gov.br/ | 76th and 77th grade | -1th and 0th grade |
- | https://www.bahamas.gov.bs | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.bahamas.gov.bs', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f60f97afb38>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),) | | | https://www.gob.cl/coronavirus/ | ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',)),) | | | https://coronaviruscolombia.gov.co/ | 16th and 17th grade | 15th and 16th grade |
+ | https://www.bahamas.gov.bs | 4th and 5th grade | -1th and 0th grade |
+ | https://www.gob.cl/coronavirus/ | ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',)),) | | | https://coronaviruscolombia.gov.co/ | 16th and 17th grade | 15th and 16th grade |
  | https://www.ministeriodesalud.go.cr/index.php/ | 13th and 14th grade | 6th and 7th grade |
  | https://www.presidencia.gob.cu/es/cuba/covid-19/ | 7th and 8th grade | -1th and 0th grade |
  | http://dominica.gov.dm/corona | 10th and 11th grade | 10th and 11th grade |
