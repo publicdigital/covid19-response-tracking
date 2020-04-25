@@ -51,8 +51,8 @@ def filter_bad_filename_chars(filename):
 
 markdown_file = open(os.path.join(output_directory, "language-analysis.md"), "w")
 
-markdown_file.write(" | URL | Trafilatura | Dragnet |")
-markdown_file.write(" | --- | --- | --- |")
+markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
+markdown_file.write(" | --- | --- | --- |\n")
 
 fl = open('list.txt')
 for raw_url in fl:
@@ -94,6 +94,7 @@ for raw_url in fl:
     output_for_json[url]['dragnet']['error'] = dragnet_msg
 
   markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
+  markdown_file.write("\n")
 
 fl.close()
 markdown_file.close()
