@@ -5,33 +5,33 @@
  | https://portal.ct.gov/coronavirus | 13th and 14th grade | 12th and 13th grade |
  | http://www.bccdc.ca/health-info/diseases-conditions/covid-19 | 8th and 9th grade | 14th and 15th grade |
  | https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus | 10th and 11th grade | 8th and 9th grade |
- | http://www.mohw.go.kr/react/index.jsp | 180th and 181st grade | -1th and 0th grade |
- | https://arkartassituacija.gov.lv | 12th and 13th grade | 13th and 14th grade |
+ | http://www.mohw.go.kr/react/index.jsp | 179th and 180th grade | -1th and 0th grade |
+ | https://arkartassituacija.gov.lv | 21st and 22nd grade | 11th and 12th grade |
  | https://coronavirus.idaho.gov/ | 12th and 13th grade | 8th and 9th grade |
  | https://dhss.delaware.gov/dhss/dph/index.html | 14th and 15th grade | -1th and 0th grade |
  | https://en.ssi.dk | -1th and 0th grade | 2nd and 3rd grade |
  | https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/ | 13th and 14th grade | 16th and 17th grade |
  | https://health.ri.gov/covid | 12th and 13th grade | -1th and 0th grade |
- | https://llyw.cymru/coronafeirws | 59th and 60th grade | 9th and 10th grade |
+ | https://llyw.cymru/coronafeirws | 57th and 58th grade | 9th and 10th grade |
  | https://manitoba.ca/covid19/ | 11th and 12th grade | 8th and 9th grade |
- | https://novascotia.ca/coronavirus/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='novascotia.ca', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f0d9f608860>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),) | | | https://coronavirus.in.gov/ | 13th and 14th grade | 11th and 12th grade |
+ | https://novascotia.ca/coronavirus/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='novascotia.ca', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f16769332b0>: Failed to establish a new connection: [Errno 110] Connection timed out',))",),) | | | https://coronavirus.in.gov/ | 13th and 14th grade | 11th and 12th grade |
  | https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx | 13th and 14th grade | -1th and 0th grade |
  | https://sf.gov/topics/coronavirus-covid-19 | 8th and 9th grade | -1th and 0th grade |
- | https://www.alberta.ca/coronavirus-info-for-albertans.aspx | 19th and 20th grade | 14th and 15th grade |
+ | https://www.alberta.ca/coronavirus-info-for-albertans.aspx | 18th and 19th grade | 14th and 15th grade |
  | https://www.argentina.gob.ar/salud/coronavirus-COVID-19 | 8th and 9th grade | 13th and 14th grade |
  | https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html#903671355 | 8th and 9th grade | 8th and 9th grade |
  | https://www.bundesgesundheitsministerium.de/coronavirus.html | 11th and 12th grade | 9th and 10th grade |
  | https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html | 23rd and 24th grade | -1th and 0th grade |
  | https://www.covid.is/english | 9th and 10th grade | 11th and 12th grade |
- | https://www.doh.wa.gov/Coronavirus/Workplace | 11th and 12th grade | 6th and 7th grade |
- | https://www.doh.wa.gov/emergencies/coronavirus | 11th and 12th grade | -1th and 0th grade |
+ | https://www.doh.wa.gov/Coronavirus/Workplace | 9th and 10th grade | -1th and 0th grade |
+ | https://www.doh.wa.gov/emergencies/coronavirus | 9th and 10th grade | -1th and 0th grade |
  | https://www.fhi.no/en/op/novel-coronavirus-facts-advice/ | 71st and 72nd grade | 6th and 7th grade |
  | https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/communicable-disease-control/covid-19/ | 12th and 13th grade | 10th and 11th grade |
  | https://www.gob.pe/coronavirus | 20th and 21st grade | 9th and 10th grade |
  | https://www.gouvernement.fr/en/coronavirus-covid-19 | 11th and 12th grade | 12th and 13th grade |
  | https://www.gov.nl.ca/covid-19/ | 7th and 8th grade | -1th and 0th grade |
  | https://www.gov.scot/coronavirus-covid-19/ | 12th and 13th grade | 12th and 13th grade |
- | https://www.gov.sg/features/covid-19 | 14th and 15th grade | 13th and 14th grade |
+ | https://www.gov.sg/features/covid-19 | 21st and 22nd grade | 12th and 13th grade |
  | https://www.gov.uk/coronavirus | 6th and 7th grade | 5th and 6th grade |
  | https://www.government.nl/topics/coronavirus-covid-19 | 6th and 7th grade | 13th and 14th grade |
  | https://www.govt.nz/covid-19-novel-coronavirus/ | 6th and 7th grade | -1th and 0th grade |
@@ -51,14 +51,13 @@
  | https://www2.hse.ie/coronavirus/ | 21st and 22nd grade | 8th and 9th grade |
  | http://www.health.go.ke/covid-19/ | 21st and 22nd grade | 1st and 2nd grade |
  | https://www.gouv.bj/coronavirus/ | 18th and 19th grade | 16th and 17th grade |
- | https://covid19.ncdc.gov.ng | 116th and 117th grade | 59th and 60th grade |
+ | https://covid19.ncdc.gov.ng | 118th and 119th grade | 12th and 13th grade |
  | https://www.health.go.ug/covid/ | 10th and 11th grade | 5th and 6th grade |
  | https://covid19.ca.gov/ | 8th and 9th grade | 11th and 12th grade |
  | https://yukon.ca/covid-19 | 108th and 109th grade | -1th and 0th grade |
  | https://ab.gov.ag/detail_page.php?page=42 | 13th and 14th grade | -1th and 0th grade |
  | https://www.gov.bb/coronaviru | 3rd and 4th grade | 1st and 2nd grade |
- | https://boliviasegura.gob.bo/ | 3rd and 4th grade | -1th and 0th grade |
- | https://coronavirus.saude.gov.br/ | 76th and 77th grade | -1th and 0th grade |
+ | https://boliviasegura.gob.bo/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='boliviasegura.gob.bo', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1676a25630>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution',))",),) | | | https://coronavirus.saude.gov.br/ | 76th and 77th grade | -1th and 0th grade |
  | https://www.bahamas.gov.bs | 4th and 5th grade | -1th and 0th grade |
  | https://www.gob.cl/coronavirus/ | ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',)),) | | | https://coronaviruscolombia.gov.co/ | 16th and 17th grade | 15th and 16th grade |
  | https://www.ministeriodesalud.go.cr/index.php/ | 13th and 14th grade | 6th and 7th grade |
@@ -77,5 +76,5 @@
  | http://health.gov.vc/health/index.php/c | 15th and 16th grade | 18th and 19th grade |
  | http://health.gov.sr/ | 18th and 19th grade | 9th and 10th grade |
  | http://www.ttconnect.gov.tt/gortt/portal/ttconnect/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOK9A40MTD0tjQ38Aw0sDYyCPA1dDUy9jd29DIAKIoEKDHAARwNC-r3ACvDoB1pgVOTr7JuuH1WQWJKhm5mXlq8fUVKSnJ-Xl5pcoh-uH4VmR5C7G9AOV1NDD-8wY6AhUAV47CjIjajySQv2BACEOlbd/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2X0tRMjA1STkzME9RMDkwMlJJMUUwNUszR1Ix/?WCM_GLOBAL_CONTEXT=http://www2.ttconnect.gov.tt/gortt/wcm/connect/gortt+web+content/ttconnect/citizen/topic/emergencyservices/general+information/msdfs+-+implementation+of+social+support+measures+for+covid+-19 | 16th and 17th grade | 23rd and 24th grade |
- | https://www.gub.uy/ministerio-salud-publica/coronavirus | 23rd and 24th grade | 9th and 10th grade |
+ | https://www.gub.uy/ministerio-salud-publica/coronavirus | 18th and 19th grade | 9th and 10th grade |
  | http://www.presidencia.gob.ve/Site/Web/Principal/paginas/classIndex.php | 11th and 12th grade | 19th and 20th grade |
