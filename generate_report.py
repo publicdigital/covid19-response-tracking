@@ -17,6 +17,8 @@ def filter_bad_filename_chars(filename):
 
     return re.sub('[^\w\-_\. ]', '_', filename)[0 : 100]
 
+# The lighthouse key isn't guaranteed to match the URL
+# so allow for variance (but don't implement it yet)
 def translate_to_lighthouse_key(lighthouse_keys, url):
   if url in lighthouse_keys:
     return url
@@ -98,6 +100,18 @@ def make_score_calculations(data, latest_date, output_folder_and_stub):
       print(f"Problem with {url}")
   return calculations
 
+def find_reading_age(language_data):
+  try:
+    reading_age = language_data['dragnet']['standard']
+  except KeyError:
+    try:
+      reading_age = language_data['trafilatura']['standard']
+    except KeyError:
+      reading_age = 'tbd'
+  if reading_age == '-1th and 0th grade':
+     reading_age = 'tbd'
+  return reading_age
+
 output_directory = "/home/james/screenshots"
 language_directory = os.path.join(output_directory, 'language-analysis')
 list_file = os.path.join(output_directory, 'list.txt')
@@ -135,21 +149,12 @@ with open(list_file, 'r') as f:
 
       with open(os.path.join(output_directory, "reports", url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
-        try:
-          scores['reading_age'] = latest_language_data[stripped_url]['dragnet']['standard']
-        except KeyError:
-          try:
-            scores['reading_age'] = latest_language_data[stripped_url]['trafilatura']['standard']
-          except KeyError:
-            scores['reading_age'] = 'tbd'
+        scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
 
-        if scores['reading_age'] == '-1th and 0th grade':
-            scores['reading_age'] = 'tbd'
-
-        loading_gif_filename = os.path.join(output_directory, "reports", "loading", filter_bad_filename_chars(stripped_url) + ".gif")
+        loading_gif_filename = os.path.join(output_directory, "reports", "loading", url_stub + ".gif")
 
         generate_loading_gif(site_data[latest_date], loading_gif_filename)
-        scores['loading_gif_filename'] = "/reports/loading/" + filter_bad_filename_chars(stripped_url) + ".gif"
+        scores['loading_gif_filename'] = "/reports/loading/" + url_stub + ".gif"
 
         output = page_template.render(scores)
         report.write(output)

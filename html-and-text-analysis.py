@@ -65,7 +65,7 @@ markdown_file = open(os.path.join(output_directory, "language-analysis.md"), "w"
 markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
 markdown_file.write(" | --- | --- | --- |\n")
 
-fl = open('list.txt')
+fl = open(os.path.join(output_directory, 'list.txt'))
 for raw_url in fl:
   url = raw_url.strip()
   output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
