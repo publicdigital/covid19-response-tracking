@@ -6,6 +6,7 @@ import re
 import statistics
 import base64
 import imageio
+import matplotlib.pyplot as plt
 
 def filter_bad_filename_chars(filename):
     """
@@ -57,21 +58,42 @@ def get_all_scores():
     parsed_data[url][date] = loaded_json
   return parsed_data
 
-def make_score_calculations(data):
-  extracted_accessibility = [item['categories']['accessibility']['score'] for item in data.values() if item['categories']['accessibility']['score']]
-  extracted_performance = [item['categories']['performance']['score'] for item in data.values() if item['categories']['performance']['score']]
+# TODO: The image produced truncates the axis labels. Fix that.
+def generate_graph(x, y, filename, title):
+  fig = plt.figure()
+  ax1 = fig.add_subplot(1, 1, 1)
+  ax1.set_title(title)
+  ax1.scatter(x, y, label= "stars", color= "green", marker= "*", s=30)
+  ax1.set_xlabel('Date')
+  ax1.set_ylabel('Score')
+  for tick in ax1.get_xticklabels():
+    tick.set_rotation(90)
+  print(filename)
+  fig.savefig(filename)
+  plt.close(fig)
 
+def make_score_calculations(data, latest_date, output_folder_and_stub):
   calculations = {}
+
+  dates = list(data.keys())
+  dates.sort()
+  extracted_accessibility = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
+  extracted_performance = [data[key]['categories']['performance']['score'] for key in dates if data[key]['categories']['performance']['score']]
+  try:
+    generate_graph(dates, extracted_accessibility, output_folder_and_stub + "_accessibility.png", "Accessibility")
+    generate_graph(dates, extracted_performance, output_folder_and_stub + "_performance.png", "Performance")
+  except Exception as e:
+    print("Couldn't generate graphs: " + repr(e))
 
   try:
     if len(extracted_accessibility) > 0:
       calculations['max_accessibility'] = max(extracted_accessibility)
       calculations['average_accessibility'] = statistics.mean(extracted_accessibility)
-      calculations['current_accessibility'] = extracted_accessibility[-1]
+      calculations['current_accessibility'] = data[latest_date]['categories']['accessibility']['score']
     if len(extracted_performance) > 0:
       calculations['max_performance'] = max(extracted_performance)
       calculations['average_performance'] = statistics.mean(extracted_performance)
-      calculations['current_performance'] = extracted_performance[-1]
+      calculations['current_performance'] = data[latest_date]['categories']['performance']['score']
   except Exception as err:
       print(repr(err))
       print(f"Problem with {url}")
@@ -92,6 +114,7 @@ with open(list_file, 'r') as f:
   for url in f:
       stripped_url = url.strip()
       scores = {}
+      url_stub = filter_bad_filename_chars(stripped_url)
 
       try:
         key = translate_to_lighthouse_key(parsed_data.keys(), stripped_url)
@@ -99,12 +122,14 @@ with open(list_file, 'r') as f:
         dates_covered = list(site_data.keys())
         dates_covered.sort()
         latest_date = dates_covered[-1]
-        scores = make_score_calculations(site_data)
+        graph_folder_and_prefix = os.path.join(output_directory, "reports", "graphs", url_stub)
+        scores = make_score_calculations(site_data, latest_date, graph_folder_and_prefix)
+        scores['graph_filename'] = "/reports/graphs/" + url_stub
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
           print(repr(e))
 
-      with open(os.path.join(output_directory, "reports", filter_bad_filename_chars(stripped_url) + ".html"), "w") as report:
+      with open(os.path.join(output_directory, "reports", url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
         try:
           scores['reading_age'] = latest_language_data[stripped_url]['dragnet']['standard']
