@@ -20,6 +20,12 @@ def translate_to_lighthouse_key(lighthouse_keys, url):
   #  print(lighthouse_keys)
   return url
 
+def get_reading_ages(language_directory):
+  language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
+  latest_file = max(language_files_list, key=os.path.getctime)
+  with open(latest_file) as lang_file:
+      return json.loads(lang_file.read())
+
 def get_all_scores():
   json_file_list = glob.glob('/home/james/screenshots/lighthouse-reports/*.json')
 
@@ -58,11 +64,13 @@ def make_score_calculations(data):
       print(extracted_performance)
   return calculations
 
-parsed_data = get_all_scores()
-
 output_directory = "/home/james/screenshots"
+language_directory = os.path.join(output_directory, 'language-analysis')
 list_file = os.path.join(output_directory, 'list.txt')
 tmpl_file = os.path.join(output_directory, 'template.html')
+
+latest_language_data = get_reading_ages(language_directory)
+parsed_data = get_all_scores()
 
 with open(tmpl_file) as tmpl:
   template = Template(tmpl.read())
@@ -79,7 +87,17 @@ with open(list_file, 'r') as f:
 
       with open(os.path.join(output_directory, "reports", filter_bad_filename_chars(stripped_url) + ".html"), "w") as report:
         scores['site_name'] = stripped_url
-        scores['reading_age'] = 'tbd'
+        try:
+          scores['reading_age'] = latest_language_data[stripped_url]['dragnet']['standard']
+        except KeyError:
+          try:
+            scores['reading_age'] = latest_language_data[stripped_url]['trafilatura']['standard']
+          except KeyError:
+            scores['reading_age'] = 'tbd'
+
+        if scores['reading_age'] == '-1th and 0th grade':
+            scores['reading_age'] = 'tbd'
+ 
         output = template.render(scores)
         report.write(output)
 
