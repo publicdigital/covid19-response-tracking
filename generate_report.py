@@ -112,6 +112,11 @@ def find_reading_age(language_data):
      reading_age = 'tbd'
   return reading_age
 
+def generate_timelapse(url_stub, root_folder):
+    output_file = os.path.join(root_folder, "reports", "timelapses", url_stub + ".gif")
+    os.system(f"convert -loop 1 -delay 10 {root_folder}/**/{url_stub}.png {output_file}")
+    return f"/reports/timelapses/{url_stub}.png"
+
 output_directory = "/home/james/screenshots"
 language_directory = os.path.join(output_directory, 'language-analysis')
 list_file = os.path.join(output_directory, 'list.txt')
@@ -142,6 +147,7 @@ with open(list_file, 'r') as f:
         latest_date = dates_covered[-1]
         graph_folder_and_prefix = os.path.join(output_directory, "reports", "graphs", url_stub)
         scores = make_score_calculations(site_data, latest_date, graph_folder_and_prefix)
+        scores['timelapse_filename'] = generate_timelapse(url_stub, output_directory)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
@@ -149,8 +155,10 @@ with open(list_file, 'r') as f:
 
       with open(os.path.join(output_directory, "reports", url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
-        scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
-
+        try:
+          scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
+        except KeyError:
+          scores['reading_age'] = 'tbd'
         loading_gif_filename = os.path.join(output_directory, "reports", "loading", url_stub + ".gif")
 
         generate_loading_gif(site_data[latest_date], loading_gif_filename)
