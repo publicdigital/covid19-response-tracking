@@ -68,7 +68,6 @@ def generate_graph(x, y, filename, title):
   ax1.set_ylabel('Score')
   for tick in ax1.get_xticklabels():
     tick.set_rotation(90)
-  print(filename)
   fig.savefig(filename)
   plt.close(fig)
 
@@ -102,13 +101,18 @@ def make_score_calculations(data, latest_date, output_folder_and_stub):
 output_directory = "/home/james/screenshots"
 language_directory = os.path.join(output_directory, 'language-analysis')
 list_file = os.path.join(output_directory, 'list.txt')
-tmpl_file = os.path.join(output_directory, 'template.html')
+page_tmpl_file = os.path.join(output_directory, 'template.html')
+index_tmpl_file = os.path.join(output_directory, 'index_template.html')
 
 latest_language_data = get_reading_ages(language_directory)
 parsed_data = get_all_scores()
+site_list = []
 
-with open(tmpl_file) as tmpl:
-  template = Template(tmpl.read())
+with open(page_tmpl_file) as tmpl:
+  page_template = Template(tmpl.read())
+
+with open(index_tmpl_file) as tmpl:
+  index_template = Template(tmpl.read())
 
 with open(list_file, 'r') as f:
   for url in f:
@@ -147,6 +151,11 @@ with open(list_file, 'r') as f:
         generate_loading_gif(site_data[latest_date], loading_gif_filename)
         scores['loading_gif_filename'] = "/reports/loading/" + filter_bad_filename_chars(stripped_url) + ".gif"
 
-        output = template.render(scores)
+        output = page_template.render(scores)
         report.write(output)
+        site_list.append({'name': stripped_url, 'path': "/reports/" + url_stub + ".html"})
+
+  index = index_template.render(sites = site_list)
+  with open(os.path.join(output_directory, "reports", "index.html"), "w") as index_file:
+      index_file.write(index)
 
