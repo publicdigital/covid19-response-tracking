@@ -4,6 +4,8 @@ import json
 from jinja2 import Template
 import re
 import statistics
+import base64
+import imageio
 
 def filter_bad_filename_chars(filename):
     """
@@ -17,8 +19,21 @@ def filter_bad_filename_chars(filename):
 def translate_to_lighthouse_key(lighthouse_keys, url):
   if url in lighthouse_keys:
     return url
-  #  print(lighthouse_keys)
   return url
+
+def generate_loading_gif(report, output_filename):
+  try:
+    images = []
+    times = []
+
+    for item in report['audits']['screenshot-thumbnails']['details']['items']:
+      decoded = base64.b64decode(item['data'])
+      images.append(imageio.imread(decoded))
+      times.append(float(item['timing']) / 1000)
+
+    imageio.mimsave(output_filename, images, loop = 1, duration = times)
+  except KeyError as e:
+      print(repr(e))
 
 def get_reading_ages(language_directory):
   language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
@@ -39,12 +54,12 @@ def get_all_scores():
     if not url in parsed_data:
         parsed_data[url] = {}
 
-    parsed_data[url][date] = loaded_json['categories']
+    parsed_data[url][date] = loaded_json
   return parsed_data
 
 def make_score_calculations(data):
-  extracted_accessibility = [item['accessibility']['score'] for item in data.values() if item['accessibility']['score']]
-  extracted_performance = [item['performance']['score'] for item in data.values() if item['performance']['score']]
+  extracted_accessibility = [item['categories']['accessibility']['score'] for item in data.values() if item['categories']['accessibility']['score']]
+  extracted_performance = [item['categories']['performance']['score'] for item in data.values() if item['categories']['performance']['score']]
 
   calculations = {}
 
@@ -60,8 +75,6 @@ def make_score_calculations(data):
   except Exception as err:
       print(repr(err))
       print(f"Problem with {url}")
-      print(extracted_accessibility)
-      print(extracted_performance)
   return calculations
 
 output_directory = "/home/james/screenshots"
@@ -78,12 +91,18 @@ with open(tmpl_file) as tmpl:
 with open(list_file, 'r') as f:
   for url in f:
       stripped_url = url.strip()
+      scores = {}
+
       try:
         key = translate_to_lighthouse_key(parsed_data.keys(), stripped_url)
         site_data = parsed_data[key]
+        dates_covered = list(site_data.keys())
+        dates_covered.sort()
+        latest_date = dates_covered[-1]
         scores = make_score_calculations(site_data)
-      except KeyError:
+      except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
+          print(repr(e))
 
       with open(os.path.join(output_directory, "reports", filter_bad_filename_chars(stripped_url) + ".html"), "w") as report:
         scores['site_name'] = stripped_url
@@ -97,7 +116,12 @@ with open(list_file, 'r') as f:
 
         if scores['reading_age'] == '-1th and 0th grade':
             scores['reading_age'] = 'tbd'
- 
+
+        loading_gif_filename = os.path.join(output_directory, "reports", "loading", filter_bad_filename_chars(stripped_url) + ".gif")
+
+        generate_loading_gif(site_data[latest_date], loading_gif_filename)
+        scores['loading_gif_filename'] = "/reports/loading/" + filter_bad_filename_chars(stripped_url) + ".gif"
+
         output = template.render(scores)
         report.write(output)
 
