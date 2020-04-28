@@ -7,6 +7,7 @@ import statistics
 import base64
 import imageio
 import matplotlib.pyplot as plt
+from collections import OrderedDict
 
 def filter_bad_filename_chars(filename):
     """
@@ -139,13 +140,16 @@ index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
 
 latest_language_data = get_reading_ages(language_directory)
 parsed_data = get_all_scores()
-site_list = []
+site_list = {}
 
 with open(page_tmpl_file) as tmpl:
   page_template = Template(tmpl.read())
 
 with open(index_tmpl_file) as tmpl:
   index_template = Template(tmpl.read())
+
+top_scores = {'accessibility' : {}, 'performance' : {}}
+avg_scores = {'accessibility' : {}, 'performance' : {}}
 
 with open(list_file, 'r') as f:
   for url in f:
@@ -166,7 +170,12 @@ with open(list_file, 'r') as f:
         extracted_scores = extract_scores(site_data, dates_covered)
         scores = calculate_scores(latest_date, extracted_scores, site_data)
 
-        generate_graphs_over_time(dates_covered, extracted, graph_directory_and_prefix)
+        top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
+        top_scores['performance'][stripped_url] = scores.get('max_performance', 0)
+        avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
+        avg_scores['performance'][stripped_url] = scores.get('average_performance', 0)
+
+        generate_graphs_over_time(dates_covered, extracted_scores, graph_directory_and_prefix)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
 
         scores['timelapse_filename'] = generate_timelapse(url_stub, output_directory)
@@ -182,12 +191,16 @@ with open(list_file, 'r') as f:
         except KeyError:
           scores['reading_age'] = 'tbd'
 
-
         output = page_template.render(scores)
         report.write(output)
-        site_list.append({'name': stripped_url, 'path': "/reports/" + url_stub + ".html"})
+        site_list[stripped_url] = "/reports/" + url_stub + ".html"
 
-  index = index_template.render(sites = site_list)
+  rankings = { 'accessibility': [], 'performance' : [] }
+  for consideration in rankings:
+      d_sorted_by_value = OrderedDict(sorted(top_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
+      rankings[consideration] = d_sorted_by_value
+
+  index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
   with open(os.path.join(output_directory, "reports", "index.html"), "w") as index_file:
       index_file.write(index)
 
