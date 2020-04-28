@@ -105,7 +105,7 @@ html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
 							<tbody>
 								{% for site in considerations[consideration] %}
 								<tr>
-									<td><a title="{{sites[site]}}" href="{{sites[site] |truncate(60, True) }}">{{site}}</a></td>
+									<td><a title="{{site}}" href="{{sites[site]}}">{{site|truncate(60, True)}}</a></td>
 									<td>{{considerations[consideration][site]}}</td>
 									<td>{{avg_scores[consideration][site]}}</td>
 								</tr>
@@ -117,7 +117,7 @@ html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
 						<h2>Full list</h2>
 						<ul style="display: block">
 							{% for site in sites %}
-							<li><a title="{{sites[site]}}" href="{{sites[site] |truncate(60, True) }}">{{site}}</a></li>
+							<li><a title="{{site}}" href="{{sites[site]}}">{{site|truncate(60, True)}}</a></li>
 							{% endfor %}
 						</ul>
 					</div>
