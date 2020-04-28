@@ -122,7 +122,7 @@ def find_reading_age(language_data):
 def generate_timelapse(url_stub, root_directory):
     output_file = os.path.join(root_directory, "reports", "timelapses", url_stub + ".gif")
     os.system(f"convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
-    return f"/reports/timelapses/{url_stub}.png"
+    return f"/reports/timelapses/{url_stub}.gif"
 
 def identify_latest_date(site_data):
   dates_covered = list(site_data.keys())
