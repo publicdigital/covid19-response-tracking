@@ -120,8 +120,8 @@ def generate_timelapse(url_stub, root_folder):
 output_directory = "/home/james/screenshots"
 language_directory = os.path.join(output_directory, 'language-analysis')
 list_file = os.path.join(output_directory, 'list.txt')
-page_tmpl_file = os.path.join(output_directory, 'template.html')
-index_tmpl_file = os.path.join(output_directory, 'index_template.html')
+page_tmpl_file = os.path.join(output_directory, 'templates', 'site.html')
+index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
 
 latest_language_data = get_reading_ages(language_directory)
 parsed_data = get_all_scores()
