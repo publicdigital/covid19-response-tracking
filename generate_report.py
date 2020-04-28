@@ -63,6 +63,7 @@ def get_all_scores():
     parsed_data[url][date] = loaded_json
   return parsed_data
 
+# TODO: Look at how we could get x,y as a dict to avoid mismatches
 # TODO: The image produced truncates the axis labels. Fix that.
 def generate_graph(x, y, filename, title):
   fig = plt.figure()
