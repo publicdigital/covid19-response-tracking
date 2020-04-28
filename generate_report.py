@@ -24,7 +24,7 @@ def translate_to_lighthouse_key(lighthouse_keys, url):
     return url
   return url
 
-def generate_loading_gif(report, output_filename):
+def generate_loading_gif(report, output_filename, url_stub):
   try:
     images = []
     times = []
@@ -35,8 +35,10 @@ def generate_loading_gif(report, output_filename):
       times.append(float(item['timing']) / 1000)
 
     imageio.mimsave(output_filename, images, loop = 1, duration = times)
+    return "/reports/loading/" + url_stub + ".gif"
   except KeyError as e:
       print(repr(e))
+      return ""
 
 def get_reading_ages(language_directory):
   language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
@@ -73,27 +75,30 @@ def generate_graph(x, y, filename, title):
   fig.savefig(filename)
   plt.close(fig)
 
-def make_score_calculations(data, latest_date, output_folder_and_stub):
-  calculations = {}
+def extract_scores(data, dates):
+  output = {'accessibility' : [], 'performance' : []}
+  for characteristic in output:
+    output[characteristic] = [data[key]['categories'][characteristic]['score'] for key in dates if data[key]['categories'][characteristic]['score']]
+  return output
 
-  dates = list(data.keys())
-  dates.sort()
-  extracted_accessibility = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
-  extracted_performance = [data[key]['categories']['performance']['score'] for key in dates if data[key]['categories']['performance']['score']]
+def generate_graphs_over_time(dates, extracted, output_directory_and_stub):
   try:
-    generate_graph(dates, extracted_accessibility, output_folder_and_stub + "_accessibility.png", "Accessibility")
-    generate_graph(dates, extracted_performance, output_folder_and_stub + "_performance.png", "Performance")
+    generate_graph(dates, extracted['accessibility'], output_directory_and_stub + "_accessibility.png", "Accessibility")
+    generate_graph(dates, extracted['performance'], output_directory_and_stub + "_performance.png", "Performance")
   except Exception as e:
     print("Couldn't generate graphs: " + repr(e))
 
+def calculate_scores(latest_date, extracted, data):
+  calculations = {}
+
   try:
-    if len(extracted_accessibility) > 0:
-      calculations['max_accessibility'] = max(extracted_accessibility)
-      calculations['average_accessibility'] = statistics.mean(extracted_accessibility)
+    if len(extracted['accessibility']) > 0:
+      calculations['max_accessibility'] = max(extracted['accessibility'])
+      calculations['average_accessibility'] = statistics.mean(extracted['accessibility'])
       calculations['current_accessibility'] = data[latest_date]['categories']['accessibility']['score']
-    if len(extracted_performance) > 0:
-      calculations['max_performance'] = max(extracted_performance)
-      calculations['average_performance'] = statistics.mean(extracted_performance)
+    if len(extracted['performance']) > 0:
+      calculations['max_performance'] = max(extracted['performance'])
+      calculations['average_performance'] = statistics.mean(extracted['performance'])
       calculations['current_performance'] = data[latest_date]['categories']['performance']['score']
   except Exception as err:
       print(repr(err))
@@ -112,13 +117,22 @@ def find_reading_age(language_data):
      reading_age = 'tbd'
   return reading_age
 
-def generate_timelapse(url_stub, root_folder):
-    output_file = os.path.join(root_folder, "reports", "timelapses", url_stub + ".gif")
-    os.system(f"convert -loop 1 -delay 10 {root_folder}/**/{url_stub}.png {output_file}")
+def generate_timelapse(url_stub, root_directory):
+    output_file = os.path.join(root_directory, "reports", "timelapses", url_stub + ".gif")
+    os.system(f"convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
     return f"/reports/timelapses/{url_stub}.png"
+
+def identify_latest_date(site_data):
+  dates_covered = list(site_data.keys())
+  dates_covered.sort()
+  return dates_covered[-1]
 
 output_directory = "/home/james/screenshots"
 language_directory = os.path.join(output_directory, 'language-analysis')
+graphs_directory = os.path.join(output_directory, "reports", "graphs")
+timelapses_directory = os.path.join(output_directory, "reports", "timelapses")
+loading_directory = os.path.join(output_directory, "reports", "loading")
+
 list_file = os.path.join(output_directory, 'list.txt')
 page_tmpl_file = os.path.join(output_directory, 'templates', 'site.html')
 index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
@@ -138,17 +152,25 @@ with open(list_file, 'r') as f:
       stripped_url = url.strip()
       scores = {}
       url_stub = filter_bad_filename_chars(stripped_url)
+      loading_gif_filename = os.path.join(loading_directory, url_stub + ".gif")
+      graph_directory_and_prefix = os.path.join(graphs_directory, url_stub)
 
       try:
         key = translate_to_lighthouse_key(parsed_data.keys(), stripped_url)
         site_data = parsed_data[key]
+
         dates_covered = list(site_data.keys())
         dates_covered.sort()
         latest_date = dates_covered[-1]
-        graph_folder_and_prefix = os.path.join(output_directory, "reports", "graphs", url_stub)
-        scores = make_score_calculations(site_data, latest_date, graph_folder_and_prefix)
-        scores['timelapse_filename'] = generate_timelapse(url_stub, output_directory)
+
+        extracted_scores = extract_scores(site_data, dates_covered)
+        scores = calculate_scores(latest_date, extracted_scores, site_data)
+
+        generate_graphs_over_time(dates_covered, extracted, graph_directory_and_prefix)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
+
+        scores['timelapse_filename'] = generate_timelapse(url_stub, output_directory)
+        scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
           print(repr(e))
@@ -159,10 +181,7 @@ with open(list_file, 'r') as f:
           scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
         except KeyError:
           scores['reading_age'] = 'tbd'
-        loading_gif_filename = os.path.join(output_directory, "reports", "loading", url_stub + ".gif")
 
-        generate_loading_gif(site_data[latest_date], loading_gif_filename)
-        scores['loading_gif_filename'] = "/reports/loading/" + url_stub + ".gif"
 
         output = page_template.render(scores)
         report.write(output)
