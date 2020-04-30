@@ -6,6 +6,8 @@ import re
 import statistics
 import base64
 import imageio
+import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 
@@ -72,6 +74,7 @@ def generate_graph(x, y, filename, title):
   ax1.scatter(x, y, label= "stars", color= "green", marker= "*", s=30)
   ax1.set_xlabel('Date')
   ax1.set_ylabel('Score')
+  ax1.set_ylim(bottom = 0, top = 1)
   for tick in ax1.get_xticklabels():
     tick.set_rotation(90)
   fig.savefig(filename)
