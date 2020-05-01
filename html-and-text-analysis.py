@@ -1,7 +1,7 @@
 import textstat
 import trafilatura
 import requests
-import dragnet
+#import dragnet
 from lxml import html
 import json
 from datetime import datetime
@@ -96,12 +96,13 @@ for raw_url in fl:
   except Exception as e:
       output_for_json[url]['trafilatura'] = {'error' : repr(e)}
 
-  try:
-    dragnet_text = process_dragnet(downloaded)
-    output_for_json[url]['dragnet'] = get_scores(dragnet_text)
-    dragnet_msg = output_for_json[url]['dragnet']['standard']
-  except Exception as e:
-    output_for_json[url]['dragnet'] = {'error' : repr(e)}
+#  try:
+#    dragnet_text = process_dragnet(downloaded)
+#    output_for_json[url]['dragnet'] = get_scores(dragnet_text)
+#    dragnet_msg = output_for_json[url]['dragnet']['standard']
+#  except Exception as e:
+#    output_for_json[url]['dragnet'] = {'error' : repr(e)}
+  dragnet_msg = ""
 
   markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
   markdown_file.write("\n")
