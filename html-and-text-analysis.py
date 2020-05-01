@@ -6,6 +6,7 @@ from lxml import html
 import json
 from datetime import datetime
 import os
+import errno
 import re
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
@@ -19,12 +20,12 @@ output_for_json = {}
 try:
     os.makedirs(html_output_directory)
 except OSError as e:
-    if e.errno != os.errno.EEXIST:
+    if e.errno != errno.EEXIST:
         raise
 try:
     os.makedirs(json_output_directory)
 except OSError as e:
-    if e.errno != os.errno.EEXIST:
+    if e.errno != errno.EEXIST:
         raise
 
 def process_trafilatura(downloaded):
