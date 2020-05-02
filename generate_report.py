@@ -11,6 +11,12 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 
+url_mappings = {
+  'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
+  'https://health.ri.gov/covid': 'https://health.ri.gov/covid/',
+  'https://www.health.ny.gov/diseases/communicable/coronavirus/': 'https://coronavirus.health.ny.gov/home',
+  'https://www.govt.nz/covid-19-novel-coronavirus/': 'https://covid19.govt.nz/'
+        }
 def filter_bad_filename_chars(filename):
     """
         Filter bad chars for any filename
@@ -25,6 +31,8 @@ def filter_bad_filename_chars(filename):
 def translate_to_lighthouse_key(lighthouse_keys, url):
   if url in lighthouse_keys:
     return url
+  elif url_mappings[url] in lighthouse_keys:
+    return url_mappings[url]
   return url
 
 def generate_loading_gif(report, output_filename, url_stub):
