@@ -10,6 +10,7 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
+import errno
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -145,17 +146,27 @@ def identify_latest_date(site_data):
   return dates_covered[-1]
 
 output_directory = "/home/james/screenshots"
-language_directory = os.path.join(output_directory, 'language-analysis')
-graphs_directory = os.path.join(output_directory, "reports", "graphs")
-timelapses_directory = os.path.join(output_directory, "reports", "timelapses")
-loading_directory = os.path.join(output_directory, "reports", "loading")
+directories = {
+  'reports': os.path.join(output_directory, "reports"),
+  'lighthouse': os.path.join(output_directory, "lighthouse-reports"),
+  'languages': os.path.join(output_directory, 'language-analysis'),
+  'graphs': os.path.join(output_directory, "reports", "graphs"),
+  'timelapses': os.path.join(output_directory, "reports", "timelapses"),
+  'loading': os.path.join(output_directory, "reports", "loading")
+   }
+for directory in directories:
+    try:
+      os.mkdir(directories[directory])
+    except OSError as error:
+      if error.errno != errno.EEXIST:
+        raise error
 
 list_file = os.path.join(output_directory, 'list.txt')
 page_tmpl_file = os.path.join(output_directory, 'templates', 'site.html')
 index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
 
-latest_language_data = get_reading_ages(language_directory)
-parsed_data = get_all_scores()
+latest_language_data = get_reading_ages(directories['languages'])
+parsed_data = get_all_scores(directories['lighthouse'])
 site_list = {}
 
 with open(page_tmpl_file) as tmpl:
@@ -172,8 +183,8 @@ with open(list_file, 'r') as f:
       stripped_url = url.strip()
       scores = {}
       url_stub = filter_bad_filename_chars(stripped_url)
-      loading_gif_filename = os.path.join(loading_directory, url_stub + ".gif")
-      graph_directory_and_prefix = os.path.join(graphs_directory, url_stub)
+      loading_gif_filename = os.path.join(directories['loading'], url_stub + ".gif")
+      graph_directory_and_prefix = os.path.join(directories['graphs'], url_stub)
 
       try:
         key = translate_to_lighthouse_key(parsed_data.keys(), stripped_url)
@@ -200,7 +211,7 @@ with open(list_file, 'r') as f:
           print(f"No sign of lighthouse data for {stripped_url}")
           print(repr(e))
 
-      with open(os.path.join(output_directory, "reports", url_stub + ".html"), "w") as report:
+      with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
         try:
           scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
@@ -217,6 +228,6 @@ with open(list_file, 'r') as f:
       rankings[consideration] = d_sorted_by_value
 
   index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
-  with open(os.path.join(output_directory, "reports", "index.html"), "w") as index_file:
+  with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
       index_file.write(index)
 
