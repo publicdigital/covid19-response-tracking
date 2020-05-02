@@ -62,9 +62,22 @@ def get_reading_ages(language_directory):
   with open(latest_file) as lang_file:
       return json.loads(lang_file.read())
 
-def get_all_scores():
-  json_file_list = glob.glob('/home/james/screenshots/lighthouse-reports/*.json')
+def get_map_of_lighthouse_data(lighthouse_folder):
+  json_file_list = glob.glob(lighthouse_folder + '/*.json')
+  combined = {}
+  for json_file in json_file_list:
+    try:
+      json_data = open(json_file, "r").read()
+      loaded_json = json.loads(json_data)
+      url = loaded_json['finalUrl']
+      if not url in combined.keys():
+        combined[url] = []
+      combined[url].append(json_file)
+    except KeyError as e:
+        raise e
+  return combined
 
+def get_date_indexed_lighthouse_data(json_file_list):
   parsed_data = {}
 
   for json_file in json_file_list:
@@ -72,10 +85,8 @@ def get_all_scores():
     loaded_json = json.loads(json_data)
     url = loaded_json['finalUrl']
     date = loaded_json['fetchTime'].split('T')[0]
-    if not url in parsed_data:
-        parsed_data[url] = {}
 
-    parsed_data[url][date] = loaded_json
+    parsed_data[date] = loaded_json
   return parsed_data
 
 # TODO: Look at how we could get x,y as a dict to avoid mismatches
@@ -166,7 +177,7 @@ page_tmpl_file = os.path.join(output_directory, 'templates', 'site.html')
 index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
 
 latest_language_data = get_reading_ages(directories['languages'])
-parsed_data = get_all_scores(directories['lighthouse'])
+lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
 site_list = {}
 
 with open(page_tmpl_file) as tmpl:
@@ -187,8 +198,8 @@ with open(list_file, 'r') as f:
       graph_directory_and_prefix = os.path.join(directories['graphs'], url_stub)
 
       try:
-        key = translate_to_lighthouse_key(parsed_data.keys(), stripped_url)
-        site_data = parsed_data[key]
+        key = translate_to_lighthouse_key(lighthouse_index.keys(), stripped_url)
+        site_data = get_date_indexed_lighthouse_data(lighthouse_index[key])
 
         dates_covered = list(site_data.keys())
         dates_covered.sort()
