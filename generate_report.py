@@ -41,14 +41,18 @@ def generate_loading_gif(report, output_filename, url_stub):
     times = []
 
     for item in report['audits']['screenshot-thumbnails']['details']['items']:
-      decoded = base64.b64decode(item['data'])
+      if item['data'][0:4] == 'data':
+        encoded_data = item['data'][23:]
+      else:
+        encoded_data = item['data']
+      decoded = base64.b64decode(encoded_data)
       images.append(imageio.imread(decoded))
       times.append(float(item['timing']) / 1000)
 
     imageio.mimsave(output_filename, images, loop = 1, duration = times)
     return "/reports/loading/" + url_stub + ".gif"
   except KeyError as e:
-      print(repr(e))
+      print(f"Couldn't generate loading gif for {url_stub}: {report['audits']['screenshot-thumbnails']['errorMessage']}")
       return ""
 
 def get_reading_ages(language_directory):
