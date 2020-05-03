@@ -17,7 +17,10 @@ url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
   'https://health.ri.gov/covid': 'https://health.ri.gov/covid/',
   'https://www.health.ny.gov/diseases/communicable/coronavirus/': 'https://coronavirus.health.ny.gov/home',
-  'https://www.govt.nz/covid-19-novel-coronavirus/': 'https://covid19.govt.nz/'
+  'https://www.govt.nz/covid-19-novel-coronavirus/': 'https://covid19.govt.nz/',
+  'https://en.ssi.dk': 'https://en.ssi.dk/',
+  'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
+  'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/'
         }
 def filter_bad_filename_chars(filename):
     """
