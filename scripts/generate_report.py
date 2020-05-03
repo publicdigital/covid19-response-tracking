@@ -29,7 +29,7 @@ def filter_bad_filename_chars(filename):
     # Before, just avoid triple underscore escape for the classic '://' pattern
     filename = filename.replace('://', '_')
 
-    return re.sub('[^\w\-_\. ]', '_', filename)[0 : 100]
+    return re.sub('[^\w\-_\. ]', '_', filename)
 
 # The lighthouse key isn't guaranteed to match the URL
 # so allow for variance (but don't implement it yet)
@@ -150,8 +150,7 @@ def find_reading_age(language_data):
      reading_age = 'tbd'
   return reading_age
 
-def generate_timelapse(url_stub, root_directory):
-    output_file = os.path.join(root_directory, "reports", "timelapses", url_stub + ".gif")
+def generate_timelapse(url_stub, root_directory, output_file):
     os.system(f"convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
     return f"/reports/timelapses/{url_stub}.gif"
 
@@ -197,7 +196,8 @@ with open(list_file, 'r') as f:
   for url in f:
       stripped_url = url.strip()
       scores = {}
-      url_stub = filter_bad_filename_chars(stripped_url)
+      clean_url = filter_bad_filename_chars(stripped_url)
+      url_stub = clean_url[0:100]
       loading_gif_filename = os.path.join(directories['loading'], url_stub + ".gif")
       graph_directory_and_prefix = os.path.join(directories['graphs'], url_stub)
 
@@ -220,7 +220,8 @@ with open(list_file, 'r') as f:
         generate_graphs_over_time(dates_covered, extracted_scores, graph_directory_and_prefix)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
 
-        scores['timelapse_filename'] = generate_timelapse(url_stub, base_directory)
+        output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
+        scores['timelapse_filename'] = generate_timelapse(clean_url, base_directory, output_file)
         scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
