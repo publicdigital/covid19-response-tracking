@@ -11,6 +11,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 import errno
+import pathlib
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -156,14 +157,14 @@ def identify_latest_date(site_data):
   dates_covered.sort()
   return dates_covered[-1]
 
-output_directory = "/home/james/screenshots"
+base_directory = pathlib.Path(__file__).parent.parent.absolute()
 directories = {
-  'reports': os.path.join(output_directory, "reports"),
-  'lighthouse': os.path.join(output_directory, "lighthouse-reports"),
-  'languages': os.path.join(output_directory, 'language-analysis'),
-  'graphs': os.path.join(output_directory, "reports", "graphs"),
-  'timelapses': os.path.join(output_directory, "reports", "timelapses"),
-  'loading': os.path.join(output_directory, "reports", "loading")
+  'reports': os.path.join(base_directory, "reports"),
+  'lighthouse': os.path.join(base_directory, "lighthouse-reports"),
+  'languages': os.path.join(base_directory, 'language-analysis'),
+  'graphs': os.path.join(base_directory, "reports", "graphs"),
+  'timelapses': os.path.join(base_directory, "reports", "timelapses"),
+  'loading': os.path.join(base_directory, "reports", "loading")
    }
 for directory in directories:
     try:
@@ -172,9 +173,9 @@ for directory in directories:
       if error.errno != errno.EEXIST:
         raise error
 
-list_file = os.path.join(output_directory, 'list.txt')
-page_tmpl_file = os.path.join(output_directory, 'templates', 'site.html')
-index_tmpl_file = os.path.join(output_directory, 'templates', 'index.html')
+list_file = os.path.join(base_directory, 'list.txt')
+page_tmpl_file = os.path.join(base_directory, 'templates', 'site.html')
+index_tmpl_file = os.path.join(base_directory, 'templates', 'index.html')
 
 latest_language_data = get_reading_ages(directories['languages'])
 lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
@@ -216,7 +217,7 @@ with open(list_file, 'r') as f:
         generate_graphs_over_time(dates_covered, extracted_scores, graph_directory_and_prefix)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
 
-        scores['timelapse_filename'] = generate_timelapse(url_stub, output_directory)
+        scores['timelapse_filename'] = generate_timelapse(url_stub, base_directory)
         scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")

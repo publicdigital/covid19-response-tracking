@@ -8,9 +8,10 @@ from datetime import datetime
 import os
 import errno
 import re
+import pathlib
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
-output_directory = "/home/james/screenshots"
+output_directory = pathlib.Path(__file__).parent.parent.absolute()
 html_output_directory = os.path.join(output_directory, formatted_date)
 json_output_directory= os.path.join(output_directory, "language-analysis")
 
