@@ -1,0 +1,3054 @@
+{
+  "captchaResult": "CAPTCHA_NOT_NEEDED",
+  "kind": "pagespeedonline#result",
+  "id": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19",
+  "loadingExperience": {
+    "id": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 985,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.75722700498414119
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.21549614861803351
+          },
+          {
+            "min": 3000,
+            "proportion": 0.027276846397825096
+          }
+        ],
+        "category": "FAST"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 11,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.98982525989825254
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0075204600752046
+          },
+          {
+            "min": 300,
+            "proportion": 0.0026542800265428
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "FAST",
+    "initial_url": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19"
+  },
+  "lighthouseResult": {
+    "requestedUrl": "https://www.ontario.ca/page/2019-novel-coronavirus",
+    "finalUrl": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19",
+    "lighthouseVersion": "5.6.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+    "fetchTime": "2020-05-06T16:25:54.155Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse",
+      "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+      "benchmarkIndex": 675
+    },
+    "runWarnings": [],
+    "configSettings": {
+      "emulatedFormFactor": "desktop",
+      "locale": "en-US",
+      "onlyCategories": [
+        "performance"
+      ],
+      "channel": "lr"
+    },
+    "audits": {
+      "first-meaningful-paint": {
+        "id": "first-meaningful-paint",
+        "title": "First Meaningful Paint",
+        "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+        "score": 0.82,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.1 s",
+        "numericValue": 1095
+      },
+      "resource-summary": {
+        "id": "resource-summary",
+        "title": "Keep request counts low and transfer sizes small",
+        "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "65 requests • 698 KB",
+        "details": {
+          "headings": [
+            {
+              "text": "Resource Type",
+              "key": "label",
+              "itemType": "text"
+            },
+            {
+              "key": "requestCount",
+              "itemType": "numeric",
+              "text": "Requests"
+            },
+            {
+              "key": "size",
+              "itemType": "bytes",
+              "text": "Transfer Size"
+            }
+          ],
+          "items": [
+            {
+              "resourceType": "total",
+              "label": "Total",
+              "size": 714279,
+              "requestCount": 65
+            },
+            {
+              "label": "Script",
+              "size": 464847,
+              "requestCount": 21,
+              "resourceType": "script"
+            },
+            {
+              "resourceType": "font",
+              "label": "Font",
+              "size": 98736,
+              "requestCount": 5
+            },
+            {
+              "resourceType": "image",
+              "label": "Image",
+              "size": 50750,
+              "requestCount": 9
+            },
+            {
+              "label": "Stylesheet",
+              "size": 50551,
+              "requestCount": 2,
+              "resourceType": "stylesheet"
+            },
+            {
+              "label": "Other",
+              "size": 45626,
+              "requestCount": 27,
+              "resourceType": "other"
+            },
+            {
+              "label": "Document",
+              "size": 3769,
+              "requestCount": 1,
+              "resourceType": "document"
+            },
+            {
+              "label": "Media",
+              "size": 0,
+              "requestCount": 0,
+              "resourceType": "media"
+            },
+            {
+              "resourceType": "third-party",
+              "label": "Third-party",
+              "size": 199443,
+              "requestCount": 6
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "efficient-animated-content": {
+        "id": "efficient-animated-content",
+        "title": "Use video formats for animated content",
+        "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0
+        },
+        "numericValue": 0
+      },
+      "final-screenshot": {
+        "id": "final-screenshot",
+        "title": "Final Screenshot",
+        "description": "The last screenshot captured of the pageload.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "screenshot",
+          "timing": 3750,
+          "timestamp": 490512978696,
+          "data": "data:image/jpeg;base64,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"
+        }
+      },
+      "metrics": {
+        "id": "metrics",
+        "title": "Metrics",
+        "description": "Collects all available metrics.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "observedLastVisualChangeTs": 490512977832,
+              "observedLoad": 2087,
+              "observedLargestContentfulPaint": 3583,
+              "observedDomContentLoadedTs": 490511309813,
+              "observedSpeedIndex": 2926,
+              "estimatedInputLatency": 21,
+              "totalBlockingTime": 200,
+              "observedFirstPaint": 1460,
+              "observedLastVisualChange": 3749,
+              "firstContentfulPaint": 545,
+              "observedFirstPaintTs": 490510688453,
+              "speedIndex": 2438,
+              "observedSpeedIndexTs": 490512154562,
+              "observedFirstContentfulPaint": 1460,
+              "observedNavigationStartTs": 490509228832,
+              "observedLargestContentfulPaintTs": 490512811758,
+              "observedFirstVisualChange": 2633,
+              "observedLoadTs": 490511316317,
+              "firstMeaningfulPaint": 1095,
+              "observedFirstMeaningfulPaint": 3583,
+              "observedTraceEnd": 4723,
+              "observedTraceEndTs": 490513951630,
+              "firstCPUIdle": 1792,
+              "observedFirstMeaningfulPaintTs": 490512811758,
+              "observedDomContentLoaded": 2081,
+              "observedFirstVisualChangeTs": 490511861832,
+              "observedNavigationStart": 0,
+              "interactive": 2022,
+              "observedFirstContentfulPaintTs": 490510688453
+            },
+            {
+              "lcpInvalidated": false
+            }
+          ],
+          "type": "debugdata"
+        },
+        "numericValue": 2022
+      },
+      "time-to-first-byte": {
+        "id": "time-to-first-byte",
+        "title": "Server response times are low (TTFB)",
+        "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Root document took 410 ms",
+        "details": {
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsMs": -188.115,
+          "headings": []
+        },
+        "numericValue": 411.885
+      },
+      "render-blocking-resources": {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+        "score": 0.78,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 260 ms",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "valueType": "timespanMs",
+              "label": "Potential Savings",
+              "key": "wastedMs"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedMs": 150,
+              "url": "https://www.ontario.ca/css/combined.css",
+              "totalBytes": 49397
+            },
+            {
+              "wastedMs": 190,
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "totalBytes": 18864
+            }
+          ],
+          "overallSavingsMs": 260
+        },
+        "numericValue": 260
+      },
+      "uses-text-compression": {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "uses-optimized-images": {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-requests": {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "table",
+          "items": [
+            {
+              "mimeType": "text/html",
+              "endTime": 363.50999999558553,
+              "resourceSize": 0,
+              "startTime": 0,
+              "transferSize": 485,
+              "statusCode": 301,
+              "url": "https://www.ontario.ca/page/2019-novel-coronavirus"
+            },
+            {
+              "resourceType": "Document",
+              "mimeType": "text/html",
+              "endTime": 774.86400003544986,
+              "resourceSize": 8623,
+              "startTime": 363.97499998565763,
+              "transferSize": 3769,
+              "url": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "text/css",
+              "endTime": 1334.4510000315495,
+              "resourceSize": 215476,
+              "startTime": 792.10399999283254,
+              "transferSize": 49397,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/css/combined.css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "mimeType": "application/x-javascript",
+              "endTime": 1155.618000018876,
+              "resourceSize": 51351,
+              "startTime": 792.77800000272691,
+              "transferSize": 18864,
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "statusCode": 200,
+              "resourceType": "Script"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 676,
+              "endTime": 802.60400002589449,
+              "startTime": 793.08100003981963,
+              "transferSize": 1129,
+              "statusCode": 200,
+              "url": "https://www.google.com/recaptcha/api.js?render=explicit"
+            },
+            {
+              "transferSize": 546,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/img/assets/icon-alert-warning-white.svg",
+              "resourceType": "Image",
+              "mimeType": "image/svg+xml",
+              "resourceSize": 205,
+              "endTime": 922.77800000738353,
+              "startTime": 793.80799998762086
+            },
+            {
+              "startTime": 1427.5550000020303,
+              "transferSize": 1283,
+              "url": "https://files.ontario.ca/banner-icon-alert-xsmall.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 684,
+              "endTime": 1494.8970000259578
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "resourceSize": 35415,
+              "endTime": 1210.0670000072569,
+              "startTime": 804.7929999884218,
+              "transferSize": 14605,
+              "url": "https://www.ontario.ca/vendor/moment/min/moment.min.js",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 998.22100001620129,
+              "resourceSize": 85578,
+              "startTime": 923.68200002238154,
+              "transferSize": 30163,
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+              "statusCode": 200
+            },
+            {
+              "startTime": 1009.01600002544,
+              "transferSize": 151485,
+              "url": "https://www.ontario.ca/js/libs.min.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "resourceSize": 415978,
+              "endTime": 1640.50199999474
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "endTime": 1311.7930000298657,
+              "resourceSize": 12118,
+              "startTime": 1214.7330000298098,
+              "transferSize": 4320,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-angular-foundation/onesite-angular-foundation.min.js"
+            },
+            {
+              "transferSize": 1778,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-analytics/onesite-analytics.min.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "endTime": 1413.1550000165589,
+              "resourceSize": 3387,
+              "startTime": 1313.441000005696
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "resourceSize": 45902,
+              "endTime": 1782.807000039611,
+              "startTime": 1424.1790000232868,
+              "transferSize": 11884,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/onesite-search.min.js",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "application/x-javascript",
+              "endTime": 1772.2059999941848,
+              "resourceSize": 4213,
+              "startTime": 1424.3889999925159,
+              "transferSize": 2081,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-contact-us/onesite-contact-us.min.js",
+              "statusCode": 200,
+              "resourceType": "Script"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "resourceSize": 3607,
+              "endTime": 1780.4270000196993,
+              "startTime": 1424.5339999906719,
+              "transferSize": 1865,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-body/onesite-body.min.js",
+              "statusCode": 200
+            },
+            {
+              "resourceSize": 2509,
+              "endTime": 1785.329999984242,
+              "startTime": 1424.7680000262335,
+              "transferSize": 1447,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-live-chat/onesite-live-chat.min.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript"
+            },
+            {
+              "mimeType": "application/x-javascript",
+              "endTime": 1534.1040000203066,
+              "resourceSize": 6856,
+              "startTime": 1425.1260000164621,
+              "transferSize": 2945,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-holiday-pay-calculator/onesite-holiday-pay-calculator.min.js",
+              "resourceType": "Script"
+            },
+            {
+              "endTime": 1779.4899999862537,
+              "resourceSize": 18921,
+              "startTime": 1425.4599999985658,
+              "transferSize": 6016,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-moment/onesite-moment.min.js",
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "resourceSize": 2716,
+              "endTime": 1550.9750000201166,
+              "startTime": 1426.3750000391155,
+              "transferSize": 1652,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-health/yellowCard/onesite-health.min.js",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "endTime": 1781.252000015229,
+              "resourceSize": 26468,
+              "startTime": 1426.554000005126,
+              "transferSize": 7978,
+              "url": "https://www.ontario.ca/core_modules/content-type/content-type.min.js",
+              "statusCode": 200
+            },
+            {
+              "transferSize": 17886,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/component.min.js",
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "endTime": 1867.0310000306927,
+              "resourceSize": 52619,
+              "startTime": 1426.8700000247918
+            },
+            {
+              "url": "https://www.ontario.ca/js/app.min.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/x-javascript",
+              "endTime": 1888.1120000150986,
+              "resourceSize": 54542,
+              "startTime": 1427.2830000263639,
+              "transferSize": 20725
+            },
+            {
+              "mimeType": "application/x-javascript",
+              "endTime": 1797.0949999871664,
+              "resourceSize": 87,
+              "startTime": 1427.4220000370406,
+              "transferSize": 476,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/splash/splash.min.js",
+              "resourceType": "Script"
+            },
+            {
+              "transferSize": 1154,
+              "url": "https://www.ontario.ca/css/print.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 1526.177000021562,
+              "resourceSize": 1825,
+              "startTime": 1427.9460000107065
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "application/octet-stream",
+              "endTime": 1473.574000003282,
+              "resourceSize": 10352,
+              "startTime": 1363.7520000338554,
+              "transferSize": 10708,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-regular/Open-Sans-regular.woff2",
+              "statusCode": 200
+            },
+            {
+              "url": "https://www.google-analytics.com/analytics.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "endTime": 1481.1089999857359,
+              "resourceSize": 45229,
+              "startTime": 1427.7989999973215,
+              "transferSize": 18767
+            },
+            {
+              "transferSize": 10684,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-600/Open-Sans-600.woff2",
+              "resourceType": "Font",
+              "mimeType": "application/octet-stream",
+              "endTime": 1786.270999989938,
+              "resourceSize": 10328,
+              "startTime": 1431.7790000350215
+            },
+            {
+              "transferSize": 124862,
+              "statusCode": 200,
+              "url": "https://www.gstatic.com/recaptcha/releases/wk6lx42JIeYmEAQSHndnyT8Q/recaptcha__en.js",
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 306440,
+              "endTime": 1497.330000041984,
+              "startTime": 1441.0270000225864
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 1707.3650000384077,
+              "resourceSize": 63094,
+              "startTime": 1691.6959999944083,
+              "transferSize": 23919,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T7V5LF",
+              "statusCode": 200
+            },
+            {
+              "endTime": 2142.7050000056624,
+              "resourceSize": 7035,
+              "startTime": 2052.48000001302,
+              "transferSize": 2218,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteHeader.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html"
+            },
+            {
+              "mimeType": "application/json",
+              "endTime": 2495.325000025332,
+              "resourceSize": 15213,
+              "startTime": 2077.50000001397,
+              "transferSize": 3736,
+              "statusCode": 200,
+              "url": "https://api.ontario.ca/api/drupal/page%2Fhow-ontario-is-responding-covid-19?fields=field_ministries,type,field_intro,field_archive_reason,field_archive_link,field_greybox,nid,toc,field_show_table_of_contents2,field_internal_tags,language,changed,field_right,field_category,field_marketing_banner,field_marketing_banner_medium,field_marketing_banner_small,field_thumbnail,field_banner,field_custom_styles,field_custom_scripts,field_custom_scripts_header,title,published_at,private,translations,metatags,field_minister_block,field_contact,field_footnote",
+              "resourceType": "XHR"
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "application/octet-stream",
+              "endTime": 2434.7820000257343,
+              "resourceSize": 48360,
+              "startTime": 2181.8719999864697,
+              "transferSize": 48716,
+              "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5",
+              "statusCode": 200
+            },
+            {
+              "resourceSize": 343,
+              "endTime": 2309.4189999974333,
+              "startTime": 2219.3059999844991,
+              "transferSize": 567,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteTaxonomiesAsMenu.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html"
+            },
+            {
+              "mimeType": "text/html",
+              "endTime": 2308.8379999971949,
+              "resourceSize": 1257,
+              "startTime": 2220.143000013195,
+              "transferSize": 925,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/typeahead/default.html",
+              "statusCode": 200,
+              "resourceType": "XHR"
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 2314.6430000197142,
+              "resourceSize": 6685,
+              "startTime": 2227.7940000058152,
+              "transferSize": 7025,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/img/logo-ontario@2x.png"
+            },
+            {
+              "resourceSize": 4233,
+              "endTime": 2315.16699999338,
+              "startTime": 2227.9210000415333,
+              "transferSize": 4573,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/img/ontario@2x-print.png",
+              "resourceType": "Image",
+              "mimeType": "image/png"
+            },
+            {
+              "url": "https://www.ontario.ca/core_modules/content-type/partials/page/template-page.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 2676.5829999931157,
+              "resourceSize": 2659,
+              "startTime": 2587.593000032939,
+              "transferSize": 1148
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/gif",
+              "resourceSize": 35,
+              "endTime": 2604.3120000394993,
+              "startTime": 2600.0179999973625,
+              "transferSize": 603,
+              "statusCode": 200,
+              "url": "https://www.google-analytics.com/r/collect?v=1&_v=j81&a=1267194720&t=pageview&_s=1&dl=https%3A%2F%2Fwww.ontario.ca%2Fpage%2Fhow-ontario-is-responding-covid-19&dp=page%2Fhow-ontario-is-responding-covid-19&ul=en-us&de=UTF-8&dt=How%20Ontario%20is%20responding%20to%20COVID-19&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=aGDACEABB~&jid=811213938&gjid=1075366142&cid=294077666.1588782356&tid=UA-21003310-6&_gid=1784172861.1588782356&_r=1&cd1=Health&cd2=en&cd4=Health%20and%20wellness%7CCOVID-19&cd6=page&z=1250079242"
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 2810.2930000168271,
+              "resourceSize": 4041,
+              "startTime": 2719.0300000365824,
+              "transferSize": 1083,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteArchive.html",
+              "statusCode": 200
+            },
+            {
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteIntro.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 2165,
+              "endTime": 2807.1800000034273,
+              "startTime": 2719.7260000393726,
+              "transferSize": 927
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 367,
+              "endTime": 2808.9420000324026,
+              "startTime": 2720.558000029996,
+              "transferSize": 561,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteContentDate.html",
+              "statusCode": 200
+            },
+            {
+              "startTime": 2721.3409999967553,
+              "transferSize": 750,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteFootnotes.html",
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 876,
+              "endTime": 2808.0830000108108
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 1914,
+              "endTime": 2809.7859999979846,
+              "startTime": 2722.3269999958575,
+              "transferSize": 1069,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteActionBar.html"
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteFooter.html",
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 2553,
+              "endTime": 2811.9830000214279,
+              "startTime": 2722.981000028085,
+              "transferSize": 1095
+            },
+            {
+              "resourceSize": 93446,
+              "endTime": 3183.1380000221543,
+              "startTime": 2723.6360000097193,
+              "transferSize": 19370,
+              "url": "https://api.ontario.ca/api/drupal/page%2Fhow-ontario-is-responding-covid-19?fields=nid,field_body_beta,body",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "application/json"
+            },
+            {
+              "transferSize": 586,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/gazette/onesiteSearch.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 2812.8000000142492,
+              "resourceSize": 333,
+              "startTime": 2724.5140000013635
+            },
+            {
+              "mimeType": "text/html",
+              "resourceSize": 990,
+              "endTime": 2812.4529999913648,
+              "startTime": 2725.4180000163615,
+              "transferSize": 841,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/landRegistration/onesiteSearch.html",
+              "statusCode": 200,
+              "resourceType": "XHR"
+            },
+            {
+              "transferSize": 786,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/openData/onesiteSearch.html",
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 1046,
+              "endTime": 3064.2269999952987,
+              "startTime": 2726.0220000171103
+            },
+            {
+              "startTime": 2726.7880000290461,
+              "transferSize": 659,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/orderInCouncil/onesiteSearch.html",
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 615,
+              "endTime": 3063.1949999951757
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 2813.6860000086017,
+              "resourceSize": 420,
+              "startTime": 2727.6760000386275,
+              "transferSize": 583,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/tradeCalendar/onesiteSearch.html"
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 3068.0890000076033,
+              "resourceSize": 2666,
+              "startTime": 2728.7950000027195,
+              "transferSize": 1395,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/landing/onesiteSearch.html"
+            },
+            {
+              "transferSize": 1109,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/partials/faqs/onesiteSearch.html",
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 1737,
+              "endTime": 2816.7770000291057,
+              "startTime": 2729.8830000218004
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 2824.4150000391528,
+              "resourceSize": 1936,
+              "startTime": 2736.2389999907464,
+              "transferSize": 1063,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteAside.html"
+            },
+            {
+              "transferSize": 891,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteToc.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 1000,
+              "endTime": 3077.1650000242516,
+              "startTime": 2737.2970000142232
+            },
+            {
+              "startTime": 2864.9330000043847,
+              "transferSize": 13240,
+              "url": "https://www.ontario.ca/fonts/Raleway-700/Raleway-700.woff2",
+              "statusCode": 200,
+              "resourceType": "Font",
+              "mimeType": "application/octet-stream",
+              "endTime": 2953.3769999979995,
+              "resourceSize": 12884
+            },
+            {
+              "resourceSize": 1413,
+              "endTime": 2965.2880000066943,
+              "startTime": 2877.695000031963,
+              "transferSize": 892,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteServiceOntarioLogo.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html"
+            },
+            {
+              "startTime": 2879.3559999903664,
+              "transferSize": 561,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteBreadcrumb.html",
+              "statusCode": 200,
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 375,
+              "endTime": 3218.1470000068657
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "endTime": 3295.832000032533,
+              "resourceSize": 583,
+              "startTime": 2957.4250000296161,
+              "transferSize": 677,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteTaxonomies.html",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "text/html",
+              "endTime": 3297.078000032343,
+              "resourceSize": 675,
+              "startTime": 2958.4139999933541,
+              "transferSize": 678,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteContact.html",
+              "resourceType": "XHR"
+            },
+            {
+              "resourceType": "XHR",
+              "mimeType": "text/html",
+              "resourceSize": 1802,
+              "endTime": 3297.9540000087582,
+              "startTime": 2959.1820000205189,
+              "transferSize": 971,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/core_modules/component/partials/onesiteNotices.html"
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "application/octet-stream",
+              "resourceSize": 15032,
+              "endTime": 3082.6579999993555,
+              "startTime": 2983.3649999927729,
+              "transferSize": 15388,
+              "url": "https://www.ontario.ca/fonts/Raleway-regular/Raleway-regular.woff2",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/jpeg",
+              "resourceSize": 6969,
+              "endTime": 3017.4100000294857,
+              "startTime": 2990.1290000416338,
+              "transferSize": 7570,
+              "url": "https://files.ontario.ca/flu_pin_1_0.jpg",
+              "statusCode": 200
+            },
+            {
+              "endTime": 3188.5730000212789,
+              "resourceSize": 24516,
+              "startTime": 3016.9650000170805,
+              "transferSize": 24857,
+              "url": "https://www.ontario.ca/img/logo-serviceontario@3x.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png"
+            },
+            {
+              "transferSize": 3768,
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/img/logo-serviceontario@2x.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 3429,
+              "endTime": 3110.8109999913722,
+              "startTime": 3023.086000001058
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.ontario.ca/img/assets/chevron-right.svg",
+              "resourceType": "Image",
+              "mimeType": "image/svg+xml",
+              "resourceSize": 184,
+              "endTime": 3720.6180000212044,
+              "startTime": 3631.0090000042692,
+              "transferSize": 525
+            }
+          ],
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "endTime",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            },
+            {
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Transfer Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            },
+            {
+              "key": "resourceSize",
+              "itemType": "bytes",
+              "text": "Resource Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            },
+            {
+              "text": "Status Code",
+              "itemType": "text",
+              "key": "statusCode"
+            },
+            {
+              "text": "MIME Type",
+              "key": "mimeType",
+              "itemType": "text"
+            },
+            {
+              "key": "resourceType",
+              "itemType": "text",
+              "text": "Resource Type"
+            }
+          ]
+        },
+        "numericValue": 65
+      },
+      "uses-long-cache-ttl": {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+        "score": 0.15,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "32 resources found",
+        "details": {
+          "summary": {
+            "wastedBytes": 441467.25000000006
+          },
+          "headings": [
+            {
+              "itemType": "url",
+              "key": "url",
+              "text": "URL"
+            },
+            {
+              "text": "Cache TTL",
+              "displayUnit": "duration",
+              "key": "cacheLifetimeMs",
+              "itemType": "ms"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size",
+              "granularity": 1,
+              "displayUnit": "kb"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://files.ontario.ca/flu_pin_1_0.jpg",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 7570,
+              "wastedBytes": 7570,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://files.ontario.ca/banner-icon-alert-xsmall.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1283,
+              "wastedBytes": 1283,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 138861.25,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 151485,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/js/libs.min.js"
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 49397,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/css/combined.css",
+              "wastedBytes": 45280.583333333328
+            },
+            {
+              "debugData": {
+                "public": true,
+                "max-age": 600,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 48716,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5",
+              "wastedBytes": 44656.333333333328
+            },
+            {
+              "url": "https://www.ontario.ca/img/logo-serviceontario@3x.png",
+              "wastedBytes": 22785.583333333332,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 24857,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "url": "https://www.ontario.ca/js/app.min.js",
+              "wastedBytes": 18997.916666666664,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 20725,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 18864,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "wastedBytes": 17292
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 17886,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/core_modules/component/component.min.js",
+              "wastedBytes": 16395.5
+            },
+            {
+              "totalBytes": 15388,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/fonts/Raleway-regular/Raleway-regular.woff2",
+              "wastedBytes": 14105.666666666666,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/vendor/moment/min/moment.min.js",
+              "wastedBytes": 13387.916666666666,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 14605
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/fonts/Raleway-700/Raleway-700.woff2",
+              "wastedBytes": 12136.666666666666,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 13240
+            },
+            {
+              "url": "https://www.ontario.ca/onesite_modules/onesite-search/onesite-search.min.js",
+              "wastedBytes": 10893.666666666666,
+              "debugData": {
+                "public": true,
+                "max-age": 600,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 11884,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 10708,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-regular/Open-Sans-regular.woff2",
+              "wastedBytes": 9815.6666666666661
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-600/Open-Sans-600.woff2",
+              "wastedBytes": 9793.6666666666661,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 10684
+            },
+            {
+              "url": "https://www.ontario.ca/core_modules/content-type/content-type.min.js",
+              "wastedBytes": 7313.1666666666661,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 7978,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/img/logo-ontario@2x.png",
+              "wastedBytes": 6439.583333333333,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 7025
+            },
+            {
+              "totalBytes": 6016,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-moment/onesite-moment.min.js",
+              "wastedBytes": 5514.6666666666661,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000
+            },
+            {
+              "url": "https://www.ontario.ca/img/ontario@2x-print.png",
+              "wastedBytes": 4191.9166666666661,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 4573,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 4320,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-angular-foundation/onesite-angular-foundation.min.js",
+              "wastedBytes": 3960
+            },
+            {
+              "wastedBytes": 3454,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 3768,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/img/logo-serviceontario@2x.png"
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-holiday-pay-calculator/onesite-holiday-pay-calculator.min.js",
+              "wastedBytes": 2699.583333333333,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 2945
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 2081,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-contact-us/onesite-contact-us.min.js",
+              "wastedBytes": 1907.5833333333333
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-body/onesite-body.min.js",
+              "wastedBytes": 1709.5833333333333,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 1865
+            },
+            {
+              "url": "https://www.ontario.ca/onesite_modules/onesite-analytics/onesite-analytics.min.js",
+              "wastedBytes": 1629.8333333333333,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 1778,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "url": "https://www.ontario.ca/onesite_modules/onesite-health/yellowCard/onesite-health.min.js",
+              "wastedBytes": 1514.3333333333333,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 1652,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "totalBytes": 1447,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/onesite_modules/onesite-live-chat/onesite-live-chat.min.js",
+              "wastedBytes": 1326.4166666666665,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000
+            },
+            {
+              "wastedBytes": 1057.8333333333333,
+              "debugData": {
+                "public": true,
+                "max-age": 600,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 1154,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/css/print.css"
+            },
+            {
+              "wastedBytes": 500.5,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 546,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/img/assets/icon-alert-warning-white.svg"
+            },
+            {
+              "url": "https://www.ontario.ca/img/assets/chevron-right.svg",
+              "wastedBytes": 481.25,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 600
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 525,
+              "cacheHitProbability": 0.083333333333333329
+            },
+            {
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://www.ontario.ca/splash/splash.min.js",
+              "wastedBytes": 436.33333333333331,
+              "debugData": {
+                "max-age": 600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 476
+            },
+            {
+              "cacheHitProbability": 0.25,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "wastedBytes": 14075.25,
+              "debugData": {
+                "public": true,
+                "max-age": 7200,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 7200000,
+              "totalBytes": 18767
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 441467.25000000006
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+        "score": 0.76,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "180 ms",
+        "numericValue": 175
+      },
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+        "score": 0.96,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.0 s",
+        "numericValue": 2022
+      },
+      "screenshot-thumbnails": {
+        "id": "screenshot-thumbnails",
+        "title": "Screenshot Thumbnails",
+        "description": "This is what the load of your site looked like.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "scale": 3749,
+          "type": "filmstrip",
+          "items": [
+            {
+              "timestamp": 490509603732,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 375
+            },
+            {
+              "timing": 750,
+              "timestamp": 490509978632,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 1125,
+              "timestamp": 490510353532,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 1500,
+              "timestamp": 490510728432.00006,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 1875,
+              "timestamp": 490511103332,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 490511478232,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 2249
+            },
+            {
+              "timing": 2624,
+              "timestamp": 490511853132,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 2999,
+              "timestamp": 490512228032,
+              "data": "data:image/jpeg;base64,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"
+            },
+            {
+              "timing": 3374,
+              "timestamp": 490512602932.00006,
+              "data": "data:image/jpeg;base64,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"
+            },
+            {
+              "timestamp": 490512977832,
+              "data": "data:image/jpeg;base64,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",
+              "timing": 3749
+            }
+          ]
+        }
+      },
+      "third-party-summary": {
+        "id": "third-party-summary",
+        "title": "Minimize third-party usage",
+        "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Third-party code blocked the main thread for 110 ms",
+        "details": {
+          "type": "table",
+          "items": [
+            {
+              "mainThreadTime": 173.26999999999995,
+              "transferSize": 30163,
+              "blockingTime": 106.99000000000001,
+              "entity": {
+                "url": "https://cdnjs.com/",
+                "type": "link",
+                "text": "Cloudflare CDN"
+              }
+            },
+            {
+              "entity": {
+                "type": "link",
+                "text": "Google CDN",
+                "url": "https://developers.google.com/speed/libraries/"
+              },
+              "mainThreadTime": 24.867000000000015,
+              "transferSize": 124862,
+              "blockingTime": 0
+            },
+            {
+              "mainThreadTime": 10.595999999999998,
+              "transferSize": 23919,
+              "blockingTime": 0,
+              "entity": {
+                "text": "Google Tag Manager",
+                "type": "link",
+                "url": "https://marketingplatform.google.com/about/tag-manager/"
+              }
+            },
+            {
+              "blockingTime": 0,
+              "entity": {
+                "url": "https://www.google.com/analytics/analytics/",
+                "text": "Google Analytics",
+                "type": "link"
+              },
+              "mainThreadTime": 27.108999999999998,
+              "transferSize": 19370
+            },
+            {
+              "transferSize": 1129,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Other Google APIs/SDKs",
+                "url": "https://developers.google.com/apis-explorer/#p/"
+              },
+              "mainThreadTime": 0.932
+            }
+          ],
+          "summary": {
+            "wastedBytes": 199443,
+            "wastedMs": 106.99000000000001
+          },
+          "headings": [
+            {
+              "key": "entity",
+              "itemType": "link",
+              "text": "Third-Party"
+            },
+            {
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Size",
+              "granularity": 1
+            },
+            {
+              "text": "Main-Thread Blocking Time",
+              "granularity": 1,
+              "key": "blockingTime",
+              "itemType": "ms"
+            }
+          ]
+        }
+      },
+      "network-rtt": {
+        "id": "network-rtt",
+        "title": "Network Round Trip Times",
+        "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "table"
+        },
+        "numericValue": 0
+      },
+      "main-thread-tasks": {
+        "id": "main-thread-tasks",
+        "title": "Tasks",
+        "description": "Lists the toplevel main thread tasks that executed during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "startTime": 801.244,
+              "duration": 10.3
+            },
+            {
+              "startTime": 1358.611,
+              "duration": 13.635
+            },
+            {
+              "startTime": 1372.306,
+              "duration": 79.021
+            },
+            {
+              "startTime": 1451.398,
+              "duration": 10.541
+            },
+            {
+              "duration": 19.71,
+              "startTime": 1464.053
+            },
+            {
+              "startTime": 1501.128,
+              "duration": 6.111
+            },
+            {
+              "startTime": 1511.474,
+              "duration": 27.372
+            },
+            {
+              "startTime": 1561.198,
+              "duration": 18.378
+            },
+            {
+              "startTime": 1683.476,
+              "duration": 34.894
+            },
+            {
+              "startTime": 1813.591,
+              "duration": 9.063
+            },
+            {
+              "startTime": 1914.56,
+              "duration": 189.839
+            },
+            {
+              "duration": 82.424,
+              "startTime": 2168.753
+            },
+            {
+              "duration": 46.629,
+              "startTime": 2333.987
+            },
+            {
+              "duration": 102.29,
+              "startTime": 2521.378
+            },
+            {
+              "startTime": 2623.691,
+              "duration": 23.62
+            },
+            {
+              "duration": 26.438,
+              "startTime": 2647.607
+            },
+            {
+              "duration": 64.974,
+              "startTime": 2702.177
+            },
+            {
+              "startTime": 2834.778,
+              "duration": 89.785
+            },
+            {
+              "startTime": 2938.052,
+              "duration": 84.041
+            },
+            {
+              "duration": 6.201,
+              "startTime": 3022.4
+            },
+            {
+              "startTime": 3031.854,
+              "duration": 14.283
+            },
+            {
+              "duration": 12.123,
+              "startTime": 3052.282
+            },
+            {
+              "duration": 8.166,
+              "startTime": 3088.29
+            },
+            {
+              "startTime": 3098.716,
+              "duration": 10.528
+            },
+            {
+              "startTime": 3112.087,
+              "duration": 32.163
+            },
+            {
+              "startTime": 3149.992,
+              "duration": 14.634
+            },
+            {
+              "startTime": 3208.877,
+              "duration": 350.695
+            },
+            {
+              "startTime": 3568.186,
+              "duration": 13.289
+            },
+            {
+              "startTime": 3584.109,
+              "duration": 102.312
+            },
+            {
+              "startTime": 3686.688,
+              "duration": 26.807
+            },
+            {
+              "startTime": 3743.843,
+              "duration": 10.625
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            }
+          ]
+        },
+        "numericValue": 31
+      },
+      "font-display": {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "wastedMs",
+              "itemType": "ms",
+              "text": "Potential Savings"
+            }
+          ],
+          "items": [
+            {
+              "wastedMs": 109.82199996942654,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-regular/Open-Sans-regular.woff2"
+            },
+            {
+              "wastedMs": 354.49199995491654,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-600/Open-Sans-600.woff2"
+            },
+            {
+              "wastedMs": 252.91000003926456,
+              "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5"
+            },
+            {
+              "wastedMs": 88.443999993614852,
+              "url": "https://www.ontario.ca/fonts/Raleway-700/Raleway-700.woff2"
+            },
+            {
+              "wastedMs": 99.293000006582588,
+              "url": "https://www.ontario.ca/fonts/Raleway-regular/Raleway-regular.woff2"
+            }
+          ],
+          "type": "table"
+        },
+        "warnings": []
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+        "score": 0.97,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "200 ms",
+        "numericValue": 199.5
+      },
+      "estimated-input-latency": {
+        "id": "estimated-input-latency",
+        "title": "Estimated Input Latency",
+        "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "20 ms",
+        "numericValue": 21.446153846153848
+      },
+      "uses-rel-preconnect": {
+        "id": "uses-rel-preconnect",
+        "title": "Preconnect to required origins",
+        "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity"
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "unminified-css": {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0
+        },
+        "numericValue": 0
+      },
+      "bootup-time": {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+        "score": 0.95,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.0 s",
+        "details": {
+          "summary": {
+            "wastedMs": 951.70599999999934
+          },
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "total",
+              "itemType": "ms",
+              "text": "Total CPU Time",
+              "granularity": 1
+            },
+            {
+              "text": "Script Evaluation",
+              "granularity": 1,
+              "itemType": "ms",
+              "key": "scripting"
+            },
+            {
+              "itemType": "ms",
+              "key": "scriptParseCompile",
+              "text": "Script Parse",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "scripting": 706.92599999999936,
+              "total": 1103.1359999999995,
+              "scriptParseCompile": 9.606,
+              "url": "https://www.ontario.ca/js/libs.min.js"
+            },
+            {
+              "scripting": 10.469999999999986,
+              "total": 260.8370000000001,
+              "scriptParseCompile": 1.176,
+              "url": "Other"
+            },
+            {
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+              "total": 173.26999999999995,
+              "scripting": 171.38299999999995,
+              "scriptParseCompile": 1.4989999999999999
+            },
+            {
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "total": 72.512000000000015,
+              "scripting": 49.213000000000008,
+              "scriptParseCompile": 1.4329999999999998
+            }
+          ]
+        },
+        "numericValue": 951.70599999999934
+      },
+      "network-server-latency": {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        },
+        "numericValue": 0
+      },
+      "offscreen-images": {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 7 KB",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://files.ontario.ca/flu_pin_1_0.jpg",
+              "requestStartTime": 490512.219931,
+              "totalBytes": 6969,
+              "wastedBytes": 6969,
+              "wastedPercent": 100
+            }
+          ],
+          "overallSavingsBytes": 6969,
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ]
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "uses-responsive-images": {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 5 KB",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedPercent": 82.055555555555557,
+              "url": "https://www.ontario.ca/img/logo-ontario@2x.png",
+              "totalBytes": 6685,
+              "wastedBytes": 5485
+            }
+          ],
+          "overallSavingsBytes": 5485,
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ]
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "unused-css-rules": {
+        "id": "unused-css-rules",
+        "title": "Remove unused CSS",
+        "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+        "score": 0.9,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 44 KB",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://www.ontario.ca/css/combined.css",
+              "totalBytes": 49397,
+              "wastedBytes": 44553,
+              "wastedPercent": 90.194731663851186
+            }
+          ],
+          "overallSavingsBytes": 44553,
+          "overallSavingsMs": 120,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ]
+        },
+        "numericValue": 120
+      },
+      "speed-index": {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+        "score": 0.45,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.4 s",
+        "numericValue": 2438.3001584095991
+      },
+      "first-cpu-idle": {
+        "id": "first-cpu-idle",
+        "title": "First CPU Idle",
+        "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+        "score": 0.98,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.8 s",
+        "numericValue": 1792
+      },
+      "total-byte-weight": {
+        "id": "total-byte-weight",
+        "title": "Avoids enormous network payloads",
+        "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Total size was 698 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "url": "https://www.ontario.ca/js/libs.min.js",
+              "totalBytes": 151485
+            },
+            {
+              "totalBytes": 124862,
+              "url": "https://www.gstatic.com/recaptcha/releases/wk6lx42JIeYmEAQSHndnyT8Q/recaptcha__en.js"
+            },
+            {
+              "url": "https://www.ontario.ca/css/combined.css",
+              "totalBytes": 49397
+            },
+            {
+              "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5",
+              "totalBytes": 48716
+            },
+            {
+              "totalBytes": 30163,
+              "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"
+            },
+            {
+              "url": "https://www.ontario.ca/img/logo-serviceontario@3x.png",
+              "totalBytes": 24857
+            },
+            {
+              "totalBytes": 23919,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-T7V5LF"
+            },
+            {
+              "url": "https://www.ontario.ca/js/app.min.js",
+              "totalBytes": 20725
+            },
+            {
+              "url": "https://api.ontario.ca/api/drupal/page%2Fhow-ontario-is-responding-covid-19?fields=nid,field_body_beta,body",
+              "totalBytes": 19370
+            },
+            {
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "totalBytes": 18864
+            }
+          ]
+        },
+        "numericValue": 714279
+      },
+      "mainthread-work-breakdown": {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+        "score": 0.94,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.7 s",
+        "details": {
+          "items": [
+            {
+              "group": "scriptEvaluation",
+              "duration": 1023.402999999999,
+              "groupLabel": "Script Evaluation"
+            },
+            {
+              "group": "styleLayout",
+              "duration": 244.46700000000007,
+              "groupLabel": "Style & Layout"
+            },
+            {
+              "groupLabel": "Parse HTML & CSS",
+              "group": "parseHTML",
+              "duration": 196.09799999999998
+            },
+            {
+              "group": "other",
+              "duration": 140.01900000000018,
+              "groupLabel": "Other"
+            },
+            {
+              "groupLabel": "Rendering",
+              "group": "paintCompositeRender",
+              "duration": 46.355999999999995
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "group": "scriptParseCompile",
+              "duration": 37.592
+            },
+            {
+              "group": "garbageCollection",
+              "duration": 31.980000000000004,
+              "groupLabel": "Garbage Collection"
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "itemType": "text",
+              "key": "groupLabel",
+              "text": "Category"
+            },
+            {
+              "text": "Time Spent",
+              "granularity": 1,
+              "key": "duration",
+              "itemType": "ms"
+            }
+          ]
+        },
+        "numericValue": 1719.9149999999993
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+        "score": 0.99,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.5 s",
+        "numericValue": 545
+      },
+      "uses-webp-images": {
+        "id": "uses-webp-images",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+        "score": 0.97,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 17 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://www.ontario.ca/img/logo-serviceontario@3x.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 24516,
+              "wastedBytes": 17164
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 17164,
+          "overallSavingsMs": 40
+        },
+        "warnings": [],
+        "numericValue": 40
+      },
+      "diagnostics": {
+        "id": "diagnostics",
+        "title": "Diagnostics",
+        "description": "Collection of useful page vitals.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "numTasksOver500ms": 0,
+              "maxServerLatency": null,
+              "numScripts": 21,
+              "numStylesheets": 2,
+              "throughput": 26436805865.010757,
+              "numTasksOver100ms": 4,
+              "numTasksOver25ms": 15,
+              "numTasksOver50ms": 9,
+              "numRequests": 65,
+              "totalTaskTime": 1719.9149999999991,
+              "mainDocumentTransferSize": 3769,
+              "totalByteWeight": 714279,
+              "numTasks": 739,
+              "numTasksOver10ms": 27,
+              "rtt": 0.00028822136860194168,
+              "numFonts": 5,
+              "maxRtt": 0.00028822136860194168
+            }
+          ]
+        }
+      },
+      "critical-request-chains": {
+        "id": "critical-request-chains",
+        "title": "Avoid chaining critical requests",
+        "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "20 chains found",
+        "details": {
+          "chains": {
+            "A186C40C5B0809E4E1FBA17C0F3238B5": {
+              "children": {
+                "A186C40C5B0809E4E1FBA17C0F3238B5:redirect": {
+                  "children": {
+                    "21.20": {
+                      "request": {
+                        "url": "https://www.ontario.ca/core_modules/content-type/content-type.min.js",
+                        "responseReceivedTime": 490511.011052,
+                        "endTime": 490511.011054,
+                        "startTime": 490510.656356,
+                        "transferSize": 7978
+                      }
+                    },
+                    "21.11": {
+                      "request": {
+                        "transferSize": 4320,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-angular-foundation/onesite-angular-foundation.min.js",
+                        "responseReceivedTime": 490510.54159000004,
+                        "endTime": 490510.541595,
+                        "startTime": 490510.444535
+                      }
+                    },
+                    "21.19": {
+                      "request": {
+                        "endTime": 490510.780777,
+                        "startTime": 490510.656177,
+                        "transferSize": 1652,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-health/yellowCard/onesite-health.min.js",
+                        "responseReceivedTime": 490510.78077500005
+                      }
+                    },
+                    "21.21": {
+                      "request": {
+                        "startTime": 490510.656672,
+                        "transferSize": 17886,
+                        "url": "https://www.ontario.ca/core_modules/component/component.min.js",
+                        "responseReceivedTime": 490511.096829,
+                        "endTime": 490511.096833
+                      }
+                    },
+                    "21.15": {
+                      "request": {
+                        "endTime": 490511.010229,
+                        "startTime": 490510.654336,
+                        "transferSize": 1865,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-body/onesite-body.min.js",
+                        "responseReceivedTime": 490511.010227
+                      }
+                    },
+                    "21.22": {
+                      "request": {
+                        "url": "https://www.ontario.ca/js/app.min.js",
+                        "responseReceivedTime": 490511.11791100004,
+                        "endTime": 490511.117914,
+                        "startTime": 490510.657085,
+                        "transferSize": 20725
+                      }
+                    },
+                    "21.12": {
+                      "children": {
+                        "21.35": {
+                          "request": {
+                            "endTime": 490512.183179,
+                            "startTime": 490512.094735,
+                            "transferSize": 13240,
+                            "url": "https://www.ontario.ca/fonts/Raleway-700/Raleway-700.woff2",
+                            "responseReceivedTime": 490512.183176
+                          }
+                        },
+                        "21.33": {
+                          "request": {
+                            "transferSize": 15388,
+                            "url": "https://www.ontario.ca/fonts/Raleway-regular/Raleway-regular.woff2",
+                            "responseReceivedTime": 490512.31245699996,
+                            "endTime": 490512.31246,
+                            "startTime": 490512.213167
+                          }
+                        }
+                      },
+                      "request": {
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-analytics/onesite-analytics.min.js",
+                        "responseReceivedTime": 490510.642954,
+                        "endTime": 490510.642957,
+                        "startTime": 490510.543243,
+                        "transferSize": 1778
+                      }
+                    },
+                    "21.29": {
+                      "request": {
+                        "transferSize": 10684,
+                        "url": "https://www.ontario.ca/fonts/Open-Sans-600/Open-Sans-600.woff2",
+                        "responseReceivedTime": 490511.016071,
+                        "endTime": 490511.016073,
+                        "startTime": 490510.661581
+                      }
+                    },
+                    "21.23": {
+                      "request": {
+                        "url": "https://www.ontario.ca/splash/splash.min.js",
+                        "responseReceivedTime": 490511.02689100004,
+                        "endTime": 490511.026897,
+                        "startTime": 490510.657224,
+                        "transferSize": 476
+                      }
+                    },
+                    "21.9": {
+                      "request": {
+                        "endTime": 490510.228023,
+                        "startTime": 490510.153484,
+                        "transferSize": 30163,
+                        "url": "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js",
+                        "responseReceivedTime": 490510.22801200004
+                      },
+                      "children": {
+                        "21.37": {
+                          "request": {
+                            "transferSize": 48716,
+                            "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5",
+                            "responseReceivedTime": 490511.664581,
+                            "endTime": 490511.664584,
+                            "startTime": 490511.411674
+                          }
+                        }
+                      }
+                    },
+                    "21.13": {
+                      "request": {
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-search/onesite-search.min.js",
+                        "responseReceivedTime": 490511.012607,
+                        "endTime": 490511.012609,
+                        "startTime": 490510.653981,
+                        "transferSize": 11884
+                      }
+                    },
+                    "21.16": {
+                      "request": {
+                        "startTime": 490510.65457,
+                        "transferSize": 1447,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-live-chat/onesite-live-chat.min.js",
+                        "responseReceivedTime": 490511.015128,
+                        "endTime": 490511.015132
+                      }
+                    },
+                    "21.8": {
+                      "request": {
+                        "endTime": 490510.439869,
+                        "startTime": 490510.034595,
+                        "transferSize": 14605,
+                        "url": "https://www.ontario.ca/vendor/moment/min/moment.min.js",
+                        "responseReceivedTime": 490510.43986499996
+                      }
+                    },
+                    "21.2": {
+                      "request": {
+                        "transferSize": 49397,
+                        "url": "https://www.ontario.ca/css/combined.css",
+                        "responseReceivedTime": 490510.564249,
+                        "endTime": 490510.564253,
+                        "startTime": 490510.021906
+                      }
+                    },
+                    "21.18": {
+                      "request": {
+                        "transferSize": 6016,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-moment/onesite-moment.min.js",
+                        "responseReceivedTime": 490511.009287,
+                        "endTime": 490511.009292,
+                        "startTime": 490510.655262
+                      }
+                    },
+                    "21.10": {
+                      "request": {
+                        "url": "https://www.ontario.ca/js/libs.min.js",
+                        "responseReceivedTime": 490510.870301,
+                        "endTime": 490510.870304,
+                        "startTime": 490510.238818,
+                        "transferSize": 151485
+                      }
+                    },
+                    "21.14": {
+                      "request": {
+                        "transferSize": 2081,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-contact-us/onesite-contact-us.min.js",
+                        "responseReceivedTime": 490511.002002,
+                        "endTime": 490511.002008,
+                        "startTime": 490510.654191
+                      }
+                    },
+                    "21.17": {
+                      "request": {
+                        "transferSize": 2945,
+                        "url": "https://www.ontario.ca/onesite_modules/onesite-holiday-pay-calculator/onesite-holiday-pay-calculator.min.js",
+                        "responseReceivedTime": 490510.763903,
+                        "endTime": 490510.763906,
+                        "startTime": 490510.654928
+                      }
+                    },
+                    "21.3": {
+                      "children": {
+                        "21.27": {
+                          "request": {
+                            "endTime": 490510.703376,
+                            "startTime": 490510.593554,
+                            "transferSize": 10708,
+                            "url": "https://www.ontario.ca/fonts/Open-Sans-regular/Open-Sans-regular.woff2",
+                            "responseReceivedTime": 490510.70337
+                          }
+                        }
+                      },
+                      "request": {
+                        "transferSize": 18864,
+                        "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+                        "responseReceivedTime": 490510.38540699997,
+                        "endTime": 490510.38542,
+                        "startTime": 490510.02258
+                      }
+                    }
+                  },
+                  "request": {
+                    "startTime": 490509.593777,
+                    "transferSize": 3769,
+                    "url": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19",
+                    "responseReceivedTime": 490510.004662,
+                    "endTime": 490510.004666
+                  }
+                }
+              },
+              "request": {
+                "startTime": 490509.229802,
+                "transferSize": 485,
+                "url": "https://www.ontario.ca/page/2019-novel-coronavirus",
+                "responseReceivedTime": 490509.592922,
+                "endTime": 490509.593312
+              }
+            }
+          },
+          "longestChain": {
+            "transferSize": 15388,
+            "duration": 3082.6579999993555,
+            "length": 4
+          },
+          "type": "criticalrequestchain"
+        }
+      },
+      "dom-size": {
+        "id": "dom-size",
+        "title": "Avoid an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+        "score": 0.18,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2,052 elements",
+        "details": {
+          "headings": [
+            {
+              "key": "statistic",
+              "itemType": "text",
+              "text": "Statistic"
+            },
+            {
+              "itemType": "code",
+              "key": "element",
+              "text": "Element"
+            },
+            {
+              "key": "value",
+              "itemType": "numeric",
+              "text": "Value"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "statistic": "Total DOM Elements",
+              "value": "2,052"
+            },
+            {
+              "value": "13",
+              "statistic": "Maximum DOM Depth",
+              "element": {
+                "value": "\u003cspan class=\"show-for-sr\"\u003e",
+                "type": "code"
+              }
+            },
+            {
+              "value": "174",
+              "statistic": "Maximum Child Elements",
+              "element": {
+                "type": "code",
+                "value": "\u003ctbody\u003e"
+              }
+            }
+          ]
+        },
+        "numericValue": 2052
+      },
+      "uses-rel-preload": {
+        "id": "uses-rel-preload",
+        "title": "Preload key requests",
+        "description": "Consider using `\u003clink rel=preload\u003e` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+        "score": 0.74,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 320 ms",
+        "details": {
+          "overallSavingsMs": 320,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "timespanMs",
+              "label": "Potential Savings",
+              "key": "wastedMs"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedMs": 320,
+              "url": "https://www.ontario.ca/fonts/onesite.woff?2lmqj5"
+            },
+            {
+              "wastedMs": 270,
+              "url": "https://www.ontario.ca/fonts/Raleway-700/Raleway-700.woff2"
+            },
+            {
+              "wastedMs": 270,
+              "url": "https://www.ontario.ca/fonts/Raleway-regular/Raleway-regular.woff2"
+            },
+            {
+              "wastedMs": 160,
+              "url": "https://www.ontario.ca/fonts/Open-Sans-regular/Open-Sans-regular.woff2"
+            }
+          ]
+        },
+        "numericValue": 320
+      },
+      "performance-budget": {
+        "id": "performance-budget",
+        "title": "Performance budget",
+        "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "unminified-javascript": {
+        "id": "unminified-javascript",
+        "title": "Minify JavaScript",
+        "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 12 KB",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedPercent": 67.542988452026236,
+              "url": "https://www.ontario.ca/vendor/modernizr/modernizr.js",
+              "totalBytes": 18864,
+              "wastedBytes": 12741
+            }
+          ],
+          "overallSavingsBytes": 12741
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "redirects": {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 230 ms",
+        "details": {
+          "overallSavingsMs": 230,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "label": "Time Spent",
+              "key": "wastedMs",
+              "valueType": "timespanMs"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedMs": 0,
+              "url": "(Initial: https://www.ontario.ca/page/2019-novel-coronavirus)"
+            },
+            {
+              "wastedMs": 230,
+              "url": "https://www.ontario.ca/page/how-ontario-is-responding-covid-19"
+            }
+          ]
+        },
+        "numericValue": 230
+      },
+      "user-timings": {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        }
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance",
+        "score": 0.82,
+        "auditRefs": [
+          {
+            "id": "first-contentful-paint",
+            "weight": 3,
+            "group": "metrics"
+          },
+          {
+            "id": "first-meaningful-paint",
+            "weight": 1,
+            "group": "metrics"
+          },
+          {
+            "id": "speed-index",
+            "weight": 4,
+            "group": "metrics"
+          },
+          {
+            "id": "interactive",
+            "weight": 5,
+            "group": "metrics"
+          },
+          {
+            "id": "first-cpu-idle",
+            "weight": 2,
+            "group": "metrics"
+          },
+          {
+            "id": "max-potential-fid",
+            "weight": 0,
+            "group": "metrics"
+          },
+          {
+            "id": "estimated-input-latency",
+            "weight": 0
+          },
+          {
+            "id": "total-blocking-time",
+            "weight": 0
+          },
+          {
+            "id": "render-blocking-resources",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-responsive-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "offscreen-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-css",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-css-rules",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-optimized-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-webp-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-text-compression",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "time-to-first-byte",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "redirects",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preload",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "efficient-animated-content",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "total-byte-weight",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "dom-size",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "critical-request-chains",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "user-timings",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "bootup-time",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "font-display",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "performance-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "resource-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "third-party-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "network-requests",
+            "weight": 0
+          },
+          {
+            "id": "network-rtt",
+            "weight": 0
+          },
+          {
+            "id": "network-server-latency",
+            "weight": 0
+          },
+          {
+            "id": "main-thread-tasks",
+            "weight": 0
+          },
+          {
+            "id": "diagnostics",
+            "weight": 0
+          },
+          {
+            "id": "metrics",
+            "weight": 0
+          },
+          {
+            "id": "screenshot-thumbnails",
+            "weight": 0
+          },
+          {
+            "id": "final-screenshot",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      },
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "budgets": {
+        "title": "Budgets",
+        "description": "Performance budgets set standards for the performance of your site."
+      },
+      "load-opportunities": {
+        "title": "Opportunities",
+        "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "pwa-installable": {
+        "title": "Installable"
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "pwa-optimized": {
+        "title": "PWA Optimized"
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      },
+      "pwa-fast-reliable": {
+        "title": "Fast and reliable"
+      }
+    },
+    "timing": {
+      "total": 8506.44
+    },
+    "i18n": {
+      "rendererFormattedStrings": {
+        "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+        "opportunityResourceColumnLabel": "Opportunity",
+        "opportunitySavingsColumnLabel": "Estimated Savings",
+        "errorMissingAuditInfo": "Report error: no audit information",
+        "errorLabel": "Error!",
+        "warningHeader": "Warnings: ",
+        "auditGroupExpandTooltip": "Show audits",
+        "passedAuditsGroupTitle": "Passed audits",
+        "notApplicableAuditsGroupTitle": "Not applicable",
+        "manualAuditsGroupTitle": "Additional items to manually check",
+        "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+        "crcLongestDurationLabel": "Maximum critical path latency:",
+        "crcInitialNavigation": "Initial Navigation",
+        "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+        "labDataTitle": "Lab Data"
+      }
+    }
+  },
+  "analysisUTCTimestamp": "2020-05-06T16:25:54.155Z"
+}

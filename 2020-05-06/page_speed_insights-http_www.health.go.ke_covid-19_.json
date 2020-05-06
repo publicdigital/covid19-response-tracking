@@ -1,0 +1,3060 @@
+{
+  "captchaResult": "CAPTCHA_NOT_NEEDED",
+  "kind": "pagespeedonline#result",
+  "id": "https://www.health.go.ke/covid-19/",
+  "loadingExperience": {
+    "id": "https://www.health.go.ke/covid-19/",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 8446,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.20535714285714285
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.14880952380952381
+          },
+          {
+            "min": 3000,
+            "proportion": 0.64583333333333348
+          }
+        ],
+        "category": "SLOW"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 6,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.99468085106382964
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0053191489361702126
+          },
+          {
+            "min": 300,
+            "proportion": 0
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "SLOW",
+    "initial_url": "https://www.health.go.ke/covid-19/"
+  },
+  "originLoadingExperience": {
+    "id": "https://www.health.go.ke",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 5629,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.23858537872789648
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.2789654262338348
+          },
+          {
+            "min": 3000,
+            "proportion": 0.48244919503826855
+          }
+        ],
+        "category": "SLOW"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 22,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.98179335457441963
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.01137915339098771
+          },
+          {
+            "min": 300,
+            "proportion": 0.0068274920345926266
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "SLOW",
+    "initial_url": "https://www.health.go.ke/covid-19/"
+  },
+  "lighthouseResult": {
+    "requestedUrl": "http://www.health.go.ke/covid-19/",
+    "finalUrl": "https://www.health.go.ke/covid-19/",
+    "lighthouseVersion": "5.6.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+    "fetchTime": "2020-05-06T16:26:58.504Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse",
+      "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+      "benchmarkIndex": 607
+    },
+    "runWarnings": [],
+    "configSettings": {
+      "emulatedFormFactor": "desktop",
+      "locale": "en-US",
+      "onlyCategories": [
+        "performance"
+      ],
+      "channel": "lr"
+    },
+    "audits": {
+      "uses-rel-preconnect": {
+        "id": "uses-rel-preconnect",
+        "title": "Preconnect to required origins",
+        "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsMs": 0,
+          "headings": []
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "unminified-css": {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 46 KB",
+        "details": {
+          "headings": [
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedPercent": 23.636903714134839,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "totalBytes": 91263,
+              "wastedBytes": 21572
+            },
+            {
+              "totalBytes": 35516,
+              "wastedBytes": 7896,
+              "wastedPercent": 22.233285917496449,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4"
+            },
+            {
+              "totalBytes": 40121,
+              "wastedBytes": 7657,
+              "wastedPercent": 19.085431949381125,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2"
+            },
+            {
+              "totalBytes": 8965,
+              "wastedBytes": 3800,
+              "wastedPercent": 42.383720930232563,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4",
+              "totalBytes": 13029,
+              "wastedBytes": 3411,
+              "wastedPercent": 26.177454901640683
+            },
+            {
+              "wastedPercent": 33.9172181134034,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0",
+              "totalBytes": 8072,
+              "wastedBytes": 2738
+            }
+          ],
+          "overallSavingsBytes": 47074,
+          "overallSavingsMs": 0
+        },
+        "numericValue": 0
+      },
+      "bootup-time": {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.1 s",
+        "details": {
+          "type": "table",
+          "items": [
+            {
+              "total": 173.82500000000022,
+              "scripting": 8.3280000000000012,
+              "scriptParseCompile": 1.1389999999999998,
+              "url": "Other"
+            },
+            {
+              "total": 125.3490000000003,
+              "scripting": 100.89200000000029,
+              "scriptParseCompile": 2.421,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+            }
+          ],
+          "summary": {
+            "wastedMs": 112.7800000000003
+          },
+          "headings": [
+            {
+              "text": "URL",
+              "itemType": "url",
+              "key": "url"
+            },
+            {
+              "key": "total",
+              "itemType": "ms",
+              "text": "Total CPU Time",
+              "granularity": 1
+            },
+            {
+              "key": "scripting",
+              "itemType": "ms",
+              "text": "Script Evaluation",
+              "granularity": 1
+            },
+            {
+              "text": "Script Parse",
+              "granularity": 1,
+              "itemType": "ms",
+              "key": "scriptParseCompile"
+            }
+          ]
+        },
+        "numericValue": 112.7800000000003
+      },
+      "network-server-latency": {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": []
+        },
+        "numericValue": 0
+      },
+      "offscreen-images": {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 22 KB",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://www.health.go.ke/wp-content/uploads/2016/12/admin-ajax-1.png",
+              "requestStartTime": 470361.099813,
+              "totalBytes": 22290,
+              "wastedBytes": 22290,
+              "wastedPercent": 100
+            }
+          ],
+          "overallSavingsBytes": 22290
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "uses-responsive-images": {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 13 KB",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://www.health.go.ke/wp-content/uploads/2016/12/admin-ajax-1.png",
+              "totalBytes": 22290,
+              "wastedBytes": 13799,
+              "wastedPercent": 61.904761904761905
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 13799
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "speed-index": {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+        "score": 0.03,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "5.4 s",
+        "numericValue": 5351.2947698308435
+      },
+      "unused-css-rules": {
+        "id": "unused-css-rules",
+        "title": "Remove unused CSS",
+        "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+        "score": 0.87,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 275 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "items": [
+            {
+              "wastedPercent": 89.16563985213871,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "totalBytes": 91263,
+              "wastedBytes": 81375
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+              "totalBytes": 53854,
+              "wastedBytes": 53854,
+              "wastedPercent": 100
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+              "totalBytes": 40121,
+              "wastedBytes": 40121,
+              "wastedPercent": 100
+            },
+            {
+              "wastedPercent": 100,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+              "totalBytes": 35516,
+              "wastedBytes": 35516
+            },
+            {
+              "totalBytes": 31366,
+              "wastedBytes": 31150,
+              "wastedPercent": 99.312903225806451,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+              "totalBytes": 26858,
+              "wastedBytes": 26858,
+              "wastedPercent": 100
+            },
+            {
+              "totalBytes": 13029,
+              "wastedBytes": 13029,
+              "wastedPercent": 100,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4"
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 281903,
+          "overallSavingsMs": 160
+        },
+        "numericValue": 160
+      },
+      "first-cpu-idle": {
+        "id": "first-cpu-idle",
+        "title": "First CPU Idle",
+        "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+        "score": 0.94,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.1 s",
+        "numericValue": 2134.5
+      },
+      "total-byte-weight": {
+        "id": "total-byte-weight",
+        "title": "Avoids enormous network payloads",
+        "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Total size was 1,062 KB",
+        "details": {
+          "items": [
+            {
+              "totalBytes": 177256,
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4",
+              "totalBytes": 107385
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp",
+              "totalBytes": 97254
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "totalBytes": 91263
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "totalBytes": 77528
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2",
+              "totalBytes": 65284
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4",
+              "totalBytes": 59540
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+              "totalBytes": 53854
+            },
+            {
+              "totalBytes": 40121,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+              "totalBytes": 35516
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size"
+            }
+          ]
+        },
+        "numericValue": 1087032
+      },
+      "mainthread-work-breakdown": {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.4 s",
+        "details": {
+          "headings": [
+            {
+              "key": "groupLabel",
+              "itemType": "text",
+              "text": "Category"
+            },
+            {
+              "itemType": "ms",
+              "key": "duration",
+              "text": "Time Spent",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "group": "scriptEvaluation",
+              "duration": 210.73799999999966,
+              "groupLabel": "Script Evaluation"
+            },
+            {
+              "group": "other",
+              "duration": 78.4130000000002,
+              "groupLabel": "Other"
+            },
+            {
+              "group": "styleLayout",
+              "duration": 71.562,
+              "groupLabel": "Style & Layout"
+            },
+            {
+              "group": "parseHTML",
+              "duration": 35.980000000000011,
+              "groupLabel": "Parse HTML & CSS"
+            },
+            {
+              "group": "scriptParseCompile",
+              "duration": 18.968999999999998,
+              "groupLabel": "Script Parsing & Compilation"
+            },
+            {
+              "group": "paintCompositeRender",
+              "duration": 11.743999999999994,
+              "groupLabel": "Rendering"
+            }
+          ]
+        },
+        "numericValue": 427.40599999999984
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+        "score": 0.33,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.9 s",
+        "numericValue": 1915.5
+      },
+      "uses-webp-images": {
+        "id": "uses-webp-images",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+        "score": 0.9,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 160 KB",
+        "details": {
+          "overallSavingsMs": 120,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "items": [
+            {
+              "isCrossOrigin": false,
+              "totalBytes": 176887,
+              "wastedBytes": 150017,
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png",
+              "fromProtocol": true
+            },
+            {
+              "fromProtocol": true,
+              "url": "https://www.health.go.ke/wp-content/uploads/2016/12/admin-ajax-1.png",
+              "isCrossOrigin": false,
+              "totalBytes": 22290,
+              "wastedBytes": 14278
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 164295
+        },
+        "warnings": [],
+        "numericValue": 120
+      },
+      "diagnostics": {
+        "id": "diagnostics",
+        "title": "Diagnostics",
+        "description": "Collection of useful page vitals.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "totalTaskTime": 427.40599999999966,
+              "mainDocumentTransferSize": 33808,
+              "totalByteWeight": 1087032,
+              "numTasks": 473,
+              "numTasksOver10ms": 6,
+              "rtt": 0.00072714519751622679,
+              "numFonts": 1,
+              "maxRtt": 0.00072714519751622679,
+              "numTasksOver500ms": 0,
+              "maxServerLatency": null,
+              "numScripts": 12,
+              "numStylesheets": 21,
+              "throughput": 76251340565.329056,
+              "numTasksOver100ms": 1,
+              "numTasksOver25ms": 5,
+              "numTasksOver50ms": 2,
+              "numRequests": 45
+            }
+          ]
+        }
+      },
+      "critical-request-chains": {
+        "id": "critical-request-chains",
+        "title": "Avoid chaining critical requests",
+        "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "32 chains found",
+        "details": {
+          "chains": {
+            "CA59F4C0EF7FD68BF7F95F02DD0ED15F": {
+              "children": {
+                "CA59F4C0EF7FD68BF7F95F02DD0ED15F:redirect": {
+                  "children": {
+                    "23.22": {
+                      "request": {
+                        "transferSize": 5457,
+                        "url": "https://www.health.go.ke/wp-content/plugins/tablepress/css/default.min.css?ver=1.11",
+                        "responseReceivedTime": 470363.753534,
+                        "endTime": 470363.753536,
+                        "startTime": 470361.097889
+                      }
+                    },
+                    "23.7": {
+                      "request": {
+                        "endTime": 470361.103118,
+                        "startTime": 470361.094717,
+                        "transferSize": 1692,
+                        "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&ver=5.4",
+                        "responseReceivedTime": 470361.103115
+                      }
+                    },
+                    "23.16": {
+                      "request": {
+                        "transferSize": 5259,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2",
+                        "responseReceivedTime": 470362.995779,
+                        "endTime": 470362.995782,
+                        "startTime": 470361.09657
+                      }
+                    },
+                    "23.34": {
+                      "request": {
+                        "transferSize": 2797,
+                        "url": "https://www.health.go.ke/wp-includes/js/comment-reply.min.js?ver=5.4",
+                        "responseReceivedTime": 470364.000688,
+                        "endTime": 470364.000691,
+                        "startTime": 470363.82375
+                      }
+                    },
+                    "23.27": {
+                      "request": {
+                        "startTime": 470361.099626,
+                        "transferSize": 65284,
+                        "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2",
+                        "responseReceivedTime": 470363.762413,
+                        "endTime": 470363.762415
+                      }
+                    },
+                    "23.11": {
+                      "request": {
+                        "startTime": 470361.095782,
+                        "transferSize": 40121,
+                        "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+                        "responseReceivedTime": 470362.034152,
+                        "endTime": 470362.034155
+                      }
+                    },
+                    "23.31": {
+                      "request": {
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2",
+                        "responseReceivedTime": 470363.650936,
+                        "endTime": 470363.650939,
+                        "startTime": 470363.478234,
+                        "transferSize": 7104
+                      }
+                    },
+                    "23.5": {
+                      "request": {
+                        "endTime": 470364.08362,
+                        "startTime": 470361.094187,
+                        "transferSize": 2110,
+                        "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7",
+                        "responseReceivedTime": 470364.08361800003
+                      }
+                    },
+                    "23.30": {
+                      "request": {
+                        "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7",
+                        "responseReceivedTime": 470363.477039,
+                        "endTime": 470363.477041,
+                        "startTime": 470363.312226,
+                        "transferSize": 14819
+                      }
+                    },
+                    "23.19": {
+                      "request": {
+                        "endTime": 470362.847207,
+                        "startTime": 470361.097293,
+                        "transferSize": 8780,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/custom/custom_style.php?ver=2.13.13",
+                        "responseReceivedTime": 470362.84720200003
+                      }
+                    },
+                    "23.4": {
+                      "request": {
+                        "transferSize": 53854,
+                        "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+                        "responseReceivedTime": 470362.748434,
+                        "endTime": 470362.748437,
+                        "startTime": 470361.094016
+                      }
+                    },
+                    "23.18": {
+                      "request": {
+                        "startTime": 470361.097094,
+                        "transferSize": 91263,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+                        "responseReceivedTime": 470364.14959900005,
+                        "endTime": 470364.149602
+                      }
+                    },
+                    "23.120": {
+                      "request": {
+                        "startTime": 470364.241073,
+                        "transferSize": 77528,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+                        "responseReceivedTime": 470364.42355,
+                        "endTime": 470364.423553
+                      }
+                    },
+                    "23.3": {
+                      "request": {
+                        "startTime": 470361.093818,
+                        "transferSize": 1998,
+                        "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.0",
+                        "responseReceivedTime": 470362.39923599997,
+                        "endTime": 470362.399239
+                      }
+                    },
+                    "23.33": {
+                      "request": {
+                        "transferSize": 1811,
+                        "url": "https://www.health.go.ke/wp-includes/js/wp-embed.min.js?ver=5.4",
+                        "responseReceivedTime": 470363.933455,
+                        "endTime": 470363.933457,
+                        "startTime": 470363.77164
+                      }
+                    },
+                    "23.25": {
+                      "request": {
+                        "transferSize": 59540,
+                        "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4",
+                        "responseReceivedTime": 470362.758777,
+                        "endTime": 470362.75878,
+                        "startTime": 470361.098645
+                      }
+                    },
+                    "23.10": {
+                      "request": {
+                        "startTime": 470361.09531,
+                        "transferSize": 13029,
+                        "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4",
+                        "responseReceivedTime": 470362.727854,
+                        "endTime": 470362.727857
+                      }
+                    },
+                    "23.12": {
+                      "request": {
+                        "url": "https://www.health.go.ke/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70",
+                        "responseReceivedTime": 470361.92986699997,
+                        "endTime": 470361.929869,
+                        "startTime": 470361.09588,
+                        "transferSize": 737
+                      }
+                    },
+                    "23.13": {
+                      "request": {
+                        "endTime": 470361.86533,
+                        "startTime": 470361.09604,
+                        "transferSize": 1368,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/reset.css?ver=1.0",
+                        "responseReceivedTime": 470361.865328
+                      }
+                    },
+                    "23.21": {
+                      "request": {
+                        "startTime": 470361.097712,
+                        "transferSize": 1986,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/style.css?ver=2.13.13",
+                        "responseReceivedTime": 470361.88837,
+                        "endTime": 470361.888373
+                      }
+                    },
+                    "23.32": {
+                      "request": {
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/script.js?ver=1.0",
+                        "responseReceivedTime": 470363.822355,
+                        "endTime": 470363.822358,
+                        "startTime": 470363.652133,
+                        "transferSize": 13141
+                      }
+                    },
+                    "23.15": {
+                      "request": {
+                        "startTime": 470361.096306,
+                        "transferSize": 8072,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0",
+                        "responseReceivedTime": 470363.753014,
+                        "endTime": 470363.753016
+                      }
+                    },
+                    "23.20": {
+                      "request": {
+                        "startTime": 470361.097517,
+                        "transferSize": 8965,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13",
+                        "responseReceivedTime": 470363.749266,
+                        "endTime": 470363.749269
+                      }
+                    },
+                    "23.23": {
+                      "request": {
+                        "startTime": 470361.09814,
+                        "transferSize": 97254,
+                        "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp",
+                        "responseReceivedTime": 470361.851742,
+                        "endTime": 470361.851744
+                      }
+                    },
+                    "23.8": {
+                      "request": {
+                        "startTime": 470361.094886,
+                        "transferSize": 1645,
+                        "url": "https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&ver=5.4",
+                        "responseReceivedTime": 470361.10394199996,
+                        "endTime": 470361.103944
+                      }
+                    },
+                    "23.14": {
+                      "request": {
+                        "endTime": 470363.087419,
+                        "startTime": 470361.096166,
+                        "transferSize": 1947,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/text.css?ver=1.0",
+                        "responseReceivedTime": 470363.08741700003
+                      }
+                    },
+                    "23.6": {
+                      "request": {
+                        "endTime": 470361.870705,
+                        "startTime": 470361.094594,
+                        "transferSize": 35516,
+                        "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+                        "responseReceivedTime": 470361.87070200004
+                      }
+                    },
+                    "23.17": {
+                      "request": {
+                        "startTime": 470361.096916,
+                        "transferSize": 31366,
+                        "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13",
+                        "responseReceivedTime": 470361.744356,
+                        "endTime": 470361.744359
+                      }
+                    },
+                    "23.2": {
+                      "request": {
+                        "endTime": 470361.829442,
+                        "startTime": 470361.093609,
+                        "transferSize": 26858,
+                        "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+                        "responseReceivedTime": 470361.82944
+                      }
+                    },
+                    "23.24": {
+                      "request": {
+                        "startTime": 470361.098399,
+                        "transferSize": 10436,
+                        "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+                        "responseReceivedTime": 470362.936756,
+                        "endTime": 470362.936758
+                      }
+                    },
+                    "23.26": {
+                      "request": {
+                        "endTime": 470362.020445,
+                        "startTime": 470361.098923,
+                        "transferSize": 107385,
+                        "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4",
+                        "responseReceivedTime": 470362.02044299996
+                      }
+                    },
+                    "23.9": {
+                      "request": {
+                        "startTime": 470361.095129,
+                        "transferSize": 1337,
+                        "url": "https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&ver=5.4",
+                        "responseReceivedTime": 470361.100922,
+                        "endTime": 470361.100927
+                      }
+                    }
+                  },
+                  "request": {
+                    "transferSize": 33808,
+                    "url": "https://www.health.go.ke/covid-19/",
+                    "responseReceivedTime": 470361.075533,
+                    "endTime": 470361.075536,
+                    "startTime": 470359.314259
+                  }
+                }
+              },
+              "request": {
+                "endTime": 470359.313817,
+                "startTime": 470357.379985,
+                "transferSize": 451,
+                "url": "http://www.health.go.ke/covid-19/",
+                "responseReceivedTime": 470359.312534
+              }
+            }
+          },
+          "longestChain": {
+            "duration": 7043.56799996458,
+            "length": 3,
+            "transferSize": 77528
+          },
+          "type": "criticalrequestchain"
+        }
+      },
+      "dom-size": {
+        "id": "dom-size",
+        "title": "Avoids an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "216 elements",
+        "details": {
+          "headings": [
+            {
+              "key": "statistic",
+              "itemType": "text",
+              "text": "Statistic"
+            },
+            {
+              "key": "element",
+              "itemType": "code",
+              "text": "Element"
+            },
+            {
+              "text": "Value",
+              "key": "value",
+              "itemType": "numeric"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "value": "216",
+              "statistic": "Total DOM Elements"
+            },
+            {
+              "value": "15",
+              "statistic": "Maximum DOM Depth",
+              "element": {
+                "type": "code",
+                "value": "\u003cimg width=\"406\" height=\"441\" src=\"https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png\" class=\"attachment-large size-large\" alt=\"\" srcset=\"https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png 406w, https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19-276x300.png 276w\" sizes=\"(max-width: 406px) 100vw, 406px\"\u003e"
+              }
+            },
+            {
+              "value": "12",
+              "statistic": "Maximum Child Elements",
+              "element": {
+                "type": "code",
+                "value": "\u003cbody data-rsssl=\"1\" class=\"attachment attachment-template-default single single-attachment postid-6779 attachmentid-6779 attachment-png u-design-menu-auto-arrows-on u-design-menu-drop-shadows-on u-design-fixed-menu-on tribe-js  wpb-js-composer js-comp-ver-5.4.7 vc_responsive\"\u003e"
+              }
+            }
+          ]
+        },
+        "numericValue": 216
+      },
+      "uses-rel-preload": {
+        "id": "uses-rel-preload",
+        "title": "Preload key requests",
+        "description": "Consider using `\u003clink rel=preload\u003e` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsMs": 0
+        },
+        "numericValue": 0
+      },
+      "performance-budget": {
+        "id": "performance-budget",
+        "title": "Performance budget",
+        "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "unminified-javascript": {
+        "id": "unminified-javascript",
+        "title": "Minify JavaScript",
+        "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 9 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedPercent": 43.010499921642378,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/script.js?ver=1.0",
+              "totalBytes": 13141,
+              "wastedBytes": 5652
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7",
+              "totalBytes": 14819,
+              "wastedBytes": 3732,
+              "wastedPercent": 25.186980609418285
+            }
+          ],
+          "overallSavingsBytes": 9384,
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "redirects": {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 190 ms",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "(Initial: http://www.health.go.ke/covid-19/)",
+              "wastedMs": 0
+            },
+            {
+              "url": "https://www.health.go.ke/covid-19/",
+              "wastedMs": 190
+            }
+          ],
+          "overallSavingsMs": 190,
+          "headings": [
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Time Spent"
+            }
+          ]
+        },
+        "numericValue": 190
+      },
+      "user-timings": {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        }
+      },
+      "first-meaningful-paint": {
+        "id": "first-meaningful-paint",
+        "title": "First Meaningful Paint",
+        "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+        "score": 0.25,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.1 s",
+        "numericValue": 2134.5
+      },
+      "resource-summary": {
+        "id": "resource-summary",
+        "title": "Keep request counts low and transfer sizes small",
+        "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "45 requests • 1,062 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "label",
+              "itemType": "text",
+              "text": "Resource Type"
+            },
+            {
+              "key": "requestCount",
+              "itemType": "numeric",
+              "text": "Requests"
+            },
+            {
+              "text": "Transfer Size",
+              "itemType": "bytes",
+              "key": "size"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "label": "Total",
+              "size": 1087032,
+              "requestCount": 45,
+              "resourceType": "total"
+            },
+            {
+              "resourceType": "script",
+              "label": "Script",
+              "size": 412668,
+              "requestCount": 12
+            },
+            {
+              "label": "Stylesheet",
+              "size": 343360,
+              "requestCount": 21,
+              "resourceType": "stylesheet"
+            },
+            {
+              "requestCount": 9,
+              "resourceType": "image",
+              "label": "Image",
+              "size": 219217
+            },
+            {
+              "label": "Font",
+              "size": 77528,
+              "requestCount": 1,
+              "resourceType": "font"
+            },
+            {
+              "requestCount": 1,
+              "resourceType": "document",
+              "label": "Document",
+              "size": 33808
+            },
+            {
+              "label": "Other",
+              "size": 451,
+              "requestCount": 1,
+              "resourceType": "other"
+            },
+            {
+              "requestCount": 0,
+              "resourceType": "media",
+              "label": "Media",
+              "size": 0
+            },
+            {
+              "resourceType": "third-party",
+              "label": "Third-party",
+              "size": 24094,
+              "requestCount": 5
+            }
+          ]
+        }
+      },
+      "final-screenshot": {
+        "id": "final-screenshot",
+        "title": "Final Screenshot",
+        "description": "The last screenshot captured of the pageload.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "screenshot",
+          "timing": 7289,
+          "timestamp": 470364667994,
+          "data": "data:image/jpeg;base64,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"
+        }
+      },
+      "efficient-animated-content": {
+        "id": "efficient-animated-content",
+        "title": "Use video formats for animated content",
+        "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "metrics": {
+        "id": "metrics",
+        "title": "Metrics",
+        "description": "Collects all available metrics.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "observedDomContentLoadedTs": 470364372685,
+              "observedSpeedIndex": 6923,
+              "estimatedInputLatency": 13,
+              "totalBlockingTime": 3,
+              "observedFirstPaint": 6919,
+              "observedLastVisualChange": 7289,
+              "firstContentfulPaint": 1916,
+              "observedFirstPaintTs": 470364297876,
+              "speedIndex": 5351,
+              "observedSpeedIndexTs": 470364301842,
+              "observedFirstContentfulPaint": 6919,
+              "observedNavigationStartTs": 470357378645,
+              "observedLargestContentfulPaintTs": 470364297876,
+              "observedFirstVisualChange": 6906,
+              "observedLoadTs": 470364637804,
+              "firstMeaningfulPaint": 2135,
+              "observedTraceEnd": 8318,
+              "observedFirstMeaningfulPaint": 6919,
+              "observedTraceEndTs": 470365697114,
+              "firstCPUIdle": 2135,
+              "observedFirstMeaningfulPaintTs": 470364297876,
+              "observedDomContentLoaded": 6994,
+              "observedFirstVisualChangeTs": 470364284645,
+              "observedNavigationStart": 0,
+              "interactive": 2370,
+              "observedFirstContentfulPaintTs": 470364297876,
+              "observedLoad": 7259,
+              "observedLastVisualChangeTs": 470364667645,
+              "observedLargestContentfulPaint": 6919
+            },
+            {
+              "lcpInvalidated": false
+            }
+          ]
+        },
+        "numericValue": 2370
+      },
+      "time-to-first-byte": {
+        "id": "time-to-first-byte",
+        "title": "Reduce server response times (TTFB)",
+        "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Root document took 1,760 ms",
+        "details": {
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsMs": 1162.274,
+          "headings": []
+        },
+        "numericValue": 1762.274
+      },
+      "render-blocking-resources": {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+        "score": 0.36,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 1,920 ms",
+        "details": {
+          "headings": [
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "label": "Size",
+              "key": "totalBytes",
+              "valueType": "bytes"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedMs",
+              "valueType": "timespanMs"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedMs": 310,
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+              "totalBytes": 26858
+            },
+            {
+              "wastedMs": 150,
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.0",
+              "totalBytes": 1998
+            },
+            {
+              "wastedMs": 470,
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+              "totalBytes": 53854
+            },
+            {
+              "totalBytes": 2110,
+              "wastedMs": 150,
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7"
+            },
+            {
+              "totalBytes": 35516,
+              "wastedMs": 390,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4"
+            },
+            {
+              "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&ver=5.4",
+              "totalBytes": 1692,
+              "wastedMs": 230
+            },
+            {
+              "wastedMs": 230,
+              "url": "https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&ver=5.4",
+              "totalBytes": 1645
+            },
+            {
+              "totalBytes": 1337,
+              "wastedMs": 230,
+              "url": "https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&ver=5.4"
+            },
+            {
+              "wastedMs": 230,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4",
+              "totalBytes": 13029
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+              "totalBytes": 40121,
+              "wastedMs": 310
+            },
+            {
+              "totalBytes": 737,
+              "wastedMs": 70,
+              "url": "https://www.health.go.ke/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70"
+            },
+            {
+              "totalBytes": 1368,
+              "wastedMs": 70,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/reset.css?ver=1.0"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/text.css?ver=1.0",
+              "totalBytes": 1947,
+              "wastedMs": 70
+            },
+            {
+              "totalBytes": 8072,
+              "wastedMs": 110,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0"
+            },
+            {
+              "totalBytes": 5259,
+              "wastedMs": 110,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2"
+            },
+            {
+              "wastedMs": 230,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13",
+              "totalBytes": 31366
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "totalBytes": 91263,
+              "wastedMs": 470
+            },
+            {
+              "wastedMs": 110,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/custom/custom_style.php?ver=2.13.13",
+              "totalBytes": 8780
+            },
+            {
+              "wastedMs": 110,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13",
+              "totalBytes": 8965
+            },
+            {
+              "wastedMs": 70,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/style.css?ver=2.13.13",
+              "totalBytes": 1986
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/tablepress/css/default.min.css?ver=1.11",
+              "totalBytes": 5457,
+              "wastedMs": 70
+            },
+            {
+              "totalBytes": 97254,
+              "wastedMs": 430,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+            },
+            {
+              "wastedMs": 110,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+              "totalBytes": 10436
+            },
+            {
+              "totalBytes": 59540,
+              "wastedMs": 310,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4"
+            },
+            {
+              "totalBytes": 107385,
+              "wastedMs": 430,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4"
+            },
+            {
+              "wastedMs": 310,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2",
+              "totalBytes": 65284
+            }
+          ],
+          "overallSavingsMs": 1920
+        },
+        "numericValue": 1920
+      },
+      "uses-text-compression": {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+        "score": 0.69,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 531 KB",
+        "details": {
+          "overallSavingsMs": 400,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "totalBytes": 90896,
+              "wastedBytes": 75288
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4",
+              "totalBytes": 107003,
+              "wastedBytes": 70103
+            },
+            {
+              "totalBytes": 96873,
+              "wastedBytes": 63069,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"
+            },
+            {
+              "totalBytes": 64904,
+              "wastedBytes": 46919,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+              "totalBytes": 53489,
+              "wastedBytes": 45861
+            },
+            {
+              "totalBytes": 59160,
+              "wastedBytes": 39607,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+              "totalBytes": 39755,
+              "wastedBytes": 30202
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+              "totalBytes": 35150,
+              "wastedBytes": 27500
+            },
+            {
+              "totalBytes": 33218,
+              "wastedBytes": 24419,
+              "url": "https://www.health.go.ke/covid-19/"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13",
+              "totalBytes": 31000,
+              "wastedBytes": 23950
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+              "totalBytes": 26492,
+              "wastedBytes": 21426
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7",
+              "totalBytes": 14440,
+              "wastedBytes": 10447
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4",
+              "totalBytes": 12663,
+              "wastedBytes": 10257
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/js/wp-emoji-release.min.js?ver=5.4",
+              "totalBytes": 13901,
+              "wastedBytes": 9248
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/script.js?ver=1.0",
+              "totalBytes": 12762,
+              "wastedBytes": 8474
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13",
+              "totalBytes": 8600,
+              "wastedBytes": 7520
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0",
+              "totalBytes": 7707,
+              "wastedBytes": 6431
+            },
+            {
+              "totalBytes": 8453,
+              "wastedBytes": 6273,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/custom/custom_style.php?ver=2.13.13"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+              "totalBytes": 10056,
+              "wastedBytes": 6042
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2",
+              "totalBytes": 6726,
+              "wastedBytes": 4121
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2",
+              "totalBytes": 4894,
+              "wastedBytes": 3690
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/tablepress/css/default.min.css?ver=1.11",
+              "totalBytes": 5092,
+              "wastedBytes": 2848
+            }
+          ],
+          "overallSavingsBytes": 543695
+        },
+        "numericValue": 400
+      },
+      "uses-optimized-images": {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-requests": {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "itemType": "url",
+              "key": "url",
+              "text": "URL"
+            },
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "endTime",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            },
+            {
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Transfer Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            },
+            {
+              "text": "Resource Size",
+              "displayUnit": "kb",
+              "granularity": 1,
+              "key": "resourceSize",
+              "itemType": "bytes"
+            },
+            {
+              "itemType": "text",
+              "key": "statusCode",
+              "text": "Status Code"
+            },
+            {
+              "key": "mimeType",
+              "itemType": "text",
+              "text": "MIME Type"
+            },
+            {
+              "text": "Resource Type",
+              "itemType": "text",
+              "key": "resourceType"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "endTime": 1933.8320000097156,
+              "resourceSize": 0,
+              "startTime": 0,
+              "transferSize": 451,
+              "url": "http://www.health.go.ke/covid-19/",
+              "statusCode": 301,
+              "mimeType": "text/html"
+            },
+            {
+              "resourceType": "Document",
+              "mimeType": "text/html",
+              "resourceSize": 33218,
+              "endTime": 3695.5510000116192,
+              "startTime": 1934.2739999992773,
+              "transferSize": 33808,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/covid-19/"
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 26492,
+              "endTime": 4449.4570000097156,
+              "startTime": 3713.62399996724,
+              "transferSize": 26858
+            },
+            {
+              "mimeType": "text/css",
+              "endTime": 5019.2539999843575,
+              "resourceSize": 1634,
+              "startTime": 3713.8329999870621,
+              "transferSize": 1998,
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.0",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5368.4519999660552,
+              "resourceSize": 53489,
+              "startTime": 3714.0309999813326,
+              "transferSize": 53854,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4"
+            },
+            {
+              "startTime": 3714.2020000028424,
+              "transferSize": 2110,
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 6703.6349999834783,
+              "resourceSize": 1746
+            },
+            {
+              "transferSize": 35516,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 4490.7200000016019,
+              "resourceSize": 35150,
+              "startTime": 3714.6090000169352
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 12254,
+              "endTime": 3723.1330000213347,
+              "startTime": 3714.7320000221953,
+              "transferSize": 1692,
+              "statusCode": 200,
+              "url": "https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&ver=5.4"
+            },
+            {
+              "startTime": 3714.9009999702685,
+              "transferSize": 1645,
+              "statusCode": 200,
+              "url": "https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&ver=5.4",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 7117,
+              "endTime": 3723.9589999662712
+            },
+            {
+              "resourceSize": 872,
+              "endTime": 3720.9419999853708,
+              "startTime": 3715.1440000161529,
+              "transferSize": 1337,
+              "statusCode": 200,
+              "url": "https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&ver=5.4",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5347.8720000130124,
+              "resourceSize": 12663,
+              "startTime": 3715.3249999973923,
+              "transferSize": 13029,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4"
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 4654.1699999943376,
+              "resourceSize": 39755,
+              "startTime": 3715.7969999825582,
+              "transferSize": 40121
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 374,
+              "endTime": 4549.8839999781922,
+              "startTime": 3715.8949999720789,
+              "transferSize": 737,
+              "url": "https://www.health.go.ke/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70",
+              "statusCode": 200
+            },
+            {
+              "startTime": 3716.054999968037,
+              "transferSize": 1368,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/reset.css?ver=1.0",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 1004,
+              "endTime": 4485.3449999936856
+            },
+            {
+              "mimeType": "text/css",
+              "resourceSize": 1583,
+              "endTime": 5707.4339999817312,
+              "startTime": 3716.1809999961406,
+              "transferSize": 1947,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/text.css?ver=1.0",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "transferSize": 8072,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 7707,
+              "endTime": 6373.0309999664314,
+              "startTime": 3716.3210000144318
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5615.7970000058413,
+              "resourceSize": 4894,
+              "startTime": 3716.58499998739,
+              "transferSize": 5259
+            },
+            {
+              "resourceSize": 31000,
+              "endTime": 4364.3739999970421,
+              "startTime": 3716.93100000266,
+              "transferSize": 31366,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 90896,
+              "endTime": 6769.6170000126585,
+              "startTime": 3717.1090000192635,
+              "transferSize": 91263
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5467.2220000065863,
+              "resourceSize": 8453,
+              "startTime": 3717.3080000211485,
+              "transferSize": 8780,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/custom/custom_style.php?ver=2.13.13",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "text/css",
+              "resourceSize": 8600,
+              "endTime": 6369.2840000148863,
+              "startTime": 3717.5319999805652,
+              "transferSize": 8965,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "startTime": 3717.7270000102,
+              "transferSize": 1986,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/style.css?ver=2.13.13",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 1622,
+              "endTime": 4508.3880000165664
+            },
+            {
+              "startTime": 3717.904000019189,
+              "transferSize": 5457,
+              "url": "https://www.health.go.ke/wp-content/plugins/tablepress/css/default.min.css?ver=1.11",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 6373.550999967847,
+              "resourceSize": 5092
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 4471.7589999781922,
+              "resourceSize": 96873,
+              "startTime": 3718.155000009574,
+              "transferSize": 97254,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp",
+              "statusCode": 200
+            },
+            {
+              "resourceSize": 10056,
+              "endTime": 5556.7729999893345,
+              "startTime": 3718.4140000026673,
+              "transferSize": 10436,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 59160,
+              "endTime": 5378.7949999677949,
+              "startTime": 3718.6600000131875,
+              "transferSize": 59540,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4",
+              "statusCode": 200
+            },
+            {
+              "endTime": 4640.4599999659695,
+              "resourceSize": 107003,
+              "startTime": 3718.9379999763332,
+              "transferSize": 107385,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript"
+            },
+            {
+              "resourceSize": 64904,
+              "endTime": 6382.4299999978393,
+              "startTime": 3719.6409999742173,
+              "transferSize": 65284,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript"
+            },
+            {
+              "startTime": 3719.8280000011437,
+              "transferSize": 22657,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/uploads/2016/12/admin-ajax-1.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 22290,
+              "endTime": 5931.0609999811277
+            },
+            {
+              "transferSize": 177256,
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 176887,
+              "endTime": 6389.45000001695,
+              "startTime": 3720.0420000008307
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 14440,
+              "endTime": 6097.0559999695979,
+              "startTime": 5932.24100000225,
+              "transferSize": 14819
+            },
+            {
+              "mimeType": "application/javascript",
+              "resourceSize": 6726,
+              "endTime": 6270.9540000068955,
+              "startTime": 6098.2489999732934,
+              "transferSize": 7104,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2",
+              "statusCode": 200,
+              "resourceType": "Script"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 12762,
+              "endTime": 6442.3729999689385,
+              "startTime": 6272.1480000182055,
+              "transferSize": 13141,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/script.js?ver=1.0",
+              "statusCode": 200
+            },
+            {
+              "transferSize": 1811,
+              "url": "https://www.health.go.ke/wp-includes/js/wp-embed.min.js?ver=5.4",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 1434,
+              "endTime": 6553.4719999996014,
+              "startTime": 6391.6549999848939
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-includes/js/comment-reply.min.js?ver=5.4",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 6620.7060000160709,
+              "resourceSize": 2420,
+              "startTime": 6443.764999974519,
+              "transferSize": 2797
+            },
+            {
+              "mimeType": "application/javascript",
+              "endTime": 6723.1700000120327,
+              "resourceSize": 13901,
+              "startTime": 6555.0959999673069,
+              "transferSize": 14280,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-includes/js/wp-emoji-release.min.js?ver=5.4",
+              "resourceType": "Script"
+            },
+            {
+              "mimeType": "text/javascript",
+              "endTime": 6880.2310000173748,
+              "resourceSize": 45229,
+              "startTime": 6847.5750000216067,
+              "transferSize": 18817,
+              "statusCode": 200,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "resourceType": "Script"
+            },
+            {
+              "endTime": 7019.205000018701,
+              "resourceSize": 15262,
+              "startTime": 6851.9550000200979,
+              "transferSize": 15629,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/04/logo1.jpg",
+              "resourceType": "Image",
+              "mimeType": "image/jpeg"
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 7020.1639999868348,
+              "resourceSize": 702,
+              "startTime": 6853.0199999804609,
+              "transferSize": 1065,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/searchbox.png",
+              "statusCode": 200
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-images/home-page-content-top.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 107,
+              "endTime": 7034.3100000172853,
+              "startTime": 6856.98300000513,
+              "transferSize": 469
+            },
+            {
+              "transferSize": 463,
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/heading_underline.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 101,
+              "endTime": 7019.8749999981374,
+              "startTime": 6858.4939999855123
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 7039.416000014171,
+              "resourceSize": 172,
+              "startTime": 6859.0569999651052,
+              "transferSize": 534,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/double-arrow.png",
+              "statusCode": 200
+            },
+            {
+              "statusCode": 200,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "resourceType": "Font",
+              "mimeType": "font/woff2",
+              "endTime": 7043.56799996458,
+              "resourceSize": 77160,
+              "startTime": 6861.0880000051111,
+              "transferSize": 77528
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/images/auto-arrows.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 7255.8439999702387,
+              "resourceSize": 179,
+              "startTime": 6971.8679999932647,
+              "transferSize": 541
+            },
+            {
+              "resourceSize": 35,
+              "endTime": 7030.994999979157,
+              "startTime": 7027.2390000172891,
+              "transferSize": 603,
+              "url": "https://www.google-analytics.com/r/collect?v=1&_v=j81&a=373902192&t=pageview&_s=1&dl=https%3A%2F%2Fwww.health.go.ke%2Fcovid-19%2F&ul=en-us&de=UTF-8&dt=COVID-19%20%E2%80%93%20MINISTRY%20OF%20HEALTH&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=IEBAAEAB~&jid=232713598&gjid=888252510&cid=95638960.1588782426&tid=UA-68629385-1&_gid=605342386.1588782426&_r=1&z=1327797263",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/gif"
+            }
+          ]
+        },
+        "numericValue": 45
+      },
+      "uses-long-cache-ttl": {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+        "score": 0.04,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "39 resources found",
+        "details": {
+          "summary": {
+            "wastedBytes": 1042791.75
+          },
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "text": "Cache TTL",
+              "displayUnit": "duration",
+              "key": "cacheLifetimeMs",
+              "itemType": "ms"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/03/COVID-19.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 177256,
+              "wastedBytes": 177256,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.2.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 107385,
+              "wastedBytes": 107385,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 97254,
+              "wastedBytes": 97254
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/style.css?ver=2.13.13",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 91263,
+              "wastedBytes": 91263
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 77528,
+              "wastedBytes": 77528,
+              "cacheHitProbability": 0
+            },
+            {
+              "totalBytes": 65284,
+              "wastedBytes": 65284,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.7.2",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.2.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 59540,
+              "wastedBytes": 59540,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/css/dist/block-library/style.min.css?ver=5.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 53854,
+              "wastedBytes": 53854,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.7.2",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 40121,
+              "wastedBytes": 40121,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.2.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 35516,
+              "wastedBytes": 35516,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/css/font-awesome.min.css?ver=2.13.13",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 31366,
+              "wastedBytes": 31366
+            },
+            {
+              "totalBytes": 26858,
+              "wastedBytes": 26858,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.12.0",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "totalBytes": 22657,
+              "wastedBytes": 22657,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/uploads/2016/12/admin-ajax-1.png",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/uploads/2020/04/logo1.jpg",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 15629,
+              "wastedBytes": 15629
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.7",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 14819,
+              "wastedBytes": 14819,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-includes/js/wp-emoji-release.min.js?ver=5.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 14280,
+              "wastedBytes": 14280
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/script.js?ver=1.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 13141,
+              "wastedBytes": 13141,
+              "cacheHitProbability": 0
+            },
+            {
+              "totalBytes": 13029,
+              "wastedBytes": 13029,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.2.4",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "totalBytes": 10436,
+              "wastedBytes": 10436,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "totalBytes": 8965,
+              "wastedBytes": 8965,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/fluid.css?ver=2.13.13",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "totalBytes": 8780,
+              "wastedBytes": 8780,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/custom/custom_style.php?ver=2.13.13",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/960.css?ver=1.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 8072,
+              "wastedBytes": 8072
+            },
+            {
+              "totalBytes": 7104,
+              "wastedBytes": 7104,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/js/superfish.combined.js?ver=1.7.2",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/tablepress/css/default.min.css?ver=1.11",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 5457,
+              "wastedBytes": 5457
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/css/superfish.css?ver=1.7.2",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 5259,
+              "wastedBytes": 5259,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/js/comment-reply.min.js?ver=5.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 2797,
+              "wastedBytes": 2797,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.7",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 2110,
+              "wastedBytes": 2110,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.12.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1998,
+              "wastedBytes": 1998
+            },
+            {
+              "totalBytes": 1986,
+              "wastedBytes": 1986,
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/style.css?ver=2.13.13",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/css/text.css?ver=1.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1947,
+              "wastedBytes": 1947
+            },
+            {
+              "url": "https://www.health.go.ke/wp-includes/js/wp-embed.min.js?ver=5.4",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1811,
+              "wastedBytes": 1811,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/reset.css?ver=1.0",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1368,
+              "wastedBytes": 1368
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/searchbox.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1065,
+              "wastedBytes": 1065
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 737,
+              "wastedBytes": 737
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/scripts/superfish-menu/images/auto-arrows.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 541,
+              "wastedBytes": 541,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/double-arrow.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 534,
+              "wastedBytes": 534
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-images/home-page-content-top.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 469,
+              "wastedBytes": 469
+            },
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/style1/images/heading_underline.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 463,
+              "wastedBytes": 463,
+              "cacheHitProbability": 0
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 7200
+              },
+              "cacheLifetimeMs": 7200000,
+              "totalBytes": 18817,
+              "cacheHitProbability": 0.25,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "wastedBytes": 14112.75
+            }
+          ]
+        },
+        "numericValue": 1042791.75
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "40 ms",
+        "numericValue": 35.5
+      },
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+        "score": 0.91,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.4 s",
+        "numericValue": 2370
+      },
+      "third-party-summary": {
+        "id": "third-party-summary",
+        "title": "Minimize third-party usage",
+        "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Third-party code blocked the main thread for 0 ms",
+        "details": {
+          "summary": {
+            "wastedMs": 0,
+            "wastedBytes": 19420
+          },
+          "headings": [
+            {
+              "key": "entity",
+              "itemType": "link",
+              "text": "Third-Party"
+            },
+            {
+              "itemType": "bytes",
+              "key": "transferSize",
+              "text": "Size",
+              "granularity": 1
+            },
+            {
+              "itemType": "ms",
+              "key": "blockingTime",
+              "text": "Main-Thread Blocking Time",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "transferSize": 19420,
+              "blockingTime": 0,
+              "entity": {
+                "text": "Google Analytics",
+                "type": "link",
+                "url": "https://www.google.com/analytics/analytics/"
+              },
+              "mainThreadTime": 27.806999999999995
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "screenshot-thumbnails": {
+        "id": "screenshot-thumbnails",
+        "title": "Screenshot Thumbnails",
+        "description": "This is what the load of your site looked like.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "filmstrip",
+          "items": [
+            {
+              "timestamp": 470358107544.99994,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 729
+            },
+            {
+              "timing": 1458,
+              "timestamp": 470358836445,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 2187,
+              "timestamp": 470359565344.99994,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 470360294245,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 2916
+            },
+            {
+              "timing": 3645,
+              "timestamp": 470361023145,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 4373,
+              "timestamp": 470361752044.99994,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 5102,
+              "timestamp": 470362480945,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 5831,
+              "timestamp": 470363209844.99994,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 6560,
+              "timestamp": 470363938745,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 7289,
+              "timestamp": 470364667645,
+              "data": "data:image/jpeg;base64,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"
+            }
+          ],
+          "scale": 7289
+        }
+      },
+      "network-rtt": {
+        "id": "network-rtt",
+        "title": "Network Round Trip Times",
+        "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        },
+        "numericValue": 0
+      },
+      "main-thread-tasks": {
+        "id": "main-thread-tasks",
+        "title": "Tasks",
+        "description": "Lists the toplevel main thread tasks that executed during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "startTime": 3722.946,
+              "duration": 9.064
+            },
+            {
+              "duration": 46.669,
+              "startTime": 3736.728
+            },
+            {
+              "duration": 73.806,
+              "startTime": 6800.551
+            },
+            {
+              "duration": 33.207,
+              "startTime": 6874.817
+            },
+            {
+              "startTime": 6908.131,
+              "duration": 110.624
+            },
+            {
+              "duration": 28.102,
+              "startTime": 7023.909
+            },
+            {
+              "duration": 7.931,
+              "startTime": 7069.154
+            },
+            {
+              "startTime": 7077.166,
+              "duration": 13.256
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            }
+          ]
+        },
+        "numericValue": 8
+      },
+      "font-display": {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "text": "URL",
+              "itemType": "url",
+              "key": "url"
+            },
+            {
+              "text": "Potential Savings",
+              "itemType": "ms",
+              "key": "wastedMs"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://www.health.go.ke/wp-content/themes/u-design/styles/common-css/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0",
+              "wastedMs": 182.47999995946884
+            }
+          ],
+          "type": "table"
+        },
+        "warnings": []
+      },
+      "estimated-input-latency": {
+        "id": "estimated-input-latency",
+        "title": "Estimated Input Latency",
+        "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "10 ms",
+        "numericValue": 12.8
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0 ms",
+        "numericValue": 2.5
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance",
+        "score": 0.52,
+        "auditRefs": [
+          {
+            "id": "first-contentful-paint",
+            "weight": 3,
+            "group": "metrics"
+          },
+          {
+            "id": "first-meaningful-paint",
+            "weight": 1,
+            "group": "metrics"
+          },
+          {
+            "id": "speed-index",
+            "weight": 4,
+            "group": "metrics"
+          },
+          {
+            "id": "interactive",
+            "weight": 5,
+            "group": "metrics"
+          },
+          {
+            "id": "first-cpu-idle",
+            "weight": 2,
+            "group": "metrics"
+          },
+          {
+            "id": "max-potential-fid",
+            "weight": 0,
+            "group": "metrics"
+          },
+          {
+            "id": "estimated-input-latency",
+            "weight": 0
+          },
+          {
+            "id": "total-blocking-time",
+            "weight": 0
+          },
+          {
+            "id": "render-blocking-resources",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-responsive-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "offscreen-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-css",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-css-rules",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-optimized-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-webp-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-text-compression",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "time-to-first-byte",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "redirects",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preload",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "efficient-animated-content",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "total-byte-weight",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "dom-size",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "critical-request-chains",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "user-timings",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "bootup-time",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "font-display",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "performance-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "resource-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "third-party-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "network-requests",
+            "weight": 0
+          },
+          {
+            "id": "network-rtt",
+            "weight": 0
+          },
+          {
+            "id": "network-server-latency",
+            "weight": 0
+          },
+          {
+            "id": "main-thread-tasks",
+            "weight": 0
+          },
+          {
+            "id": "diagnostics",
+            "weight": 0
+          },
+          {
+            "id": "metrics",
+            "weight": 0
+          },
+          {
+            "id": "screenshot-thumbnails",
+            "weight": 0
+          },
+          {
+            "id": "final-screenshot",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "pwa-optimized": {
+        "title": "PWA Optimized"
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      },
+      "pwa-fast-reliable": {
+        "title": "Fast and reliable"
+      },
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      },
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "budgets": {
+        "title": "Budgets",
+        "description": "Performance budgets set standards for the performance of your site."
+      },
+      "load-opportunities": {
+        "title": "Opportunities",
+        "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "pwa-installable": {
+        "title": "Installable"
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      }
+    },
+    "timing": {
+      "total": 13605.61
+    },
+    "i18n": {
+      "rendererFormattedStrings": {
+        "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+        "opportunityResourceColumnLabel": "Opportunity",
+        "opportunitySavingsColumnLabel": "Estimated Savings",
+        "errorMissingAuditInfo": "Report error: no audit information",
+        "errorLabel": "Error!",
+        "warningHeader": "Warnings: ",
+        "auditGroupExpandTooltip": "Show audits",
+        "passedAuditsGroupTitle": "Passed audits",
+        "notApplicableAuditsGroupTitle": "Not applicable",
+        "manualAuditsGroupTitle": "Additional items to manually check",
+        "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+        "crcLongestDurationLabel": "Maximum critical path latency:",
+        "crcInitialNavigation": "Initial Navigation",
+        "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+        "labDataTitle": "Lab Data"
+      }
+    },
+    "stackPacks": [
+      {
+        "id": "wordpress",
+        "title": "WordPress",
+        "iconDataURL": "data:image/svg+xml,%3Csvg viewBox='0 0 122.5 122.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232f3439'%3E%3Cpath d='M8.7 61.3c0 20.8 12.1 38.7 29.6 47.3l-25-68.7c-3 6.5-4.6 13.7-4.6 21.4zM96.7 58.6c0-6.5-2.3-11-4.3-14.5-2.7-4.3-5.2-8-5.2-12.3 0-4.8 3.7-9.3 8.9-9.3h.7a52.4 52.4 0 0 0-79.4 9.9h3.3c5.5 0 14-.6 14-.6 2.9-.2 3.2 4 .4 4.3 0 0-2.9.4-6 .5l19.1 57L59.7 59l-8.2-22.5c-2.8-.1-5.5-.5-5.5-.5-2.8-.1-2.5-4.5.3-4.3 0 0 8.7.7 13.9.7 5.5 0 14-.7 14-.7 2.8-.2 3.2 4 .3 4.3 0 0-2.8.4-6 .5l19 56.5 5.2-17.5c2.3-7.3 4-12.5 4-17z'/%3E%3Cpath d='M62.2 65.9l-15.8 45.8a52.6 52.6 0 0 0 32.3-.9l-.4-.7zM107.4 36a49.6 49.6 0 0 1-3.6 24.2l-16.1 46.5A52.5 52.5 0 0 0 107.4 36z'/%3E%3Cpath d='M61.3 0a61.3 61.3 0 1 0 .1 122.7A61.3 61.3 0 0 0 61.3 0zm0 119.7a58.5 58.5 0 1 1 .1-117 58.5 58.5 0 0 1-.1 117z'/%3E%3C/g%3E%3C/svg%3E",
+        "descriptions": {
+          "unminified-javascript": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+javascript/) can speed up your site by concatenating, minifying, and compressing your scripts. You may also want to use a build process to do this minification up front if possible.",
+          "unminified-css": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+css/) can speed up your site by concatenating, minifying, and compressing your styles. You may also want to use a build process to do this minification up-front if possible.",
+          "offscreen-images": "Install a [lazy-load WordPress plugin](https://wordpress.org/plugins/search/lazy+load/) that provides the ability to defer any offscreen images, or switch to a theme that provides that functionality. Also consider using [the AMP plugin](https://wordpress.org/plugins/amp/).",
+          "uses-responsive-images": "Upload images directly through the [media library](https://codex.wordpress.org/Media_Library_Screen) to ensure that the required image sizes are available, and then insert them from the media library or use the image widget to ensure the optimal image sizes are used (including those for the responsive breakpoints). Avoid using `Full Size` images unless the dimensions are adequate for their usage. [Learn More](https://codex.wordpress.org/Inserting_Images_into_Posts_and_Pages#Image_Size).",
+          "efficient-animated-content": "Consider uploading your GIF to a service which will make it available to embed as an HTML5 video.",
+          "unused-css-rules": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page.",
+          "time-to-first-byte": "Themes, plugins, and server specifications all contribute to server response time. Consider finding a more optimized theme, carefully selecting an optimization plugin, and/or upgrading your server.",
+          "total-byte-weight": "Consider showing excerpts in your post lists (e.g. via the more tag), reducing the number of posts shown on a given page, breaking your long posts into multiple pages, or using a plugin to lazy-load comments.",
+          "render-blocking-resources": "There are a number of WordPress plugins that can help you [inline critical assets](https://wordpress.org/plugins/search/critical+css/) or [defer less important resources](https://wordpress.org/plugins/search/defer+css+javascript/). Beware that optimizations provided by these plugins may break features of your theme or plugins, so you will likely need to make code changes.",
+          "uses-optimized-images": "Consider using an [image optimization WordPress plugin](https://wordpress.org/plugins/search/optimize+images/) that compresses your images while retaining quality.",
+          "uses-text-compression": "You can enable text compression in your web server configuration.",
+          "uses-webp-images": "Consider using a [plugin](https://wordpress.org/plugins/search/convert+webp/) or service that will automatically convert your uploaded images to the optimal formats.",
+          "uses-long-cache-ttl": "Read about [Browser Caching in WordPress](https://codex.wordpress.org/WordPress_Optimization#Browser_Caching).",
+          "unused-javascript": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused JavaScript in your page. To identify plugins that are adding extraneous JS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the script. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page."
+        }
+      }
+    ]
+  },
+  "analysisUTCTimestamp": "2020-05-06T16:26:58.504Z"
+}
