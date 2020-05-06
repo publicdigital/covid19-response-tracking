@@ -6,28 +6,11 @@ from lxml import html
 import json
 from datetime import datetime
 import os
-import errno
-import re
-import pathlib
+import c19utils
 
-formatted_date = datetime.now().strftime("%Y-%m-%d")
-output_directory = pathlib.Path(__file__).parent.parent.absolute()
-html_output_directory = os.path.join(output_directory, formatted_date)
-json_output_directory= os.path.join(output_directory, "language-analysis")
+directories = c19utils.establish_directories(formatted_date)
 
 output_for_json = {}
-
-# Ensure output folders exist
-try:
-    os.makedirs(html_output_directory)
-except OSError as e:
-    if e.errno != errno.EEXIST:
-        raise
-try:
-    os.makedirs(json_output_directory)
-except OSError as e:
-    if e.errno != errno.EEXIST:
-        raise
 
 def process_trafilatura(downloaded):
   downloaded = html.fromstring(downloaded)
@@ -53,21 +36,12 @@ def get_scores(text):
   except Exception as e:
       return repr(e)
 
-def filter_bad_filename_chars(filename):
-    """
-        Filter bad chars for any filename
-    """
-    # Before, just avoid triple underscore escape for the classic '://' pattern
-    filename = filename.replace('://', '_')
-
-    return re.sub('[^\w\-_\. ]', '_', filename)
-
-markdown_file = open(os.path.join(output_directory, "language-analysis.md"), "w")
+markdown_file = open(os.path.join(directories['base'], "language-analysis.md"), "w")
 
 markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
 markdown_file.write(" | --- | --- | --- |\n")
 
-fl = open(os.path.join(output_directory, 'list.txt'))
+fl = open(os.path.join(directories['base'], 'list.txt'))
 for raw_url in fl:
   url = raw_url.strip()
   output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
@@ -82,7 +56,7 @@ for raw_url in fl:
 
   # First thing we do is capture the HTML
   try:
-    output_filename = os.path.join(html_output_directory, ('%s.html' % filter_bad_filename_chars(url)))
+    output_filename = os.path.join(directories['today'], ('%s.html' % c19utils.filter_bad_filename_chars(url)))
     html_file = open(output_filename, "w")
     html_file.write(downloaded)
     html_file.close()
@@ -111,8 +85,7 @@ for raw_url in fl:
 fl.close()
 markdown_file.close()
 
-json_filename = os.path.join(json_output_directory, ('%s.json' % formatted_date))
+json_filename = os.path.join(directories['languages'], ('%s.json' % formatted_date))
 json_file = open(json_filename, "w")
 json_file.write(json.dumps(output_for_json, indent=2, sort_keys=True))
 json_file.close()
-

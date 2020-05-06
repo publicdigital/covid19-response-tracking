@@ -2,7 +2,6 @@ import os
 import glob
 import json
 from jinja2 import Template
-import re
 import statistics
 import base64
 import imageio
@@ -10,8 +9,7 @@ import matplotlib as mpl
 mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
-import errno
-import pathlib
+import c19utils
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -22,14 +20,6 @@ url_mappings = {
   'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
   'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/'
         }
-def filter_bad_filename_chars(filename):
-    """
-        Filter bad chars for any filename
-    """
-    # Before, just avoid triple underscore escape for the classic '://' pattern
-    filename = filename.replace('://', '_')
-
-    return re.sub('[^\w\-_\. ]', '_', filename)
 
 # The lighthouse key isn't guaranteed to match the URL
 # so allow for variance (but don't implement it yet)
@@ -159,25 +149,11 @@ def identify_latest_date(site_data):
   dates_covered.sort()
   return dates_covered[-1]
 
-base_directory = pathlib.Path(__file__).parent.parent.absolute()
-directories = {
-  'reports': os.path.join(base_directory, "reports"),
-  'lighthouse': os.path.join(base_directory, "lighthouse-reports"),
-  'languages': os.path.join(base_directory, 'language-analysis'),
-  'graphs': os.path.join(base_directory, "reports", "graphs"),
-  'timelapses': os.path.join(base_directory, "reports", "timelapses"),
-  'loading': os.path.join(base_directory, "reports", "loading")
-   }
-for directory in directories:
-    try:
-      os.mkdir(directories[directory])
-    except OSError as error:
-      if error.errno != errno.EEXIST:
-        raise error
+directories = c19utils.establish_directories()
 
-list_file = os.path.join(base_directory, 'list.txt')
-page_tmpl_file = os.path.join(base_directory, 'templates', 'site.html')
-index_tmpl_file = os.path.join(base_directory, 'templates', 'index.html')
+list_file = os.path.join(directories['base'], 'list.txt')
+page_tmpl_file = os.path.join(directories['templates'], 'site.html')
+index_tmpl_file = os.path.join(directories['templates'], 'index.html')
 
 latest_language_data = get_reading_ages(directories['languages'])
 lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
@@ -196,7 +172,7 @@ with open(list_file, 'r') as f:
   for url in f:
       stripped_url = url.strip()
       scores = {}
-      clean_url = filter_bad_filename_chars(stripped_url)
+      clean_url = c19utils.filter_bad_filename_chars(stripped_url)
       url_stub = clean_url[0:100]
       loading_gif_filename = os.path.join(directories['loading'], url_stub + ".gif")
       graph_directory_and_prefix = os.path.join(directories['graphs'], url_stub)
@@ -238,12 +214,11 @@ with open(list_file, 'r') as f:
         report.write(output)
         site_list[stripped_url] = "/reports/" + url_stub + ".html"
 
-  rankings = { 'accessibility': [], 'performance' : [] }
-  for consideration in rankings:
-      d_sorted_by_value = OrderedDict(sorted(top_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
-      rankings[consideration] = d_sorted_by_value
+rankings = { 'accessibility': [], 'performance' : [] }
+for consideration in rankings:
+  d_sorted_by_value = OrderedDict(sorted(top_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
+  rankings[consideration] = d_sorted_by_value
 
-  index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
-  with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
-      index_file.write(index)
-
+index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
+with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
+  index_file.write(index)
