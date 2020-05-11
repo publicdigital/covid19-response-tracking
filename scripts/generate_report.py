@@ -197,7 +197,7 @@ with open(list_file, 'r') as f:
         scores['graph_filename'] = "/reports/graphs/" + url_stub
 
         output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
-        scores['timelapse_filename'] = generate_timelapse(clean_url, base_directory, output_file)
+        scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
         scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")

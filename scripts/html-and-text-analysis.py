@@ -8,6 +8,7 @@ from datetime import datetime
 import os
 import c19utils
 
+formatted_date = datetime.now().strftime("%Y-%m-%d")
 directories = c19utils.establish_directories(formatted_date)
 
 output_for_json = {}
