@@ -1,0 +1,3352 @@
+{
+  "captchaResult": "CAPTCHA_NOT_NEEDED",
+  "kind": "pagespeedonline#result",
+  "id": "https://health.ri.gov/covid/",
+  "loadingExperience": {
+    "id": "https://health.ri.gov/covid/",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1341,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.60793339862879525
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.34059745347698334
+          },
+          {
+            "min": 3000,
+            "proportion": 0.051469147894221329
+          }
+        ],
+        "category": "AVERAGE"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 11,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.99500998003992025
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0036926147704590823
+          },
+          {
+            "min": 300,
+            "proportion": 0.0012974051896207585
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "AVERAGE",
+    "initial_url": "https://health.ri.gov/covid/"
+  },
+  "originLoadingExperience": {
+    "id": "https://health.ri.gov",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1421,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.61323983957902262
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.31946253863642177
+          },
+          {
+            "min": 3000,
+            "proportion": 0.067297621784555658
+          }
+        ],
+        "category": "AVERAGE"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 17,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.98643192617210018
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0084319811035732922
+          },
+          {
+            "min": 300,
+            "proportion": 0.005136092724326401
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "AVERAGE",
+    "initial_url": "https://health.ri.gov/covid/"
+  },
+  "lighthouseResult": {
+    "requestedUrl": "https://health.ri.gov/covid",
+    "finalUrl": "https://health.ri.gov/covid/",
+    "lighthouseVersion": "5.6.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+    "fetchTime": "2020-05-07T09:25:47.225Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse",
+      "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+      "benchmarkIndex": 774
+    },
+    "runWarnings": [],
+    "configSettings": {
+      "emulatedFormFactor": "desktop",
+      "locale": "en-US",
+      "onlyCategories": [
+        "performance"
+      ],
+      "channel": "lr"
+    },
+    "audits": {
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+        "score": 0.94,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.1 s",
+        "numericValue": 2145.5
+      },
+      "third-party-summary": {
+        "id": "third-party-summary",
+        "title": "Minimize third-party usage",
+        "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Third-party code blocked the main thread for 0 ms",
+        "details": {
+          "summary": {
+            "wastedMs": 0,
+            "wastedBytes": 296650
+          },
+          "headings": [
+            {
+              "text": "Third-Party",
+              "key": "entity",
+              "itemType": "link"
+            },
+            {
+              "text": "Size",
+              "granularity": 1,
+              "key": "transferSize",
+              "itemType": "bytes"
+            },
+            {
+              "key": "blockingTime",
+              "itemType": "ms",
+              "text": "Main-Thread Blocking Time",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "transferSize": 111331,
+              "blockingTime": 0,
+              "entity": {
+                "url": "https://developers.google.com/apis-explorer/#p/",
+                "type": "link",
+                "text": "Other Google APIs/SDKs"
+              },
+              "mainThreadTime": 59.709
+            },
+            {
+              "entity": {
+                "url": "https://fontawesome.com/",
+                "type": "link",
+                "text": "FontAwesome CDN"
+              },
+              "mainThreadTime": 6.523,
+              "transferSize": 96284,
+              "blockingTime": 0
+            },
+            {
+              "entity": {
+                "url": "https://www.google.com/maps",
+                "type": "link",
+                "text": "Google Maps"
+              },
+              "mainThreadTime": 16.118000000000006,
+              "transferSize": 38945,
+              "blockingTime": 0
+            },
+            {
+              "transferSize": 26002,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Google Tag Manager",
+                "url": "https://marketingplatform.google.com/about/tag-manager/"
+              },
+              "mainThreadTime": 13.859999999999991
+            },
+            {
+              "transferSize": 19587,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Google Analytics",
+                "url": "https://www.google.com/analytics/analytics/"
+              },
+              "mainThreadTime": 20.776999999999997
+            },
+            {
+              "transferSize": 3825,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Google CDN",
+                "url": "https://developers.google.com/speed/libraries/"
+              },
+              "mainThreadTime": 0
+            },
+            {
+              "transferSize": 676,
+              "blockingTime": 0,
+              "entity": {
+                "url": "https://www.doubleclickbygoogle.com/",
+                "text": "Google/Doubleclick Ads",
+                "type": "link"
+              },
+              "mainThreadTime": 0
+            }
+          ]
+        }
+      },
+      "screenshot-thumbnails": {
+        "id": "screenshot-thumbnails",
+        "title": "Screenshot Thumbnails",
+        "description": "This is what the load of your site looked like.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "timestamp": 30088199990,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 629
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 1258,
+              "timestamp": 30088829189.999996
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 1888,
+              "timestamp": 30089458390
+            },
+            {
+              "timing": 2517,
+              "timestamp": 30090087590,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 30090716790,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 3146
+            },
+            {
+              "timing": 3775,
+              "timestamp": 30091345990,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 4404,
+              "timestamp": 30091975189.999996,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 5034,
+              "timestamp": 30092604390,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 5663,
+              "timestamp": 30093233590,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 6292,
+              "timestamp": 30093862790,
+              "data": "data:image/jpeg;base64,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"
+            }
+          ],
+          "type": "filmstrip",
+          "scale": 6292
+        }
+      },
+      "network-rtt": {
+        "id": "network-rtt",
+        "title": "Network Round Trip Times",
+        "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "table"
+        },
+        "numericValue": 0
+      },
+      "main-thread-tasks": {
+        "id": "main-thread-tasks",
+        "title": "Tasks",
+        "description": "Lists the toplevel main thread tasks that executed during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "itemType": "ms",
+              "key": "duration",
+              "text": "End Time",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "startTime": 1539.989,
+              "duration": 9.47
+            },
+            {
+              "duration": 10.567,
+              "startTime": 1554.641
+            },
+            {
+              "startTime": 1680.282,
+              "duration": 10.983
+            },
+            {
+              "startTime": 5756.827,
+              "duration": 61.475
+            },
+            {
+              "startTime": 5818.412,
+              "duration": 11.527
+            },
+            {
+              "duration": 15.304,
+              "startTime": 5833.791
+            },
+            {
+              "startTime": 5849.239,
+              "duration": 33.312
+            },
+            {
+              "duration": 61.276,
+              "startTime": 5884.127
+            },
+            {
+              "duration": 5.628,
+              "startTime": 5951.851
+            },
+            {
+              "startTime": 5961.373,
+              "duration": 51.506
+            },
+            {
+              "duration": 49.434,
+              "startTime": 6013.147
+            },
+            {
+              "duration": 21.073,
+              "startTime": 6073.732
+            },
+            {
+              "duration": 16.113,
+              "startTime": 6097.966
+            },
+            {
+              "startTime": 6114.207,
+              "duration": 6.019
+            },
+            {
+              "startTime": 6121.163,
+              "duration": 7.233
+            },
+            {
+              "startTime": 6132.179,
+              "duration": 34.683
+            },
+            {
+              "duration": 43.243,
+              "startTime": 6172.341
+            },
+            {
+              "duration": 10.075,
+              "startTime": 6225.319
+            },
+            {
+              "startTime": 6235.728,
+              "duration": 5.45
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 19
+      },
+      "font-display": {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "wastedMs",
+              "itemType": "ms",
+              "text": "Potential Savings"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "wastedMs": 108.03500000110944,
+              "url": "https://health.ri.gov/assets/font/fontello.woff?91499434"
+            }
+          ]
+        },
+        "warnings": []
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0 ms",
+        "numericValue": 0
+      },
+      "estimated-input-latency": {
+        "id": "estimated-input-latency",
+        "title": "Estimated Input Latency",
+        "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "10 ms",
+        "numericValue": 12.8
+      },
+      "uses-rel-preconnect": {
+        "id": "uses-rel-preconnect",
+        "title": "Preconnect to required origins",
+        "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsMs": 0,
+          "headings": []
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "bootup-time": {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.0 s",
+        "details": {
+          "headings": [
+            {
+              "itemType": "url",
+              "key": "url",
+              "text": "URL"
+            },
+            {
+              "itemType": "ms",
+              "key": "total",
+              "text": "Total CPU Time",
+              "granularity": 1
+            },
+            {
+              "granularity": 1,
+              "itemType": "ms",
+              "key": "scripting",
+              "text": "Script Evaluation"
+            },
+            {
+              "itemType": "ms",
+              "key": "scriptParseCompile",
+              "text": "Script Parse",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "scriptParseCompile": 1.21,
+              "url": "Other",
+              "total": 399.97500000000031,
+              "scripting": 6.7069999999999963
+            }
+          ],
+          "summary": {
+            "wastedMs": 7.9169999999999963
+          }
+        },
+        "numericValue": 7.9169999999999963
+      },
+      "unminified-css": {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+        "score": 0.77,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 158 KB",
+        "details": {
+          "headings": [
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "items": [
+            {
+              "wastedBytes": 130029,
+              "wastedPercent": 47.6107200469277,
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "totalBytes": 273108
+            },
+            {
+              "wastedPercent": 76.617345285668,
+              "url": "https://health.ri.gov/assets/scss/normalize.css",
+              "totalBytes": 9514,
+              "wastedBytes": 7289
+            },
+            {
+              "url": "https://health.ri.gov/css/health.css",
+              "totalBytes": 13517,
+              "wastedBytes": 6780,
+              "wastedPercent": 50.158371040723978
+            },
+            {
+              "totalBytes": 28502,
+              "wastedBytes": 6061,
+              "wastedPercent": 21.263940520446102,
+              "url": "https://health.ri.gov/css/myhealth.css"
+            },
+            {
+              "wastedPercent": 81.578947368421055,
+              "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css",
+              "totalBytes": 6336,
+              "wastedBytes": 5169
+            },
+            {
+              "url": "https://health.ri.gov/css/links.css",
+              "totalBytes": 38648,
+              "wastedBytes": 4565,
+              "wastedPercent": 11.812664426558307
+            },
+            {
+              "wastedPercent": 48.421052631578945,
+              "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css",
+              "totalBytes": 4721,
+              "wastedBytes": 2286
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 162179,
+          "overallSavingsMs": 280
+        },
+        "numericValue": 280
+      },
+      "offscreen-images": {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsBytes": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-server-latency": {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        },
+        "numericValue": 0
+      },
+      "uses-responsive-images": {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+        "score": 0.93,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 148 KB",
+        "details": {
+          "overallSavingsMs": 80,
+          "headings": [
+            {
+              "valueType": "thumbnail",
+              "key": "url"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://health.ri.gov/img/icons/ridelivers-banner.png",
+              "totalBytes": 58844,
+              "wastedBytes": 51361,
+              "wastedPercent": 87.283580477000783
+            },
+            {
+              "url": "https://health.ri.gov/img/icons/RI-HAVENS-banner.png",
+              "totalBytes": 58263,
+              "wastedBytes": 50854,
+              "wastedPercent": 87.283580477000783
+            },
+            {
+              "url": "https://health.ri.gov/img/site/sealprint.gif",
+              "totalBytes": 38751,
+              "wastedBytes": 38363,
+              "wastedPercent": 99
+            },
+            {
+              "url": "https://health.ri.gov/img/site/HEALTH_white.png",
+              "totalBytes": 11996,
+              "wastedBytes": 11413,
+              "wastedPercent": 95.136740692860556
+            }
+          ],
+          "overallSavingsBytes": 151991
+        },
+        "warnings": [],
+        "numericValue": 80
+      },
+      "unused-css-rules": {
+        "id": "unused-css-rules",
+        "title": "Remove unused CSS",
+        "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+        "score": 0.52,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 334 KB",
+        "details": {
+          "overallSavingsMs": 720,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "totalBytes": 273108,
+              "wastedBytes": 252623,
+              "wastedPercent": 92.4992667546561,
+              "url": "https://health.ri.gov/assets/scss/foundation.css"
+            },
+            {
+              "url": "https://health.ri.gov/css/links.css",
+              "totalBytes": 38648,
+              "wastedBytes": 38342,
+              "wastedPercent": 99.208147742960591
+            },
+            {
+              "url": "https://health.ri.gov/css/myhealth.css",
+              "totalBytes": 28502,
+              "wastedBytes": 24023,
+              "wastedPercent": 84.283944060895735
+            },
+            {
+              "url": "https://kit-free.fontawesome.com/releases/latest/css/free.min.css",
+              "totalBytes": 14045,
+              "wastedBytes": 13973,
+              "wastedPercent": 99.489804480993541
+            },
+            {
+              "totalBytes": 13517,
+              "wastedBytes": 13217,
+              "wastedPercent": 97.782805429864254,
+              "url": "https://health.ri.gov/css/health.css"
+            }
+          ],
+          "overallSavingsBytes": 342178
+        },
+        "numericValue": 720
+      },
+      "speed-index": {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+        "score": 0.05,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "4.7 s",
+        "numericValue": 4732.0434529520262
+      },
+      "first-cpu-idle": {
+        "id": "first-cpu-idle",
+        "title": "First CPU Idle",
+        "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+        "score": 0.94,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.1 s",
+        "numericValue": 2145.5
+      },
+      "total-byte-weight": {
+        "id": "total-byte-weight",
+        "title": "Avoids enormous network payloads",
+        "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Total size was 1,604 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "itemType": "bytes",
+              "key": "totalBytes",
+              "text": "Size"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "totalBytes": 301371
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "totalBytes": 273108
+            },
+            {
+              "totalBytes": 88737,
+              "url": "https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"
+            },
+            {
+              "totalBytes": 79953,
+              "url": "https://kit-free.fontawesome.com/releases/latest/webfonts/free-fa-solid-900.woff2"
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js",
+              "totalBytes": 79027
+            },
+            {
+              "url": "https://health.ri.gov/covid/",
+              "totalBytes": 63985
+            },
+            {
+              "url": "https://health.ri.gov/img/site/RhodeIslandMap.png",
+              "totalBytes": 59414
+            },
+            {
+              "url": "https://health.ri.gov/img/icons/ridelivers-banner.png",
+              "totalBytes": 59101
+            },
+            {
+              "url": "https://health.ri.gov/img/icons/RI-HAVENS-banner.png",
+              "totalBytes": 58520
+            },
+            {
+              "totalBytes": 52360,
+              "url": "https://health.ri.gov/img/site/pro/press-conf.png"
+            }
+          ]
+        },
+        "numericValue": 1642674
+      },
+      "mainthread-work-breakdown": {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.6 s",
+        "details": {
+          "headings": [
+            {
+              "key": "groupLabel",
+              "itemType": "text",
+              "text": "Category"
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "Time Spent",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "group": "styleLayout",
+              "duration": 197.82899999999998,
+              "groupLabel": "Style & Layout"
+            },
+            {
+              "group": "scriptEvaluation",
+              "duration": 179.30099999999979,
+              "groupLabel": "Script Evaluation"
+            },
+            {
+              "group": "other",
+              "duration": 118.6690000000002,
+              "groupLabel": "Other"
+            },
+            {
+              "group": "paintCompositeRender",
+              "duration": 60.858000000000118,
+              "groupLabel": "Rendering"
+            },
+            {
+              "groupLabel": "Parse HTML & CSS",
+              "group": "parseHTML",
+              "duration": 45.933000000000035
+            },
+            {
+              "duration": 38.137999999999984,
+              "groupLabel": "Script Parsing & Compilation",
+              "group": "scriptParseCompile"
+            },
+            {
+              "duration": 3.834,
+              "groupLabel": "Garbage Collection",
+              "group": "garbageCollection"
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 644.562
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+        "score": 0.29,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.0 s",
+        "numericValue": 2011
+      },
+      "uses-webp-images": {
+        "id": "uses-webp-images",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+        "score": 0.83,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 312 KB",
+        "details": {
+          "overallSavingsBytes": 319170,
+          "overallSavingsMs": 200,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://health.ri.gov/img/icons/RI-HAVENS-banner.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 58263,
+              "wastedBytes": 52653
+            },
+            {
+              "url": "https://health.ri.gov/img/icons/ridelivers-banner.png",
+              "fromProtocol": true,
+              "totalBytes": 58844,
+              "isCrossOrigin": false,
+              "wastedBytes": 51808
+            },
+            {
+              "url": "https://health.ri.gov/img/site/pro/press-conf.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 52103,
+              "wastedBytes": 50739
+            },
+            {
+              "fromProtocol": true,
+              "url": "https://health.ri.gov/assets/img/icons/phone-blue.png",
+              "isCrossOrigin": false,
+              "totalBytes": 51030,
+              "wastedBytes": 50418
+            },
+            {
+              "url": "https://health.ri.gov/img/site/pro/press-rel.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 49431,
+              "wastedBytes": 48945
+            },
+            {
+              "url": "https://health.ri.gov/img/site/RhodeIslandMap.png",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 59157,
+              "wastedBytes": 48273
+            },
+            {
+              "isCrossOrigin": false,
+              "totalBytes": 16890,
+              "wastedBytes": 16334,
+              "url": "https://health.ri.gov/img/site/PHAB_SEAL30px.png",
+              "fromProtocol": true
+            }
+          ]
+        },
+        "warnings": [],
+        "numericValue": 200
+      },
+      "diagnostics": {
+        "id": "diagnostics",
+        "title": "Diagnostics",
+        "description": "Collection of useful page vitals.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "numTasks": 694,
+              "numTasksOver10ms": 14,
+              "rtt": 0.0012484426798859958,
+              "numFonts": 2,
+              "maxRtt": 0.0012484426798859958,
+              "numTasksOver500ms": 0,
+              "numScripts": 18,
+              "maxServerLatency": null,
+              "numStylesheets": 18,
+              "numTasksOver100ms": 0,
+              "throughput": 86962805744.053513,
+              "numTasksOver25ms": 7,
+              "numTasksOver50ms": 3,
+              "numRequests": 63,
+              "totalTaskTime": 644.56199999999853,
+              "mainDocumentTransferSize": 63985,
+              "totalByteWeight": 1642674
+            }
+          ]
+        }
+      },
+      "critical-request-chains": {
+        "id": "critical-request-chains",
+        "title": "Avoid chaining critical requests",
+        "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "28 chains found",
+        "details": {
+          "type": "criticalrequestchain",
+          "chains": {
+            "86C1DC97624FB3A6243E6DCDF53B2743": {
+              "request": {
+                "transferSize": 308,
+                "url": "https://health.ri.gov/covid",
+                "responseReceivedTime": 30088.098547999998,
+                "endTime": 30088.098959,
+                "startTime": 30087.571591
+              },
+              "children": {
+                "86C1DC97624FB3A6243E6DCDF53B2743:redirect": {
+                  "children": {
+                    "86C1DC97624FB3A6243E6DCDF53B2743:redirect:redirect": {
+                      "children": {
+                        "21.51": {
+                          "request": {
+                            "startTime": 30093.366852,
+                            "transferSize": 9728,
+                            "url": "https://health.ri.gov/assets/font/fontello.woff?91499434",
+                            "responseReceivedTime": 30093.474884,
+                            "endTime": 30093.474887
+                          }
+                        },
+                        "21.17": {
+                          "request": {
+                            "startTime": 30089.107039,
+                            "transferSize": 922,
+                            "url": "https://health.ri.gov/assets/js/vendor/menuselect.js",
+                            "responseReceivedTime": 30093.299122999997,
+                            "endTime": 30093.299125
+                          }
+                        },
+                        "21.91": {
+                          "request": {
+                            "endTime": 30093.543957,
+                            "startTime": 30093.529948,
+                            "transferSize": 79953,
+                            "url": "https://kit-free.fontawesome.com/releases/latest/webfonts/free-fa-solid-900.woff2",
+                            "responseReceivedTime": 30093.543955
+                          }
+                        },
+                        "21.46": {
+                          "request": {
+                            "startTime": 30093.304585,
+                            "transferSize": 325,
+                            "url": "https://health.ri.gov/css/chrome.css",
+                            "responseReceivedTime": 30093.413777,
+                            "endTime": 30093.413779
+                          }
+                        },
+                        "21.20": {
+                          "request": {
+                            "transferSize": 3181,
+                            "url": "https://health.ri.gov/assets/js/vendor/jquery.sidr.min.js",
+                            "responseReceivedTime": 30089.550095,
+                            "endTime": 30089.550098,
+                            "startTime": 30089.108171
+                          }
+                        },
+                        "21.11": {
+                          "request": {
+                            "transferSize": 28502,
+                            "url": "https://health.ri.gov/css/myhealth.css",
+                            "responseReceivedTime": 30093.29985,
+                            "endTime": 30093.299851,
+                            "startTime": 30089.105385
+                          }
+                        },
+                        "21.21": {
+                          "request": {
+                            "url": "https://health.ri.gov/assets/js/vendor/responsive-tables.js",
+                            "responseReceivedTime": 30089.559214999997,
+                            "endTime": 30089.559216,
+                            "startTime": 30089.108373,
+                            "transferSize": 2078
+                          }
+                        },
+                        "21.19": {
+                          "request": {
+                            "transferSize": 19462,
+                            "url": "https://health.ri.gov/assets/js/vendor/jquery.bxslider.min.js",
+                            "responseReceivedTime": 30091.31223,
+                            "endTime": 30091.312233,
+                            "startTime": 30089.10771
+                          }
+                        },
+                        "21.15": {
+                          "request": {
+                            "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+                            "responseReceivedTime": 30090.28161,
+                            "endTime": 30090.281612,
+                            "startTime": 30089.106277,
+                            "transferSize": 301371
+                          }
+                        },
+                        "21.22": {
+                          "request": {
+                            "transferSize": 23304,
+                            "url": "https://health.ri.gov/assets/js/vendor/owl.carousel.min.js",
+                            "responseReceivedTime": 30092.273122,
+                            "endTime": 30092.273124,
+                            "startTime": 30089.108741
+                          }
+                        },
+                        "21.13": {
+                          "request": {
+                            "url": "https://www.google.com/jsapi",
+                            "responseReceivedTime": 30089.116352,
+                            "endTime": 30089.116357,
+                            "startTime": 30089.105823,
+                            "transferSize": 7083
+                          }
+                        },
+                        "21.32": {
+                          "request": {
+                            "url": "https://customer.cludo.com/scripts/bundles/search-script.min.js",
+                            "responseReceivedTime": 30089.641530999997,
+                            "endTime": 30089.641534,
+                            "startTime": 30089.576489,
+                            "transferSize": 29679
+                          }
+                        },
+                        "21.16": {
+                          "request": {
+                            "transferSize": 9560,
+                            "url": "https://health.ri.gov/assets/js/vendor/custom.modernizr.js",
+                            "responseReceivedTime": 30089.550492,
+                            "endTime": 30089.550493,
+                            "startTime": 30089.106823
+                          }
+                        },
+                        "21.8": {
+                          "request": {
+                            "startTime": 30089.104037,
+                            "transferSize": 5046,
+                            "url": "https://health.ri.gov/assets/scss/owl.transitions.css",
+                            "responseReceivedTime": 30092.273453,
+                            "endTime": 30092.273454
+                          }
+                        },
+                        "21.18": {
+                          "request": {
+                            "transferSize": 79027,
+                            "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js",
+                            "responseReceivedTime": 30089.360601,
+                            "endTime": 30089.360608,
+                            "startTime": 30089.107346
+                          }
+                        },
+                        "21.10": {
+                          "request": {
+                            "transferSize": 38648,
+                            "url": "https://health.ri.gov/css/links.css",
+                            "responseReceivedTime": 30092.271838,
+                            "endTime": 30092.27184,
+                            "startTime": 30089.104586
+                          }
+                        },
+                        "21.14": {
+                          "request": {
+                            "endTime": 30089.151356,
+                            "startTime": 30089.106037,
+                            "transferSize": 38945,
+                            "url": "https://maps.googleapis.com/maps/api/js",
+                            "responseReceivedTime": 30089.15135
+                          }
+                        },
+                        "21.6": {
+                          "request": {
+                            "startTime": 30089.103633,
+                            "transferSize": 1719,
+                            "url": "https://health.ri.gov/assets/scss/owl.carousel.css",
+                            "responseReceivedTime": 30093.299532999998,
+                            "endTime": 30093.299534
+                          }
+                        },
+                        "21.3": {
+                          "request": {
+                            "url": "https://health.ri.gov/assets/scss/foundation.css",
+                            "responseReceivedTime": 30089.224605,
+                            "endTime": 30089.224608,
+                            "startTime": 30089.102508,
+                            "transferSize": 273108
+                          }
+                        },
+                        "21.27": {
+                          "request": {
+                            "startTime": 30089.566501,
+                            "transferSize": 2286,
+                            "url": "https://kit.fontawesome.com/a076d05399.js",
+                            "responseReceivedTime": 30089.579868,
+                            "endTime": 30089.579871
+                          }
+                        },
+                        "21.5": {
+                          "request": {
+                            "startTime": 30089.10325,
+                            "transferSize": 6336,
+                            "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css",
+                            "responseReceivedTime": 30089.557053,
+                            "endTime": 30089.557054
+                          }
+                        },
+                        "21.26": {
+                          "children": {
+                            "21.65": {
+                              "request": {
+                                "transferSize": 4243,
+                                "url": "https://translate.googleapis.com/translate_static/css/translateelement.css",
+                                "responseReceivedTime": 30093.401643,
+                                "endTime": 30093.401645,
+                                "startTime": 30093.378625
+                              }
+                            }
+                          },
+                          "request": {
+                            "transferSize": 1551,
+                            "url": "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+                            "responseReceivedTime": 30089.565038,
+                            "endTime": 30089.565042,
+                            "startTime": 30089.559533
+                          }
+                        },
+                        "21.4": {
+                          "request": {
+                            "startTime": 30089.10294,
+                            "transferSize": 4721,
+                            "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css",
+                            "responseReceivedTime": 30089.204527,
+                            "endTime": 30089.204529
+                          }
+                        },
+                        "21.12": {
+                          "request": {
+                            "endTime": 30089.555874,
+                            "startTime": 30089.105693,
+                            "transferSize": 3520,
+                            "url": "https://health.ri.gov/includes/responsive_menus/menus.css",
+                            "responseReceivedTime": 30089.555872
+                          }
+                        },
+                        "21.23": {
+                          "request": {
+                            "transferSize": 1673,
+                            "url": "https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css",
+                            "responseReceivedTime": 30089.176462,
+                            "endTime": 30089.176468,
+                            "startTime": 30089.109009
+                          }
+                        },
+                        "21.9": {
+                          "request": {
+                            "startTime": 30089.104275,
+                            "transferSize": 13517,
+                            "url": "https://health.ri.gov/css/health.css",
+                            "responseReceivedTime": 30089.556583,
+                            "endTime": 30089.556584
+                          }
+                        },
+                        "21.7": {
+                          "request": {
+                            "startTime": 30089.103855,
+                            "transferSize": 2052,
+                            "url": "https://health.ri.gov/assets/scss/owl.theme.css",
+                            "responseReceivedTime": 30091.262696,
+                            "endTime": 30091.262698
+                          }
+                        },
+                        "21.2": {
+                          "request": {
+                            "transferSize": 9514,
+                            "url": "https://health.ri.gov/assets/scss/normalize.css",
+                            "responseReceivedTime": 30092.283988,
+                            "endTime": 30092.283991,
+                            "startTime": 30089.10226
+                          }
+                        }
+                      },
+                      "request": {
+                        "transferSize": 63985,
+                        "url": "https://health.ri.gov/covid/",
+                        "responseReceivedTime": 30089.082816000002,
+                        "endTime": 30089.082819,
+                        "startTime": 30088.265317
+                      }
+                    }
+                  },
+                  "request": {
+                    "startTime": 30088.0995,
+                    "transferSize": 173,
+                    "url": "http://health.ri.gov/covid/",
+                    "responseReceivedTime": 30088.264745,
+                    "endTime": 30088.265005
+                  }
+                }
+              }
+            }
+          },
+          "longestChain": {
+            "transferSize": 79953,
+            "duration": 5972.3660000017844,
+            "length": 4
+          }
+        }
+      },
+      "dom-size": {
+        "id": "dom-size",
+        "title": "Avoids an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+        "score": 0.92,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "779 elements",
+        "details": {
+          "headings": [
+            {
+              "key": "statistic",
+              "itemType": "text",
+              "text": "Statistic"
+            },
+            {
+              "key": "element",
+              "itemType": "code",
+              "text": "Element"
+            },
+            {
+              "key": "value",
+              "itemType": "numeric",
+              "text": "Value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total DOM Elements",
+              "value": "779"
+            },
+            {
+              "value": "14",
+              "statistic": "Maximum DOM Depth",
+              "element": {
+                "type": "code",
+                "value": "\u003ca target=\"_blank\" href=\"http://www.dhs.ri.gov/Programs/CCAPProviderResourceNewPageLAC.php\"\u003e"
+              }
+            },
+            {
+              "value": "46",
+              "statistic": "Maximum Child Elements",
+              "element": {
+                "type": "code",
+                "value": "\u003cdiv class=\"panel\"\u003e"
+              }
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 779
+      },
+      "uses-rel-preload": {
+        "id": "uses-rel-preload",
+        "title": "Preload key requests",
+        "description": "Consider using `\u003clink rel=preload\u003e` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity"
+        },
+        "numericValue": 0
+      },
+      "performance-budget": {
+        "id": "performance-budget",
+        "title": "Performance budget",
+        "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "unminified-javascript": {
+        "id": "unminified-javascript",
+        "title": "Minify JavaScript",
+        "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+        "score": 0.9,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 147 KB",
+        "details": {
+          "headings": [
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "totalBytes": 301371,
+              "wastedBytes": 148379,
+              "wastedPercent": 49.234800629695322
+            },
+            {
+              "wastedBytes": 2611,
+              "wastedPercent": 10.041559837895953,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5B38VSD",
+              "totalBytes": 26002
+            }
+          ],
+          "overallSavingsBytes": 150990,
+          "overallSavingsMs": 120
+        },
+        "warnings": [],
+        "numericValue": 120
+      },
+      "redirects": {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+        "score": 0.73,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 340 ms",
+        "details": {
+          "overallSavingsMs": 340,
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "label": "Time Spent",
+              "key": "wastedMs",
+              "valueType": "timespanMs"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "(Initial: https://health.ri.gov/covid)",
+              "wastedMs": 0
+            },
+            {
+              "wastedMs": 230,
+              "url": "http://health.ri.gov/covid/"
+            },
+            {
+              "url": "https://health.ri.gov/covid/",
+              "wastedMs": 110
+            }
+          ]
+        },
+        "numericValue": 340
+      },
+      "user-timings": {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        }
+      },
+      "first-meaningful-paint": {
+        "id": "first-meaningful-paint",
+        "title": "First Meaningful Paint",
+        "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+        "score": 0.24,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "2.1 s",
+        "numericValue": 2145.5
+      },
+      "resource-summary": {
+        "id": "resource-summary",
+        "title": "Keep request counts low and transfer sizes small",
+        "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "63 requests • 1,604 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "label",
+              "itemType": "text",
+              "text": "Resource Type"
+            },
+            {
+              "text": "Requests",
+              "key": "requestCount",
+              "itemType": "numeric"
+            },
+            {
+              "key": "size",
+              "itemType": "bytes",
+              "text": "Transfer Size"
+            }
+          ],
+          "items": [
+            {
+              "size": 1642674,
+              "requestCount": 63,
+              "resourceType": "total",
+              "label": "Total"
+            },
+            {
+              "size": 656434,
+              "requestCount": 18,
+              "resourceType": "script",
+              "label": "Script"
+            },
+            {
+              "label": "Stylesheet",
+              "size": 415866,
+              "requestCount": 18,
+              "resourceType": "stylesheet"
+            },
+            {
+              "label": "Image",
+              "size": 415457,
+              "requestCount": 21,
+              "resourceType": "image"
+            },
+            {
+              "resourceType": "font",
+              "label": "Font",
+              "size": 89681,
+              "requestCount": 2
+            },
+            {
+              "resourceType": "document",
+              "label": "Document",
+              "size": 63985,
+              "requestCount": 1
+            },
+            {
+              "requestCount": 3,
+              "resourceType": "other",
+              "label": "Other",
+              "size": 1251
+            },
+            {
+              "label": "Media",
+              "size": 0,
+              "requestCount": 0,
+              "resourceType": "media"
+            },
+            {
+              "resourceType": "third-party",
+              "label": "Third-party",
+              "size": 329553,
+              "requestCount": 21
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "efficient-animated-content": {
+        "id": "efficient-animated-content",
+        "title": "Use video formats for animated content",
+        "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "final-screenshot": {
+        "id": "final-screenshot",
+        "title": "Final Screenshot",
+        "description": "The last screenshot captured of the pageload.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "screenshot",
+          "timing": 6292,
+          "timestamp": 30093862864,
+          "data": "data:image/jpeg;base64,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"
+        }
+      },
+      "metrics": {
+        "id": "metrics",
+        "title": "Metrics",
+        "description": "Collects all available metrics.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "observedTraceEndTs": 30094854856,
+              "firstCPUIdle": 2146,
+              "observedFirstMeaningfulPaintTs": 30093528083,
+              "observedDomContentLoaded": 6038,
+              "observedFirstVisualChangeTs": 30093395790,
+              "observedNavigationStart": 0,
+              "interactive": 2146,
+              "observedFirstContentfulPaintTs": 30093394620,
+              "observedLastVisualChangeTs": 30093862790,
+              "observedLoad": 6228,
+              "observedLargestContentfulPaint": 6092,
+              "observedDomContentLoadedTs": 30093608570,
+              "observedSpeedIndex": 5938,
+              "estimatedInputLatency": 13,
+              "totalBlockingTime": 0,
+              "observedFirstPaint": 5824,
+              "observedLastVisualChange": 6292,
+              "firstContentfulPaint": 2011,
+              "observedFirstPaintTs": 30093394620,
+              "speedIndex": 4732,
+              "observedSpeedIndexTs": 30093508712,
+              "observedFirstContentfulPaint": 5824,
+              "observedNavigationStartTs": 30087570790,
+              "observedLargestContentfulPaintTs": 30093662580,
+              "observedFirstVisualChange": 5825,
+              "observedLoadTs": 30093798313,
+              "firstMeaningfulPaint": 2146,
+              "observedTraceEnd": 7284,
+              "observedFirstMeaningfulPaint": 5957
+            },
+            {
+              "lcpInvalidated": false
+            }
+          ]
+        },
+        "numericValue": 2145.5
+      },
+      "time-to-first-byte": {
+        "id": "time-to-first-byte",
+        "title": "Reduce server response times (TTFB)",
+        "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Root document took 820 ms",
+        "details": {
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsMs": 218.49900000000002
+        },
+        "numericValue": 818.499
+      },
+      "render-blocking-resources": {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+        "score": 0.36,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 1,920 ms",
+        "details": {
+          "overallSavingsMs": 1921,
+          "headings": [
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "valueType": "timespanMs",
+              "label": "Potential Savings",
+              "key": "wastedMs"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://health.ri.gov/assets/scss/normalize.css",
+              "totalBytes": 9514,
+              "wastedMs": 150
+            },
+            {
+              "wastedMs": 990,
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "totalBytes": 273108
+            },
+            {
+              "totalBytes": 4721,
+              "wastedMs": 190,
+              "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css"
+            },
+            {
+              "totalBytes": 6336,
+              "wastedMs": 190,
+              "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css"
+            },
+            {
+              "wastedMs": 150,
+              "url": "https://health.ri.gov/assets/scss/owl.carousel.css",
+              "totalBytes": 1719
+            },
+            {
+              "wastedMs": 150,
+              "url": "https://health.ri.gov/assets/scss/owl.theme.css",
+              "totalBytes": 2052
+            },
+            {
+              "totalBytes": 5046,
+              "wastedMs": 110,
+              "url": "https://health.ri.gov/assets/scss/owl.transitions.css"
+            },
+            {
+              "wastedMs": 150,
+              "url": "https://health.ri.gov/css/health.css",
+              "totalBytes": 13517
+            },
+            {
+              "wastedMs": 310,
+              "url": "https://health.ri.gov/css/links.css",
+              "totalBytes": 38648
+            },
+            {
+              "url": "https://health.ri.gov/css/myhealth.css",
+              "totalBytes": 28502,
+              "wastedMs": 230
+            },
+            {
+              "totalBytes": 3520,
+              "wastedMs": 70,
+              "url": "https://health.ri.gov/includes/responsive_menus/menus.css"
+            },
+            {
+              "totalBytes": 7083,
+              "wastedMs": 270,
+              "url": "https://www.google.com/jsapi"
+            },
+            {
+              "wastedMs": 470,
+              "url": "https://maps.googleapis.com/maps/api/js",
+              "totalBytes": 38945
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "totalBytes": 301371,
+              "wastedMs": 790
+            },
+            {
+              "wastedMs": 110,
+              "url": "https://health.ri.gov/assets/js/vendor/custom.modernizr.js",
+              "totalBytes": 9560
+            },
+            {
+              "wastedMs": 70,
+              "url": "https://health.ri.gov/assets/js/vendor/menuselect.js",
+              "totalBytes": 922
+            },
+            {
+              "totalBytes": 79027,
+              "wastedMs": 350,
+              "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js"
+            },
+            {
+              "wastedMs": 150,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.bxslider.min.js",
+              "totalBytes": 19462
+            },
+            {
+              "totalBytes": 3181,
+              "wastedMs": 70,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.sidr.min.js"
+            },
+            {
+              "wastedMs": 70,
+              "url": "https://health.ri.gov/assets/js/vendor/responsive-tables.js",
+              "totalBytes": 2078
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/owl.carousel.min.js",
+              "totalBytes": 23304,
+              "wastedMs": 150
+            },
+            {
+              "url": "https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css",
+              "totalBytes": 1673,
+              "wastedMs": 230
+            }
+          ],
+          "type": "opportunity"
+        },
+        "numericValue": 1921
+      },
+      "uses-text-compression": {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+        "score": 0.48,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 669 KB",
+        "details": {
+          "overallSavingsMs": 960,
+          "headings": [
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "totalBytes": 272850,
+              "wastedBytes": 239453
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "totalBytes": 301098,
+              "wastedBytes": 218245
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js",
+              "totalBytes": 78755,
+              "wastedBytes": 58608
+            },
+            {
+              "url": "https://health.ri.gov/covid/",
+              "totalBytes": 63719,
+              "wastedBytes": 44836
+            },
+            {
+              "totalBytes": 38391,
+              "wastedBytes": 33682,
+              "url": "https://health.ri.gov/css/links.css"
+            },
+            {
+              "url": "https://health.ri.gov/css/myhealth.css",
+              "totalBytes": 28245,
+              "wastedBytes": 21243
+            },
+            {
+              "totalBytes": 23033,
+              "wastedBytes": 16581,
+              "url": "https://health.ri.gov/assets/js/vendor/owl.carousel.min.js"
+            },
+            {
+              "wastedBytes": 14036,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.bxslider.min.js",
+              "totalBytes": 19191
+            },
+            {
+              "totalBytes": 13260,
+              "wastedBytes": 10150,
+              "url": "https://health.ri.gov/css/health.css"
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/normalize.css",
+              "totalBytes": 9259,
+              "wastedBytes": 6838
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/custom.modernizr.js",
+              "totalBytes": 9290,
+              "wastedBytes": 5194
+            },
+            {
+              "totalBytes": 6080,
+              "wastedBytes": 4749,
+              "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css"
+            },
+            {
+              "totalBytes": 4790,
+              "wastedBytes": 4007,
+              "url": "https://health.ri.gov/assets/scss/owl.transitions.css"
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css",
+              "totalBytes": 4465,
+              "wastedBytes": 3301
+            },
+            {
+              "url": "https://health.ri.gov/includes/responsive_menus/menus.css",
+              "totalBytes": 3265,
+              "wastedBytes": 2374
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.sidr.min.js",
+              "totalBytes": 2912,
+              "wastedBytes": 1572
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 684869
+        },
+        "numericValue": 960
+      },
+      "uses-optimized-images": {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-requests": {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "itemType": "url",
+              "key": "url",
+              "text": "URL"
+            },
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "text": "End Time",
+              "granularity": 1,
+              "key": "endTime",
+              "itemType": "ms"
+            },
+            {
+              "displayUnit": "kb",
+              "granularity": 1,
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Transfer Size"
+            },
+            {
+              "itemType": "bytes",
+              "key": "resourceSize",
+              "text": "Resource Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            },
+            {
+              "key": "statusCode",
+              "itemType": "text",
+              "text": "Status Code"
+            },
+            {
+              "key": "mimeType",
+              "itemType": "text",
+              "text": "MIME Type"
+            },
+            {
+              "key": "resourceType",
+              "itemType": "text",
+              "text": "Resource Type"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "mimeType": "text/html",
+              "resourceSize": 0,
+              "endTime": 527.36799999911455,
+              "startTime": 0,
+              "transferSize": 308,
+              "url": "https://health.ri.gov/covid",
+              "statusCode": 301
+            },
+            {
+              "startTime": 527.90900000036345,
+              "transferSize": 173,
+              "statusCode": 302,
+              "url": "http://health.ri.gov/covid/",
+              "resourceSize": 0,
+              "endTime": 693.41400000121212
+            },
+            {
+              "resourceType": "Document",
+              "mimeType": "text/html",
+              "endTime": 1511.2279999993916,
+              "resourceSize": 63719,
+              "startTime": 693.72600000133389,
+              "transferSize": 63985,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/covid/"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 4712.4000000003434,
+              "resourceSize": 9259,
+              "startTime": 1530.6689999997616,
+              "transferSize": 9514,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/scss/normalize.css"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 272850,
+              "endTime": 1653.0170000005455,
+              "startTime": 1530.9170000000449,
+              "transferSize": 273108,
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "statusCode": 200
+            },
+            {
+              "transferSize": 4721,
+              "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 4465,
+              "endTime": 1632.9379999988305,
+              "startTime": 1531.3490000007732
+            },
+            {
+              "endTime": 1985.463000000891,
+              "resourceSize": 6080,
+              "startTime": 1531.6590000002179,
+              "transferSize": 6336,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/owl.carousel.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5727.9430000016873,
+              "resourceSize": 1464,
+              "startTime": 1532.04199999891,
+              "transferSize": 1719
+            },
+            {
+              "transferSize": 2052,
+              "url": "https://health.ri.gov/assets/scss/owl.theme.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 3691.1069999987376,
+              "resourceSize": 1797,
+              "startTime": 1532.2640000013052
+            },
+            {
+              "mimeType": "text/css",
+              "resourceSize": 4790,
+              "endTime": 4701.8629999984114,
+              "startTime": 1532.4460000010731,
+              "transferSize": 5046,
+              "url": "https://health.ri.gov/assets/scss/owl.transitions.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 13260,
+              "endTime": 1984.9930000018503,
+              "startTime": 1532.6840000016091,
+              "transferSize": 13517,
+              "url": "https://health.ri.gov/css/health.css",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 4700.2490000013495,
+              "resourceSize": 38391,
+              "startTime": 1532.9950000013923,
+              "transferSize": 38648,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/css/links.css"
+            },
+            {
+              "mimeType": "text/css",
+              "endTime": 5728.2599999998638,
+              "resourceSize": 28245,
+              "startTime": 1533.793999999034,
+              "transferSize": 28502,
+              "url": "https://health.ri.gov/css/myhealth.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 1984.2830000015965,
+              "resourceSize": 3265,
+              "startTime": 1534.1020000014396,
+              "transferSize": 3520,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/includes/responsive_menus/menus.css"
+            },
+            {
+              "transferSize": 7083,
+              "url": "https://www.google.com/jsapi",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 26828,
+              "endTime": 1544.7659999990719,
+              "startTime": 1534.2320000017935
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 116725,
+              "endTime": 1579.7649999985879,
+              "startTime": 1534.4460000014806,
+              "transferSize": 38945,
+              "statusCode": 200,
+              "url": "https://maps.googleapis.com/maps/api/js"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 301098,
+              "endTime": 2710.02099999896,
+              "startTime": 1534.6859999990556,
+              "transferSize": 301371,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "statusCode": 200
+            },
+            {
+              "transferSize": 9560,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/js/vendor/custom.modernizr.js",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 1978.901999998925,
+              "resourceSize": 9290,
+              "startTime": 1535.2319999983592
+            },
+            {
+              "transferSize": 922,
+              "url": "https://health.ri.gov/assets/js/vendor/menuselect.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 654,
+              "endTime": 5727.5340000014694,
+              "startTime": 1535.4479999987234
+            },
+            {
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 1789.0169999991485,
+              "resourceSize": 78755,
+              "startTime": 1535.7550000007905,
+              "transferSize": 79027
+            },
+            {
+              "transferSize": 19462,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.bxslider.min.js",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 19191,
+              "endTime": 3740.6420000006619,
+              "startTime": 1536.1190000003262
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 2912,
+              "endTime": 1978.5069999998086,
+              "startTime": 1536.5799999999581,
+              "transferSize": 3181,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.sidr.min.js",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 1987.6250000015716,
+              "resourceSize": 1809,
+              "startTime": 1536.7819999992207,
+              "transferSize": 2078,
+              "url": "https://health.ri.gov/assets/js/vendor/responsive-tables.js",
+              "statusCode": 200
+            },
+            {
+              "endTime": 4701.5329999994719,
+              "resourceSize": 23033,
+              "startTime": 1537.1500000001106,
+              "transferSize": 23304,
+              "url": "https://health.ri.gov/assets/js/vendor/owl.carousel.min.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript"
+            },
+            {
+              "startTime": 1537.4179999998887,
+              "transferSize": 1673,
+              "statusCode": 200,
+              "url": "https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 1604.8770000015793,
+              "resourceSize": 4761
+            },
+            {
+              "mimeType": "image/png",
+              "endTime": 1986.9829999988724,
+              "resourceSize": 11996,
+              "startTime": 1537.6550000000861,
+              "transferSize": 12254,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/site/HEALTH_white.png",
+              "resourceType": "Image"
+            },
+            {
+              "transferSize": 39009,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/site/sealprint.gif",
+              "resourceType": "Image",
+              "mimeType": "image/gif",
+              "endTime": 2003.4730000006675,
+              "resourceSize": 38751,
+              "startTime": 1538.1720000004862
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 1724,
+              "endTime": 1993.4509999984584,
+              "startTime": 1987.9419999997481,
+              "transferSize": 1551,
+              "url": "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit",
+              "statusCode": 200
+            },
+            {
+              "endTime": 2008.2800000018324,
+              "resourceSize": 4191,
+              "startTime": 1994.910000001255,
+              "transferSize": 2286,
+              "url": "https://kit.fontawesome.com/a076d05399.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "text/javascript"
+            },
+            {
+              "transferSize": 58520,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/icons/RI-HAVENS-banner.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 2128.1159999998636,
+              "resourceSize": 58263,
+              "startTime": 2009.31700000001
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 58844,
+              "endTime": 2197.9969999993045,
+              "startTime": 2075.700000001234,
+              "transferSize": 59101,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/icons/ridelivers-banner.png"
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 1374,
+              "endTime": 2228.6950000016077,
+              "startTime": 2128.9770000003045,
+              "transferSize": 1629,
+              "url": "https://health.ri.gov/img/site/weebles/weeble-btn.png",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 2334.9430000016582,
+              "resourceSize": 16890,
+              "startTime": 2198.8219999984722,
+              "transferSize": 17147,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/site/PHAB_SEAL30px.png"
+            },
+            {
+              "startTime": 2004.8979999992298,
+              "transferSize": 29679,
+              "statusCode": 200,
+              "url": "https://customer.cludo.com/scripts/bundles/search-script.min.js",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 2069.9429999986023,
+              "resourceSize": 131293
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 1861,
+              "endTime": 2328.7530000015977,
+              "startTime": 2229.4660000006843,
+              "transferSize": 2115,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/scss/print.css"
+            },
+            {
+              "startTime": 2329.5460000008461,
+              "transferSize": 2539,
+              "url": "https://health.ri.gov/css/myprint.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 2285,
+              "endTime": 2454.3589999993856
+            },
+            {
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 5842.1879999987141,
+              "resourceSize": 74,
+              "startTime": 5732.9940000017814,
+              "transferSize": 325,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/css/chrome.css"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 5822.6710000017192,
+              "resourceSize": 96728,
+              "startTime": 5791.7369999995572,
+              "transferSize": 26002,
+              "statusCode": 200,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-5B38VSD"
+            },
+            {
+              "startTime": 5792.2959999996237,
+              "transferSize": 18817,
+              "statusCode": 200,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "endTime": 5840.993999998318,
+              "resourceSize": 45229
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "application/font-woff",
+              "endTime": 5903.29600000041,
+              "resourceSize": 9460,
+              "startTime": 5795.2609999993,
+              "transferSize": 9728,
+              "url": "https://health.ri.gov/assets/font/fontello.woff?91499434",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "text/css",
+              "endTime": 5830.0540000018373,
+              "resourceSize": 18724,
+              "startTime": 5807.0340000012948,
+              "transferSize": 4243,
+              "statusCode": 200,
+              "url": "https://translate.googleapis.com/translate_static/css/translateelement.css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "transferSize": 2183,
+              "statusCode": 200,
+              "url": "https://translate.googleapis.com/translate_static/js/element/main.js",
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "endTime": 5811.2430000001041,
+              "resourceSize": 3259,
+              "startTime": 5807.399000001169
+            },
+            {
+              "resourceSize": 59585,
+              "endTime": 5856.1030000018945,
+              "startTime": 5839.3009999999776,
+              "transferSize": 14045,
+              "url": "https://kit-free.fontawesome.com/releases/latest/css/free.min.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "transferSize": 457,
+              "url": "https://health.ri.gov/assets/img/arrows-off.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 5961.4260000016657,
+              "resourceSize": 204,
+              "startTime": 5860.8429999985674
+            },
+            {
+              "mimeType": "image/png",
+              "resourceSize": 607,
+              "endTime": 5973.0019999988144,
+              "startTime": 5862.0489999993879,
+              "transferSize": 861,
+              "url": "https://health.ri.gov/assets/img/icons/phone-orange.png",
+              "statusCode": 200,
+              "resourceType": "Image"
+            },
+            {
+              "mimeType": "image/png",
+              "endTime": 5962.3250000004191,
+              "resourceSize": 512,
+              "startTime": 5862.4270000000251,
+              "transferSize": 766,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/img/icons/emailorange.png",
+              "resourceType": "Image"
+            },
+            {
+              "transferSize": 59414,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/site/RhodeIslandMap.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 5980.5059999998775,
+              "resourceSize": 59157,
+              "startTime": 5864.41399999967
+            },
+            {
+              "transferSize": 49688,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/img/site/pro/press-rel.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 49431,
+              "endTime": 5982.2559999993246,
+              "startTime": 5864.7259999997914
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 5985.1979999984906,
+              "resourceSize": 52103,
+              "startTime": 5865.0559999987308,
+              "transferSize": 52360,
+              "url": "https://health.ri.gov/img/site/pro/press-conf.png",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 5981.3600000015867,
+              "resourceSize": 51030,
+              "startTime": 5865.9350000016275,
+              "transferSize": 51287,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/img/icons/phone-blue.png"
+            },
+            {
+              "endTime": 5971.5759999999136,
+              "resourceSize": 457,
+              "startTime": 5867.1490000015183,
+              "transferSize": 712,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/img/icons/email2.png",
+              "resourceType": "Image",
+              "mimeType": "image/png"
+            },
+            {
+              "transferSize": 587,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/img/icons/email-footer.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "endTime": 6063.586000000214,
+              "resourceSize": 333,
+              "startTime": 5957.9709999998158
+            },
+            {
+              "resourceSize": 4312,
+              "endTime": 6070.9590000005846,
+              "startTime": 5958.2550000013725,
+              "transferSize": 4568,
+              "statusCode": 200,
+              "url": "https://health.ri.gov/assets/img/statecoabw-footer.png",
+              "resourceType": "Image",
+              "mimeType": "image/png"
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "font/woff2",
+              "resourceSize": 79444,
+              "endTime": 5972.3660000017844,
+              "startTime": 5958.3569999995234,
+              "transferSize": 79953,
+              "url": "https://kit-free.fontawesome.com/releases/latest/webfonts/free-fa-solid-900.woff2",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "endTime": 6076.0999999984051,
+              "resourceSize": 245313,
+              "startTime": 6038.6709999984305,
+              "transferSize": 88737,
+              "statusCode": 200,
+              "url": "https://translate.googleapis.com/element/TE_20200210_00/e/js/element/element_main.js"
+            },
+            {
+              "mimeType": "text/html",
+              "endTime": 6105.7929999988119,
+              "resourceSize": 0,
+              "startTime": 6069.4629999998142,
+              "transferSize": 770,
+              "url": "https://www.google-analytics.com/r/collect?v=1&_v=j81&a=1263153648&t=pageview&_s=1&dl=https%3A%2F%2Fhealth.ri.gov%2Fcovid%2F&ul=en-us&de=UTF-8&dt=RI%20COVID-19%20Information%3A%20Department%20of%20Health&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=IEBAAAAB~&jid=998251170&gjid=419935187&cid=304431760.1588843554&tid=UA-1141659-7&_gid=556931636.1588843554&_r=1&z=1900781658",
+              "statusCode": 302
+            },
+            {
+              "statusCode": 200,
+              "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-1141659-7&cid=304431760.1588843554&jid=998251170&_gid=556931636.1588843554&gjid=419935187&_v=j81&z=1900781658",
+              "resourceType": "Image",
+              "mimeType": "image/gif",
+              "resourceSize": 35,
+              "endTime": 6109.6819999984291,
+              "startTime": 6105.9480000003532,
+              "transferSize": 676
+            },
+            {
+              "startTime": 6174.4079999989481,
+              "transferSize": 2246,
+              "statusCode": 200,
+              "url": "https://translate.googleapis.com/translate_a/l?client=te&alpha=true&hl=en&cb=_callbacks____0k9wkfgdo",
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "endTime": 6190.9789999990608,
+              "resourceSize": 3442
+            },
+            {
+              "resourceSize": 1847,
+              "endTime": 6188.4219999992638,
+              "startTime": 6185.16499999896,
+              "transferSize": 2424,
+              "url": "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/png"
+            },
+            {
+              "mimeType": "text/css",
+              "resourceSize": 18724,
+              "endTime": 6192.5689999989117,
+              "startTime": 6188.334999998915,
+              "transferSize": 4243,
+              "statusCode": 200,
+              "url": "https://translate.googleapis.com/translate_static/css/translateelement.css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "startTime": 6189.4060000013269,
+              "transferSize": 1401,
+              "statusCode": 200,
+              "url": "https://www.gstatic.com/images/branding/product/1x/translate_24dp.png",
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "resourceSize": 825,
+              "endTime": 6209.3669999994745
+            },
+            {
+              "startTime": 6189.6039999992354,
+              "transferSize": 620,
+              "statusCode": 200,
+              "url": "https://www.google.com/images/cleardot.gif",
+              "resourceType": "Image",
+              "mimeType": "image/gif",
+              "resourceSize": 43,
+              "endTime": 6193.3639999988372
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/gif",
+              "resourceSize": 1412,
+              "endTime": 6224.2839999998978,
+              "startTime": 6211.2410000008822,
+              "transferSize": 1976,
+              "url": "https://translate.googleapis.com/translate_static/img/te_ctrl3.gif",
+              "statusCode": 200
+            }
+          ]
+        },
+        "numericValue": 63
+      },
+      "uses-long-cache-ttl": {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+        "score": 0.02,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "46 resources found",
+        "details": {
+          "headings": [
+            {
+              "text": "URL",
+              "key": "url",
+              "itemType": "url"
+            },
+            {
+              "key": "cacheLifetimeMs",
+              "itemType": "ms",
+              "text": "Cache TTL",
+              "displayUnit": "duration"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 301371,
+              "wastedBytes": 301371,
+              "cacheHitProbability": 0
+            },
+            {
+              "totalBytes": 273108,
+              "wastedBytes": 273108,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/foundation.css",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "wastedBytes": 79027,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/js/foundation/foundation.min.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 79027
+            },
+            {
+              "totalBytes": 59414,
+              "wastedBytes": 59414,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/img/site/RhodeIslandMap.png",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://health.ri.gov/img/icons/ridelivers-banner.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 59101,
+              "wastedBytes": 59101,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheLifetimeMs": 0,
+              "totalBytes": 58520,
+              "wastedBytes": 58520,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/img/icons/RI-HAVENS-banner.png"
+            },
+            {
+              "wastedBytes": 52360,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/img/site/pro/press-conf.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 52360
+            },
+            {
+              "cacheLifetimeMs": 0,
+              "totalBytes": 51287,
+              "wastedBytes": 51287,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/img/icons/phone-blue.png"
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/img/site/pro/press-rel.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 49688,
+              "wastedBytes": 49688
+            },
+            {
+              "url": "https://health.ri.gov/img/site/sealprint.gif",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 39009,
+              "wastedBytes": 39009,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://health.ri.gov/css/links.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 38648,
+              "wastedBytes": 38648,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/css/myhealth.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 28502,
+              "wastedBytes": 28502
+            },
+            {
+              "cacheLifetimeMs": 0,
+              "totalBytes": 23304,
+              "wastedBytes": 23304,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/js/vendor/owl.carousel.min.js"
+            },
+            {
+              "wastedBytes": 19462,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.bxslider.min.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 19462
+            },
+            {
+              "totalBytes": 17147,
+              "wastedBytes": 17147,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/img/site/PHAB_SEAL30px.png",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://health.ri.gov/css/health.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 13517,
+              "wastedBytes": 13517,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://health.ri.gov/img/site/HEALTH_white.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 12254,
+              "wastedBytes": 12254,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 9728,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/font/fontello.woff?91499434",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 9728
+            },
+            {
+              "wastedBytes": 9560,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/js/vendor/custom.modernizr.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 9560
+            },
+            {
+              "cacheLifetimeMs": 0,
+              "totalBytes": 9514,
+              "wastedBytes": 9514,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/normalize.css"
+            },
+            {
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/jquery.sidr.dark.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 6336,
+              "wastedBytes": 6336
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/owl.transitions.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 5046,
+              "wastedBytes": 5046,
+              "cacheHitProbability": 0
+            },
+            {
+              "cacheLifetimeMs": 0,
+              "totalBytes": 4721,
+              "wastedBytes": 4721,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/jquery.bxslider.css"
+            },
+            {
+              "url": "https://health.ri.gov/assets/img/statecoabw-footer.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 4568,
+              "wastedBytes": 4568,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://health.ri.gov/includes/responsive_menus/menus.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 3520,
+              "wastedBytes": 3520,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 3181,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/js/vendor/jquery.sidr.min.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 3181
+            },
+            {
+              "totalBytes": 2539,
+              "wastedBytes": 2539,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/css/myprint.css",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://health.ri.gov/assets/scss/print.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 2115,
+              "wastedBytes": 2115,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/responsive-tables.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 2078,
+              "wastedBytes": 2078,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 2052,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/owl.theme.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 2052
+            },
+            {
+              "wastedBytes": 1719,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/scss/owl.carousel.css",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1719
+            },
+            {
+              "url": "https://health.ri.gov/img/site/weebles/weeble-btn.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 1629,
+              "wastedBytes": 1629,
+              "cacheHitProbability": 0
+            },
+            {
+              "url": "https://health.ri.gov/assets/js/vendor/menuselect.js",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 922,
+              "wastedBytes": 922,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 861,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/img/icons/phone-orange.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 861
+            },
+            {
+              "url": "https://health.ri.gov/assets/img/icons/emailorange.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 766,
+              "wastedBytes": 766,
+              "cacheHitProbability": 0
+            },
+            {
+              "wastedBytes": 712,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/img/icons/email2.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 712
+            },
+            {
+              "totalBytes": 587,
+              "wastedBytes": 587,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/assets/img/icons/email-footer.png",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://health.ri.gov/assets/img/arrows-off.png",
+              "cacheLifetimeMs": 0,
+              "totalBytes": 457,
+              "wastedBytes": 457,
+              "cacheHitProbability": 0
+            },
+            {
+              "totalBytes": 325,
+              "wastedBytes": 325,
+              "cacheHitProbability": 0,
+              "url": "https://health.ri.gov/css/chrome.css",
+              "cacheLifetimeMs": 0
+            },
+            {
+              "url": "https://customer.cludo.com/scripts/bundles/search-script.min.js",
+              "wastedBytes": 28442.375,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 300
+              },
+              "cacheLifetimeMs": 300000,
+              "totalBytes": 29679,
+              "cacheHitProbability": 0.041666666666666664
+            },
+            {
+              "wastedBytes": 1603.2916666666667,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 300
+              },
+              "cacheLifetimeMs": 300000,
+              "totalBytes": 1673,
+              "cacheHitProbability": 0.041666666666666664,
+              "url": "https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css"
+            },
+            {
+              "url": "https://maps.googleapis.com/maps/api/js",
+              "wastedBytes": 33590.0625,
+              "debugData": {
+                "public": true,
+                "max-age": 1800,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 1800000,
+              "totalBytes": 38945,
+              "cacheHitProbability": 0.1375
+            },
+            {
+              "wastedBytes": 3394.4,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 3600
+              },
+              "cacheLifetimeMs": 3600000,
+              "totalBytes": 4243,
+              "cacheHitProbability": 0.2,
+              "url": "https://translate.googleapis.com/translate_static/css/translateelement.css"
+            },
+            {
+              "url": "https://translate.googleapis.com/translate_static/css/translateelement.css",
+              "wastedBytes": 3394.4,
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 3600000,
+              "totalBytes": 4243,
+              "cacheHitProbability": 0.2
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 3600
+              },
+              "cacheLifetimeMs": 3600000,
+              "totalBytes": 2183,
+              "cacheHitProbability": 0.2,
+              "url": "https://translate.googleapis.com/translate_static/js/element/main.js",
+              "wastedBytes": 1746.4
+            },
+            {
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 7200
+              },
+              "cacheLifetimeMs": 7200000,
+              "totalBytes": 18817,
+              "cacheHitProbability": 0.25,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "wastedBytes": 14112.75
+            }
+          ],
+          "type": "table",
+          "summary": {
+            "wastedBytes": 1334938.6791666662
+          }
+        },
+        "numericValue": 1334938.6791666662
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "30 ms",
+        "numericValue": 33
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance",
+        "score": 0.53,
+        "auditRefs": [
+          {
+            "id": "first-contentful-paint",
+            "weight": 3,
+            "group": "metrics"
+          },
+          {
+            "id": "first-meaningful-paint",
+            "weight": 1,
+            "group": "metrics"
+          },
+          {
+            "id": "speed-index",
+            "weight": 4,
+            "group": "metrics"
+          },
+          {
+            "id": "interactive",
+            "weight": 5,
+            "group": "metrics"
+          },
+          {
+            "id": "first-cpu-idle",
+            "weight": 2,
+            "group": "metrics"
+          },
+          {
+            "id": "max-potential-fid",
+            "weight": 0,
+            "group": "metrics"
+          },
+          {
+            "id": "estimated-input-latency",
+            "weight": 0
+          },
+          {
+            "id": "total-blocking-time",
+            "weight": 0
+          },
+          {
+            "id": "render-blocking-resources",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-responsive-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "offscreen-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-css",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-css-rules",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-optimized-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-webp-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-text-compression",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "time-to-first-byte",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "redirects",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preload",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "efficient-animated-content",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "total-byte-weight",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "dom-size",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "critical-request-chains",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "user-timings",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "bootup-time",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "font-display",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "performance-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "resource-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "third-party-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "network-requests",
+            "weight": 0
+          },
+          {
+            "id": "network-rtt",
+            "weight": 0
+          },
+          {
+            "id": "network-server-latency",
+            "weight": 0
+          },
+          {
+            "id": "main-thread-tasks",
+            "weight": 0
+          },
+          {
+            "id": "diagnostics",
+            "weight": 0
+          },
+          {
+            "id": "metrics",
+            "weight": 0
+          },
+          {
+            "id": "screenshot-thumbnails",
+            "weight": 0
+          },
+          {
+            "id": "final-screenshot",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      },
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "budgets": {
+        "title": "Budgets",
+        "description": "Performance budgets set standards for the performance of your site."
+      },
+      "load-opportunities": {
+        "title": "Opportunities",
+        "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "pwa-installable": {
+        "title": "Installable"
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "pwa-optimized": {
+        "title": "PWA Optimized"
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      },
+      "pwa-fast-reliable": {
+        "title": "Fast and reliable"
+      }
+    },
+    "timing": {
+      "total": 11274.54
+    },
+    "i18n": {
+      "rendererFormattedStrings": {
+        "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+        "opportunityResourceColumnLabel": "Opportunity",
+        "opportunitySavingsColumnLabel": "Estimated Savings",
+        "errorMissingAuditInfo": "Report error: no audit information",
+        "errorLabel": "Error!",
+        "warningHeader": "Warnings: ",
+        "auditGroupExpandTooltip": "Show audits",
+        "passedAuditsGroupTitle": "Passed audits",
+        "notApplicableAuditsGroupTitle": "Not applicable",
+        "manualAuditsGroupTitle": "Additional items to manually check",
+        "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+        "crcLongestDurationLabel": "Maximum critical path latency:",
+        "crcInitialNavigation": "Initial Navigation",
+        "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+        "labDataTitle": "Lab Data"
+      }
+    }
+  },
+  "analysisUTCTimestamp": "2020-05-07T09:25:47.225Z"
+}

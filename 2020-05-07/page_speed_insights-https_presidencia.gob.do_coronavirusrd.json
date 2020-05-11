@@ -1,0 +1,2271 @@
+{
+  "captchaResult": "CAPTCHA_NOT_NEEDED",
+  "kind": "pagespeedonline#result",
+  "id": "https://presidencia.gob.do/coronavirusrd",
+  "loadingExperience": {
+    "id": "https://presidencia.gob.do/coronavirusrd",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 2574,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.35234093637454983
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.44807923169267705
+          },
+          {
+            "min": 3000,
+            "proportion": 0.19957983193277309
+          }
+        ],
+        "category": "AVERAGE"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 325,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.91466346153846145
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.034254807692307696
+          },
+          {
+            "min": 300,
+            "proportion": 0.051081730769230761
+          }
+        ],
+        "category": "SLOW"
+      }
+    },
+    "overall_category": "SLOW",
+    "initial_url": "https://presidencia.gob.do/coronavirusrd"
+  },
+  "originLoadingExperience": {
+    "id": "https://presidencia.gob.do",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 2529,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.35586911188634013
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.44508974683791008
+          },
+          {
+            "min": 3000,
+            "proportion": 0.19904114127574984
+          }
+        ],
+        "category": "AVERAGE"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 33,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.97182927815051345
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.014752243149300785
+          },
+          {
+            "min": 300,
+            "proportion": 0.013418478700185919
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "AVERAGE",
+    "initial_url": "https://presidencia.gob.do/coronavirusrd"
+  },
+  "lighthouseResult": {
+    "requestedUrl": "https://presidencia.gob.do/coronavirusrd",
+    "finalUrl": "https://presidencia.gob.do/coronavirusrd",
+    "lighthouseVersion": "5.6.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+    "fetchTime": "2020-05-07T09:38:51.109Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3694.0 Safari/537.36 Chrome-Lighthouse",
+      "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/79.0.3945.120 Safari/537.36",
+      "benchmarkIndex": 635
+    },
+    "runWarnings": [],
+    "configSettings": {
+      "emulatedFormFactor": "desktop",
+      "locale": "en-US",
+      "onlyCategories": [
+        "performance"
+      ],
+      "channel": "lr"
+    },
+    "audits": {
+      "redirects": {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsMs": 0
+        },
+        "numericValue": 0
+      },
+      "user-timings": {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        }
+      },
+      "first-meaningful-paint": {
+        "id": "first-meaningful-paint",
+        "title": "First Meaningful Paint",
+        "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+        "score": 0.95,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.8 s",
+        "numericValue": 799
+      },
+      "resource-summary": {
+        "id": "resource-summary",
+        "title": "Keep request counts low and transfer sizes small",
+        "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "31 requests • 1,798 KB",
+        "details": {
+          "items": [
+            {
+              "resourceType": "total",
+              "label": "Total",
+              "size": 1841606,
+              "requestCount": 31
+            },
+            {
+              "requestCount": 9,
+              "resourceType": "image",
+              "label": "Image",
+              "size": 1550915
+            },
+            {
+              "requestCount": 7,
+              "resourceType": "script",
+              "label": "Script",
+              "size": 182076
+            },
+            {
+              "label": "Stylesheet",
+              "size": 62304,
+              "requestCount": 7,
+              "resourceType": "stylesheet"
+            },
+            {
+              "resourceType": "font",
+              "label": "Font",
+              "size": 30556,
+              "requestCount": 2
+            },
+            {
+              "requestCount": 2,
+              "resourceType": "document",
+              "label": "Document",
+              "size": 13025
+            },
+            {
+              "resourceType": "other",
+              "label": "Other",
+              "size": 2730,
+              "requestCount": 4
+            },
+            {
+              "requestCount": 0,
+              "resourceType": "media",
+              "label": "Media",
+              "size": 0
+            },
+            {
+              "requestCount": 19,
+              "resourceType": "third-party",
+              "label": "Third-party",
+              "size": 177645
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "key": "label",
+              "itemType": "text",
+              "text": "Resource Type"
+            },
+            {
+              "text": "Requests",
+              "key": "requestCount",
+              "itemType": "numeric"
+            },
+            {
+              "key": "size",
+              "itemType": "bytes",
+              "text": "Transfer Size"
+            }
+          ]
+        }
+      },
+      "final-screenshot": {
+        "id": "final-screenshot",
+        "title": "Final Screenshot",
+        "description": "The last screenshot captured of the pageload.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "screenshot",
+          "timing": 2548,
+          "timestamp": 29028088830,
+          "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAFcAfQDASIAAhEBAxEB/8QAHQABAAAHAQEAAAAAAAAAAAAAAAIDBAUGBwgBCf/EAFcQAAEDAwEEBAYLDAcHBAIDAAEAAgMEBREGBxIhMRNBUWEIFCJxgZEWMkJWcnSUobGy0RUjJDM0NTdSc3WCsxc2U2KSosElQ1RVwtLhGGOT8ERkRuPx/8QAGwEBAAMBAQEBAAAAAAAAAAAAAAECAwQFBgf/xAA+EQACAQIEBAMFBQUIAwEAAAAAAQIDEQQSITEFE0FRFCJhBjJxgbEjNJGh8BUzQsHRNTZDgrLC4fEkJURS/9oADAMBAAIRAxEAPwDndERe2cIREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBEW1tjex64a+f4/WyPoLAx26Zw3y5yObYweHnceA7+KrKagryJSbdkapVVHbq2WLpIqOpfH+u2JxHrwu99LbPNI6PpQbZaKOJ8Yy6rqGh8veS93EejAU2baLounn6CTVFmbIDggVbCB6QcLleLu/LE15Xdnz6IIOCCD3rxfQu66e0nre3b9ZRWy7U0gw2oZuvP8MjeI9BXKW3vZVS7P6imrbTXtlttY8tZTTyDp4jjPD9ZvfjhwB7VpSxMZvK1ZlZU3FXNQorxpPTlz1Xfae0WSnM9XMfM1jetzj1NHauudnmwbTOm6eKe9Qsvd0wC99Q3MLD2Nj5Ed7snzK9WtGnvuRGDkcaU9LUVLi2mglmcOOI2F30JU0tRTODamCWFx4gSMLfpX0KuWo9LaWa2lr7pabXujyYHSsiIHc3nj0Ly26m0rqgOpaC7Wm5lw4wNmZISPg8/mWHi3vl0NOUu588EXam0LYPpfUsEs1ogZZLnjLZKZuInHsdHyx3twfOuRtY6YumkL9Pab3TmGqi4gjiyRp5PaesH/AMcwt6VaNTbczlBxLIiiiGZWA8t4fSvoc3RmlujBOnLLy/4GL/tUVq3KtpuIQzHzvRd//crZ9/wOlf8A4qf7FDWbPNCX6lO9p+zSxOGOkpYmxn0OjwfnWPjF1RfkvucBIt8bb9hw0pb5b9peSae1RnNRTSnefTg+6DvdN7c8R38caHXVCamrxM5RcXZhFsbZDsrue0OufI15orLA7dnrHNzk/qMHW75h19QPWmkNl+kNI07PufaaeSoYMuq6tollJ7d4+19GAsquIjT03ZaNNy1OD4bdWzx78FHUyM/WZE5w9YCp3sdG4tka5rhzDhgr6C1e0LRtBOaeo1NZ45W8Czxphx3HB4KqfT6X1pbyXMtF7ozw3h0c7QfOM4Ky8W1vEvyl0Z87kXTu1jweacUk900GHslYC99se4uDx/7Tjxz/AHTnPURyXMkjHxyOjka5j2ktc1wwQRzBC6adSNRXiZSi47kKLa3gz2+iue1GCmuVJT1dOaSZxinjEjcgDBwRhdeewvS3vbsvyGL/ALVlVxCpyy2LRp5lc+dqLZ+3/Z+dD6xe+iiLbLcS6akIHCM+6i9BPDuI71rBbxkpLMijVnYItz+Cra6C7a/r4LpQ0tbC23PeI6iJsjQ7pIxnBB48Sth+FZp6zWnQFuntdpt9FM65MYZKemZG4t6KU4JaBw4D1LKVa1TJYsoXjmOVURFsUCLqDwWdn1BVacrtQ363U1YKyToaRlTC2RrY2HyngEHm7h/D3q8eEps6tsugzd7Ba6OjqrXJ0sopYGx9JC7g7O6BnHB3HkAVzvERU8hpy3lucjoi2r4N9faotocVsvtBRVlJc4zAzxqFkgZKOLCN4HGeLe/eC2nLLFsold2NVIu19tuzqzXDZtd3WazW+kuFIzxuJ9NTMjcdzi5uWjJy3eGO3C4oVKVVVVdFpwysIi3f4K+jqbUOqrhc7rSQ1Vvt0G4I54w9jpZOAyDwOGh3pIV5zUIuTIiszsaQRdZeE2zTml9Cso7dZLTT3O6SiKOSKkja9kbcOe4EDI9y3+JSfBW09Zbts9rp7paLfWztuUjBJUUzJHBvRxnGSDw4n1rHxHkz2LcvzZbnKaLcnhUWygtW0OjgtdFTUUBt0bzHTxNjaXdJJxwAOPAepT/BStVvu2urpDdaGlrYW25z2sqImyNDuljGQHA8eJV3V+zz2Iy+bKaURfQqs0vo2ija+tsmn6djjuh0tLCwE9mSFTMsugJ3COO3aXkc7gGthgJPowsPGLsX5PqfP5F3JqvYjojUFM8RWtlrqXDyKig+97p+B7Uj0LkfaZoa46B1I+13IiWNzekp6lgw2aPPPHUeojq9RW1KvGpotykqbiYmi6B8EmzWy73DUrbtbqOubHFAWCphbJu5L843gccgq7wuLHarRR6YdabZRUJkkqA800DY97AjxndAzzKc77Tl2JyeXMc4IiLYzCL6DWfRumH2mic/Ttmc50DCSaKMkndH91cCXZrWXWsawBrWzPAAGABvFY0a3NvpsXnDKUimQwyzyBkEb5Hnk1jS4n0Bb+2A7FqbUdvi1Hqxj3W15PilGHFvTgHBe8jju55AYzjPLn0JcLvo3Z9RRw1VRabJCRlkLGtY5w7QxoyfPhUqYlReWKuy0ad1dnz/AKmlqKUgVMEsJPECRhbn1qSvoNZdW6P1tG+kt1ztt03gd6mfguI6/vbxkj0Lnrwm9GaL002lqbN/s+91Lt77n04zE+PreW/7vsGOB7OZCniM0srVmJU7K6Zz8iIukyCIiAIiIDItnumpdX6ytVjhJaKqXEjxzZGBvPd6Ggrv6ngt2m7A2KFsdHa7fBwHJscbBxPqGVyj4IdLHNtGr53gF0FueWZHImRgz6s+tbw8JS4y2/ZDeOgcWuqXRU5cD7lzxvD0gEelcGIbnUUDop6RbOZdr21S668u00Uc0tLYI3kU9G12A8Dk+THtnHnjkOrtOt0Rd0YqKsjBtt3ZkuhNbXvRF3bX2KpLM8Jad+TFMOxzc8fPzCt+p9Q3TU94mud8q5Kqsl5udyaOprRyAHYFal60ZcB2nCZVe9tRd7HZngxaLi09oWK81EQ+6d4aJi8jiyH3DR3EeV6R2K0eEhtXqtM7um9Nz9DdJoxJU1LfbU7Dya3sceeeoYxxORvC0UkdBaaKjhAEVPAyJgHUGtAH0LgLancZbptH1LVzuLnOr5mDPU1ri1o9DWgLgorm1HKR0TeSNkYzPLJPM+WeR8sryXOe9xc5xPWSeaRSPhlbJC90cjDlrmnBB7QVAi9A5jq7wbdrNXqCb2L6mnM9wZGX0dU8+VM1o4scetwHEHrAOeXHKPCT0XFqbQNRcYIh91LQ01MTwOLox+MZ5seV52965K2eXCS1a70/WwuLXRV0JJHW0vAcPSCQvoVWQMqqSenlaHRyscxwPIgjBC8+vHlVFKJ0weeNmfNeH8dH8IfSvpRN+Ryfsz9C+bRZ0dZufqybvqK+k7mdJTlmcbzcZ9CvjP4StHqfNST8Y7zlX7RGqLtpPUFLcLLUyxStkbvxNcd2ZueLHN6wVvd3guPc4n2WN4nP5B//AGLLtA+D1YtNXanud0r57xU07xJEx0Yiia4cQ4tyScHvx3LWWIp27lVTlc3BdaWG4WerpapgdBUQPjkYetrmkEeor512G0z3u/0NpouNRWVDKeMnkC52MnuHNdp7ddolDovSlXTRVDHX2thdFSwNd5bN4Y6R3YBxI7Tw7cc2+DPSNqtsNnc9ocIGTS8e0ROAPrIWOHvCEplqlnJI7I0tYqHSunKK0W5gjpKOINBPAuPNz3d5OSfOuQtuO1u4axu9TbLRUyU+nIHmNjI3FvjWPdv7QepvLGOtdQbaLjJatlepaqAkS+KOiaQcEb5DM+jeXASYWCk3NirK2iCuumtQ3XTN0iuNjrZqOqjPtozwcOxw5OHcVakXc1fRmJ3zsf15BtA0jFcQxkNfC7oayBp4MkA5j+6RxHpHUuf/AArtFxWbUdJqO3xCOmuhLKhrRgCdozvfxDj52k9am+B5cJYtZ3q3Bx6Cooenc3q3mSNAPqkctqeFTRsqdk1RM9uXUtXDK09hJ3PocV56XKrWWx0e/C7NG+Cr+lqD4nP9AXVmv9WU+jbTS3OubmidWRU87uuNjyRv+g4PmyuU/BV/S1B8Tn+gLePhVfoln+OQ/SVNdZqyTIg7QuZhtP0fSa+0VVWx7o+mc3pqOfmGSgeS7PYc4PcSuB7lQ1NtuFTQ10ToaqnkdFLG7m1wOCF1j4Le0D7t2B2mLnLm421maZzjxlp+QHnZwHmI7Csd8K7Z9jc1na4f1Ybi1o9DJfoaf4e9TQk6U3TkRNZlmRjXgg/pHuP7sf8AzY1srwwP0c2z96x/ypVrXwQf0j3H92P/AJsa2V4YH6ObZ+9Y/wCVKk/vCEf3ZyErhp601N+vlBaqFu9U1kzYWdgLjjJ7hzPmVvXQngjaR8dv1fqiqjzDQN8WpiRzlcPKI8zTj+NddWeSLkZRjmdjoG51FBs42bSyQtAo7PRbsTTw33NGGg97nY9JUzRl5pdd7P6C4TRskguVKWVEXVvEFsjPNneC074X2qPF7Ra9M08mJKp/jdSAf923gwHuLsn+BU/gf6n6Sku+mKh/lRHx2mBPuThsg9B3T/EV5/KfK5nU6M3mynP+vdOTaT1hdbJUZJpJi1jj7uM8WO9LSCrPQVc1BXU9ZSPMdRTyNljeObXNOQfWF0r4Xukt6K2arpY+LPwKrIHUcmNx9O8M97VzGu+lPmQTMJrK7H0V0bfafVekbZeIQ0xV1O17mcw12MPb6CCPQuEtp2nDpPXl5s+6RDBOXQZ64neUz/KQt++CDqrp7ZdNMVMmX0zvHKYE+4dweB3B2D/GVbvDC01uT2bUsDODwaGoI7Rl0Z9W+PQFy0fsqrgaz80LnNa7l8HXTPsb2X23pWbtXcc103b5YG4P8Ab6crj7Zzp12q9cWezNBLKmob0uOqJvlPP+EFdw7TNRxaL2f3S6R7rH08HR0zMcOkd5LAB2AkHzAq2Kle0EVpLeRyb4SGqvZLtLrIYJN6itY8SiweBc0/fD/iyPM0Ldvghfo1uH70k/lRLkGR7pZHSSOLnuJc5xOSSeZXX3ghfo1uH70k/lRKcRHLSUUKbvO5q/wu/0l0P7sj/mSKf4H36QLt+7HfzY1I8Lv9JdD+7I/wCZIp/gffpAu37sd/NjR/dx/iGwfDC/qFaP3kP5Ui5HXem2PZ8dotgo7a24i3+L1IqOkMPS73kubjG8P1lqSHwWx0g6bVZLOsMoMH+Yq0K0IQtJk1IOTuiX4I2qbtVXS56eq6iWotsVL4zCJHF3QuD2t3Wk8gQ7OO7zq++GJRwP0fY61wb4zFXGFh6918bi4etjVsvZts7sezu2Tw2rpJJpsOqKuocC9+OQ4YAaMngPnXOPhO7QqLVV6o7LZJ2z262uc6SdhyyWY8PJ7Q0DGeskqkHzK2aOxL8sLMyHwNPzlqn9jT/S9XDwzfyHSn7Sp+iNW/wNPzlqn9jT/S9XDwzfyHSn7Sp+iNX/APp/XYj/AAzl9ERdpgfSWyfmag+Lx/VC+c15/O9d+3k+sV9GbJ+ZqD4vH9UL5zXn87137d/1iuLB7yN62yPoZoqGGm0dYoaYAQMoYGsx2dGMLhHapU3Gq2i6ifeXSmsbWysIk9y0OIaB3buMdy6R8HPapbrrp6i0zeqqOmu9EwQU5lcGtqYxwaGk+6AwMczgEZ442FrvZlpbW56W928eOhu62rgd0coHVkjg7H94FZ05cibzItJZ4qxwPSVM9HUxVNJNJBUROD45I3FrmOHIgjkVV3683C/3We5Xirkq62YgvlkPE44AdwHYFvrWPgzV1MySfSd2ZWNHEUtYBHIe4PHkk+cNWgr1aa+yXKa33ekmpK2E4fFK3BH2jvHArthUhPWJhKLjuUSIi0KhERAEREBujwTrnHQ7UH0srgDXUMsLO9wLX/Qxy6G2/wBllvmye+wUzC+eFjapjRzPRuDnf5Q5cQ6eu9VYL7QXa3u3aqjmbNGTyJB5HuPI9xX0B0Pqm3a00xS3e2Pa+GduJYicuifjymOHaPnGD1rhxMXGaqI3pO6cT53IugNsGwS50NyqbroqmNbbZXGR1Cw/fYCeJDR7pvYBxHLB5rS02mb7DU+Ly2W5snzjo3Usgd6sLrhUjNXTMnFrctCA4OQtzbLdhN+1HcIarUtLPaLK0hzxMNyeYfqtaeLfhEebKo9s2xuu0EHXOhqBW2B8gY2R5DZYSeTXD3XnHpAUc6DllvqTkdrnYOkrpHe9L2m5wuDmVdLHN6XNBI9B4LhzbXZJbBtQ1BTSsLWTVLqqI44OZId8Y82SPOCt1eCptChkoDo26TBlRE50lvc8/jGHi6Md4OSO0E9i2Fts2WU20O2RS00kdLfKRpFPO4eS9vPo3444zxB6j5yuOm+RUalsbSWeN0cNosr1Hs81Zp2pfDdLDXtDT+NiiMsTu8PbkKHT2z7VmoahkNrsNwk3jjpHwmOMed7sNHrXdnja9zns9idsisk1/wBpOn6KBpcBVsnlI9zHGd9x9TfnC7zv9xitFiuFxqDiGkp5J3nua0n/AEWu9h+yiDZ7Qy1VdJHVX6qaGzSsHkRM59GzPHGcEnrwOxYX4VG0KCktB0fa5g+tqi19cWH8VEOIYe9xwcdg71wVHz6iUdjoiskbs5ZY4vqWvdzc/J9a+lL3FlM5w5tZkepfNWH8dH8IfSvpRN+Ryfsz9C0xn8JWj1OUNLeEZqMaloWaibQOtDpgypMMBa9rDw3gcnlzx14XTmqqGpvelq6ls9xkoauogPi1XA/BY7m0gjqPXjqK+dMn4x3nK7C8FzXPsg0k6wV0u9crQ0Nj3jxkpz7U/wAPtfNu9qYiiopTihTnd2ZyXqCO4w3uuhvbp3XOKV0dQZ3lz98HByTzWbeD1c4rXtesEk7t2OZ76bOeuRjmt/zELaPhYaA3XRaytkXA7sFwa0ehkn0NP8PeubKaeWlqYqine6OaJ4kY9pwWuByCPSuiMlVp6GbWSR9B9ptlk1Fs/v1qgbvz1FI8RN7ZAN5o/wAQC+ergWuLXAhwOCD1Fd9bI9d0mvdJU9fE9jbhEBHWwA8Y5Mc8fqnmD6OYK1Ftw2FVdxudTqDRUTJJJ3GSpt+8GkvPN8ZPDjzLT18ueFy4epy24T0NakcyujmFFea3SuoKGo6CssdzgmzgMkpXgnzcOKzHQmxjV2qqyMS26a1W/I6SqrYzHgf3WHDnHzcO8Ltc4xV2zFRbNheB1Y5n3i+357CKeKBtExxHBznOD3AeYNb/AIgs68LS5x0ezSGiJHS11bGxrc8d1gLyfWGj0rZuj9N2vROmKe1W0CKjpWFz5ZCAXu5ue89p+bzBceeEDr5mudZYt8hdZ7cDBSnqkJPlyekgAdwC4YfbVs3RG0vJCxcPBV/S1B8Tn+gLePhVfoln+OQfSVo7wVf0tQfE5/oC3j4VX6JZ/jkH0lWrfv4/IiP7tnImk7/W6X1FQXm2P3aqkkDwM8Hjk5p7iMg+dd9WK52nXuioauNjai2XOnLZIn9QILXsd3g5HoXzvW9PBd2gfcHULtNXKXFtubx0DnHhFUch6HcB5w3vWuJpZo5luitOVnZmWbE9GVOhdvF9tE+8+n+5r5aWYj8bCZY90+ccQe8FX3wwP0c2z96x/wAqVbrfQ0z7jDXuhaauKN8LJesMcWlzfMS1p9C0p4YH6ObZ+9Y/5Uq5YTc6sWzWUcsWjkWGN80rIoml8j3BrWtGSSeAAX0D2W6WZo3Qtqs4aOnjj36hw91M7i89/E4HcAuVfBl0l7I9okVdUR71BZwKp+RwMvKMevLv4V07ti10Nn+jn3WKKKetklZBTQyk7r3Hic444DQ4+pa4qTlJU0UpKyzM1vtP2G33XGs669yX6ihil3WQwuieTHG0YA+knvJUvZtsKvuitZ26+RX+ilZA4iWJsTx0kbgQ5vqOR3gLEP8A1O6j/wCR2n1yf9yf+p3Uf/I7T65P+5MlfLl6fIXhe50zrXT9PqnSlzstXjo6yF0YcRncdza70OAPoXzxuVFPbbjVUNZGY6mmldDKw+5c04I9YXdWxfX39IWk3XGeGKnr4JnQ1EMRO6082kZ44LSPSCufvCu0l9x9aQX6mjxSXdn3zA4CdgAd627p7zvJhpOE3TkTVV1mRrrZRqd2kNfWi7lxbTslEdR3xP8AJf6gc+cBdp7WtON1fs5vFtiaJJ3wdNTEccyM8pmPORjzFfP9dyeDvqn2T7M6Dpn79bbvwGfPM7gG4fSwt49oKtio2aqIrSd7xZqvwPtMmSvvOpaiPyYWiipyR7o4dIfOBuD+IrzwvtVdNX2rS9NJ5EA8cqQD7s5DAfMN4/xBdC2i1WrRlhrG0rW01BHJPXTOPJu85z3HzAcB3ALgfW9/m1Tq263qpzv1k7pGtPuGcmN9DQB6FFL7Wq59ETPyRyljXYHghfo1uH70k/lRLj9dgeCF+jW4fvST+VEtMX+7K0veNX+F3+kuh/dkf8yRT/A+/SBdv3Y7+bGpHhd/pLof3ZH/ADJFP8D79IF2/djv5saq/u5P+Ibp8ILXF30Hpa33CxeL+MT1ggf08e+N3cc7gMjjloVn8H7a1Va7luFs1B4sy7QgTw9CzcbJFwBGMni049Du5W/wwv6hWj95D+VIuYNG6hq9K6nt96t5+/0kofu5wHt5OYe4gkelUpUVOl6lpTcZnTfhY2m+u09TXe13GtFpi+819FHIRHgnyZCBz4+Sc9re9clr6L0FTa9aaRjnY1tTarpTcWO90xwwWnsI4g9hC4S2naPqdD6xrbPUbzoWnpKaUj8bCfau8/Ue8FXws9Mj3RWrHqbl8DQj7qaoGeJhpzj+J6ufhmMcbbpWQNO42aoaXdQJbHgfMfUtb+DNqmDTe0iKCtkEdJdIjRlzjgNkJBYT6Ru/xLpzbPoX2f6LltsD2RXCF4qKR7/a9IARunuIJHqPUqVHkr5nsWj5oWRwSiyG96K1LY6x9Lc7HcIZWu3c9A5zXfBcAQ4eYrP9juxy+aj1DR1l8t1RQWKnkbLK6qjMbpwDnca08SDyJ5Yz1rrlUjFZmzFRbdjsaztLLRRNcMObAwEdnkhfOS8HN2rSOXTv+sV37tO1RT6O0RdLtM9rZI4iynafdzOGGNHp4+YFfPuKOWonZHEx8s0jg1rGglznE8AB1klcuDT1ZrW6Il8lnmktretNLiOOgvM09KzAFNWffmY7BvcWjzELOIPBz1BLoYXLp2N1A4iRttcQB0ePal/ISd3LqytO3ew3azVjqW622so6gHG5NC5pPmyOPoXSpU6mm5naUTr7YxtqpteVn3IulIygvYYXsEbiYpwBk7ueIIHHBzwHNUXhV6UpLnoN2oBG1txtT2ffQOL4nuDSw9wLgR2ce1a38GTZ9e360pdTV1HPRWyiZIY3zMLDO9zCwBoPEgBxOeXDC214UV5gtuymto5HgVFyligiZnicPD3HzAN+cLicVGslA2Tbh5jipEReicwREQBERAFlezzXt70HdTWWScdHJgT0suTFMB+sO3sI4hYoihpSVmSnbY7H0l4RWkrrAxt8bU2arx5QewyxE9zmjPrAWbM2qaFfHvjVNr3efGYA+o8VwEi5nhIPY0VZnamqPCA0VZ6d/wBzqma8VQB3YqWMtbnve4AY7xnzLmDabtHvW0G5NmujxDRQk+L0URPRx95/Wd3n0Y5LCkWlOhCnqtysqjkTKeaWmnjnp5HxTRuD2SMcWua4cQQRyK6J2c+EfNR08VDrakkq2sAaK+mA6Qj++w4B84I8xXOSK86caitIiMnHY7ytm2LQVxiD4tSUkRI4tqA6Ej/EAly2xaCt8RfLqSklx7mnDpif8IK4NRYeDh3NOczpHaJ4SMlTTy0WiKOSm3gWmvqgN8fAZxA85J8y5zqqiarqZaiqlkmnlcXySSOLnPceZJPMqUi3hTjTVomcpOW5FGQ2RhPIEFdnyeEDoJ1M9grK3eLCPyR/YuLkUVKMalrkxm47Hrzl7iORKyXZxqup0XrG33qm3nMhfuzxg/jYjwe31cR3gFYyiu0mrMre2p2Vdtumze7Wyqt9wnrJqSqjdFLG6kfhzSMELkG8RUcN1q47XUOqaBsrhBM9hY57M+SSDyOOao0WdOiqexaU3LcvmjtVXfR96judhqnU9Q3g5vNkretr29Y/+jiundF+Ehp+4QRxappp7TV4w6WJpmgce0Y8oebB865GRKlGNTcRm47HfcG1bQk8QkZqi2Bp44fLuH1HBVkv+3bQdoieYrq64zDlFRROeT/EcN+dcPoslg4dy/OZtnattsvWuIZLdRx/cqyOPlQRvzJMP/cd2f3Rw7crUyIuiMFBWiZNt6s2HsJ1TbNHa/iu17kkjo208sZdGwvO84DHALZ+3fa1pXWOgJbTY6mpkrHVEUgbJTuYMNJzxK5tRUlRjKSm9yym0rBesc5j2vY4tc05BBwQe1eItSh1toPwhdPexWgj1XPVRXmJnRzmOAvbIRwD8jtGCR25WG+ENtS0zrfR1FbrBUVEtVFXNncJIHMG4I5Gnie9wXPaLBYeEZZkaOo2rHR+wnaTobQeixSXCqqRdqqV09UWUrnAHk1oPWA0D0krDPCH2j0evb1bo7HJK600UJIMjCwulcfKOD1ABo9a1GisqMVPP1Ic21YIiLUobT8H3aFS6C1NVm7vlbaK6Dcm6NpcWyN4sdgedw/iWy9su1LQWudB1trgq6rx9hE9G59K4ASt5DPVkEt9K5hRZSoRlLP1LqbSsFtjwetotJoLUFe29SSttFdCA/o2F5bK05YcDuLh6QtTorziprKyqdndHTe2nbfYb9oOstGlqipfV1rmxSufC6MNh5u4ntwG47CVzIiKKdNU1ZEyk5asLobwe9qemNE6Mq7bf6ioiqpK587RHA543CxgHEd7SueUSpTVRWYjJxd0bO8IPWFo1trWluVhllkpY6JkDjJGWHeD3k8D3OCm+DxrSz6H1bcK+/yyxU01EYGGOMvO8ZGHkO5pWrETlrJk6DM75joHwh9qGmtcaUt9BYKiolqIa0TvEkDmDd3Hjme8hc/IiU4KmsqEpOTuzfHg97XqDRtqrbLqeWcW8O6akfHGZCxx9uzA6jwI789qrNvmvNB6/wBOQvtlVUi+UTt6nc+lc0SMON5hPzjvHeVz2ipyI5863Jzu1gCQQQcEdYXRmyvwh3W6igtet4p6mOIBkdwhG9Jjq6RvuvhDj3E8VzmivUpxqK0iIycdjveh2uaDrYRLFqegY09UzjE4ehwBVl1Nt40NZoHmmuLrrUgeTDRRl2T8M4bj0riJFgsJDuac5mdbVNpV32h3RktcBTW+AnxaijdlsefdE+6d3+oBYbb6ypt1dBWUMz4KqB4kilYcOY4HIIVOi6VFRVlsZNtu51Ns+8JKhlpoqXW1LJT1TQGmtpWb8b+9zBxafNnzBbSpdrGg6uESx6ntwaeqV5jd6nAFcDoueWFg3daGiqtHbWp9veiLNTyeJ10l2qgPJhpIzgnve4BoHmz5lyptN17ddoF++6Fz3YoIgWU1Kw5ZCz/UnrPX5gAsQRXp0I09VuVlUcgiItigREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAXrQXODWglxOAAMkrxbt2YaMittFDdblEH3CZofG14yIWniMD9Y9vVy7V5vFeKUuGUebU1b2XdmGIrxoRzMwmw7Nb3c2NlqRHb4Ty6fO+R8Ef64WTw7IacN+/XeZzv7kIA+clZVrLWdBpmMRyA1Fa8ZZTsOOHa49QWt6rarfJZMwQ0ULM8GiNzj6SSvlqOK49xNc2haEHtt/NN/wAjhhUxdfzR0RX3LZJVxxl1uuUM7h7iZhjz6Rla+u9prrPVmmuVNJTy8wHDg4doPIjzLZ2m9qwmqmQX2ljhY848Ygzut+E0k8O8H0Kg2p6wt10pzarfFFVbjwXVZ4hhHUw9feeXn5rv4fi+MUsUsNjKeZP+LTRd7rT5bmtGpiY1MlRXXc1kr3p3S921A/8A2dTEwg4dPJ5MbfT1+YZKuWzrS3slurjU7wt9Nh0xHDfPUwHv+hb0qqigsNqdLKYqSip2cgMADqAHb3da0437Q+CmsNho5qj/ACvt8X6FsVjOU8kFeRrSi2RPLGmuuzWu62wxZHrJH0KdUbIYSPwe7yNP/uQg/QQqO9bWap0zmWaihjhHASVGXOPfgEAfOqGh2rXmGQeN01HUR54gNcx2O45x8y4FS9o5rmZ0vTy/0/mY5ca1mv8AQteodn97s0bpuibWUzRkyU2XFo72kZ+lYiuktJ6ooNTUbpKNxZMz8bA/G8z7R3rBdrGjoo4JL3a4gwtOaqJg4EfrgdXf6+1b8L9oqrxHg+IRyz2T217P49GtC9DGyc+VWVmYnpDRVTqeimqKStpYjFJ0bo5N7eHAEHgOR/0Kkax0fW6XbTOqpoZ45y4B0WcNI6jkD/6Fc9kV4+5uqW0sjsQVzehPHhv82n6R6Vs/aXafutpCsawZmpx4zH52g5/y7ytjOL4rA8UhQqv7KVunR6b+j/IVcRUpYhQl7rOeERF9ceiZJo7SFbqnxk0k0MEcG6HPlzgk54DAPYpusNG1Gl6anlq62lmdM8sbHFvb2AMk8Ry5etbc2ZWn7k6QpA9uJqn8Jf8AxAY/ygLVm1a8fdTVc0UbswUQ8Xb2FwPlH18PQF8nguLYrHcUnQpv7KN+nbTf1f5Hn0sRUq4hxj7qKqybNLhdrTS18NdRxx1DA9rX72QO/AWI3y2yWi7VVBM9kklO/cc5mcHzZXQWz/8AqXZ/i7VpHaH/AF2u/wC3P0BTwXi2JxePrUKrWWN7adpWGGxE6laUJbK/1KrSGiKzU9DNVUtVTQsil6IiXeyTgHPAd6vv9El0/wCY0P8An+xZBsP/AKuV3xs/Uaq7X+t59L3GmpoaKKoE0PSFz3luPKIxw8y4cXxbic+IzweEadtlZdr7syq4iu67pUzEH7JLsG+RcKAnsJeP+lWS67PdRW9rnijFVGPdUzt//LwPzLJY9r1QHDpLRCW9e7MQfoWWaY2hWi+Tspn79HVv4NZNjdcewO7fPhWqY/j+DXMrUlKK32f0dyXWxdNXlG6/XY0G9jo3uY9rmvacFrhgg+ZQroXW+jaPUdI+RjGQXJozHOBjeP6ru0d/Uuf6qnlpKmWnqWGOaJxY9h5gg4IX0HCOM0uKU3KCtJbr9bo7MNiY11dbkpEReudARACSABknqW0tB7OHTGK4aijLY+Do6Q8C7sL+7u9fYuHiHEaHD6XNrv4Lq/gZVq0KMc0jGNKaGuuooHVEPR01L7mWfIEh/ugDj51L1jo+r0tHSvq6mnnFQ5zW9FvcMY55A7V0BFUUsdS2gifE2ZkW+IWY8lgIAOByHELWu3b8ks/7ST6Gr5Ph3tFi8bxGFKSywlfS3Sza1PPo4ypVrKL0TNRIiyPZ/Y23/U1PTTDNNGDNOO1gxw9JIHpX2uIrww9KVaptFXZ6c5qEXJ7IqNK6Fu2oY21EbWUtEeU82fK+COZ+Yd6zOPZDT9FiS7ymTtbCAPVlZtqq+U+l7C6rdECG4ighbwDnY4DuHD1BacqNpGpZagysrI4W5yImQt3R3cQT86+Lw+M4zxjNVwslTgnpf/pt/kjzIVMTibyptJFbqHZjdbbC6e3ysuETeJaxpbIB8Hr9Bz3LAiCCQQQRwIK31s61n7JYpaasjZFcIG7x3PayN5bw7DnmO/1Yftm0/FR1kF3pIwxlS4xzgcB0mMh3pAPq7128L4ziY4t8P4gvP0ff+WvR/I1w+JqKpya25rRERfWHoBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQF70Tbm3XVdspJWh0Tpg57TyLW+UR6gujLlVMoLbVVcg+908TpSB2NBOPmWh9k7mt11Qb3W2QDz7hW5NdMfJo+8NjOHeLPPoAyfmyvz32qvW4jRoT92y/OTT+h4+P81eMHt/VnO10rp7ncaitq3l887y9x/0HcOSpURfoMYqCUYqyR7CSSsgiIpB0JsutzbfoyiO7iSpzUPPbvcv8oCwHbRepKm9RWqN5FPSsD3t6nSOGfmaR6ytpaNc12k7MW8vFIh/lC0ftNY5mubpv9bmuHmLG4X55wGKxPGatWrq1ma+N7fkmePhFnxMpS6X+pi6Ii/Qz2C76UvEliv9JXRucGNeGytHu4yfKHq+cBdJ1EUdXSSQygPhmYWOHUWkYPzFcqrqi3MdHbqVj/bthYHefdC+B9tKUYTo1o6Sd1+Frfhc8jicUnGS3OY6yGW03ieFjy2ejqHNDhzDmO4H5l0lp+4x3qw0dczdLaiIF7eoOxhw9ByFzzrJwdq28lvLxyX65WxdiF434K2zyu4xnxiLPYcBw9eD6Su72mwjxWAhikvNCzfwe/52NsdT5lFVOqNcastf3G1HX0IBEccpMef1Dxb8xCaUtZvOoqChwSyWUdJjqYOLvmBWf7cLVuy0F2jbwcPF5T38XN/6vUF5sPtO9NX3aRvktHi0R7+DnH6vrK7P2x/6fxl/Na3+bb66mnif/G5vW35mxNU3Rli05WVvAGKPdib/AHzwaPXhc0Pc573PeS57iSSeZJW1Nt143paOzxO4N/CJgO3iGj1ZPpC1Us/ZPA+HwfOl71TX5Lb+b+ZXh9LJTzPdnSGz/wDqXZ/i7VpHaH/Xa7/tz9AW7tn/APUuz/F2rSO0P+u13/bn6AvK9m/7VxP+b/UYYL7xP5/U2PsP/q5XfGz9Rqx/bl+f7d8V/wCtyyDYf/Vyu+Nn6jVj+3L8/wBu+K/9blOE/vHU+f0EPvr/AF0NbIOByOBCIvvD1joXZnepb3pWGWqcX1MDzTyOPui0Ag+oj0rXe2m3MpdSQVkTQ0VcOX972nBPq3Vk2w5jxYbg8/i3VOG+cMGfpCtu3Zw6azN90Gyk+byV+e8PisN7QypUtIvN9L/U8ekuXjHGO2v0uaqRXil0xfKqnjnprVWSwyNDmPbESHA9YU32Iah/5NXf/CV908Zh07OovxR6rqwX8SLECQQQSCOIIWx6fajWw6ZbSmHpLs372Kl/Fu5jg4jrd83X3LXT2uY9zHgtc0kEHqIUKzxeAw+OUefHNZ3X67EVKMKts6vY2dsYqZqzVF1qKqV808lNvPe85JO+1V+3b8ks/wC0k+hqtew38/3H4r/1tV027fkln/aSfQ1fJVko+0dNLt/tZ50vvq/XQ1Etj7DnsGoq9rvxjqQ7p7t9uf8ARa4Vz01eJbFeqa4QDeMTvKZnG+08x6l9VxTDSxeEqUYbtafE9CvTdSnKK6m1duEEr7FQTMyYoqjD8dWWnB+Y+taXXS9DW2nVllcYzHVUk7d2SJ3Nvc4dRH/kLEKjZLa31O/BXVcUBOejIa4jzHH2r5HgXHaHDqDwmMTjKLfT9annYTFwow5dTRoxPYxTzS6udNHkRQ07zIeriQAPX9CzbbU9g0jE12N51Wzd/wAL1lGnNP2/T1Gae2xFoccvkecvee0n/TktT7Y7624XqO207sw0OQ8g8DKefqGB58rHD4j9scbjXpK0YfRf1bKwn4nFKUdka9REX6GewEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAXHTtxNovlDXgEiCVr3Acy3PEerK6X+8XCg4FstNURcxycxw+wrldbJ2aa7Za4mWm8vIo8/eJzx6LPuXf3e/q83L5P2p4VUxcI4mgrzh06tenqjz8fh3USnDdGG6qsdRp68zUVQ124CTFIRwkZngR/8AeatC6cutrteoqBsdbFDVU7hvMe05x3tcOXoWF1GyW1PkzBX1sbP1XbrvnwFngPa3Dumo4u8ZrfS6ZFHiMHG1TRmmGtLnBrQXOJwABkkqfXUVTQVLqetglp5282SNLSt/6c0LZbDM2ogifUVTfay1BDi34IAAHn5rHNrt3sZoDQyxRVd1H4ssPGDvLh9XrW9D2nji8XHD4am5Re76/G3Zev8A3aGOVSooQjdFfsdu7K3TPiLnDxiieWlvWWE5afpHoVo2y6cln6K90cZeI2dHUtaMkNGSH+jkfQtc6YvlVp67R11JxI8mSMnAkZ1tK6A05qO26joukopWufj75A/G+ztBHZ38l4/FMPX4NxD9oUI3hJ6/PdPtfdM568J4WtzoLRnNKLfN62aWK4zPmhbNRSO4kQEBmfgkHHowqKh2UWeGQOq6qsqQDncy1gPccDPzhe1D2u4e4Zm2n2t+kdK4jRauzX2znTkt+v0L3xnxCleJJ3kcDg5DPOfoyt7X65Q2ez1ddOQGQRlwB90eoek4CgAtenbVgeL0NDCO5o/8k+srS20XWbtR1DaWi3o7ZC7eaDwMrv1iOruC+far+0uNjPLlpR+nX5v8jj82Oqp2tFfr8TDZ5XzzyTSnekkcXuPaSclXXSN2Nk1HQ12SI2SAS462Hg75voVnRfodWjCrTdKS0at8j2ZRUk4vY6S1paxfdK1tLGN97o+lhxxy9vFuPPy9K80jbmae0jSwz4jMUPTTk8MOI3nZ83L0K37Lbx91tJ07ZHb1RSHxd/bhoG6fVj1FUu168/c3TBpYn4nrndEOPHc5uP0D0r8nhQxEq37H6Z/+L/C2p88oTcvDeppnUVzfeb5W3CTI6eQuaD7lvJo9AwrciL9ap0404KEFZLRH0KSirI6Q2f8A9S7P8XatI7Q/67Xf9ufoC3ds/wD6l2f4u1aR2h/12u/7c/QF8J7N/wBq4n/N/qPKwX3ifz+psfYf/Vyu+Nn6jVj+3L8/274r/wBblkGw/wDq5XfGz9RqybUmkLXqKqiqLk2cyRM6NvRyboxkns71yVMdSwHHaleteyvt8EZyqxpYtzlt/wAHOCqrXb6u6VsdJQQPmnkOA1o5d57B3reUOzTTcbsup6iTufOcfNhZBSUVo09RuNPFSUEAHlPOGZ87jz9K9fEe2NDLlw0HKT2vovq2dE+JQtaCbZK0hZGaesFNQNcHvaN+V49088z/AKeYBaY2p3pl41TIKdwdT0jfF2OB4OIJLiPScehZPrzaRHLTy2/Tz3HfBbJV4xw6wz7fV2rVCn2d4VXjVlxDGaTleye+u7fb0QwWHmpOtU3ZuDTW0iyW2wW+iqIq4zQQtjeWRNIyB1eUrl/Srp/+yuP/AMLf+9aNRdtT2VwFSbnJO7d9zWWApSbbJ1bK2etqJWZDZJHPGeeCSVJRF9FFZUkjtNk7Dfz/AHH4r/1tV027fkln/aSfQ1WvYb+f7j8V/wCtqum3b8ks/wC0k+hq+Ir/AN5IfD/azypffl+uhqJERfcHqlRQ1tVQT9NQ1M1NLy34nlp+ZbM2bVOotR3EzV10rDbKYgvw7HSu5hmR6z3eda5sdrqbzdKego25lmdjPU0dbj3ALo21UNFpqwtgjLYqWmjL5JHdeBlzj3lfJ+1GOpYemqUYp1ZbaJtLv8eiPPx9WMI5UryZbNoWpG6csb3xOHj1RmOnb2HHF3mH04XPD3Oe9z3uLnuJLnE5JJ61e9ZX+XUd8mrH7zYB5EEZ9wwHh6TzPnVjXocA4UuHYZKXvy1f9Pl9TbCYfkw13e4REXuHUEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREBdLPqC7WY/7Nr54G5yWB2WE/BPBZHFtP1Gxm659JIf1nQ8fmIWEIuKvw3CYiWarSi33srmcqNObvKKZk9z13qK4MdHJcHwxnm2nAj+ccfnWMkkkkkkniSV4i3oYajh1lowUV6KxaEIwVoqwUymnmpZmzU0skMzTlr43Frh5iFLRbNJqzLGXUO0TUlIwNNa2oaP7eMOPr4H51Pqdpmo5mbrJqeHvjhGfnysKRec+EYGUszoxv8EY+HpXvlX4FbdLrX3WbpblWT1Lxy6R5Ib5hyHoVEiLvhCMFlgrI1SSVkERFYkuFqvNxtHS/cysmpulxv9G7G9jln1lQ3W7V92kjfcquapdGN1pkdndHcqFFnyKefmZVm721/ErkjfNbUIiLQsXqj1TfKOmjp6W6VUUEY3WMa/AaFa6yqnramSoqpXSzyHee9xyXFSUWUKFKnJzhFJvqkiqhFO6Rc7XfrraYXxW2vnpo3u33NjdgE4xn5gqz2Zaj/wCcVn/yKwIqTweHm80qab+CIdKDd2kX52sdROBBvNb6JCFaa2uq66TpK2qnqX/rTSF5+dU6K1PDUaTvTgl8EkTGEY+6rBERbFgiIgCIiArbXda60zPlttVLTSPbuudGcEjOcKZdb3crs2NtyrZqkRklgkdndzzwrcizdCm58zKs3e2v4lckb5rahERaFistd0rbVM6a3VMlNK5u4XxnBI54+ZVlfqa9XClfTVtzqpoH43o3P4Hr4qzosZYejKfMlBOXeyv+JVwi3drUIiLYsEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEWR+J0/9iz1J4nT/ANiz1Lk8ZHsbcpmOIsj8Tp/7FnqTxOn/ALFnqTxkew5TMcRZH4nT/wBiz1KvtOmqu8SSMtNpqK58YBe2mgdIWg9ZwOCeMj2HKZhqLYn9HmoverdvkMn2J/R5qL3q3b5DJ9ieMj2I5T7mu0WxP6PdQ+9a7fIZPsXn9H2oPetdfkUn2J4yPYcp9zXiLYf9H9/9691+RSfYvDoC/j/+MXT5FJ9ieMj2HKfc16i2D7Ar772bp8jk+xenQF/Dd46Yuob2+JSY+hPGR7DlPua9RZ/7Bb3727l8jk+xS5NF3aPPSWCvbjnvUrx/opWKT2THK9TBEWat0rXOOG2aqJ7BA77F67Sle321lqx56d32K3Pf/wCWOV6mEothQ6Av88TZIdMXSSNwy1zaKQgjuOFLfoa9Ry9E/TlxbL+oaR4PqwqPGRW6JVCT2MBRZ77Cbx73rh8kf9iewi8e924/JH/YnjI9iOV6mBIs99hN497tx+SP+xeewq7+964fJH/YnjI9hyvUwNFnnsKu/veuHyV/2J7C7v737h8lf9ieMj2HK9TA0Wd+wu7e9+4fJX/YnsLu3vfuHyV/2J4yPYcr1MERZ57C7v737h8lf9iewq7+964fJX/YnjI9hyvUwNFnnsKu/veuHyR/2J7Crv73rh8kf9ieMj2HK9TA0Weewq8e964fJH/YnsKvHveuHyR/2J4yPYcr1MDRZ77Cbx73rh8kf9iewm8e964fJH/YnjI9hyvUwJFnvsJvHveuPyR/2J7CLx73bj8kf9ieMj2HK9TAkWe+wi8+924/JH/YnsIvPvduPyR/2J4yPYcr1MCRZ77CLz73bj8kf9i99g9597tx+SP+xPGR7DlepgKLPvYPeve5cfkj/sT2DXr3uXL5I/7E8ZHsOV6mAos+9g1697ly+SP+xDoa9AcdOXL5I/7E8ZHsOV6mAotgnQN+DQ46Zum6evxOTH0Lz2CXz3t3P5HJ9ieMj2HK9TX6LYHsEvnvaufyOT7E9gd997Vz+RyfYnjI9hyvU1+i2D7Ar772bp8jk+xPYDfvezdPkUn2J4yPYcr1NfItht2f6ge3ebpe6kdoopPsXnsAv/vYuvyKT7E8ZHsOU+5r1FsP+j+/+9e6/IpPsT+j/UHvXuvyKT7E8ZHsOU+5rxFsKTQN+jY58mmLo1jQS5xopAAO3krB4nT/ANiz1J4yPYcp9zHEWR+J0/8AYs9SeJ0/9iz1J4yPYnlMxxFkfidP/Ys9SeJ0/wDYs9SeMj2HKZjiLI/E6f8AsWepE8ZHsOUyoREXnm4REQBby8FcgXu/ZIH4PH9YrRq3T4MdBFXXu9iYuwynjPkuI90UB0sXt/WHrXhkb+s31qh+4FHjlJ/jKlDTlHv7x6Q/xlRYjL6lw6RhOA4Z86hepUVopaZ3SRNIcOvKmOKgpJWJLlKeprlKchQkuVVU8LY74Kp3qpq+FtPmUxBaSMMyeoLB7teIJZXhsJeWk8X8AsyucvQ2+eQHBDDg96stra+thY2qZSygjHtRlepw60IupJXGr0RgtTUOkJ3ZGs7m8AvaaJ9S8QuqAwOwBw9sexbEGmrZE4zzMj3Rx3TwCtNDOy76uo7bRxQsooD0zzGBk7vLPpwvXWOjKLyLRK9yMrvubOoKdlJRQU8QwyNgaPMAsG1NWFmrGRANAYWEu6zlbAAwtV6wc32UzuzhzSz6Avka0na57nCqanVafZl2a3me9CFFAMxg9qiIVjxGrOxJIUDgpxCgcO1CCmleyPi9waD2qUaiEDJkaAr7Y6eOad/SNDsDkQr5LTwhmOiYQe4KyVzWFLMrmCNqIXjLZGnzFeipgB3TKze7MrPYKWBrMNhjA+CF4+hpnSB7oY89u6Eyl+Su5g3Twj/eNwohLGeIcCs2fDFGw/e2EE8BgKMU8bWAhjRjuTKRyV3MIMsYGS4AL0TRn3QWcMiiewZYz1KRJHG2UbsTMg9iZRyV3MNM0bfbPA8696eL9cLOjTwyNw6Nh9Cg8UiYw+Qz1JlHJXcwoSs/WQSx59uFnDYYnMBDGEeYKEUsAcT0TMnuTKOSu5hfSxj3bfWgnizjpGetZpJSw7hzEz/CqWO30geH9DHntLUyjkruYv00QPGRvrXomiP+8Z61lFTb6eTH3mPI4+1Chho4BOzMEeAD7kJlHJXcxwSx/rt9ajY5rxlhBHcsqdTQAcIWf4Vj1axjK2VsbQ0ZHIdyhqxWVPKrkoKIBQjmogFBkehQz/ineZRgKGcfeXeZAXmcf7Nj8wVAArhUj/Z8Y7gqAKZbkkTQowoAowqsEbVM6lLapvUpJKy2fkjvhO+lSQp1s/JXfCcpIUskiCjCgHBRDCqClvn5luHxeT6pXCq7pvn5luHxeT6pXCylFohERWLhERAEREAREQBERAFvXwUvz5f/AItH9YrRS3r4KX58v/xaP6xQHSKIiEnjwSwgc1Yp62oje5viUrsHmMcVfl4QDzCixFk9yyUlQ6oi33RuiOcFruajcqqsaGvGOGVSOUMxkrMgcVU1vC3egKlPNVVePwAehWRBierXhtpMZlbF0rg0OcOCw5s7LZI2QT77hxw08Fe9oQlmipYIXMGCXuBdg45LB3QYdneJxzyvpuF0U8Orve5W+pUX6/V9wBHSPEPLdbwWcbGoY5Y66sEIZgtia48T2nj6lrO51DoI/vQBW5NklMYNH073gh8znSO9JWnFctLC5Yq12Xpq8rmbLUOrJmnUtbgZIeB8wW3SVpLVb8ahrXN/tSvjcQ7RR9FwKOavL4fzRmVId6mjPa0H5lMIVNZ39JbKZ/awfQqtwWkXdJng4iOSrKPZv6kpwJ4MGXHgAvTQ3Ag7tOzI6t9VFEAauL4SybcbvZAWiVxTgpLUtFjo56cvfUMa0uAwAcq6zjLOHNRO3izA4HtULmEsGScjrVlobpW0REz2ozwKiIyEAGAvRzQFNLHutdlTIZA9obnj1qKVu+0tVgvGoqDTtPNNdaiOngYfbPPPuHaU2J3MgjIIIAxg4UHQN6Te48Vz3qjwhmxTywaZtwlxymqTz8zR9qxin2/asFS11VDbnRZyWdEQfXlUzonKzq9g3eC9fktIGMntWjNP7doKyWnju1KykMhA6drssHbnsW66Oqhr6SGppJmSwyND2vYchw7QrKSlsQ01uTIY9wdYz1Z4KLjv9y8a/OMjgoMl0oIPk9ikgn9RypRxngM4U3OBzUh58oBo9KBHgDnP3uQxyXmcPGCOC9cS0kE8FBGQ6XJPAdyElS8hrS5x4LH6+kqXVL5YIukY7iPKwr9KDI3dGDnrUxjQxoaOpQ1cq0mrMxRsFYI959I9vaN4FG8QCshrulbC/o8E4WPR53RnnhVasYVIKNrEQCgqPxLvMpgUup/FOUGRe6r8ij9H0K3hV9Zwo4/QqAKZbkkQUbVA1RtVQTApjeSlBTByQsVts/Jn/CKkhTrX+TP+GVI7VZ7IkiC9e9sbHPccNaMlQjmo4xvPAPEHgqkFkvN4pH2evAkdxp5B7Q/qlcTrvK+U8QslxO438mk6v7pXBqslY1slsERFICIiAIiIAiIgCIiALevgpfny/fFo/rFaKW9fBS/Pl/8Ai0f1igOkUREJCIiAt9f+N9CpCqq4H776FRkqpjLc8PUqu4/kQ84VHniqu5cKNvnClFTVOu3NlvgLpQBDGBgHjnmscqqtr492Fhz2pf3urNRXCVpy3pC3nwwOClQtAj8lwd24X2+FpKnRgn0SMnKxb6bxSecmtmdhp4RjgXFdI2OkjobNRwRs3WsiaMHq4LnKGjFTeqQM91Mxp9JC6ZhB6NoPUMLyeOy9xX7m1DVNkzqWitROMmoK3PLpnfSt6u4BaOurd+71b29czvpXymL91H0vAHarN+hlunHb1ng7sj51cCrVpU71rx+rIR9Cu5WtLWCPF4hHLiqi9We0oPjUeOeVlEWAOfFYzRENq4yeWVkcLg92808FtEypbEe6STx4Jg7uMqIjBzleOzunCsakLc44dSNcTnycd68jzxHNRvcGNLnHAHEkoCyat1DR6XslRdLg4CGJvtc8XnqA71xZr3WNy1zf5KqqkeIS4iGBp8ljVnXhB659kFwNvpJPwGB5YwA8Hkc3H6AtVUMkdJTPe8gSP8kE9Q7lzynfY2ULaMlAsi3mRt8ocOAyXFS47HcKwl0NFUu6wS1bP2UaQjuTpbjVsyzhuA/QtxwWiBkQaxjQB2BcssQ07RR1wwqkryZyi6kq6GJoqopIeODkYW4NhG0SexXJlnudQ59qqHbsZcfxLz1+Y/8AlZTrbStLcrdJG5oD8eS4DiCtBW6N9BeaqgqmkSxHA/0KvSq5rvqZ1qOS3Y77cd+Bu4ePMd6lZIIGDwWE7GtRvvuk6czu3p6YdBISckkcj6Qs9aWuccjBXcndXORqzsQ9J5Ia7metDkDOOSiOGuDiOC9e4BhPDCkghdGXnL+XYFNjY0N7FLjJIBAIz1FTGAk8eQQhnhe2NwHUpvAgFUFbwe3J4ZHqVS5xaRgeSAgaFTkxPxzwVjI4BZNM5roiQepYyOSrIxq7IiCl1H4sqYAoJ/xaoYF6rseKx+hW8KvrxinYreFaW5JGFG3goAogqsEYUxvJSwVG3kiLIr7X+TyfCKp+sqfavyeT4ZVP1lS+gIgpkH41nnUpTIPxzPOoC3J19/Mdx+LyfVK4HXfF9/Mdx+LSfVK4HVzUIiIAiIgCIiAIiIAiIgC3p4Kf58v3xaP6xWi1vTwU/wA+X74tH9YoDo9zgDzz3KMcRxULWjHJRBCTzODjqQnPJekLzAwgLZcD9/8AQqQlVFdwnKpiqmEtx1hT7690dse5oJcBkAdfBU4PlDzqffvzcQOZCXsmyYq7scy3q4VsU74ZKWopYy4ue6WJzd7J7eSuNHc6KmogWzQlgGTuvyVtGvmkhBa5oIAzukc1Yau2We4A+OWuikLjjPRhrvWOK3p+1koaVaf4P+R6L4OpawkWfRkUdx1Xa5oXO6J8oODyOBnPzLoZuAAFpzSltsliu8dbTtqWtiBxD0m8wHGOGeXrWwYdW26TGBMPO1MZxjD42UZxdrLqYrA1aXlav8DIpODHHuWiaufNXUFvFxkdw9K25LqO3mJw6Ug4PVyWqfubI+UuEsQ3iXciScryMXiKbStK57nBrUXN1dNjINGOJop2uPESZ+YK/lWTS9MaaOoBka/JBwBjCvZXThpZqaaPG4q1LFTcdn/QRtkdK0RAb+eGVkFH95ga1/B+eKstD+Vx5V9DQ5w7l0xOej7pNe/DTgZKgEmRxIz2LyUHeaGHGVDDF0byXnJPWrGpF5TCH+5PMLVO3/XR07Y4rbQy7tdXNO84c2R9Z85W23gOaQeS5J8InydeTvqZG7rI2sZvOxujCzqtqOhamk2alldNWzuldvFrXbo7z2KOGkmuV2pKCnaHkuDd3eABPXxSS4QxRBlLxPtRgcvMth6N0F4xRirrZ5YqqQZDIjgsB6s9q5ZTUVqdEIOctDYNovNPpyjgt81uma0cHTRPbI3PaQDnHoWXtuELKZ0zzuxgZyVre26Lp7Q+aq33yPLt4Oe0Agfq5HUr9M+Z9lgp98jeOM9eFxzcb+U74KVtUVMmq7LXbzIqpxIOCTG7d9eMLTG0SOOn13BNCQWzw+2bxBws5l09f6apdUWu8boI/FPB3c9mOPD/AO5WF7RaSaCus9TUwtik3yyTd9rk44hbQUVK8WYVc0oNM2f4M11IvNbb3Pwyph6QN/vNOPoK6N3cN5ZXG+ya4PsGuaB8vkBk+47J4bjuB+ldlh2W57l3UXdWOCqrMpn+RjPEFTQxpjAHYvHuAHeoGvc6MmMYx29a2KE2M+Xu9ymjgqeGQvG8Md4U5rw4nByhVkian6WTf3uBGMKaIg1oGc4CmY4L0jIQXKMkbrwRgY4LH1kczR0TweeCscCpIzrdD0KXUe09IU0KXU8m/CH0qpzl6uX4iMd6t4Vfc/xUfnVAFaW5J6FEFCFEFUkjCiHJSwVGOSgFwtXGnl+GVTA+UVUWn8nl+GVS58oqz2RJMUcJxK3zqRlTqfjOzzqAtypvv5juHxaT6pXA673vv5kuI/8A1pPqlcEK5qwiIgCIiAIiIAiIgCIiALengp/ny/fF4/rFaLW8/BU/Pd++Lx/WKA6TygULTw4o3A5ISRKEEZwF6oXeTxQFpuB/CXKmJU64O/CXKlzzVGYvcmNPlt86rrg3pGwMHungK3MOXtz2q9bm9LETyZlytHZkJXNUeEHS3OLT7rnY5XxT0rcSBnW09foWitB7Q70+7RUl7nikie0lr3xgEEDtC6r1ayOa2TNnbvxzZjLP1s8MLki9WJ1g1HXtqW5MYcIB/c7fnwuuhhKONi6VRa9H1Op16lBqUXobPt2tLRUS7r5y08Sd1pOMehVMeuNNl5ay70wkYd1zXktI82VrrT1mNPDJUT8HSQlw7gtbsja7UQa4bwMn+qrW9lqMUssmr/A2jxapfVI6WZqmzvjqJW3SkIEe+R0oyBjsUmw62tlxfGaSOokhOWiTcwDjsytEavoIxcYo4IwPIHILZ9koRbbVZYg0A7vHzlaYX2VoZ2qsm1+BE+LVHHypI25pe409ZUVMcIeHsa1zmuHUcrICVgOhpCNRTtPu6YH1O/8AKz0lYYrCQwdR0aeyOKpVdaWeW5NpN7xlm7wKv8DCGHyuJ61YKOQMqmZGc8FkUftFlE2pe6RBo4HrCO4kY5heZ4gL1+8CN0Zzz4qxoQzydFDJIeTWkrhbau6Wv1rdKqqmlqQJiOlcOYwMDl2LtPUd9prRSudVOjZkYBmeGMPncVyFtCvEF0vFX0ZhIfO6U7h3mk57ezAHUsK0rWSNacb3uYBYoW1OoaGLqBLiO8AkLobStfDT0Z6XmBhc92msjoNXUM8oDI+k8rsAdw/1XQ1BSU88TiMDJ32HGQVw4i90d2EtaS9SO9XeokYcU0hpsYaIxkuPae5eVF6pPF6SMR1DX+1J6MkA+hU9vZXtrjDcq9kXlEtLIMsc3qzxznuVfc2yUtN0zLlRyOD3BrCx43x1duFjy7o7C426ugq6Z/Tt6KdhLSDyPYQtX7X52vsMr85fBI17D35x/qsuofHLnAKiemkpZG5DmvI4ha62qb33PjoA4OrKpxcyPrIHFTRXnSMcQ0qbZS2e5w3WipqynIbWQbolZ1ux1rtDTlxZcNP2+r3s9LCxx8+OK+dWn6yehqhLDkge2b2hdTbB9oDpXQ2Kt3TA933mRxxg45L0Kf2c7dGeW3zI36nQTN0tzzCmNAwMclI3juEtaM9ijhL+jaXgBx5rqMWQOaYySzhnjxUdO5r4wRjOeOF7LxYeGfOqPpWxTBkeABxKgblyHPC95KCIgjI61GhUpqyMPjcckcOorGxyWR1BIY/rGFjYVZGdXZEQUEwyWD+8PpUYUMn4yL4bfpVTEvF04Mj86t4Vfdvax+lW4FTLckjUQKgC9yqgjyogeCl5UYPBAXC0HNPL8MqlzxKqbQfweX4Z+hUhPEqz2RJECptL+Pj86kZU2mP3+PzqAtytv35juOP+Hk+qVwQu9b6T9xLh2eLSfVK4KVzVhERAEREAREQBERAEREAW8fBYz93L7j/h4/rFaOW8vBW/Pd+7fF4/rFEStzo/iAAohwUvygMk5K8Y7eCktYnZQ8VCDkIDzQixZLh+UvVNnip1efwp6psqhg9ybGfvjfOr6Tuwud14wFj8X41nnCyCQZha3tUrYtBXkYjrCoMUdO0cXNy8Dv6lqzaXpt1wstvr4wPGg5rJT1uYT9q2ZqJpqLjjqHAKVqKBkdme9wG41gAGFvhJONaOXudFSKcXc0zeAII6wNwGxQbq0nQ+XfoiOuT/AFW29SzuFsukx4b/AAHmytU2Nu/f6Udr19fiNZRR50epnU1I2e/Q7wzjdCzu7N6H7nNHANICxaVm7c2vaPavCyzUXCKkd2OC6VHK0VWxetIybmq6fjwkhe36CtkOWqbDKItTWs55yOZ62lbTJXyvGo2xCfdGsdidRtLpxjmOKyGnJ6ME8FYbY8Nq256xhXoAv8lhw3tXlxOul7pOa8PPBel+eAPELwlrCG58oqTPUx08RfId1qk1NPeEjLcBbqGKhqnsila8zwRsLnPaMeVjlgZ6z1rl+ql6FxO4fO48T6Fv/wAJO+1Ta2326NjYg6IyGbfAyCfajrPLj6FztVyu3JpHydIScHK5qmsjaOkTH7i8vmLnHyicrdWgdRzSafonTuLi3yC7twcf6LSUgdUVG63iTzW7tJ2F9usjaN5DpGOLiQOeSSD6lniUsiuXweZ1G1sbTo2U9zha/g5rm817UWmmpi154gccuOcLBKb7o0WfFC7H6vUVNqau7VbQybLGkYwOGVwfM9XVIuV21PS22lqpJH4iYCeHHIC551TqWqvt3fWSYa0O+8t62Bblq7AK2ldTSHJkI6Q49yDnHpxhaCq4HU87mHk1xHqXdhaatnPMx0pKy6Fdax0b3b3E4zhbk2H0VnrtV0cN3kLMcacMJaHvzwa45/8A9WnKHLmskZ7ZvAg9YWRsYyOmp5KeeeC5mTyYmjkOGMHPPOfWtnuc0Nj6BMyI93PJTWnAwVh2yoXP2DW5t9qOnuLGkSOJyRx4NJ6yBhZa4F27xwuhMoz2obvsxyVBwdPloAw7GTyVxc4N4OVP0UUkrj7rqQFRGSJPbZBVQqdgGd3q5Ka13DHYhVkmp9o/swVjSySq/Fv7QCsbVZGdXZHqhIzLD8Nv0r3K8B+/wfDH0qpgXa7cBH6VbxhV93xmPHercCktwRgr3KhymVBJGoyeClAqLKAuNoP4PL8M/QqTPEqqs/5PL8M/QqMu8o+dWlsgRZU2l41EfnVPnip1K4eMx+dVRK3LhexixXD4vJ9Urgpd7338x3D4tJ9UrghaGzCIiEBERAEREAREQBERAFvDwWfz3ffi8f1itHrdvgvO3bzfeH/48f1iiJjudHOc7Hk4KnNHk8cKVvZjGOZUxuQ0AqxdgDiV5k5yV6DgqEoCxV5/C5POqbJU2udmqk86psrI5pblRB5VRGO1wWQ1LtxpPU1qsdoj6SuZnk3ylcrrJuU7z28ArLQ1pLUxp7emrHHnkq5Xy1musNVTsH3wxHc+EBwVNbY+kqW+fKydrRuEnlhWpycZKS6G8+xx/ruYwWuopjweDh3nA4/Ote6WZvahoh35W5/CM0+LTWS3CPDaSsbhrR1Sk8fm4rU2m4TFqykj62sHPzL66FZYjLUXWx5zjkujZAjGJn8M8wr7qIZt0JPUWnKsNdJ0NWIBzcCSPQsgvrd6ygnqAK9CT8yM49Smgn6G8WuTPKqj+fgtxkrRtYZJKiiZTNdJOZ4txjRkk5C3hxwM8+tfM8cX2kX6GkNirtrd6c/BV3p3OZ5AHJWa2vLajDRkkYV8jaWQuL8B2ckrxonbS90nlw3uPNYzrdjq61S0lNO2GV4xvOJHDuParDqfatpyz00phqW3CpY4sEMHUR2u5AetaK1ptcvl7MsdI9tvpXcDHBwcR3u5+rC0VNtF8yRje1murZLvFBW1D6ipp2dE7JBxg8OI5rXE4lkBaTutz2q8188lS8vkcXOzkkniVRbhPP51XlJMrKo2UVJThmT2rpXQkTLvpq2VO+BP0Ia5xGQSOBB9S525cOxbp2JXZrbFW00zuFLJvj4LuP0gqXCMllex04GdqjXczk0YgmLQGB3MtcfoPWEp7XLcJd9xEcAPFwHE+ZUEYr77XdI+UQ0zDjo+AAHnxklVFNdprPqCa21bnSW8tYYZncdxxBy0nrHDr4jK4Y4GMZ3b0PZb0Gpn0tloZpg0MigidIe1x6vSSuWa9nSPJPFxOfSt47crm5lPTUUTsdMd547QP/K0tJHvFd+VWsjx8dO81HsW6l34JcZw081kjrvOK2CZrBPK1oDZHtw7lgcjxwrYIgeBAU6nxC5u6O9ZulfY5FOx1Z4N+p6ipp6qyXCERTRt8Yb5GCc4Bzjh2Ld5II4cwuQNk202LSdbVPuFvFU2rLeknY7EjAOoDlju4eddL6X1hY9TQia13CJ5cQDC925ID2Fp4+pSouK1L3T2MkqPKA7l62Lo4w7m7uUMjOQbzxhe0wcQd8nyTjCAmtDSQ7GFMAwcjkVCG4yEALevIUkEqq/EvPcVjKyGsaTE8MdgYOVjoVJGNboRKEcamnB/XC9ULfyunH98KqMS63bgYvMVQBV149tF5ireFMtwRZXqgyvQqkkYKiJUvK9ygLpZj+DS/DP0KhJ4nzqss5/BZfhn6FQEnDjjhlXeyCIieKm0ZzVR/CVMXKdRuxVRfCVSVuXe+E/cK4fFpPqlcFLvW+fmK4fF5PqlcFK5swiIhAREQBERAEREAREQBbs8F94ber5nrp4/rFaTW6/BgAdeb6D/AMPHj/EULR3OjIzmTn1cAqjPHiqKnG7Mc9YVUScKxo1qemQB3eoQSc5HpUDBk5PWo3hwYccSoIMcrDmpk86kEqKpc7p3555UrKzOV7l9sDMMllPwQpN7k9q1XC2tEVuiHW7irJdZN+pcAVbodVJWRUWNmZC7sCvzuEePMFa7KzEJdjmcK6P5gdpUoTepr7arYItQ6Ynt0vGd56WMnqLTkfYuW7IzptoUx3S0RlzcHqxwXYVcw1l4wXERRjLsdgWhNa6aFn2jfdGKPcpq9heMdT+sf6r2uE1vPyn11MK8dMxj9wlEuqDHng1hKzg009zpoKKli6R8xDeeMDtWAUEMlZqyvkja5xGI2ADJJ7FvXSFqNC2J87cVBxz5gZ5L2MXilh6bn16GFKGd2L9obQ9DYR41KBUXIjjK4cGZ6mjqSvAZWTNHIOKy2lJ3nA9ixW9jduUw78r5CtVlVlnm7s6KkVFWR5bHAVIJWO7ZtVN05pCdsUhbXVuYIgDxAx5TvQPnIV7o3O6Qhjt0kc1yxtc1U/UWqq57JS+jpnmmp+PDdbzcPOcn1KKSuWg7QMMqKx7pZBng45Uhj8kjmqZ7vKHFTGO8oFb5tSCTPJmQjPJQsZu+UC7J7SoqulB3nMBJdxznkVFGQ+MbvLljsWUU7u5JAFn2yJzX3WtoXvLRUwjHnaf/ACsDLcK86PrTQaioZw7GJA0+ngrGmHlkqJnUlDRU8UWA1o5cB18Fbqmlp5a2ppp2B0cg9qerhz+dXG01Uc1MyXIw5oOVaNSysjNXUskDDHECD6/sRnv36nPWvbs+5akqRv8ASQU7jBET1tbwz6cKwYAUmcTPlkkA3gX889vWppVIX6nz9SWaTkzwsyeDnN7gkTQJN3JJHbxUL37o7+oKZStIJLvbHmVoZk0vLX4BVZR3CWCrgkikcx7DvBzTgg9qtzz5ZULXYkaVNwdz7KNTey/R1HWSP/DIfvFR2l7QOPpBB9KzlvBoXLngv6iNFqaps8rvvVwiLowT/vGcfnaXeoLqMnDe9ZSVmaJ3QAySvCTjgvIMkO3jxyvJS9rxuAEFVJKWqO61xLSAQQse71kFdh0cmeDg081jo4qkjKt0I/SoWca6m+GEJXkP5dTfDULcwLneT5cXmKt+eHNVt5/GRnuKoAe5JbgjBXuVACvc8FBJFle5UvKizwUhF1s/5JL8Mqjilaxkm9xzwDepVNoP4HL8Mq255qz2RKIsqdSH8Jjz2qnyplMN6ojHaVUlbl6vMoNkuDf/ANeTj/CVweu7r2Wiy3EEYIppOP8ACVwitGbSCIigqEREAREQBERAEREAW7PBfx92r4Tz8Xjx/iK0mt0eDKd2730j/h4/rFC0dzoeN2ZsYVRPJ0YAAzk4VFQu3pHZAVWGh8vldXJSasjc0uaCDjCjMjWtyT1Lzu6lTyRt6UHjy5Z4IQY5VO3qiQ9WVKLgASeQ4qKo4VEnnVFcXujoZ3NOCGlYydk2c9KHMqKHdmZxVUb7fFIzG50YIWOvd0k/nOVatLVs8unpI3vyGS7o7cc1dKIA1XHqUxlmimejWo8ipKn2Mot7NyJg7sqdK7HHsBK8g9r/AAqVWEiKUjnjC1OXqWMSbvjL/dOGFab1p11+spbhvjTCZIHO5NcOAz51WvJ4jtKySkaGxNYPahqvTqSpyUo7omSujCNF7P6PTFA6Z2Kq6SHelncOR7GjqCub2htW4tGBvZx2LJWkmE9xVguAAq3Y7VNSrKpLNN3YjFR0RkNKcvB7WrHNSt3bkT+s0FX+3nLY/gqy6qGKuI9ZYsXsZVdjX20u/HTuiLpWRP3Kl7BBCexz+GR5hk+hcjOeegYHHynZcfSVvvwjKiT7lWimDsQyTPe4dpAGPpK0LWcJcDkGgBa01aNykdilmPIhTojkBU0p4KdScXAHkrJ6livmaY4IN7m8F3ozj/RUb4yx5fHzPNvaq26kmq3epjQ0eYBUzSVK2DIA4PGQvGuLHgg4I4jCgn8hwc3gSQD3r080B0noa8CttNPMwB3SxB+B1O5OHrCxPa5epKRk1I3yXzsa3h2dfzfSodgsjp6evhkJLInAsHZnmsZ20yvdrqohLiY444w0dmWglQz1p1nyM3cwbH3r0qU5wHeexV7mNbYZZgPLEzR8xVBGPJyeJPWiPJIWsJdvO5/QqlowOClt5qc1WQKeTIyoMneBCmVHAhSCeJVWDMdA3Z9nv9tucTiHUlSyR2OtufKHpGQu8Xu34A9hBaRkHtC+d1jcRWtb7l4IIXeOz+plrdBWGaodvySUcW87t8kDKiW1y0TIo+DQRyUR4hQxjdYMKMclQuy2XKUmGVrW+VukZWPt5LJrk0eKyO6wFjIWcjKt0PUhOK+m+GvCoYfy+m+GoW5gXO8nMkY7lbxyVZdiTMz4KohySW4PQV7ledSKCT3K9J4KEpnggLrZz+BS/CKtmeauVo/IZfhOVq7VaWyBEVOouNXEM+6VMVUW78uh+EoRMdy83og2S4Bx508mP8JXCa7pvh/2Tchw/J5PqlcLLQ6JhERQUCIiAIiID//Z"
+        }
+      },
+      "efficient-animated-content": {
+        "id": "efficient-animated-content",
+        "title": "Use video formats for animated content",
+        "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "metrics": {
+        "id": "metrics",
+        "title": "Metrics",
+        "description": "Collects all available metrics.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "observedFirstMeaningfulPaintTs": 29027914967,
+              "observedDomContentLoaded": 1549,
+              "interactive": 799,
+              "observedFirstVisualChangeTs": 29027905382,
+              "observedNavigationStart": 0,
+              "observedFirstContentfulPaintTs": 29027914967,
+              "observedLastVisualChangeTs": 29028038382,
+              "observedLoad": 2499,
+              "observedLargestContentfulPaint": 2375,
+              "observedDomContentLoadedTs": 29027089460,
+              "observedSpeedIndex": 2406,
+              "estimatedInputLatency": 13,
+              "totalBlockingTime": 0,
+              "observedFirstPaint": 2375,
+              "observedLastVisualChange": 2498,
+              "firstContentfulPaint": 779,
+              "observedFirstPaintTs": 29027914967,
+              "speedIndex": 1821,
+              "observedSpeedIndexTs": 29027946502,
+              "observedFirstContentfulPaint": 2375,
+              "observedNavigationStartTs": 29025540382,
+              "observedLargestContentfulPaintTs": 29027914967,
+              "observedFirstVisualChange": 2365,
+              "observedLoadTs": 29028039327,
+              "firstMeaningfulPaint": 799,
+              "observedTraceEnd": 3560,
+              "observedFirstMeaningfulPaint": 2375,
+              "firstCPUIdle": 799,
+              "observedTraceEndTs": 29029100354
+            },
+            {
+              "lcpInvalidated": false
+            }
+          ]
+        },
+        "numericValue": 799
+      },
+      "time-to-first-byte": {
+        "id": "time-to-first-byte",
+        "title": "Reduce server response times (TTFB)",
+        "description": "Time To First Byte identifies the time at which your server sends a response. [Learn more](https://web.dev/time-to-first-byte).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Root document took 660 ms",
+        "details": {
+          "items": [],
+          "type": "opportunity",
+          "overallSavingsMs": 63.091999999999985,
+          "headings": []
+        },
+        "numericValue": 663.092
+      },
+      "render-blocking-resources": {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+        "score": 0.94,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 70 ms",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://fonts.googleapis.com/css?family=Magra:400,700|Ubuntu:300,300i,400,400i,500,500i,700,700i|Nunito:200,300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i",
+              "totalBytes": 3633,
+              "wastedMs": 230
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_C8ul1Vl4oMWV6MTvOyvtIZUm33-ksKF6yWMwqowfjIw.css?q9xnuj",
+              "totalBytes": 2301,
+              "wastedMs": 70
+            },
+            {
+              "totalBytes": 28629,
+              "wastedMs": 350,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj"
+            },
+            {
+              "totalBytes": 7953,
+              "wastedMs": 190,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_9xKxobn9_8Wbo2f6QIbLc0J-YdEgM40ScUtJy89gz1I.css?q9xnuj"
+            }
+          ],
+          "overallSavingsMs": 72,
+          "headings": [
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "label": "Size",
+              "key": "totalBytes",
+              "valueType": "bytes"
+            },
+            {
+              "key": "wastedMs",
+              "valueType": "timespanMs",
+              "label": "Potential Savings"
+            }
+          ]
+        },
+        "numericValue": 72
+      },
+      "uses-optimized-images": {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 24 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "thumbnail"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Size",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "items": [
+            {
+              "isCrossOrigin": false,
+              "totalBytes": 712274,
+              "wastedBytes": 24376,
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg",
+              "fromProtocol": true
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 24376,
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "uses-text-compression": {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "network-requests": {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "endTime",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            },
+            {
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Transfer Size",
+              "granularity": 1,
+              "displayUnit": "kb"
+            },
+            {
+              "key": "resourceSize",
+              "itemType": "bytes",
+              "text": "Resource Size",
+              "granularity": 1,
+              "displayUnit": "kb"
+            },
+            {
+              "text": "Status Code",
+              "key": "statusCode",
+              "itemType": "text"
+            },
+            {
+              "text": "MIME Type",
+              "key": "mimeType",
+              "itemType": "text"
+            },
+            {
+              "text": "Resource Type",
+              "key": "resourceType",
+              "itemType": "text"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "mimeType": "text/html",
+              "endTime": 662.10399999908987,
+              "resourceSize": 23559,
+              "startTime": 0,
+              "transferSize": 7395,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/coronavirusrd",
+              "resourceType": "Document"
+            },
+            {
+              "statusCode": 200,
+              "url": "https://fonts.googleapis.com/css?family=Magra:400,700|Ubuntu:300,300i,400,400i,500,500i,700,700i|Nunito:200,300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 690.245000001596,
+              "resourceSize": 59670,
+              "startTime": 679.16100000002189,
+              "transferSize": 3633
+            },
+            {
+              "transferSize": 3436,
+              "url": "https://cdn.onesignal.com/sdks/OneSignalSDK.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 8650,
+              "endTime": 700.71599999937462,
+              "startTime": 679.667000000336
+            },
+            {
+              "startTime": 679.89700000180164,
+              "transferSize": 2301,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_C8ul1Vl4oMWV6MTvOyvtIZUm33-ksKF6yWMwqowfjIw.css?q9xnuj",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 737.63799999869661,
+              "resourceSize": 6730
+            },
+            {
+              "resourceSize": 209552,
+              "endTime": 1469.2119999999704,
+              "startTime": 680.145000002085,
+              "transferSize": 28629,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "transferSize": 7953,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_9xKxobn9_8Wbo2f6QIbLc0J-YdEgM40ScUtJy89gz1I.css?q9xnuj",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "endTime": 730.67300000184332,
+              "resourceSize": 51001,
+              "startTime": 680.49500000051921
+            },
+            {
+              "startTime": 680.64199999935227,
+              "transferSize": 30055,
+              "url": "https://platform-api.sharethis.com/js/sharethis.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 95382,
+              "endTime": 704.69800000137184
+            },
+            {
+              "transferSize": 712783,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg",
+              "resourceType": "Image",
+              "mimeType": "image/jpeg",
+              "endTime": 1343.5730000019248,
+              "resourceSize": 712274,
+              "startTime": 685.08500000098138
+            },
+            {
+              "resourceSize": 150802,
+              "endTime": 1682.1310000013909,
+              "startTime": 685.63500000163913,
+              "transferSize": 151304,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271836_1588810933_large.jpeg?itok=uFq70FBc",
+              "resourceType": "Image",
+              "mimeType": "image/jpeg"
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/jpeg",
+              "resourceSize": 191305,
+              "endTime": 1854.1709999990417,
+              "startTime": 685.83500000022468,
+              "transferSize": 191807,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271828_1588783791_large.JPG?itok=3uNgEmd8",
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Image",
+              "mimeType": "image/jpeg",
+              "resourceSize": 151246,
+              "endTime": 1716.4240000020072,
+              "startTime": 685.93899999905261,
+              "transferSize": 151748,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271819_1588714231_large.jpeg?itok=uPYVcrRh"
+            },
+            {
+              "mimeType": "image/jpeg",
+              "resourceSize": 169861,
+              "endTime": 1818.2589999996708,
+              "startTime": 686.02800000007846,
+              "transferSize": 170363,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271816_1588713454_large.jpeg?itok=QognB4FJ",
+              "resourceType": "Image"
+            },
+            {
+              "endTime": 1816.7720000019472,
+              "resourceSize": 171767,
+              "startTime": 686.13100000220584,
+              "transferSize": 172269,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271508_1588281457_large.JPG?itok=0hrg0MGo",
+              "resourceType": "Image",
+              "mimeType": "image/jpeg"
+            },
+            {
+              "mimeType": "application/javascript",
+              "resourceSize": 221187,
+              "endTime": 727.60700000071665,
+              "startTime": 684.69199999890407,
+              "transferSize": 66626,
+              "statusCode": 200,
+              "url": "https://presidencia.gob.do/sites/default/files/js/js_NNVMkRwYBQdxNYKYzRArjoVWQd2E92ZPSDZtd2zIn_0.js",
+              "resourceType": "Script"
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 4190,
+              "endTime": 700.10900000124821,
+              "startTime": 684.92500000138534,
+              "transferSize": 2282,
+              "url": "https://kit.fontawesome.com/c57b42a035.js",
+              "statusCode": 200
+            },
+            {
+              "mimeType": "text/css",
+              "resourceSize": 500,
+              "endTime": 734.59799999909592,
+              "startTime": 686.26099999892176,
+              "transferSize": 783,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q9xnuj",
+              "statusCode": 200,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "endTime": 753.9150000011432,
+              "resourceSize": 238567,
+              "startTime": 706.57000000210246,
+              "transferSize": 59881,
+              "statusCode": 200,
+              "url": "https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151000",
+              "resourceType": "Script",
+              "mimeType": "application/javascript"
+            },
+            {
+              "transferSize": 979,
+              "statusCode": 200,
+              "url": "https://buttons-config.sharethis.com/js/5cb4d8bb240a800012587700.js",
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "resourceSize": 450,
+              "endTime": 1129.0860000008252,
+              "startTime": 728.86700000162818
+            },
+            {
+              "transferSize": 5630,
+              "statusCode": 200,
+              "url": "https://c.sharethis.mgr.consensu.org/portal-v2.html",
+              "resourceType": "Document",
+              "mimeType": "text/html",
+              "endTime": 772.05899999898975,
+              "resourceSize": 14811,
+              "startTime": 745.00400000033551
+            },
+            {
+              "resourceType": "Font",
+              "mimeType": "font/woff2",
+              "endTime": 879.627000002074,
+              "resourceSize": 14932,
+              "startTime": 825.76400000107242,
+              "transferSize": 15554,
+              "statusCode": 200,
+              "url": "https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2"
+            },
+            {
+              "statusCode": 200,
+              "url": "https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2",
+              "resourceType": "Font",
+              "mimeType": "font/woff2",
+              "endTime": 833.39100000011967,
+              "resourceSize": 14380,
+              "startTime": 827.48700000229292,
+              "transferSize": 15002
+            },
+            {
+              "startTime": 832.92100000107894,
+              "transferSize": 340,
+              "url": "https://l.sharethis.com/pview?event=pview&hostname=presidencia.gob.do&location=%2Fcoronavirusrd&product=inline-share-buttons&url=https%3A%2F%2Fpresidencia.gob.do%2Fcoronavirusrd&source=sharethis.js&fcmp=false&title=Corona%20Virus%20RD%20%7C%20Presidencia%20de%20la%20Rep%C3%BAblica%20Dominicana&cms=unknown&publisher=5cb4d8bb240a800012587700&sop=true&ts1588844332426=&bsamesite=true&consentDomain=.consensu.org&gdpr_domain=.consensu.org&gdpr_domain_v1=.consensu.org&version=st_sop.js&lang=en",
+              "statusCode": 204,
+              "resourceType": "XHR",
+              "mimeType": "text/plain",
+              "resourceSize": 0,
+              "endTime": 848.03800000008778
+            },
+            {
+              "startTime": 1513.9870000020892,
+              "transferSize": 4960,
+              "url": "https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css",
+              "resourceSize": 26701,
+              "endTime": 1530.4329999999027
+            },
+            {
+              "endTime": 1531.2330000015208,
+              "resourceSize": 59585,
+              "startTime": 1514.5620000002964,
+              "transferSize": 14045,
+              "url": "https://kit-free.fontawesome.com/releases/latest/css/free.min.css",
+              "statusCode": 200,
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "transferSize": 18817,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "statusCode": 200,
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "endTime": 1537.3949999993783,
+              "resourceSize": 45229,
+              "startTime": 1515.8970000011323
+            },
+            {
+              "resourceSize": 137,
+              "endTime": 1527.4290000015753,
+              "startTime": 1527.3720000004687,
+              "transferSize": 0,
+              "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpa",
+              "statusCode": 200,
+              "resourceType": "Image",
+              "mimeType": "image/svg+xml"
+            },
+            {
+              "startTime": 1529.9540000014531,
+              "transferSize": 0,
+              "statusCode": 200,
+              "url": "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpa",
+              "resourceType": "Image",
+              "mimeType": "image/svg+xml",
+              "endTime": 1530.0150000002759,
+              "resourceSize": 137
+            },
+            {
+              "mimeType": "text/html",
+              "resourceSize": 0,
+              "endTime": 2380.2020000002813,
+              "startTime": 2374.8950000008335,
+              "transferSize": 775,
+              "url": "https://www.google-analytics.com/r/collect?v=1&_v=j81&a=2088639461&t=pageview&_s=1&dl=https%3A%2F%2Fpresidencia.gob.do%2Fcoronavirusrd&ul=en-us&de=UTF-8&dt=Corona%20Virus%20RD%20%7C%20Presidencia%20de%20la%20Rep%C3%BAblica%20Dominicana&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=IEBAAEAB~&jid=2054516177&gjid=1017231733&cid=1623544048.1588844334&tid=UA-37217841-1&_gid=1849984797.1588844334&_r=1&z=913062703",
+              "statusCode": 302
+            },
+            {
+              "resourceSize": 0,
+              "endTime": 2462.07399999912,
+              "startTime": 2380.5739999988873,
+              "transferSize": 750,
+              "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-37217841-1&cid=1623544048.1588844334&jid=2054516177&_gid=1849984797.1588844334&gjid=1017231733&_v=j81&z=913062703",
+              "statusCode": 302,
+              "mimeType": "text/html"
+            },
+            {
+              "startTime": 2463.0969999998342,
+              "transferSize": 865,
+              "url": "https://www.google.com/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-37217841-1&cid=1623544048.1588844334&jid=2054516177&_v=j81&z=913062703",
+              "statusCode": 302,
+              "mimeType": "text/html",
+              "endTime": 2477.1939999991446,
+              "resourceSize": 0
+            },
+            {
+              "mimeType": "image/gif",
+              "resourceSize": 42,
+              "endTime": 2489.9640000003274,
+              "startTime": 2477.4299999990035,
+              "transferSize": 641,
+              "url": "https://www.google.co.uk/ads/ga-audiences?v=1&aip=1&t=sr&_r=4&tid=UA-37217841-1&cid=1623544048.1588844334&jid=2054516177&_v=j81&z=913062703&slf_rd=1&random=1101757828",
+              "statusCode": 200,
+              "resourceType": "Image"
+            }
+          ]
+        },
+        "numericValue": 31
+      },
+      "uses-long-cache-ttl": {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+        "score": 0.07,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "16 resources found",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "cacheLifetimeMs",
+              "itemType": "ms",
+              "text": "Cache TTL",
+              "displayUnit": "duration"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size",
+              "displayUnit": "kb",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 60,
+                "public": true
+              },
+              "cacheLifetimeMs": 60000,
+              "totalBytes": 979,
+              "cacheHitProbability": 0.0083333333333333332,
+              "url": "https://buttons-config.sharethis.com/js/5cb4d8bb240a800012587700.js",
+              "wastedBytes": 970.8416666666667
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 600,
+                "public": true
+              },
+              "cacheLifetimeMs": 600000,
+              "totalBytes": 30055,
+              "cacheHitProbability": 0.083333333333333329,
+              "url": "https://platform-api.sharethis.com/js/sharethis.js",
+              "wastedBytes": 27550.416666666664
+            },
+            {
+              "url": "https://www.google-analytics.com/analytics.js",
+              "wastedBytes": 14112.75,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 7200
+              },
+              "cacheLifetimeMs": 7200000,
+              "totalBytes": 18817,
+              "cacheHitProbability": 0.25
+            },
+            {
+              "url": "https://cdn.onesignal.com/sdks/OneSignalSDK.js",
+              "wastedBytes": 1718,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 43200
+              },
+              "cacheLifetimeMs": 43200000,
+              "totalBytes": 3436,
+              "cacheHitProbability": 0.5
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg",
+              "wastedBytes": 285113.2,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 712783
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271828_1588783791_large.JPG?itok=3uNgEmd8",
+              "wastedBytes": 76722.8,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 191807
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 172269,
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271508_1588281457_large.JPG?itok=0hrg0MGo",
+              "wastedBytes": 68907.6
+            },
+            {
+              "debugData": {
+                "max-age": 86400,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 170363,
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271816_1588713454_large.jpeg?itok=QognB4FJ",
+              "wastedBytes": 68145.2
+            },
+            {
+              "totalBytes": 151748,
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271819_1588714231_large.jpeg?itok=uPYVcrRh",
+              "wastedBytes": 60699.200000000004,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271836_1588810933_large.jpeg?itok=uFq70FBc",
+              "wastedBytes": 60521.600000000006,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 151304
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/js/js_NNVMkRwYBQdxNYKYzRArjoVWQd2E92ZPSDZtd2zIn_0.js",
+              "wastedBytes": 26650.4,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 66626
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj",
+              "wastedBytes": 11451.6,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 28629
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_9xKxobn9_8Wbo2f6QIbLc0J-YdEgM40ScUtJy89gz1I.css?q9xnuj",
+              "wastedBytes": 3181.2000000000003,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 7953,
+              "cacheHitProbability": 0.6
+            },
+            {
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_C8ul1Vl4oMWV6MTvOyvtIZUm33-ksKF6yWMwqowfjIw.css?q9xnuj",
+              "wastedBytes": 920.40000000000009,
+              "debugData": {
+                "max-age": 86400,
+                "type": "debugdata"
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 2301
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 86400
+              },
+              "cacheLifetimeMs": 86400000,
+              "totalBytes": 783,
+              "cacheHitProbability": 0.6,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_Z5jMg7P_bjcW9iUzujI7oaechMyxQTUqZhHJ_aYSq04.css?q9xnuj",
+              "wastedBytes": 313.20000000000005
+            },
+            {
+              "debugData": {
+                "max-age": 259200,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 259200000,
+              "totalBytes": 59881,
+              "cacheHitProbability": 0.8,
+              "url": "https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151000",
+              "wastedBytes": 11976.199999999997
+            }
+          ],
+          "type": "table",
+          "summary": {
+            "wastedBytes": 718954.60833333316
+          }
+        },
+        "numericValue": 718954.60833333316
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration, in milliseconds, of the longest task. [Learn more](https://developers.google.com/web/updates/2018/05/first-input-delay).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "30 ms",
+        "numericValue": 34
+      },
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.8 s",
+        "numericValue": 799
+      },
+      "screenshot-thumbnails": {
+        "id": "screenshot-thumbnails",
+        "title": "Screenshot Thumbnails",
+        "description": "This is what the load of your site looked like.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "timing": 300,
+              "timestamp": 29025840382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 29026140382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 600
+            },
+            {
+              "timing": 900,
+              "timestamp": 29026440382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 29026740382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 1200
+            },
+            {
+              "timing": 1500,
+              "timestamp": 29027040382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 1800,
+              "timestamp": 29027340382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timing": 2100,
+              "timestamp": 29027640382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "timestamp": 29027940382,
+              "data": "data:image/jpeg;base64,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",
+              "timing": 2400
+            },
+            {
+              "timing": 2700,
+              "timestamp": 29028240382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/APzvr9APnwoAKACgAoAKACgAoAKACgAoAKACgAoAKAPU/wBmD4R6f8c/jn4a8G6xqMukaLeGefUL+BVLw28EEk0mC3yqWEe0OchSwYq2Np5cTWdCnzpXey9Wa04c8rXOl8dfEv4Aar4W1DRfDPwX13R9Qhj8rTfE8ni53u7hlO1Jbq2aJ4VLD53SL+IbEZQd4mnTxCalKafdcv5NDk4O9kzu/HWjfBr9k/xFN8N/GvwquPix420+C3uNY11vFFzpNrDcTQpL9ntYoUJeFEePEkg3szSEqoCqOenKviV7SElFdFa/3mklCk+Vq7O+8A/smfDnS/jBf7fD+tfEzwhqPwob4g6BoF/NJaai8rSR+TaPJZt88pG5fkBGZgArFQTlLFVHRvdRalyt9PNlKlHnturXMfxJ+x1p/wAVh8O7zw/4I1P4F674q8TSaAPBeu3z38zWEVt9on1aJbjyZgsQWVWibIbMe1kLAO44t0+e8udJXulbW9rA6SfLbRs5bWfEf7LPhnxte/D1/hnruoaHa6i2lTfEmbxTL9uVBJskvUtIYmgdUO4oAvzoqEoGYgaxjipR9o5pPe1tPS5F6S91L53O/wDg9+w34QfXfj98P/iLqL2+ueG77RNM0HxTaLL+5m1CWVbWRrZHZWWYtaB0cnaHYB0IMg56uNqfu50lo0216b/caRox95S6Ox4p4w+BFr8P/wBlTWNa8QaFJp3xG0r4lnwvdyyTufLtl05pmiCBvLYGQBhIAcjG1tp5741vaVY8j91xv+JzuHLF33TO1vP2Y/CM37Jkl3YxTj40aZo9p48v4vtSzifRLiaaIRRxpKBGIoBBdyMyF1EqLn95tTmWJm66/kb5fn/Whr7Jcnnuc98SvgRoXjnQfgJ4j+GWlRaLZ+O0j8OahaySzyQ2muxziKV5ZGkmMSS+Yrxpnd5cZbbyRWlKvKDqRrbx1+W6JlBNRcOp1HxS+EPwtj8LftKz+E/Dslonw5utA0XSL6e7uGnknN1LBfzygytG5ldGAwqoEVCqIxYmKVas5Q538Sb2+4qUI2ly9Lf8E9x+JH7Hfw11j4teJ/h3p3wa134c+FtJsX1Bvi+2u3LadbqtmJtzxXYMUqLK4jdEl3/Ix3IA5XhhjKihGfOm39m2ptKjHm5eXTufHn7SXw38O/D/AMPfBu50DTzYzeIPBNnq+pOZ5JDPdPJKHk+diFyFX5VAAx0r18PUlUc+bpJpfI5akVFRa6o+lr79kX4fxftOfG/SdD8GS+L7fwPZaTc6N8M7fXXspNWW5t4TczG6kdptkBcybVPzPJGuQCEbzVi6jowlKVrtpu17W20Oj2UeeSSva2nqfHvx3h0i1+I15b6R8OdW+FCRQxLP4W1i9mupbaXYDvVpo45VV0KOFcMcsSG2sqr6tBtw1nzea0OWdua1rDfgH8YLv4CfFzw946s9Ot9YfS3lEmn3LFUuYpYnhlTcPukpI2GwwBwSrAbSV6Sr03Tbt/mFOfJJSO++IF9+zFNp3iq98H6b8TU1a7jzo2majJYw2VjKZMndKGlkkjVThVILEKQX3MJEwh9a91S5bdX39PMtulbS50vi74xfAr4+ahpfi/4p2nxF034gyWtva6/ceF1sJbTVGhi8oXKiZl8iVwse5UXywEwFyS1ZwpV8OnClZx6X6FSlTqWctGbb/tt6FL8R/GWsWfh/UvDGgL8M7n4e+EbPTJvOubFflNrLPK8inIYMS6kso2AbypcpYSUaaind8ybK9qnJvbSxx+oftbXF1YfCHxfbtqK/GTwAzabJrF3iW01fS1LNAkzJIjqyB5YGUITIkrO0xb5av6trUgvglr6Mj2vwvqjc8T/En9lvxV48u/H114S+IUGqXhGqXPhC2ksv7Jk1AkSSRfaGYyi2kk3K2IwQHJVUGI1iMcXGHs1b18vQq9Fy5tfQ5+8/aufxr4B/aFh8YRXNx4v+Jk+jS2stjCos7ZbO5Z2jbc+9UWLZGmA5O35j/EajheSpTcPhimvwJdS8ZJ7tnf8AjD9snwN8avg38PPCfxH0DUm1nTfFNlq/iu/0m1jxrtrbWstvuL+ekhuZIjDGzkjAUsrDasYzWFqUqk5U3o07eVy3VjKKUvmFv/wUKuj+0XrPivUPDGhal4I1m8mstShbw7ZLqt7oz/uxbzTY3SssSxfu3kKMYlUnbyIeX/ulBTd/XS/cPrD57tafocr8AP2tdL+Anhnx34esrTVtTtkvLnWPAmoypBHPpWpvaz2S3NxFyr7recbkLSIrRAKh3l12xGFlXlGW19Jel7k06qhdb9jzf4c/FnR/B/7P3xe8CXdteyar4vfRm0+aBENvELS5kll85i4Zcq4C7VbJznHWumdJyqwmtkmvvM4ytBrvY91+JP7anhL4t/E/4q2niaw8Qah8JvGdjbnTrK5RJL3QNSgtI44b23g88Rg+ar70WVBIrDeSAUbhhhJ06cHG3PF/euxu60ZSlfZnGWnxg+DHxR+Ffw/0T4tWnjy08T+D4JdJj1LwitlJHfab5hkgRxOy+W8e4oCFbIUsxYuAmzp1qVSbpWalrq9mRzQnGKnujN8bfGf4dfHv4y/EHx/8QovF3hjUtVktpPD7+EhbXK2RhjESm4WZ42c7I4TmN0wwf1G2qdKph6cYQtLvf9OgSnGc3J3XYx/2t/jrpHx68feHr/QY9dfSdA8OWXh+G/8AE06S6lqBhMjPc3BQlRIzStnDNu27uN21bwtF0Yvm3bvpsvIirNTat0PEK7TEKACgD0rQ/g7BF4c0/wAQ+M/Etv4L0jUwx08TWct1dXONp3iFBkRkHhyR2wCGUn4PFcTV54ypgcnwjxM6TtN80acIvZrmle8k90lp5nlzxzdV0aFNzcd3dJLyu+pDovwck1u+12SLxNoq+HdEggub3XvNk8hY5hujVE2b2lI3Dy9oIdShIbAJieKvq2Hoc+EqfWazlGFKyTbh8Tcr8qiv5uqfMly3aU8c4Qg3SfPK6UdL6eeyXmSa98IrNdBvfEPhTxTa+LtA054o9QkhtJLa7td5OHNvJyU6YYNyd3ACMQsHxRWji6eAzjBvDVaibhecZQlb7KmlZS6tWfTrKKkQxslUVHEU+SUttU0/K66+RUvvgxrth8WU+Hxe3udXaZIxNAWMW1oxJvyQDhUOW442tjPfvo8TYOvkX9vxTVPlbs9HeLa5bu2rkrLvoXHH05YT641ZWvbr6et9COb4U3X2zw1BbapY3kWv6vPpNpdQlzHmKaOLzfu5KN5gYY5xWNTiWNDDYjEVqLi6NKFVxb19/m93ZWlHld9N9FewSxqjSlOUGnGKk1630/A1Z/gZcXPiDUdA0TxLo+u+ILB5IpNJiM1vO7xttkWMyxrG5XDE4fopIzXnri6eHo08VmeDnQoztapeM4rmtZy5ZXindatb2WlznWZcsVOvSlGL2ejWu17bHmtpbzX1zBb20Tz3E7rHFFEpZ3ZjgKAOSSSAAK/QpyjTi5zdkk22+iXX5HstqKbbskdr8R/hFq/wv0vQbvVrqxnfVvtAENnL5pt3hZVkjdgNpZWbadpIyrc18pkvEmFz2vXpYaEoxpKD5pLlUlO7Ukn9m0bpvda6Hn4XHQxc5xgmlG2r63vZpdtL+ljpm/Z8b7evhpfE1l/wsQIXk8MNbygD9yZti3WPKL7McZC5J+fjJ+e/13UYPHywc/qN+VVuaP8AM483s/i5brffsm9FzLMvd9t7N+yvbmuvS9t7HkFfpx7QUAFABQAUAFAHtvirQE+MnhTwVqPhrVdOk1fS9Hi0S90G7u4ra5j+z7j56+Yyh0YPkkfdyOSdwT8my7FVuFsXjcPjMNUlTq1ZVYVIRlKL57e67JtSjZrW991pZy+eoVHl1SrTrRfLKTkpJNrXppqrDtI0LR18JeIvhtc+MvDyag11batZarbXbfYbiUIyyW8s5UAhVIZcZG49QQVFYnM8XLEYTiBYCr7NKpTlBxXtIpuLjUUE29XFprRqO142cqnXq+0p4xUpcvvJq3vJO1nb5dhfD+lRfA3wd4wu9e1Oxk8R63pUmj2ugWF+k0sSykb5pzHuVNq7WUZ+YEjgniMbiKnFmYYOjhMPOFKhUjVlUqQcfhvaMFKzfM93olZPXYms5Y+vShTi1GD5nJprbor73NCx8d6JP8MNO8XyajHD448P6PN4ZtLX7R5U/wAxVILiFVbdiOCafLMOWHGCAa82tkmMea1Mk9k3gq1VYiUkvdsrylSd9PeqKNkndJ3s9bYzw1T6y8Jb91KXPf8AOP8A4El8vUwfDOvaZbad8E1l1G0iaw8Q3E12rzqDbIbm1IaTJ+RSFYgnAwp9K9viDAYmus2VOlJqdCmlaL95p1b27vXZbXOvFQlP6woreCt/5Mdjpum6J4N+MevfEvU/GmgvpUGo319b6dpOoJdX92srOEVY0PGRJzk+oOBlh5WMzHE5xlKyLBYCspzhGDnUg4U42STk2+1nZJNvdXehyOvLE4VYWlSlzNJNyVorz110Pn+a60Z9ESOPT75dYzmS7a9Q27DJ6Q+SGHGB/rD0J74H6nTp41YqU51IOk9oqDUlta8udp6305F026/QpVXVcpSXL0Vnf77+vQ7r4gavY3vwU+FFjb3tvPe2S6t9pt4pVaSDfdKU3qDldwBIz1A4r5/LcNUo59j6jg1CUaHK7WT5VO6TtZ2ur22ODDwaxleTWj5Lfczu9M+MlppnhO68eapYaNL8R7uP+zNOvrOfzbziLy2u7iFnZIcKuAdgLk4ChDk/BVeGsTPHQ4eoTqLLl781KK5bc3N7KE+VOV3Z/E1BbuUkkvNngpSrLBwk/ZL3mmtN78qe/wDkfO9fuB9OFABQAZp2YBRZgFFmAfjUNK+oriEA+9VutB3uG0bs9z3oSaFp0Fp28h3DFTy63C4Y5zT5bbfqFwp2YroKLeQXADFJRsO4U7MVwosxhmizA9I/smx/58rf/v0v+FfBe1n/ADP7z2+WPY+6f2FP2Tvhr8Z/hHrGt+J/Aun69qMGuS2cdzNqFzalY1t7dgm2EhSAXY5PPzewodSp/Mx8iex9BXP7A37P6SPCPh9YrdRgebFFqt4+wkcf8tQee2QM1n7ap/MzmleLscZ8SP2IvghoGiQNZ+CbOxnuCIxcz3135URLMdzkynC4XGccZr38ooyxVdqackleyer/AB/4cjmZh6H+xp8GG+GtjrVx4Nsr+a/1gWdveR3t0sckWCrFF8wH76OPmAJ29MYzGfSjhcTGlRi4bXTbbu9d/Sz/AA3PbyzCxxdOvOevJCUv/ATSn/Yk+DKsEXwPb7icD/TLrk/9/K8T2tT+Znie/sdF/wAO5vhQGJPhSwKhsHF3d5xjr/rPXt6VrzVP5md31eX834Eq/wDBOf4QHaB4Ts23Z5+1XWBx3Pm0c1T+Zi+ry/m/Ak/4dzfCH+HwjYlgDkG7uxz/AN/KOap/Mw+ry/m/Arx/8E8fhJlt3gnTtqoWJW/vDyMZH3/elzVP5mH1eX834GTbfsR/BCcZHgW1bnBxf3Rwe/8Ay1rL21T+ZnC5SRrj9hP4F5h/4oG3w0UbH/T7vqUUn/lr6k03WqL7TDmZp2P7A3wFmD7/AIe27bU3f8hC8/vAf89vehVqn8zNE2eW/tXfsd/Bv4a/s++KfEnhzwVbabrln9l+zXP2y5l277uGN/keRlOVdhyDjOeuKSrVG/iZcdWfnZ/ZNj/z5W//AH6X/CtPaz/mf3mvLHsW6zKP1J/4JaED9n/xAM8/8JPcf+klpQUj6q8TyBIoMY5J/pUSMK2yPmL9qrxPawan4Z0QXUMV41lLdmOZhgLuwr4PXBDjqAM+4r9I4Q9nBVakprmfKkutle+m9nf8NDz6vNFc1tPw+86jX7a28Mfs9/DcwKY4UubO+dXfcxZ4pJpMnAySzMeg69K/P+Jq8qmOqzb+3b5JtL8EfofC9OVV4ilFX5qM199j03wPgXN2G4LKpyR0PPf/AD+lZQ3PjsK7uTRkfHf41aL8APhjrPjDVkF3HaIEtbBZBHJe3DELHChPck5OASFDNg4p1JqnG56kIc7sfnb4X8U/Gb40abf/ABCu/jZeeDXFwzW2j287wWhAPloohEoVY/MVolLB2k2EksevhVsbOnKyX9eR7NDAwqw53K3y/M+8/wBlf4w3/wAZ/g9peu6sqweILJ30zWI0jCgXcWN5GPlBZWRiF+UFiB0xXtUantY8x404cj5T15EKKXCFyGCbfbIzx+tbmfU5XxgQdWjPTMIzn1y1YVNzzcVe6uVweLYjp5EPP/bNahnIjX01sRz+0f8A7MtStmbJnjP7bp3fslfEHuR/Z34f6fBVwNab0Z+RtaGoUAfqN/wS2fb8AvEAP/Qzz/8ApLaUFJM+o/GM+wWvcHd/SomYVuh8/wD7XMXiGz8EaBq3hPUhY63DcxiS2e3M8V9asu1o5ABlFVmDlwy4CtnPSnRybBZtiI0sTdSaspJ2afTy/rQ9LCY7EYKjzUtVfVNHzF4H/aR8c+M9R1fRNYXSrvQ9HvZ7WONopiEMbxQx4VpSB/rieOgQjHzcfVU/D6nVqSVbFVJRi3ZXW621a23voi48R1KV5UKUYya1aurpv1PvrwZKrT3Z3HGxWHoRz3r5aG7R52ES96x8W/8ABWb4mWNh4C8PeDYbmeDURcf2uyxwgRqgWSNCJOucmQbVHuSAOefEu7jBdT2KSSjKb7HF+HV0K68E2l7a6N4Zk8HTJBJJd+WEim2xfK8qYG1gcf3uAhGOQPjpc6k7v3l0PuIKi6fMkuX9Dpf+CYfxzTxF4z+JHgyA/a9NubufXbK4jd1j2mXa5KvhwzCSJegGIhxyTX1uFUqb5ZdUvvPia8o1m5x6N/cfolFKsV8IuSjrkf7Jz/XP6V6Nzhavqcp4xIGtR4GB5Q/9CasKm5wYjoZ6yAR2w6Ytof8A0WtZt6nKjS0+fEVzz/yy/wDZ1oXUpHjf7aMu/wDZK+IfPT+zv/S+CrgbU9mfkrWhsFAH6ef8Ev3H/CidfQnn/hJbhse32W1FVE3gvdPpnxvdgCz2nI+fn/vms6nQwxGiRn+JPCqeM7a/0K4JiA0l7RpMFhHJIm3OARkdDjIzXVha8sNiIVo7xaf3HVyfuFB9T82vg98P9Yh1nxPoC20t14hn1eVPKGFZ5POgLckgBSVb5s7cLnOOa/c8NjaNPDfXJu0H71/VLT1vp6nzzpS5/Zpa7H2xd/EzTv2dvhnPrXju+CSaRbW1rdLaESPdXQGwpCrFd5LBiOnAJOACR+E2VSrJx2bZ6+G9xSuflB+1j8eJP2lPiW/iOWxfSrQWsVrFYGYS7Y0YnBbYuQWZjjtuI5qnRp8992jonWlKPKtj6U/tzRdE+BVv47uNF08R/wBiRfZpIMGI3uxIyjIuGVPOby9objB4AyV4f7PoQre3f3dLn3TxNsAq393/AIB8p/s0fFO4+AXxa8P+J45Z206zvVmurWBVcvCdyShQ/G7y5ZVU8Eb2wwBNdrw6cuZM+EjUcFys/cj4SfEjRvjJ4D0nxn4emll0bVIvMhWZDHJGysyvG654ZXUqcEg7cgkEEprldmappoh8ZTZ1cdiIh7fxNXPUepwYndGbcTbXiA7QxD/yGtZy3ONFqwuAYroZA/dAZPb94lOPUpanj/7YNx5v7JnxHGf+gbgf9v8ADVQ6nTSWjPykrQ0CgD9MP+CaEjR/AjX2U4I8Q3R/K1tapHXT+Fn0n8Q2KfYSvB2yfzWsauxzV1eUU/61Rp6bK7r4kkLZfcw3fQcVfRnfNfCchpXgnQ7PxCfFEOnRJr2o3awXN4C250jdlRQM7VGAAdoGdq5ztGPUqYmtKhHDuXuLmdvO/wDXoYxjH2kpW1PiP/gq/qt3a3XhrS4bh49Purq8uZrdT8ryxrCEc+4EsgH++a4qHxSOFfFI/PRPmt0c8sABn6mupdTQ9z17Wb1f2QfDmnC4f7FPrc0MkB5V0HmSBT7b1VvqKmR7spy/s2Kv1/VnhQ4t5nH3iSM+wNX0PBP1s/4JPn/jG3VG7/8ACT3H/pLbD+Qrnn0N6ezPo7xi5OssvRVTaoAxgZNcVTc5sVujNvmInQ9zFH/6AtRL4mcSH2bHyLvn/liP/RiU1s/Qo8k/az5/ZR+JGSf+Yb/6XwVpT2Ouj8Ej8saoo//Z"
+            },
+            {
+              "timing": 3000,
+              "timestamp": 29028540382,
+              "data": "data:image/jpeg;base64,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"
+            }
+          ],
+          "type": "filmstrip",
+          "scale": 3000
+        }
+      },
+      "third-party-summary": {
+        "id": "third-party-summary",
+        "title": "Minimize third-party usage",
+        "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Third-party code blocked the main thread for 0 ms",
+        "details": {
+          "headings": [
+            {
+              "itemType": "link",
+              "key": "entity",
+              "text": "Third-Party"
+            },
+            {
+              "key": "transferSize",
+              "itemType": "bytes",
+              "text": "Size",
+              "granularity": 1
+            },
+            {
+              "key": "blockingTime",
+              "itemType": "ms",
+              "text": "Main-Thread Blocking Time",
+              "granularity": 1
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "transferSize": 63317,
+              "blockingTime": 0,
+              "entity": {
+                "text": "OneSignal",
+                "type": "link",
+                "url": "https://onesignal.com/"
+              },
+              "mainThreadTime": 25.294
+            },
+            {
+              "transferSize": 31374,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "ShareThis",
+                "url": "https://www.sharethis.com/"
+              },
+              "mainThreadTime": 24.372999999999994
+            },
+            {
+              "entity": {
+                "url": "https://fontawesome.com/",
+                "type": "link",
+                "text": "FontAwesome CDN"
+              },
+              "mainThreadTime": 4.6839999999999984,
+              "transferSize": 21287,
+              "blockingTime": 0
+            },
+            {
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Google Analytics",
+                "url": "https://www.google.com/analytics/analytics/"
+              },
+              "mainThreadTime": 28.659,
+              "transferSize": 19592
+            },
+            {
+              "mainThreadTime": 0,
+              "transferSize": 1506,
+              "blockingTime": 0,
+              "entity": {
+                "type": "link",
+                "text": "Other Google APIs/SDKs",
+                "url": "https://developers.google.com/apis-explorer/#p/"
+              }
+            },
+            {
+              "entity": {
+                "type": "link",
+                "text": "Google/Doubleclick Ads",
+                "url": "https://www.doubleclickbygoogle.com/"
+              },
+              "mainThreadTime": 0,
+              "transferSize": 750,
+              "blockingTime": 0
+            }
+          ],
+          "summary": {
+            "wastedMs": 0,
+            "wastedBytes": 137826
+          }
+        }
+      },
+      "network-rtt": {
+        "id": "network-rtt",
+        "title": "Network Round Trip Times",
+        "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        },
+        "numericValue": 0
+      },
+      "main-thread-tasks": {
+        "id": "main-thread-tasks",
+        "title": "Tasks",
+        "description": "Lists the toplevel main thread tasks that executed during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "key": "startTime",
+              "itemType": "ms",
+              "text": "Start Time",
+              "granularity": 1
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "duration": 9.545,
+              "startTime": 691.953
+            },
+            {
+              "duration": 17.099,
+              "startTime": 739.361
+            },
+            {
+              "startTime": 794.755,
+              "duration": 22.51
+            },
+            {
+              "startTime": 817.292,
+              "duration": 9.388
+            },
+            {
+              "startTime": 828.695,
+              "duration": 6.319
+            },
+            {
+              "startTime": 835.763,
+              "duration": 19.797
+            },
+            {
+              "startTime": 1497.114,
+              "duration": 8.715
+            },
+            {
+              "startTime": 1505.858,
+              "duration": 68.992
+            },
+            {
+              "duration": 5.838,
+              "startTime": 1574.926
+            },
+            {
+              "duration": 775.746,
+              "startTime": 1592.061
+            },
+            {
+              "duration": 28.993,
+              "startTime": 2372.534
+            },
+            {
+              "duration": 78.242,
+              "startTime": 2409.829
+            },
+            {
+              "duration": 6.836,
+              "startTime": 2518.147
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 13
+      },
+      "font-display": {
+        "id": "font-display",
+        "title": "Ensure text remains visible during webfont load",
+        "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+        "score": 0,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "itemType": "ms",
+              "key": "wastedMs",
+              "text": "Potential Savings"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "wastedMs": 53.863000001001637,
+              "url": "https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2"
+            },
+            {
+              "wastedMs": 5.9039999978267588,
+              "url": "https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2"
+            }
+          ]
+        },
+        "warnings": []
+      },
+      "estimated-input-latency": {
+        "id": "estimated-input-latency",
+        "title": "Estimated Input Latency",
+        "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "10 ms",
+        "numericValue": 12.8
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0 ms",
+        "numericValue": 0
+      },
+      "uses-rel-preconnect": {
+        "id": "uses-rel-preconnect",
+        "title": "Preconnect to required origins",
+        "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity"
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "unminified-css": {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "bootup-time": {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.0 s",
+        "details": {
+          "summary": {
+            "wastedMs": 48.417000000000009
+          },
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "total",
+              "itemType": "ms",
+              "text": "Total CPU Time",
+              "granularity": 1
+            },
+            {
+              "key": "scripting",
+              "itemType": "ms",
+              "text": "Script Evaluation",
+              "granularity": 1
+            },
+            {
+              "key": "scriptParseCompile",
+              "itemType": "ms",
+              "text": "Script Parse",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "url": "Other",
+              "total": 990.15699999999958,
+              "scripting": 5.6109999999999962,
+              "scriptParseCompile": 2.357
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/js/js_NNVMkRwYBQdxNYKYzRArjoVWQd2E92ZPSDZtd2zIn_0.js",
+              "total": 67.38900000000001,
+              "scripting": 36.118000000000016,
+              "scriptParseCompile": 4.3309999999999995
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 48.417000000000009
+      },
+      "offscreen-images": {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-server-latency": {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "headings": [],
+          "type": "table",
+          "items": []
+        },
+        "numericValue": 0
+      },
+      "uses-responsive-images": {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+        "score": 0.61,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 723 KB",
+        "details": {
+          "overallSavingsMs": 560,
+          "headings": [
+            {
+              "valueType": "thumbnail",
+              "key": "url"
+            },
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg",
+              "totalBytes": 712274,
+              "wastedBytes": 699727,
+              "wastedPercent": 98.238465734356751
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271836_1588810933_large.jpeg?itok=uFq70FBc",
+              "totalBytes": 150802,
+              "wastedBytes": 40888,
+              "wastedPercent": 27.113543091655266
+            }
+          ],
+          "type": "opportunity",
+          "overallSavingsBytes": 740615
+        },
+        "warnings": [],
+        "numericValue": 560
+      },
+      "speed-index": {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+        "score": 0.7,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.8 s",
+        "numericValue": 1820.7542397878603
+      },
+      "unused-css-rules": {
+        "id": "unused-css-rules",
+        "title": "Remove unused CSS",
+        "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+        "score": 0.97,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 41 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "valueType": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj",
+              "totalBytes": 28629,
+              "wastedBytes": 27918,
+              "wastedPercent": 97.516606856532036
+            },
+            {
+              "totalBytes": 14045,
+              "wastedBytes": 14018,
+              "wastedPercent": 99.808676680372571,
+              "url": "https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
+            }
+          ],
+          "overallSavingsBytes": 41936,
+          "overallSavingsMs": 40
+        },
+        "numericValue": 40
+      },
+      "first-cpu-idle": {
+        "id": "first-cpu-idle",
+        "title": "First CPU Idle",
+        "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.8 s",
+        "numericValue": 799
+      },
+      "total-byte-weight": {
+        "id": "total-byte-weight",
+        "title": "Avoids enormous network payloads",
+        "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+        "score": 0.99,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Total size was 1,798 KB",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "itemType": "url",
+              "text": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "itemType": "bytes",
+              "text": "Size"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "totalBytes": 712783,
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg"
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271828_1588783791_large.JPG?itok=3uNgEmd8",
+              "totalBytes": 191807
+            },
+            {
+              "totalBytes": 172269,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271508_1588281457_large.JPG?itok=0hrg0MGo"
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271816_1588713454_large.jpeg?itok=QognB4FJ",
+              "totalBytes": 170363
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271819_1588714231_large.jpeg?itok=uPYVcrRh",
+              "totalBytes": 151748
+            },
+            {
+              "totalBytes": 151304,
+              "url": "https://presidencia.gob.do/sites/default/files/styles/big_image/public/articles/2020-05/271836_1588810933_large.jpeg?itok=uFq70FBc"
+            },
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/js/js_NNVMkRwYBQdxNYKYzRArjoVWQd2E92ZPSDZtd2zIn_0.js",
+              "totalBytes": 66626
+            },
+            {
+              "url": "https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151000",
+              "totalBytes": 59881
+            },
+            {
+              "url": "https://platform-api.sharethis.com/js/sharethis.js",
+              "totalBytes": 30055
+            },
+            {
+              "totalBytes": 28629,
+              "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj"
+            }
+          ]
+        },
+        "numericValue": 1841606
+      },
+      "mainthread-work-breakdown": {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+        "score": 0.99,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.1 s",
+        "details": {
+          "headings": [
+            {
+              "text": "Category",
+              "key": "groupLabel",
+              "itemType": "text"
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "Time Spent",
+              "granularity": 1
+            }
+          ],
+          "items": [
+            {
+              "groupLabel": "Rendering",
+              "group": "paintCompositeRender",
+              "duration": 848.4879999999996
+            },
+            {
+              "group": "scriptEvaluation",
+              "duration": 118.94600000000013,
+              "groupLabel": "Script Evaluation"
+            },
+            {
+              "group": "other",
+              "duration": 74.999,
+              "groupLabel": "Other"
+            },
+            {
+              "group": "styleLayout",
+              "duration": 59.001,
+              "groupLabel": "Style & Layout"
+            },
+            {
+              "group": "parseHTML",
+              "duration": 27.307000000000002,
+              "groupLabel": "Parse HTML & CSS"
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "group": "scriptParseCompile",
+              "duration": 19.267000000000003
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 1148.0079999999998
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+        "score": 0.96,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.8 s",
+        "numericValue": 779
+      },
+      "uses-webp-images": {
+        "id": "uses-webp-images",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+        "score": 0.72,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 450 KB",
+        "details": {
+          "overallSavingsMs": 360,
+          "headings": [
+            {
+              "valueType": "thumbnail",
+              "key": "url"
+            },
+            {
+              "label": "URL",
+              "key": "url",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "valueType": "bytes",
+              "label": "Size"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "type": "opportunity",
+          "items": [
+            {
+              "url": "https://presidencia.gob.do/sites/default/files/2020-03/logo-COR.jpg",
+              "fromProtocol": true,
+              "isCrossOrigin": false,
+              "totalBytes": 712274,
+              "wastedBytes": 460360
+            }
+          ],
+          "overallSavingsBytes": 460360
+        },
+        "warnings": [],
+        "numericValue": 360
+      },
+      "diagnostics": {
+        "id": "diagnostics",
+        "title": "Diagnostics",
+        "description": "Collection of useful page vitals.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "numFonts": 2,
+              "maxRtt": 0.001123635550027357,
+              "numTasksOver500ms": 1,
+              "maxServerLatency": null,
+              "numScripts": 7,
+              "numStylesheets": 7,
+              "numTasksOver100ms": 1,
+              "throughput": 171089867682.19272,
+              "numTasksOver25ms": 4,
+              "numTasksOver50ms": 3,
+              "numRequests": 31,
+              "totalTaskTime": 1148.0080000000019,
+              "mainDocumentTransferSize": 7395,
+              "totalByteWeight": 1841606,
+              "numTasks": 413,
+              "numTasksOver10ms": 7,
+              "rtt": 0.001123635550027357
+            }
+          ]
+        }
+      },
+      "critical-request-chains": {
+        "id": "critical-request-chains",
+        "title": "Avoid chaining critical requests",
+        "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "8 chains found",
+        "details": {
+          "chains": {
+            "B97A86D357E42AB84149FF65C4769D37": {
+              "children": {
+                "21.115": {
+                  "request": {
+                    "endTime": 29026.375246,
+                    "startTime": 29026.369342,
+                    "transferSize": 15002,
+                    "url": "https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2",
+                    "responseReceivedTime": 29026.375243000002
+                  }
+                },
+                "21.14": {
+                  "request": {
+                    "transferSize": 66626,
+                    "url": "https://presidencia.gob.do/sites/default/files/js/js_NNVMkRwYBQdxNYKYzRArjoVWQd2E92ZPSDZtd2zIn_0.js",
+                    "responseReceivedTime": 29026.269459,
+                    "endTime": 29026.269462,
+                    "startTime": 29026.226547
+                  }
+                },
+                "21.6": {
+                  "request": {
+                    "url": "https://presidencia.gob.do/sites/default/files/css/css_9xKxobn9_8Wbo2f6QIbLc0J-YdEgM40ScUtJy89gz1I.css?q9xnuj",
+                    "responseReceivedTime": 29026.272525,
+                    "endTime": 29026.272528,
+                    "startTime": 29026.22235,
+                    "transferSize": 7953
+                  }
+                },
+                "21.4": {
+                  "request": {
+                    "transferSize": 2301,
+                    "url": "https://presidencia.gob.do/sites/default/files/css/css_C8ul1Vl4oMWV6MTvOyvtIZUm33-ksKF6yWMwqowfjIw.css?q9xnuj",
+                    "responseReceivedTime": 29026.27949,
+                    "endTime": 29026.279493,
+                    "startTime": 29026.221752
+                  }
+                },
+                "21.108": {
+                  "request": {
+                    "transferSize": 15554,
+                    "url": "https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2",
+                    "responseReceivedTime": 29026.421478,
+                    "endTime": 29026.421482,
+                    "startTime": 29026.367619
+                  }
+                },
+                "21.15": {
+                  "request": {
+                    "url": "https://kit.fontawesome.com/c57b42a035.js",
+                    "responseReceivedTime": 29026.241961,
+                    "endTime": 29026.241964,
+                    "startTime": 29026.22678,
+                    "transferSize": 2282
+                  }
+                },
+                "21.2": {
+                  "request": {
+                    "transferSize": 3633,
+                    "url": "https://fonts.googleapis.com/css?family=Magra:400,700|Ubuntu:300,300i,400,400i,500,500i,700,700i|Nunito:200,300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i",
+                    "responseReceivedTime": 29026.232087,
+                    "endTime": 29026.2321,
+                    "startTime": 29026.221016
+                  }
+                },
+                "21.5": {
+                  "request": {
+                    "url": "https://presidencia.gob.do/sites/default/files/css/css_GH0LGYolsaEFsx0lljLpPNXJBoU2IFMNA8wgYFXG044.css?q9xnuj",
+                    "responseReceivedTime": 29027.011065000002,
+                    "endTime": 29027.011067,
+                    "startTime": 29026.222,
+                    "transferSize": 28629
+                  }
+                }
+              },
+              "request": {
+                "url": "https://presidencia.gob.do/coronavirusrd",
+                "responseReceivedTime": 29026.203946999998,
+                "endTime": 29026.203959,
+                "startTime": 29025.541855,
+                "transferSize": 7395
+              }
+            }
+          },
+          "longestChain": {
+            "transferSize": 28629,
+            "duration": 1469.2119999999704,
+            "length": 2
+          },
+          "type": "criticalrequestchain"
+        }
+      },
+      "dom-size": {
+        "id": "dom-size",
+        "title": "Avoids an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "181 elements",
+        "details": {
+          "headings": [
+            {
+              "key": "statistic",
+              "itemType": "text",
+              "text": "Statistic"
+            },
+            {
+              "itemType": "code",
+              "key": "element",
+              "text": "Element"
+            },
+            {
+              "key": "value",
+              "itemType": "numeric",
+              "text": "Value"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "value": "181",
+              "statistic": "Total DOM Elements"
+            },
+            {
+              "value": "17",
+              "element": {
+                "type": "code",
+                "value": "\u003ca href=\"/coronavirusrd/mapa\"\u003e"
+              },
+              "statistic": "Maximum DOM Depth"
+            },
+            {
+              "value": "20",
+              "element": {
+                "type": "code",
+                "value": "\u003cdiv class=\"row\"\u003e"
+              },
+              "statistic": "Maximum Child Elements"
+            }
+          ]
+        },
+        "numericValue": 181
+      },
+      "uses-rel-preload": {
+        "id": "uses-rel-preload",
+        "title": "Preload key requests",
+        "description": "Consider using `\u003clink rel=preload\u003e` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "headings": [],
+          "items": [],
+          "type": "opportunity"
+        },
+        "numericValue": 0
+      },
+      "performance-budget": {
+        "id": "performance-budget",
+        "title": "Performance budget",
+        "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "unminified-javascript": {
+        "id": "unminified-javascript",
+        "title": "Minify JavaScript",
+        "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance",
+        "score": 0.91,
+        "auditRefs": [
+          {
+            "id": "first-contentful-paint",
+            "weight": 3,
+            "group": "metrics"
+          },
+          {
+            "id": "first-meaningful-paint",
+            "weight": 1,
+            "group": "metrics"
+          },
+          {
+            "id": "speed-index",
+            "weight": 4,
+            "group": "metrics"
+          },
+          {
+            "id": "interactive",
+            "weight": 5,
+            "group": "metrics"
+          },
+          {
+            "id": "first-cpu-idle",
+            "weight": 2,
+            "group": "metrics"
+          },
+          {
+            "id": "max-potential-fid",
+            "weight": 0,
+            "group": "metrics"
+          },
+          {
+            "id": "estimated-input-latency",
+            "weight": 0
+          },
+          {
+            "id": "total-blocking-time",
+            "weight": 0
+          },
+          {
+            "id": "render-blocking-resources",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-responsive-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "offscreen-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-css",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-css-rules",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-optimized-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-webp-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-text-compression",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "time-to-first-byte",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "redirects",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preload",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "efficient-animated-content",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "total-byte-weight",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "dom-size",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "critical-request-chains",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "user-timings",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "bootup-time",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "font-display",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "performance-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "resource-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "third-party-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "network-requests",
+            "weight": 0
+          },
+          {
+            "id": "network-rtt",
+            "weight": 0
+          },
+          {
+            "id": "network-server-latency",
+            "weight": 0
+          },
+          {
+            "id": "main-thread-tasks",
+            "weight": 0
+          },
+          {
+            "id": "diagnostics",
+            "weight": 0
+          },
+          {
+            "id": "metrics",
+            "weight": 0
+          },
+          {
+            "id": "screenshot-thumbnails",
+            "weight": 0
+          },
+          {
+            "id": "final-screenshot",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "budgets": {
+        "title": "Budgets",
+        "description": "Performance budgets set standards for the performance of your site."
+      },
+      "load-opportunities": {
+        "title": "Opportunities",
+        "description": "These suggestions can help your page load faster. They don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "pwa-installable": {
+        "title": "Installable"
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted) the Performance score."
+      },
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "pwa-optimized": {
+        "title": "PWA Optimized"
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      },
+      "pwa-fast-reliable": {
+        "title": "Fast and reliable"
+      },
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      }
+    },
+    "timing": {
+      "total": 14623.53
+    },
+    "i18n": {
+      "rendererFormattedStrings": {
+        "varianceDisclaimer": "Values are estimated and may vary. The performance score is [based only on these metrics](https://github.com/GoogleChrome/lighthouse/blob/d2ec9ffbb21de9ad1a0f86ed24575eda32c796f0/docs/scoring.md#how-are-the-scores-weighted).",
+        "opportunityResourceColumnLabel": "Opportunity",
+        "opportunitySavingsColumnLabel": "Estimated Savings",
+        "errorMissingAuditInfo": "Report error: no audit information",
+        "errorLabel": "Error!",
+        "warningHeader": "Warnings: ",
+        "auditGroupExpandTooltip": "Show audits",
+        "passedAuditsGroupTitle": "Passed audits",
+        "notApplicableAuditsGroupTitle": "Not applicable",
+        "manualAuditsGroupTitle": "Additional items to manually check",
+        "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+        "crcLongestDurationLabel": "Maximum critical path latency:",
+        "crcInitialNavigation": "Initial Navigation",
+        "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+        "labDataTitle": "Lab Data"
+      }
+    }
+  },
+  "analysisUTCTimestamp": "2020-05-07T09:38:51.109Z"
+}
