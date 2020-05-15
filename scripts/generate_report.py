@@ -100,15 +100,15 @@ def generate_graph(x, y, filename, title):
   plt.close(fig)
 
 def extract_scores(data, dates):
-  output = {'accessibility' : [], 'performance' : []}
-  for characteristic in output:
-    output[characteristic] = [data[key]['categories'][characteristic]['score'] for key in dates if data[key]['categories'][characteristic]['score']]
+  output = {}
+  output['accessibility'] = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
+  output['speed'] = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
   return output
 
 def generate_graphs_over_time(dates, extracted, output_directory_and_stub):
   try:
     generate_graph(dates, extracted['accessibility'], output_directory_and_stub + "_accessibility.png", "Accessibility")
-    generate_graph(dates, extracted['performance'], output_directory_and_stub + "_performance.png", "Performance")
+    generate_graph(dates, extracted['speed'], output_directory_and_stub + "_speed.png", "Performance")
   except Exception as e:
     print("Couldn't generate graphs: " + repr(e))
 
@@ -120,10 +120,10 @@ def calculate_scores(latest_date, extracted, data):
       calculations['max_accessibility'] = max(extracted['accessibility'])
       calculations['average_accessibility'] = statistics.mean(extracted['accessibility'])
       calculations['current_accessibility'] = data[latest_date]['categories']['accessibility']['score']
-    if len(extracted['performance']) > 0:
-      calculations['max_performance'] = max(extracted['performance'])
-      calculations['average_performance'] = statistics.mean(extracted['performance'])
-      calculations['current_performance'] = data[latest_date]['categories']['performance']['score']
+    if len(extracted['speed']) > 0:
+      calculations['max_speed'] = max(extracted['speed'])
+      calculations['average_speed'] = statistics.mean(extracted['speed'])
+      calculations['current_speed'] = data[latest_date]['categories']['performance']['score']
   except Exception as err:
       print(repr(err))
       print(f"Problem with {url}")
@@ -166,8 +166,8 @@ with open(page_tmpl_file) as tmpl:
 with open(index_tmpl_file) as tmpl:
   index_template = Template(tmpl.read())
 
-top_scores = {'accessibility' : {}, 'performance' : {}}
-avg_scores = {'accessibility' : {}, 'performance' : {}}
+top_scores = {'accessibility' : {}, 'speed' : {}, 'reading_age': {}}
+avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading_age': {}}
 
 with open(list_file, 'r') as f:
   for url in f:
@@ -223,7 +223,7 @@ with open(list_file, 'r') as f:
         report.write(output)
         site_list[stripped_url] = "/reports/" + url_stub + ".html"
 
-rankings = { 'accessibility': [], 'performance' : [] }
+rankings = { 'speed' : [], 'reading_age': [], 'accessibility': []}
 for consideration in rankings:
   d_sorted_by_value = OrderedDict(sorted(top_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
   rankings[consideration] = d_sorted_by_value
