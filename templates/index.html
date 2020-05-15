@@ -93,21 +93,23 @@ html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
 
 					<div class="entry-content">
 						{% for consideration in considerations.keys() %}
-						<h2>Ranked by {{consideration}} score</h2>
+						<h2>Ranked by {{consideration}}</h2>
 						<table>
 							<thead>
 								<tr>
 									<th>Site</th>
-									<th>Current score</th>
 									<th>Average score</th>
+									<th>Current score</th>
+									<th>&nbsp;</th>
 								</tr>
 							</thead>
 							<tbody>
 								{% for site in considerations[consideration] %}
 								<tr>
 									<td><a title="{{site}}" href="{{sites[site]}}">{{site|truncate(60, True)}}</a></td>
-									<td>{{considerations[consideration][site]|round(2)}}</td>
 									<td>{{avg_scores[consideration][site]|round(2)}}</td>
+									<td>{{considerations[consideration][site]|round(2)}}</td>
+									<td><a title="Full report on {{site}}" href="{{sites[site]}}">full report</a></td>
 								</tr>
 								{% endfor %}
 							</tbody>

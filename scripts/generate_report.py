@@ -225,7 +225,7 @@ with open(list_file, 'r') as f:
 
 rankings = { 'speed' : [], 'reading_age': [], 'accessibility': []}
 for consideration in rankings:
-  d_sorted_by_value = OrderedDict(sorted(top_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
+  d_sorted_by_value = OrderedDict(sorted(avg_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
   rankings[consideration] = d_sorted_by_value
 
 index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
