@@ -10,6 +10,7 @@ mpl.use('Agg')
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 import c19utils
+import re
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -189,9 +190,9 @@ with open(list_file, 'r') as f:
         scores = calculate_scores(latest_date, extracted_scores, site_data)
 
         top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
-        top_scores['performance'][stripped_url] = scores.get('max_performance', 0)
+        top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
         avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
-        avg_scores['performance'][stripped_url] = scores.get('average_performance', 0)
+        avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
 
         generate_graphs_over_time(dates_covered, extracted_scores, graph_directory_and_prefix)
         scores['graph_filename'] = "/reports/graphs/" + url_stub
@@ -202,11 +203,19 @@ with open(list_file, 'r') as f:
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
           print(repr(e))
+          raise e
 
       with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
         try:
           scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
+          if scores['reading_age']:
+            extracted_numbers = re.search(r'\d+', scores['reading_age'])
+            if extracted_numbers:
+              score_to_use = int(extracted_numbers.group())
+              top_scores['reading_age'][stripped_url] = score_to_use
+              # TODO: Replace this with proper averages
+              avg_scores['reading_age'][stripped_url] = score_to_use
         except KeyError:
           scores['reading_age'] = 'tbd'
 
