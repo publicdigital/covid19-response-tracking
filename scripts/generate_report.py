@@ -166,8 +166,8 @@ with open(page_tmpl_file) as tmpl:
 with open(index_tmpl_file) as tmpl:
   index_template = Template(tmpl.read())
 
-top_scores = {'accessibility' : {}, 'speed' : {}, 'reading_age': {}}
-avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading_age': {}}
+top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
+avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 
 with open(list_file, 'r') as f:
   for url in f:
@@ -208,26 +208,54 @@ with open(list_file, 'r') as f:
       with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
         scores['site_name'] = stripped_url
         try:
-          scores['reading_age'] = find_reading_age(latest_language_data[stripped_url])
-          if scores['reading_age']:
-            extracted_numbers = re.search(r'\d+', scores['reading_age'])
+          scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
+          if scores['reading age']:
+            extracted_numbers = re.search(r'\d+', scores['reading age'])
             if extracted_numbers:
               score_to_use = int(extracted_numbers.group())
-              top_scores['reading_age'][stripped_url] = score_to_use
+              top_scores['reading age'][stripped_url] = score_to_use
               # TODO: Replace this with proper averages
-              avg_scores['reading_age'][stripped_url] = score_to_use
+              avg_scores['reading age'][stripped_url] = score_to_use
         except KeyError:
-          scores['reading_age'] = 'tbd'
+          scores['reading age'] = 'tbd'
 
+        scores['reading_age'] = scores['reading age']
         output = page_template.render(scores)
         report.write(output)
         site_list[stripped_url] = "/reports/" + url_stub + ".html"
 
-rankings = { 'speed' : [], 'reading_age': [], 'accessibility': []}
+rankings = { 'speed' : [], 'accessibility': []}
 for consideration in rankings:
   d_sorted_by_value = OrderedDict(sorted(avg_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
   rankings[consideration] = d_sorted_by_value
 
-index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores)
+rankings['reading age'] = OrderedDict(sorted(avg_scores['reading age'].items(), key=lambda x: x[1]))
+
+top_table = {}
+site_count = len(site_list)
+for site in site_list:
+  try:
+    top_table[site]['accessibility'] = rankings['accessibility'].get(site, '-')
+    top_table[site]['speed'] = rankings['speed'].get(site, '-')
+    top_table[site]['reading_age'] = rankings['reading age'].get(site, '-')
+  except KeyError as e:
+    print(repr(e))
+
+  try:
+    top_table[site]['overall'] = 2 * (site_count - list(rankings['speed']).index(site))
+  except ValueError as e:
+    ''
+  try:
+    top_table[site]['overall'] += site_count - list(rankings['accessibility']).index(site)
+  except ValueError as e:
+    ''
+  try:
+    top_table[site]['overall'] += site_count - list(rankings['reading age']).index(site)
+  except ValueError as e:
+    ''
+sorted_top_table = OrderedDict(sorted(top_table.items(), key=lambda x: x[1]['overall'], reverse=True))
+
+index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores, top_sites = sorted_top_table)
 with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
   index_file.write(index)
+

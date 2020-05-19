@@ -92,6 +92,23 @@ html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
 
 
 					<div class="entry-content">
+						<table>
+							<thead>
+								<th>Site</th>
+								<th>Average speed</th>
+								<th>Average accessibility</th>
+								<th>Reading age</th>
+							</thead>
+							<tbody>
+							{% for site in top_sites %}
+							<tr>
+									<td><a title="{{site}}" href="{{site}}">{{site|truncate(60, True)}}</a></td>
+									<td>{{top_sites[site]['speed']|round(2)}}</td>
+									<td>{{top_sites[site]['accessibility']|round(2)}}</td>
+									<td>Grade {{top_sites[site]['reading_age']}}</td>
+									<td><a title="Full report on {{site}}" href="{{site}}">full report</a></td>
+								</tr>
+								{% endfor %}
 						{% for consideration in considerations.keys() %}
 						<h2>Ranked by {{consideration}}</h2>
 						<table>

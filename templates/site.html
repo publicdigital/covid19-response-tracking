@@ -99,10 +99,10 @@
       <li>Where this site appears in the league tables</li>
     </ul>
 		<h2>Top stats</h2>
+		<h3>Speed</h3>
+		<p>Current score: {{current_speed}} / Average score: {% if average_speed %}{{average_speed|round(2)}}{%else%}-{%endif%}</p>
 		<h3>Accessibility</h3>
 		<p>Current score: {{current_accessibility}} / Average score: {% if average_accessibility %}{{average_accessibility|round(2)}}{% else %}-{%endif%}</p>
-		<h3>Performance</h3>
-		<p>Current score: {{current_performance}} / Average score: {% if average_performance %}{{average_performance|round(2)}}{%else%}-{%endif%}</p>
 		<h3>Reading age</h3>
 		<p>{{reading_age}}</p>
 
