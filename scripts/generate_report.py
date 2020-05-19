@@ -5,12 +5,10 @@ from jinja2 import Template
 import statistics
 import base64
 import imageio
-import matplotlib as mpl
-mpl.use('Agg')
-import matplotlib.pyplot as plt
 from collections import OrderedDict
 import c19utils
 import re
+from datetime import date
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -84,49 +82,55 @@ def get_date_indexed_lighthouse_data(json_file_list):
     parsed_data[date] = loaded_json
   return parsed_data
 
-# TODO: Look at how we could get x,y as a dict to avoid mismatches
-# TODO: The image produced truncates the axis labels. Fix that.
-def generate_graph(x, y, filename, title):
-  fig = plt.figure()
-  ax1 = fig.add_subplot(1, 1, 1)
-  ax1.set_title(title)
-  ax1.scatter(x, y, label= "stars", color= "green", marker= "*", s=30)
-  ax1.set_xlabel('Date')
-  ax1.set_ylabel('Score')
-  ax1.set_ylim(bottom = 0, top = 1)
-  for tick in ax1.get_xticklabels():
-    tick.set_rotation(90)
-  fig.savefig(filename)
-  plt.close(fig)
-
+# Produce a simplified version of the data we get from lighthouse reports.
+# Returns a nested dictionary with scores for accessibility and speed
+# in each case providing a score for each date since we started collecting
+# data for that site.
+#
+# e.g { 'accessibility': { date(2020,05,01): '0.9', date(2020,05,02): '0.91' } ... }
 def extract_scores(data, dates):
-  output = {}
-  output['accessibility'] = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
-  output['speed'] = [data[key]['categories']['performance']['score'] for key in dates if data[key]['categories']['performance']['score']]
-  return output
+  dates.sort()
+  first_date_parts = dates[0].split('-')
+  first_date = date(int(first_date_parts[0]), int(first_date_parts[1]), int(first_date_parts[2]))
+  last_date = date.today()
 
-def generate_graphs_over_time(dates, extracted, output_directory_and_stub):
-  try:
-    generate_graph(dates, extracted['accessibility'], output_directory_and_stub + "_accessibility.png", "Accessibility")
-    generate_graph(dates, extracted['speed'], output_directory_and_stub + "_speed.png", "Performance")
-  except Exception as e:
-    print("Couldn't generate graphs: " + repr(e))
+  output = {'accessibility': {}, 'speed': {}}
+  for single_date in c19utils.daterange(first_date, last_date):
+    str_date = single_date.strftime('%Y-%m-%d')
+    try:
+      output['accessibility'][str_date] = data[str_date]['categories']['accessibility']['score']
+    except KeyError:
+      output['accessibility'][str_date] = None
+
+    try:
+      output['speed'][str_date] = data[str_date]['categories']['performance']['score']
+    except KeyError:
+      output['speed'][str_date] = None
+
+  return output
 
 def calculate_scores(latest_date, extracted, data):
   calculations = {}
 
+  extracted_speed = extracted['speed'].values()
+  extracted_accessibility = extracted['accessibility'].values()
+
+  extracted_speed = list(filter(None.__ne__, extracted_speed))
+  extracted_accessibility = list(filter(None.__ne__, extracted_accessibility))
+
   try:
-    if len(extracted['accessibility']) > 0:
-      calculations['max_accessibility'] = max(extracted['accessibility'])
-      calculations['average_accessibility'] = statistics.mean(extracted['accessibility'])
+    if len(extracted_accessibility) > 0:
+      calculations['max_accessibility'] = max(extracted_accessibility)
+      calculations['average_accessibility'] = statistics.mean(extracted_accessibility)
       calculations['current_accessibility'] = data[latest_date]['categories']['accessibility']['score']
-    if len(extracted['speed']) > 0:
-      calculations['max_speed'] = max(extracted['speed'])
-      calculations['average_speed'] = statistics.mean(extracted['speed'])
+    if len(extracted_speed) > 0:
+      calculations['max_speed'] = max(extracted_speed)
+      calculations['average_speed'] = statistics.mean(extracted_speed)
       calculations['current_speed'] = data[latest_date]['categories']['performance']['score']
   except Exception as err:
       print(repr(err))
       print(f"Problem with {url}")
+      raise err
   return calculations
 
 def find_reading_age(language_data):
@@ -144,11 +148,6 @@ def find_reading_age(language_data):
 def generate_timelapse(url_stub, root_directory, output_file):
     os.system(f"convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
     return f"/reports/timelapses/{url_stub}.gif"
-
-def identify_latest_date(site_data):
-  dates_covered = list(site_data.keys())
-  dates_covered.sort()
-  return dates_covered[-1]
 
 directories = c19utils.establish_directories()
 
@@ -176,7 +175,6 @@ with open(list_file, 'r') as f:
       clean_url = c19utils.filter_bad_filename_chars(stripped_url)
       url_stub = clean_url[0:100]
       loading_gif_filename = os.path.join(directories['loading'], url_stub + ".gif")
-      graph_directory_and_prefix = os.path.join(directories['graphs'], url_stub)
 
       try:
         key = translate_to_lighthouse_key(lighthouse_index.keys(), stripped_url)
@@ -193,9 +191,6 @@ with open(list_file, 'r') as f:
         top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
         avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
         avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
-
-        generate_graphs_over_time(dates_covered, extracted_scores, graph_directory_and_prefix)
-        scores['graph_filename'] = "/reports/graphs/" + url_stub
 
         output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
         scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
@@ -220,6 +215,7 @@ with open(list_file, 'r') as f:
           scores['reading age'] = 'tbd'
 
         scores['reading_age'] = scores['reading age']
+        scores['over_time'] = extracted_scores
         output = page_template.render(scores)
         report.write(output)
         site_list[stripped_url] = "/reports/" + url_stub + ".html"
@@ -234,6 +230,8 @@ rankings['reading age'] = OrderedDict(sorted(avg_scores['reading age'].items(), 
 top_table = {}
 site_count = len(site_list)
 for site in site_list:
+  top_table[site] = {}
+
   try:
     top_table[site]['accessibility'] = rankings['accessibility'].get(site, '-')
     top_table[site]['speed'] = rankings['speed'].get(site, '-')

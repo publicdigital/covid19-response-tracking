@@ -22,42 +22,9 @@
 <link rel="stylesheet" id="publicdigital-style-css" href="https://public.digital/wp-content/themes/publicdigital/style.css?ver=5.4" type="text/css" media="all">
 <link rel="stylesheet" id="publicdigital-css-css" href="https://public.digital/wp-content/themes/publicdigital/dist/css/main.css?ver=5.4" type="text/css" media="all">
 <link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/8.4.2/css/jetpack.css" type="text/css" media="all">
-<link rel="dns-prefetch" href="//widgets.wp.com">
-<link rel="dns-prefetch" href="//jetpack.wordpress.com">
-<link rel="dns-prefetch" href="//s0.wp.com">
-<link rel="dns-prefetch" href="//s1.wp.com">
-<link rel="dns-prefetch" href="//s2.wp.com">
-<link rel="dns-prefetch" href="//public-api.wordpress.com">
-<link rel="dns-prefetch" href="//c0.wp.com">
-
-			<style type="text/css">
-				/* If html does not have either class, do not show lazy loaded images. */
-				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
-					display: none;
-				}
-			</style>
-			<script>
-				document.documentElement.classList.add(
-					'jetpack-lazy-images-js-enabled'
-				);
-			</script>
-		<!-- There is no amphtml version available for this URL. -->
-<meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png">
-			<style type="text/css" id="wp-custom-css">
-				.page-template-template-photos-php .size-full {
-    max-width: 100%;
-    height: auto;
-}
-.pd-notice {
-    background-color: #efefef;
-    text-align: left;
-    color:#000;
-}
-.pd-notice .inner {max-width:91.2rem;padding:1rem 2rem;margin:0 auto;}
-.pd-notice p {color:inherit;margin:0;}
-			</style>
 <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova-1","proxima-nova-2",sans-serif;}</style>
 <style type="text/css">@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 </head>
 <body class="home page-template-default page page-id-1120 wp-custom-logo no-sidebar">
 <div id="page" class="site pd-wrapper">
@@ -92,12 +59,6 @@
 
 
 	<div class="entry-content">
-    <h2>We still intend to add:</h2>
-    <ul>
-      <li>Who owns this site? Perhaps grouping sites from the same government</li>
-      <li>How much does it cost to load the site based on local data costs?</li>
-      <li>Where this site appears in the league tables</li>
-    </ul>
 		<h2>Top stats</h2>
 		<h3>Speed</h3>
 		<p>Current score: {{current_speed}} / Average score: {% if average_speed %}{{average_speed|round(2)}}{%else%}-{%endif%}</p>
@@ -111,9 +72,19 @@
 
 	<h2>How it's changed over time</h2>
 	<p><img src="{{timelapse_filename}}" alt="Timelapse" /></p>
-	<h2>How it's done over time</h2>
-	<p><img src="{{graph_filename}}_accessibility.png" alt="Accessibility score over time" /></p>
-	<p><img src="{{graph_filename}}_performance.png" alt="performance score over time" /></p>
+
+  <h3>Speed</h3>
+	<canvas id="speed-chart" width="400" height="400"></canvas>
+
+  <h3>Accessibility</h3>
+	<canvas id="accessibility-chart" width="400" height="400"></canvas>
+
+  <h2>We still intend to add:</h2>
+  <ul>
+    <li>Who owns this site? Perhaps grouping sites from the same government</li>
+    <li>How much does it cost to load the site based on local data costs?</li>
+    <li>Where this site appears in the league tables</li>
+  </ul>
 	</div>
 
 </article>
@@ -133,4 +104,52 @@
 				</div><!-- .content-area -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+<script type="text/javascript">
+
+var date_labels = [ '{{ over_time['speed'].keys()|join("','") }}' ]
+var base_options = {
+  showLines: false,
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
+}
+var ctx = document.getElementById('speed-chart').getContext('2d');
+var speedChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: date_labels,
+      datasets: [{
+        label:"Site speed between 0 and 1",
+	      data: [ {{ over_time['speed'].values()|join(",")|replace("None", "0") }} ],
+        fill: false,
+        pointRadius: 6,
+        pointBackgroundColor: "red",
+        borderColor: "red",
+        "lineTension":0.1
+      }]
+    },
+    options: base_options
+});
+var cty = document.getElementById('accessibility-chart').getContext('2d');
+var speedChart = new Chart(cty, {
+    type: 'line',
+    data: {
+      labels: date_labels,
+      datasets: [{
+        label:"Site accessibility between 0 and 1",
+	      data: [ {{ over_time['accessibility'].values()|join(",")|replace("None", "0") }} ],
+        fill: false,
+        pointRadius: 6,
+        pointBackgroundColor: "blue",
+        borderColor: "blue",
+        "lineTension":0.1
+      }]
+    },
+    options: base_options
+});
+</script>
 </body></html>
