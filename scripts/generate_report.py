@@ -102,7 +102,7 @@ def generate_graph(x, y, filename, title):
 def extract_scores(data, dates):
   output = {}
   output['accessibility'] = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
-  output['speed'] = [data[key]['categories']['accessibility']['score'] for key in dates if data[key]['categories']['accessibility']['score']]
+  output['speed'] = [data[key]['categories']['performance']['score'] for key in dates if data[key]['categories']['performance']['score']]
   return output
 
 def generate_graphs_over_time(dates, extracted, output_directory_and_stub):
