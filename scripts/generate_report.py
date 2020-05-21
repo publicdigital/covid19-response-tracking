@@ -126,7 +126,7 @@ def find_reading_age(language_data):
   return reading_age
 
 def generate_timelapse(url_stub, root_directory, output_file):
-    os.system(f"convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
+    os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
     return f"/reports/timelapses/{url_stub}.gif"
 
 directories = c19utils.establish_directories()
