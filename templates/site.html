@@ -109,97 +109,94 @@ h1 {
 								Your browser does not support the video tag. <a href="{{video_url}}">Click here to download the video.</a>
 							</video>
 
-	<div class="entry-content">
-		<h2>Top stats</h2>
-		<h3>Speed</h3>
-		<p>Current score: {{current_speed}} / Average score: {% if average_speed %}{{average_speed|round(2)}}{%else%}-{%endif%}</p>
-		<h3>Accessibility</h3>
-		<p>Current score: {{current_accessibility}} / Average score: {% if average_accessibility %}{{average_accessibility|round(2)}}{% else %}-{%endif%}</p>
-		<h3>Reading age</h3>
-		<p>{{reading_age}}</p>
+							{% endif %}
+							<h2>How it's changed over time</h2>
+							<p>Great responses change and evolve as the situation changes and as our understanding of user needs change.</p>
+							<p>What shouldn't change is their speed, accessibility and clarity. We've captured a timelapse of this site over time and built graphs of their scores over time.</p>
 
 							<p><img src="{{timelapse_filename}}" alt="Timelapse" /></p>
 
-	<h2>How it's changed over time</h2>
-	<p><img src="{{timelapse_filename}}" alt="Timelapse" /></p>
+							<h3>Speed</h3>
+							<canvas id="speed-chart" width="400" height="200"></canvas>
 
-  <h3>Speed</h3>
-	<canvas id="speed-chart" width="400" height="400"></canvas>
+							<h3>Accessibility</h3>
+							<canvas id="accessibility-chart" width="400" height="200"></canvas>
 
-  <h3>Accessibility</h3>
-	<canvas id="accessibility-chart" width="400" height="400"></canvas>
+							<p>Note: A score of 0 usually shows a gap in our data, not a regression in the site's behaviour.</p>
 
-  <h2>We still intend to add:</h2>
-  <ul>
-    <li>Who owns this site? Perhaps grouping sites from the same government</li>
-    <li>How much does it cost to load the site based on local data costs?</li>
-    <li>Where this site appears in the league tables</li>
-  </ul>
-	</div>
+							<h2>We still intend to add:</h2>
+							<ul>
+								<li>Who owns this site? Perhaps grouping sites from the same government</li>
+								<li>How much does it cost to load the site based on local data costs?</li>
+								<li>Where this site appears in the league tables</li>
+							</ul>
+						</div>
 
-</article>
-
-
-	</div><!-- #primary -->
+					</article>
 
 
-	</main><!-- #content -->
-
-	<footer id="colophon" class="site-footer pd-footer bg--coal">
-		<div class="content-area">
+				</div><!-- #primary -->
 
 
-				<p class="site-info">© Copyright 2020</p>
+			</main><!-- #content -->
+
+			<footer id="colophon" class="site-footer pd-footer bg--coal">
+				<div class="content-area">
+
+
+					<p class="site-info">© Copyright 2020</p>
 
 				</div><!-- .content-area -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-<script type="text/javascript">
+			</footer><!-- #colophon -->
+		</div><!-- #page -->
+		<script type="text/javascript">
 
-var date_labels = [ '{{ over_time['speed'].keys()|join("','") }}' ]
+			var date_labels = [ '{{ over_time['speed'].keys()|join("','") }}' ]
 var base_options = {
-  showLines: false,
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero: true
-            }
-        }]
-    }
+	showLines: false,
+	scales: {
+		yAxes: [{
+			ticks: {
+				beginAtZero: true,
+				min: 0,
+				max: 1
+			}
+		}]
+	}
 }
 var ctx = document.getElementById('speed-chart').getContext('2d');
 var speedChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: date_labels,
-      datasets: [{
-        label:"Site speed between 0 and 1",
-	      data: [ {{ over_time['speed'].values()|join(",")|replace("None", "0") }} ],
-        fill: false,
-        pointRadius: 6,
-        pointBackgroundColor: "red",
-        borderColor: "red",
-        "lineTension":0.1
-      }]
-    },
-    options: base_options
+	type: 'line',
+	data: {
+		labels: date_labels,
+		datasets: [{
+			label:"Site speed on a scale of 0 to 1",
+			data: [ {{ over_time['speed'].values()|join(",")|replace("None", "0") }} ],
+			fill: false,
+			pointRadius: 6,
+			pointBackgroundColor: "red",
+			borderColor: "red",
+			"lineTension":0.1
+		}]
+	},
+	options: base_options
 });
 var cty = document.getElementById('accessibility-chart').getContext('2d');
 var speedChart = new Chart(cty, {
-    type: 'line',
-    data: {
-      labels: date_labels,
-      datasets: [{
-        label:"Site accessibility between 0 and 1",
-	      data: [ {{ over_time['accessibility'].values()|join(",")|replace("None", "0") }} ],
-        fill: false,
-        pointRadius: 6,
-        pointBackgroundColor: "blue",
-        borderColor: "blue",
-        "lineTension":0.1
-      }]
-    },
-    options: base_options
+	type: 'line',
+	data: {
+		labels: date_labels,
+		datasets: [{
+			label:"Site accessibility on a scale of 0 to 1",
+			data: [ {{ over_time['accessibility'].values()|join(",")|replace("None", "0") }} ],
+			fill: false,
+			pointRadius: 6,
+			pointBackgroundColor: "blue",
+			borderColor: "blue",
+			"lineTension":0.1
+		}]
+	},
+	options: base_options
 });
-</script>
-</body></html>
+		</script>
+	</body></html>
