@@ -129,6 +129,42 @@ def generate_timelapse(url_stub, root_directory, output_file):
     os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
     return f"/reports/timelapses/{url_stub}.gif"
 
+def build_combined_rankings(avg_scores):
+  rankings = { 'speed' : [], 'accessibility': []}
+  for consideration in rankings:
+    d_sorted_by_value = OrderedDict(sorted(avg_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
+    rankings[consideration] = d_sorted_by_value
+
+  rankings['reading age'] = OrderedDict(sorted(avg_scores['reading age'].items(), key=lambda x: x[1]))
+  return rankings
+
+def build_top_table(site_list, rankings):
+  top_table = {}
+  site_count = len(site_list)
+  for site in site_list:
+    top_table[site] = {}
+
+    try:
+      top_table[site]['accessibility'] = rankings['accessibility'].get(site, '-')
+      top_table[site]['speed'] = rankings['speed'].get(site, '-')
+      top_table[site]['reading_age'] = rankings['reading age'].get(site, '-')
+    except KeyError as e:
+      print(repr(e))
+
+    try:
+      top_table[site]['overall'] = 2 * (site_count - list(rankings['speed']).index(site))
+    except ValueError as e:
+      ''
+    try:
+      top_table[site]['overall'] += site_count - list(rankings['accessibility']).index(site)
+    except ValueError as e:
+      ''
+    try:
+      top_table[site]['overall'] += site_count - list(rankings['reading age']).index(site)
+    except ValueError as e:
+      ''
+  return OrderedDict(sorted(top_table.items(), key=lambda x: x[1]['overall'], reverse=True))
+
 directories = c19utils.establish_directories()
 
 list_file = os.path.join(directories['base'], 'list.txt')
@@ -204,41 +240,11 @@ with open(list_file, 'r') as f:
         output = page_template.render(scores)
         report.write(output)
         site_list[stripped_url] = "/reports/" + url_stub + ".html"
+        print("Produced report for ",url_stub)
 
-rankings = { 'speed' : [], 'accessibility': []}
-for consideration in rankings:
-  d_sorted_by_value = OrderedDict(sorted(avg_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
-  rankings[consideration] = d_sorted_by_value
+rankings = build_combined_rankings(avg_scores)
+sorted_rankings = build_top_table(site_list, rankings)
 
-rankings['reading age'] = OrderedDict(sorted(avg_scores['reading age'].items(), key=lambda x: x[1]))
-
-top_table = {}
-site_count = len(site_list)
-for site in site_list:
-  top_table[site] = {}
-
-  try:
-    top_table[site]['accessibility'] = rankings['accessibility'].get(site, '-')
-    top_table[site]['speed'] = rankings['speed'].get(site, '-')
-    top_table[site]['reading_age'] = rankings['reading age'].get(site, '-')
-  except KeyError as e:
-    print(repr(e))
-
-  try:
-    top_table[site]['overall'] = 2 * (site_count - list(rankings['speed']).index(site))
-  except ValueError as e:
-    ''
-  try:
-    top_table[site]['overall'] += site_count - list(rankings['accessibility']).index(site)
-  except ValueError as e:
-    ''
-  try:
-    top_table[site]['overall'] += site_count - list(rankings['reading age']).index(site)
-  except ValueError as e:
-    ''
-sorted_top_table = OrderedDict(sorted(top_table.items(), key=lambda x: x[1]['overall'], reverse=True))
-
-index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores, top_sites = sorted_top_table)
+index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores, top_sites = sorted_rankings)
 with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
   index_file.write(index)
-
