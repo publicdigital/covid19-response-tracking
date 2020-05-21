@@ -1,6 +1,6 @@
 import os
 import glob
-import json
+import orjson
 from jinja2 import Template
 import statistics
 import base64
@@ -53,7 +53,7 @@ def get_reading_ages(language_directory):
   language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
   latest_file = max(language_files_list, key=os.path.getctime)
   with open(latest_file) as lang_file:
-      return json.loads(lang_file.read())
+      return orjson.loads(lang_file.read())
 
 def get_map_of_lighthouse_data(lighthouse_folder):
   json_file_list = glob.glob(lighthouse_folder + '/*.json')
@@ -61,7 +61,7 @@ def get_map_of_lighthouse_data(lighthouse_folder):
   for json_file in json_file_list:
     try:
       json_data = open(json_file, "r").read()
-      loaded_json = json.loads(json_data)
+      loaded_json = orjson.loads(json_data)
       url = loaded_json['finalUrl']
       if not url in combined.keys():
         combined[url] = []
@@ -75,7 +75,7 @@ def get_date_indexed_lighthouse_data(json_file_list):
 
   for json_file in json_file_list:
     json_data = open(json_file, "r").read()
-    loaded_json = json.loads(json_data)
+    loaded_json = orjson.loads(json_data)
     url = loaded_json['finalUrl']
     date = loaded_json['fetchTime'].split('T')[0]
 
