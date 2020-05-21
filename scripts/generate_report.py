@@ -29,26 +29,6 @@ def translate_to_lighthouse_key(lighthouse_keys, url):
     return url_mappings[url]
   return url
 
-def generate_loading_gif(report, output_filename, url_stub):
-  try:
-    images = []
-    times = []
-
-    for item in report['audits']['screenshot-thumbnails']['details']['items']:
-      if item['data'][0:4] == 'data':
-        encoded_data = item['data'][23:]
-      else:
-        encoded_data = item['data']
-      decoded = base64.b64decode(encoded_data)
-      images.append(imageio.imread(decoded))
-      times.append(float(item['timing']) / 1000)
-
-    imageio.mimsave(output_filename, images, loop = 1, duration = times)
-    return "/reports/loading/" + url_stub + ".gif"
-  except KeyError as e:
-      print(f"Couldn't generate loading gif for {url_stub}: {report['audits']['screenshot-thumbnails']['errorMessage']}")
-      return ""
-
 def get_reading_ages(language_directory):
   language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
   latest_file = max(language_files_list, key=os.path.getctime)
@@ -194,7 +174,12 @@ with open(list_file, 'r') as f:
 
         output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
         scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
-        scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
+        #scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
+        video_filename = os.path.join(directories['reports'], "loading", clean_url + ".mp4")
+        if os.path.exists(video_filename):
+          scores['video_url'] = "/reports/loading/" + clean_url + ".mp4"
+        else:
+          scores['video_url'] = False
       except KeyError as e:
           print(f"No sign of lighthouse data for {stripped_url}")
           print(repr(e))

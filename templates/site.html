@@ -57,6 +57,13 @@
 		<h1 class="entry-title">Performance of {{site_name}}</h1>
   </header>
 
+							{% if video_url %}
+							<h2>What it feels like to watch it load</h2>
+							<p>This video shows the experience of loading the site on a (globally) average device and internet connection, compared with our highest performing site.</p>
+							<video width="816" height="360" controls>
+								<source src="{{video_url}}" type="video/mp4">
+								Your browser does not support the video tag. <a href="{{video_url}}">Click here to download the video.</a>
+							</video>
 
 	<div class="entry-content">
 		<h2>Top stats</h2>
@@ -67,8 +74,7 @@
 		<h3>Reading age</h3>
 		<p>{{reading_age}}</p>
 
-	<h2>What it feels like to watch it load</h2>
-	<p><img src="{{loading_gif_filename}}" alt="Site loading" width="120" height="192" style="height: auto; width: auto"/></p>
+							<p><img src="{{timelapse_filename}}" alt="Timelapse" /></p>
 
 	<h2>How it's changed over time</h2>
 	<p><img src="{{timelapse_filename}}" alt="Timelapse" /></p>
