@@ -1,61 +1,105 @@
-<html lang="en-GB" class="no-focus-outline jetpack-lazy-images-js-enabled wf-proximanova1-n4-active wf-active"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="profile" href="https://gmpg.org/xfn/11">
-<title>A prototype</title>
-<script src="https://public.digital/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js" type="text/javascript" async=""></script><script type="text/javascript">
- WebFontConfig = {"typekit":{"id":"jlh7aoh"}};
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'https://public.digital/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-	})();
-</script>
-<style id="jetpack-custom-fonts-css"></style>
-	<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/5.4/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
-<style id="wp-block-library-inline-css" type="text/css">
+<html lang="en-GB" class="no-focus-outline jetpack-lazy-images-js-enabled wf-proximanova1-n4-active wf-active">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<title>How do government Covid19 response sites perform?</title>
+		<script src="https://public.digital/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js" type="text/javascript" async=""></script><script type="text/javascript">
+			WebFontConfig = {"typekit":{"id":"jlh7aoh"}};
+(function() {
+	var wf = document.createElement('script');
+	wf.src = 'https://public.digital/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+	wf.type = 'text/javascript';
+	wf.async = 'true';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(wf, s);
+})();
+		</script>
+		<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/5.4/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+		<style id="wp-block-library-inline-css" type="text/css">
 .has-text-align-justify{text-align:justify;}
-</style>
-<link rel="stylesheet" id="publicdigital-style-css" href="https://public.digital/wp-content/themes/publicdigital/style.css?ver=5.4" type="text/css" media="all">
-<link rel="stylesheet" id="publicdigital-css-css" href="https://public.digital/wp-content/themes/publicdigital/dist/css/main.css?ver=5.4" type="text/css" media="all">
-<link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/8.4.2/css/jetpack.css" type="text/css" media="all">
-<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova-1","proxima-nova-2",sans-serif;}</style>
-<style type="text/css">@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
-</head>
-<body class="home page-template-default page page-id-1120 wp-custom-logo no-sidebar">
-<div id="page" class="site pd-wrapper">
-	<header id="masthead" class="site-header pd-masthead bg--coal">
-		<div class="content-area">
-			<div class="site-branding pd-masthead__logo">
+		</style>
+		<link rel="stylesheet" id="publicdigital-style-css" href="https://public.digital/wp-content/themes/publicdigital/style.css?ver=5.4" type="text/css" media="all">
+		<link rel="stylesheet" id="publicdigital-css-css" href="https://public.digital/wp-content/themes/publicdigital/dist/css/main.css?ver=5.4" type="text/css" media="all">
+		<link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/8.4.2/css/jetpack.css" type="text/css" media="all">
+		<style type="text/css">.tk-proxima-nova{font-family:"proxima-nova-1","proxima-nova-2",sans-serif;}</style>
+		<style type="text/css">@font-face{font-family:proxima-nova-1;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}</style>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+		<style type="text/css">
+h1 {
+	font-size: 4em;
+	line-height: 100%;
+}
+						#top-status th {
+							text-align: left;
+						}
+						#top-status td {
+							line-height: normal;
+							width: 200px;
+						}
+						#top-status strong {
+							font-size: 6rem;
+						}
+		</style>
+	</head>
+	<body class="home page-template-default page page-id-1120 wp-custom-logo no-sidebar">
+		<div id="page" class="site pd-wrapper">
+			<header id="masthead" class="site-header pd-masthead bg--coal">
+				<div class="content-area">
+					<div class="site-branding pd-masthead__logo">
 						<a href="/reports/">How do government Covid19 response sites perform?</a>
-			</div><!-- .site-branding -->
+					</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation pd-nav">
-				<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-				<ul id="primary-menu" class="menu">
-          <li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="/">Home</a></li>
-</ul>			</nav><!-- #site-navigation -->
+					<nav id="site-navigation" class="main-navigation pd-nav">
+						<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+						<ul id="primary-menu" class="menu">
+							<li id="menu-item-929" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-929"><a href="/">Home</a></li>
+						</ul>			</nav><!-- #site-navigation -->
 
-			</div><!-- .content-area -->
+				</div><!-- .content-area -->
 
-	</header><!-- #masthead -->
-
-
-
-	<main id="content" class="site-content pd-container">
+			</header><!-- #masthead -->
 
 
-	<div id="primary" class="content-area">
+
+			<main id="content" class="site-content pd-container">
 
 
-<article class="post-1120 page type-page status-publish has-post-thumbnail hentry">
-	<header class="entry-header">
-		<h1 class="entry-title">Performance of {{site_name}}</h1>
-  </header>
+				<div id="primary" class="content-area">
+
+
+					<article class="post-1120 page type-page status-publish has-post-thumbnail hentry">
+						<header class="entry-header">
+							<h1 class="entry-title">Performance of {{site_name}}</h1>
+						</header>
+
+
+						<div class="entry-content">
+							<table id="top-status">
+								<thead>
+									<tr>
+										<th>Speed</th>
+										<th>Accessibility</th>
+										<th>Reading age</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<strong>{{current_speed}}</strong>
+											{% if average_speed %}<br />Average: {{average_speed|round(2)}}{%else%}-{%endif%}
+										</td>
+										<td>
+											<strong>{{current_accessibility}}</strong>
+											{% if average_accessibility %}Average: {{average_accessibility|round(2)}}{% else %}-{%endif%}
+										</td>
+										<td>
+											{% set reading_age_parts = reading_age.split() %}
+											<strong>{{reading_age_parts[0]}}</strong>
+											<br />{{reading_age_parts[1:]|join(' ')}}</td>
+									</tr>
+								</tbody>
+							</table>
 
 							{% if video_url %}
 							<h2>What it feels like to watch it load</h2>
