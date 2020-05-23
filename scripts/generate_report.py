@@ -9,7 +9,6 @@ from collections import OrderedDict
 import c19utils
 import re
 from datetime import date
-import csv
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -169,7 +168,6 @@ def build_top_table(site_list, rankings):
 
 directories = c19utils.establish_directories()
 
-list_file = os.path.join(directories['base'], 'list.csv')
 page_tmpl_file = os.path.join(directories['templates'], 'site.html')
 index_tmpl_file = os.path.join(directories['templates'], 'index.html')
 
@@ -186,10 +184,7 @@ with open(index_tmpl_file) as tmpl:
 top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 
-with open(list_file, newline='') as f:
-  reader = csv.DictReader(f)
-  for line in reader:
-      stripped_url = line['URL'].strip()
+for stripped_url in c19utils.CovidURLList():
       scores = {}
       clean_url = c19utils.filter_bad_filename_chars(stripped_url)
       url_stub = clean_url[0:100]

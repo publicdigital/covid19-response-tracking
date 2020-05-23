@@ -7,7 +7,6 @@ import json
 from datetime import datetime
 import os
 import c19utils
-import csv
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
 directories = c19utils.establish_directories(formatted_date)
@@ -43,11 +42,7 @@ markdown_file = open(os.path.join(directories['base'], "language-analysis.md"), 
 markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
 markdown_file.write(" | --- | --- | --- |\n")
 
-list_file = os.path.join(directories['base'], 'list.csv')
-with open(list_file, newline='') as f:
-  reader = csv.DictReader(f)
-  for line in reader:
-    url = line['URL'].strip()
+for url in c19utils.CovidURLList():
     output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
 
     try:
