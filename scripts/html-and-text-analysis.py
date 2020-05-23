@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 import os
 import c19utils
+import csv
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
 directories = c19utils.establish_directories(formatted_date)
@@ -42,34 +43,36 @@ markdown_file = open(os.path.join(directories['base'], "language-analysis.md"), 
 markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
 markdown_file.write(" | --- | --- | --- |\n")
 
-fl = open(os.path.join(directories['base'], 'list.txt'))
-for raw_url in fl:
-  url = raw_url.strip()
-  output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
+list_file = os.path.join(directories['base'], 'list.csv')
+with open(list_file, newline='') as f:
+  reader = csv.DictReader(f)
+  for line in reader:
+    url = line['URL'].strip()
+    output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
 
-  try:
-    downloaded = requests.get(url).text
-  except Exception as e:
-    traf_msg = repr(e)
-    markdown_file.write(f" | {url} | {traf_msg} | |")
-    output_for_json[url]['error'] = traf_msg
-    continue
+    try:
+      downloaded = requests.get(url).text
+    except Exception as e:
+      traf_msg = repr(e)
+      markdown_file.write(f" | {url} | {traf_msg} | |")
+      output_for_json[url]['error'] = traf_msg
+      continue
 
-  # First thing we do is capture the HTML
-  try:
-    output_filename = os.path.join(directories['today'], ('%s.html' % c19utils.filter_bad_filename_chars(url)))
-    html_file = open(output_filename, "w")
-    html_file.write(downloaded)
-    html_file.close()
-  except:
-    # For now we don't worry if it doesn't save, we just let the user know
-    print(f"Failed to store HTML for {url}")
+    # First thing we do is capture the HTML
+    try:
+      output_filename = os.path.join(directories['today'], ('%s.html' % c19utils.filter_bad_filename_chars(url)))
+      html_file = open(output_filename, "w")
+      html_file.write(downloaded)
+      html_file.close()
+    except:
+      # For now we don't worry if it doesn't save, we just let the user know
+      print(f"Failed to store HTML for {url}")
 
-  try:
-    traf_text = process_trafilatura(downloaded)
-    output_for_json[url]['trafilatura'] = get_scores(traf_text)
-    traf_msg = output_for_json[url]['trafilatura']['standard']
-  except Exception as e:
+    try:
+      traf_text = process_trafilatura(downloaded)
+      output_for_json[url]['trafilatura'] = get_scores(traf_text)
+      traf_msg = output_for_json[url]['trafilatura']['standard']
+    except Exception as e:
       output_for_json[url]['trafilatura'] = {'error' : repr(e)}
 
 #  try:
@@ -78,12 +81,11 @@ for raw_url in fl:
 #    dragnet_msg = output_for_json[url]['dragnet']['standard']
 #  except Exception as e:
 #    output_for_json[url]['dragnet'] = {'error' : repr(e)}
-  dragnet_msg = ""
+    dragnet_msg = ""
 
-  markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
-  markdown_file.write("\n")
+    markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
+    markdown_file.write("\n")
 
-fl.close()
 markdown_file.close()
 
 json_filename = os.path.join(directories['languages'], ('%s.json' % formatted_date))

@@ -9,6 +9,7 @@ from collections import OrderedDict
 import c19utils
 import re
 from datetime import date
+import csv
 
 url_mappings = {
   'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
@@ -17,7 +18,8 @@ url_mappings = {
   'https://www.govt.nz/covid-19-novel-coronavirus/': 'https://covid19.govt.nz/',
   'https://en.ssi.dk': 'https://en.ssi.dk/',
   'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
-  'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/'
+  'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/',
+  'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov'
         }
 
 # The lighthouse key isn't guaranteed to match the URL
@@ -167,7 +169,7 @@ def build_top_table(site_list, rankings):
 
 directories = c19utils.establish_directories()
 
-list_file = os.path.join(directories['base'], 'list.txt')
+list_file = os.path.join(directories['base'], 'list.csv')
 page_tmpl_file = os.path.join(directories['templates'], 'site.html')
 index_tmpl_file = os.path.join(directories['templates'], 'index.html')
 
@@ -184,9 +186,10 @@ with open(index_tmpl_file) as tmpl:
 top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 
-with open(list_file, 'r') as f:
-  for url in f:
-      stripped_url = url.strip()
+with open(list_file, newline='') as f:
+  reader = csv.DictReader(f)
+  for line in reader:
+      stripped_url = line['URL'].strip()
       scores = {}
       clean_url = c19utils.filter_bad_filename_chars(stripped_url)
       url_stub = clean_url[0:100]

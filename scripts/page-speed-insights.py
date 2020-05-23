@@ -2,15 +2,16 @@ import os
 import requests
 from datetime import datetime
 import c19utils
+import csv
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
 directories = c19utils.establish_directories(formatted_date)
 
-list_file = os.path.join(directories['base'], 'list.txt')
-
-with open(list_file, 'r') as fl:
-  for raw_url in fl:
-    url = raw_url.strip()
+list_file = os.path.join(directories['base'], 'list.csv')
+with open(list_file, newline='') as f:
+  reader = csv.DictReader(f)
+  for line in reader:
+    url = line['URL'].strip()
     psi_url = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=" + url
     print("Requesting Page Speed Insights for:", url)
 
