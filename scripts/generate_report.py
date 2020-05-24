@@ -18,8 +18,9 @@ url_mappings = {
   'https://en.ssi.dk': 'https://en.ssi.dk/',
   'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
   'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/',
-  'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov'
-        }
+  'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov',
+  'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov'
+    }
 
 # The lighthouse key isn't guaranteed to match the URL
 # so allow for variance (but don't implement it yet)
@@ -34,7 +35,7 @@ def get_reading_ages(language_directory):
   language_files_list = glob.glob(os.path.join(language_directory, "*.json"))
   latest_file = max(language_files_list, key=os.path.getctime)
   with open(latest_file) as lang_file:
-      return orjson.loads(lang_file.read())
+    return orjson.loads(lang_file.read())
 
 def get_map_of_lighthouse_data(lighthouse_folder):
   json_file_list = glob.glob(lighthouse_folder + '/*.json')
@@ -46,9 +47,9 @@ def get_map_of_lighthouse_data(lighthouse_folder):
       url = loaded_json['finalUrl']
       if not url in combined.keys():
         combined[url] = []
-      combined[url].append(json_file)
+        combined[url].append(json_file)
     except KeyError as e:
-        raise e
+      raise e
   return combined
 
 def get_date_indexed_lighthouse_data(json_file_list):
@@ -109,9 +110,9 @@ def calculate_scores(latest_date, extracted, data):
       calculations['average_speed'] = statistics.mean(extracted_speed)
       calculations['current_speed'] = data[latest_date]['categories']['performance']['score']
   except Exception as err:
-      print(repr(err))
-      print(f"Problem with {url}")
-      raise err
+    print(repr(err))
+    print(f"Problem with {url}")
+    raise err
   return calculations
 
 def find_reading_age(language_data):
@@ -135,7 +136,6 @@ def build_combined_rankings(avg_scores):
   for consideration in rankings:
     d_sorted_by_value = OrderedDict(sorted(avg_scores[consideration].items(), key=lambda x: x[1],  reverse=True))
     rankings[consideration] = d_sorted_by_value
-
   rankings['reading age'] = OrderedDict(sorted(avg_scores['reading age'].items(), key=lambda x: x[1]))
   return rankings
 
@@ -184,61 +184,60 @@ with open(index_tmpl_file) as tmpl:
 top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 
-for stripped_url in c19utils.CovidURLList():
-      scores = {}
-      clean_url = c19utils.filter_bad_filename_chars(stripped_url)
-      url_stub = clean_url[0:100]
-      loading_gif_filename = os.path.join(directories['loading'], url_stub + ".gif")
+for site in c19utils.CovidSiteList():
+  stripped_url = site['URL']
+  scores = {}
+  clean_url = c19utils.filter_bad_filename_chars(stripped_url)
+  url_stub = clean_url[0:100]
 
-      try:
-        key = translate_to_lighthouse_key(lighthouse_index.keys(), stripped_url)
-        site_data = get_date_indexed_lighthouse_data(lighthouse_index[key])
+  try:
+    key = translate_to_lighthouse_key(lighthouse_index.keys(), stripped_url)
+    site_data = get_date_indexed_lighthouse_data(lighthouse_index[key])
 
-        dates_covered = list(site_data.keys())
-        dates_covered.sort()
-        latest_date = dates_covered[-1]
+    dates_covered = list(site_data.keys())
+    dates_covered.sort()
+    latest_date = dates_covered[-1]
 
-        extracted_scores = extract_scores(site_data, dates_covered)
-        scores = calculate_scores(latest_date, extracted_scores, site_data)
+    extracted_scores = extract_scores(site_data, dates_covered)
+    scores = calculate_scores(latest_date, extracted_scores, site_data)
 
-        top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
-        top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
-        avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
-        avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
+    top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
+    top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
+    avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
+    avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
 
-        output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
-        scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
-        #scores['loading_gif_filename'] = generate_loading_gif(site_data[latest_date], loading_gif_filename, url_stub)
-        video_filename = os.path.join(directories['reports'], "loading", clean_url + ".mp4")
-        if os.path.exists(video_filename):
-          scores['video_url'] = "/reports/loading/" + clean_url + ".mp4"
-        else:
-          scores['video_url'] = False
-      except KeyError as e:
-          print(f"No sign of lighthouse data for {stripped_url}")
-          print(repr(e))
-          raise e
+    output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
+    scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
+    video_filename = os.path.join(directories['reports'], "loading", clean_url + ".mp4")
+    if os.path.exists(video_filename):
+      scores['video_url'] = "/reports/loading/" + clean_url + ".mp4"
+    else:
+      scores['video_url'] = False
+  except KeyError as e:
+      print(f"No sign of lighthouse data for {stripped_url}")
+      print(repr(e))
+      raise e
 
-      with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
-        scores['site_name'] = stripped_url
-        try:
-          scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
-          if scores['reading age']:
-            extracted_numbers = re.search(r'\d+', scores['reading age'])
-            if extracted_numbers:
-              score_to_use = int(extracted_numbers.group())
-              top_scores['reading age'][stripped_url] = score_to_use
-              # TODO: Replace this with proper averages
-              avg_scores['reading age'][stripped_url] = score_to_use
-        except KeyError:
-          scores['reading age'] = 'tbd'
+  with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
+    scores['site_name'] = stripped_url
+    try:
+      scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
+      if scores['reading age']:
+        extracted_numbers = re.search(r'\d+', scores['reading age'])
+        if extracted_numbers:
+          score_to_use = int(extracted_numbers.group())
+          top_scores['reading age'][stripped_url] = score_to_use
+          # TODO: Replace this with proper averages
+          avg_scores['reading age'][stripped_url] = score_to_use
+    except KeyError:
+      scores['reading age'] = 'tbd'
 
-        scores['reading_age'] = scores['reading age']
-        scores['over_time'] = extracted_scores
-        output = page_template.render(scores)
-        report.write(output)
-        site_list[stripped_url] = "/reports/" + url_stub + ".html"
-        print("Produced report for ",url_stub)
+    scores['reading_age'] = scores['reading age']
+    scores['over_time'] = extracted_scores
+    output = page_template.render(scores)
+    report.write(output)
+    site_list[stripped_url] = { 'gov_name': site['Government name'], 'detail': "/reports/" + url_stub + ".html" }
+    print("Produced report for ",url_stub)
 
 rankings = build_combined_rankings(avg_scores)
 sorted_rankings = build_top_table(site_list, rankings)
