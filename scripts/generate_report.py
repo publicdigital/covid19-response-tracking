@@ -129,7 +129,7 @@ def find_reading_age(language_data):
 
 def generate_timelapse(url_stub, root_directory, output_file):
     os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
-    return f"/reports/timelapses/{url_stub}.gif"
+    return f"/timelapses/{url_stub}.gif"
 
 def build_combined_rankings(avg_scores):
   rankings = { 'speed' : [], 'accessibility': []}
@@ -210,7 +210,7 @@ for site in c19utils.CovidSiteList():
     scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
     video_filename = os.path.join(directories['reports'], "loading", clean_url + ".mp4")
     if os.path.exists(video_filename):
-      scores['video_url'] = "/reports/loading/" + clean_url + ".mp4"
+      scores['video_url'] = "/loading/" + clean_url + ".mp4"
     else:
       scores['video_url'] = False
   except KeyError as e:
@@ -236,7 +236,7 @@ for site in c19utils.CovidSiteList():
     scores['over_time'] = extracted_scores
     output = page_template.render(scores)
     report.write(output)
-    site_list[stripped_url] = { 'gov_name': site['Government name'], 'detail': "/reports/" + url_stub + ".html" }
+    site_list[stripped_url] = { 'gov_name': site['Government name'], 'detail': "/" + url_stub + ".html" }
     print("Produced report for ",url_stub)
 
 rankings = build_combined_rankings(avg_scores)
