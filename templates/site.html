@@ -73,7 +73,7 @@ h1 {
 										</td>
 										<td>
 											<strong>{{current_accessibility}}</strong>
-											{% if average_accessibility %}Average: {{average_accessibility|round(2)}}{% else %}-{%endif%}
+											{% if average_accessibility %}<br />Average: {{average_accessibility|round(2)}}{% else %}-{%endif%}
 										</td>
 										<td>
 											{% set reading_age_parts = reading_age.split() %}
