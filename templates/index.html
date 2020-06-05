@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en-GB" class="no-focus-outline jetpack-lazy-images-js-enabled wf-proximanova1-n4-active wf-active"><head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +16,11 @@
 })();
 		</script>
 		<style id="jetpack-custom-fonts-css"></style>
-		<link rel="stylesheet" id="wp-block-library-css" href="https://c0.wp.com/c/5.4/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
 		<style id="wp-block-library-inline-css" type="text/css">
 .has-text-align-justify{text-align:justify;}
 		</style>
-		<link rel="stylesheet" id="publicdigital-style-css" href="https://public.digital/wp-content/themes/publicdigital/style.css?ver=5.4" type="text/css" media="all">
-		<link rel="stylesheet" id="publicdigital-css-css" href="https://public.digital/wp-content/themes/publicdigital/dist/css/main.css?ver=5.4" type="text/css" media="all">
-		<link rel="stylesheet" id="jetpack_css-css" href="https://c0.wp.com/p/jetpack/8.4.2/css/jetpack.css" type="text/css" media="all">
-		<link rel="dns-prefetch" href="//widgets.wp.com">
-		<link rel="dns-prefetch" href="//jetpack.wordpress.com">
-		<link rel="dns-prefetch" href="//s0.wp.com">
-		<link rel="dns-prefetch" href="//s1.wp.com">
-		<link rel="dns-prefetch" href="//s2.wp.com">
-		<link rel="dns-prefetch" href="//public-api.wordpress.com">
-		<link rel="dns-prefetch" href="//c0.wp.com">
+		<link rel="dns-prefetch" href="https://use.typekit.net">
+		<link rel="stylesheet" href="/styles.pure.css" type="text/css" media="all">
 
 		<!-- There is no amphtml version available for this URL. -->
 		<meta name="msapplication-TileImage" content="https://s0.wp.com/i/webclip.png">
@@ -72,7 +64,7 @@
 					<p>If you want to understand the methodology, you can <a href="https://github.com/jystewart/covid19-response-screenshots">find the raw data and code on github</a>. If you want to provide feedback (and we'd really appreciate that), please <a href="mailto:james@public.digital">email James Stewart</a>.</p>
 
 					<div class="entry-content">
-						<table>
+						<table id="site-results">
 							<thead>
 								<th>Government</th>
 								<th>Site</th>
@@ -111,5 +103,12 @@
 
 				</div><!-- .content-area -->
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.number.min.js"></script>
+		<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function() {
+			 new Tablesort(document.getElementById('site-results'));
+		});
+		<!-- #page -->
 	</body></html>
