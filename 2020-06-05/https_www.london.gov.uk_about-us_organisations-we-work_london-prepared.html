@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+  <!--[if IEMobile 7]><html class="no-js ie iem7" lang="en-GB" dir="ltr"><![endif]-->
+  <!--[if lte IE 6]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en-GB" dir="ltr"><![endif]-->
+  <!--[if (IE 7)&(!IEMobile)]><html class="no-js ie lt-ie9 lt-ie8" lang="en-GB" dir="ltr"><![endif]-->
+  <!--[if IE 8]><html class="no-js ie lt-ie9" lang="en-GB" dir="ltr"><![endif]-->
+  <!--[if IE 9]><html class="no-js ie lt-ie10" lang="en-GB" dir="ltr"><![endif]-->
+  <!--[if (gte IE 9)|(gt IEMobile 7)]><html class="no-js ie" lang="en-GB" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><![endif]-->
+  <!--[if !IE]><!-->
+  <html class="no-js" lang="en-GB" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+  <!--[if IE]><![endif]-->
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"9616c02dfb",applicationID:"14322558"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<link href="/sites/all/themes/gla/images/favicons/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32" />
+<link href="/sites/all/themes/gla/images/favicons/favicon-16x16.png" rel="icon" type="image/png" sizes="16x16" />
+<link href="/sites/all/themes/gla/images/favicons/favicon-96x96.png" rel="icon" type="image/png" sizes="96x96" />
+<link href="/sites/all/themes/gla/images/favicons/favicon-194x194.png" rel="icon" type="image/png" sizes="194x194" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+<meta name="apple-mobile-web-app-title" content="London City Hall" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+<meta name="application-name" content="London City Hall" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="theme-color" content="#313a3d" />
+<meta name="MobileOptimized" content="width" />
+<!--[if (IEMobile)]><meta http-equiv="cleartype" content="on" />
+<![endif]--><meta name="keywords" content="" />
+<meta name="msapplication-config" content="/sites/all/themes/gla/images/favicons/browserconfig.xml" />
+<meta name="msapplication-TileImage" content="/sites/all/themes/gla/images/favicons/mstile-144x144.png" />
+<link rel="icon" type="image/png" href="/sites/all/themes/gla/images/favicons/android-chrome-192x192.png" sizes="192x192" />
+<link rel="manifest" href="/sites/all/themes/gla/images/favicons/manifest.json" />
+<link rel="shortcut icon" href="/sites/all/themes/gla/images/favicons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#313a3d" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes="60x60" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72" />
+<link href="/sites/all/themes/gla/images/favicons/apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes="57x57" />
+<link rel="profile" href="https://www.w3.org/1999/xhtml/vocab" />
+<meta name="description" content="Ensuring London is ready to prevent, respond, recover and learn from emergencies." />
+<meta name="viewport" content="width=device-width" />
+<link rel="canonical" href="https://www.london.gov.uk//what-we-do/fire-and-resilience/london-resilience-partnership" />
+<link rel="shortlink" href="https://www.london.gov.uk//node/14956" />
+<meta property="og:site_name" content="London City Hall" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.london.gov.uk//what-we-do/fire-and-resilience/london-resilience-partnership" />
+<meta property="og:title" content="London Resilience Partnership" />
+<meta property="og:description" content="Ensuring London is ready to prevent, respond, recover and learn from emergencies." />
+<meta property="og:updated_time" content="2020-04-08T21:39:34+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="LDN_gov" />
+<meta name="twitter:creator" content="LDN_gov" />
+<meta name="twitter:url" content="https://www.london.gov.uk//what-we-do/fire-and-resilience/london-resilience-partnership" />
+<meta name="twitter:title" content="London Resilience Partnership" />
+<meta name="twitter:description" content="Ensuring London is ready to prevent, respond, recover and learn from emergencies." />
+<meta property="article:published_time" content="2015-10-14T12:22:31+01:00" />
+<meta property="article:modified_time" content="2020-04-08T21:39:34+01:00" />
+  <link type="text/css" rel="stylesheet" href="https://www.london.gov.uk/sites/default/files/css/css_kxh_CpaqwDoB1jkesFpDyLcSJDmUjO1nTX4GMq2XRuU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="https://www.london.gov.uk/sites/default/files/css/css__cSra81FC5flHoW2qk6c5tLXyLTEo_tUPyGCsBGvONo.css" media="all" />
+<style>#sliding-popup.sliding-popup-top,#sliding-popup.sliding-popup-top .eu-cookie-withdraw-banner,.eu-cookie-withdraw-tab{background:#C2C5C6;}#sliding-popup.sliding-popup-top.eu-cookie-withdraw-wrapper{background:transparent}#sliding-popup .popup-content #popup-text h1,#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text h3,#sliding-popup .popup-content #popup-text p,.eu-cookie-compliance-secondary-button,.eu-cookie-withdraw-tab{color:#000000 !important;}.eu-cookie-withdraw-tab{border-color:#000000;}#sliding-popup.sliding-popup-top{position:fixed;}
+</style>
+<link type="text/css" rel="stylesheet" href="https://www.london.gov.uk/sites/default/files/css/css_odtdNm6pEGAdN355YTbyAZwH2t3lBOQ3xY-vcpO3bgo.css" media="all" />
+
+<!--[if lte IE 8]>
+<link type="text/css" rel="stylesheet" href="https://www.london.gov.uk/sites/default/files/css/css_rlejMR4XBItdGtEDmE-myjDpICJBtYOy6fbp4QG-CvU.css" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="https://www.london.gov.uk/sites/default/files/css/css_V7i4s2rf5CJymeaHPrwFhN6x-outfhC9P9E4KonMBxo.css" media="all" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/jquery/1.8/jquery.min.js'>\x3C/script>")</script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js__MqYw-qrk3I0iPo4TLFDDePZ4IPoW4wPInjfMwBbcz0.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"gla","theme_token":"ty_RyvCscknV8nnKJPjUVDxtQLc4LptMYNRRO8HaIXE","jquery_version":"1.8","js":{"0":1,"1":1,"sites\/all\/modules\/custom\/gla_scribblelive\/js\/scribblelive.js":1,"sites\/all\/modules\/custom\/gla_webform_ga_campaign\/js\/ga-webform-component.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.8.3\/jquery.min.js":1,"2":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/themes\/omega\/omega\/js\/no-js.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"sites\/all\/themes\/gla\/js\/gla.debouncer.js":1,"sites\/all\/themes\/gla\/js\/contrib\/modernizr.min.js":1,"sites\/all\/libraries\/yepnope\/yepnope.min.js":1,"sites\/all\/themes\/gla\/js\/gla.priority.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"3":1,"sites\/all\/modules\/contrib\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/states.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/contrib\/fitvids\/fitvids.js":1,"sites\/all\/modules\/contrib\/geofield_gmap\/geofield_gmap.js":1,"sites\/all\/modules\/custom\/gla_external_link\/js\/gla-external-link.js":1,"sites\/all\/modules\/custom\/gla_wysiwyg_plugins\/js\/gla_wysiwyg_plugins.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_load.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox_inline.js":1,"4":1,"\/\/platform.twitter.com\/widgets.js":1,"sites\/all\/modules\/features\/settings\/gla_cookies_settings\/js\/gla_cookies_settings.js":1,"sites\/all\/modules\/custom\/user_prompt\/user_prompt.js":1,"sites\/all\/modules\/features\/shared_components\/gla_search\/js\/autocomplete.js":1,"sites\/all\/libraries\/chosen\/chosen.jquery.min.js":1,"sites\/all\/modules\/contrib\/fivestar\/js\/fivestar.js":1,"misc\/textarea.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/webform\/js\/webform.js":1,"sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.js":1,"sites\/all\/modules\/contrib\/chosen\/chosen.js":1,"sites\/all\/themes\/gla\/js\/contrib\/appendAround.js":1,"sites\/all\/themes\/gla\/js\/contrib\/jquery.uniform.min.js":1,"sites\/all\/themes\/gla\/js\/contrib\/jquery.matchHeight-min.js":1,"sites\/all\/themes\/gla\/js\/contrib\/jquery.flexslider-min.js":1,"sites\/all\/themes\/gla\/js\/contrib\/smooth-scroll.js":1,"sites\/all\/themes\/gla\/js\/gla.accordion.js":1,"sites\/all\/themes\/gla\/js\/gla.campaign-timeline.js":1,"sites\/all\/themes\/gla\/js\/gla.behaviors.js":1,"sites\/all\/themes\/gla\/js\/contrib\/responsive-tables.js":1,"sites\/all\/themes\/gla\/js\/gla.feedback-form.js":1,"sites\/all\/themes\/gla\/js\/gla-campaign-menu.js":1,"sites\/all\/themes\/gla\/js\/gla-campaign-news.js":1,"sites\/all\/themes\/gla\/js\/gla-homepage-news.js":1,"sites\/all\/themes\/gla\/js\/gla-campaign-sharethis.js":1},"css":{"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.base.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.menus.theme.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.messages.theme.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/colorbox_node\/colorbox_node.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/fitvids\/fitvids.css":1,"sites\/all\/modules\/contrib\/geofield_gmap\/geofield_gmap.css":1,"sites\/all\/modules\/custom\/gla_wysiwyg_plugins\/css\/gla_wysiwyg_plugins.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/field\/field.theme.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/user\/user.base.css":1,"sites\/all\/themes\/omega\/omega\/css\/modules\/user\/user.theme.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.menu.css":1,"misc\/ui\/jquery.ui.autocomplete.css":1,"sites\/all\/libraries\/chosen\/chosen.css":1,"sites\/all\/modules\/contrib\/chosen\/css\/chosen-drupal.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/twitter_pull\/twitter-pull-listing.css":1,"sites\/all\/modules\/contrib\/print\/print_ui\/css\/print_ui.theme.css":1,"sites\/all\/modules\/custom\/gla_scribblelive\/css\/scribblelive.css":1,"sites\/all\/modules\/contrib\/fivestar\/css\/fivestar.css":1,"sites\/default\/files\/honeypot\/honeypot.css":1,"sites\/all\/modules\/contrib\/webform\/css\/webform.css":1,"0":1,"sites\/all\/themes\/gla\/css\/gla.normalize.css":1,"sites\/all\/themes\/gla\/css\/gla.hacks.css":1,"sites\/all\/themes\/gla\/css\/gla.styles.css":1,"sites\/all\/themes\/gla\/css\/layouts\/gla-base\/gla-base.layout.css":1,"sites\/all\/themes\/gla\/css\/gla.no-query.css":1,"all:0":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"320px"},"fitvids":{"custom_domains":[],"selectors":[".field--name-field-video",".field--type-text-long"],"simplifymarkup":true},"gla_scribblelive":{"basepath":"sites\/all\/modules\/custom\/gla_scribblelive\/js\/","apiToken":"8JQvvDNH"},"gaWebformComponent":{"cookieName":"drupal_ga_campaign_cookie","cookiePath":"\/"},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":0,"popup_scrolling_confirmation":0,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Cp\u003EWe use cookies to ensure that we give you the best experience on our website.\u003C\/p\u003E\n              \u003Ca href=\u0022\/about-us\/governance-and-spending\/privacy-policies\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button agree-button eu-cookie-compliance-default-button\u0022\u003ERead more about our cookie policy\u003C\/a\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Ca tabindex=\u00220\u0022 type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EOK, got it\u003C\/a\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n                    \u003Ca href=\u0022\/about-us\/governance-and-spending\/privacy-policies\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button agree-button eu-cookie-compliance-default-button\u0022\u003ERead more about our cookie policy\u003C\/a\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Ca tabindex=\u00220\u0022 type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-default-button\u0022\u003EOK, got it\u003C\/a\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class=\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting cookies\u003C\/h2\u003E\n\u003Cp\u003EYou can now hide this message or find out more about cookies.\u003C\/p\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":false,"popup_height":"auto","popup_width":"100%","popup_delay":1000,"popup_link":"\/cookies","popup_link_new_window":1,"popup_position":true,"popup_language":"en","store_consent":true,"better_support_for_screen_readers":0,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"default","whitelisted_cookies":"","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003E\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003E\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"gla_search_autocomplete_list":"\/sites\/all\/modules\/features\/shared_components\/gla_search\/custom_autocomplete.php?type=jquery-ui\u0026limit=10","states":{"#edit-field-regeneration-tags":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"296"}}},"#edit-field-lsep-cohort":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-key-stage":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-subject":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-type":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-year":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-low-prior-attainers":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-school-phase":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-borough":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-school-visit-possible":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-regeneration-tags--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"296"}}},"#edit-field-lsep-cohort--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-key-stage--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-subject--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-type--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-lsep-year--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-low-prior-attainers--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-school-phase--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-borough--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}},"#edit-field-sfs-school-visit-possible--2":{"invisible":{":input[name^=\u0027og_group_ref\u0027].form-select":{"!value":"274"}}}},"urlIsAjaxTrusted":{"\/search":true,"\/system\/ajax":true,"\/what-we-do\/fire-and-resilience\/london-resilience-partnership":true},"webform":{"conditionals":{"webform-client-form-44532":{"ruleGroups":{"rgid_0":{"andor":null,"actions":{"aid_0":{"target":"webform-component--feedback-type","invert":0,"action":"show","argument":""}},"rules":{"rid_0":{"source_type":"component","source":"webform-component--rating","value":"0","callback":"conditionalOperatorStringContains"}}},"rgid_1":{"andor":null,"actions":{"aid_0":{"target":"webform-component--feedback","invert":0,"action":"show","argument":""}},"rules":{"rid_0":{"source_type":"component","source":"webform-component--feedback-type","value":"","callback":"conditionalOperatorStringNotEmpty"}}}},"sourceMap":{"webform-component--rating":{"rgid_0":"rgid_0"},"webform-component--feedback-type":{"rgid_1":"rgid_1"}},"values":[]}}},"chosen":{"selector":".node-form select:not([name*=\u0027day\u0027],[name*=\u0027year\u0027],[name*=\u0027month\u0027],[multiple]),#edit-menu-parent,.adminimal-theme select:not([name*=\u0027day\u0027],[name*=\u0027year\u0027],[name*=\u0027month\u0027],[multiple])","minimum_single":5,"minimum_multiple":10,"minimum_width":350,"options":{"disable_search":false,"disable_search_threshold":0,"search_contains":true,"placeholder_text_multiple":"Choose some options","placeholder_text_single":"Choose an option","no_results_text":"No results match","inherit_select_classes":true,"include_group_label_in_selected":true}},"ajax":{"edit-webform-ajax-submit-44532":{"callback":"webform_ajax_callback","wrapper":"webform-ajax-wrapper-44532","progress":{"message":"","type":"throbber"},"event":"click","url":"\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Submit"}}},"colorbox_node":{"width":"600px","height":"600px"},"ogContext":{"groupType":"node","gid":"275"},"themePath":"\/sites\/all\/themes\/gla","eventsPagePath":"\/events"});</script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_E-TlfgH8rOQEEZ2gKLtMcwmzswu0-gMl0h8Gep_EzxY.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script>window.jQuery.ui || document.write("<script src='/sites/all/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")</script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_Yo1lwbB7VFR1PtoNPaQKwfScjw0_ZmGeDxFRmDuqGhY.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_hUcV9xg-08X-AEKvb353LcKSfMsrx_2g4I2qa6hzi-E.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_1slRyOozH6d9GG-d1i76DGbLnqn4FUgyJB9ErnmKWBs.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script src="//platform.twitter.com/widgets.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_WLrl7hwuqo2epWKAvxG0hixcvssVxoa8hRfnVBMUwrs.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_Rtb1uQ-9a9xYFtBvinQ5D1YC7_O8e6CI4dXsof86sp8.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_t_fP_yDFcRySdjwUUCLJOgDt9AMkreMT7DKbv2HrIB0.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_Qfyr9I3qhIzbsghdlNdBzzZWKNIChsJJehN3ySpZdcs.js"></script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <title>London Resilience Partnership | London City Hall</title>
+<script type="text/javascript" src="/sites/all/modules/custom/user_prompt/js/splash_screen.min.js?1"></script></head>
+<body  id="top" class="html not-front not-logged-in page-node page-node- page-node-14956 node-type-topic-landing-page hide-main-menu-toggle main-gla-site og-context og-context-node og-context-node-275 section-what-we-do node--type--mayoral  no-sidebars has-sticky-header paragraphs-migrated"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function()
+{ (i[r].q=i[r].q||[]).push(arguments)}
+,i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-741115-88', 'auto', 'newtracker');
+ga('newtracker.send', 'pageview');</script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXBTQP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script>
+  dataLayer = [];
+</script><!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KXBTQP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+{'gtm.start': new Date().getTime(),event:'gtm.js'}
+);var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KXBTQP');</script>
+<!-- End Google Tag Manager -->
+<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+    <div class="l-gla-base l-page has-no-sidebars">
+  <div class="stick-to-top" data-sticky-region="header">
+    <section class="l-info l-constrained">
+        <div class="l-region l-region--info">
+    <div id="block-user-prompt-user-prompt" class="block block--user-prompt block--user-prompt-user-prompt">
+        <div class="block__content">
+    <div  data-user-prompt="dd4end" data-user-prompt-crisis="1" class="user-prompt user-prompt--crisis user-prompt--colour-scheme-default">
+  <div class="user-prompt__focus-container clearfix">
+    <button class="js-no-uniform user-prompt--button__close">✕</button>
+    <div  class="user-prompt--body">
+                  
+      
+                          <img src="https://www.london.gov.uk/sites/default/files/stay_home_992x496_rev1.png"/>
+        
+                          <p><center><strong>Stop the spread. Stay at home. Save lives.</strong><br>Get information and guidance on the coronavirus outbreak.</center></p>
+        
+          </div>
+
+    <div class="user-prompt--button--container">
+              <div class="user-prompt--wrapper">
+          <a href="https://www.london.gov.uk/coronavirus" data-mh="user-prompt" class="user-prompt--button user-prompt--button__yes">Visit the coronavirus guidance hub</a>        </div>
+                    <div class="user-prompt--wrapper">
+          <button
+            class="js-no-uniform user-prompt--button user-prompt--button__no"
+            data-mh="user-prompt">Close</button>
+        </div>
+      
+          </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+    </section>
+    <header class="l-header l-constrained" role="banner">
+      <div class="l-top-branding-wrapper">
+          <div class="l-region l-region--branding">
+    <div id="block-gla-blocks-branding-logo-links" class="block block--gla-blocks block--gla-blocks-branding-logo-links">
+        <div class="block__content">
+    <span class="logo-links-wrapper"><a href="/" class="branding-link"><span class="element-invisible">The official site of</span><span class="branding-logo branding-logo--mayor-of-london">the Mayor of London</span><span class="branding-logo branding-logo--london-assembly">and the London Assembly</span></a></span>  </div>
+</div>
+  </div>
+          <div class="l-region l-region--search" data-set="main-search">
+    <span aria-label="search form" class="element-invisible">This is a dynamic search form and results will populate below the input as you type.</span><div id="block-gla-search-search-block" class="block block--gla-search block--gla-search-search-block">
+        <div class="block__content">
+    <form role="search" class="gla-search-search-form" action="/search" method="post" id="gla-search-search-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-keyword">
+  <label for="edit-keyword">Search term </label>
+ <input placeholder="Search…" spellcheck="false" type="text" id="edit-keyword" name="keyword" value="" size="60" maxlength="128" class="form-text" />
+</div>
+<input class="icons-icon-search form-submit" type="submit" id="edit-submit" name="op" value="Search" /><input type="hidden" name="form_build_id" value="form-C6Wg79ic7s5AzHUIbOVVstU2RYZh9AZtQ6YXk5aRYJE" />
+<input type="hidden" name="form_id" value="gla_search_search_form" />
+</div></form>  </div>
+</div>
+  </div>
+      </div>
+            <div class="l-navigation-wrapper">
+          <div class="l-region l-region--navigation">
+    <div class="l-navigation--search" data-set="main-search"></div>
+    <nav id="block-menu-block-1" role="navigation" class="block block--menu-block block--menu-block-1 block--menu-block--main-menu block--menu-block--main-menu--desktop-menu">
+      
+  <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <div class="mobile-navigation-toggle--wrapper">
+  <button class="js-no-uniform menu-button mobile-navigation--toggle" aria-label="Open site navigation">
+    <i class="mobile-navigation--toggle--icon"></i>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_menu" aria-hidden="true">Menu</span>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_close element-hidden" aria-hidden="true">Close</span>
+  </button>
+  </div>
+  <ul class="menu"><li class="first expanded active-trail menu-mlid-1303"><a href="/what-we-do" class="active-trail"><i class="icon"></i><span class="title">What we do</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1299"><a href="/in-my-area" title=""><i class="icon"></i><span class="title">In my area</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1301"><a href="/get-involved"><i class="icon"></i><span class="title">Get involved</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1304"><a href="/about-us"><i class="icon"></i><span class="title">About us</span><span class="chevron"></span></a></li>
+<li class="leaf menu-mlid-37092"><a href="/talk-london"><i class="icon"></i><span class="title">Talk London</span><span class="chevron"></span></a></li>
+<li class="last collapsed menu-mlid-25901"><a href="/media-centre"><i class="icon"></i><span class="title">Media centre</span><span class="chevron"></span></a></li>
+</ul></div>
+</nav>
+<nav id="block-menu-block-2" role="navigation" class="block block--menu-block block--menu-block-2 block--menu-block--main-menu block--menu-block--main-menu--mobile-menu">
+      
+  <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <div class="mobile-navigation-toggle--wrapper">
+  <button class="js-no-uniform menu-button mobile-navigation--toggle" aria-label="Open site navigation">
+    <i class="mobile-navigation--toggle--icon"></i>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_menu" aria-hidden="true">Menu</span>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_close element-hidden" aria-hidden="true">Close</span>
+  </button>
+  </div>
+  <ul class="menu"><li class="first expanded active-trail menu-mlid-1303"><a href="/what-we-do" class="active-trail active-trail"><i class="icon"></i><span class="title">What we do</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1299"><a href="/in-my-area" title=""><i class="icon"></i><span class="title">In my area</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1301"><a href="/get-involved"><i class="icon"></i><span class="title">Get involved</span><span class="chevron"></span></a></li>
+<li class="collapsed menu-mlid-1304"><a href="/about-us"><i class="icon"></i><span class="title">About us</span><span class="chevron"></span></a></li>
+<li class="leaf menu-mlid-37092"><a href="/talk-london"><i class="icon"></i><span class="title">Talk London</span><span class="chevron"></span></a></li>
+<li class="last collapsed menu-mlid-25901"><a href="/media-centre"><i class="icon"></i><span class="title">Media centre</span><span class="chevron"></span></a></li>
+</ul></div>
+</nav>
+  </div>
+      </div>
+          </header>
+  </div>
+
+  
+  
+  <section class="l-main l-constrained">
+    <nav class="breadcrumb" aria-label="Breadcrumbs">
+        <span class="element-invisible">You are here:</span><a href="/">Home</a><span class="breadcrumb-separator"></span><a href="/what-we-do">What we do</a><span class="breadcrumb-separator"></span><a href="/what-we-do/fire-and-resilience">Fire and Resilience</a><span class="breadcrumb-separator"></span>London Resilience Partnership</nav>    <hr class="breadcrumb--divider">
+
+    <div class="l-content-wrapper">
+      <div class="l-content" role="main">
+                <a id="main-content"></a>
+                          <h1 class="l-content--title">London Resilience Partnership</h1>
+                                                                <article about="/what-we-do/fire-and-resilience/london-resilience-partnership" typeof="sioc:Item foaf:Document" role="article" class="node node--topic-landing-page node--full node--topic-landing-page--full no-hero-image">
+  
+  
+    <h2></h2>
+    <br>
+  
+  <div class="node__content">
+    <div class="field field--name-field-topic-summary-block field--type-entityreference field--label-hidden"><div class="field__items"><div class="field__item even"><article about="/coronavirus" typeof="sioc:Item foaf:Document" role="article" class="node node--sub-topic-landing-page node--summary-block node--sub-topic-landing-page--summary-block no-hero-image">
+  <a href="/coronavirus" title="Coronavirus updates and guidance">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/covid-19-green-496x496px-17.png?itok=DdADfSFO" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Coronavirus (COVID-19)</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">COVID-19 is a new illness that can affect your lungs and airways. It&#039;s caused by a virus called coronavirus. </div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item odd"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/about-london-prepared" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--summary-block node--content-page--summary-block no-hero-image">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/about-london-prepared" title="About London Prepared">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/london-park-sunny-day1x1.jpg?itok=Pt4h--Bc" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">About London Prepared</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Our role in and strategy for preparing for and responding to emergencies. The history and future of London Resilience.</div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item even"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/preparing-your-business" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--summary-block node--content-page--summary-block no-hero-image">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/preparing-your-business" title="Preparing your business">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/thames_with_cable_car_-_river_transport_1x1.jpg?itok=XmhAjn06" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Preparing your business</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Reducing the impact of emergencies on London’s businesses through the development of appropriate plans.   </div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item odd"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/preparing-yourself-and-your-community-emergencies" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--summary-block node--content-page--summary-block no-hero-image">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/preparing-yourself-and-your-community-emergencies" title="Preparing yourself and your community for emergencies">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/retail_croydon_680_1x1.jpg?itok=SFK5sSIf" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Preparing yourself</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Tips for preparing for emergencies, how best to respond to one and our guidance for making a recovery. </div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item even"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/planning-emergencies-capital" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--summary-block node--content-page--summary-block no-hero-image">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/planning-emergencies-capital" title="Planning for emergencies in the capital">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/primrosehill_1x1.jpg?itok=vKKoEORr" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Planning for emergencies</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">On this page you can find out more about our process for developing emergency plans, and download the latest versions.</div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item odd"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/london-risk-register" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--summary-block node--content-page--summary-block no-hero-image">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/london-risk-register" title="London Risk Register">
+    <div class="hero-image">
+                  <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-small" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_small/public/royal-oak-design-precedents-1229-1x1.jpg?itok=0vvROoGA" width="200" height="200" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">
+        <div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">London Risk Register</div></div></div>              </h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Identifying the potential risks to the capital and the impact these emergencies may have on Londoners.</div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div><div class="field__item even"><article about="/contact-lrp-team" typeof="sioc:Item foaf:Document" role="article" class="node node--link-connector node--summary-block node--link-connector--summary-block no-hero-image">
+  <a href="https://www.london.gov.uk/what-we-do/fire-and-resilience/london-resilience-partnership/contact-london-resilience-partnership" title="Contact the LRP team">
+    <div class="hero-image">
+      <div class="field field--name-field-thumbnail field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-1-1-medium" typeof="foaf:Image" alt="" src="https://www.london.gov.uk/sites/default/files/styles/gla_1_1_medium/public/gla_flood_awareness_digital_496x496_v2.png?itok=NaWPKq1q" width="500" height="500" /></div></div></div>    </div>
+    <div class="teaser-container">
+      <h2 class="short-title">Contact the LRP team</h2>
+      <div class="teaser">
+                  <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Comment on the topics you have browsed and any suggestions for how we can improve the London Resilience web pages.</div></div></div>              </div>
+    </div>
+  </a>
+</article>
+</div></div></div><div class="field field--name-field-field-topic-four-story-hea field--type-text field--label-hidden"><div class="field__items"><h2 class="field__item even">Related content</h2></div></div><div class="field field--name-field-topic-four-story-block field--type-entityreference field--label-hidden"><div class="field__items"><div class="field__item even"><article about="/what-we-do/fire-and-resilience/london-resilience-partnership/ldn-flood-awareness-week-2019" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--promoted node--four-story-teaser node--content-page--four-story-teaser">
+  <a href="/what-we-do/fire-and-resilience/london-resilience-partnership/ldn-flood-awareness-week-2019" title="LDN Flood Awareness Week 2019">
+          <div class="hero-image">
+        <div class="field field--name-field-hero-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-2-1-small" typeof="foaf:Image" src="https://www.london.gov.uk/sites/default/files/styles/gla_2_1_small/public/gla_flood_awareness_digital_990x496_v2.png?itok=lFfONF8H" width="320" height="160" alt="Bee Flood Aware" title="Bee Flood Aware" /></div></div></div>                      </div>
+    
+    <div>
+              <h2 class="short-title"><div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">LDN Flood Week 2019</div></div></div></h2>
+                    <div class="teaser">
+          <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Flooding is one of London&#039;s top risks. Find out if you could be affected and what you can do to prepare.</div></div></div>        </div>
+          </div>
+
+  </a>
+</article>
+</div><div class="field__item odd"><article about="/what-we-do/environment/climate-change/climate-change-and-weather" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--four-story-teaser node--content-page--four-story-teaser">
+  <a href="/what-we-do/environment/climate-change/climate-change-and-weather" title="Climate change and weather">
+          <div class="hero-image">
+        <div class="field field--name-field-hero-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-2-1-small" typeof="foaf:Image" src="https://www.london.gov.uk/sites/default/files/styles/gla_2_1_small/public/t001-04430.jpg?itok=2FAkBsdG" width="320" height="160" alt="Climate change and weather" title="Climate change and weather" /></div></div></div>                      </div>
+    
+    <div>
+              <h2 class="short-title"><div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Climate change</div></div></div></h2>
+                    <div class="teaser">
+          <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">London’s climate is changing. We’re having hotter, drier summers and warmer, wetter winters.</div></div></div>        </div>
+          </div>
+
+  </a>
+</article>
+</div><div class="field__item even"><article about="/WHAT-WE-DO/environment/environment-publications/delivering-londons-energy-future-climate-change" typeof="sioc:Item foaf:Document" role="article" class="node node--publication node--four-story-teaser node--publication--four-story-teaser">
+  <a href="/WHAT-WE-DO/environment/environment-publications/delivering-londons-energy-future-climate-change" title="Delivering London&#039;s Energy Future: climate change mitigation strategy">
+          <div class="hero-image">
+        <div class="field field--name-field-hero-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-2-1-small" typeof="foaf:Image" src="https://www.london.gov.uk/sites/default/files/styles/gla_2_1_small/public/ccmes-_delivering_londons_energy_future18x9.jpg?itok=0omaUzZM" width="320" height="160" alt="Delivering London&#039;s Energy Future" title="Delivering London&#039;s Energy Future" /></div></div></div>                      </div>
+    
+    <div>
+              <h2 class="short-title"><div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Climate Change Mitigation</div></div></div></h2>
+                    <div class="teaser">
+          <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Delivering London’s Energy Future is the Mayor’s climate change mitigation and energy strategy.</div></div></div>        </div>
+          </div>
+
+  </a>
+</article>
+</div><div class="field__item odd"><article about="/what-we-do/environment/pollution-and-air-quality/health-and-exposure-pollution" typeof="sioc:Item foaf:Document" role="article" class="node node--content-page node--four-story-teaser node--content-page--four-story-teaser">
+  <a href="/what-we-do/environment/pollution-and-air-quality/health-and-exposure-pollution" title="Health and exposure to pollution">
+          <div class="hero-image">
+        <div class="field field--name-field-hero-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-2-1-small" typeof="foaf:Image" src="https://www.london.gov.uk/sites/default/files/styles/gla_2_1_small/public/t001-04019.jpg?itok=rBIWbQ-K" width="320" height="160" alt="Air quality manifesto" title="Air quality manifesto" /></div></div></div>                      </div>
+    
+    <div>
+              <h2 class="short-title"><div class="field field--name-field-short-title field--type-text field--label-hidden"><div class="field__items"><div class="field__item even">Exposure to pollution</div></div></div></h2>
+                    <div class="teaser">
+          <div class="field field--name-field-teaser field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even">Air pollution affects everyone who lives, works and visits London.</div></div></div>        </div>
+          </div>
+
+  </a>
+</article>
+</div></div></div><div class="field field--name-field-half-and-half-block field--type-entityreference field--label-hidden"><div class="field__items"><div class="field__item even"><section  about="/gla_shared_entities/half_and_half/61" typeof="" class="entity entity-gla-shared-entities gla-shared-entities-half-and-half clearfix">
+
+      <h2 class="gla-shared-entities-half-and-half--heading">
+      Follow us    </h2>
+  
+  <div class="content" data-mh="half_and_half">
+    <div class="field field--name-field-half-and-half-twitter field--type-text field--label-hidden">
+  
+<div class="tweets-pulled-listing">
+          <ul class="tweets-pulled-listing">
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+                          <span class="tweet-authorphoto">
+                <a href="//twitter.com/@LDN_prepared"><img alt="London Prepared on Twitter" src="https://pbs.twimg.com/profile_images/798106218954977280/Dj00akCZ_normal.jpg" /></a>              </span>
+              <span class="tweet-author">London Prepared</span>
+              <span class="tweet-screenname"><a href="//twitter.com/@LDN_prepared">@LDN_prepared</a></span>
+              <span class="tweet-retweeted-status">retweeted</span>
+                        </div>
+          </div>
+        <div class="tweet-text">Remembering those who lost their lives or who were injured in the 2017 terror attacks at <a href="//twitter.com/#!/search?q=%23LondonBridge" rel="nofollow">#LondonBridge</a> and <a href="//twitter.com/#!/search?q=%23BoroughMarket" rel="nofollow">#BoroughMarket</a> htt…</div>
+                  <div class="tweet-author-info retweet-author-info">
+            <span class="tweet-retweeted-status">from</span>
+            <span class="tweet-author">London Emergency</span>
+            <span class="tweet-screenname"><a href="//twitter.com/LET_2017">@LET_2017</a></span>
+          </div>
+        
+                <span class="tweet-time"><a href="//twitter.com/LET_2017/status/1268345093079150593" title="2:46am - 04 June 2020">04 June 2020</a></span>
+
+              </li>
+        </ul>
+  </div>
+  <div class="twitter--join--us">
+    <hr>
+    <a href="https://twitter.com/LDN_prepared"><span class="join-us-text">Join us on Twitter</span> <span class="twitter-account">@LDN_prepared</span></a>
+  </div>
+</div>
+  </div>
+</section>
+</div><div class="field__item odd"><section  about="/gla_shared_entities/half_and_half/62" typeof="" class="entity entity-gla-shared-entities gla-shared-entities-half-and-half clearfix half-and-half--has-cta">
+
+      <h2 class="gla-shared-entities-half-and-half--heading">
+      Latest blog    </h2>
+  
+  <div class="content" data-mh="half_and_half">
+    <div class="field field--name-field-content-item field--type-entityreference field--label-hidden"><div class="field__items"><div class="field__item even"><article about="/city-hall-blog/london-prepared-towers-logs-partnership" typeof="sioc:Item foaf:Document" role="article" class="node node--blog-article node--half-and-half node--blog-article--half-and-half">
+    <a href="/city-hall-blog/london-prepared-towers-logs-partnership" title="London Prepared: Towers, logs &amp; partnership">
+          <div class="gla--blog-article--half-and-half--hero-image hero-image">
+        <div class="field field--name-field-hero-image field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img class="gla-2-1-medium" typeof="foaf:Image" src="https://www.london.gov.uk/sites/default/files/styles/gla_2_1_medium/public/free-adventure-play-for-families_islington-play-2x1.jpg?itok=v8D2DAmF" width="490" height="245" alt="Adventure Park in Islington" title="Adventure Park in Islington" /></div></div></div>      </div>
+              <h2 class="gla--blog-article--half-and-half--short-title short-title">London Prepared: Towers, logs &amp; partnership</h2>
+              <div class="gla--blog-article--published-date published-date">
+        <p><div class="field field--name-field-date-blog-published field--type-datetime field--label-hidden"><div class="field__items"><div class="field__item even"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-11-25T00:00:00+00:00">25 November 2016</span></div></div></div></p>
+      </div>
+              <div class="gla--blog-article--half-and-half--teaser teaser">
+        <p>What has a 500 year old building in Islington got to do with emergency preparedness? Find out in this week&#039;s blog</p>
+      </div>
+          </a>
+</article>
+</div></div></div><div class="field--name-field-content-item-cta--wrapper"><hr><div class="field field--name-field-content-item-cta field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://www.london.gov.uk/city-hall-blog/topic/479">Read previous blogs</a></div></div></div></div>  </div>
+</section>
+</div></div></div>  </div>
+
+    </article>
+<div id="block-webform-client-block-44532" class="block block--webform site-feedback-form block--webform-client-block-44532">
+        <div class="block__content">
+    <div id="webform-ajax-wrapper-44532"><form class="webform-client-form webform-client-form-44532 webform-client-form-44532" action="/what-we-do/fire-and-resilience/london-resilience-partnership" method="post" id="webform-client-form-44532" accept-charset="UTF-8"><div><div  class="clearfix fivestar-user-stars fivestar-form-item fivestar-default"><div  class="form-item webform-component webform-component-fivestar webform-component--rating">
+  <label>How helpful was this page? </label>
+ <div class="form-item form-type-select form-item-submitted-rating">
+ <select id="edit-submitted-rating--2" name="submitted[rating]" class="form-select"><option value="-">Select rating</option><option value="20">Give it 1/5</option><option value="40">Give it 2/5</option><option value="60">Give it 3/5</option><option value="80">Give it 4/5</option><option value="100">Give it 5/5</option></select>
+</div>
+
+</div>
+</div><div aria-describedby="required-text-webform_client_form_44532"><fieldset  class="form-item webform-component webform-component-radios webform-component--feedback-type"> <legend>Feedback type</legend>
+  <div class="description">Thank you for rating. Is your feedback about...</div>
+<div id="edit-submitted-feedback-type" class="form-radios"><div class="form-item form-type-radio form-item-submitted-feedback-type">
+ <input required="required" type="radio" id="edit-submitted-feedback-type-1" name="submitted[feedback_type]" value="page" class="form-radio" />  <label class="option" for="edit-submitted-feedback-type-1">The information on this page </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-feedback-type">
+ <input required="required" type="radio" id="edit-submitted-feedback-type-2" name="submitted[feedback_type]" value="design" class="form-radio" />  <label class="option" for="edit-submitted-feedback-type-2">How this page looks and feels </label>
+
+</div>
+<div class="form-item form-type-radio form-item-submitted-feedback-type">
+ <input required="required" type="radio" id="edit-submitted-feedback-type-3" name="submitted[feedback_type]" value="website" class="form-radio" />  <label class="option" for="edit-submitted-feedback-type-3">The website as a whole </label>
+
+</div>
+</div>
+</fieldset></div><div  class="form-item webform-component webform-component-textarea webform-component--feedback">
+  <label class="element-invisible" for="edit-submitted-feedback">Feedback </label>
+  <div class="description">Help us to improve our website by telling us a bit more about your experience (optional)</div>
+<div class="form-textarea-wrapper resizable"><textarea id="edit-submitted-feedback" name="submitted[feedback]" cols="60" rows="5" class="form-textarea"></textarea></div>
+</div>
+<input type="hidden" name="details[sid]" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-mE1dUY1tgal05MyaezAPG0ADKSki9o0cn8hSI4p1cjE" />
+<input type="hidden" name="form_id" value="webform_client_form_44532" />
+<input type="hidden" name="webform_ajax_wrapper_id" value="webform-ajax-wrapper-44532" />
+<div id="required-text-webform_client_form_44532" style="display: none;">This is a field required.</div><div class="url-textfield"><div class="form-item form-type-textfield form-item-url">
+  <label for="edit-url">Leave this field blank </label>
+ <input autocomplete="off" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text" />
+</div>
+</div><div class="form-actions"><input class="webform-submit button-primary form-submit" aria-hidden="true" type="submit" id="edit-webform-ajax-submit-44532" name="op" value="Submit" /></div></div></form></div>  </div>
+</div>
+                      </div>
+          </div>
+
+            <div class="l-blog--bottom" data-set="blog"></div>
+  </section>
+
+  <footer class="l-footer" role="contentinfo">
+    <div class="l-footer-wrapper l-constrained ">
+        <div class="l-region l-region--footer-1">
+    <nav id="block-menu-block-3" role="navigation" class="block block--menu-block block--menu-block-3 block--menu-block--menu-footer-menu block--menu-block--menu-footer-menu--footer-menu-(menu-block)">
+      
+  <div class="menu-block-wrapper menu-block-3 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+  <div class="mobile-navigation-toggle--wrapper">
+  <button class="js-no-uniform menu-button mobile-navigation--toggle" aria-label="Open site navigation">
+    <i class="mobile-navigation--toggle--icon"></i>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_menu" aria-hidden="true">Menu</span>
+    <span class="mobile-navigation--toggle--icon-label mobile-navigation--toggle--icon-label_close element-hidden" aria-hidden="true">Close</span>
+  </button>
+  </div>
+  <ul class="menu"><li class="first leaf menu-mlid-10799"><a href="/about-us" title="">About us</a></li>
+<li class="leaf menu-mlid-10800"><a href="/about-us/jobs-and-working-city-hall" title="">Jobs</a></li>
+<li class="leaf menu-mlid-27247"><a href="/about-us/venue-hire" title="">Venue hire</a></li>
+<li class="leaf menu-mlid-20568"><a href="/about-us/governance-and-spending/privacy-policies" title="">Privacy policy</a></li>
+<li class="leaf menu-mlid-20566"><a href="/sitemap" title="">Site map</a></li>
+<li class="leaf menu-mlid-14981"><a href="/about-us/terms-and-conditions" title="">Terms and conditions</a></li>
+<li class="leaf menu-mlid-28185"><a href="/city-hall-blog" title="">City Hall blog</a></li>
+<li class="leaf menu-mlid-31870"><a href="/get-involved/keep-date-our-social-media-and-newsletters" title="">Keep up to date</a></li>
+<li class="leaf menu-mlid-35446"><a href="https://www.london.gov.uk/node/36161/" title="">Contact us</a></li>
+<li class="leaf menu-mlid-29252"><a href="/what-we-do/accessibility">Accessibility</a></li>
+<li class="leaf menu-mlid-29417"><a href="/about-us/our-building-and-squares/londons-kitchen-cafe" title="">Cafe</a></li>
+<li class="last leaf menu-mlid-29253"><a href="/about-us/governance-and-spending/sharing-our-information/freedom-information" title="">Freedom of Information</a></li>
+</ul></div>
+</nav>
+  </div>
+        <div class="l-region l-region--footer-2">
+    <div id="block-gla-blocks-gla-custom-copyright-info" class="block block--gla-blocks block--gla-blocks-gla-custom-copyright-info">
+        <div class="block__content">
+    <div class="block--copyright">
+      <p>
+      Copyright Greater London Authority 2020    </p>
+    <p>
+      We use cookies to ensure that we give you the best experience on our website. Find out more about cookies in our privacy policy.    </p>
+  </div>
+  </div>
+</div>
+  </div>
+    </div>
+  </footer>
+</div>
+  <script>function euCookieComplianceLoadScripts() {}</script>
+<script>var eu_cookie_compliance_cookie_name = "";</script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_ngjLHzU9i-TS5iMQj1jLAauUCDa7UFvt6x5LT6VN08o.js"></script>
+<script src="https://www.london.gov.uk/sites/default/files/js/js_Z4h-ZFr9XQuGWGl7ytGYjx6QL9kCb4Nv2d9SFJLXBVc.js"></script>
+  <button id="gla-nav-overlay" class="gla-nav-overlay">Dismiss navigation</button>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9616c02dfb","applicationID":"14322558","transactionName":"YFFUYEFSWRJUABILDlkbd1dHWlgPGg0JBgRoRFdTVmxBCFAU","queueTime":0,"applicationTime":1439,"atts":"TBZXFglIShw=","errorBeacon":"bam.nr-data.net","agent":""}</script><span id="splash-id" style="display:none">https://www.london.gov.uk</span></body>
+</html>
