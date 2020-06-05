@@ -23,7 +23,7 @@ url_mappings = {
     }
 
 # The lighthouse key isn't guaranteed to match the URL
-# so allow for variance (but don't implement it yet)
+# so allow for variance
 def translate_to_lighthouse_key(lighthouse_keys, url):
   if url in lighthouse_keys:
     return url
@@ -128,8 +128,8 @@ def find_reading_age(language_data):
   return reading_age
 
 def generate_timelapse(url_stub, root_directory, output_file):
-    os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
-    return f"/timelapses/{url_stub}.gif"
+  os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
+  return f"/timelapses/{url_stub}.gif"
 
 def build_combined_rankings(avg_scores):
   rankings = { 'speed' : [], 'accessibility': []}
@@ -178,15 +178,16 @@ def process_site(stripped_url, lighthouse_index, directories):
   extracted_scores = extract_scores(site_data, dates_covered)
   scores = calculate_scores(latest_date, extracted_scores, site_data)
   scores['over_time'] = extracted_scores
+  return scores
 
-  output_file = os.path.join(directories['timelapses'], url_stub + ".gif")
+def add_video_elements(scores, directories, clean_url):
+  output_file = os.path.join(directories['timelapses'], clean_url + ".gif")
   scores['timelapse_filename'] = generate_timelapse(clean_url, directories['base'], output_file)
   video_filename = os.path.join(directories['reports'], "loading", clean_url + ".mp4")
   if os.path.exists(video_filename):
     scores['video_url'] = "/loading/" + clean_url + ".mp4"
   else:
     scores['video_url'] = False
-  return scores
 
 directories = c19utils.establish_directories()
 
@@ -198,56 +199,57 @@ lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
 site_list = {}
 
 if __name__ == "__main__":
-    with open(page_tmpl_file) as tmpl:
-      page_template = Template(tmpl.read())
+  with open(page_tmpl_file) as tmpl:
+    page_template = Template(tmpl.read())
 
-    with open(index_tmpl_file) as tmpl:
-      index_template = Template(tmpl.read())
+  with open(index_tmpl_file) as tmpl:
+    index_template = Template(tmpl.read())
 
-    top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
-    avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
+  top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
+  avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
 
-    for site in c19utils.CovidSiteList():
-      stripped_url = site['URL']
-      scores = {}
-      clean_url = c19utils.filter_bad_filename_chars(stripped_url)
-      url_stub = clean_url[0:100]
+  for site in c19utils.CovidSiteList():
+    stripped_url = site['URL']
+    scores = {}
+    clean_url = c19utils.filter_bad_filename_chars(stripped_url)
+    url_stub = clean_url[0:100]
 
+    try:
+      scores = process_site(stripped_url, lighthouse_index, directories)
+      add_video_elements(scores, directories, clean_url)
+    except KeyError as e:
+      print(f"No sign of lighthouse data for {stripped_url}")
+      print(repr(e))
+      next
+
+    with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
+      scores['site_name'] = stripped_url
       try:
-        scores = process_site(stripped_url, lighthouse_index, directories)
-      except KeyError as e:
-        print(f"No sign of lighthouse data for {stripped_url}")
-        print(repr(e))
-        next
+        scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
+        if scores['reading age']:
+          extracted_numbers = re.search(r'\d+', scores['reading age'])
+          if extracted_numbers:
+            score_to_use = int(extracted_numbers.group())
+            top_scores['reading age'][stripped_url] = score_to_use
+            # TODO: Replace this with proper averages
+            avg_scores['reading age'][stripped_url] = score_to_use
+      except KeyError:
+        scores['reading age'] = 'tbd'
 
-      with open(os.path.join(directories['reports'], url_stub + ".html"), "w") as report:
-        scores['site_name'] = stripped_url
-        try:
-          scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
-          if scores['reading age']:
-            extracted_numbers = re.search(r'\d+', scores['reading age'])
-            if extracted_numbers:
-              score_to_use = int(extracted_numbers.group())
-              top_scores['reading age'][stripped_url] = score_to_use
-              # TODO: Replace this with proper averages
-              avg_scores['reading age'][stripped_url] = score_to_use
-        except KeyError:
-          scores['reading age'] = 'tbd'
+      scores['reading_age'] = scores['reading age']
+      output = page_template.render(scores)
+      report.write(output)
+      site_list[stripped_url] = { 'gov_name': site['Government name'], 'detail': "/" + url_stub + ".html" }
 
-        scores['reading_age'] = scores['reading age']
-        output = page_template.render(scores)
-        report.write(output)
-        site_list[stripped_url] = { 'gov_name': site['Government name'], 'detail': "/" + url_stub + ".html" }
+      top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
+      top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
+      avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
+      avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
+      print("Produced report for", url_stub)
 
-        top_scores['accessibility'][stripped_url] = scores.get('max_accessibility', 0)
-        top_scores['speed'][stripped_url] = scores.get('max_speed', 0)
-        avg_scores['accessibility'][stripped_url] = scores.get('average_accessibility', 0)
-        avg_scores['speed'][stripped_url] = scores.get('average_speed', 0)
-        print("Produced report for", url_stub)
+  rankings = build_combined_rankings(avg_scores)
+  sorted_rankings = build_top_table(site_list, rankings)
 
-    rankings = build_combined_rankings(avg_scores)
-    sorted_rankings = build_top_table(site_list, rankings)
-
-    index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores, top_sites = sorted_rankings)
-    with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
-      index_file.write(index)
+  index = index_template.render(sites = site_list, considerations = rankings, avg_scores = avg_scores, top_sites = sorted_rankings)
+  with open(os.path.join(directories['reports'], "index.html"), "w") as index_file:
+    index_file.write(index)
