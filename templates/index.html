@@ -89,8 +89,13 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.number.min.js"></script>
 		<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function() {
-			 new Tablesort(document.getElementById('site-results'));
-		});
-		<!-- #page -->
+		if (document.readyState !== 'loading') {
+			new Tablesort(document.getElementById('site-results'));
+		} else {
+			document.addEventListener("DOMContentLoaded", function() {
+				new Tablesort(document.getElementById('site-results'));
+			});
+		}
+
+		</script>
 	</body></html>
