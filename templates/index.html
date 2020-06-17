@@ -1,41 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-GB" class="no-focus-outline">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<title>How do government Covid19 response sites perform?</title>
-		<link rel="stylesheet" href="/styles.pure.css" type="text/css" media="all">
-	</head>
-	<body>
-		<div id="page" class="site pd-wrapper">
-			<header id="masthead" class="site-header pd-masthead bg--coal">
-				<div class="content-area">
-					<div class="site-branding pd-masthead__logo">
-						<img style="max-width: 18rem;" src="https://public.digital/wp-content/themes/publicdigital/dist/images/public-digital_logo_fff.png" alt="Public Digital">
-					</div>
-
-					<nav id="site-navigation" class="main-navigation pd-nav">
-						<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-						<ul id="primary-menu" class="menu">
-							<li class="menu-item">
-								<a href="https://covidsites.public.digital/">How do government Covid19 response sites perform?</a>
-							</li>
-						</ul>			</nav><!-- #site-navigation -->
-
-				</div><!-- .content-area -->
-
-			</header><!-- #masthead -->
-
-
-
-			<main id="content" class="site-content pd-container">
-
-
-			<div id="primary" class="content-area">
-
-
-				<article class="post-1120 page type-page status-publish has-post-thumbnail hentry">
+{% extends "base.html" %}
+{% block content %}
 					<header class="entry-header">
 						<h1 class="entry-title">How do government Covid19 response sites perform?</h1>
 					</header>
@@ -68,34 +32,18 @@
 							</tbody>
 						</table>
 					</div>
+{% endblock %}
+{% block javascript %}
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.number.min.js"></script>
+<script type="text/javascript">
+if (document.readyState !== 'loading') {
+	new Tablesort(document.getElementById('site-results'));
+} else {
+	document.addEventListener("DOMContentLoaded", function() {
+		new Tablesort(document.getElementById('site-results'));
+	});
+}
 
-				</article>
-
-
-			</div><!-- #primary -->
-
-
-			</main><!-- #content -->
-
-			<footer id="colophon" class="site-footer pd-footer bg--coal">
-				<div class="content-area">
-
-
-					<p class="site-info">© Copyright 2020</p>
-
-				</div><!-- .content-area -->
-			</footer><!-- #colophon -->
-		</div>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/sorts/tablesort.number.min.js"></script>
-		<script type="text/javascript">
-		if (document.readyState !== 'loading') {
-			new Tablesort(document.getElementById('site-results'));
-		} else {
-			document.addEventListener("DOMContentLoaded", function() {
-				new Tablesort(document.getElementById('site-results'));
-			});
-		}
-
-		</script>
-	</body></html>
+</script>
+{% endblock %}

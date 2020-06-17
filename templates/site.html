@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-GB" class="no-focus-outline">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-		<title>How do government Covid19 response sites perform?</title>
-		<link rel="stylesheet" href="/styles.pure.css" type="text/css" media="all">
-	</head>
+{% extends "base.html" %}
+{% block stylesheets %}
 		<style type="text/css">
 h1 {
 	font-size: 3.5em;
@@ -23,36 +16,8 @@ h1 {
 							font-size: 6rem;
 						}
 		</style>
-	</head>
-	<body class="home page-template-default page page-id-1120 wp-custom-logo no-sidebar">
-		<div id="page" class="site pd-wrapper">
-			<header id="masthead" class="site-header pd-masthead bg--coal">
-				<div class="content-area">
-					<div class="site-branding pd-masthead__logo">
-						<img style="max-width: 18rem;" src="https://public.digital/wp-content/themes/publicdigital/dist/images/public-digital_logo_fff.png" alt="Public Digital">
-					</div><!-- .site-branding -->
-
-					<nav id="site-navigation" class="main-navigation pd-nav">
-						<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-						<ul id="primary-menu" class="menu">
-														<li class="menu-item">
-								<a href="https://covidsites.public.digital/">How do government Covid19 response sites perform?</a>
-							</li>
-						</ul>			</nav><!-- #site-navigation -->
-
-				</div><!-- .content-area -->
-
-			</header><!-- #masthead -->
-
-
-
-			<main id="content" class="site-content pd-container">
-
-
-				<div id="primary" class="content-area">
-
-
-					<article class="post-1120 page type-page status-publish has-post-thumbnail hentry">
+{% endblock %}
+{% block content %}
 						<header class="entry-header">
 							<h1 class="entry-title">Performance of {{site_name}}</h1>
 						</header>
@@ -115,24 +80,8 @@ h1 {
 								<li>Where this site appears in the league tables</li>
 							</ul>
 						</div>
-
-					</article>
-
-
-				</div><!-- #primary -->
-
-
-			</main><!-- #content -->
-
-			<footer id="colophon" class="site-footer pd-footer bg--coal">
-				<div class="content-area">
-
-
-					<p class="site-info">© Copyright 2020</p>
-
-				</div><!-- .content-area -->
-			</footer><!-- #colophon -->
-		</div><!-- #page -->
+{% endblock %}
+{% block javascript %}
 		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function() {
@@ -185,4 +134,4 @@ var speedChart = new Chart(cty, {
 });
 });
 		</script>
-	</body></html>
+{% endblock %}
