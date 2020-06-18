@@ -1,7 +1,7 @@
 import os
 import glob
 import orjson
-from jinja2 import Template
+from jinja2 import Environment, FileSystemLoader
 import statistics
 import base64
 import imageio
@@ -198,12 +198,12 @@ latest_language_data = get_reading_ages(directories['languages'])
 lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
 site_list = {}
 
-if __name__ == "__main__":
-  with open(page_tmpl_file) as tmpl:
-    page_template = Template(tmpl.read())
 
-  with open(index_tmpl_file) as tmpl:
-    index_template = Template(tmpl.read())
+if __name__ == "__main__":
+  tmpl_env = Environment(loader=FileSystemLoader(directories['templates']))
+
+  page_template = tmpl_env.get_template('site.html')
+  index_template = tmpl_env.get_template('index.html')
 
   top_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
   avg_scores = {'accessibility' : {}, 'speed' : {}, 'reading age': {}}
