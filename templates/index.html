@@ -1,3 +1,4 @@
+{% from "macros.html" import reading_age_summary with context %}
 {% extends "base.html" %}
 {% block content %}
 					<header class="entry-header">
@@ -25,7 +26,7 @@
 									<td><a title="{{site}}" href="{{site}}">{{site|truncate(60, True)}}</a></td>
 									<td>{{top_sites[site]['speed']|round(2)}}</td>
 									<td>{{top_sites[site]['accessibility']|round(2)}}</td>
-									<td>Grade {{top_sites[site]['reading_age']}}</td>
+									<td>{{reading_age_summary(top_sites[site]['reading_age'])}}</td>
 									<td><a title="Full report on {{site}}" href="{{sites[site]['detail']}}">full report</a></td>
 								</tr>
 								{% endfor %}

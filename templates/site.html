@@ -1,3 +1,4 @@
+{% from "macros.html" import reading_age_summary with context %}
 {% extends "base.html" %}
 {% block stylesheets %}
 		<style type="text/css">
@@ -34,18 +35,19 @@ h1 {
 								</thead>
 								<tbody>
 									<tr>
-										<td>
+										<td class="{%if current_speed and current_speed < 0.5 %}poor{% elif current_speed and current_speed < 0.9 %}improve{% elif current_speed %}good{%endif%}">
 											<strong>{{current_speed}}</strong>
 											{% if average_speed %}<br />Average: {{average_speed|round(2)}}{%else%}-{%endif%}
+											<br />Out of 1.0
 										</td>
-										<td>
+										<td class="{%if current_accessibility and current_accessibility < 0.5 %}poor{% elif current_accessibility and current_accessibility < 0.9 %}improve{% elif current_accessibility %}good{%endif%}">
 											<strong>{{current_accessibility}}</strong>
 											{% if average_accessibility %}<br />Average: {{average_accessibility|round(2)}}{% else %}-{%endif%}
+											<br />Out of 1.0
 										</td>
 										<td>
-											{% set reading_age_parts = reading_age.split() %}
-											<strong>{{reading_age_parts[0]}}</strong>
-											<br />{{reading_age_parts[1:]|join(' ')}}</td>
+											<strong>{{ reading_age_summary(reading_age) }}</strong>
+										</td>
 									</tr>
 								</tbody>
 							</table>

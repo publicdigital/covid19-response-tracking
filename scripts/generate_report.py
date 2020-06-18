@@ -122,10 +122,24 @@ def find_reading_age(language_data):
     try:
       reading_age = language_data['trafilatura']['standard']
     except KeyError:
-      reading_age = 'tbd'
+      reading_age = None
   if reading_age == '-1th and 0th grade':
-     reading_age = 'tbd'
+     reading_age = None
   return reading_age
+
+def translate_reading_age(current_age):
+  try:
+    extracted_numbers = re.search(r'\d+', scores['reading age'])
+    score_to_use = int(extracted_numbers.group())
+    if score_to_use > 0 and score_to_use < 13:
+        approx_age = score_to_use + 5
+    elif score_to_use > 13:
+        approx_age = 18
+    else:
+        approx_age = None
+    return approx_age
+  except:
+    return None
 
 def generate_timelapse(url_stub, root_directory, output_file):
   os.system(f"gm convert -loop 1 -delay 10 {root_directory}/**/{url_stub}.png {output_file}")
@@ -148,7 +162,7 @@ def build_top_table(site_list, rankings):
     try:
       top_table[site]['accessibility'] = rankings['accessibility'].get(site, '-')
       top_table[site]['speed'] = rankings['speed'].get(site, '-')
-      top_table[site]['reading_age'] = rankings['reading age'].get(site, '-')
+      top_table[site]['reading_age'] = rankings['reading age'].get(site, None)
     except KeyError as e:
       print(repr(e))
 
@@ -226,15 +240,11 @@ if __name__ == "__main__":
       scores['site_name'] = stripped_url
       try:
         scores['reading age'] = find_reading_age(latest_language_data[stripped_url])
+        scores['reading age'] = translate_reading_age(scores['reading age'])
         if scores['reading age']:
-          extracted_numbers = re.search(r'\d+', scores['reading age'])
-          if extracted_numbers:
-            score_to_use = int(extracted_numbers.group())
-            top_scores['reading age'][stripped_url] = score_to_use
-            # TODO: Replace this with proper averages
-            avg_scores['reading age'][stripped_url] = score_to_use
+          avg_scores['reading age'][stripped_url] = scores['reading age']
       except KeyError:
-        scores['reading age'] = 'tbd'
+        scores['reading age'] = None
 
       scores['reading_age'] = scores['reading age']
       output = page_template.render(scores)

@@ -1,0 +1,12 @@
+{% macro reading_age_summary(reading_age) %}
+{% if reading_age and reading_age < 18 %}
+   <strong>{{reading_age}}</strong>
+  <br />to {{reading_age + 1}} years
+ {% elif reading_age and reading_age < 21 %}
+   <strong>18+</strong>
+   {% elif reading_age %}
+   <strong>Complex for adults</strong>
+ {% else %}
+   tbd
+ {% endif %}
+{% endmacro %}
