@@ -19,6 +19,13 @@ They're stored in a way that was convenient to me when capturing them, which
 may not be the easiest structure for analysis. If you want to use this data and there's
 another structure that would make it easier for you, let me know.
 
+## How to add a site
+
+To recommend a site for us to include please either:
+
+* Create a pull request to add it to the list.csv file
+* or email covidsites-feedback@public.digital with the URL and the government it represents
+
 ## Analysis
 
 Reports generated from this data can be found at https://covidsites.public.digital
