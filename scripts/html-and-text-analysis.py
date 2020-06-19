@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 import os
 import c19utils
+import langdetect
 
 formatted_date = datetime.now().strftime("%Y-%m-%d")
 directories = c19utils.establish_directories(formatted_date)
@@ -20,9 +21,10 @@ def process_trafilatura(downloaded):
 def process_dragnet(downloaded):
   return dragnet.extract_content(downloaded)
 
-def get_scores(text):
+def get_scores(text, language):
   scores = {}
   try:
+    textstat.set_lang(language)
     scores['flesch_reading_ease'] = textstat.flesch_reading_ease(text)
     scores['smog'] = textstat.smog_index(text)
     scores['flesch_kincaid_grade'] = textstat.flesch_kincaid_grade(text)
@@ -65,7 +67,9 @@ for url in c19utils.CovidURLList():
 
     try:
       traf_text = process_trafilatura(downloaded)
-      output_for_json[url]['trafilatura'] = get_scores(traf_text)
+      output_for_json[url]['language'] = langdetect.detect(traf_text)
+      output_for_json[url]['wordcount'] = len(traf_text.split(' ')) # Very crude, but I just want a rough sense
+      output_for_json[url]['trafilatura'] = get_scores(traf_text, output_for_json[url]['language'])
       traf_msg = output_for_json[url]['trafilatura']['standard']
     except Exception as e:
       output_for_json[url]['trafilatura'] = {'error' : repr(e)}
