@@ -19,7 +19,8 @@ url_mappings = {
   'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
   'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/',
   'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov',
-  'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov'
+  'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov',
+  'https://www.ontario.ca/page/2019-novel-coronavirus': 'https://covid-19.ontario.ca'
     }
 
 # The lighthouse key isn't guaranteed to match the URL
