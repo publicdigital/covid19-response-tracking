@@ -37,7 +37,7 @@ To recommend a site for us to include please either:
 
 Every night we do four things:
 
-* Use an open source script to take a screenshot. This was where we started
+* Use [an open source script](https://pypi.org/project/webscreenshot/) to take a screenshot. This was where we started
 * [Take a copy of the HTML of the site](scripts/html-and-text-analysis.py)
 * [Use the lighthouse tool to run analysis of the site](scripts/lighthouse.sh)
 * [Query Google's PageSpeedInsights API to capture their analysis of the site.](scripts/page-speed-insights.py)
