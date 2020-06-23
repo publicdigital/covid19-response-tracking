@@ -7,7 +7,7 @@ import getopt
 import sys
 
 def generate_request_url(wpt_server, this_site, top_site):
-  return f"{wpt_server}m/video/docompare.php?url[1]={this_site}&url[2]={top_site}&label[1]=This+site&label[2]=Top+performer"
+  return f"{wpt_server}/video/docompare.php?url[1]={this_site}&url[2]={top_site}&label[1]=This+site&label[2]=Top+performer"
 
 def generate_video_request_url(wpt_server, test_id):
   return f"{wpt_server}/video/create.php?tests={test_id}&end=visual&bg=000000&fg=ffffff"
@@ -43,12 +43,12 @@ def process_video_for(wpt_server, result_page, site_url):
 help_string = "get_comparison_videos.py -t <top_site_url> -s <webpage_test_server> -l <list_file> -o <output_folder>"
 
 try:
-    opts, args = getopt.getopt(sys.argv[1:],"ht:s:", ["topsite=","wptserver="])
-except getopt.GetoptError:
+    opts, args = getopt.getopt(sys.argv[1:],"ht:s:l:o:", ["topsite=","wptserver="])
+except getopt.GetoptError as e:
+  print(e)
   print(help_string)
   sys.exit(2)
 
-# TODO: Get this from real data
 for opt, arg in opts:
   if opt == '-h':
     print(help_string)
@@ -64,6 +64,12 @@ for opt, arg in opts:
 
 successes = {}
 directories = c19utils.establish_directories("2020-05-04")
+
+print("Running with:")
+print("Top site:", top_site)
+print("WPT server", wpt_server)
+print("List file", list_file)
+print("Output folder", output_folder)
 
 for url in c19utils.CovidURLList():
   comparison_url = generate_request_url(wpt_server, url, top_site)
