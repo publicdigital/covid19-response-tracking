@@ -1,6 +1,6 @@
  | URL | Trafilatura | Dragnet |
  | --- | --- | --- |
- | https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home | 16th and 17th grade |  |
+ | https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home | 19th and 20th grade |  |
  | https://coronavirus.utah.gov/ | 14th and 15th grade |  |
  | https://portal.ct.gov/coronavirus | SSLError(MaxRetryError('HTTPSConnectionPool(host=\'portal.ct.gov\', port=443): Max retries exceeded with url: /coronavirus (Caused by SSLError(SSLError("bad handshake: Error([(\'SSL routines\', \'tls_process_ske_dhe\', \'dh key too small\')])")))')) | | | http://www.bccdc.ca/health-info/diseases-conditions/covid-19 | 8th and 9th grade |  |
  | https://www.healthvermont.gov/response/infectious-disease/2019-novel-coronavirus | 8th and 9th grade |  |
@@ -10,17 +10,16 @@
  | https://dhss.delaware.gov/dhss/dph/index.html | 14th and 15th grade |  |
  | https://en.ssi.dk | 12th and 13th grade |  |
  | https://health.mo.gov/living/healthcondiseases/communicable/novel-coronavirus/ | 17th and 18th grade |  |
- | https://health.ri.gov/covid | 18th and 19th grade |  |
- | https://llyw.cymru/coronafeirws | 18th and 19th grade |  |
+ | https://health.ri.gov/covid | 21st and 22nd grade |  |
+ | https://llyw.cymru/coronafeirws | 21st and 22nd grade |  |
  | https://manitoba.ca/covid19/ | 11th and 12th grade |  |
- | https://novascotia.ca/coronavirus/ | 8th and 9th grade |  |
- | https://coronavirus.in.gov/ | 13th and 14th grade |  |
+ | https://novascotia.ca/coronavirus/ | ConnectionError(MaxRetryError("HTTPSConnectionPool(host='novascotia.ca', port=443): Max retries exceeded with url: /coronavirus/ (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f902691c4f0>: Failed to establish a new connection: [Errno 110] Connection timed out'))")) | | | https://coronavirus.in.gov/ | 13th and 14th grade |  |
  | https://phpa.health.maryland.gov/Pages/Novel-coronavirus.aspx | 13th and 14th grade |  |
  | https://sf.gov/topics/coronavirus-covid-19 | 9th and 10th grade |  |
- | https://www.alberta.ca/coronavirus-info-for-albertans.aspx | 21st and 22nd grade |  |
+ | https://www.alberta.ca/coronavirus-info-for-albertans.aspx | 20th and 21st grade |  |
  | https://www.argentina.gob.ar/salud/coronavirus-COVID-19 | 9th and 10th grade |  |
  | https://www.bag.admin.ch/bag/en/home/krankheiten/ausbrueche-epidemien-pandemien/aktuelle-ausbrueche-epidemien/novel-cov.html#903671355 | 20th and 21st grade |  |
- | https://www.bundesgesundheitsministerium.de/coronavirus.html | 18th and 19th grade |  |
+ | https://www.bundesgesundheitsministerium.de/coronavirus.html | 17th and 18th grade |  |
  | https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html | 28th and 29th grade |  |
  | https://www.covid.is/english | 11th and 12th grade |  |
  | https://www.doh.wa.gov/Coronavirus/Workplace | 11th and 12th grade |  |
@@ -31,16 +30,16 @@
  | https://www.gouvernement.fr/en/coronavirus-covid-19 | 11th and 12th grade |  |
  | https://www.gov.nl.ca/covid-19/ | 7th and 8th grade |  |
  | https://www.gov.scot/coronavirus-covid-19/ | 13th and 14th grade |  |
- | https://www.gov.sg/features/covid-19 | 16th and 17th grade |  |
+ | https://www.gov.sg/features/covid-19 | 17th and 18th grade |  |
  | https://www.gov.uk/coronavirus | 5th and 6th grade |  |
- | https://www.government.nl/topics/coronavirus-covid-19 | 13th and 14th grade |  |
- | https://www.govt.nz/covid-19-novel-coronavirus/ | 13th and 14th grade |  |
+ | https://www.government.nl/topics/coronavirus-covid-19 | 10th and 11th grade |  |
+ | https://www.govt.nz/covid-19-novel-coronavirus/ | 10th and 11th grade |  |
  | https://www.health.ny.gov/diseases/communicable/coronavirus/ | 12th and 13th grade |  |
  | https://coronavirus.health.ny.gov/home | 12th and 13th grade |  |
  | https://www.info-coronavirus.be/fr/ | 20th and 21st grade |  |
  | https://www.london.gov.uk/about-us/organisations-we-work/london-prepared | 10th and 11th grade |  |
  | https://www.michigan.gov/coronavirus | 8th and 9th grade |  |
- | https://www.mscbs.gob.es/en/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm | 19th and 20th grade |  |
+ | https://www.mscbs.gob.es/en/profesionales/saludPublica/ccayes/alertasActual/nCov-China/home.htm | 13th and 14th grade |  |
  | https://www.nhs.uk/conditions/coronavirus-covid-19/ | 11th and 12th grade |  |
  | https://www.nhsinform.scot/coronavirus | 59th and 60th grade |  |
  | https://www.oesterreich.gv.at/public.html | 22nd and 23rd grade |  |
@@ -53,15 +52,15 @@
  | http://www.health.go.ke/covid-19/ | 38th and 39th grade |  |
  | https://www.gouv.bj/coronavirus/ | 13th and 14th grade |  |
  | https://covid19.ncdc.gov.ng/ | 21st and 22nd grade |  |
- | https://www.health.go.ug/covid/ | 4th and 5th grade |  |
- | https://covid19.ca.gov/ | 15th and 16th grade |  |
+ | https://www.health.go.ug/covid/ | -1th and 0th grade |  |
+ | https://covid19.ca.gov/ | 12th and 13th grade |  |
  | https://yukon.ca/covid-19 | 124th and 125th grade |  |
  | https://ab.gov.ag/detail_page.php?page=42 | 49th and 50th grade |  |
  | https://www.gov.bb/coronavirus | 10th and 11th grade |  |
  | https://boliviasegura.gob.bo/ | 26th and 27th grade |  |
  | https://coronavirus.saude.gov.br/ | 20th and 21st grade |  |
  | https://www.bahamas.gov.bs | SSLError(MaxRetryError('HTTPSConnectionPool(host=\'www.bahamas.gov.bs\', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError("bad handshake: Error([(\'SSL routines\', \'ssl_choose_client_version\', \'unsupported protocol\')])")))')) | | | https://www.gob.cl/coronavirus/ | ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))) | | | https://coronaviruscolombia.gov.co/ | 17th and 18th grade |  |
- | https://www.ministeriodesalud.go.cr/index.php/ | 9th and 10th grade |  |
+ | https://www.ministeriodesalud.go.cr/index.php/ | -1th and 0th grade |  |
  | https://www.presidencia.gob.cu/es/cuba/covid-19/ | 7th and 8th grade |  |
  | http://dominica.gov.dm/corona | 10th and 11th grade |  |
  | https://presidencia.gob.do/coronavirusrd | 20th and 21st grade |  |
@@ -74,7 +73,7 @@
  | https://covid19honduras.org/ | SSLError(MaxRetryError('HTTPSConnectionPool(host=\'covid19honduras.org\', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError("bad handshake: Error([(\'SSL routines\', \'tls_process_server_certificate\', \'certificate verify failed\')])")))')) | | | https://jamcovid19.moh.gov.jm/index.html | 21st and 22nd grade |  |
  | https://coronavirus.gob.mx/ | 19th and 20th grade |  |
  | https://www.mspbs.gov.py/covid-19.php | SSLError(MaxRetryError('HTTPSConnectionPool(host=\'www.mspbs.gov.py\', port=443): Max retries exceeded with url: /covid-19.php (Caused by SSLError(SSLError("bad handshake: Error([(\'SSL routines\', \'tls_process_server_certificate\', \'certificate verify failed\')])")))')) | | | https://www.covid19response.lc/ | 13th and 14th grade |  |
- | http://health.gov.vc/health/index.php/c | 4th and 5th grade |  |
+ | http://health.gov.vc/health/index.php/c | 13th and 14th grade |  |
  | http://health.gov.sr/ | 17th and 18th grade |  |
  | http://www.ttconnect.gov.tt/gortt/portal/ttconnect/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOK9A40MTD0tjQ38Aw0sDYyCPA1dDUy9jd29DIAKIoEKDHAARwNC-r3ACvDoB1pgVOTr7JuuH1WQWJKhm5mXlq8fUVKSnJ-Xl5pcoh-uH4VmR5C7G9AOV1NDD-8wY6AhUAV47CjIjajySQv2BACEOlbd/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2X0tRMjA1STkzME9RMDkwMlJJMUUwNUszR1Ix/?WCM_GLOBAL_CONTEXT=http://www2.ttconnect.gov.tt/gortt/wcm/connect/gortt+web+content/ttconnect/citizen/topic/emergencyservices/general+information/msdfs+-+implementation+of+social+support+measures+for+covid+-19 | 16th and 17th grade |  |
  | https://www.gub.uy/ministerio-salud-publica/coronavirus | -1th and 0th grade |  |
@@ -84,4 +83,4 @@
  | https://www.malaysia.gov.my/portal/content/30936 | 11th and 12th grade |  |
  | https://korona.gov.sk/ | 23rd and 24th grade |  |
  | https://www.vic.gov.au/coronavirus | 18th and 19th grade |  |
- | https://www.buenosaires.gob.ar/coronavirus | 13th and 14th grade |  |
+ | https://www.buenosaires.gob.ar/coronavirus | 12th and 13th grade |  |

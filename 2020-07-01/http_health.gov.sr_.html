@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coronavirus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<!--lightbox-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css"/>
+	<link rel="stylesheet" href="/css/gov.css"/>
+	<link rel="stylesheet" href="/css/responsive.css"/>
+	
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <nav class="navbar navbar-light static-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="logowrap">
+                                <a class="navbar-brand" href="/"><img src="/media/1048/logo_nieuw.png" alt="Home" width="135" /></a>
+                            </div>
+                            <div id="titlewrap">
+                                Ministerie van Volksgezondheid
+                            </div>
+                            
+                            <div class="float-right">
+                                <a href="https://www.facebook.com/Ministerie-van-Volksgezondheid-Suriname-1606377959682372/" target="_blank" class="pl-2"><i class="fab fa-facebook"></i> </a>
+            <a href="https://www.youtube.com/channel/UCoIHWK-MFMoMIthGSBErOzA" target="_blank" class="pl-2"><i class="fab fa-youtube"></i> </a>
+                            </div>
+                            
+                            <div id="genSearchForm" class="search-block-header">
+                                
+                                <form class="form-inline float-right border" action="/zoekresultaten/">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--
+                        <div class="col-md-6">
+                            <div id="genSearchForm" class="search-block-header">
+                                <form class="form-inline float-right border" action="Umbraco.RenderMacro("pageZoekUrl")">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="pageWrap" class="mt-3">
+            <div class="container">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col px-0">
+                            <nav id="mainNav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0">
+                                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto text-uppercase">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    “Gemeenschap moet zich wapenen tegen virussen” 
+                </a>
+            </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/actueel/">
+                                Actueel
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/minister-staf/">
+                                Minister &amp; Staf
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/over-ministerie/">
+                                Over Ministerie
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/diensten-en-instellingen/">
+                                Diensten en Instellingen
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/documenten-en-publikaties/">
+                                Documenten en Publikaties
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/contact/">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/coronavirus-covid-19-info/">
+                                Meest gestelde vragen Corona(Covid-19)
+                            </a>
+                        </li>
+        </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="main" class="container-fluid px-0 pb-5">
+                    <div class="row">
+                        <div class="col px-0">
+<nav id="breadcrumb" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>                        </div>
+                    </div>
+                    <div class="row">
+
+    <div class="col-md-8">
+        <div id="newsMainArticle">
+    
+   
+    <div id="newsMainIntro">
+        <div id="newsMainTitle">
+            <!--<h4>Coronavirus</h4>-->
+        </div>
+        <div id="newsIntro">
+                     <img src="/media/1184/coronavirus-wikipedia-1024x555.jpg?anchor=center&amp;mode=crop&amp;width=620&amp;height=220&amp;rnd=132249380390000000" alt="Home" class="img-responsive" />
+
+             <div class="newsintro-title"><h2>Coronavirus</h2></div>
+             <div class="newsintro-inhoud">
+               <p>zorgvuldig hoesten en niezen én het gebruik van wegwerpdoekjes, zijn doelmatige handelingen, die de gemeenschap in acht dient te nemen om zichzelf te beschermen tegen virussen en ook ervoor te zorgen dat die virussen zich niet verspreiden. Dit benadrukt Cleopatra Jessurun, directeur van het ministerie van Volksgezondheid, in een vraaggesprek met het Nationaal Informatie Instituut (NII).</p>
+<p>Het NII sprak met directeur Jessurun over het 2019 nCoV, een variant van het coronavirus, dat eind 2019 is uitgebroken in de Chinese stad Wuhan. De awareness over het virus wordt wereldwijd verspreid en in Suriname is ook het ministerie van Volksgezondheid alert. Het virus komt oorspronkelijk voor bij dieren, maar blijkt te zijn overgedragen van dier op mens. Het virus vertoont gelijkenissen met het SARS- en MERS-virus, die in het verleden ook dodelijke slachtoffers hebben geëist. SARS, MERS en 2019-nCoV kunnen dodelijke longontstekingen veroorzaken.<br />Directeur Jessurun zegt dat de Wereldgezondheidsorganisatie (WHO) reeds richtlijnen, met betrekking tot het virus heeft gegeven. Hier vallen onder meer internationale gezondheidsvoorschriften en voorschriften voor gezondheidsfunctionarissen op havens. Het ministerie van Volksgezondheid heeft al een Plan van Aanpak opgesteld, dat ingaat bij een eventuele melding van een vermoedelijk geval van besmetting uit een hoog risicogebied. Deze melding geschiedt via een internationaal digitaal systeem waartoe alle havens toegang hebben. Alle controlerende en medische autoriteiten hebben de protocollen gehad, met betrekking tot het coronavirus 2019-nCoV. Daarnaast dient ook het volk uitbraak van ziektes te voorkomen. Het is van belang dat mensen zichzelf beschermen om daardoor het verder verspreiden van virussen te voorkomen. Goed schoon wassen van de handen met zeep of desinfecteren, wordt al jaren gestimuleerd. Het ministerie adviseert ook het hoest- en niesetiket of het gebruik van een wegwerpdoekje in plaats van een zakdoek. Geconstateerd is dat het virus in wildvlees voorkomt; er wordt nog onderzocht of het voorkomt in vleermuizen- of slangenvlees. De officiële melding hierover wordt gedeeld met de gemeenschap.<br />Recentelijk is via social media ervan gemaakt, als zouden personen in Suriname besmet zijn met het virus. Het ministerie van Volksgezondheid heeft deze meldingen intussen tegengesproken en zal acties ondernemen tegen degenen die hiermee onrust willen zaaien.<br />Directeur Jessurun geeft verder te kennen dat het sterftecijfer van 2019-nCoV tussen de 4% en 6% ligt, maar kan stijgen gezien de toegenomen besmettingsgevallen. Het sterftecijfer is het aantal dodelijke slachtoffers dat het virus opeist. Bij SARS en MERS was dat respectievelijk 10% om 36%. Verder blijkt dat de meeste slachtoffers bij de eerdere virusuitbraken een onderliggende aandoeningen hadden, zoals hart- en longaandoening. De directeur benadrukt dat wij de handen ineen moeten te slaan om het coronavirus 2019-nCoV te bestrijden.</p>
+            &nbsp;
+             </div>
+        </div>
+    </div>
+</div>
+        
+        <div class="home-sec-title" style="border-bottom:none;">NIEUWSBERICHTEN</div>
+        <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/hoger-risico-complicaties-covid-19-voor-personen-met-chronische-aandoeningen/">
+                                            <img src="/media/1226/paho3810-450x303.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132288223390000000" alt="Hoger risico complicaties COVID-19 voor personen met chronische aandoeningen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/hoger-risico-complicaties-covid-19-voor-personen-met-chronische-aandoeningen/" class="card-title">Hoger risico complicaties COVID-19 voor personen met chronische aandoeningen</a></h3>
+                                Mensen met onderliggende gezondheidsproblemen, met name de niet-overdraagbare ziekten (non-communicable diseases, NCD’s), zoals hart- en vaatziekten, diabetes en kanker, hebben een hoger risico op ernstige gevolgen bij besmetting met het COVID-19 virus en kunnen eerder sterven aan de gevolgen daarvan. Risicofactoren voor NCD’s kunnen mensen kwetsbaarder maken om ernstig ziek te worden als gevolg van een COVID-19 infectie.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/minister-volksgezondheid-overhandigt-final-national-covid-19-plan-aan-paho/">
+                                            <img src="/media/1382/20200625_144121-640x360.jpg?center=0.25352112676056338,1.3333333333333333&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132379812280000000" alt="Minister Volksgezondheid overhandigt Final National COVID-19 Plan aan PAHO" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/minister-volksgezondheid-overhandigt-final-national-covid-19-plan-aan-paho/" class="card-title">Minister Volksgezondheid overhandigt Final National COVID-19 Plan aan PAHO</a></h3>
+                                De minister van Volksgezondheid, Antoine Elias, heeft op 25 juni 2020 het “Final National COVID-19 Preparedness and Response Plan” en “Final Comprehensive Need Lists Preparedness and Response for COVID-19” officieel overhandigd aan PAHO / WHO-vertegenwoordiger Dr. Karen Lewis-Bell.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/mz-geeft-overzicht-van-swabs-en-testresultaten/">
+                                            <img src="/media/1381/melvin-uiterloo-640x340.jpg?center=0.28358208955223879,1.2857142857142858&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132379810470000000" alt="MZ geeft overzicht van swabs en testresultaten" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/mz-geeft-overzicht-van-swabs-en-testresultaten/" class="card-title">MZ geeft overzicht van swabs en testresultaten</a></h3>
+                                De Medische Zending heeft een overzicht gegeven van de swabs die tot nu toe zijn gedaan door haar poliklinieken in het zuidoosten van Suriname. Drs. Melvin Uiterloo, epidemiologische verantwoordelijke van de afdeling MESO gaf tijdens de reguliere COVID-19 persconferentie op vrijdag 29 juni 2020 een presentatie van de epidemiologische werkzaamheden in het genoemde gebied. Hij belichtte zowel het aantal testen als het aantal resultaten tot nu toe.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/juiste-dieet-kan-helpen-gevolgen-covid-19-te-verminderen/">
+                                            <img src="/media/1380/weerstand-640x329.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132379808050000000" alt="Juiste dieet kan helpen gevolgen COVID-19 te verminderen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/juiste-dieet-kan-helpen-gevolgen-covid-19-te-verminderen/" class="card-title">Juiste dieet kan helpen gevolgen COVID-19 te verminderen</a></h3>
+                                Eet goed en voldoende, slaap genoeg en drink veel; juist tijdens deze COVID-19 pandemie is dat extra belangrijk. De staat van je gezondheid kan namelijk doorslaggevend zijn voor de mate waarop het virus invloed heeft op je gezondheid en je herstel. Ook bij ziekten als overgewicht is het erg belangrijk om op je dieet te letten. Voor, tijdens en ook na COVID-19 wordt door diëtisten daarom een optimaal voedingspatroon aanbevolen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/drive-and-walk-through-testlocaties-succesvol/">
+                                            <img src="/media/1379/test-locaties-640x342.jpg?center=0.62686567164179108,1.3571428571428572&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132379806740000000" alt="‘Drive’ and ‘walk-through’ testlocaties succesvol" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/drive-and-walk-through-testlocaties-succesvol/" class="card-title">‘Drive’ and ‘walk-through’ testlocaties succesvol</a></h3>
+                                De samenleving reageert goed op de mogelijkheid om zich te laten testen op corona via ‘drive’ and ‘walk-through’ testlocaties. Op mobiele testlocaties van het Bureau voor de Openbare Gezondheidszorg, BOG, zijn in totaal 88 swabs afgenomen. Epidemioloog Radjes Ori presenteerde de voorlopige resultaten tijdens de covid-19 persconferentie van 26 juni 2020.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/covid-19-op-de-voet-volgen-de-komende-twee-jaar/">
+                                            <img src="/media/1226/paho3810-450x303.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132288223390000000" alt="COVID-19 op de voet volgen de komende twee jaar" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/covid-19-op-de-voet-volgen-de-komende-twee-jaar/" class="card-title">COVID-19 op de voet volgen de komende twee jaar</a></h3>
+                                De directeur van de Pan American Health Organization, Carissa F. Etienne, zei vandaag tijdens de wekelijkse persconferentie, dat “we, als er geen effectieve behandelingen of een algemeen verkrijgbaar vaccin zijn, we de komende twee jaar verwachten, dat de regio van de Amerika’s terugkerende COVID-19-uitbraken zal ervaren, die kunnen worden afgewisseld met periodes van beperkte transmissie. “
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/thuis-ben-je-nog-steeds-het-veiligst/">
+                                            <img src="/media/1378/ingrid-krishnadath-640x338.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132376428390000000" alt="Thuis ben je nog steeds het veiligst" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/thuis-ben-je-nog-steeds-het-veiligst/" class="card-title">Thuis ben je nog steeds het veiligst</a></h3>
+                                We hebben nog geen weerstand tegen dit nieuwe coronavirus, de besmettelijkheid is groot en de gevolgen voor de gezondheid zijn niet mals. Daarom moeten we voorkomen dat we geïnfecteerd raken met het COVID-19 virus en daarom proberen overheden wereldwijd hun samenleving te beschermen tegen massale infecties. Preventieve maatregelen worden herhaaldelijk gecommuniceerd met de samenleving. In Suriname heeft het Nationaal COVID-19 Managementteam de taak de bevolking bewust te maken. Dat doet het team door onder andere op onze samenleving toepasselijke COVID-19 maatregelen vast te stellen en te communiceren. “Om besmetting te voorkomen, moeten wij namelijk veel en veel voorzichtiger met elkaar omgaan. Ons gedrag beïnvloedt namelijk de manier waarop we elkaar besmetten”, zegt Ingrid Krisnadath, hoofd van het COVID-19 epidemiologisch team van Volksgezondheid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/mogelijkheid-bewoners-paramaribo-noord-tot-bezoek-testlocaties/">
+                                            <img src="/media/1377/2189104-coronavirustest-1585799483-600x450.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132376426450000000" alt="Mogelijkheid bewoners Paramaribo Noord tot bezoek testlocaties" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/mogelijkheid-bewoners-paramaribo-noord-tot-bezoek-testlocaties/" class="card-title">Mogelijkheid bewoners Paramaribo Noord tot bezoek testlocaties</a></h3>
+                                De ‘drive’ and ‘walk-through’ COVID-19 testlocaties van het BOG zijn op woensdag 24 juni 2020 in Paramaribo Noord. Op de ‘drive’ and ‘walk-through’ COVID-19 testlocaties te Lelydorp, Koewarasan en Rijsdijk zijn in totaal 33 swaps afgenomen op dinsdag 23 juni 2020.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/covid-19-plan-overhandigd-aan-vp-adhin/">
+                                            <img src="/media/1367/screenshot_20200623-100823_drive.jpg?center=0.40829694323144106,0.52058823529411768&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132374621690000000" alt="COVID-19 plan overhandigd aan vp Adhin" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/covid-19-plan-overhandigd-aan-vp-adhin/" class="card-title">COVID-19 plan overhandigd aan vp Adhin</a></h3>
+                                Om de COVID-19 uitbraak in Suriname aan te pakken, heeft het Ministerie van Volksgezondheid in samenwerking met Consultant Verginia Asin-Oostburg en de Inter-American Development Bank, het COVID-19 plan samengesteld. Dit plan is op maandag 22 juni 2020 door minister Antoine Elias van Volksgezondheid overhandigd aan vicepresident Michael Ashwin Adhin, tijdens de vergadering van de Raad van Ministers.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/suriname-chinese-united-association-scua-doneert-aan-volksgezondheid/">
+                                            <img src="/media/1365/img_8923-600x399.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132374611990000000" alt="Suriname Chinese United Association (SCUA) doneert aan Volksgezondheid" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/suriname-chinese-united-association-scua-doneert-aan-volksgezondheid/" class="card-title">Suriname Chinese United Association (SCUA) doneert aan Volksgezondheid</a></h3>
+                                De overkoepelde Chinese associatie, Suriname Chinese United Association (SCUA) heeft ten behoeve van het indammen van de COVID-19 pandemie 500 all-in testen gedoneerd aan de minister van Volksgezondheid, Antoine Elias. De testen zijn bestemd voor alle gezondheidsinstellingen die dat nodig hebben, waaronder het Centraal Laboratorium van het Bureau voor Openbare Gezondheidszorg (BOG), het laboratorium van het Academisch Ziekenhuis Paramaribo en eventueel in een later stadium het Wanica Ziekenhuis. De overhandiging vond plaats op 22 juni jongstleden op het ministerie van Volksgezondheid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/president-bouterse-condoleert-familie-en-samenleving/">
+                                            <img src="/media/1359/presboutersepinas-640x376.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132372915480000000" alt="President Bouterse condoleert familie en samenleving" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/president-bouterse-condoleert-familie-en-samenleving/" class="card-title">President Bouterse condoleert familie en samenleving</a></h3>
+                                In Suriname is op maandag 8 juni 2020 de tweede dode als gevolg van het COVID-19 coronavirus genoteerd. President Desiré Delano Bouterse condoleert zowel de familie van de overledene als de totale Surinaamse gemeenschap. Het staatshoofd benadrukt dat een ieder zeer aangeslagen is. Hij roept de totale samenleving op om de instructies gegeven door het Nationaal COVID-19 Managementteam op te volgen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/president-bouterse-kondigt-versoepeling-en-zestal-maatregelen-aan/">
+                                            <img src="/media/1350/presbouterse-2-640x360.jpg?center=0.33823529411764708,0.512396694214876&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132372880420000000" alt="President Bouterse kondigt versoepeling en zestal maatregelen aan" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/president-bouterse-kondigt-versoepeling-en-zestal-maatregelen-aan/" class="card-title">President Bouterse kondigt versoepeling en zestal maatregelen aan</a></h3>
+                                De full lockdown wordt per zondag 21 juni 2020 versoepeld. Zo kondigt president Desiré Delano Bouterse aan in zijn televisietoespraak in het kader van COVID-19 in Suriname. Tegelijkertijd zullen er vanuit overheidszijde enkele maatregelen in place worden gehouden om de besmettingen met het COVID-19 coronavirus in Suriname niet ineens te laten pieken.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/toename-besmettingen-en-aantal-doden-is-wrange-realiteit/">
+                                            <img src="/media/1350/presbouterse-2-640x360.jpg?center=0.33823529411764708,0.512396694214876&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132372880420000000" alt="Toename besmettingen en aantal doden is wrange realiteit" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/toename-besmettingen-en-aantal-doden-is-wrange-realiteit/" class="card-title">Toename besmettingen en aantal doden is wrange realiteit</a></h3>
+                                Hoewel de full lockdown volgens president Desiré Bouterse medisch gezien zijn doel heeft bereikt, is er echter een wrange realiteit: De quarantaine en isolatie capaciteit bereiken hun piek en de zorgexperts geven aan dat de besmettingscijfers zullen blijven stijgen. “Hieruit moeten wij helaas concluderen dat ook het aantal doden zal toenemen,” zegt het staatshoofd in zijn televisietoespraak op zaterdag 20 juni 2020, waarin hij versoepeling van de lockdown heeft aangekondigd.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/bog-introduceert-covid-19-drive-en-walk-through-testlocaties/">
+                                            <img src="/media/1351/covid-19-update-320x225.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132372884150000000" alt="BOG introduceert COVID-19 ‘drive- en walk through’ testlocaties" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/bog-introduceert-covid-19-drive-en-walk-through-testlocaties/" class="card-title">BOG introduceert COVID-19 ‘drive- en walk through’ testlocaties</a></h3>
+                                Om de COVID-19 uitbraak in Suriname in te dammen, zal het Bureau voor Openbare Gezondheidszorg in de week van 22-26 juni 2020 mensen in de gelegenheid stellen zich te laten onderzoeken op een mogelijke besmetting met COVID-19. Waar nodig zal zo snel als mogelijk ook de nodige zorg gegeven worden
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/medische-zending-blijft-grensgebieden-zuidoosten-monitoren/">
+                                            <img src="/media/1352/jintie-1-640x340.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132372888500000000" alt="Medische Zending blijft grensgebieden zuidoosten monitoren" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/medische-zending-blijft-grensgebieden-zuidoosten-monitoren/" class="card-title">Medische Zending blijft grensgebieden zuidoosten monitoren</a></h3>
+                                De Medische Zending blijft het zuidoosten van Suriname, met name de grensgebieden met Frans-Guyana, monitoren. Dit zegt directeur Herman Jintie van de Medische Zending (MZ) in een zoomgesprek tijdens de reguliere COVID-19 persconferentie. Hij wijst erop dat de infecties in het oosterbuurland zijn toegenomen, waardoor monitoren van de grensgebieden nog steeds van belang is.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination border-0 rounded-0">
+                    <li class="page-item active"><a class="page-link border-0" href="/?page=1">1</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=2">2</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=3">3</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=4">4</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=5">5</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=6">6</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=7">7</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=8">8</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=9">9</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=10">10</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=11">11</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=12">12</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=13">13</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=14">14</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=15">15</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=16">16</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=17">17</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=18">18</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=19">19</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=20">20</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=21">21</a></li>
+                     <li class="page-item">
+              <a class="page-link border-0" href="/?page=1" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+      </ul>
+    </nav>
+        
+    </div>
+    <div class="col-md-4">
+        <div id="sideMenu" class="card rounded-0 border-top-0 border-right-0 border-left-0 mb-4">
+            <div class="card-header rounded-0">
+                <a href="/">
+                    “Gemeenschap moet zich wapenen tegen virussen” 
+                </a>
+            </div>
+            
+                <img class="card-img-top rounded-0" src="/media/1067/download-1.jpg?anchor=center&amp;amp;mode=crop&amp;amp;width=510&amp;amp;height=279&amp;amp;rnd=132043867620000000" alt="Home">
+
+            <ul class="list-group list-group-flush mb-2">
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/actueel/">
+                            Actueel
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/minister-staf/">
+                            Minister &amp; Staf
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/over-ministerie/">
+                            Over Ministerie
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="home-sec-title">Minister &amp; Staf</div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/minister-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1027/minister-antoine-elias-foto-suriname-herald.png?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132028298570000000" alt="Antoine Elias" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Minister<br/>
+                                        Antoine Elias
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Minister van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/directeur-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1031/dbsuriname-wp-content-uploads-2019-01-1farmaceutische-sector-wenst-sector-meer-gestalte-te-geven-300x200.jpg?center=0.4,0.43349753694581283&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132028323730000000" alt="Cleopatra Jessurun" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Wnd. Directeur<br/>
+                                        Cleopatra Jessurun
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Directeur van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirekteur-administratieve-diensten/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Wnd. Onderdirecteur<br/>
+                                        Muriel Ravenberg
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirekteur Administratieve Diensten
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirecteur-ministerie-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1048/img_9949.jpg?center=0.336283185840708,0.40707964601769914&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132084438790000000" alt="Robert Mohamed" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Robert Mohamed
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirecteur Ministerie van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirecteur-financieel-beheer/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1112/img_9944.jpg?center=0.2839506172839506,1.4754098360655739&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132084512740000000" alt="Georgian Singorawi" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Georgian Singorawi
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirecteur Financieel Beheer
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+    </div>
+    
+                    </div>
+                </div>
+                <div id="footer" class="container-fluid px-0 ">
+                    <div class="row border-top pt-3 pb-5">
+                        <div class="col-lg-3 col-md-6">
+                <h3>Gezondheidtips</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/gezondheidstips/">Tip </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Vacatures</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/vacatures/">vacature</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Gerelateerde Instellingen</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.malariasuriname.com/">Malaria programma</a>
+                        </li>
+                        <li>
+                            <a href="http://derma.sr/">Dienst Dermatologie</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rgd.sr/">Regionale Gezondheids Dienst</a>
+                        </li>
+                        <li>
+                            <a href="https://www.szf.sr/">Stichting Staatsziekenfonds</a>
+                        </li>
+                    </ul>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="footer">
+                <p>Copyright 2019</p>
+            </div>
+        </div>
+    </div>
+    
+
+	
+	
+
+
+	<script>
+	
+	    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+            
+	</script>
+</body>
+</html>
