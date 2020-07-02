@@ -39,11 +39,6 @@ def get_scores(text, language):
   except Exception as e:
       return repr(e)
 
-markdown_file = open(os.path.join(directories['base'], "language-analysis.md"), "w")
-
-markdown_file.write(" | URL | Trafilatura | Dragnet |\n")
-markdown_file.write(" | --- | --- | --- |\n")
-
 for url in c19utils.CovidURLList():
     output_for_json[url] = {'dragnet' : {}, 'trafilatura': {}}
 
@@ -51,7 +46,6 @@ for url in c19utils.CovidURLList():
       downloaded = requests.get(url).text
     except Exception as e:
       traf_msg = repr(e)
-      markdown_file.write(f" | {url} | {traf_msg} | |")
       output_for_json[url]['error'] = traf_msg
       continue
 
@@ -81,11 +75,6 @@ for url in c19utils.CovidURLList():
 #  except Exception as e:
 #    output_for_json[url]['dragnet'] = {'error' : repr(e)}
     dragnet_msg = ""
-
-    markdown_file.write(f" | {url} | {traf_msg} | {dragnet_msg} |")
-    markdown_file.write("\n")
-
-markdown_file.close()
 
 json_filename = os.path.join(directories['languages'], ('%s.json' % formatted_date))
 json_file = open(json_filename, "w")
