@@ -1,0 +1,2905 @@
+{
+  "captchaResult": "CAPTCHA_NOT_NEEDED",
+  "kind": "pagespeedonline#result",
+  "id": "https://korona.gov.sk/",
+  "loadingExperience": {
+    "id": "https://korona.gov.sk/",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1062,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.72825559636842474
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.22728532815856953
+          },
+          {
+            "min": 3000,
+            "proportion": 0.04445907547300576
+          }
+        ],
+        "category": "AVERAGE"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 2,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.99549976314542876
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0026054002842254855
+          },
+          {
+            "min": 300,
+            "proportion": 0.0018948365703458086
+          }
+        ],
+        "category": "FAST"
+      },
+      "LARGEST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1477,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 2500,
+            "proportion": 0.89309078187860758
+          },
+          {
+            "min": 2500,
+            "max": 4000,
+            "proportion": 0.0651740423298933
+          },
+          {
+            "min": 4000,
+            "proportion": 0.041735175791499046
+          }
+        ],
+        "category": "FAST"
+      },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+        "percentile": 4,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 10,
+            "proportion": 0.96087710995425146
+          },
+          {
+            "min": 10,
+            "max": 25,
+            "proportion": 0.034169427354472315
+          },
+          {
+            "min": 25,
+            "proportion": 0.0049534626912762269
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "AVERAGE",
+    "initial_url": "https://korona.gov.sk/"
+  },
+  "originLoadingExperience": {
+    "id": "https://korona.gov.sk",
+    "metrics": {
+      "FIRST_CONTENTFUL_PAINT_MS": {
+        "percentile": 861,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 1000,
+            "proportion": 0.79510198218902617
+          },
+          {
+            "min": 1000,
+            "max": 3000,
+            "proportion": 0.17209135305946568
+          },
+          {
+            "min": 3000,
+            "proportion": 0.032806664751508181
+          }
+        ],
+        "category": "FAST"
+      },
+      "FIRST_INPUT_DELAY_MS": {
+        "percentile": 2,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 100,
+            "proportion": 0.99561011513590236
+          },
+          {
+            "min": 100,
+            "max": 300,
+            "proportion": 0.0023395194784711633
+          },
+          {
+            "min": 300,
+            "proportion": 0.0020503653856264125
+          }
+        ],
+        "category": "FAST"
+      },
+      "LARGEST_CONTENTFUL_PAINT_MS": {
+        "percentile": 1182,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 2500,
+            "proportion": 0.92124992763272151
+          },
+          {
+            "min": 2500,
+            "max": 4000,
+            "proportion": 0.047718983384472877
+          },
+          {
+            "min": 4000,
+            "proportion": 0.031031088982805523
+          }
+        ],
+        "category": "FAST"
+      },
+      "CUMULATIVE_LAYOUT_SHIFT_SCORE": {
+        "percentile": 4,
+        "distributions": [
+          {
+            "min": 0,
+            "max": 10,
+            "proportion": 0.92283264943414955
+          },
+          {
+            "min": 10,
+            "max": 25,
+            "proportion": 0.0587412770183738
+          },
+          {
+            "min": 25,
+            "proportion": 0.018426073547476537
+          }
+        ],
+        "category": "FAST"
+      }
+    },
+    "overall_category": "FAST",
+    "initial_url": "https://korona.gov.sk/"
+  },
+  "lighthouseResult": {
+    "requestedUrl": "https://korona.gov.sk/",
+    "finalUrl": "https://korona.gov.sk/",
+    "lighthouseVersion": "6.0.0",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/83.0.4103.93 Safari/537.36",
+    "fetchTime": "2020-07-04T05:51:29.699Z",
+    "environment": {
+      "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3963.0 Safari/537.36 Chrome-Lighthouse",
+      "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/83.0.4103.93 Safari/537.36",
+      "benchmarkIndex": 819
+    },
+    "runWarnings": [],
+    "configSettings": {
+      "emulatedFormFactor": "desktop",
+      "locale": "en-US",
+      "onlyCategories": [
+        "performance"
+      ],
+      "channel": "lr"
+    },
+    "audits": {
+      "mainthread-work-breakdown": {
+        "id": "mainthread-work-breakdown",
+        "title": "Minimizes main-thread work",
+        "description": "Consider reducing the time spent parsing, compiling and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/mainthread-work-breakdown)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.4 s",
+        "details": {
+          "type": "table",
+          "items": [
+            {
+              "duration": 243.819,
+              "groupLabel": "Script Evaluation",
+              "group": "scriptEvaluation"
+            },
+            {
+              "group": "other",
+              "duration": 64.993,
+              "groupLabel": "Other"
+            },
+            {
+              "group": "styleLayout",
+              "groupLabel": "Style & Layout",
+              "duration": 45.821999999999996
+            },
+            {
+              "groupLabel": "Script Parsing & Compilation",
+              "duration": 32.726000000000006,
+              "group": "scriptParseCompile"
+            },
+            {
+              "groupLabel": "Parse HTML & CSS",
+              "group": "parseHTML",
+              "duration": 23.808000000000007
+            },
+            {
+              "group": "paintCompositeRender",
+              "groupLabel": "Rendering",
+              "duration": 21.041000000000011
+            },
+            {
+              "groupLabel": "Garbage Collection",
+              "group": "garbageCollection",
+              "duration": 9.0710000000000015
+            }
+          ],
+          "headings": [
+            {
+              "text": "Category",
+              "key": "groupLabel",
+              "itemType": "text"
+            },
+            {
+              "key": "duration",
+              "itemType": "ms",
+              "text": "Time Spent",
+              "granularity": 1
+            }
+          ]
+        },
+        "numericValue": 441.28000000000003
+      },
+      "speed-index": {
+        "id": "speed-index",
+        "title": "Speed Index",
+        "description": "Speed Index shows how quickly the contents of a page are visibly populated. [Learn more](https://web.dev/speed-index).",
+        "score": 0.01,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "6.8 s",
+        "numericValue": 6757.0535205537481
+      },
+      "user-timings": {
+        "id": "user-timings",
+        "title": "User Timing marks and measures",
+        "description": "Consider instrumenting your app with the User Timing API to measure your app's real-world performance during key user experiences. [Learn more](https://web.dev/user-timings).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable",
+        "details": {
+          "items": [],
+          "type": "table",
+          "headings": []
+        }
+      },
+      "estimated-input-latency": {
+        "id": "estimated-input-latency",
+        "title": "Estimated Input Latency",
+        "description": "Estimated Input Latency is an estimate of how long your app takes to respond to user input, in milliseconds, during the busiest 5s window of page load. If your latency is higher than 50 ms, users may perceive your app as laggy. [Learn more](https://web.dev/estimated-input-latency).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "10 ms",
+        "numericValue": 12.8
+      },
+      "cumulative-layout-shift": {
+        "id": "cumulative-layout-shift",
+        "title": "Cumulative Layout Shift",
+        "description": "Cumulative Layout Shift measures the movement of visible elements within the viewport. [Learn more](https://web.dev/cls).",
+        "score": 0.93,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.089",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "finalLayoutShiftTraceEventFound": true
+            }
+          ]
+        },
+        "numericValue": 0.0888391792896127
+      },
+      "uses-webp-images": {
+        "id": "uses-webp-images",
+        "title": "Serve images in next-gen formats",
+        "description": "Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more](https://web.dev/uses-webp-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "items": [],
+          "overallSavingsMs": 0,
+          "type": "opportunity",
+          "headings": [],
+          "overallSavingsBytes": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "first-contentful-paint": {
+        "id": "first-contentful-paint",
+        "title": "First Contentful Paint",
+        "description": "First Contentful Paint marks the time at which the first text or image is painted. [Learn more](https://web.dev/first-contentful-paint).",
+        "score": 0.68,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.3 s",
+        "numericValue": 1322
+      },
+      "render-blocking-resources": {
+        "id": "render-blocking-resources",
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn more](https://web.dev/render-blocking-resources).",
+        "score": 0.83,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 210 ms",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "label": "URL",
+              "valueType": "url"
+            },
+            {
+              "label": "Transfer Size",
+              "key": "totalBytes",
+              "valueType": "bytes"
+            },
+            {
+              "valueType": "timespanMs",
+              "label": "Potential Savings",
+              "key": "wastedMs"
+            }
+          ],
+          "overallSavingsMs": 210,
+          "items": [
+            {
+              "wastedMs": 190,
+              "totalBytes": 10469,
+              "url": "https://korona.gov.sk/wp-includes/css/dist/block-library/style.min.css"
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/plugins/koronablock/dist/blocks.style.build.css",
+              "wastedMs": 150,
+              "totalBytes": 513
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/search-form.css",
+              "totalBytes": 796,
+              "wastedMs": 70
+            }
+          ],
+          "type": "opportunity"
+        },
+        "numericValue": 210
+      },
+      "unused-css-rules": {
+        "id": "unused-css-rules",
+        "title": "Remove unused CSS",
+        "description": "Remove dead rules from stylesheets and defer the loading of CSS not used for above-the-fold content to reduce unnecessary bytes consumed by network activity. [Learn more](https://web.dev/unused-css-rules).",
+        "score": 0.97,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 47 KB",
+        "details": {
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedBytes": 37586,
+              "url": ".govuk-link {font-family: Source Sans Pro,Arial,sans-serif;-webkit-font-smoothing: antialiased; ... } ...",
+              "totalBytes": 37586,
+              "wastedPercent": 100
+            },
+            {
+              "url": "https://korona.gov.sk/wp-includes/css/dist/block-library/style.min.css",
+              "wastedPercent": 99.944391626455229,
+              "wastedBytes": 10463,
+              "totalBytes": 10469
+            }
+          ],
+          "headings": [
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "label": "Transfer Size",
+              "valueType": "bytes",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "valueType": "bytes",
+              "label": "Potential Savings"
+            }
+          ],
+          "overallSavingsBytes": 48049,
+          "overallSavingsMs": 40
+        },
+        "numericValue": 40
+      },
+      "diagnostics": {
+        "id": "diagnostics",
+        "title": "Diagnostics",
+        "description": "Collection of useful page vitals.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "items": [
+            {
+              "numRequests": 35,
+              "mainDocumentTransferSize": 25118,
+              "maxServerLatency": null,
+              "maxRtt": 0.00039878683690010752,
+              "numTasksOver10ms": 9,
+              "numTasksOver500ms": 0,
+              "numTasksOver25ms": 5,
+              "numFonts": 0,
+              "throughput": 19034442954.40992,
+              "numStylesheets": 10,
+              "numScripts": 17,
+              "totalByteWeight": 538498,
+              "numTasks": 635,
+              "numTasksOver50ms": 2,
+              "totalTaskTime": 441.28000000000014,
+              "rtt": 0.00039878683690010752,
+              "numTasksOver100ms": 0
+            }
+          ],
+          "type": "debugdata"
+        }
+      },
+      "uses-rel-preload": {
+        "id": "uses-rel-preload",
+        "title": "Preload key requests",
+        "description": "Consider using `\u003clink rel=preload\u003e` to prioritize fetching resources that are currently requested later in page load. [Learn more](https://web.dev/uses-rel-preload).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "overallSavingsMs": 0,
+          "items": [],
+          "type": "opportunity"
+        },
+        "numericValue": 0
+      },
+      "first-meaningful-paint": {
+        "id": "first-meaningful-paint",
+        "title": "First Meaningful Paint",
+        "description": "First Meaningful Paint measures when the primary content of a page is visible. [Learn more](https://web.dev/first-meaningful-paint).",
+        "score": 0.68,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.3 s",
+        "numericValue": 1322
+      },
+      "first-cpu-idle": {
+        "id": "first-cpu-idle",
+        "title": "First CPU Idle",
+        "description": "First CPU Idle marks the first time at which the page's main thread is quiet enough to handle input.  [Learn more](https://web.dev/first-cpu-idle).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.3 s",
+        "numericValue": 1322
+      },
+      "largest-contentful-paint-element": {
+        "id": "largest-contentful-paint-element",
+        "title": "Largest Contentful Paint element",
+        "description": "This is the element that was identified as the Largest Contentful Paint. [Learn More](https://web.dev/lighthouse-largest-contentful-paint)",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "1 element found",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "text": "Element",
+              "itemType": "node",
+              "key": "node"
+            }
+          ],
+          "items": [
+            {
+              "node": {
+                "path": "1,HTML,1,BODY,13,DIV,0,DIV",
+                "nodeLabel": "S cieľom zabezpečiť riadne fungovanie tejto webovej lokality ukladáme niekedy n…",
+                "selector": "body.govuk-template__body \u003e div#cookie_bar \u003e div.left",
+                "type": "node",
+                "snippet": "\u003cdiv class=\"left govuk-body\"\u003e"
+              }
+            }
+          ]
+        }
+      },
+      "uses-rel-preconnect": {
+        "id": "uses-rel-preconnect",
+        "title": "Preconnect to required origins",
+        "description": "Consider adding `preconnect` or `dns-prefetch` resource hints to establish early connections to important third-party origins. [Learn more](https://web.dev/uses-rel-preconnect).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "headings": [],
+          "type": "opportunity",
+          "items": [],
+          "overallSavingsMs": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "network-rtt": {
+        "id": "network-rtt",
+        "title": "Network Round Trip Times",
+        "description": "Network round trip times (RTT) have a large impact on performance. If the RTT to an origin is high, it's an indication that servers closer to the user could improve performance. [Learn more](https://hpbn.co/primer-on-latency-and-bandwidth/).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": []
+        },
+        "numericValue": 0
+      },
+      "performance-budget": {
+        "id": "performance-budget",
+        "title": "Performance budget",
+        "description": "Keep the quantity and size of network requests under the targets set by the provided performance budget. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "final-screenshot": {
+        "id": "final-screenshot",
+        "title": "Final Screenshot",
+        "description": "The last screenshot captured of the pageload.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "screenshot",
+          "timing": 10637,
+          "timestamp": 2610530224614,
+          "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAFcAfQDASIAAhEBAxEB/8QAHAABAAMAAwEBAAAAAAAAAAAAAAQFBgIDBwgB/8QATBAAAQMDAgMEBwQGCAQEBwEAAQACAwQFERIhBhMxFSJBUQcUMlNhkuEWcYGRI0JzobHRMzRSYnKVotMXN7PSJDWTwSVEVWOClKPx/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAECAwUGBP/EAC4RAQACAgECAwYFBQAAAAAAAAABEQIDEgQhMVFxBRM0QWGRFCIj4fBDUlOBof/aAAwDAQACEQMRAD8A+h75xDNbLhLCyhdUQQU7amZzCQ4NJfnG2NgwncjPgoE3HtDGJ2mirWyxPMRa9oADsub1z01NIyM+HXIWnqrdRVcnMqqSnmfjTqkjDjjy3+9RzYbQTk2yiJznPIb18+i9GGemIjnj/wBVmMvlKifxzSvgBpqWZ0zh3WyuZGM5bkOyctwHeIG/dODspdHxRz6WtqfUpDFTzx07GxvaXyOcGnOCQAO+Op81ZGw2g5zbKI52P6Bu/wC5chY7UM4ttHv/APZb/JTOemqjFFZeanh4ypaunq5KClnmfTyQMLDpbrEsvLBac42Id1x0Uen4+tz2tdLBUMY5hl1gAhrA/Tl2+xx3j5BX7bFaW502yiGdziFu/wC5fnYVpBz2ZRZxjPIb0/JTz6fv+WfuVl5qym4thqK6ClbR1UUkshjAk074c5pxgnfLHnG3dY4+QMaq45o6e4CnNLOWAP1PDmZGJGxjA1eJJ26jGSN1fdiWzbFvpQAc4EYxnzx57n8z5rj2DaM57Mos5znkN6+fRRGWi7nGSslAOPaOaWKKkoquWZ41aO63GHNa4bnZw1A4OFraeZtRTxzR50SND258iMqC2w2hpy210QOMbQN6fkrFjGxsaxjQ1jRgNAwAPJU25a5r3cUmIn5v1ERYVhERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQFxlkEUT5HBxaxpcdLS44HkBuT8AuSIKL7VW73F3/AMpq/wDbT7VW73F3/wApq/8AbV6iCi+1Vu9xd/8AKav/AG0+1Vu9xd/8pq/9tXqIKL7VW73F3/ymr/20+1Vu9xd/8pq/9tXqIKL7VW73F3/ymr/20+1Vu9xd/wDKav8A21eogovtVbvcXf8Aymr/ANtPtVbvcXf/ACmr/wBtXqIKL7VW73F3/wApq/8AbX47iu2taXOhuwaBkk2mq2//AJq+XRcP6hU/snfwKDH/APFXg7/6rJ/+nP8A9il2n0icL3a5U9BQXJ0lXO7TGw00zNRwTjLmAdAfFfG0n9I//EVr/Q7/AM0OHP27v+m9bjf7KjVqnZzuvp+7T6Pas7dka+Pj9f2fYVTUQ0sD56mWOGFgy58jg1rfvJXGOqp5YoJI54nxz/0TmvBEm2e6fHYE7eSicQUorbXJTOJHMc3B0g4IcCOvxHhgjwIOCvPqfhy03CUzMvFTJI+PYvnwXB0ZYPaO7cNJHju45OrK07cPUHSMa5gc5oLzhoJ6nGcD8AfyXJYKgslutlfS1BrInvpJOY1r3xudkQFhbkkuwGkkDwyeuVCobHSSiCq7UDagOEjMTNOkAuETRnB06XMadhr5behQekPkYwsD3taXnS0E41HBOB+AP5LksP2FRMoXW41ZNS+YGSTVG6Qu5Qiw5vkA9pI8NXxUa4+joG3mO31hNQQ5hdP7JaY2xjIwc6NOpo8Cc5CD0FFiblwIaxpJulQHtD+VgBpZkADDuo22J8c9FJ4T4QNmrRX1FTrqnNkaY4siNgfIXaWjYaRnYY67/BBrUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAXRcP6hU/snfwK710XD+oVP7J38Cg+EZP6R/8AiK1/od/5ocOft3f9N6yEn9I//EVr/Q7/AM0OHP27v+m9df1vw2Xo5HoviMPV9dXZz20oMOnma26dWcdfHC84ihsIrqmBxomzjVHNznTgO0uGQSXYO+D+GfivR7p/V2ftG/xVDLw/apqh88tHG+V+cuJO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XSCoogQDEyQ40gVGMMDGgH9JFnJJOgnPQIN8iIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiDPX7henvFVU1E080cklM2CPQ9zRG5peWyYBGogvBGehaq2Lguopqqomoru6EySOkaDE44y8ODT3xqaAMAbH4+CvLxxLZrNXUlHdLjT01VVkCGOR2C7Lg0H4DUQMnAyQF+2TiOz3yerhtNwgq5aV2mZsZzp3Iz8RlrhkbZafJBmY+AZ2Vb6ntlz5jHytT4nHUNZd3zry7rgYI6N8t7i78NS3KjoqV9bGIYXOMxdAXSSjIIw/UC0ggOJ3BcAcYGFpEQV1htzrZQ8iSVksjnue5zI+W3J8m5OPz81YoiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIMPx7w/fb7erOKIWx9jp5GzVkFRK+OSd7XhzAS1jssaQHacjU7GdhvD9F/A9y4Uut2qbhU0srKpjY28lz3GQiWV/MIcAIv6XHLZloIJ8Vu6ivpaeojgmnYyV5ADSfM4GfLJ2Gep2G6kOc1rS5xAaBkknYIP1FwiljmaXQyMkaCWktOQCDgj7wVzQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQZTivg/t+4NqBcJKVjo4o5mNjDi7lS82MtdkaSHdeuR5dVRv9FdLJTTU0t1rJKeVj2vjdkgksmaCQT4c4H72NWnvnFEFnuJpp6aeSOOFtRLJE0u0MJcM4A3A0En4dMrrouMbZU1EsLxPC5kzoQZInAOcCARnGxBPQoLDhm0myWhlEag1GmSSTWW6fbe5+AMnAGrA36BWiysfHVqluApom1L2Oi5rJRC7D+8WkNGMndrvDGxVhW8Q01M+g0xyysrN2vAwA3mRx6t+o1Ss/DJ+8LpERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREHVLTQSmUywxP5rOVJqaDrZv3T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"
+        }
+      },
+      "third-party-summary": {
+        "id": "third-party-summary",
+        "title": "Minimize third-party usage",
+        "description": "Third-party code can significantly impact load performance. Limit the number of redundant third-party providers and try to load third-party code after your page has primarily finished loading. [Learn more](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/loading-third-party-javascript/).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Third-party code blocked the main thread for 0 ms",
+        "details": {
+          "items": [
+            {
+              "entity": {
+                "url": "https://www.luigisbox.com/",
+                "text": "Luigi’s Box",
+                "type": "link"
+              },
+              "blockingTime": 0,
+              "transferSize": 188016,
+              "mainThreadTime": 138.679
+            },
+            {
+              "mainThreadTime": 47.98000000000004,
+              "blockingTime": 0,
+              "entity": {
+                "text": "Google Tag Manager",
+                "type": "link",
+                "url": "https://marketingplatform.google.com/about/tag-manager/"
+              },
+              "transferSize": 30370
+            },
+            {
+              "mainThreadTime": 27.526,
+              "transferSize": 19882,
+              "entity": {
+                "type": "link",
+                "text": "Google Analytics",
+                "url": "https://www.google.com/analytics/analytics/"
+              },
+              "blockingTime": 0
+            },
+            {
+              "entity": {
+                "url": "https://www.doubleclickbygoogle.com/",
+                "text": "Google/Doubleclick Ads",
+                "type": "link"
+              },
+              "blockingTime": 0,
+              "mainThreadTime": 0,
+              "transferSize": 674
+            }
+          ],
+          "headings": [
+            {
+              "key": "entity",
+              "text": "Third-Party",
+              "itemType": "link"
+            },
+            {
+              "text": "Transfer Size",
+              "key": "transferSize",
+              "itemType": "bytes",
+              "granularity": 1
+            },
+            {
+              "itemType": "ms",
+              "key": "blockingTime",
+              "granularity": 1,
+              "text": "Main-Thread Blocking Time"
+            }
+          ],
+          "summary": {
+            "wastedMs": 0,
+            "wastedBytes": 238942
+          },
+          "type": "table"
+        }
+      },
+      "total-blocking-time": {
+        "id": "total-blocking-time",
+        "title": "Total Blocking Time",
+        "description": "Sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds. [Learn more](https://web.dev/lighthouse-total-blocking-time).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "20 ms",
+        "numericValue": 23
+      },
+      "uses-optimized-images": {
+        "id": "uses-optimized-images",
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data. [Learn more](https://web.dev/uses-optimized-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "items": [],
+          "headings": [],
+          "overallSavingsBytes": 0,
+          "overallSavingsMs": 0,
+          "type": "opportunity"
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "layout-shift-elements": {
+        "id": "layout-shift-elements",
+        "title": "Avoid large layout shifts",
+        "description": "These DOM elements contribute most to the CLS of the page.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "5 elements found",
+        "details": {
+          "items": [
+            {
+              "node": {
+                "selector": "body.govuk-template__body \u003e main#main-content",
+                "type": "node",
+                "nodeLabel": "Koronavírus a Slovensko\n\nVšetky dôležité a aktuálne informácie o ochorení COVID…",
+                "snippet": "\u003cmain class=\"govuk-main-wrapper govuk-!-padding-top-6 govuk-!-padding-bottom-6 govuk-body\" id=\"main-content\" role=\"main\"\u003e",
+                "path": "1,HTML,1,BODY,17,MAIN"
+              }
+            },
+            {
+              "node": {
+                "path": "1,HTML,1,BODY,16,DIV,0,DIV,0,DIV,0,DIV,0,P",
+                "selector": "div.govuk-width-container \u003e div.govuk-grid-row \u003e div.govuk-grid-column-full \u003e p.govuk-body",
+                "snippet": "\u003cp class=\"govuk-body\"\u003e",
+                "type": "node",
+                "nodeLabel": "Od 6. júla 2020 sa rozširuje zoznam zdravotne bezpečných krajín. Viac informácií"
+              }
+            },
+            {
+              "node": {
+                "nodeLabel": "Čítajte viac",
+                "selector": "div#block_5e98df329e42e \u003e div#block_5e98df4b9e430 \u003e div \u003e p.govuk-body",
+                "type": "node",
+                "path": "1,HTML,1,BODY,17,MAIN,3,DIV,1,DIV,0,DIV,0,DIV,0,DIV,3,P",
+                "snippet": "\u003cp class=\"govuk-body\"\u003e"
+              }
+            },
+            {
+              "node": {
+                "nodeLabel": "Počas dovolenky buďte obozretní a zodpovední. K udržaniu priaznivého vývoja pan…",
+                "snippet": "\u003cp class=\"govuk-body\"\u003e",
+                "selector": "div#block_5e98df329e42e \u003e div#block_5e98df4b9e430 \u003e div \u003e p.govuk-body",
+                "path": "1,HTML,1,BODY,17,MAIN,3,DIV,1,DIV,0,DIV,0,DIV,0,DIV,2,P",
+                "type": "node"
+              }
+            },
+            {
+              "node": {
+                "snippet": "\u003cli\u003e",
+                "selector": "div#block_5e98df4b9e430 \u003e div \u003e ul.govuk-list \u003e li",
+                "nodeLabel": "Pri akomkoľvek podozrení kontaktu s COVID-19 ihneď telefonicky kontaktujte svoj…",
+                "path": "1,HTML,1,BODY,17,MAIN,3,DIV,1,DIV,0,DIV,0,DIV,0,DIV,1,UL,2,LI",
+                "type": "node"
+              }
+            }
+          ],
+          "type": "table",
+          "headings": [
+            {
+              "text": "Element",
+              "itemType": "node",
+              "key": "node"
+            }
+          ]
+        }
+      },
+      "unused-javascript": {
+        "id": "unused-javascript",
+        "title": "Remove unused JavaScript",
+        "description": "Remove unused JavaScript to reduce bytes consumed by network activity. [Learn more](https://web.dev/remove-unused-code/).",
+        "score": 0.87,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 253 KB",
+        "details": {
+          "overallSavingsBytes": 258953,
+          "type": "opportunity",
+          "items": [
+            {
+              "wastedPercent": 84.1442261338908,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/d3.js",
+              "totalBytes": 85359,
+              "wastedBytes": 71825
+            },
+            {
+              "wastedPercent": 61.679482711502345,
+              "totalBytes": 115395,
+              "url": "https://cdn.luigisbox.com/search.js",
+              "wastedBytes": 71175
+            },
+            {
+              "wastedPercent": 83.618628200363247,
+              "totalBytes": 53450,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/leaflet.js",
+              "wastedBytes": 44694
+            },
+            {
+              "wastedPercent": 72.0802157317027,
+              "totalBytes": 25983,
+              "wastedBytes": 18729,
+              "url": "https://cdn.luigisbox.com/autocomplete.js"
+            },
+            {
+              "wastedPercent": 37.673274189076793,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQWLJHB",
+              "totalBytes": 30370,
+              "wastedBytes": 11441
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/autocomplete.js",
+              "totalBytes": 17737,
+              "wastedPercent": 59.019635213102553,
+              "wastedBytes": 10468
+            },
+            {
+              "wastedBytes": 8776,
+              "wastedPercent": 42.908235824216057,
+              "url": "https://cdn.luigisbox.com/korona.js",
+              "totalBytes": 20453
+            },
+            {
+              "wastedPercent": 67.124442838212261,
+              "totalBytes": 11749,
+              "wastedBytes": 7886,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/index.js"
+            },
+            {
+              "totalBytes": 19110,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "wastedBytes": 6883,
+              "wastedPercent": 36.019844205579005
+            },
+            {
+              "wastedBytes": 3875,
+              "wastedPercent": 85.043765938383075,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/boundarycanvas.js",
+              "totalBytes": 4557
+            },
+            {
+              "wastedBytes": 3201,
+              "totalBytes": 5367,
+              "wastedPercent": 59.633147723550607,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/lang-picker.js"
+            }
+          ],
+          "headings": [
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url",
+              "subRows": {
+                "valueType": "code",
+                "key": "sources"
+              }
+            },
+            {
+              "subRows": {
+                "key": "sourceBytes"
+              },
+              "valueType": "bytes",
+              "key": "totalBytes",
+              "label": "Transfer Size"
+            },
+            {
+              "valueType": "bytes",
+              "key": "wastedBytes",
+              "label": "Potential Savings",
+              "subRows": {
+                "key": "sourceWastedBytes"
+              }
+            }
+          ],
+          "overallSavingsMs": 160
+        },
+        "numericValue": 160
+      },
+      "no-document-write": {
+        "id": "no-document-write",
+        "title": "Avoids `document.write()`",
+        "description": "For users on slow connections, external scripts dynamically injected via `document.write()` can delay page load by tens of seconds. [Learn more](https://web.dev/no-document-write).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "headings": [],
+          "items": [],
+          "type": "table"
+        }
+      },
+      "uses-passive-event-listeners": {
+        "id": "uses-passive-event-listeners",
+        "title": "Uses passive listeners to improve scrolling performance",
+        "description": "Consider marking your touch and wheel event listeners as `passive` to improve your page's scroll performance. [Learn more](https://web.dev/uses-passive-event-listeners).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [],
+          "items": []
+        }
+      },
+      "interactive": {
+        "id": "interactive",
+        "title": "Time to Interactive",
+        "description": "Time to interactive is the amount of time it takes for the page to become fully interactive. [Learn more](https://web.dev/interactive).",
+        "score": 0.99,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.6 s",
+        "numericValue": 1568
+      },
+      "unminified-css": {
+        "id": "unminified-css",
+        "title": "Minify CSS",
+        "description": "Minifying CSS files can reduce network payload sizes. [Learn more](https://web.dev/unminified-css).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 2 KB",
+        "details": {
+          "type": "opportunity",
+          "overallSavingsBytes": 2394,
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "valueType": "url",
+              "key": "url",
+              "label": "URL"
+            },
+            {
+              "key": "totalBytes",
+              "label": "Transfer Size",
+              "valueType": "bytes"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ],
+          "items": [
+            {
+              "url": ".govuk-link {font-family: Source Sans Pro,Arial,sans-serif;-webkit-font-smoothing: antialiased; ... } ...",
+              "totalBytes": 37586,
+              "wastedBytes": 2394,
+              "wastedPercent": 6.3683452250274382
+            }
+          ]
+        },
+        "numericValue": 0
+      },
+      "efficient-animated-content": {
+        "id": "efficient-animated-content",
+        "title": "Use video formats for animated content",
+        "description": "Large GIFs are inefficient for delivering animated content. Consider using MPEG4/WebM videos for animations and PNG/WebP for static images instead of GIF to save network bytes. [Learn more](https://web.dev/efficient-animated-content)",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "items": [],
+          "type": "opportunity",
+          "headings": [],
+          "overallSavingsMs": 0,
+          "overallSavingsBytes": 0
+        },
+        "numericValue": 0
+      },
+      "uses-long-cache-ttl": {
+        "id": "uses-long-cache-ttl",
+        "title": "Serve static assets with an efficient cache policy",
+        "description": "A long cache lifetime can speed up repeat visits to your page. [Learn more](https://web.dev/uses-long-cache-ttl).",
+        "score": 0.2,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "22 resources found",
+        "details": {
+          "summary": {
+            "wastedBytes": 361545.94000000006
+          },
+          "headings": [
+            {
+              "text": "URL",
+              "key": "url",
+              "itemType": "url"
+            },
+            {
+              "itemType": "ms",
+              "displayUnit": "duration",
+              "key": "cacheLifetimeMs",
+              "text": "Cache TTL"
+            },
+            {
+              "itemType": "bytes",
+              "displayUnit": "kb",
+              "text": "Transfer Size",
+              "granularity": 1,
+              "key": "totalBytes"
+            }
+          ],
+          "type": "table",
+          "items": [
+            {
+              "cacheHitProbability": 0,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/images/magnifier.png",
+              "totalBytes": 904,
+              "cacheLifetimeMs": 0,
+              "wastedBytes": 904
+            },
+            {
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 92316,
+              "url": "https://cdn.luigisbox.com/search.js",
+              "cacheHitProbability": 0.2,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "totalBytes": 115395
+            },
+            {
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 68287.2,
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/d3.js",
+              "totalBytes": 85359,
+              "cacheHitProbability": 0.2
+            },
+            {
+              "debugData": {
+                "max-age": 3600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheHitProbability": 0.2,
+              "totalBytes": 53450,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/leaflet.js",
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 42760
+            },
+            {
+              "cacheHitProbability": 0.2,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "url": "https://cdn.luigisbox.com/autocomplete.js",
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 20786.4,
+              "totalBytes": 25983
+            },
+            {
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 20484.800000000003,
+              "cacheHitProbability": 0.2,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/slovakia_esri_epsg_4326.js",
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "totalBytes": 25606
+            },
+            {
+              "cacheHitProbability": 0.2,
+              "totalBytes": 21916,
+              "wastedBytes": 17532.8,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/upsvr-emails.js",
+              "cacheLifetimeMs": 3600000
+            },
+            {
+              "totalBytes": 20453,
+              "cacheHitProbability": 0.2,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 3600
+              },
+              "url": "https://cdn.luigisbox.com/korona.js",
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 16362.400000000001
+            },
+            {
+              "cacheHitProbability": 0.2,
+              "totalBytes": 17737,
+              "wastedBytes": 14189.6,
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/autocomplete.js",
+              "cacheLifetimeMs": 3600000
+            },
+            {
+              "debugData": {
+                "max-age": 3600,
+                "public": true,
+                "type": "debugdata"
+              },
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/index.js",
+              "cacheHitProbability": 0.2,
+              "wastedBytes": 9399.2,
+              "cacheLifetimeMs": 3600000,
+              "totalBytes": 11749
+            },
+            {
+              "cacheHitProbability": 0.2,
+              "url": "https://korona.gov.sk/wp-includes/css/dist/block-library/style.min.css",
+              "cacheLifetimeMs": 3600000,
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "totalBytes": 10469,
+              "wastedBytes": 8375.2
+            },
+            {
+              "totalBytes": 9789,
+              "debugData": {
+                "max-age": 3600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheLifetimeMs": 3600000,
+              "cacheHitProbability": 0.2,
+              "wastedBytes": 7831.2000000000007,
+              "url": "https://scripts.luigisbox.com/LBX-134645.js?v=1.0.0"
+            },
+            {
+              "url": "https://cdn.luigisbox.com/autocomplete.css",
+              "totalBytes": 7284,
+              "wastedBytes": 5827.2000000000007,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 3600
+              },
+              "cacheHitProbability": 0.2,
+              "cacheLifetimeMs": 3600000
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/lang-picker.js",
+              "totalBytes": 5367,
+              "cacheLifetimeMs": 3600000,
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "wastedBytes": 4293.6,
+              "cacheHitProbability": 0.2
+            },
+            {
+              "cacheHitProbability": 0.2,
+              "cacheLifetimeMs": 3600000,
+              "url": "https://cdn.luigisbox.com/theme/luigis/app.css",
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "wastedBytes": 4180,
+              "totalBytes": 5225
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/boundarycanvas.js",
+              "totalBytes": 4557,
+              "cacheLifetimeMs": 3600000,
+              "debugData": {
+                "public": true,
+                "type": "debugdata",
+                "max-age": 3600
+              },
+              "wastedBytes": 3645.6000000000004,
+              "cacheHitProbability": 0.2
+            },
+            {
+              "cacheLifetimeMs": 3600000,
+              "url": "https://cdn.luigisbox.com/theme/luigis/app.js",
+              "cacheHitProbability": 0.2,
+              "wastedBytes": 1922.4,
+              "debugData": {
+                "public": true,
+                "max-age": 3600,
+                "type": "debugdata"
+              },
+              "totalBytes": 2403
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/driveinmap.js",
+              "debugData": {
+                "max-age": 3600,
+                "type": "debugdata",
+                "public": true
+              },
+              "totalBytes": 1978,
+              "cacheLifetimeMs": 3600000,
+              "cacheHitProbability": 0.2,
+              "wastedBytes": 1582.4
+            },
+            {
+              "cacheLifetimeMs": 3600000,
+              "wastedBytes": 636.80000000000007,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/search-form.css",
+              "debugData": {
+                "max-age": 3600,
+                "type": "debugdata",
+                "public": true
+              },
+              "cacheHitProbability": 0.2,
+              "totalBytes": 796
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 3600,
+                "public": true
+              },
+              "url": "https://korona.gov.sk/wp-content/plugins/koronablock/dist/blocks.style.build.css",
+              "cacheHitProbability": 0.2,
+              "totalBytes": 513,
+              "wastedBytes": 410.40000000000003,
+              "cacheLifetimeMs": 3600000
+            },
+            {
+              "debugData": {
+                "type": "debugdata",
+                "max-age": 7200,
+                "public": true
+              },
+              "wastedBytes": 14332.5,
+              "url": "https://www.google-analytics.com/analytics.js",
+              "cacheHitProbability": 0.25,
+              "totalBytes": 19110,
+              "cacheLifetimeMs": 7200000
+            },
+            {
+              "debugData": {
+                "max-age": 14400,
+                "type": "debugdata"
+              },
+              "wastedBytes": 5486.24,
+              "totalBytes": 8068,
+              "cacheHitProbability": 0.32,
+              "cacheLifetimeMs": 14400000,
+              "url": "https://cdn.covid.chat/logo.png"
+            }
+          ]
+        },
+        "numericValue": 361545.94000000006
+      },
+      "network-server-latency": {
+        "id": "network-server-latency",
+        "title": "Server Backend Latencies",
+        "description": "Server latencies can impact web performance. If the server latency of an origin is high, it's an indication the server is overloaded or has poor backend performance. [Learn more](https://hpbn.co/primer-on-web-performance/#analyzing-the-resource-waterfall).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "0 ms",
+        "details": {
+          "type": "table",
+          "items": [],
+          "headings": []
+        },
+        "numericValue": 0
+      },
+      "server-response-time": {
+        "id": "server-response-time",
+        "title": "Initial server response time was short",
+        "description": "Keep the server response time for the main document short because all other requests depend on it. [Learn more](https://web.dev/time-to-first-byte).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "displayValue": "Root document took 200 ms",
+        "details": {
+          "type": "opportunity",
+          "items": [],
+          "headings": [],
+          "overallSavingsMs": -404.477
+        },
+        "numericValue": 195.523
+      },
+      "dom-size": {
+        "id": "dom-size",
+        "title": "Avoids an excessive DOM size",
+        "description": "A large DOM will increase memory usage, cause longer [style calculations](https://developers.google.com/web/fundamentals/performance/rendering/reduce-the-scope-and-complexity-of-style-calculations), and produce costly [layout reflows](https://developers.google.com/speed/articles/reflow). [Learn more](https://web.dev/dom-size).",
+        "score": 0.99,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "521 elements",
+        "details": {
+          "headings": [
+            {
+              "text": "Statistic",
+              "itemType": "text",
+              "key": "statistic"
+            },
+            {
+              "itemType": "code",
+              "text": "Element",
+              "key": "element"
+            },
+            {
+              "text": "Value",
+              "itemType": "numeric",
+              "key": "value"
+            }
+          ],
+          "items": [
+            {
+              "statistic": "Total DOM Elements",
+              "value": "521"
+            },
+            {
+              "value": "12",
+              "element": {
+                "value": "\u003cbutton type=\"button\" id=\"postupne-uvolnovanie\" aria-controls=\"gov-blocks-accordion-block_5e9985e1260e3-content-1\" class=\"govuk-accordion__section-button\" aria-expanded=\"true\"\u003e",
+                "type": "code"
+              },
+              "statistic": "Maximum DOM Depth"
+            },
+            {
+              "element": {
+                "value": "\u003cg\u003e",
+                "type": "code"
+              },
+              "statistic": "Maximum Child Elements",
+              "value": "56"
+            }
+          ],
+          "type": "table"
+        },
+        "numericValue": 521
+      },
+      "largest-contentful-paint": {
+        "id": "largest-contentful-paint",
+        "title": "Largest Contentful Paint",
+        "description": "Largest Contentful Paint marks the time at which the largest text or image is painted. [Learn More](https://web.dev/lighthouse-largest-contentful-paint)",
+        "score": 0.86,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "1.4 s",
+        "numericValue": 1350
+      },
+      "metrics": {
+        "id": "metrics",
+        "title": "Metrics",
+        "description": "Collects all available metrics.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "debugdata",
+          "items": [
+            {
+              "speedIndex": 6757,
+              "observedFirstMeaningfulPaint": 10265,
+              "observedFirstVisualChangeTs": 2610529840550,
+              "observedFirstPaintTs": 2610529852529,
+              "observedCumulativeLayoutShift": 0.0888391792896127,
+              "observedFirstVisualChange": 10253,
+              "observedNavigationStartTs": 2610519587550,
+              "observedSpeedIndex": 10272,
+              "observedDomContentLoadedTs": 2610529903600,
+              "cumulativeLayoutShift": 0.0888391792896127,
+              "observedFirstContentfulPaintTs": 2610529852529,
+              "observedLargestContentfulPaint": 10265,
+              "observedLargestContentfulPaintTs": 2610529852529,
+              "estimatedInputLatency": 13,
+              "observedFirstContentfulPaint": 10265,
+              "largestContentfulPaint": 1350,
+              "totalBlockingTime": 23,
+              "observedTraceEnd": 11693,
+              "maxPotentialFID": 48,
+              "observedTraceEndTs": 2610531280821,
+              "observedSpeedIndexTs": 2610529859962,
+              "observedLoadTs": 2610530219064,
+              "observedFirstMeaningfulPaintTs": 2610529852529,
+              "interactive": 1568,
+              "observedFirstPaint": 10265,
+              "firstMeaningfulPaint": 1322,
+              "observedNavigationStart": 0,
+              "observedDomContentLoaded": 10316,
+              "firstCPUIdle": 1322,
+              "observedLoad": 10632,
+              "observedLastVisualChangeTs": 2610530224550,
+              "observedLastVisualChange": 10637,
+              "firstContentfulPaint": 1322
+            },
+            {
+              "lcpInvalidated": false
+            }
+          ]
+        },
+        "numericValue": 1568
+      },
+      "total-byte-weight": {
+        "id": "total-byte-weight",
+        "title": "Avoids enormous network payloads",
+        "description": "Large network payloads cost users real money and are highly correlated with long load times. [Learn more](https://web.dev/total-byte-weight).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Total size was 526 KB",
+        "details": {
+          "type": "table",
+          "items": [
+            {
+              "totalBytes": 115395,
+              "url": "https://cdn.luigisbox.com/search.js"
+            },
+            {
+              "totalBytes": 85359,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/d3.js"
+            },
+            {
+              "totalBytes": 53450,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/leaflet.js"
+            },
+            {
+              "totalBytes": 30370,
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQWLJHB"
+            },
+            {
+              "url": "https://cdn.luigisbox.com/autocomplete.js",
+              "totalBytes": 25983
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/slovakia_esri_epsg_4326.js",
+              "totalBytes": 25606
+            },
+            {
+              "url": "https://korona.gov.sk/",
+              "totalBytes": 25118
+            },
+            {
+              "totalBytes": 22500,
+              "url": "https://mojeezdravie.nczisk.sk/api/v1/svk-covid-driveins"
+            },
+            {
+              "totalBytes": 21916,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/upsvr-emails.js"
+            },
+            {
+              "totalBytes": 20453,
+              "url": "https://cdn.luigisbox.com/korona.js"
+            }
+          ],
+          "headings": [
+            {
+              "text": "URL",
+              "itemType": "url",
+              "key": "url"
+            },
+            {
+              "itemType": "bytes",
+              "key": "totalBytes",
+              "text": "Transfer Size"
+            }
+          ]
+        },
+        "numericValue": 538498
+      },
+      "main-thread-tasks": {
+        "id": "main-thread-tasks",
+        "title": "Tasks",
+        "description": "Lists the toplevel main thread tasks that executed during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "text": "Start Time",
+              "key": "startTime",
+              "itemType": "ms",
+              "granularity": 1
+            },
+            {
+              "key": "duration",
+              "granularity": 1,
+              "text": "End Time",
+              "itemType": "ms"
+            }
+          ],
+          "items": [
+            {
+              "startTime": 224.592,
+              "duration": 9.017
+            },
+            {
+              "startTime": 238.194,
+              "duration": 5.7
+            },
+            {
+              "startTime": 260.133,
+              "duration": 7.292
+            },
+            {
+              "duration": 36.571,
+              "startTime": 268.003
+            },
+            {
+              "duration": 27.303,
+              "startTime": 309.448
+            },
+            {
+              "duration": 27.141,
+              "startTime": 10237.611
+            },
+            {
+              "duration": 79.656,
+              "startTime": 10264.854
+            },
+            {
+              "duration": 6.84,
+              "startTime": 10344.571
+            },
+            {
+              "startTime": 10352.493,
+              "duration": 5.1
+            },
+            {
+              "duration": 19.689,
+              "startTime": 10397.146
+            },
+            {
+              "startTime": 10423.234,
+              "duration": 12.816
+            },
+            {
+              "startTime": 10436.702,
+              "duration": 65.899
+            },
+            {
+              "startTime": 10502.621,
+              "duration": 9.134
+            },
+            {
+              "startTime": 10517.213,
+              "duration": 22.438
+            },
+            {
+              "duration": 14.886,
+              "startTime": 10539.681
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "screenshot-thumbnails": {
+        "id": "screenshot-thumbnails",
+        "title": "Screenshot Thumbnails",
+        "description": "This is what the load of your site looked like.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "type": "filmstrip",
+          "scale": 10637,
+          "items": [
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610520651250,
+              "timing": 1064
+            },
+            {
+              "timing": 2127,
+              "timestamp": 2610521714950.0005,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z"
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610522778650,
+              "timing": 3191
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timing": 4255,
+              "timestamp": 2610523842350.0005
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610524906050,
+              "timing": 5319
+            },
+            {
+              "timing": 6382,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610525969750
+            },
+            {
+              "timing": 7446,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610527033450.0005
+            },
+            {
+              "timing": 8510,
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610528097150
+            },
+            {
+              "data": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRQBAwQEBQQFCQUFCRQNCw0UFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFP/AABEIAFMAeAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AP1ToAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgAoAKACgD//Z",
+              "timestamp": 2610529160850.0005,
+              "timing": 9573
+            },
+            {
+              "timestamp": 2610530224550,
+              "timing": 10637,
+              "data": "data:image/jpeg;base64,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"
+            }
+          ]
+        }
+      },
+      "font-display": {
+        "id": "font-display",
+        "title": "All text remains visible during webfont loads",
+        "description": "Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading. [Learn more](https://web.dev/font-display).",
+        "score": 1,
+        "scoreDisplayMode": "binary",
+        "details": {
+          "type": "table",
+          "headings": [],
+          "items": []
+        },
+        "warnings": []
+      },
+      "network-requests": {
+        "id": "network-requests",
+        "title": "Network Requests",
+        "description": "Lists the network requests that were made during page load.",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "details": {
+          "headings": [
+            {
+              "key": "url",
+              "text": "URL",
+              "itemType": "url"
+            },
+            {
+              "key": "startTime",
+              "granularity": 1,
+              "text": "Start Time",
+              "itemType": "ms"
+            },
+            {
+              "key": "endTime",
+              "itemType": "ms",
+              "text": "End Time",
+              "granularity": 1
+            },
+            {
+              "displayUnit": "kb",
+              "key": "transferSize",
+              "text": "Transfer Size",
+              "itemType": "bytes",
+              "granularity": 1
+            },
+            {
+              "itemType": "bytes",
+              "text": "Resource Size",
+              "granularity": 1,
+              "key": "resourceSize",
+              "displayUnit": "kb"
+            },
+            {
+              "itemType": "text",
+              "key": "statusCode",
+              "text": "Status Code"
+            },
+            {
+              "itemType": "text",
+              "text": "MIME Type",
+              "key": "mimeType"
+            },
+            {
+              "text": "Resource Type",
+              "key": "resourceType",
+              "itemType": "text"
+            }
+          ],
+          "items": [
+            {
+              "url": "https://korona.gov.sk/",
+              "finished": true,
+              "resourceType": "Document",
+              "statusCode": 200,
+              "startTime": 0,
+              "resourceSize": 77926,
+              "mimeType": "text/html",
+              "endTime": 194.52700018882751,
+              "transferSize": 25118
+            },
+            {
+              "url": "https://korona.gov.sk/wp-includes/css/dist/block-library/style.min.css",
+              "finished": true,
+              "statusCode": 200,
+              "mimeType": "text/css",
+              "transferSize": 10469,
+              "resourceType": "Stylesheet",
+              "startTime": 212.45800005272031,
+              "endTime": 357.7479999512434,
+              "resourceSize": 55750
+            },
+            {
+              "mimeType": "text/css",
+              "finished": true,
+              "resourceType": "Stylesheet",
+              "statusCode": 200,
+              "url": "https://korona.gov.sk/wp-content/plugins/koronablock/dist/blocks.style.build.css",
+              "resourceSize": 143,
+              "transferSize": 513,
+              "startTime": 212.66099996864796,
+              "endTime": 345.27300018817186
+            },
+            {
+              "finished": true,
+              "resourceSize": 0,
+              "endTime": 10204.402999952435,
+              "url": "https://korona.gov.sk/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.css",
+              "statusCode": -1,
+              "transferSize": 0,
+              "startTime": 211.91300032660365,
+              "resourceType": "Stylesheet"
+            },
+            {
+              "resourceSize": 0,
+              "statusCode": -1,
+              "finished": true,
+              "transferSize": 0,
+              "endTime": 10204.993000254035,
+              "startTime": 212.21600007265806,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/style.css",
+              "resourceType": "Stylesheet"
+            },
+            {
+              "finished": true,
+              "endTime": 10204.695000313222,
+              "resourceType": "Stylesheet",
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/leaflet.css",
+              "statusCode": -1,
+              "resourceSize": 0,
+              "transferSize": 0,
+              "startTime": 212.53099991008639
+            },
+            {
+              "transferSize": 0,
+              "startTime": 212.73000026121736,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/govuk-finder.css",
+              "resourceSize": 0,
+              "endTime": 10206.633999943733,
+              "resourceType": "Stylesheet",
+              "statusCode": -1,
+              "finished": true
+            },
+            {
+              "endTime": 344.12900032475591,
+              "finished": true,
+              "transferSize": 796,
+              "startTime": 213.92700029537082,
+              "statusCode": 200,
+              "resourceSize": 874,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/search-form.css",
+              "resourceType": "Stylesheet",
+              "mimeType": "text/css"
+            },
+            {
+              "transferSize": 0,
+              "statusCode": -1,
+              "endTime": 10204.125000163913,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/fonts/fonts.css",
+              "startTime": 213.1139999255538,
+              "resourceType": "Stylesheet",
+              "resourceSize": 0,
+              "finished": true
+            },
+            {
+              "url": "https://scripts.luigisbox.com/LBX-134645.js?v=1.0.0",
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "finished": true,
+              "startTime": 216.3909999653697,
+              "resourceSize": 39669,
+              "statusCode": 200,
+              "transferSize": 9789,
+              "endTime": 252.90700001642108
+            },
+            {
+              "transferSize": 30370,
+              "mimeType": "application/javascript",
+              "url": "https://www.googletagmanager.com/gtm.js?id=GTM-PQWLJHB",
+              "endTime": 226.9399999640882,
+              "resourceSize": 86583,
+              "startTime": 216.6320001706481,
+              "finished": true,
+              "statusCode": 200,
+              "resourceType": "Script"
+            },
+            {
+              "statusCode": 200,
+              "resourceType": "Script",
+              "resourceSize": 33204,
+              "transferSize": 11749,
+              "finished": true,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/index.js",
+              "endTime": 346.16600023582578,
+              "startTime": 217.89800003170967,
+              "mimeType": "application/javascript"
+            },
+            {
+              "mimeType": "application/javascript",
+              "startTime": 218.11200026422739,
+              "finished": true,
+              "resourceType": "Script",
+              "resourceSize": 42986,
+              "statusCode": 200,
+              "transferSize": 17737,
+              "endTime": 1596.3010000996292,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/autocomplete.js"
+            },
+            {
+              "finished": true,
+              "transferSize": 21916,
+              "startTime": 218.31599995493889,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/upsvr-emails.js",
+              "resourceType": "Script",
+              "resourceSize": 102842,
+              "statusCode": 200,
+              "endTime": 1596.9489999115467,
+              "mimeType": "application/javascript"
+            },
+            {
+              "mimeType": "application/javascript",
+              "endTime": 359.59500027820468,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/lang-picker.js",
+              "resourceSize": 15275,
+              "statusCode": 200,
+              "transferSize": 5367,
+              "finished": true,
+              "startTime": 218.50100019946694,
+              "resourceType": "Script"
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/slovakia_esri_epsg_4326.js",
+              "transferSize": 25606,
+              "startTime": 218.90900004655123,
+              "endTime": 367.54700029268861,
+              "statusCode": 200,
+              "resourceSize": 94699,
+              "mimeType": "application/javascript",
+              "resourceType": "Script",
+              "finished": true
+            },
+            {
+              "startTime": 219.24200002104044,
+              "endTime": 411.97500005364418,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/d3.js",
+              "finished": true,
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 221959,
+              "statusCode": 200,
+              "transferSize": 85359
+            },
+            {
+              "transferSize": 53450,
+              "endTime": 395.41200036183,
+              "startTime": 219.58200028166175,
+              "statusCode": 200,
+              "finished": true,
+              "mimeType": "application/javascript",
+              "resourceSize": 142601,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/leaflet.js",
+              "resourceType": "Script"
+            },
+            {
+              "mimeType": "application/javascript",
+              "transferSize": 4557,
+              "endTime": 351.94900026544929,
+              "resourceSize": 14509,
+              "finished": true,
+              "startTime": 219.8399999178946,
+              "resourceType": "Script",
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/boundarycanvas.js",
+              "statusCode": 200
+            },
+            {
+              "statusCode": 200,
+              "finished": true,
+              "resourceType": "Script",
+              "transferSize": 1978,
+              "mimeType": "application/javascript",
+              "resourceSize": 4199,
+              "endTime": 556.02000001817942,
+              "startTime": 220.81400034949183,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/driveinmap.js"
+            },
+            {
+              "statusCode": 200,
+              "endTime": 276.41799999400973,
+              "resourceType": "Script",
+              "mimeType": "text/javascript",
+              "finished": true,
+              "transferSize": 19110,
+              "resourceSize": 45958,
+              "startTime": 271.998000331223,
+              "url": "https://www.google-analytics.com/analytics.js"
+            },
+            {
+              "finished": true,
+              "endTime": 313.61400010064244,
+              "statusCode": 302,
+              "transferSize": 772,
+              "url": "https://www.google-analytics.com/r/collect?v=1&_v=j83&aip=1&a=1008904283&t=pageview&_s=1&dl=https%3A%2F%2Fkorona.gov.sk%2F&ul=en-us&de=UTF-8&dt=Koronav%C3%ADrus%20a%20Slovensko&sd=24-bit&sr=800x600&vp=1350x940&je=0&_u=YEBAAEAB~&jid=2024617955&gjid=1753929303&cid=537541813.1593841891&tid=UA-163219548-1&_gid=834609424.1593841891&_r=1&gtm=2wg6o0PQWLJHB&z=1323077351",
+              "resourceSize": 0,
+              "startTime": 309.322000015527,
+              "mimeType": "text/html"
+            },
+            {
+              "url": "https://stats.g.doubleclick.net/r/collect?v=1&aip=1&t=dc&_r=3&tid=UA-163219548-1&cid=537541813.1593841891&jid=2024617955&_gid=834609424.1593841891&gjid=1753929303&_v=j83&z=1323077351",
+              "statusCode": 200,
+              "startTime": 313.85200005024672,
+              "finished": true,
+              "resourceSize": 35,
+              "mimeType": "image/gif",
+              "resourceType": "Image",
+              "endTime": 317.22100032493472,
+              "transferSize": 674
+            },
+            {
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/images/magnifier.png",
+              "statusCode": 200,
+              "transferSize": 904,
+              "resourceSize": 652,
+              "resourceType": "Image",
+              "mimeType": "image/png",
+              "finished": true,
+              "endTime": 10318.078000098467,
+              "startTime": 10213.483999948949
+            },
+            {
+              "finished": true,
+              "mimeType": "application/json",
+              "resourceType": "XHR",
+              "url": "https://mojeezdravie.nczisk.sk/api/v1/svk-covid-driveins",
+              "resourceSize": 22034,
+              "startTime": 10305.254000239074,
+              "transferSize": 22500,
+              "statusCode": 200,
+              "endTime": 10458.502000197768
+            },
+            {
+              "transferSize": 3469,
+              "mimeType": "application/javascript",
+              "startTime": 10306.004000362009,
+              "url": "https://cdn.covid.chat/chat.js",
+              "resourceType": "Script",
+              "endTime": 10450.585000216961,
+              "finished": true,
+              "resourceSize": 15991,
+              "statusCode": 200
+            },
+            {
+              "resourceSize": 105426,
+              "statusCode": 200,
+              "endTime": 10371.518000029027,
+              "url": "https://cdn.luigisbox.com/autocomplete.js",
+              "startTime": 10327.684999909252,
+              "resourceType": "Script",
+              "finished": true,
+              "transferSize": 25983,
+              "mimeType": "application/javascript"
+            },
+            {
+              "transferSize": 7284,
+              "endTime": 10377.036000136286,
+              "resourceType": "Stylesheet",
+              "url": "https://cdn.luigisbox.com/autocomplete.css",
+              "finished": true,
+              "resourceSize": 48713,
+              "mimeType": "text/css",
+              "startTime": 10328.197000082582,
+              "statusCode": 200
+            },
+            {
+              "resourceType": "Script",
+              "mimeType": "application/javascript",
+              "resourceSize": 399253,
+              "finished": true,
+              "endTime": 10390.842000022531,
+              "statusCode": 200,
+              "transferSize": 115395,
+              "startTime": 10329.213000368327,
+              "url": "https://cdn.luigisbox.com/search.js"
+            },
+            {
+              "transferSize": 20453,
+              "url": "https://cdn.luigisbox.com/korona.js",
+              "mimeType": "application/javascript",
+              "startTime": 10330.155000090599,
+              "resourceSize": 71731,
+              "statusCode": 200,
+              "resourceType": "Script",
+              "finished": true,
+              "endTime": 10365.447000134736
+            },
+            {
+              "endTime": 10443.973999936134,
+              "finished": true,
+              "resourceSize": 0,
+              "statusCode": 204,
+              "transferSize": 713,
+              "url": "https://api.luigisbox.com/",
+              "startTime": 10389.711000025272,
+              "resourceType": "Other"
+            },
+            {
+              "resourceSize": 14,
+              "startTime": 10444.481000304222,
+              "mimeType": "application/json",
+              "endTime": 10500.741000287235,
+              "statusCode": 200,
+              "finished": true,
+              "transferSize": 771,
+              "resourceType": "XHR",
+              "url": "https://api.luigisbox.com/"
+            },
+            {
+              "startTime": 10473.435000050813,
+              "statusCode": 200,
+              "transferSize": 5225,
+              "url": "https://cdn.luigisbox.com/theme/luigis/app.css",
+              "finished": true,
+              "endTime": 10484.416000079364,
+              "mimeType": "text/css",
+              "resourceType": "Stylesheet",
+              "resourceSize": 24657
+            },
+            {
+              "transferSize": 2403,
+              "resourceType": "Script",
+              "resourceSize": 5119,
+              "statusCode": 200,
+              "url": "https://cdn.luigisbox.com/theme/luigis/app.js",
+              "mimeType": "application/javascript",
+              "startTime": 10474.173000082374,
+              "finished": true,
+              "endTime": 10513.52300029248
+            },
+            {
+              "resourceSize": 7780,
+              "endTime": 10628.92400007695,
+              "resourceType": "Image",
+              "startTime": 10529.446000233293,
+              "finished": true,
+              "transferSize": 8068,
+              "mimeType": "image/png",
+              "url": "https://cdn.covid.chat/logo.png",
+              "statusCode": 200
+            }
+          ],
+          "type": "table"
+        }
+      },
+      "uses-responsive-images": {
+        "id": "uses-responsive-images",
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn more](https://web.dev/uses-responsive-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 7 KB",
+        "details": {
+          "overallSavingsMs": 0,
+          "items": [
+            {
+              "url": "https://cdn.covid.chat/logo.png",
+              "totalBytes": 7780,
+              "wastedBytes": 7198,
+              "wastedPercent": 92.523193359375
+            }
+          ],
+          "overallSavingsBytes": 7198,
+          "type": "opportunity",
+          "headings": [
+            {
+              "valueType": "thumbnail",
+              "key": "url"
+            },
+            {
+              "valueType": "url",
+              "label": "URL",
+              "key": "url"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Resource Size",
+              "key": "totalBytes"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Potential Savings",
+              "key": "wastedBytes"
+            }
+          ]
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "offscreen-images": {
+        "id": "offscreen-images",
+        "title": "Defer offscreen images",
+        "description": "Consider lazy-loading offscreen and hidden images after all critical resources have finished loading to lower time to interactive. [Learn more](https://web.dev/offscreen-images).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "type": "opportunity",
+          "headings": [],
+          "overallSavingsMs": 0,
+          "items": [],
+          "overallSavingsBytes": 0
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "uses-text-compression": {
+        "id": "uses-text-compression",
+        "title": "Enable text compression",
+        "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes. [Learn more](https://web.dev/uses-text-compression).",
+        "score": 0.97,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 18 KB",
+        "details": {
+          "type": "opportunity",
+          "overallSavingsMs": 40,
+          "items": [
+            {
+              "wastedBytes": 18195,
+              "totalBytes": 22034,
+              "url": "https://mojeezdravie.nczisk.sk/api/v1/svk-covid-driveins"
+            }
+          ],
+          "headings": [
+            {
+              "label": "URL",
+              "valueType": "url",
+              "key": "url"
+            },
+            {
+              "valueType": "bytes",
+              "label": "Transfer Size",
+              "key": "totalBytes"
+            },
+            {
+              "key": "wastedBytes",
+              "label": "Potential Savings",
+              "valueType": "bytes"
+            }
+          ],
+          "overallSavingsBytes": 18195
+        },
+        "numericValue": 40
+      },
+      "redirects": {
+        "id": "redirects",
+        "title": "Avoid multiple page redirects",
+        "description": "Redirects introduce additional delays before the page can be loaded. [Learn more](https://web.dev/redirects).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "details": {
+          "overallSavingsMs": 0,
+          "items": [],
+          "headings": [],
+          "type": "opportunity"
+        },
+        "numericValue": 0
+      },
+      "max-potential-fid": {
+        "id": "max-potential-fid",
+        "title": "Max Potential First Input Delay",
+        "description": "The maximum potential First Input Delay that your users could experience is the duration of the longest task. [Learn more](https://web.dev/lighthouse-max-potential-fid).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "50 ms",
+        "numericValue": 48
+      },
+      "timing-budget": {
+        "id": "timing-budget",
+        "title": "Timing budget",
+        "description": "Set a timing budget to help you keep an eye on the performance of your site. Performant sites load fast and respond to user input events quickly. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "notApplicable"
+      },
+      "bootup-time": {
+        "id": "bootup-time",
+        "title": "JavaScript execution time",
+        "description": "Consider reducing the time spent parsing, compiling, and executing JS. You may find delivering smaller JS payloads helps with this. [Learn more](https://web.dev/bootup-time).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "0.1 s",
+        "details": {
+          "summary": {
+            "wastedMs": 65.72799999999998
+          },
+          "type": "table",
+          "items": [
+            {
+              "url": "https://korona.gov.sk/",
+              "total": 101.063,
+              "scripting": 12.222999999999994,
+              "scriptParseCompile": 1.7899999999999998
+            },
+            {
+              "total": 56.667999999999992,
+              "scripting": 45.697999999999993,
+              "scriptParseCompile": 6.0169999999999995,
+              "url": "https://cdn.luigisbox.com/search.js"
+            }
+          ],
+          "headings": [
+            {
+              "text": "URL",
+              "key": "url",
+              "itemType": "url"
+            },
+            {
+              "text": "Total CPU Time",
+              "granularity": 1,
+              "key": "total",
+              "itemType": "ms"
+            },
+            {
+              "key": "scripting",
+              "granularity": 1,
+              "itemType": "ms",
+              "text": "Script Evaluation"
+            },
+            {
+              "key": "scriptParseCompile",
+              "itemType": "ms",
+              "granularity": 1,
+              "text": "Script Parse"
+            }
+          ]
+        },
+        "numericValue": 65.72799999999998
+      },
+      "unminified-javascript": {
+        "id": "unminified-javascript",
+        "title": "Minify JavaScript",
+        "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn more](https://web.dev/unminified-javascript).",
+        "score": 1,
+        "scoreDisplayMode": "numeric",
+        "displayValue": "Potential savings of 6 KB",
+        "details": {
+          "type": "opportunity",
+          "overallSavingsBytes": 6281,
+          "items": [
+            {
+              "wastedPercent": 15.552434555803119,
+              "wastedBytes": 3982,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/slovakia_esri_epsg_4326.js",
+              "totalBytes": 25606
+            },
+            {
+              "wastedPercent": 50.444551657591838,
+              "totalBytes": 4557,
+              "wastedBytes": 2299,
+              "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/boundarycanvas.js"
+            }
+          ],
+          "overallSavingsMs": 0,
+          "headings": [
+            {
+              "key": "url",
+              "label": "URL",
+              "valueType": "url"
+            },
+            {
+              "key": "totalBytes",
+              "label": "Transfer Size",
+              "valueType": "bytes"
+            },
+            {
+              "label": "Potential Savings",
+              "key": "wastedBytes",
+              "valueType": "bytes"
+            }
+          ]
+        },
+        "warnings": [],
+        "numericValue": 0
+      },
+      "critical-request-chains": {
+        "id": "critical-request-chains",
+        "title": "Avoid chaining critical requests",
+        "description": "The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load. [Learn more](https://web.dev/critical-request-chains).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "17 chains found",
+        "details": {
+          "longestChain": {
+            "transferSize": 713,
+            "length": 1,
+            "duration": 10443.973999936134
+          },
+          "type": "criticalrequestchain",
+          "chains": {
+            "38F83806A693033B896F447EB33D7331": {
+              "request": {
+                "transferSize": 25118,
+                "url": "https://korona.gov.sk/",
+                "responseReceivedTime": 2610519.783148,
+                "endTime": 2610519.783152,
+                "startTime": 2610519.588625
+              },
+              "children": {
+                "23.4": {
+                  "request": {
+                    "responseReceivedTime": -1,
+                    "transferSize": 0,
+                    "url": "https://korona.gov.sk/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.css",
+                    "startTime": 2610519.800538,
+                    "endTime": 2610529.793028
+                  }
+                },
+                "23.24": {
+                  "request": {
+                    "transferSize": 5367,
+                    "endTime": 2610519.94822,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/lang-picker.js",
+                    "startTime": 2610519.807126,
+                    "responseReceivedTime": 2610519.948218
+                  }
+                },
+                "23.6": {
+                  "request": {
+                    "responseReceivedTime": -1,
+                    "startTime": 2610519.801156,
+                    "transferSize": 0,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/leaflet.css",
+                    "endTime": 2610529.79332
+                  }
+                },
+                "23.27": {
+                  "request": {
+                    "startTime": 2610519.808207,
+                    "transferSize": 53450,
+                    "responseReceivedTime": 2610519.984035,
+                    "endTime": 2610519.984037,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/leaflet.js"
+                  }
+                },
+                "23.23": {
+                  "request": {
+                    "endTime": 2610521.185574,
+                    "startTime": 2610519.806941,
+                    "transferSize": 21916,
+                    "responseReceivedTime": 2610521.185573,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/upsvr-emails.js"
+                  }
+                },
+                "23.8": {
+                  "request": {
+                    "responseReceivedTime": 2610519.932753,
+                    "transferSize": 796,
+                    "startTime": 2610519.802552,
+                    "endTime": 2610519.932754,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/search-form.css"
+                  }
+                },
+                "23.3": {
+                  "request": {
+                    "startTime": 2610519.801286,
+                    "transferSize": 513,
+                    "responseReceivedTime": 2610519.933897,
+                    "url": "https://korona.gov.sk/wp-content/plugins/koronablock/dist/blocks.style.build.css",
+                    "endTime": 2610519.933898
+                  }
+                },
+                "23.5": {
+                  "request": {
+                    "startTime": 2610519.800841,
+                    "transferSize": 0,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/style.css",
+                    "endTime": 2610529.793618,
+                    "responseReceivedTime": -1
+                  }
+                },
+                "23.26": {
+                  "request": {
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/d3.js",
+                    "responseReceivedTime": 2610520.0005989997,
+                    "transferSize": 85359,
+                    "endTime": 2610520.0006,
+                    "startTime": 2610519.807867
+                  }
+                },
+                "23.2": {
+                  "request": {
+                    "url": "https://korona.gov.sk/wp-includes/css/dist/block-library/style.min.css",
+                    "startTime": 2610519.801083,
+                    "endTime": 2610519.946373,
+                    "responseReceivedTime": 2610519.946371,
+                    "transferSize": 10469
+                  }
+                },
+                "23.28": {
+                  "request": {
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/boundarycanvas.js",
+                    "responseReceivedTime": 2610519.9405719996,
+                    "startTime": 2610519.808465,
+                    "transferSize": 4557,
+                    "endTime": 2610519.940574
+                  }
+                },
+                "23.21": {
+                  "request": {
+                    "endTime": 2610519.934791,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/index.js",
+                    "startTime": 2610519.806523,
+                    "responseReceivedTime": 2610519.93479,
+                    "transferSize": 11749
+                  }
+                },
+                "23.29": {
+                  "request": {
+                    "startTime": 2610519.809439,
+                    "transferSize": 1978,
+                    "responseReceivedTime": 2610520.1446430003,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/driveinmap.js",
+                    "endTime": 2610520.144645
+                  }
+                },
+                "23.25": {
+                  "request": {
+                    "responseReceivedTime": 2610519.956171,
+                    "endTime": 2610519.956172,
+                    "transferSize": 25606,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/slovakia_esri_epsg_4326.js",
+                    "startTime": 2610519.807534
+                  }
+                },
+                "23.9": {
+                  "request": {
+                    "endTime": 2610529.79275,
+                    "transferSize": 0,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/fonts/fonts.css",
+                    "startTime": 2610519.801739,
+                    "responseReceivedTime": -1
+                  }
+                },
+                "23.22": {
+                  "request": {
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/js/autocomplete.js",
+                    "endTime": 2610521.184926,
+                    "responseReceivedTime": 2610521.184924,
+                    "startTime": 2610519.806737,
+                    "transferSize": 17737
+                  }
+                },
+                "23.7": {
+                  "request": {
+                    "endTime": 2610529.795259,
+                    "url": "https://korona.gov.sk/wp-content/themes/korona/assets/css/govuk-finder.css",
+                    "responseReceivedTime": -1,
+                    "startTime": 2610519.801355,
+                    "transferSize": 0
+                  }
+                }
+              }
+            },
+            "5051F63EAB6B16A09ABE07A6FA210253": {
+              "request": {
+                "responseReceivedTime": 2610530.032439,
+                "transferSize": 713,
+                "endTime": 2610530.032599,
+                "url": "https://api.luigisbox.com/",
+                "startTime": 2610529.978336
+              }
+            }
+          }
+        }
+      },
+      "resource-summary": {
+        "id": "resource-summary",
+        "title": "Keep request counts low and transfer sizes small",
+        "description": "To set budgets for the quantity and size of page resources, add a budget.json file. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/budgets).",
+        "score": null,
+        "scoreDisplayMode": "informative",
+        "displayValue": "35 requests • 526 KB",
+        "details": {
+          "type": "table",
+          "headings": [
+            {
+              "text": "Resource Type",
+              "key": "label",
+              "itemType": "text"
+            },
+            {
+              "key": "requestCount",
+              "text": "Requests",
+              "itemType": "numeric"
+            },
+            {
+              "text": "Transfer Size",
+              "key": "transferSize",
+              "itemType": "bytes"
+            }
+          ],
+          "items": [
+            {
+              "resourceType": "total",
+              "transferSize": 538498,
+              "label": "Total",
+              "requestCount": 35
+            },
+            {
+              "label": "Script",
+              "transferSize": 454691,
+              "resourceType": "script",
+              "requestCount": 17
+            },
+            {
+              "transferSize": 25118,
+              "label": "Document",
+              "resourceType": "document",
+              "requestCount": 1
+            },
+            {
+              "resourceType": "other",
+              "requestCount": 4,
+              "transferSize": 24756,
+              "label": "Other"
+            },
+            {
+              "label": "Stylesheet",
+              "transferSize": 24287,
+              "resourceType": "stylesheet",
+              "requestCount": 10
+            },
+            {
+              "requestCount": 3,
+              "transferSize": 9646,
+              "label": "Image",
+              "resourceType": "image"
+            },
+            {
+              "requestCount": 0,
+              "transferSize": 0,
+              "resourceType": "media",
+              "label": "Media"
+            },
+            {
+              "transferSize": 0,
+              "resourceType": "font",
+              "requestCount": 0,
+              "label": "Font"
+            },
+            {
+              "transferSize": 272979,
+              "resourceType": "third-party",
+              "requestCount": 16,
+              "label": "Third-party"
+            }
+          ]
+        }
+      }
+    },
+    "categories": {
+      "performance": {
+        "id": "performance",
+        "title": "Performance",
+        "score": 0.76,
+        "auditRefs": [
+          {
+            "id": "first-contentful-paint",
+            "weight": 15,
+            "group": "metrics"
+          },
+          {
+            "id": "speed-index",
+            "weight": 15,
+            "group": "metrics"
+          },
+          {
+            "id": "largest-contentful-paint",
+            "weight": 25,
+            "group": "metrics"
+          },
+          {
+            "id": "interactive",
+            "weight": 15,
+            "group": "metrics"
+          },
+          {
+            "id": "total-blocking-time",
+            "weight": 25,
+            "group": "metrics"
+          },
+          {
+            "id": "cumulative-layout-shift",
+            "weight": 5,
+            "group": "metrics"
+          },
+          {
+            "id": "first-cpu-idle",
+            "weight": 0
+          },
+          {
+            "id": "max-potential-fid",
+            "weight": 0
+          },
+          {
+            "id": "first-meaningful-paint",
+            "weight": 0
+          },
+          {
+            "id": "estimated-input-latency",
+            "weight": 0
+          },
+          {
+            "id": "render-blocking-resources",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-responsive-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "offscreen-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-css",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unminified-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-css-rules",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "unused-javascript",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-optimized-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-webp-images",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-text-compression",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preconnect",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "server-response-time",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "redirects",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "uses-rel-preload",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "efficient-animated-content",
+            "weight": 0,
+            "group": "load-opportunities"
+          },
+          {
+            "id": "total-byte-weight",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-long-cache-ttl",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "dom-size",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "critical-request-chains",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "user-timings",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "bootup-time",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "font-display",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "performance-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "timing-budget",
+            "weight": 0,
+            "group": "budgets"
+          },
+          {
+            "id": "resource-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "third-party-summary",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "largest-contentful-paint-element",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "layout-shift-elements",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "uses-passive-event-listeners",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "no-document-write",
+            "weight": 0,
+            "group": "diagnostics"
+          },
+          {
+            "id": "network-requests",
+            "weight": 0
+          },
+          {
+            "id": "network-rtt",
+            "weight": 0
+          },
+          {
+            "id": "network-server-latency",
+            "weight": 0
+          },
+          {
+            "id": "main-thread-tasks",
+            "weight": 0
+          },
+          {
+            "id": "diagnostics",
+            "weight": 0
+          },
+          {
+            "id": "metrics",
+            "weight": 0
+          },
+          {
+            "id": "screenshot-thumbnails",
+            "weight": 0
+          },
+          {
+            "id": "final-screenshot",
+            "weight": 0
+          }
+        ]
+      }
+    },
+    "categoryGroups": {
+      "best-practices-ux": {
+        "title": "User Experience"
+      },
+      "load-opportunities": {
+        "title": "Opportunities",
+        "description": "These suggestions can help your page load faster. They don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+      },
+      "pwa-fast-reliable": {
+        "title": "Fast and reliable"
+      },
+      "seo-mobile": {
+        "title": "Mobile Friendly",
+        "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+      },
+      "best-practices-trust-safety": {
+        "title": "Trust and Safety"
+      },
+      "a11y-best-practices": {
+        "title": "Best practices",
+        "description": "These items highlight common accessibility best practices."
+      },
+      "a11y-tables-lists": {
+        "title": "Tables and lists",
+        "description": "These are opportunities to to improve the experience of reading tabular or list data using assistive technology, like a screen reader."
+      },
+      "pwa-optimized": {
+        "title": "PWA Optimized"
+      },
+      "pwa-installable": {
+        "title": "Installable"
+      },
+      "a11y-language": {
+        "title": "Internationalization and localization",
+        "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+      },
+      "metrics": {
+        "title": "Metrics"
+      },
+      "seo-content": {
+        "title": "Content Best Practices",
+        "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      },
+      "a11y-color-contrast": {
+        "title": "Contrast",
+        "description": "These are opportunities to improve the legibility of your content."
+      },
+      "best-practices-browser-compat": {
+        "title": "Browser Compatibility"
+      },
+      "a11y-audio-video": {
+        "title": "Audio and video",
+        "description": "These are opportunities to provide alternative content for audio and video. This may improve the experience for users with hearing or vision impairments."
+      },
+      "seo-crawl": {
+        "title": "Crawling and Indexing",
+        "description": "To appear in search results, crawlers need access to your app."
+      },
+      "best-practices-general": {
+        "title": "General"
+      },
+      "a11y-names-labels": {
+        "title": "Names and labels",
+        "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "description": "More information about the performance of your application. These numbers don't [directly affect](https://web.dev/performance-scoring/) the Performance score."
+      },
+      "budgets": {
+        "title": "Budgets",
+        "description": "Performance budgets set standards for the performance of your site."
+      },
+      "a11y-aria": {
+        "title": "ARIA",
+        "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+      },
+      "a11y-navigation": {
+        "title": "Navigation",
+        "description": "These are opportunities to improve keyboard navigation in your application."
+      }
+    },
+    "timing": {
+      "total": 34414.69
+    },
+    "i18n": {
+      "rendererFormattedStrings": {
+        "varianceDisclaimer": "Values are estimated and may vary. The [performance score is calculated](https://web.dev/performance-scoring/) directly from these metrics.",
+        "opportunityResourceColumnLabel": "Opportunity",
+        "opportunitySavingsColumnLabel": "Estimated Savings",
+        "errorMissingAuditInfo": "Report error: no audit information",
+        "errorLabel": "Error!",
+        "warningHeader": "Warnings: ",
+        "auditGroupExpandTooltip": "Show audits",
+        "passedAuditsGroupTitle": "Passed audits",
+        "notApplicableAuditsGroupTitle": "Not applicable",
+        "manualAuditsGroupTitle": "Additional items to manually check",
+        "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+        "crcLongestDurationLabel": "Maximum critical path latency:",
+        "crcInitialNavigation": "Initial Navigation",
+        "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on an emulated mobile network. Values are estimated and may vary.",
+        "labDataTitle": "Lab Data"
+      }
+    },
+    "stackPacks": [
+      {
+        "id": "wordpress",
+        "title": "WordPress",
+        "iconDataURL": "data:image/svg+xml,%3Csvg viewBox='0 0 122.5 122.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%232f3439'%3E%3Cpath d='M8.7 61.3c0 20.8 12.1 38.7 29.6 47.3l-25-68.7c-3 6.5-4.6 13.7-4.6 21.4zM96.7 58.6c0-6.5-2.3-11-4.3-14.5-2.7-4.3-5.2-8-5.2-12.3 0-4.8 3.7-9.3 8.9-9.3h.7a52.4 52.4 0 0 0-79.4 9.9h3.3c5.5 0 14-.6 14-.6 2.9-.2 3.2 4 .4 4.3 0 0-2.9.4-6 .5l19.1 57L59.7 59l-8.2-22.5c-2.8-.1-5.5-.5-5.5-.5-2.8-.1-2.5-4.5.3-4.3 0 0 8.7.7 13.9.7 5.5 0 14-.7 14-.7 2.8-.2 3.2 4 .3 4.3 0 0-2.8.4-6 .5l19 56.5 5.2-17.5c2.3-7.3 4-12.5 4-17z'/%3E%3Cpath d='M62.2 65.9l-15.8 45.8a52.6 52.6 0 0 0 32.3-.9l-.4-.7zM107.4 36a49.6 49.6 0 0 1-3.6 24.2l-16.1 46.5A52.5 52.5 0 0 0 107.4 36z'/%3E%3Cpath d='M61.3 0a61.3 61.3 0 1 0 .1 122.7A61.3 61.3 0 0 0 61.3 0zm0 119.7a58.5 58.5 0 1 1 .1-117 58.5 58.5 0 0 1-.1 117z'/%3E%3C/g%3E%3C/svg%3E",
+        "descriptions": {
+          "total-byte-weight": "Consider showing excerpts in your post lists (e.g. via the more tag), reducing the number of posts shown on a given page, breaking your long posts into multiple pages, or using a plugin to lazy-load comments.",
+          "uses-webp-images": "Consider using a [plugin](https://wordpress.org/plugins/search/convert+webp/) or service that will automatically convert your uploaded images to the optimal formats.",
+          "uses-text-compression": "You can enable text compression in your web server configuration.",
+          "efficient-animated-content": "Consider uploading your GIF to a service which will make it available to embed as an HTML5 video.",
+          "uses-optimized-images": "Consider using an [image optimization WordPress plugin](https://wordpress.org/plugins/search/optimize+images/) that compresses your images while retaining quality.",
+          "uses-long-cache-ttl": "Read about [Browser Caching in WordPress](https://wordpress.org/support/article/optimization/#browser-caching).",
+          "uses-responsive-images": "Upload images directly through the [media library](https://wordpress.org/support/article/media-library-screen/) to ensure that the required image sizes are available, and then insert them from the media library or use the image widget to ensure the optimal image sizes are used (including those for the responsive breakpoints). Avoid using `Full Size` images unless the dimensions are adequate for their usage. [Learn More](https://wordpress.org/support/article/inserting-images-into-posts-and-pages/).",
+          "unminified-css": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+css/) can speed up your site by concatenating, minifying, and compressing your styles. You may also want to use a build process to do this minification up-front if possible.",
+          "offscreen-images": "Install a [lazy-load WordPress plugin](https://wordpress.org/plugins/search/lazy+load/) that provides the ability to defer any offscreen images, or switch to a theme that provides that functionality. Also consider using [the AMP plugin](https://wordpress.org/plugins/amp/).",
+          "unused-javascript": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused JavaScript in your page. To identify plugins that are adding extraneous JS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the script. Look out for plugins that have many scripts in the list which have a lot of red in code coverage. A plugin should only enqueue a script if it is actually used on the page.",
+          "unused-css-rules": "Consider reducing, or switching, the number of [WordPress plugins](https://wordpress.org/plugins/) loading unused CSS in your page. To identify plugins that are adding extraneous CSS, try running [code coverage](https://developers.google.com/web/updates/2017/04/devtools-release-notes#coverage) in Chrome DevTools. You can identify the theme/plugin responsible from the URL of the stylesheet. Look out for plugins that have many stylesheets in the list which have a lot of red in code coverage. A plugin should only enqueue a stylesheet if it is actually used on the page.",
+          "render-blocking-resources": "There are a number of WordPress plugins that can help you [inline critical assets](https://wordpress.org/plugins/search/critical+css/) or [defer less important resources](https://wordpress.org/plugins/search/defer+css+javascript/). Beware that optimizations provided by these plugins may break features of your theme or plugins, so you will likely need to make code changes.",
+          "unminified-javascript": "A number of [WordPress plugins](https://wordpress.org/plugins/search/minify+javascript/) can speed up your site by concatenating, minifying, and compressing your scripts. You may also want to use a build process to do this minification up front if possible.",
+          "server-response-time": "Themes, plugins, and server specifications all contribute to server response time. Consider finding a more optimized theme, carefully selecting an optimization plugin, and/or upgrading your server."
+        }
+      }
+    ]
+  },
+  "analysisUTCTimestamp": "2020-07-04T05:51:29.699Z"
+}
