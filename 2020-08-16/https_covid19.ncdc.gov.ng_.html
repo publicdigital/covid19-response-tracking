@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="robots" content="NONE,NOARCHIVE">
+<title>ModuleNotFoundError
+          at /</title>
+<style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background-color:#fff; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h2 span { font-size:80%; color:#666; font-weight:normal; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size:11px; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 0 2px 40px; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.frame { padding-bottom:1em; color:#666; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#505050; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands { margin-left: 40px; }
+    div.commands a { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size:.7em;}
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #666; font-size: 1.5em; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+  </style>
+<script type="text/javascript">
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('table.vars'));
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function varToggle(link, id) {
+      toggle('v' + id);
+      var s = link.getElementsByTagName('span')[0];
+      var uarr = String.fromCharCode(0x25b6);
+      var darr = String.fromCharCode(0x25bc);
+      s.textContent = s.textContent == uarr ? darr : uarr;
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+</head>
+<body>
+<div id="summary">
+<h1>ModuleNotFoundError
+at /</h1>
+<pre class="exception_value">No module named &#39;pyotp&#39;</pre>
+<table class="meta">
+<tr>
+<th>Request Method:</th>
+<td>GET</td>
+</tr>
+<tr>
+<th>Request URL:</th>
+<td>http://covid19.ncdc.gov.ng/</td>
+</tr>
+<tr>
+<th>Django Version:</th>
+<td>2.1.2</td>
+</tr>
+<tr>
+<th>Exception Type:</th>
+<td>ModuleNotFoundError</td>
+</tr>
+<tr>
+<th>Exception Value:</th>
+<td><pre>No module named &#39;pyotp&#39;</pre></td>
+</tr>
+<tr>
+<th>Exception Location:</th>
+<td>/home/site/wwwroot/covid/views.py in &lt;module&gt;, line 7</td>
+</tr>
+<tr>
+<th>Python Executable:</th>
+<td>/opt/python/3.7.7/bin/python3.7</td>
+</tr>
+<tr>
+<th>Python Version:</th>
+<td>3.7.7</td>
+</tr>
+<tr>
+<th>Python Path:</th>
+<td><pre>[&#39;/opt/python/3.7.7/bin&#39;,
+ &#39;/home/site/wwwroot&#39;,
+ &#39;/antenv/lib/python3.7/site-packages&#39;,
+ &#39;/opt/python/3.7.7/lib/python37.zip&#39;,
+ &#39;/opt/python/3.7.7/lib/python3.7&#39;,
+ &#39;/opt/python/3.7.7/lib/python3.7/lib-dynload&#39;,
+ &#39;/opt/python/3.7.7/lib/python3.7/site-packages&#39;]</pre></td>
+</tr>
+<tr>
+<th>Server time:</th>
+<td>Sun, 16 Aug 2020 07:03:01 +0000</td>
+</tr>
+</table>
+</div>
+<div id="traceback">
+<h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+Switch to copy-and-paste view</a></span>
+</h2>
+<div id="browserTraceback">
+<ul class="traceback">
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/core/handlers/exception.py</code> in <code>inner</code>
+<div class="context" id="c140156311439872">
+<ol start="27" class="pre-context" id="pre140156311439872">
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    This decorator is automatically applied to all middleware to ensure that</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    no middleware leaks an exception and that the next middleware in the stack</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    can rely on getting a response instead of an exception.</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    @wraps(get_response)</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    def inner(request):</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>        try:</pre></li>
+</ol>
+<ol start="34" class="context-line">
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>            response = get_response(request)</pre> <span>...</span></li>
+</ol>
+<ol start='35' class="post-context" id="post140156311439872">
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>        except Exception as exc:</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>            response = response_for_exception(request, exc)</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>        return response</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre>    return inner</pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre></pre></li>
+<li onclick="toggle('pre140156311439872', 'post140156311439872')"><pre></pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311439872')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311439872">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exc</td>
+<td class="code"><pre>ModuleNotFoundError(&quot;No module named &#39;pyotp&#39;&quot;)</pre></td>
+</tr>
+<tr>
+<td>get_response</td>
+<td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f78af701790&gt;&gt;</pre></td>
+</tr>
+<tr>
+<td>request</td>
+<td class="code"><pre>&lt;WSGIRequest: GET &#39;/&#39;&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/core/handlers/base.py</code> in <code>_get_response</code>
+<div class="context" id="c140156311439632">
+<ol start="104" class="pre-context" id="pre140156311439632">
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        if hasattr(request, &#39;urlconf&#39;):</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>            urlconf = request.urlconf</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>            set_urlconf(urlconf)</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>            resolver = get_resolver(urlconf)</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        else:</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>            resolver = get_resolver()</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre></pre></li>
+</ol>
+<ol start="111" class="context-line">
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        resolver_match = resolver.resolve(request.path_info)</pre> <span>...</span></li>
+</ol>
+<ol start='112' class="post-context" id="post140156311439632">
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        callback, callback_args, callback_kwargs = resolver_match</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        request.resolver_match = resolver_match</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre></pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        # Apply view middleware</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>        for middleware_method in self._view_middleware:</pre></li>
+<li onclick="toggle('pre140156311439632', 'post140156311439632')"><pre>            response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311439632')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311439632">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>request</td>
+<td class="code"><pre>&lt;WSGIRequest: GET &#39;/&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>resolver</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>response</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f78af701790&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/urls/resolvers.py</code> in <code>resolve</code>
+<div class="context" id="c140156311441312">
+<ol start="484" class="pre-context" id="pre140156311441312">
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre></pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>    def resolve(self, path):</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>        path = str(path)  # path may be a reverse_lazy object</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>        tried = []</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>        match = self.pattern.match(path)</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>        if match:</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>            new_path, args, kwargs = match</pre></li>
+</ol>
+<ol start="491" class="context-line">
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>            for pattern in self.url_patterns:</pre> <span>...</span></li>
+</ol>
+<ol start='492' class="post-context" id="post140156311441312">
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                try:</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                    sub_match = pattern.resolve(new_path)</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                except Resolver404 as e:</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                    sub_tried = e.args[0].get(&#39;tried&#39;)</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                    if sub_tried is not None:</pre></li>
+<li onclick="toggle('pre140156311441312', 'post140156311441312')"><pre>                        tried.extend([pattern] + t for t in sub_tried)</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311441312')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311441312">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>args</td>
+<td class="code"><pre>()</pre></td>
+</tr>
+<tr>
+<td>kwargs</td>
+<td class="code"><pre>{}</pre></td>
+</tr>
+<tr>
+<td>match</td>
+<td class="code"><pre>(&#39;&#39;, (), {})</pre></td>
+</tr>
+<tr>
+<td>new_path</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>path</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>tried</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/utils/functional.py</code> in <code>__get__</code>
+<div class="context" id="c140156311437712">
+<ol start="30" class="pre-context" id="pre140156311437712">
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        Call the function and put the return value in instance.__dict__ so that</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        subsequent attribute access on the instance returns the cached value</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        instead of calling cached_property.__get__().</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        if instance is None:</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>            return self</pre></li>
+</ol>
+<ol start="37" class="context-line">
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        res = instance.__dict__[self.name] = self.func(instance)</pre> <span>...</span></li>
+</ol>
+<ol start='38' class="post-context" id="post140156311437712">
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>        return res</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre></pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre></pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>class Promise:</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>    &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156311437712', 'post140156311437712')"><pre>    Base class for the proxy class created in the closure of the lazy function.</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311437712')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311437712">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cls</td>
+<td class="code"><pre>&lt;class &#39;django.urls.resolvers.URLResolver&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>instance</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;django.utils.functional.cached_property object at 0x7f78b27371d0&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/urls/resolvers.py</code> in <code>url_patterns</code>
+<div class="context" id="c140156311437392">
+<ol start="526" class="pre-context" id="pre140156311437392">
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>            return import_module(self.urlconf_name)</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>        else:</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>            return self.urlconf_name</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre></pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>    @cached_property</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>    def url_patterns(self):</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>        # urlconf_module might be a valid set of patterns, so we default to it</pre></li>
+</ol>
+<ol start="533" class="context-line">
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>        patterns = getattr(self.urlconf_module, &quot;urlpatterns&quot;, self.urlconf_module)</pre> <span>...</span></li>
+</ol>
+<ol start='534' class="post-context" id="post140156311437392">
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>        try:</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>            iter(patterns)</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>        except TypeError:</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>            msg = (</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>                &quot;The included URLconf &#39;{name}&#39; does not appear to have any &quot;</pre></li>
+<li onclick="toggle('pre140156311437392', 'post140156311437392')"><pre>                &quot;patterns in it. If you see valid patterns in the file then &quot;</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311437392')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311437392">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/utils/functional.py</code> in <code>__get__</code>
+<div class="context" id="c140156312513104">
+<ol start="30" class="pre-context" id="pre140156312513104">
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        Call the function and put the return value in instance.__dict__ so that</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        subsequent attribute access on the instance returns the cached value</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        instead of calling cached_property.__get__().</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        if instance is None:</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>            return self</pre></li>
+</ol>
+<ol start="37" class="context-line">
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        res = instance.__dict__[self.name] = self.func(instance)</pre> <span>...</span></li>
+</ol>
+<ol start='38' class="post-context" id="post140156312513104">
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>        return res</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre></pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre></pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>class Promise:</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>    &quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156312513104', 'post140156312513104')"><pre>    Base class for the proxy class created in the closure of the lazy function.</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312513104')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312513104">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cls</td>
+<td class="code"><pre>&lt;class &#39;django.urls.resolvers.URLResolver&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>instance</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;django.utils.functional.cached_property object at 0x7f78b2737190&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame django">
+<code>/antenv/lib/python3.7/site-packages/django/urls/resolvers.py</code> in <code>urlconf_module</code>
+<div class="context" id="c140156312510704">
+<ol start="519" class="pre-context" id="pre140156312510704">
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>                    tried.append([pattern])</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>            raise Resolver404({&#39;tried&#39;: tried, &#39;path&#39;: new_path})</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>        raise Resolver404({&#39;path&#39;: path})</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre></pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>    @cached_property</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>    def urlconf_module(self):</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>        if isinstance(self.urlconf_name, str):</pre></li>
+</ol>
+<ol start="526" class="context-line">
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>            return import_module(self.urlconf_name)</pre> <span>...</span></li>
+</ol>
+<ol start='527' class="post-context" id="post140156312510704">
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>        else:</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>            return self.urlconf_name</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre></pre></li>
+
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>    @cached_property</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>    def url_patterns(self):</pre></li>
+<li onclick="toggle('pre140156312510704', 'post140156312510704')"><pre>        # urlconf_module might be a valid set of patterns, so we default to it</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312510704')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312510704">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;URLResolver &#39;covid19.urls&#39; (None:None) &#39;^/&#39;&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>/opt/python/3.7.7/lib/python3.7/importlib/__init__.py</code> in <code>import_module</code>
+<div class="context" id="c140156312511264">
+<ol start="120" class="pre-context" id="pre140156312511264">
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>            msg = (&quot;the &#39;package&#39; argument is required to perform a relative &quot;</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>                   &quot;import for {!r}&quot;)</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>            raise TypeError(msg.format(name))</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>        for character in name:</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>            if character != &#39;.&#39;:</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>                break</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>            level += 1</pre></li>
+</ol>
+<ol start="127" class="context-line">
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>    return _bootstrap._gcd_import(name[level:], package, level)</pre> <span>...</span></li>
+</ol>
+<ol start='128' class="post-context" id="post140156312511264">
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre></pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre></pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>_RELOADING = {}</pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre></pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre></pre></li>
+<li onclick="toggle('pre140156312511264', 'post140156312511264')"><pre>def reload(module):</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312511264')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312511264">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level</td>
+<td class="code"><pre>0</pre></td>
+</tr>
+<tr>
+<td>name</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>package</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap&gt;</code> in <code>_gcd_import</code>
+<div class="context" id="c140156311549264">
+<ol start="1006" class="context-line">
+<li onclick="toggle('pre140156311549264', 'post140156311549264')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311549264')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311549264">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>level</td>
+<td class="code"><pre>0</pre></td>
+</tr>
+<tr>
+<td>name</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>package</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap&gt;</code> in <code>_find_and_load</code>
+<div class="context" id="c140156312514064">
+<ol start="983" class="context-line">
+<li onclick="toggle('pre140156312514064', 'post140156312514064')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312514064')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312514064">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import_</td>
+<td class="code"><pre>&lt;function _gcd_import at 0x7f78b8788b00&gt;</pre></td>
+</tr>
+<tr>
+<td>module</td>
+<td class="code"><pre>&lt;object object at 0x7f78b8770060&gt;</pre></td>
+</tr>
+<tr>
+<td>name</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap&gt;</code> in <code>_find_and_load_unlocked</code>
+<div class="context" id="c140156312511184">
+<ol start="967" class="context-line">
+<li onclick="toggle('pre140156312511184', 'post140156312511184')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312511184')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312511184">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>import_</td>
+<td class="code"><pre>&lt;function _gcd_import at 0x7f78b8788b00&gt;</pre></td>
+</tr>
+<tr>
+<td>name</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>parent</td>
+<td class="code"><pre>&#39;covid19&#39;</pre></td>
+</tr>
+<tr>
+<td>parent_module</td>
+<td class="code"><pre>&lt;module &#39;covid19&#39; from &#39;/home/site/wwwroot/covid19/__init__.py&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>path</td>
+<td class="code"><pre>[&#39;/home/site/wwwroot/covid19&#39;]</pre></td>
+</tr>
+<tr>
+<td>spec</td>
+<td class="code"><pre>ModuleSpec(name=&#39;covid19.urls&#39;, loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb750&gt;, origin=&#39;/home/site/wwwroot/covid19/urls.py&#39;)</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap&gt;</code> in <code>_load_unlocked</code>
+<div class="context" id="c140156311440432">
+<ol start="677" class="context-line">
+<li onclick="toggle('pre140156311440432', 'post140156311440432')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311440432')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311440432">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>module</td>
+<td class="code"><pre>&lt;module &#39;covid19.urls&#39; from &#39;/home/site/wwwroot/covid19/urls.py&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>spec</td>
+<td class="code"><pre>ModuleSpec(name=&#39;covid19.urls&#39;, loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb750&gt;, origin=&#39;/home/site/wwwroot/covid19/urls.py&#39;)</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap_external&gt;</code> in <code>exec_module</code>
+<div class="context" id="c140156311440752">
+<ol start="728" class="context-line">
+<li onclick="toggle('pre140156311440752', 'post140156311440752')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311440752')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311440752">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td class="code"><pre>&lt;code object &lt;module&gt; at 0x7f78af3519c0, file &quot;/home/site/wwwroot/covid19/urls.py&quot;, line 15&gt;</pre></td>
+</tr>
+<tr>
+<td>module</td>
+<td class="code"><pre>&lt;module &#39;covid19.urls&#39; from &#39;/home/site/wwwroot/covid19/urls.py&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>self</td>
+<td class="code"><pre>&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb750&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>&lt;frozen importlib._bootstrap&gt;</code> in <code>_call_with_frames_removed</code>
+<div class="context" id="c140156312512544">
+<ol start="219" class="context-line">
+<li onclick="toggle('pre140156312512544', 'post140156312512544')"><pre>&lt;source code not available&gt;</pre> <span>...</span></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312512544')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312512544">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>args</td>
+<td class="code"><pre>(&lt;code object &lt;module&gt; at 0x7f78af3519c0, file &quot;/home/site/wwwroot/covid19/urls.py&quot;, line 15&gt;,
+ {&#39;__builtins__&#39;: {&#39;ArithmeticError&#39;: &lt;class &#39;ArithmeticError&#39;&gt;,
+                   &#39;AssertionError&#39;: &lt;class &#39;AssertionError&#39;&gt;,
+                   &#39;AttributeError&#39;: &lt;class &#39;AttributeError&#39;&gt;,
+                   &#39;BaseException&#39;: &lt;class &#39;BaseException&#39;&gt;,
+                   &#39;BlockingIOError&#39;: &lt;class &#39;BlockingIOError&#39;&gt;,
+                   &#39;BrokenPipeError&#39;: &lt;class &#39;BrokenPipeError&#39;&gt;,
+                   &#39;BufferError&#39;: &lt;class &#39;BufferError&#39;&gt;,
+                   &#39;BytesWarning&#39;: &lt;class &#39;BytesWarning&#39;&gt;,
+                   &#39;ChildProcessError&#39;: &lt;class &#39;ChildProcessError&#39;&gt;,
+                   &#39;ConnectionAbortedError&#39;: &lt;class &#39;ConnectionAbortedError&#39;&gt;,
+                   &#39;ConnectionError&#39;: &lt;class &#39;ConnectionError&#39;&gt;,
+                   &#39;ConnectionRefusedError&#39;: &lt;class &#39;ConnectionRefusedError&#39;&gt;,
+                   &#39;ConnectionResetError&#39;: &lt;class &#39;ConnectionResetError&#39;&gt;,
+                   &#39;DeprecationWarning&#39;: &lt;class &#39;DeprecationWarning&#39;&gt;,
+                   &#39;EOFError&#39;: &lt;class &#39;EOFError&#39;&gt;,
+                   &#39;Ellipsis&#39;: Ellipsis,
+                   &#39;EnvironmentError&#39;: &lt;class &#39;OSError&#39;&gt;,
+                   &#39;Exception&#39;: &lt;class &#39;Exception&#39;&gt;,
+                   &#39;False&#39;: False,
+                   &#39;FileExistsError&#39;: &lt;class &#39;FileExistsError&#39;&gt;,
+                   &#39;FileNotFoundError&#39;: &lt;class &#39;FileNotFoundError&#39;&gt;,
+                   &#39;FloatingPointError&#39;: &lt;class &#39;FloatingPointError&#39;&gt;,
+                   &#39;FutureWarning&#39;: &lt;class &#39;FutureWarning&#39;&gt;,
+                   &#39;GeneratorExit&#39;: &lt;class &#39;GeneratorExit&#39;&gt;,
+                   &#39;IOError&#39;: &lt;class &#39;OSError&#39;&gt;,
+                   &#39;ImportError&#39;: &lt;class &#39;ImportError&#39;&gt;,
+                   &#39;ImportWarning&#39;: &lt;class &#39;ImportWarning&#39;&gt;,
+                   &#39;IndentationError&#39;: &lt;class &#39;IndentationError&#39;&gt;,
+                   &#39;IndexError&#39;: &lt;class &#39;IndexError&#39;&gt;,
+                   &#39;InterruptedError&#39;: &lt;class &#39;InterruptedError&#39;&gt;,
+                   &#39;IsADirectoryError&#39;: &lt;class &#39;IsADirectoryError&#39;&gt;,
+                   &#39;KeyError&#39;: &lt;class &#39;KeyError&#39;&gt;,
+                   &#39;KeyboardInterrupt&#39;: &lt;class &#39;KeyboardInterrupt&#39;&gt;,
+                   &#39;LookupError&#39;: &lt;class &#39;LookupError&#39;&gt;,
+                   &#39;MemoryError&#39;: &lt;class &#39;MemoryError&#39;&gt;,
+                   &#39;ModuleNotFoundError&#39;: &lt;class &#39;ModuleNotFoundError&#39;&gt;,
+                   &#39;NameError&#39;: &lt;class &#39;NameError&#39;&gt;,
+                   &#39;None&#39;: None,
+                   &#39;NotADirectoryError&#39;: &lt;class &#39;NotADirectoryError&#39;&gt;,
+                   &#39;NotImplemented&#39;: NotImplemented,
+                   &#39;NotImplementedError&#39;: &lt;class &#39;NotImplementedError&#39;&gt;,
+                   &#39;OSError&#39;: &lt;class &#39;OSError&#39;&gt;,
+                   &#39;OverflowError&#39;: &lt;class &#39;OverflowError&#39;&gt;,
+                   &#39;PendingDeprecationWarning&#39;: &lt;class &#39;PendingDeprecationWarning&#39;&gt;,
+                   &#39;PermissionError&#39;: &lt;class &#39;PermissionError&#39;&gt;,
+                   &#39;ProcessLookupError&#39;: &lt;class &#39;ProcessLookupError&#39;&gt;,
+                   &#39;RecursionError&#39;: &lt;class &#39;RecursionError&#39;&gt;,
+                   &#39;ReferenceError&#39;: &lt;class &#39;ReferenceError&#39;&gt;,
+                   &#39;ResourceWarning&#39;: &lt;class &#39;ResourceWarning&#39;&gt;,
+                   &#39;RuntimeError&#39;: &lt;class &#39;RuntimeError&#39;&gt;,
+                   &#39;RuntimeWarning&#39;: &lt;class &#39;RuntimeWarning&#39;&gt;,
+                   &#39;StopAsyncIteration&#39;: &lt;class &#39;StopAsyncIteration&#39;&gt;,
+                   &#39;StopIteration&#39;: &lt;class &#39;StopIteration&#39;&gt;,
+                   &#39;SyntaxError&#39;: &lt;class &#39;SyntaxError&#39;&gt;,
+                   &#39;SyntaxWarning&#39;: &lt;class &#39;SyntaxWarning&#39;&gt;,
+                   &#39;SystemError&#39;: &lt;class &#39;SystemError&#39;&gt;,
+                   &#39;SystemExit&#39;: &lt;class &#39;SystemExit&#39;&gt;,
+                   &#39;TabError&#39;: &lt;class &#39;TabError&#39;&gt;,
+                   &#39;TimeoutError&#39;: &lt;class &#39;TimeoutError&#39;&gt;,
+                   &#39;True&#39;: True,
+                   &#39;TypeError&#39;: &lt;class &#39;TypeError&#39;&gt;,
+                   &#39;UnboundLocalError&#39;: &lt;class &#39;UnboundLocalError&#39;&gt;,
+                   &#39;UnicodeDecodeError&#39;: &lt;class &#39;UnicodeDecodeError&#39;&gt;,
+                   &#39;UnicodeEncodeError&#39;: &lt;class &#39;UnicodeEncodeError&#39;&gt;,
+                   &#39;UnicodeError&#39;: &lt;class &#39;UnicodeError&#39;&gt;,
+             ... &lt;trimmed 11230 bytes string&gt;</pre></td>
+ </tr>
+<tr>
+<td>f</td>
+<td class="code"><pre>&lt;built-in function exec&gt;</pre></td>
+</tr>
+<tr>
+<td>kwds</td>
+<td class="code"><pre>{}</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>/home/site/wwwroot/covid19/urls.py</code> in <code>&lt;module&gt;</code>
+<div class="context" id="c140156311551824">
+<ol start="12" class="pre-context" id="pre140156311551824">
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>Including another URLconf</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>    1. Import the include() function: from django.urls import include, path</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>    2. Add a URL to urlpatterns:  path(&#39;blog/&#39;, include(&#39;blog.urls&#39;))</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>&quot;&quot;&quot;</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from django.contrib import admin</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from django.urls import path</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from django.conf.urls import url, include</pre></li>
+</ol>
+<ol start="19" class="context-line">
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from covid.urls import urlpatterns as covid_urls</pre> <span>...</span></li>
+</ol>
+<ol start='20' class="post-context" id="post140156311551824">
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from django.conf import settings</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>from django.conf.urls.static import static</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre></pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>urlpatterns = [</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>    path(&#39;admin/&#39;, admin.site.urls),</pre></li>
+<li onclick="toggle('pre140156311551824', 'post140156311551824')"><pre>    path(&#39;&#39;, include((covid_urls, &#39;covid&#39;), namespace=&quot;covid&quot;)),</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156311551824')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156311551824">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>__builtins__</td>
+<td class="code"><pre>{&#39;ArithmeticError&#39;: &lt;class &#39;ArithmeticError&#39;&gt;,
+ &#39;AssertionError&#39;: &lt;class &#39;AssertionError&#39;&gt;,
+ &#39;AttributeError&#39;: &lt;class &#39;AttributeError&#39;&gt;,
+ &#39;BaseException&#39;: &lt;class &#39;BaseException&#39;&gt;,
+ &#39;BlockingIOError&#39;: &lt;class &#39;BlockingIOError&#39;&gt;,
+ &#39;BrokenPipeError&#39;: &lt;class &#39;BrokenPipeError&#39;&gt;,
+ &#39;BufferError&#39;: &lt;class &#39;BufferError&#39;&gt;,
+ &#39;BytesWarning&#39;: &lt;class &#39;BytesWarning&#39;&gt;,
+ &#39;ChildProcessError&#39;: &lt;class &#39;ChildProcessError&#39;&gt;,
+ &#39;ConnectionAbortedError&#39;: &lt;class &#39;ConnectionAbortedError&#39;&gt;,
+ &#39;ConnectionError&#39;: &lt;class &#39;ConnectionError&#39;&gt;,
+ &#39;ConnectionRefusedError&#39;: &lt;class &#39;ConnectionRefusedError&#39;&gt;,
+ &#39;ConnectionResetError&#39;: &lt;class &#39;ConnectionResetError&#39;&gt;,
+ &#39;DeprecationWarning&#39;: &lt;class &#39;DeprecationWarning&#39;&gt;,
+ &#39;EOFError&#39;: &lt;class &#39;EOFError&#39;&gt;,
+ &#39;Ellipsis&#39;: Ellipsis,
+ &#39;EnvironmentError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;Exception&#39;: &lt;class &#39;Exception&#39;&gt;,
+ &#39;False&#39;: False,
+ &#39;FileExistsError&#39;: &lt;class &#39;FileExistsError&#39;&gt;,
+ &#39;FileNotFoundError&#39;: &lt;class &#39;FileNotFoundError&#39;&gt;,
+ &#39;FloatingPointError&#39;: &lt;class &#39;FloatingPointError&#39;&gt;,
+ &#39;FutureWarning&#39;: &lt;class &#39;FutureWarning&#39;&gt;,
+ &#39;GeneratorExit&#39;: &lt;class &#39;GeneratorExit&#39;&gt;,
+ &#39;IOError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;ImportError&#39;: &lt;class &#39;ImportError&#39;&gt;,
+ &#39;ImportWarning&#39;: &lt;class &#39;ImportWarning&#39;&gt;,
+ &#39;IndentationError&#39;: &lt;class &#39;IndentationError&#39;&gt;,
+ &#39;IndexError&#39;: &lt;class &#39;IndexError&#39;&gt;,
+ &#39;InterruptedError&#39;: &lt;class &#39;InterruptedError&#39;&gt;,
+ &#39;IsADirectoryError&#39;: &lt;class &#39;IsADirectoryError&#39;&gt;,
+ &#39;KeyError&#39;: &lt;class &#39;KeyError&#39;&gt;,
+ &#39;KeyboardInterrupt&#39;: &lt;class &#39;KeyboardInterrupt&#39;&gt;,
+ &#39;LookupError&#39;: &lt;class &#39;LookupError&#39;&gt;,
+ &#39;MemoryError&#39;: &lt;class &#39;MemoryError&#39;&gt;,
+ &#39;ModuleNotFoundError&#39;: &lt;class &#39;ModuleNotFoundError&#39;&gt;,
+ &#39;NameError&#39;: &lt;class &#39;NameError&#39;&gt;,
+ &#39;None&#39;: None,
+ &#39;NotADirectoryError&#39;: &lt;class &#39;NotADirectoryError&#39;&gt;,
+ &#39;NotImplemented&#39;: NotImplemented,
+ &#39;NotImplementedError&#39;: &lt;class &#39;NotImplementedError&#39;&gt;,
+ &#39;OSError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;OverflowError&#39;: &lt;class &#39;OverflowError&#39;&gt;,
+ &#39;PendingDeprecationWarning&#39;: &lt;class &#39;PendingDeprecationWarning&#39;&gt;,
+ &#39;PermissionError&#39;: &lt;class &#39;PermissionError&#39;&gt;,
+ &#39;ProcessLookupError&#39;: &lt;class &#39;ProcessLookupError&#39;&gt;,
+ &#39;RecursionError&#39;: &lt;class &#39;RecursionError&#39;&gt;,
+ &#39;ReferenceError&#39;: &lt;class &#39;ReferenceError&#39;&gt;,
+ &#39;ResourceWarning&#39;: &lt;class &#39;ResourceWarning&#39;&gt;,
+ &#39;RuntimeError&#39;: &lt;class &#39;RuntimeError&#39;&gt;,
+ &#39;RuntimeWarning&#39;: &lt;class &#39;RuntimeWarning&#39;&gt;,
+ &#39;StopAsyncIteration&#39;: &lt;class &#39;StopAsyncIteration&#39;&gt;,
+ &#39;StopIteration&#39;: &lt;class &#39;StopIteration&#39;&gt;,
+ &#39;SyntaxError&#39;: &lt;class &#39;SyntaxError&#39;&gt;,
+ &#39;SyntaxWarning&#39;: &lt;class &#39;SyntaxWarning&#39;&gt;,
+ &#39;SystemError&#39;: &lt;class &#39;SystemError&#39;&gt;,
+ &#39;SystemExit&#39;: &lt;class &#39;SystemExit&#39;&gt;,
+ &#39;TabError&#39;: &lt;class &#39;TabError&#39;&gt;,
+ &#39;TimeoutError&#39;: &lt;class &#39;TimeoutError&#39;&gt;,
+ &#39;True&#39;: True,
+ &#39;TypeError&#39;: &lt;class &#39;TypeError&#39;&gt;,
+ &#39;UnboundLocalError&#39;: &lt;class &#39;UnboundLocalError&#39;&gt;,
+ &#39;UnicodeDecodeError&#39;: &lt;class &#39;UnicodeDecodeError&#39;&gt;,
+ &#39;UnicodeEncodeError&#39;: &lt;class &#39;UnicodeEncodeError&#39;&gt;,
+ &#39;UnicodeError&#39;: &lt;class &#39;UnicodeError&#39;&gt;,
+ &#39;UnicodeTranslateError&#39;: &lt;class &#39;UnicodeTranslateError&#39;&gt;,
+ &#39;UnicodeWarning&#39;: &lt;class &#39;UnicodeWarning&#39;&gt;,
+ &#39;UserWarning&#39;: &lt;class &#39;UserWarning&#39;&gt;,
+ &#39;ValueError&#39;: &lt;class &#39;ValueError&#39;&gt;,
+ &#39;Warning&#39;: &lt;class &#39;Warning&#39;&gt;,
+ &#39;ZeroDivisionError&#39;: &lt;class &#39;ZeroDivisionError&#39;&gt;,
+ &#39;__build_class__&#39;: &lt;built-in function __build_class__&gt;,
+ &#39;__debug__&#39;: True,
+ &#39;__doc__&#39;: &#39;Built-in functions, exceptions, and other objects.\n&#39;
+            &#39;\n&#39;
+            &quot;Noteworthy: None is the `nil&#39; object; Ellipsis represents `...&#39; &quot;
+            &#39;in slices.&#39;,
+ &#39;__import__&#39;: &lt;built-in function __import__&gt;,
+ &#39;__loader__&#39;: &lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;,
+ &#39;__name__&#39;: &#39;builtins&#39;,
+ &#39;__package__&#39;: &#39;&#39;,
+ &#39;__spec__&#39;: ModuleSpec(name=&#39;builtins&#39;, loader=&lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;),
+ &#39;abs&#39;: &lt;built-in function abs&gt;,
+ &#39;all&#39;: &lt;built-in function all&gt;,
+ &#39;any&#39;: &lt;built-in function any&gt;,
+ &#39;ascii&#39;: &lt;built-in function ascii&gt;,
+ &#39;bin&#39;: &lt;built-in function bin&gt;,
+ &#39;bool&#39;: &lt;class &#39;bool&#39;&gt;,
+ &#39;breakpoint&#39;: &lt;built-in function breakpoint&gt;,
+ &#39;bytearray&#39;: &lt;class &#39;bytearray&#39;&gt;,
+ &#39;bytes&#39;: &lt;class &#39;bytes&#39;&gt;,
+ &#39;callable&#39;: &lt;built-in function callable&gt;,
+ &#39;chr&#39;: &lt;built-in function chr&gt;,
+ &#39;classmethod&#39;: &lt;class &#39;classmethod&#39;&gt;,
+ &#39;compile&#39;: &lt;built-in function compile&gt;,
+ &#39;complex&#39;: &lt;class &#39;complex&#39;&gt;,
+ &#39;copyright&#39;: ... &lt;trimmed 6587 bytes string&gt;</pre></td>
+</tr>
+<tr>
+<td>__cached__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid19/__pycache__/urls.cpython-37.pyc&#39;</pre></td>
+</tr>
+<tr>
+<td>__doc__</td>
+<td class="code"><pre>(&#39;covid19 URL Configuration\n&#39;
+ &#39;\n&#39;
+ &#39;The `urlpatterns` list routes URLs to views. For more information please &#39;
+ &#39;see:\n&#39;
+ &#39;    https://docs.djangoproject.com/en/3.0/topics/http/urls/\n&#39;
+ &#39;Examples:\n&#39;
+ &#39;Function views\n&#39;
+ &#39;    1. Add an import:  from my_app import views\n&#39;
+ &quot;    2. Add a URL to urlpatterns:  path(&#39;&#39;, views.home, name=&#39;home&#39;)\n&quot;
+ &#39;Class-based views\n&#39;
+ &#39;    1. Add an import:  from other_app.views import Home\n&#39;
+ &quot;    2. Add a URL to urlpatterns:  path(&#39;&#39;, Home.as_view(), name=&#39;home&#39;)\n&quot;
+ &#39;Including another URLconf\n&#39;
+ &#39;    1. Import the include() function: from django.urls import include, path\n&#39;
+ &quot;    2. Add a URL to urlpatterns:  path(&#39;blog/&#39;, include(&#39;blog.urls&#39;))\n&quot;)</pre></td>
+</tr>
+<tr>
+<td>__file__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid19/urls.py&#39;</pre></td>
+</tr>
+<tr>
+<td>__loader__</td>
+<td class="code"><pre>&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb750&gt;</pre></td>
+</tr>
+<tr>
+<td>__name__</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>__package__</td>
+<td class="code"><pre>&#39;covid19&#39;</pre></td>
+</tr>
+<tr>
+<td>__spec__</td>
+<td class="code"><pre>ModuleSpec(name=&#39;covid19.urls&#39;, loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb750&gt;, origin=&#39;/home/site/wwwroot/covid19/urls.py&#39;)</pre></td>
+</tr>
+<tr>
+<td>admin</td>
+<td class="code"><pre>&lt;module &#39;django.contrib.admin&#39; from &#39;/antenv/lib/python3.7/site-packages/django/contrib/admin/__init__.py&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>include</td>
+<td class="code"><pre>&lt;function include at 0x7f78b3ae7b90&gt;</pre></td>
+</tr>
+<tr>
+<td>path</td>
+<td class="code"><pre>functools.partial(&lt;function _path at 0x7f78b273bb90&gt;, Pattern=&lt;class &#39;django.urls.resolvers.RoutePattern&#39;&gt;)</pre></td>
+</tr>
+<tr>
+<td>url</td>
+<td class="code"><pre>&lt;function url at 0x7f78af4794d0&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>/home/site/wwwroot/covid/urls.py</code> in <code>&lt;module&gt;</code>
+<div class="context" id="c140156312511024">
+<ol start="1" class="pre-context" id="pre140156312511024">
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>from django.conf.urls import url</pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre></pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre></pre></li>
+</ol>
+<ol start="4" class="context-line">
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>from . import views</pre> <span>...</span></li>
+</ol>
+<ol start='5' class="post-context" id="post140156312511024">
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre></pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre></pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>urlpatterns = [</pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>    # url(r&quot;^load/$&quot;, views.load, name=&quot;load&quot;),</pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>    url(r&#39;^$&#39;, views.report, name=&quot;report&quot;),</pre></li>
+<li onclick="toggle('pre140156312511024', 'post140156312511024')"><pre>    url(r&quot;^report/$&quot;, views.report, name=&quot;report&quot;),</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312511024')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312511024">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>__builtins__</td>
+<td class="code"><pre>{&#39;ArithmeticError&#39;: &lt;class &#39;ArithmeticError&#39;&gt;,
+ &#39;AssertionError&#39;: &lt;class &#39;AssertionError&#39;&gt;,
+ &#39;AttributeError&#39;: &lt;class &#39;AttributeError&#39;&gt;,
+ &#39;BaseException&#39;: &lt;class &#39;BaseException&#39;&gt;,
+ &#39;BlockingIOError&#39;: &lt;class &#39;BlockingIOError&#39;&gt;,
+ &#39;BrokenPipeError&#39;: &lt;class &#39;BrokenPipeError&#39;&gt;,
+ &#39;BufferError&#39;: &lt;class &#39;BufferError&#39;&gt;,
+ &#39;BytesWarning&#39;: &lt;class &#39;BytesWarning&#39;&gt;,
+ &#39;ChildProcessError&#39;: &lt;class &#39;ChildProcessError&#39;&gt;,
+ &#39;ConnectionAbortedError&#39;: &lt;class &#39;ConnectionAbortedError&#39;&gt;,
+ &#39;ConnectionError&#39;: &lt;class &#39;ConnectionError&#39;&gt;,
+ &#39;ConnectionRefusedError&#39;: &lt;class &#39;ConnectionRefusedError&#39;&gt;,
+ &#39;ConnectionResetError&#39;: &lt;class &#39;ConnectionResetError&#39;&gt;,
+ &#39;DeprecationWarning&#39;: &lt;class &#39;DeprecationWarning&#39;&gt;,
+ &#39;EOFError&#39;: &lt;class &#39;EOFError&#39;&gt;,
+ &#39;Ellipsis&#39;: Ellipsis,
+ &#39;EnvironmentError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;Exception&#39;: &lt;class &#39;Exception&#39;&gt;,
+ &#39;False&#39;: False,
+ &#39;FileExistsError&#39;: &lt;class &#39;FileExistsError&#39;&gt;,
+ &#39;FileNotFoundError&#39;: &lt;class &#39;FileNotFoundError&#39;&gt;,
+ &#39;FloatingPointError&#39;: &lt;class &#39;FloatingPointError&#39;&gt;,
+ &#39;FutureWarning&#39;: &lt;class &#39;FutureWarning&#39;&gt;,
+ &#39;GeneratorExit&#39;: &lt;class &#39;GeneratorExit&#39;&gt;,
+ &#39;IOError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;ImportError&#39;: &lt;class &#39;ImportError&#39;&gt;,
+ &#39;ImportWarning&#39;: &lt;class &#39;ImportWarning&#39;&gt;,
+ &#39;IndentationError&#39;: &lt;class &#39;IndentationError&#39;&gt;,
+ &#39;IndexError&#39;: &lt;class &#39;IndexError&#39;&gt;,
+ &#39;InterruptedError&#39;: &lt;class &#39;InterruptedError&#39;&gt;,
+ &#39;IsADirectoryError&#39;: &lt;class &#39;IsADirectoryError&#39;&gt;,
+ &#39;KeyError&#39;: &lt;class &#39;KeyError&#39;&gt;,
+ &#39;KeyboardInterrupt&#39;: &lt;class &#39;KeyboardInterrupt&#39;&gt;,
+ &#39;LookupError&#39;: &lt;class &#39;LookupError&#39;&gt;,
+ &#39;MemoryError&#39;: &lt;class &#39;MemoryError&#39;&gt;,
+ &#39;ModuleNotFoundError&#39;: &lt;class &#39;ModuleNotFoundError&#39;&gt;,
+ &#39;NameError&#39;: &lt;class &#39;NameError&#39;&gt;,
+ &#39;None&#39;: None,
+ &#39;NotADirectoryError&#39;: &lt;class &#39;NotADirectoryError&#39;&gt;,
+ &#39;NotImplemented&#39;: NotImplemented,
+ &#39;NotImplementedError&#39;: &lt;class &#39;NotImplementedError&#39;&gt;,
+ &#39;OSError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;OverflowError&#39;: &lt;class &#39;OverflowError&#39;&gt;,
+ &#39;PendingDeprecationWarning&#39;: &lt;class &#39;PendingDeprecationWarning&#39;&gt;,
+ &#39;PermissionError&#39;: &lt;class &#39;PermissionError&#39;&gt;,
+ &#39;ProcessLookupError&#39;: &lt;class &#39;ProcessLookupError&#39;&gt;,
+ &#39;RecursionError&#39;: &lt;class &#39;RecursionError&#39;&gt;,
+ &#39;ReferenceError&#39;: &lt;class &#39;ReferenceError&#39;&gt;,
+ &#39;ResourceWarning&#39;: &lt;class &#39;ResourceWarning&#39;&gt;,
+ &#39;RuntimeError&#39;: &lt;class &#39;RuntimeError&#39;&gt;,
+ &#39;RuntimeWarning&#39;: &lt;class &#39;RuntimeWarning&#39;&gt;,
+ &#39;StopAsyncIteration&#39;: &lt;class &#39;StopAsyncIteration&#39;&gt;,
+ &#39;StopIteration&#39;: &lt;class &#39;StopIteration&#39;&gt;,
+ &#39;SyntaxError&#39;: &lt;class &#39;SyntaxError&#39;&gt;,
+ &#39;SyntaxWarning&#39;: &lt;class &#39;SyntaxWarning&#39;&gt;,
+ &#39;SystemError&#39;: &lt;class &#39;SystemError&#39;&gt;,
+ &#39;SystemExit&#39;: &lt;class &#39;SystemExit&#39;&gt;,
+ &#39;TabError&#39;: &lt;class &#39;TabError&#39;&gt;,
+ &#39;TimeoutError&#39;: &lt;class &#39;TimeoutError&#39;&gt;,
+ &#39;True&#39;: True,
+ &#39;TypeError&#39;: &lt;class &#39;TypeError&#39;&gt;,
+ &#39;UnboundLocalError&#39;: &lt;class &#39;UnboundLocalError&#39;&gt;,
+ &#39;UnicodeDecodeError&#39;: &lt;class &#39;UnicodeDecodeError&#39;&gt;,
+ &#39;UnicodeEncodeError&#39;: &lt;class &#39;UnicodeEncodeError&#39;&gt;,
+ &#39;UnicodeError&#39;: &lt;class &#39;UnicodeError&#39;&gt;,
+ &#39;UnicodeTranslateError&#39;: &lt;class &#39;UnicodeTranslateError&#39;&gt;,
+ &#39;UnicodeWarning&#39;: &lt;class &#39;UnicodeWarning&#39;&gt;,
+ &#39;UserWarning&#39;: &lt;class &#39;UserWarning&#39;&gt;,
+ &#39;ValueError&#39;: &lt;class &#39;ValueError&#39;&gt;,
+ &#39;Warning&#39;: &lt;class &#39;Warning&#39;&gt;,
+ &#39;ZeroDivisionError&#39;: &lt;class &#39;ZeroDivisionError&#39;&gt;,
+ &#39;__build_class__&#39;: &lt;built-in function __build_class__&gt;,
+ &#39;__debug__&#39;: True,
+ &#39;__doc__&#39;: &#39;Built-in functions, exceptions, and other objects.\n&#39;
+            &#39;\n&#39;
+            &quot;Noteworthy: None is the `nil&#39; object; Ellipsis represents `...&#39; &quot;
+            &#39;in slices.&#39;,
+ &#39;__import__&#39;: &lt;built-in function __import__&gt;,
+ &#39;__loader__&#39;: &lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;,
+ &#39;__name__&#39;: &#39;builtins&#39;,
+ &#39;__package__&#39;: &#39;&#39;,
+ &#39;__spec__&#39;: ModuleSpec(name=&#39;builtins&#39;, loader=&lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;),
+ &#39;abs&#39;: &lt;built-in function abs&gt;,
+ &#39;all&#39;: &lt;built-in function all&gt;,
+ &#39;any&#39;: &lt;built-in function any&gt;,
+ &#39;ascii&#39;: &lt;built-in function ascii&gt;,
+ &#39;bin&#39;: &lt;built-in function bin&gt;,
+ &#39;bool&#39;: &lt;class &#39;bool&#39;&gt;,
+ &#39;breakpoint&#39;: &lt;built-in function breakpoint&gt;,
+ &#39;bytearray&#39;: &lt;class &#39;bytearray&#39;&gt;,
+ &#39;bytes&#39;: &lt;class &#39;bytes&#39;&gt;,
+ &#39;callable&#39;: &lt;built-in function callable&gt;,
+ &#39;chr&#39;: &lt;built-in function chr&gt;,
+ &#39;classmethod&#39;: &lt;class &#39;classmethod&#39;&gt;,
+ &#39;compile&#39;: &lt;built-in function compile&gt;,
+ &#39;complex&#39;: &lt;class &#39;complex&#39;&gt;,
+ &#39;copyright&#39;: ... &lt;trimmed 6587 bytes string&gt;</pre></td>
+</tr>
+<tr>
+<td>__cached__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid/__pycache__/urls.cpython-37.pyc&#39;</pre></td>
+</tr>
+<tr>
+<td>__doc__</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>__file__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid/urls.py&#39;</pre></td>
+</tr>
+<tr>
+<td>__loader__</td>
+<td class="code"><pre>&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb690&gt;</pre></td>
+</tr>
+<tr>
+<td>__name__</td>
+<td class="code"><pre>&#39;covid.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>__package__</td>
+<td class="code"><pre>&#39;covid&#39;</pre></td>
+</tr>
+<tr>
+<td>__spec__</td>
+<td class="code"><pre>ModuleSpec(name=&#39;covid.urls&#39;, loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2eb690&gt;, origin=&#39;/home/site/wwwroot/covid/urls.py&#39;)</pre></td>
+</tr>
+<tr>
+<td>url</td>
+<td class="code"><pre>&lt;function url at 0x7f78af4794d0&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="frame user">
+<code>/home/site/wwwroot/covid/views.py</code> in <code>&lt;module&gt;</code>
+<div class="context" id="c140156312514464">
+<ol start="1" class="pre-context" id="pre140156312514464">
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.shortcuts import render</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from covid.models import Confirmed_cases, Update, Resource, Highlight, Audio, Verify, Archives, Summary, SummaryAccess</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.db.models import Count, Sum</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.http import JsonResponse</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.db import connection</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>import json</pre></li>
+</ol>
+<ol start="7" class="context-line">
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>import pyotp</pre> <span>...</span></li>
+</ol>
+<ol start='8' class="post-context" id="post140156312514464">
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>import http.client</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>import json</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>import requests</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.core.serializers.json import DjangoJSONEncoder</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from django.http import HttpResponse</pre></li>
+<li onclick="toggle('pre140156312514464', 'post140156312514464')"><pre>from collections import OrderedDict</pre></li>
+</ol>
+</div>
+<div class="commands">
+<a href="#" onclick="return varToggle(this, '140156312514464')"><span>&#x25b6;</span> Local vars</a>
+</div>
+<table class="vars" id="v140156312514464">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Archives</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Archives&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Audio</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Audio&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Confirmed_cases</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Confirmed_cases&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Count</td>
+<td class="code"><pre>&lt;class &#39;django.db.models.aggregates.Count&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Highlight</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Highlight&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>JsonResponse</td>
+<td class="code"><pre>&lt;class &#39;django.http.response.JsonResponse&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Resource</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Resource&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Sum</td>
+<td class="code"><pre>&lt;class &#39;django.db.models.aggregates.Sum&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Summary</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Summary&#39;&gt;</pre></td>
+ </tr>
+<tr>
+<td>SummaryAccess</td>
+<td class="code"><pre>&lt;class &#39;covid.models.SummaryAccess&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Update</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Update&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>Verify</td>
+<td class="code"><pre>&lt;class &#39;covid.models.Verify&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>__builtins__</td>
+<td class="code"><pre>{&#39;ArithmeticError&#39;: &lt;class &#39;ArithmeticError&#39;&gt;,
+ &#39;AssertionError&#39;: &lt;class &#39;AssertionError&#39;&gt;,
+ &#39;AttributeError&#39;: &lt;class &#39;AttributeError&#39;&gt;,
+ &#39;BaseException&#39;: &lt;class &#39;BaseException&#39;&gt;,
+ &#39;BlockingIOError&#39;: &lt;class &#39;BlockingIOError&#39;&gt;,
+ &#39;BrokenPipeError&#39;: &lt;class &#39;BrokenPipeError&#39;&gt;,
+ &#39;BufferError&#39;: &lt;class &#39;BufferError&#39;&gt;,
+ &#39;BytesWarning&#39;: &lt;class &#39;BytesWarning&#39;&gt;,
+ &#39;ChildProcessError&#39;: &lt;class &#39;ChildProcessError&#39;&gt;,
+ &#39;ConnectionAbortedError&#39;: &lt;class &#39;ConnectionAbortedError&#39;&gt;,
+ &#39;ConnectionError&#39;: &lt;class &#39;ConnectionError&#39;&gt;,
+ &#39;ConnectionRefusedError&#39;: &lt;class &#39;ConnectionRefusedError&#39;&gt;,
+ &#39;ConnectionResetError&#39;: &lt;class &#39;ConnectionResetError&#39;&gt;,
+ &#39;DeprecationWarning&#39;: &lt;class &#39;DeprecationWarning&#39;&gt;,
+ &#39;EOFError&#39;: &lt;class &#39;EOFError&#39;&gt;,
+ &#39;Ellipsis&#39;: Ellipsis,
+ &#39;EnvironmentError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;Exception&#39;: &lt;class &#39;Exception&#39;&gt;,
+ &#39;False&#39;: False,
+ &#39;FileExistsError&#39;: &lt;class &#39;FileExistsError&#39;&gt;,
+ &#39;FileNotFoundError&#39;: &lt;class &#39;FileNotFoundError&#39;&gt;,
+ &#39;FloatingPointError&#39;: &lt;class &#39;FloatingPointError&#39;&gt;,
+ &#39;FutureWarning&#39;: &lt;class &#39;FutureWarning&#39;&gt;,
+ &#39;GeneratorExit&#39;: &lt;class &#39;GeneratorExit&#39;&gt;,
+ &#39;IOError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;ImportError&#39;: &lt;class &#39;ImportError&#39;&gt;,
+ &#39;ImportWarning&#39;: &lt;class &#39;ImportWarning&#39;&gt;,
+ &#39;IndentationError&#39;: &lt;class &#39;IndentationError&#39;&gt;,
+ &#39;IndexError&#39;: &lt;class &#39;IndexError&#39;&gt;,
+ &#39;InterruptedError&#39;: &lt;class &#39;InterruptedError&#39;&gt;,
+ &#39;IsADirectoryError&#39;: &lt;class &#39;IsADirectoryError&#39;&gt;,
+ &#39;KeyError&#39;: &lt;class &#39;KeyError&#39;&gt;,
+ &#39;KeyboardInterrupt&#39;: &lt;class &#39;KeyboardInterrupt&#39;&gt;,
+ &#39;LookupError&#39;: &lt;class &#39;LookupError&#39;&gt;,
+ &#39;MemoryError&#39;: &lt;class &#39;MemoryError&#39;&gt;,
+ &#39;ModuleNotFoundError&#39;: &lt;class &#39;ModuleNotFoundError&#39;&gt;,
+ &#39;NameError&#39;: &lt;class &#39;NameError&#39;&gt;,
+ &#39;None&#39;: None,
+ &#39;NotADirectoryError&#39;: &lt;class &#39;NotADirectoryError&#39;&gt;,
+ &#39;NotImplemented&#39;: NotImplemented,
+ &#39;NotImplementedError&#39;: &lt;class &#39;NotImplementedError&#39;&gt;,
+ &#39;OSError&#39;: &lt;class &#39;OSError&#39;&gt;,
+ &#39;OverflowError&#39;: &lt;class &#39;OverflowError&#39;&gt;,
+ &#39;PendingDeprecationWarning&#39;: &lt;class &#39;PendingDeprecationWarning&#39;&gt;,
+ &#39;PermissionError&#39;: &lt;class &#39;PermissionError&#39;&gt;,
+ &#39;ProcessLookupError&#39;: &lt;class &#39;ProcessLookupError&#39;&gt;,
+ &#39;RecursionError&#39;: &lt;class &#39;RecursionError&#39;&gt;,
+ &#39;ReferenceError&#39;: &lt;class &#39;ReferenceError&#39;&gt;,
+ &#39;ResourceWarning&#39;: &lt;class &#39;ResourceWarning&#39;&gt;,
+ &#39;RuntimeError&#39;: &lt;class &#39;RuntimeError&#39;&gt;,
+ &#39;RuntimeWarning&#39;: &lt;class &#39;RuntimeWarning&#39;&gt;,
+ &#39;StopAsyncIteration&#39;: &lt;class &#39;StopAsyncIteration&#39;&gt;,
+ &#39;StopIteration&#39;: &lt;class &#39;StopIteration&#39;&gt;,
+ &#39;SyntaxError&#39;: &lt;class &#39;SyntaxError&#39;&gt;,
+ &#39;SyntaxWarning&#39;: &lt;class &#39;SyntaxWarning&#39;&gt;,
+ &#39;SystemError&#39;: &lt;class &#39;SystemError&#39;&gt;,
+ &#39;SystemExit&#39;: &lt;class &#39;SystemExit&#39;&gt;,
+ &#39;TabError&#39;: &lt;class &#39;TabError&#39;&gt;,
+ &#39;TimeoutError&#39;: &lt;class &#39;TimeoutError&#39;&gt;,
+ &#39;True&#39;: True,
+ &#39;TypeError&#39;: &lt;class &#39;TypeError&#39;&gt;,
+ &#39;UnboundLocalError&#39;: &lt;class &#39;UnboundLocalError&#39;&gt;,
+ &#39;UnicodeDecodeError&#39;: &lt;class &#39;UnicodeDecodeError&#39;&gt;,
+ &#39;UnicodeEncodeError&#39;: &lt;class &#39;UnicodeEncodeError&#39;&gt;,
+ &#39;UnicodeError&#39;: &lt;class &#39;UnicodeError&#39;&gt;,
+ &#39;UnicodeTranslateError&#39;: &lt;class &#39;UnicodeTranslateError&#39;&gt;,
+ &#39;UnicodeWarning&#39;: &lt;class &#39;UnicodeWarning&#39;&gt;,
+ &#39;UserWarning&#39;: &lt;class &#39;UserWarning&#39;&gt;,
+ &#39;ValueError&#39;: &lt;class &#39;ValueError&#39;&gt;,
+ &#39;Warning&#39;: &lt;class &#39;Warning&#39;&gt;,
+ &#39;ZeroDivisionError&#39;: &lt;class &#39;ZeroDivisionError&#39;&gt;,
+ &#39;__build_class__&#39;: &lt;built-in function __build_class__&gt;,
+ &#39;__debug__&#39;: True,
+ &#39;__doc__&#39;: &#39;Built-in functions, exceptions, and other objects.\n&#39;
+            &#39;\n&#39;
+            &quot;Noteworthy: None is the `nil&#39; object; Ellipsis represents `...&#39; &quot;
+            &#39;in slices.&#39;,
+ &#39;__import__&#39;: &lt;built-in function __import__&gt;,
+ &#39;__loader__&#39;: &lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;,
+ &#39;__name__&#39;: &#39;builtins&#39;,
+ &#39;__package__&#39;: &#39;&#39;,
+ &#39;__spec__&#39;: ModuleSpec(name=&#39;builtins&#39;, loader=&lt;class &#39;_frozen_importlib.BuiltinImporter&#39;&gt;),
+ &#39;abs&#39;: &lt;built-in function abs&gt;,
+ &#39;all&#39;: &lt;built-in function all&gt;,
+ &#39;any&#39;: &lt;built-in function any&gt;,
+ &#39;ascii&#39;: &lt;built-in function ascii&gt;,
+ &#39;bin&#39;: &lt;built-in function bin&gt;,
+ &#39;bool&#39;: &lt;class &#39;bool&#39;&gt;,
+ &#39;breakpoint&#39;: &lt;built-in function breakpoint&gt;,
+ &#39;bytearray&#39;: &lt;class &#39;bytearray&#39;&gt;,
+ &#39;bytes&#39;: &lt;class &#39;bytes&#39;&gt;,
+ &#39;callable&#39;: &lt;built-in function callable&gt;,
+ &#39;chr&#39;: &lt;built-in function chr&gt;,
+ &#39;classmethod&#39;: &lt;class &#39;classmethod&#39;&gt;,
+ &#39;compile&#39;: &lt;built-in function compile&gt;,
+ &#39;complex&#39;: &lt;class &#39;complex&#39;&gt;,
+ &#39;copyright&#39;: ... &lt;trimmed 6587 bytes string&gt;</pre></td>
+</tr>
+<tr>
+<td>__cached__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid/__pycache__/views.cpython-37.pyc&#39;</pre></td>
+</tr>
+<tr>
+<td>__doc__</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>__file__</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/covid/views.py&#39;</pre></td>
+</tr>
+<tr>
+<td>__loader__</td>
+<td class="code"><pre>&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2ebd90&gt;</pre></td>
+</tr>
+<tr>
+<td>__name__</td>
+<td class="code"><pre>&#39;covid.views&#39;</pre></td>
+</tr>
+<tr>
+<td>__package__</td>
+<td class="code"><pre>&#39;covid&#39;</pre></td>
+</tr>
+<tr>
+<td>__spec__</td>
+<td class="code"><pre>ModuleSpec(name=&#39;covid.views&#39;, loader=&lt;_frozen_importlib_external.SourceFileLoader object at 0x7f78af2ebd90&gt;, origin=&#39;/home/site/wwwroot/covid/views.py&#39;)</pre></td>
+</tr>
+<tr>
+<td>connection</td>
+<td class="code"><pre>&lt;django.db.DefaultConnectionProxy object at 0x7f78b3aced10&gt;</pre></td>
+</tr>
+<tr>
+<td>json</td>
+<td class="code"><pre>&lt;module &#39;json&#39; from &#39;/opt/python/3.7.7/lib/python3.7/json/__init__.py&#39;&gt;</pre></td>
+</tr>
+<tr>
+<td>render</td>
+<td class="code"><pre>&lt;function render at 0x7f78af433050&gt;</pre></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<form action="http://dpaste.com/" name="pasteform" id="pasteform" method="post">
+<div id="pastebinTraceback" class="pastebin">
+<input type="hidden" name="language" value="PythonConsole">
+<input type="hidden" name="title" value="ModuleNotFoundError at /">
+<input type="hidden" name="source" value="Django Dpaste Agent">
+<input type="hidden" name="poster" value="Django">
+<textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: GET
+Request URL: http://covid19.ncdc.gov.ng/
+
+Django Version: 2.1.2
+Python Version: 3.7.7
+Installed Applications:
+[&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;django.contrib.sites&#39;,
+ &#39;covid&#39;]
+Installed Middleware:
+[&#39;django.middleware.security.SecurityMiddleware&#39;,
+ &#39;whitenoise.middleware.WhiteNoiseMiddleware&#39;,
+ &#39;django.middleware.gzip.GZipMiddleware&#39;,
+ &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;]
+
+
+
+Traceback:
+
+File "/antenv/lib/python3.7/site-packages/django/core/handlers/exception.py" in inner
+  34.             response = get_response(request)
+
+File "/antenv/lib/python3.7/site-packages/django/core/handlers/base.py" in _get_response
+  111.         resolver_match = resolver.resolve(request.path_info)
+
+File "/antenv/lib/python3.7/site-packages/django/urls/resolvers.py" in resolve
+  491.             for pattern in self.url_patterns:
+
+File "/antenv/lib/python3.7/site-packages/django/utils/functional.py" in __get__
+  37.         res = instance.__dict__[self.name] = self.func(instance)
+
+File "/antenv/lib/python3.7/site-packages/django/urls/resolvers.py" in url_patterns
+  533.         patterns = getattr(self.urlconf_module, &quot;urlpatterns&quot;, self.urlconf_module)
+
+File "/antenv/lib/python3.7/site-packages/django/utils/functional.py" in __get__
+  37.         res = instance.__dict__[self.name] = self.func(instance)
+
+File "/antenv/lib/python3.7/site-packages/django/urls/resolvers.py" in urlconf_module
+  526.             return import_module(self.urlconf_name)
+
+File "/opt/python/3.7.7/lib/python3.7/importlib/__init__.py" in import_module
+  127.     return _bootstrap._gcd_import(name[level:], package, level)
+
+File "&lt;frozen importlib._bootstrap&gt;" in _gcd_import
+  1006. &lt;source code not available&gt;
+
+File "&lt;frozen importlib._bootstrap&gt;" in _find_and_load
+  983. &lt;source code not available&gt;
+
+File "&lt;frozen importlib._bootstrap&gt;" in _find_and_load_unlocked
+  967. &lt;source code not available&gt;
+
+File "&lt;frozen importlib._bootstrap&gt;" in _load_unlocked
+  677. &lt;source code not available&gt;
+
+File "&lt;frozen importlib._bootstrap_external&gt;" in exec_module
+  728. &lt;source code not available&gt;
+
+File "&lt;frozen importlib._bootstrap&gt;" in _call_with_frames_removed
+  219. &lt;source code not available&gt;
+
+File "/home/site/wwwroot/covid19/urls.py" in &lt;module&gt;
+  19. from covid.urls import urlpatterns as covid_urls
+
+File "/home/site/wwwroot/covid/urls.py" in &lt;module&gt;
+  4. from . import views
+
+File "/home/site/wwwroot/covid/views.py" in &lt;module&gt;
+  7. import pyotp
+
+Exception Type: ModuleNotFoundError at /
+Exception Value: No module named &#39;pyotp&#39;
+</textarea>
+<br><br>
+<input type="submit" value="Share this traceback on a public website">
+</div>
+</form>
+</div>
+<div id="requestinfo">
+<h2>Request information</h2>
+<h3 id="user-info">USER</h3>
+<p>AnonymousUser</p>
+<h3 id="get-info">GET</h3>
+<p>No GET data</p>
+<h3 id="post-info">POST</h3>
+<p>No POST data</p>
+<h3 id="files-info">FILES</h3>
+<p>No FILES data</p>
+<h3 id="cookie-info">COOKIES</h3>
+<p>No cookie data</p>
+<h3 id="meta-info">META</h3>
+<table class="req">
+<thead>
+<tr>
+<th>Variable</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTTP_ACCEPT</td>
+<td class="code"><pre>&#39;*/*&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_ACCEPT_ENCODING</td>
+<td class="code"><pre>&#39;gzip&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CDN_LOOP</td>
+<td class="code"><pre>&#39;cloudflare&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CF_CONNECTING_IP</td>
+<td class="code"><pre>&#39;159.65.94.139&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CF_IPCOUNTRY</td>
+<td class="code"><pre>&#39;GB&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CF_RAY</td>
+<td class="code"><pre>&#39;5c394b084802b769-CDG&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CF_REQUEST_ID</td>
+<td class="code"><pre>&#39;0497ad392d0000b769c8398200000001&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CF_VISITOR</td>
+<td class="code"><pre>&#39;{&quot;scheme&quot;:&quot;https&quot;}&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CLIENT_IP</td>
+<td class="code"><pre>&#39;141.101.69.40:42630&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_CONNECTION</td>
+<td class="code"><pre>&#39;Keep-Alive&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_DISGUISED_HOST</td>
+<td class="code"><pre>&#39;covid19.ncdc.gov.ng&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_HOST</td>
+<td class="code"><pre>&#39;covid19.ncdc.gov.ng&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_MAX_FORWARDS</td>
+<td class="code"><pre>&#39;10&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_USER_AGENT</td>
+<td class="code"><pre>&#39;python-requests/2.22.0&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_WAS_DEFAULT_HOSTNAME</td>
+<td class="code"><pre>&#39;covid19naija.azurewebsites.net&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_APPSERVICE_PROTO</td>
+<td class="code"><pre>&#39;https&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_ARR_LOG_ID</td>
+<td class="code"><pre>&#39;24ff49d3-2982-46f8-854b-a1d351910861&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_ARR_SSL</td>
+<td class="code"><pre>(&#39;2048|256|C=US, O=DigiCert Inc, OU=www.digicert.com, CN=GeoTrust RSA CA &#39;
+ &#39;2018|CN=covid19.ncdc.gov.ng&#39;)</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_CLIENT_IP</td>
+<td class="code"><pre>&#39;141.101.69.40&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_CLIENT_PORT</td>
+<td class="code"><pre>&#39;42630&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_FORWARDED_FOR</td>
+<td class="code"><pre>&#39;159.65.94.139, 141.101.69.40:42630&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_FORWARDED_PROTO</td>
+<td class="code"><pre>&#39;https&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_FORWARDED_TLSVERSION</td>
+<td class="code"><pre>&#39;1.2&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_ORIGINAL_URL</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_SITE_DEPLOYMENT_ID</td>
+<td class="code"><pre>&#39;covid19Naija&#39;</pre></td>
+</tr>
+<tr>
+<td>HTTP_X_WAWS_UNENCODED_URL</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>PATH_INFO</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>QUERY_STRING</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>RAW_URI</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>REMOTE_ADDR</td>
+<td class="code"><pre>&#39;172.16.0.1&#39;</pre></td>
+</tr>
+<tr>
+<td>REMOTE_PORT</td>
+<td class="code"><pre>&#39;42821&#39;</pre></td>
+</tr>
+<tr>
+<td>REQUEST_METHOD</td>
+<td class="code"><pre>&#39;GET&#39;</pre></td>
+</tr>
+<tr>
+<td>SCRIPT_NAME</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>SERVER_NAME</td>
+<td class="code"><pre>&#39;0.0.0.0&#39;</pre></td>
+</tr>
+<tr>
+<td>SERVER_PORT</td>
+<td class="code"><pre>&#39;8000&#39;</pre></td>
+</tr>
+<tr>
+<td>SERVER_PROTOCOL</td>
+<td class="code"><pre>&#39;HTTP/1.1&#39;</pre></td>
+</tr>
+<tr>
+<td>SERVER_SOFTWARE</td>
+<td class="code"><pre>&#39;gunicorn/20.0.4&#39;</pre></td>
+</tr>
+<tr>
+<td>gunicorn.socket</td>
+<td class="code"><pre>&lt;socket.socket fd=9, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=(&#39;172.16.0.3&#39;, 8000), raddr=(&#39;172.16.0.1&#39;, 42821)&gt;</pre></td>
+</tr>
+<tr>
+<td>wsgi.errors</td>
+<td class="code"><pre>&lt;gunicorn.http.wsgi.WSGIErrorsWrapper object at 0x7f78af368050&gt;</pre></td>
+</tr>
+<tr>
+<td>wsgi.file_wrapper</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>wsgi.input</td>
+<td class="code"><pre>&lt;gunicorn.http.body.Body object at 0x7f78af368bd0&gt;</pre></td>
+</tr>
+<tr>
+<td>wsgi.input_terminated</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>wsgi.multiprocess</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>wsgi.multithread</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>wsgi.run_once</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>wsgi.url_scheme</td>
+<td class="code"><pre>&#39;http&#39;</pre></td>
+</tr>
+<tr>
+<td>wsgi.version</td>
+<td class="code"><pre>(1, 0)</pre></td>
+</tr>
+</tbody>
+</table>
+<h3 id="settings-info">Settings</h3>
+<h4>Using settings module <code>covid19.production</code></h4>
+<table class="req">
+<thead>
+<tr>
+<th>Setting</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ABSOLUTE_URL_OVERRIDES</td>
+<td class="code"><pre>{}</pre></td>
+</tr>
+<tr>
+<td>ADMINS</td>
+<td class="code"><pre>()</pre></td>
+</tr>
+<tr>
+<td>ALLOWED_HOSTS</td>
+<td class="code"><pre>[&#39;covid19.ncdc.gov.ng&#39;]</pre></td>
+</tr>
+<tr>
+<td>APPEND_SLASH</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>AUTHENTICATION_BACKENDS</td>
+<td class="code"><pre>[&#39;django.contrib.auth.backends.ModelBackend&#39;]</pre></td>
+</tr>
+<tr>
+<td>AUTH_PASSWORD_VALIDATORS</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>AUTH_USER_MODEL</td>
+<td class="code"><pre>&#39;auth.User&#39;</pre></td>
+</tr>
+<tr>
+<td>BASE_DIR</td>
+<td class="code"><pre>&#39;/home/site/wwwroot&#39;</pre></td>
+</tr>
+<tr>
+<td>CACHES</td>
+<td class="code"><pre>{&#39;default&#39;: {&#39;BACKEND&#39;: &#39;django.core.cache.backends.locmem.LocMemCache&#39;,
+             &#39;LOCATION&#39;: &#39;unique-snowflake&#39;},
+ &#39;pages&#39;: {&#39;BACKEND&#39;: &#39;django.core.cache.backends.memcached.MemcachedCache&#39;,
+           &#39;LOCATION&#39;: &#39;127.0.0.1:11211&#39;}}</pre></td>
+</tr>
+<tr>
+<td>CACHE_BACKEND</td>
+<td class="code"><pre>&#39;locmem:///?timeout=300&amp;max_entries=6000&#39;</pre></td>
+</tr>
+<tr>
+<td>CACHE_MIDDLEWARE_ALIAS</td>
+<td class="code"><pre>&#39;default&#39;</pre></td>
+</tr>
+<tr>
+<td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>CACHE_MIDDLEWARE_SECONDS</td>
+<td class="code"><pre>600</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_AGE</td>
+<td class="code"><pre>31449600</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_DOMAIN</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_HTTPONLY</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_NAME</td>
+<td class="code"><pre>&#39;csrftoken&#39;</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_PATH</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_SAMESITE</td>
+<td class="code"><pre>&#39;Lax&#39;</pre></td>
+</tr>
+<tr>
+<td>CSRF_COOKIE_SECURE</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>CSRF_FAILURE_VIEW</td>
+<td class="code"><pre>&#39;django.views.csrf.csrf_failure&#39;</pre></td>
+</tr>
+<tr>
+<td>CSRF_HEADER_NAME</td>
+<td class="code"><pre>&#39;HTTP_X_CSRFTOKEN&#39;</pre></td>
+</tr>
+<tr>
+<td>CSRF_TRUSTED_ORIGINS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>CSRF_USE_SESSIONS</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>DATABASES</td>
+<td class="code"><pre>{&#39;default&#39;: {&#39;ATOMIC_REQUESTS&#39;: False,
+             &#39;AUTOCOMMIT&#39;: True,
+             &#39;CONN_MAX_AGE&#39;: 500,
+             &#39;ENGINE&#39;: &#39;django.db.backends.postgresql&#39;,
+             &#39;HOST&#39;: &#39;ncdcdatabase.postgres.database.azure.com&#39;,
+             &#39;NAME&#39;: &#39;covid19&#39;,
+             &#39;OPTIONS&#39;: {},
+             &#39;PASSWORD&#39;: &#39;********************&#39;,
+             &#39;PORT&#39;: &#39;&#39;,
+             &#39;TEST&#39;: {&#39;CHARSET&#39;: None,
+                      &#39;COLLATION&#39;: None,
+                      &#39;MIRROR&#39;: None,
+                      &#39;NAME&#39;: None},
+             &#39;TIME_ZONE&#39;: None,
+             &#39;USER&#39;: &#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8de3eee9eeeee2e0cde3eee9eec9ecf9ecefecfee8">[email&#160;protected]</a>&#39;}}</pre></td>
+</tr>
+<tr>
+<td>DATABASE_ROUTERS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+<td class="code"><pre>2621440</pre></td>
+</tr>
+<tr>
+<td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+<td class="code"><pre>1000</pre></td>
+</tr>
+<tr>
+<td>DATETIME_FORMAT</td>
+<td class="code"><pre>&#39;N j, Y, P&#39;</pre></td>
+</tr>
+<tr>
+<td>DATETIME_INPUT_FORMATS</td>
+<td class="code"><pre>[&#39;%Y-%m-%d %H:%M:%S&#39;,
+ &#39;%Y-%m-%d %H:%M:%S.%f&#39;,
+ &#39;%Y-%m-%d %H:%M&#39;,
+ &#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y %H:%M:%S&#39;,
+ &#39;%m/%d/%Y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%Y %H:%M&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y %H:%M:%S&#39;,
+ &#39;%m/%d/%y %H:%M:%S.%f&#39;,
+ &#39;%m/%d/%y %H:%M&#39;,
+ &#39;%m/%d/%y&#39;]</pre></td>
+</tr>
+<tr>
+<td>DATE_FORMAT</td>
+<td class="code"><pre>&#39;N j, Y&#39;</pre></td>
+</tr>
+<tr>
+<td>DATE_INPUT_FORMATS</td>
+<td class="code"><pre>[&#39;%Y-%m-%d&#39;,
+ &#39;%m/%d/%Y&#39;,
+ &#39;%m/%d/%y&#39;,
+ &#39;%b %d %Y&#39;,
+ &#39;%b %d, %Y&#39;,
+ &#39;%d %b %Y&#39;,
+ &#39;%d %b, %Y&#39;,
+ &#39;%B %d %Y&#39;,
+ &#39;%B %d, %Y&#39;,
+ &#39;%d %B %Y&#39;,
+ &#39;%d %B, %Y&#39;]</pre></td>
+</tr>
+<tr>
+<td>DEBUG</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>DECIMAL_SEPARATOR</td>
+<td class="code"><pre>&#39;.&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_CHARSET</td>
+<td class="code"><pre>&#39;utf-8&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_CONTENT_TYPE</td>
+<td class="code"><pre>&#39;text/html&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+<td class="code"><pre>&#39;django.views.debug.SafeExceptionReporterFilter&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_FILE_STORAGE</td>
+<td class="code"><pre>&#39;django.core.files.storage.FileSystemStorage&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_FROM_EMAIL</td>
+<td class="code"><pre>&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5b2c3e39363a282f3e291b3734383a373334282f">[email&#160;protected]</a>&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_INDEX_TABLESPACE</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>DEFAULT_TABLESPACE</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>DISALLOWED_USER_AGENTS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>EMAIL_BACKEND</td>
+<td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre></td>
+</tr>
+<tr>
+<td>EMAIL_HOST</td>
+<td class="code"><pre>&#39;localhost&#39;</pre></td>
+</tr>
+<tr>
+<td>EMAIL_HOST_PASSWORD</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>EMAIL_HOST_USER</td>
+<td class="code"><pre>&#39;&#39;</pre></td>
+</tr>
+<tr>
+<td>EMAIL_PORT</td>
+<td class="code"><pre>25</pre></td>
+</tr>
+<tr>
+<td>EMAIL_SSL_CERTFILE</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>EMAIL_SSL_KEYFILE</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>EMAIL_SUBJECT_PREFIX</td>
+<td class="code"><pre>&#39;[Django] &#39;</pre></td>
+ </tr>
+<tr>
+<td>EMAIL_TIMEOUT</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>EMAIL_USE_LOCALTIME</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>EMAIL_USE_SSL</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>EMAIL_USE_TLS</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>FILE_CHARSET</td>
+<td class="code"><pre>&#39;utf-8&#39;</pre></td>
+</tr>
+<tr>
+<td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>FILE_UPLOAD_HANDLERS</td>
+<td class="code"><pre>[&#39;django.core.files.uploadhandler.MemoryFileUploadHandler&#39;,
+ &#39;django.core.files.uploadhandler.TemporaryFileUploadHandler&#39;]</pre></td>
+</tr>
+<tr>
+<td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+<td class="code"><pre>2621440</pre></td>
+</tr>
+<tr>
+<td>FILE_UPLOAD_PERMISSIONS</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>FILE_UPLOAD_TEMP_DIR</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>FIRST_DAY_OF_WEEK</td>
+<td class="code"><pre>0</pre></td>
+</tr>
+<tr>
+<td>FIXTURE_DIRS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>FORCE_SCRIPT_NAME</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>FORMAT_MODULE_PATH</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>FORM_RENDERER</td>
+<td class="code"><pre>&#39;django.forms.renderers.DjangoTemplates&#39;</pre></td>
+</tr>
+<tr>
+<td>IGNORABLE_404_URLS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>INSTALLED_APPS</td>
+<td class="code"><pre>[&#39;django.contrib.admin&#39;,
+ &#39;django.contrib.auth&#39;,
+ &#39;django.contrib.contenttypes&#39;,
+ &#39;django.contrib.sessions&#39;,
+ &#39;django.contrib.messages&#39;,
+ &#39;django.contrib.staticfiles&#39;,
+ &#39;django.contrib.sites&#39;,
+ &#39;covid&#39;]</pre></td>
+</tr>
+<tr>
+<td>INTERNAL_IPS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>LANGUAGES</td>
+<td class="code"><pre>[(&#39;af&#39;, &#39;Afrikaans&#39;),
+ (&#39;ar&#39;, &#39;Arabic&#39;),
+ (&#39;ast&#39;, &#39;Asturian&#39;),
+ (&#39;az&#39;, &#39;Azerbaijani&#39;),
+ (&#39;bg&#39;, &#39;Bulgarian&#39;),
+ (&#39;be&#39;, &#39;Belarusian&#39;),
+ (&#39;bn&#39;, &#39;Bengali&#39;),
+ (&#39;br&#39;, &#39;Breton&#39;),
+ (&#39;bs&#39;, &#39;Bosnian&#39;),
+ (&#39;ca&#39;, &#39;Catalan&#39;),
+ (&#39;cs&#39;, &#39;Czech&#39;),
+ (&#39;cy&#39;, &#39;Welsh&#39;),
+ (&#39;da&#39;, &#39;Danish&#39;),
+ (&#39;de&#39;, &#39;German&#39;),
+ (&#39;dsb&#39;, &#39;Lower Sorbian&#39;),
+ (&#39;el&#39;, &#39;Greek&#39;),
+ (&#39;en&#39;, &#39;English&#39;),
+ (&#39;en-au&#39;, &#39;Australian English&#39;),
+ (&#39;en-gb&#39;, &#39;British English&#39;),
+ (&#39;eo&#39;, &#39;Esperanto&#39;),
+ (&#39;es&#39;, &#39;Spanish&#39;),
+ (&#39;es-ar&#39;, &#39;Argentinian Spanish&#39;),
+ (&#39;es-co&#39;, &#39;Colombian Spanish&#39;),
+ (&#39;es-mx&#39;, &#39;Mexican Spanish&#39;),
+ (&#39;es-ni&#39;, &#39;Nicaraguan Spanish&#39;),
+ (&#39;es-ve&#39;, &#39;Venezuelan Spanish&#39;),
+ (&#39;et&#39;, &#39;Estonian&#39;),
+ (&#39;eu&#39;, &#39;Basque&#39;),
+ (&#39;fa&#39;, &#39;Persian&#39;),
+ (&#39;fi&#39;, &#39;Finnish&#39;),
+ (&#39;fr&#39;, &#39;French&#39;),
+ (&#39;fy&#39;, &#39;Frisian&#39;),
+ (&#39;ga&#39;, &#39;Irish&#39;),
+ (&#39;gd&#39;, &#39;Scottish Gaelic&#39;),
+ (&#39;gl&#39;, &#39;Galician&#39;),
+ (&#39;he&#39;, &#39;Hebrew&#39;),
+ (&#39;hi&#39;, &#39;Hindi&#39;),
+ (&#39;hr&#39;, &#39;Croatian&#39;),
+ (&#39;hsb&#39;, &#39;Upper Sorbian&#39;),
+ (&#39;hu&#39;, &#39;Hungarian&#39;),
+ (&#39;ia&#39;, &#39;Interlingua&#39;),
+ (&#39;id&#39;, &#39;Indonesian&#39;),
+ (&#39;io&#39;, &#39;Ido&#39;),
+ (&#39;is&#39;, &#39;Icelandic&#39;),
+ (&#39;it&#39;, &#39;Italian&#39;),
+ (&#39;ja&#39;, &#39;Japanese&#39;),
+ (&#39;ka&#39;, &#39;Georgian&#39;),
+ (&#39;kab&#39;, &#39;Kabyle&#39;),
+ (&#39;kk&#39;, &#39;Kazakh&#39;),
+ (&#39;km&#39;, &#39;Khmer&#39;),
+ (&#39;kn&#39;, &#39;Kannada&#39;),
+ (&#39;ko&#39;, &#39;Korean&#39;),
+ (&#39;lb&#39;, &#39;Luxembourgish&#39;),
+ (&#39;lt&#39;, &#39;Lithuanian&#39;),
+ (&#39;lv&#39;, &#39;Latvian&#39;),
+ (&#39;mk&#39;, &#39;Macedonian&#39;),
+ (&#39;ml&#39;, &#39;Malayalam&#39;),
+ (&#39;mn&#39;, &#39;Mongolian&#39;),
+ (&#39;mr&#39;, &#39;Marathi&#39;),
+ (&#39;my&#39;, &#39;Burmese&#39;),
+ (&#39;nb&#39;, &#39;Norwegian BokmÃ¥l&#39;),
+ (&#39;ne&#39;, &#39;Nepali&#39;),
+ (&#39;nl&#39;, &#39;Dutch&#39;),
+ (&#39;nn&#39;, &#39;Norwegian Nynorsk&#39;),
+ (&#39;os&#39;, &#39;Ossetic&#39;),
+ (&#39;pa&#39;, &#39;Punjabi&#39;),
+ (&#39;pl&#39;, &#39;Polish&#39;),
+ (&#39;pt&#39;, &#39;Portuguese&#39;),
+ (&#39;pt-br&#39;, &#39;Brazilian Portuguese&#39;),
+ (&#39;ro&#39;, &#39;Romanian&#39;),
+ (&#39;ru&#39;, &#39;Russian&#39;),
+ (&#39;sk&#39;, &#39;Slovak&#39;),
+ (&#39;sl&#39;, &#39;Slovenian&#39;),
+ (&#39;sq&#39;, &#39;Albanian&#39;),
+ (&#39;sr&#39;, &#39;Serbian&#39;),
+ (&#39;sr-latn&#39;, &#39;Serbian Latin&#39;),
+ (&#39;sv&#39;, &#39;Swedish&#39;),
+ (&#39;sw&#39;, &#39;Swahili&#39;),
+ (&#39;ta&#39;, &#39;Tamil&#39;),
+ (&#39;te&#39;, &#39;Telugu&#39;),
+ (&#39;th&#39;, &#39;Thai&#39;),
+ (&#39;tr&#39;, &#39;Turkish&#39;),
+ (&#39;tt&#39;, &#39;Tatar&#39;),
+ (&#39;udm&#39;, &#39;Udmurt&#39;),
+ (&#39;uk&#39;, &#39;Ukrainian&#39;),
+ (&#39;ur&#39;, &#39;Urdu&#39;),
+ (&#39;vi&#39;, &#39;Vietnamese&#39;),
+ (&#39;zh-hans&#39;, &#39;Simplified Chinese&#39;),
+ (&#39;zh-hant&#39;, &#39;Traditional Chinese&#39;)]</pre></td>
+</tr>
+<tr>
+<td>LANGUAGES_BIDI</td>
+<td class="code"><pre>[&#39;he&#39;, &#39;ar&#39;, &#39;fa&#39;, &#39;ur&#39;]</pre></td>
+</tr>
+<tr>
+<td>LANGUAGE_CODE</td>
+<td class="code"><pre>&#39;en-us&#39;</pre></td>
+</tr>
+<tr>
+<td>LANGUAGE_COOKIE_AGE</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>LANGUAGE_COOKIE_DOMAIN</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>LANGUAGE_COOKIE_NAME</td>
+<td class="code"><pre>&#39;django_language&#39;</pre></td>
+</tr>
+<tr>
+<td>LANGUAGE_COOKIE_PATH</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>LOCALE_PATHS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td class="code"><pre>{}</pre></td>
+</tr>
+<tr>
+<td>LOGGING_CONFIG</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>LOGIN_REDIRECT_URL</td>
+<td class="code"><pre>&#39;/accounts/profile/&#39;</pre></td>
+</tr>
+<tr>
+<td>LOGIN_URL</td>
+<td class="code"><pre>&#39;/accounts/login/&#39;</pre></td>
+</tr>
+<tr>
+<td>LOGOUT_REDIRECT_URL</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>MANAGERS</td>
+<td class="code"><pre>()</pre></td>
+</tr>
+<tr>
+<td>MEDIA_ROOT</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/media&#39;</pre></td>
+</tr>
+<tr>
+<td>MEDIA_URL</td>
+ <td class="code"><pre>&#39;/media/&#39;</pre></td>
+</tr>
+<tr>
+<td>MESSAGE_STORAGE</td>
+<td class="code"><pre>&#39;django.contrib.messages.storage.fallback.FallbackStorage&#39;</pre></td>
+</tr>
+<tr>
+<td>MIDDLEWARE</td>
+<td class="code"><pre>[&#39;django.middleware.security.SecurityMiddleware&#39;,
+ &#39;whitenoise.middleware.WhiteNoiseMiddleware&#39;,
+ &#39;django.middleware.gzip.GZipMiddleware&#39;,
+ &#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,
+ &#39;django.middleware.common.CommonMiddleware&#39;,
+ &#39;django.middleware.csrf.CsrfViewMiddleware&#39;,
+ &#39;django.contrib.auth.middleware.AuthenticationMiddleware&#39;,
+ &#39;django.contrib.messages.middleware.MessageMiddleware&#39;,
+ &#39;django.middleware.clickjacking.XFrameOptionsMiddleware&#39;]</pre></td>
+</tr>
+<tr>
+<td>MIGRATION_MODULES</td>
+<td class="code"><pre>{}</pre></td>
+</tr>
+<tr>
+<td>MONTH_DAY_FORMAT</td>
+<td class="code"><pre>&#39;F j&#39;</pre></td>
+</tr>
+<tr>
+<td>NUMBER_GROUPING</td>
+<td class="code"><pre>0</pre></td>
+</tr>
+<tr>
+<td>PAGE_DEFAULT_TEMPLATE</td>
+<td class="code"><pre>&#39;covid.html&#39;</pre></td>
+</tr>
+<tr>
+<td>PAGE_TEMPLATES</td>
+<td class="code"><pre>()</pre></td>
+</tr>
+<tr>
+<td>PAGE_USE_SITE_ID</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>PASSWORD_HASHERS</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>PASSWORD_RESET_TIMEOUT_DAYS</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>PREPEND_WWW</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>ROOT_URLCONF</td>
+<td class="code"><pre>&#39;covid19.urls&#39;</pre></td>
+</tr>
+<tr>
+<td>SECRET_KEY</td>
+<td class="code"><pre>&#39;********************&#39;</pre></td>
+</tr>
+<tr>
+<td>SECURE_BROWSER_XSS_FILTER</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SECURE_HSTS_PRELOAD</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SECURE_HSTS_SECONDS</td>
+<td class="code"><pre>0</pre></td>
+</tr>
+<tr>
+<td>SECURE_PROXY_SSL_HEADER</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>SECURE_REDIRECT_EXEMPT</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>SECURE_SSL_HOST</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>SECURE_SSL_REDIRECT</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SERVER_EMAIL</td>
+<td class="code"><pre>&#39;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="196b76766d5975767a787571766a6d">[email&#160;protected]</a>&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_CACHE_ALIAS</td>
+<td class="code"><pre>&#39;default&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_AGE</td>
+<td class="code"><pre>1209600</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_DOMAIN</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_HTTPONLY</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_NAME</td>
+<td class="code"><pre>&#39;sessionid&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_PATH</td>
+<td class="code"><pre>&#39;/&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_SAMESITE</td>
+<td class="code"><pre>&#39;Lax&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_COOKIE_SECURE</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SESSION_ENGINE</td>
+<td class="code"><pre>&#39;django.contrib.sessions.backends.db&#39;</pre></td>
+</tr>
+<tr>
+<td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SESSION_FILE_PATH</td>
+<td class="code"><pre>None</pre></td>
+</tr>
+<tr>
+<td>SESSION_SAVE_EVERY_REQUEST</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>SESSION_SERIALIZER</td>
+<td class="code"><pre>&#39;django.contrib.sessions.serializers.JSONSerializer&#39;</pre></td>
+</tr>
+<tr>
+<td>SETTINGS_MODULE</td>
+<td class="code"><pre>&#39;covid19.production&#39;</pre></td>
+</tr>
+<tr>
+<td>SHORT_DATETIME_FORMAT</td>
+<td class="code"><pre>&#39;m/d/Y P&#39;</pre></td>
+</tr>
+<tr>
+<td>SHORT_DATE_FORMAT</td>
+<td class="code"><pre>&#39;m/d/Y&#39;</pre></td>
+</tr>
+<tr>
+<td>SIGNING_BACKEND</td>
+<td class="code"><pre>&#39;django.core.signing.TimestampSigner&#39;</pre></td>
+</tr>
+<tr>
+<td>SILENCED_SYSTEM_CHECKS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>SITE_ID</td>
+<td class="code"><pre>1</pre></td>
+</tr>
+<tr>
+<td>STATICFILES_DIRS</td>
+<td class="code"><pre>[&#39;/home/site/wwwroot/static&#39;]</pre></td>
+</tr>
+<tr>
+<td>STATICFILES_FINDERS</td>
+<td class="code"><pre>(&#39;django.contrib.staticfiles.finders.FileSystemFinder&#39;,
+ &#39;django.contrib.staticfiles.finders.AppDirectoriesFinder&#39;)</pre></td>
+</tr>
+<tr>
+<td>STATICFILES_STORAGE</td>
+<td class="code"><pre>&#39;custom_azure.WhiteNoiseStaticFilesStorage&#39;</pre></td>
+</tr>
+<tr>
+<td>STATIC_ROOT</td>
+<td class="code"><pre>&#39;/home/site/wwwroot/staticfiles&#39;</pre></td>
+</tr>
+<tr>
+<td>STATIC_URL</td>
+<td class="code"><pre>&#39;/static/&#39;</pre></td>
+</tr>
+<tr>
+<td>TEMPLATES</td>
+<td class="code"><pre>[{&#39;APP_DIRS&#39;: True,
+  &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+  &#39;DIRS&#39;: [&#39;/home/site/wwwroot/templates&#39;],
+  &#39;OPTIONS&#39;: {&#39;context_processors&#39;: [&#39;django.template.context_processors.debug&#39;,
+                                     &#39;django.template.context_processors.request&#39;,
+                                     &#39;django.contrib.auth.context_processors.auth&#39;,
+                                     &#39;django.template.context_processors.i18n&#39;,
+                                     &#39;django.template.context_processors.media&#39;,
+                                     &#39;django.contrib.messages.context_processors.messages&#39;]}}]</pre></td>
+</tr>
+<tr>
+<td>TEST_NON_SERIALIZED_APPS</td>
+<td class="code"><pre>[]</pre></td>
+</tr>
+<tr>
+<td>TEST_RUNNER</td>
+<td class="code"><pre>&#39;django.test.runner.DiscoverRunner&#39;</pre></td>
+</tr>
+<tr>
+<td>THOUSAND_SEPARATOR</td>
+<td class="code"><pre>&#39;,&#39;</pre></td>
+</tr>
+ <tr>
+<td>TIME_FORMAT</td>
+<td class="code"><pre>&#39;P&#39;</pre></td>
+</tr>
+<tr>
+<td>TIME_INPUT_FORMATS</td>
+<td class="code"><pre>[&#39;%H:%M:%S&#39;, &#39;%H:%M:%S.%f&#39;, &#39;%H:%M&#39;]</pre></td>
+</tr>
+<tr>
+<td>TIME_ZONE</td>
+<td class="code"><pre>&#39;UTC&#39;</pre></td>
+</tr>
+<tr>
+<td>USE_I18N</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>USE_L10N</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>USE_THOUSAND_SEPARATOR</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>USE_TZ</td>
+<td class="code"><pre>True</pre></td>
+</tr>
+<tr>
+<td>USE_X_FORWARDED_HOST</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>USE_X_FORWARDED_PORT</td>
+<td class="code"><pre>False</pre></td>
+</tr>
+<tr>
+<td>WHITENOISE_MAX_AGE</td>
+<td class="code"><pre>31557600</pre></td>
+</tr>
+<tr>
+<td>WSGI_APPLICATION</td>
+<td class="code"><pre>&#39;covid19.wsgi.application&#39;</pre></td>
+</tr>
+<tr>
+<td>X_FRAME_OPTIONS</td>
+<td class="code"><pre>&#39;SAMEORIGIN&#39;</pre></td>
+</tr>
+<tr>
+<td>YEAR_MONTH_FORMAT</td>
+<td class="code"><pre>&#39;F Y&#39;</pre></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="explanation">
+<p>
+You're seeing this error because you have <code>DEBUG = True</code> in your
+Django settings file. Change that to <code>False</code>, and Django will
+display a standard page generated by the handler for this status code.
+</p>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
