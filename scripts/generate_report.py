@@ -38,21 +38,6 @@ def get_reading_ages(language_directory):
   with open(latest_file) as lang_file:
     return orjson.loads(lang_file.read())
 
-def get_map_of_lighthouse_data(lighthouse_folder):
-  json_file_list = glob.glob(lighthouse_folder + '/*.json')
-  combined = {}
-  for json_file in json_file_list:
-    try:
-      json_data = open(json_file, "r").read()
-      loaded_json = orjson.loads(json_data)
-      url = loaded_json['finalUrl']
-      if not url in combined.keys():
-        combined[url] = []
-      combined[url].append(json_file)
-    except KeyError as e:
-      raise e
-  return combined
-
 def get_date_indexed_lighthouse_data(json_file_list):
   parsed_data = {}
 
@@ -210,7 +195,7 @@ page_tmpl_file = os.path.join(directories['templates'], 'site.html')
 index_tmpl_file = os.path.join(directories['templates'], 'index.html')
 
 latest_language_data = get_reading_ages(directories['languages'])
-lighthouse_index = get_map_of_lighthouse_data(directories['lighthouse'])
+lighthouse_index = c19utils.get_map_of_lighthouse_data(directories['lighthouse'])
 site_list = {}
 
 

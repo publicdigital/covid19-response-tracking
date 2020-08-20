@@ -1,9 +1,11 @@
 import re
+import glob
 import pathlib
 import os
 import errno
 from datetime import timedelta, date
 import csv
+import orjson
 
 class CovidSiteList:
   def __init__(self):
@@ -26,10 +28,6 @@ class CovidURLList(CovidSiteList):
     else:
       return None
 
-def daterange(start_date, end_date):
-    for n in range(int ((end_date - start_date).days)):
-        yield start_date + timedelta(n)
-
 def filter_bad_filename_chars(filename):
     """
         Filter bad chars for any filename
@@ -79,29 +77,18 @@ def filter_bad_filename_chars(filename):
 
     return re.sub('[^\w\-_\. ]', '_', filename)
 
-def establish_directories(formatted_date = None):
-    base_directory = pathlib.Path(__file__).parent.parent.absolute()
+def get_map_of_lighthouse_data(lighthouse_folder):
+  json_file_list = glob.glob(lighthouse_folder + '/*.json')
+  combined = {}
+  for json_file in json_file_list:
+    try:
+      json_data = open(json_file, "r").read()
+      loaded_json = orjson.loads(json_data)
+      url = loaded_json['finalUrl']
+      if not url in combined.keys():
+        combined[url] = []
+      combined[url].append(json_file)
+    except KeyError as e:
+      raise e
+  return combined
 
-    directories = {
-      'base': base_directory,
-      'reports': os.path.join(base_directory, "reports"),
-      'lighthouse': os.path.join(base_directory, "lighthouse-reports"),
-      'languages': os.path.join(base_directory, 'language-analysis'),
-      'graphs': os.path.join(base_directory, "reports", "graphs"),
-      'timelapses': os.path.join(base_directory, "reports", "timelapses"),
-      'loading': os.path.join(base_directory, "reports", "loading"),
-      'templates': os.path.join(base_directory, "templates")
-    }
-
-    if formatted_date:
-      directories['today'] = os.path.join(base_directory, formatted_date)
-
-    for directory in directories:
-        # Ensure output folders exist
-        try:
-            os.makedirs(directories[directory])
-        except OSError as e:
-            if e.errno != errno.EEXIST:
-                raise
-
-    return directories
