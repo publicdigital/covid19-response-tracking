@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+<title>NCDC Coronavirus COVID-19 Microsite</title>
+<!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="description" content="" />
+<meta name="keywords" content="">
+<meta name="author" content="Codedthemes" />
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PLDLB6N');</script>
+
+<link rel="icon" href="/static/img/index.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/line-awesome@1.3.0/dist/line-awesome/css/line-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="/static/css/style.css ">
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<style>
+        html,
+        body {
+          margin: 0;
+          height: 100%;
+          width: 100%;
+
+          box-sizing: border-box;
+        }
+      </style>
+<link href="https://ncdcgloepid.blob.core.windows.net/ncdc-gloepid/gloepid-embed.min.css" rel="stylesheet" />
+</head>
+<body class="">
+<div class="loader-bg">
+<div class="loader-track">
+<div class="loader-fill"></div>
+</div>
+</div>
+<style>
+  .pcoded-header.header-green a:hover, .pcoded-header.header-green dropdown-toggle {
+    color:#FFC82D;
+}
+</style>
+<nav class="pcoded-navbar menupos-fixed menu-light ">
+<div class="navbar-wrapper  ">
+<div class="navbar-content scroll-div ">
+<ul class="nav pcoded-inner-navbar ">
+<li class="nav-item pcoded-menu-caption">
+<label>NAVIGATION</label>
+</li>
+<li class="nav-item">
+<a href="/report/" class="nav-link "> <span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+</li>
+<li class="nav-item ">
+<a href="/state/" class="nav-link "><span class="pcoded-micon"><i class="fas fa-chart-bar"></i></span><span class="pcoded-mtext">Epicurve</span></a>
+</li>
+<li class="nav-item ">
+<a href="/progression/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Progression</span></a>
+</li>
+<li class="nav-item ">
+<a href="/faq/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">FAQs</span></a>
+</li>
+<li class="nav-item ">
+<a href="/advisory/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-gitlab"></i></span><span class="pcoded-mtext">Advisory</span></a>
+</li>
+<li class="nav-item ">
+<a href="/guideline/" class="nav-link "><span class="pcoded-micon"><i class="fa fa-book"></i></span><span class="pcoded-mtext">Guidelines</span></a>
+</li>
+<li class="nav-item ">
+<a href="/resource/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-feather"></i></span><span class="pcoded-mtext">Resources</span></a>
+</li>
+<li class="nav-item pcoded-hasmenu">
+<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-flask"></i></span><span class="pcoded-mtext">Laboratories</span></a>
+<ul class="pcoded-submenu">
+<li><a href="/laboratory/">Government Laboratories</a></li>
+<li><a href="/privatelabs/">Fee-Paying Private Laboratories</a></li>
+</ul>
+</li>
+<li class="nav-item pcoded-hasmenu">
+<a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Nigeria Data</span></a>
+<ul class="pcoded-submenu">
+<li><a href="/gis/">Web View</a></li>
+<li><a href="/gism/">Mobile View</a></li>
+</ul>
+</li>
+</li>
+<li class="nav-item ">
+<a href="/globals/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-layers"></i></span><span class="pcoded-mtext">Global</span></a>
+</li>
+<div class="card text-center">
+<div class="card-block">
+<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<i class="fa fa-users-o f-40"></i>
+<h6 class="mt-3">Self Assessment</h6>
+<p>
+<a href="https://selfassessment.ncdc.gov.ng" target="_blank" class="btn btn-success btn-sm text-white m-0">Get Your COVID-19 Risk Assessment</a>
+</p>
+</div>
+</div>
+</ul>
+</div>
+</div>
+</nav>
+<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed header-green">
+<div class="m-header">
+<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
+<a href="#!" class="b-brand">
+<img src="/static/ncdc_img/ncdc_logo_black_text.png" height="45" width="120" alt="" class="logo">
+</a>
+<a href="#!" class="mob-toggler">
+<i class="feather icon-more-vertical"></i>
+</a>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+
+</li>
+<li class="nav-item">
+<a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a>
+</li>
+</ul>
+<ul class="navbar-nav ml-auto">
+<li>
+<div class="dropdown">
+<a href="/validation/"><i class="fa fa-check"></i> <span>Check Test Results</span></a>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a href="/contact/"><i class="fa fa-phone"></i> <span>State Emergency Contacts</span></a>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a href="https://ncdc.gov.ng/diseases/sitreps/?cat=14&name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria" target="_blank"><i class="fa fa-newspaper"></i> <span>Situation Reports</span></a>
+</div>
+</li>
+<li>
+<div class="dropdown">
+<a href="https://ncdc.gov.ng/" target="_blank"><i class="fa fa-rocket"></i>
+<span>NCDC Website</span></a>
+</div>
+</li>
+<li>
+</li>
+</ul>
+</div>
+</header>
+<div class="pcoded-main-container">
+<div class="pcoded-content">
+<div class="page-header">
+<div class="page-block">
+<div class="row">
+<div class="col-md-12 col-xl-9">
+<div class="card bg-c-white order-card">
+<div class="card-body">
+<h1 class="text-black">COVID-19 NIGERIA </h1>
+<h6><p class="m-b-0"><span class="float-right">
+<script>
+
+                                            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+                                            var d = new Date();
+                                          var day = days[d.getDay()];
+                                          var hr = d.getHours();
+                                            var min = d.getMinutes();
+                                        if (min < 10) {
+                                            min = "0" + min;
+                                            }
+                                            var ampm = "am";
+                                            if( hr > 12 ) {
+                                              hr -= 12;
+                                              ampm = "pm";
+                                            }
+                                    var date = d.getDate();
+                                    var month = months[d.getMonth()];
+                                    var year = d.getFullYear();
+                                    var x = document.getElementById("time");
+                                    var fullDate = day + " " + hr + ":" + min + " "+ ampm + " " + date + " " + month + " " + year;
+                                    document.write(fullDate);
+                                        </script>
+</span></p>
+</h6>
+</div>
+</div>
+</div>
+<style>.newcol {
+                            background: rgba(106, 98, 36, 0.64);
+                        }
+                        </style>
+<div class="col-md-12 col-xl-3">
+<div class="card newcol order-card">
+<div class="card-body">
+<h6 class="text-white">Samples Tested</h6>
+<h2 class="text-right text-white">
+<i class="fa fa-viruses float-left"></i><span>369,904</span></h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-3 col-md-3 col-xl-3">
+<div class="card bg-c-blue order-card">
+<div class="card-body">
+<h6 class="text-white">Confirmed Cases</h6>
+<h2 class="text-right text-white"><i class="fa fa-viruses  float-left"></i><span>51,304</span></h2>
+</div>
+</div>
+</div>
+<div class="col-xs-3  col-md-3 col-xl-3">
+<div class="card bg-c-yellow order-card">
+<div class="card-body">
+<h6 class="text-white">Active Cases</h6>
+<h2 class="text-right text-white"><i class="fa fa-viruses  float-left"></i><span>12,423</span></h2>
+</div>
+</div>
+</div>
+<div class="col-xs-3 col-md-3 col-xl-3">
+<div class="card bg-c-green order-card">
+<div class="card-body">
+<h6 class="text-white">Discharged Cases</h6>
+<h2 class="text-right text-white"><i class="fa fa-viruses float-left"></i><span>37,885</span></h2>
+</div>
+</div>
+</div>
+<div class="col-xs-3 col-md-3  col-xl-3">
+<div class="card bg-c-red order-card">
+<div class="card-body">
+<h6 class="text-white">Death</h6>
+<h2 class="text-right text-white"><i class="fa fa-viruses   float-left"></i><span>996</span></h2>
+</div>
+</div>
+</div>
+<style>
+                    #custom1 {
+                        border-collapse: collapse;
+                        width: 100%;
+                        /*font-family: Segoe;*/
+                    }
+
+                    #custom1 td, #custom1 th {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                    }
+
+                    #custom1 tr:nth-child(even) {
+                        background-color: #f2f2f2;
+                    }
+
+                    #custom1 tr:hover {
+                        background-color: #ddd;
+                    }
+
+                    #custom1 th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                        background-color: #138750;
+                        color: white;
+                    }
+                </style>
+</div>
+<div class="row">
+<div class="col-xl-7">
+<div class="card">
+<div class="card-header">
+<h4 class="card-title">Confirmed Cases by State</h4>
+</div>
+<div class="card-body">
+<div class="table-responsive">
+<table id="custom1">
+<thead>
+<tr>
+<th>States Affected</th>
+<th>No. of Cases (Lab Confirmed)</th>
+<th>No. of Cases (on admission)</th>
+<th>No. Discharged</th>
+<th>No. of Deaths</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Lagos
+</td>
+<td>17,360
+</td>
+<td>2,634
+</td>
+<td>14,525
+</td>
+<td>201
+</td>
+</tr>
+<tr>
+<td>
+FCT
+</td>
+<td>4,932
+</td>
+<td>3,468
+</td>
+<td>1,418
+</td>
+<td>46
+</td>
+</tr>
+<tr>
+<td>
+Oyo
+</td>
+<td>3,017
+</td>
+<td>1,319
+</td>
+<td>1,664
+</td>
+<td>34
+</td>
+</tr>
+<tr>
+<td>
+Edo
+</td>
+<td>2,508
+</td>
+<td>197
+</td>
+<td>2,211
+</td>
+<td>100
+</td>
+</tr>
+<tr>
+<td>
+Plateau
+</td>
+<td>2,109
+</td>
+<td>1,044
+</td>
+<td>1,036
+</td>
+<td>29
+</td>
+</tr>
+<tr>
+<td>
+Rivers
+</td>
+<td>2,048
+</td>
+<td>112
+</td>
+<td>1,879
+</td>
+<td>57
+</td>
+</tr>
+<tr>
+<td>
+Kaduna
+</td>
+<td>1,986
+</td>
+<td>253
+</td>
+<td>1,721
+</td>
+<td>12
+</td>
+</tr>
+<tr>
+<td>
+Delta
+</td>
+<td>1,696
+ </td>
+<td>153
+</td>
+<td>1,497
+</td>
+<td>46
+</td>
+</tr>
+<tr>
+<td>
+Kano
+</td>
+<td>1,692
+</td>
+<td>227
+</td>
+<td>1,411
+</td>
+<td>54
+</td>
+</tr>
+<tr>
+<td>
+Ogun
+</td>
+<td>1,594
+</td>
+<td>186
+</td>
+<td>1,382
+</td>
+<td>26
+</td>
+</tr>
+<tr>
+<td>
+Ondo
+</td>
+<td>1,487
+</td>
+<td>682
+</td>
+<td>775
+</td>
+<td>30
+</td>
+</tr>
+<tr>
+<td>
+Enugu
+</td>
+<td>1,030
+</td>
+<td>159
+</td>
+<td>850
+</td>
+<td>21
+</td>
+</tr>
+<tr>
+<td>
+Ebonyi
+</td>
+<td>947
+</td>
+<td>9
+</td>
+<td>911
+</td>
+<td>27
+</td>
+</tr>
+<tr>
+<td>
+Kwara
+</td>
+ <td>920
+</td>
+<td>221
+</td>
+<td>676
+</td>
+<td>23
+</td>
+</tr>
+<tr>
+<td>
+Katsina
+</td>
+<td>768
+</td>
+<td>287
+</td>
+<td>457
+</td>
+<td>24
+</td>
+</tr>
+<tr>
+<td>
+Osun
+</td>
+<td>757
+</td>
+<td>118
+</td>
+<td>623
+</td>
+<td>16
+</td>
+</tr>
+<tr>
+<td>
+Borno
+</td>
+<td>739
+</td>
+<td>57
+</td>
+<td>646
+</td>
+<td>36
+</td>
+</tr>
+<tr>
+<td>
+Abia
+</td>
+<td>726
+</td>
+<td>141
+</td>
+<td>579
+</td>
+<td>6
+</td>
+</tr>
+<tr>
+<td>
+Gombe
+</td>
+<td>709
+</td>
+<td>90
+</td>
+<td>596
+</td>
+<td>23
+</td>
+</tr>
+<tr>
+<td>
+Bauchi
+</td>
+ <td>607
+</td>
+<td>54
+</td>
+<td>539
+</td>
+<td>14
+</td>
+</tr>
+<tr>
+<td>
+Imo
+</td>
+<td>519
+</td>
+<td>334
+</td>
+<td>175
+</td>
+<td>10
+</td>
+</tr>
+<tr>
+<td>
+Benue
+</td>
+<td>430
+</td>
+<td>282
+</td>
+<td>139
+</td>
+<td>9
+</td>
+</tr>
+<tr>
+<td>
+Nasarawa
+</td>
+<td>389
+</td>
+<td>105
+</td>
+<td>272
+</td>
+<td>12
+</td>
+</tr>
+<tr>
+<td>
+Bayelsa
+</td>
+<td>352
+</td>
+<td>6
+</td>
+<td>325
+</td>
+<td>21
+</td>
+</tr>
+<tr>
+<td>
+Jigawa
+</td>
+<td>322
+</td>
+<td>3
+</td>
+<td>308
+</td>
+<td>11
+</td>
+</tr>
+<tr>
+<td>
+Akwa Ibom
+ </td>
+<td>271
+</td>
+<td>43
+</td>
+<td>220
+</td>
+<td>8
+</td>
+</tr>
+<tr>
+<td>
+Niger
+</td>
+<td>232
+</td>
+<td>52
+</td>
+<td>168
+</td>
+<td>12
+</td>
+</tr>
+<tr>
+<td>
+Ekiti
+</td>
+<td>216
+</td>
+<td>102
+</td>
+<td>110
+</td>
+<td>4
+</td>
+</tr>
+<tr>
+<td>
+Adamawa
+</td>
+<td>206
+</td>
+<td>32
+</td>
+<td>159
+</td>
+<td>15
+</td>
+</tr>
+<tr>
+<td>
+Anambra
+</td>
+<td>181
+</td>
+<td>4
+</td>
+<td>159
+</td>
+<td>18
+</td>
+</tr>
+<tr>
+<td>
+Sokoto
+</td>
+<td>156
+</td>
+<td>2
+</td>
+<td>138
+</td>
+<td>16
+</td>
+</tr>
+<tr>
+<td>
+Kebbi
+</td>
+<td>90
+</td>
+<td>0
+</td>
+<td>82
+</td>
+<td>8
+</td>
+</tr>
+<tr>
+<td>
+Cross River
+</td>
+<td>80
+</td>
+<td>27
+</td>
+<td>45
+</td>
+<td>8
+</td>
+</tr>
+<tr>
+<td>
+Taraba
+</td>
+<td>78
+</td>
+<td>19
+</td>
+<td>55
+</td>
+<td>4
+</td>
+</tr>
+<tr>
+<td>
+Zamfara
+</td>
+<td>78
+</td>
+<td>1
+</td>
+<td>72
+</td>
+<td>5
+</td>
+</tr>
+<tr>
+<td>
+Yobe
+</td>
+<td>67
+</td>
+<td>0
+</td>
+<td>59
+</td>
+<td>8
+</td>
+</tr>
+<tr>
+<td>
+Kogi
+</td>
+<td>5
+</td>
+<td>0
+</td>
+<td>3
+</td>
+<td>2
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+ </div>
+</div>
+</div>
+<div class="col-xl-5">
+<div class="card feed-card">
+<div class="card-header">
+<div class="card-box">
+<h4 class="card-title">Highlights</h4>
+<ul style="text-align: justify">
+<li>On the 21st of August 2020, 340 new confirmed cases and 4 deaths were recorded in Nigeria</li>
+<li>Till date, 51304 cases have been confirmed, 37885 cases have been discharged and 996 deaths have been recorded in 36 states and the Federal Capital Territory</li>
+<li>The 340 new cases are reported from 19 states- Kaduna(63), FCT(51), Plateau(38), Lagos(33), Delta(25), Gombe (21), Adamawa(21), Edo(20), Katsina(17), Akwa Ibom(11), Ekiti(10), Rivers(9), Ondo(5), Ebonyi(4), Cross River(3), Ogun(3), Sokoto(2), Imo(2), Nasarawa (2)</li>
+<li>A multi-sectoral national emergency operations centre (EOC), activated at Level 3, continues to coordinate the national response activities</li>
+</ul>
+<a href="https://ncdc.gov.ng/diseases/sitreps/?cat=14&amp;name=An%20update%20of%20COVID-19%20outbreak%20in%20Nigeria" target="_blank"><b>Click here to read more</b></a>
+</div>
+</div>
+</div>
+<div class="card feed-card">
+<div class="card-header">
+<div class="card-box">
+<a class="twitter-timeline" data-lang="en" data-height="800" data-chrome="nofooter noborders transparent" data-theme="light" href="https://twitter.com/NCDCgov?ref_src=twsrc%5Etfw">Tweets by NCDCgov</a>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row card-header">
+<h4>Updates</h4>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/A_STEP_BY_STEP_GUIDE_ON_SETTING_UP_A_SAMPLE_COLLECTION_CENTRE.pdf" target="_blank" class="name">A Step by Step guide on Setting up a Sample Collection centre </a></span>
+<span class="time">Aug. 18, 2020</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/SurveillanceStrategies.pdf" target="_blank" class="name">Strategies to Improve Surveillance for COVID-19
+(GUIDANCE FOR STATES) </a></span>
+<span class="time">July 23, 2020</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/20200716_COVID-19_response_strategic_directions.pdf" target="_blank" class="name">COVID-19 response Mid-Action Review strategic directions </a></span>
+<span class="time">July 21, 2020</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/COVID_19_GUIDELINES_FOR_SAFE_REOPENING.pdf" target="_blank" class="name">Guidelines for Schools and Learning Facilities Reopening after COVID-19 Pandemic Closures </a></span>
+<span class="time">July 14, 2020</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/HomeCareInterimGuide.pdf" target="_blank" class="name">Interim Guidelines for Home Care of Confirmed COVID-19 Cases </a></span>
+<span class="time">July 11, 2020</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card" style="height: 100px;">
+<div class="card-body">
+<div class="timeline-content">
+<span style="display: block">
+<i class="fa fa-file-pdf " aria-hidden="true" style="color:red"></i>
+<a href="/media/files/ElectionsDuringCOVID-19July2020.pdf" target="_blank" class="name">Guidelines for Conducting Elections During the Covid-19 Outbreak in Nigeria </a></span>
+<span class="time">July 6, 2020</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row" style="margin-left: 10px">
+<a href="/archive/" target="_blank"><b>Click here to access archive</b></a>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card">
+<div class="card-body">
+<iframe src="" width="100%" height="315" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" data-src="https://www.youtube.com/embed/G-wB_IANUzw"></iframe>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-sm-4 col-lg-4">
+<div class="card">
+<div class="card-body">
+<iframe src="" width="100%" height="315" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" data-src="https://www.youtube.com/embed/PToko-KysHs"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+	.footer-content{
+	
+		padding: 30px;
+		
+	}
+	.footer-content a{
+		color: white;
+	}
+	.social{
+		color: #FFF;
+	}
+	.footer-logo a{
+		color: #FFF;
+	}
+</style>
+<style>
+footer {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    background-color: lightblue;
+  }
+}
+</style>
+<div class="footer-area foomter" style="background-color: #138750">
+<div class="container ">
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="footer-content text-white">
+<div class="footer-head">
+<div class="footer-logo">
+<h2 class="text-white">Contact</h2>
+</div>
+<p>Plot 801, Ebitu Ukiwe Street, Jabi, Abuja, Nigeria<br>
+0800-970000-10 (Toll-Free Call Centre)<br>
+<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2a43444c456a44494e49044d455c04444d">[email&#160;protected]</a></p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="footer-content">
+<div class="footer-head">
+<div class="footer-logo">
+<h2 class="text-white"><span></span>Social Media</h2>
+</div>
+<div class="text-white social">
+<a style="color: #FFF;" target="_blank" href="https://facebook.com/NCDCgov"><i class="la la-facebook"></i> @NCDCGov</a>
+</div>
+<div class="text-white social">
+<a class="text-white" target="_blank" href="https://twitter.com/NCDCgov"><i class="la la-twitter"></i> @NCDCGov</a>
+</div>
+<div class="text-white social">
+<a class="text-white" target="_blank" href="https://www.youtube.com/channel/UC1PmRDsjQC5ovpmEBmNhuGg"><i class="la la-youtube"></i> NCDC</a>
+</div>
+<div class="text-white social">
+<a class="text-white" target="_blank" href="https://instagram.com/ncdcgov"><i class="la la-instagram"></i> NCDCgov</a>
+</div>
+<div class="text-white social">
+<a class="text-white" target="_blank" href="https://t.me/NCDCgov"><i class="fa fa-envelope"></i> t.me/NCDCgov (Telegram)</a>
+</div>
+<hr>
+<div class="text-white social" style="font-size: 7px !important;">
+<p style="font-size: 8px !important;">Supported by Georgetown University - CGHPI</p>
+</div>
+</div>
+</div>
+</div>
+
+ <div class="col-md-4 col-sm-4 col-xs-12">
+<div class="footer-content">
+<div class="footer-head">
+<div class="footer-logo">
+<h2 class="text-white"><span></span>Mandate of NCDC</h2>
+</div>
+<p class="text-white">
+The Nigeria Centre for Disease Control (NCDC) was established in the year 2011 in response to the challenges of public health emergencies and to enhance Nigeria’s preparedness and response to epidemics through prevention, detection and control of communicable diseases.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+    #connectcenter {
+      background-color: #ffC82D;
+      margin-top: -20px;
+    }
+    #connectcenter img {
+     
+      margin: 0px 16px 0px 0px;
+      width: 32px !important;
+    }
+    #connectcenter li {
+      font-size: 1.2em;
+      
+    }
+	   a#social{text-decoration: none;
+	  color: #444444;}
+
+    .img-thumbnail{
+      background-color: none;
+
+    }
+    
+ </style>
+<div id="connectcenter" class="yellow darken-4 white-text foomter" style="border-top: solid 1px white;padding-left: 20px">
+<h3>Connect Centre</h3>
+<div class="row">
+<div class="col-md-4">
+<img class="img img-thumbnail img-responsive" style="width: 64px" src="/static/img/public-phone1.png">Toll Free Number: <b>0800 9700 0010</b>
+</div>
+<div class="col-md-4">
+<a id="social" href="https://api.whatsapp.com/send?phone=+2347087110839"><img class="img img-thumbnail img-responsive" style="width: 64px" src="/static/images/social/whatsapp.png">Whatsapp: <b>+234708 711 0839</b></a>
+</div>
+<div class="col-md-4">
+<img class="img img-thumbnail img-responsive" style="width: 64px" src="/static/images/social/public-phone.png">SMS Number: <b>+234809 955 5577</b>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://ncdcgloepid.blob.core.windows.net/ncdc-gloepid/gloepid-embed.min.js"></script>
+<script src="/static/js/vendor-all.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/static/js/pcoded.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script type="text/javascript" src="/static/js/app.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0FT1KY27K"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-X0FT1KY27K');
+
+    </script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-161734978-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-161734978-1');
+    </script>
+<script>
+      function init() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
+  </script>
+</body>
+</html>
