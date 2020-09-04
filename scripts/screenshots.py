@@ -1,0 +1,26 @@
+import c19utils
+import asyncio
+import pyppeteer
+from datetime import datetime
+import os
+
+formatted_date = datetime.now().strftime("%Y-%m-%d")
+directories = c19utils.establish_directories(formatted_date)
+
+async def main():
+  for url in c19utils.CovidURLList():
+    try:
+      print("Processing " + url)
+      filename = c19utils.filter_bad_filename_chars(url)
+      output_filename = os.path.join(directories['today'], ('%s.png' % filename))
+
+      browser = await pyppeteer.launch()
+      page = await browser.newPage()
+      await page.setViewport({'width': 800, 'height': 1280})
+      await page.goto(url)
+      await page.screenshot({'path': output_filename})
+      await browser.close()
+    except pyppeteer.errors.TimeoutError:
+      print("Timed out fetching " + url)
+
+asyncio.get_event_loop().run_until_complete(main())
