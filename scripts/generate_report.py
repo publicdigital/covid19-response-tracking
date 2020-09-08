@@ -10,26 +10,13 @@ import c19utils
 import re
 from datetime import date
 
-url_mappings = {
-  'https://coronaviruscolombia.gov.co/': 'https://coronaviruscolombia.gov.co/Covid19/index.html',
-  'https://health.ri.gov/covid': 'https://health.ri.gov/covid/',
-  'https://www.health.ny.gov/diseases/communicable/coronavirus/': 'https://coronavirus.health.ny.gov/home',
-  'https://www.govt.nz/covid-19-novel-coronavirus/': 'https://covid19.govt.nz/',
-  'https://en.ssi.dk': 'https://en.ssi.dk/',
-  'https://arkartassituacija.gov.lv': 'https://arkartassituacija.gov.lv/',
-  'https://www.bahamas.gov.bs': 'https://www.bahamas.gov.bs/',
-  'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov',
-  'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov',
-  'https://www.ontario.ca/page/2019-novel-coronavirus': 'https://covid-19.ontario.ca'
-    }
-
 # The lighthouse key isn't guaranteed to match the URL
 # so allow for variance
 def translate_to_lighthouse_key(lighthouse_keys, url):
   if url in lighthouse_keys:
     return url
-  elif url_mappings[url] in lighthouse_keys:
-    return url_mappings[url]
+  elif c19utils.url_mappings[url] in lighthouse_keys:
+    return c19utils.url_mappings[url]
   return url
 
 def get_reading_ages(language_directory):
