@@ -1,0 +1,589 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<!--lightbox-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css"/>
+	<link rel="stylesheet" href="/css/gov.css"/>
+	<link rel="stylesheet" href="/css/responsive.css"/>
+	
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <nav class="navbar navbar-light static-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="logowrap">
+                                <a class="navbar-brand" href="/"><img src="/media/1048/logo_nieuw.png" alt="Home" width="135" /></a>
+                            </div>
+                            <div id="titlewrap">
+                                Ministerie van Volksgezondheid
+                            </div>
+                            
+                            <div class="float-right">
+                                <a href="https://www.facebook.com/Ministerie-van-Volksgezondheid-Suriname-1606377959682372/" target="_blank" class="pl-2"><i class="fab fa-facebook"></i> </a>
+            <a href="https://www.youtube.com/channel/UCoIHWK-MFMoMIthGSBErOzA" target="_blank" class="pl-2"><i class="fab fa-youtube"></i> </a>
+                            </div>
+                            
+                            <div id="genSearchForm" class="search-block-header">
+                                
+                                <form class="form-inline float-right border" action="/zoekresultaten/">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--
+                        <div class="col-md-6">
+                            <div id="genSearchForm" class="search-block-header">
+                                <form class="form-inline float-right border" action="Umbraco.RenderMacro("pageZoekUrl")">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="pageWrap" class="mt-3">
+            <div class="container">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col px-0">
+                            <nav id="mainNav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0">
+                                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto text-uppercase">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    Home
+                </a>
+            </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/actueel/">
+                                Actueel
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/minister-staf/">
+                                Minister &amp; Staf
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/over-ministerie/">
+                                Over Ministerie
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/diensten-en-instellingen/">
+                                Diensten en Instellingen
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/documenten-en-publikaties/">
+                                Documenten en Publikaties
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/contact/">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/coronavirus-covid-19-info/">
+                                Covid-19 Info
+                            </a>
+                        </li>
+        </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="main" class="container-fluid px-0 pb-5">
+                    <div class="row">
+                        <div class="col px-0">
+<nav id="breadcrumb" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>                        </div>
+                    </div>
+                    <div class="row">
+
+    <div class="col-md-8">
+        <div id="newsMainArticle">
+    
+   
+    <div id="newsMainIntro">
+        <div id="newsMainTitle">
+            <!--<h4></h4>-->
+        </div>
+        <div id="newsIntro">
+                     <img src="/media/1184/coronavirus-wikipedia-1024x555.jpg?anchor=center&amp;mode=crop&amp;width=620&amp;height=220&amp;rnd=132249380390000000" alt="Home" class="img-responsive" />
+
+             <div class="newsintro-title"><h2></h2></div>
+             <div class="newsintro-inhoud">
+               
+            &nbsp;
+             </div>
+        </div>
+    </div>
+</div>
+        
+        <div class="home-sec-title" style="border-bottom:none;">NIEUWSBERICHTEN</div>
+        <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/gewijzigede-gelekoorts-vaccinatiedagen/">
+                                            <img src="/media/1068/logo-volksgezondheid-320x176.png?center=0.70634920634920639,0.5307017543859649&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132421332340000000" alt="Gewijzigede gelekoorts vaccinatiedagen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/gewijzigede-gelekoorts-vaccinatiedagen/" class="card-title">Gewijzigde gelekoorts vaccinatiedagen</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/minister-ramadhin-pleegt-onderhoud-met-verpleegkundigen/">
+                                            <img src="/media/1428/minister-amar-ramadhin.jpg?center=0.31021897810218979,0.4823529411764706&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132423885430000000" alt="Minister Ramadhin pleegt onderhoud met verpleegkundigen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/minister-ramadhin-pleegt-onderhoud-met-verpleegkundigen/" class="card-title">Minister Ramadhin pleegt onderhoud met verpleegkundigen</a></h3>
+                                Minister Amar Ramadhin, van Volksgezondheid, heeft de noden van verpleegkundigen, die belast zijn met COVID-19 zorg, aangehoord. De bewindsman heeft de zorgverleners ontvangen naar aanleiding van een door hen ingediende petitie. Het gesprek heeft plaatsgevonden op 1 september 2020, met een vertegenwoordiging van deze groep verpleegkundigen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/volksgezondheid-verontschuldigt-zich/">
+                                            <img src="/media/1195/logo-volksgezondheid-640x351.png?center=1.1594202898550725,1.4523809523809523&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132260656210000000" alt="Volksgezondheid verontschuldigt zich" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/volksgezondheid-verontschuldigt-zich/" class="card-title">Volksgezondheid verontschuldigt zich</a></h3>
+                                Het ministerie van Volksgezondheid wil hierbij zijn verontschuldiging aanbieden voor het feit dat de COVID-19 persconferentie, welke gepland stond voor dinsdag 25 augustus om 16:00 uur, geen voortgang heeft gehad.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="/actueel/2020/testlocaties-covid-19-24-tm-28-augustus-2020/" class="card-title">Testlocaties COVID-19 24 t/m 28 augustus 2020</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/thuisquarantaine-vooralsnog-afgeschaft-voor-passagiers-nederland-en-cura&#231;ao/">
+                                            <img src="/media/1195/logo-volksgezondheid-640x351.png?center=1.1594202898550725,1.4523809523809523&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132260656210000000" alt="Thuisquarantaine vooralsnog afgeschaft voor passagiers Nederland en Cura&#231;ao" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/thuisquarantaine-vooralsnog-afgeschaft-voor-passagiers-nederland-en-cura&#231;ao/" class="card-title">Thuisquarantaine vooralsnog afgeschaft voor passagiers Nederland en Cura&#231;ao</a></h3>
+                                Het ministerie van Volksgezondheid en het Bureau voor Openbare Gezondheidzorg (BOG) maken bekend dat vanaf heden 24 augustus 2020 de (thuis)quarantaine voor passagiers uit Nederland en Curaçao, vooralsnog afgeschaft is.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/directie-ziekenhuis-wanica-betreurt-valse-berichten/">
+                                            <img src="/media/1432/ziekenhuis-wanica-768x432.jpg?center=0.66492146596858637,0.5117647058823529&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132429066190000000" alt="Directie Ziekenhuis Wanica betreurt valse berichten" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/directie-ziekenhuis-wanica-betreurt-valse-berichten/" class="card-title">Directie Ziekenhuis Wanica betreurt valse berichten</a></h3>
+                                De directie van het Regionaal Ziekenhuis Wanica betreurt het dat er een video en valse berichten worden verspreid met betrekking tot een voorval in de COVID-19 isolatie tent van het ziekenhuis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/bezoek-president-santokhi-aan-volksgezondheid/">
+                                            <img src="/media/1431/img_0224.png?center=0.19047619047619047,0.47352941176470587&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132427380620000000" alt="Bezoek president Santokhi aan Volksgezondheid" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/bezoek-president-santokhi-aan-volksgezondheid/" class="card-title">Bezoek president Santokhi aan Volksgezondheid</a></h3>
+                                De president van de Republiek Suriname Chandrikapersad Santokhi heeft een  oriëntatiebezoek gebracht aan het ministerie van Volksgezondheid. Tijdens dit bezoek werden verschillende zaken met betrekking tot de gezondheidszorg in ons land besproken met minister Amar Ramadhin. Het Covid management team gaf een  presentatie over de huidige stand van zaken ten aanzien van de Covid 19 situatie in ons land. Dr. Krisna Matura geeft aan dat de meeste positieve gevallen uit Paramaribo zijn en van het mannelijk geslacht. Verder stelt zij, dat de  positieve gevallen met de dag toenemen en dat de opnamecapaciteit ten einde loopt. Veelal vinden de besmettingen plaats op de werkvloer.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/covid-19-suriname-situatierapport-1/">
+                                            <img src="/media/1430/covid-cases.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132423883290000000" alt="COVID-19 SURINAME SITUATIERAPPORT (1)" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/covid-19-suriname-situatierapport-1/" class="card-title">COVID-19 SURINAME SITUATIERAPPORT</a></h3>
+                                Per 18 augustus zijn er 3216 gevallen van COVID-19 bevestigd. Het aantal actieve gevallen is 966, waarvan 126 in het ziekenhuis liggen en 13 in de ICU. In de afgelopen twee weken zijn er COVID-19 gevallen in alle districten gemeld. De meeste gevallen doen zich nog steeds voor in Paramaribo en Wanica. De spreiding van de gevallen in Paramaribo en Wanica is vooralsnog meer in het zuiden zichtbaar.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/verscherpte-maatregelen-niet-om-samenleving-te-pesten/">
+                                            <img src="/media/1428/minister-amar-ramadhin.jpg?center=0.31021897810218979,0.4823529411764706&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132423885430000000" alt="Verscherpte maatregelen niet om samenleving te pesten" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/verscherpte-maatregelen-niet-om-samenleving-te-pesten/" class="card-title">Verscherpte maatregelen niet om samenleving te pesten</a></h3>
+                                De verscherpte maatregelen die door de regering zijn aangekondigd houden geenszins in dat de samenleving gepest wordt maar dat die juist bedoeld zijn om het COVID 19 virus terug te dringen. Het toenemende aantal besmettingen baart het kabinet Santokhi/Brunswijk enorm veel zorgen. Die bezorgdheid heeft het staatshoofd tijdens een persconferentie op woensdag 19 augustus geuit.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/cubaanse-ambassadeur-brengt-bezoek-aan-minister-volksgezondheid/">
+                                            <img src="/media/1429/foto-2-768x511.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132423881190000000" alt="Cubaanse ambassadeur brengt bezoek aan minister Volksgezondheid" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/cubaanse-ambassadeur-brengt-bezoek-aan-minister-volksgezondheid/" class="card-title">Cubaanse ambassadeur brengt bezoek aan minister Volksgezondheid</a></h3>
+                                De ambassadeur van Cuba, de heer Igor Azcuy bracht samen met zijn medische coördinator een bezoek aan het ministerie van Volksgezondheid. Dit vond plaats op 18 augustus jongstleden.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/oproep-aan-alle-verplegenden/">
+                                            <img src="/media/1068/logo-volksgezondheid-320x176.png?center=0.70634920634920639,0.5307017543859649&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132421332340000000" alt="Oproep aan alle verplegenden" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/oproep-aan-alle-verplegenden/" class="card-title">oproep aan alle verplegenden</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/academisch-ziekenhuis-opent-swabunit/">
+                                            <img src="/media/1164/azp.jpg?center=0.67317073170731712,0.45226130653266333&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132229544770000000" alt="Academisch Ziekenhuis opent swabunit" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/academisch-ziekenhuis-opent-swabunit/" class="card-title">Academisch Ziekenhuis opent swabunit</a></h3>
+                                Om de verspreiding van COVID-19 positieven beter te kunnen monitoren, heeft het Academisch Ziekenhuis Paramaribo (AZP) naast de huidige controlepost, een swabunit geopend. Deze unit is ook gevestigd bij de voorzijde van ingang naar de Spoedeisende Hulp, (naast de controlepost) en zal dagelijks geopend zijn van 8 uur ‘s morgens tot en met 8 uur ‘s avonds.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="/actueel/2020/testlocaties-covid-19-17-tm-21-augustus-2020/" class="card-title">Testlocaties COVID-19 17 t/m 21 augustus 2020</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/volksgezondheid-benadrukt-strikte-naleving-covid-19-maatregelen/">
+                                            <img src="/media/1163/logo-volksgezondheid-640x351.png?center=1.126984126984127,1.5478260869565217&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132295176820000000" alt="Volksgezondheid benadrukt strikte naleving Covid-19 maatregelen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/volksgezondheid-benadrukt-strikte-naleving-covid-19-maatregelen/" class="card-title">Volksgezondheid benadrukt strikte naleving Covid-19 maatregelen</a></h3>
+                                Het ministerie van Volksgezondheid benadrukt dat de afgekondigde maatregelen door de President van Suriname strikt moeten worden nageleefd door de burgers van het land om het aantal besmettingen te laten dalen.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/stijging-covid-19-positieven-door-stijging-aantal-testen/">
+                                            <img src="/media/1426/totaal-aantal-covid-19-testen-in-2020-per-week-768x395.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132422134450000000" alt="Stijging Covid-19 positieven door stijging aantal testen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/stijging-covid-19-positieven-door-stijging-aantal-testen/" class="card-title">Stijging Covid-19 positieven door stijging aantal testen</a></h3>
+                                Suriname is de afgelopen weken opgeschrikt door een forse stijging van het aantal personen dat positief getest is op COVID-19. Ook de stijging van het aantal sterfgevallen zorgt voor onrust en vrees.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination border-0 rounded-0">
+                    <li class="page-item active"><a class="page-link border-0" href="/?page=1">1</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=2">2</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=3">3</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=4">4</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=5">5</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=6">6</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=7">7</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=8">8</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=9">9</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=10">10</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=11">11</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=12">12</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=13">13</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=14">14</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=15">15</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=16">16</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=17">17</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=18">18</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=19">19</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=20">20</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=21">21</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=22">22</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=23">23</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=24">24</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=25">25</a></li>
+                     <li class="page-item">
+              <a class="page-link border-0" href="/?page=1" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+      </ul>
+    </nav>
+        
+    </div>
+    <div class="col-md-4">
+        <div id="sideMenu" class="card rounded-0 border-top-0 border-right-0 border-left-0 mb-4">
+            <div class="card-header rounded-0">
+                <a href="/">
+                    Home
+                </a>
+            </div>
+            
+                <img class="card-img-top rounded-0" src="/media/1067/download-1.jpg?anchor=center&amp;amp;mode=crop&amp;amp;width=510&amp;amp;height=279&amp;amp;rnd=132043867620000000" alt="Home">
+
+            <ul class="list-group list-group-flush mb-2">
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/actueel/">
+                            Actueel
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/minister-staf/">
+                            Minister &amp; Staf
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/over-ministerie/">
+                            Over Ministerie
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="home-sec-title">Minister &amp; Staf</div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/minister-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1027/amar-ramadhin.jpg?center=0.3964757709251101,0.53235294117647058&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132404146240000000" alt="Amar Ramadhin" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Minister<br/>
+                                        Amar Ramadhin
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Minister van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/directeur-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1031/dbsuriname-wp-content-uploads-2019-01-1farmaceutische-sector-wenst-sector-meer-gestalte-te-geven-300x200.jpg?center=0.4,0.43349753694581283&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132028323730000000" alt="Cleopatra Jessurun" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Wnd. Directeur<br/>
+                                        Cleopatra Jessurun
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Directeur van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirekteur-administratieve-diensten/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Wnd. Onderdirecteur<br/>
+                                        Muriel Ravenberg
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirekteur Administratieve Diensten
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirecteur-ministerie-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1048/img_9949.jpg?center=0.336283185840708,0.40707964601769914&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132084438790000000" alt="Robert Mohamed" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Robert Mohamed
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirecteur Ministerie van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirecteur-financieel-beheer/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1112/img_9944.jpg?center=0.2839506172839506,1.4754098360655739&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132084512740000000" alt="Georgian Singorawi" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Georgian Singorawi
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirecteur Financieel Beheer
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+    </div>
+    
+                    </div>
+                </div>
+                <div id="footer" class="container-fluid px-0 ">
+                    <div class="row border-top pt-3 pb-5">
+                        <div class="col-lg-3 col-md-6">
+                <h3>Gezondheidtips</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/gezondheidstips/">Tip </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Vacatures</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/vacatures/">vacature</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Gerelateerde Instellingen</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.malariasuriname.com/">Malaria programma</a>
+                        </li>
+                        <li>
+                            <a href="http://derma.sr/">Dienst Dermatologie</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rgd.sr/">Regionale Gezondheids Dienst</a>
+                        </li>
+                        <li>
+                            <a href="https://www.szf.sr/">Stichting Staatsziekenfonds</a>
+                        </li>
+                    </ul>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="footer">
+                <p>Copyright 2019</p>
+            </div>
+        </div>
+    </div>
+    
+
+	
+	
+
+
+	<script>
+	
+	    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+            
+	</script>
+</body>
+</html>
