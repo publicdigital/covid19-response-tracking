@@ -104,5 +104,7 @@ url_mappings = {
   'https://www.mspas.gob.gt/index.php/noticias/covid-19/coronavirus-2019-ncov': 'https://www.mspas.gob.gt/index.php/noticias/coronavirus-2019-ncov',
   'https://www.ontario.ca/page/2019-novel-coronavirus': 'https://covid-19.ontario.ca',
   'https://coronavirusecuador.com': 'https://www.coronavirusecuador.com/',
-  'https://yukon.ca/covid-19': 'https://yukon.ca/en/covid-19-information'
+  'https://yukon.ca/covid-19': 'https://yukon.ca/en/covid-19-information',
+  'https://www.oregon.gov/oha/PH/DISEASESCONDITIONS/DISEASESAZ%20Pages/emerging-respiratory-infections.aspx': 'https://govstatus.egov.com/OR-OHA-COVID-19',
+  'https://presidencia.gob.do/coronavirusrd': 'https://coronavirusrd.gob.do/'
 }
