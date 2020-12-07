@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	<!--lightbox-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha256-HAaDW5o2+LelybUhfuk0Zh2Vdk8Y2W2UeKmbaXhalfA=" crossorigin="anonymous" />
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/main.css"/>
+	<link rel="stylesheet" href="/css/gov.css"/>
+	<link rel="stylesheet" href="/css/responsive.css"/>
+	
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <nav class="navbar navbar-light static-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="logowrap">
+                                <a class="navbar-brand" href="/"><img src="/media/1048/logo_nieuw.png" alt="Home" width="135" /></a>
+                            </div>
+                            <div id="titlewrap">
+                                Ministerie van Volksgezondheid
+                            </div>
+                            
+                            <div class="float-right">
+                                <a href="https://www.facebook.com/Ministerie-van-Volksgezondheid-Suriname-1606377959682372/" target="_blank" class="pl-2"><i class="fab fa-facebook"></i> </a>
+            <a href="https://www.youtube.com/channel/UCoIHWK-MFMoMIthGSBErOzA" target="_blank" class="pl-2"><i class="fab fa-youtube"></i> </a>
+                            </div>
+                            
+                            <div id="genSearchForm" class="search-block-header">
+                                
+                                <form class="form-inline float-right border" action="/zoekresultaten/">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                        <!--
+                        <div class="col-md-6">
+                            <div id="genSearchForm" class="search-block-header">
+                                <form class="form-inline float-right border" action="Umbraco.RenderMacro("pageZoekUrl")">
+                                    <input class="form-control mr-0 border-0" name="search" type="search" placeholder="Zoeken..." aria-label="Search">
+                                    <button class="btn my-2 my-sm-0 rounded-0" type="submit"><span class="fa">&#xf002;</span></button>
+                                </form>
+                            </div>
+                        </div>-->
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="pageWrap" class="mt-3">
+            <div class="container">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col px-0">
+                            <nav id="mainNav" class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark pb-lg-0">
+                                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto text-uppercase">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="/">
+                    Home
+                </a>
+            </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/actueel/">
+                                Actueel
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/minister-staf/">
+                                Minister &amp; Staf
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/over-ministerie/">
+                                Over Ministerie
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/diensten-en-instellingen/">
+                                Diensten en Instellingen
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/documenten-en-publikaties/">
+                                Documenten en Publikaties
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/contact/">
+                                Contact
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/coronavirus-covid-19-info/">
+                                Covid-19 Info
+                            </a>
+                        </li>
+        </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div id="main" class="container-fluid px-0 pb-5">
+                    <div class="row">
+                        <div class="col px-0">
+<nav id="breadcrumb" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>                        </div>
+                    </div>
+                    <div class="row">
+
+    <div class="col-md-8">
+        <div id="newsMainArticle">
+    
+   
+    <div id="newsMainIntro">
+        <div id="newsMainTitle">
+            <!--<h4></h4>-->
+        </div>
+        <div id="newsIntro">
+                     <img src="/media/1184/coronavirus-wikipedia-1024x555.jpg?anchor=center&amp;mode=crop&amp;width=620&amp;height=220&amp;rnd=132249380390000000" alt="Home" class="img-responsive" />
+
+             <div class="newsintro-title"><h2></h2></div>
+             <div class="newsintro-inhoud">
+               
+            &nbsp;
+             </div>
+        </div>
+    </div>
+</div>
+        
+        <div class="home-sec-title" style="border-bottom:none;">NIEUWSBERICHTEN</div>
+        <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="/actueel/2020/rgd-wachtdienstregeling-zaterdag-14-tot-maandag-16-november-2020/" class="card-title">RGD wachtdienstregeling zaterdag 14 tot maandag 16 november 2020</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/14-november-2020-wereld-diabetes-dag/">
+                                            <img src="/media/1501/ditabetes-overzicht-blog-300x214.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132499911000000000" alt="14 November 2020, Wereld Diabetes Dag" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/14-november-2020-wereld-diabetes-dag/" class="card-title">14 November 2020, Wereld Diabetes Dag</a></h3>
+                                Wereld Diabetes Dag (WDD), jaarlijks op 14 november, werd in 1991 in het leven geroepen door Internationale Diabetes Federatie en de Wereld Gezondheidsorganisatie als reactie op de groeiende bezorgdheid over de escalerende bedreiging voor de gezondheid als gevolg van diabetes. WDD is ‘s werelds grootste diabetesbewustmakingscampagne en heeft als doel om wereldwijd het belang van gecoördineerde maatregelen te promoten om diabetes als een kritisch wereldwijd gezondheidsprobleem aan te pakken.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/bij-covid-19-gerelateerde-verschijnselen-nog-steeds-swab-test-afnemen/">
+                                            <img src="/media/1500/mobiele-test-unit-4-390x220.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132497296610000000" alt="Bij COVID-19 gerelateerde verschijnselen nog steeds swab test afnemen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/bij-covid-19-gerelateerde-verschijnselen-nog-steeds-swab-test-afnemen/" class="card-title">Bij COVID-19 gerelateerde verschijnselen nog steeds swab test afnemen</a></h3>
+                                Landelijk is het aantal nieuwe COVID-19 besmettingsgevallen de afgelopen weken verder gedaald. We kunnen nu spreken van sporadisch/cluster besmettingen en door PAHO/WHO is aanbevolen dat we nu terug naar code oranje of zelfs geel zijn.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/pcs-doorstaat-kritische-kiwa-hercertificeringsproces/">
+                                            <img src="/media/1498/pcs-261x300.jpg?center=0.75877192982456143,0.47474747474747475&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132497289550000000" alt="PCS doorstaat kritische Kiwa hercertificeringsproces" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/pcs-doorstaat-kritische-kiwa-hercertificeringsproces/" class="card-title">PCS doorstaat kritische Kiwa hercertificeringsproces</a></h3>
+                                Het Psychiatrisch Centrum Suriname (PCS) heeft van 02 tot en met 11 november 2020 haar jaarlijkse Kiwa-audit zonder kritische tekortkomingen doorlopen door de creativiteit en flexibiliteit van zowel de directie, management en overige personeelsleden. Vanwege de heersende Covid-19 pandemie in de wereld is de auditplanning in twee fasen uitgevoerd, te weten in de maanden mei (fase 1) en november (fase 2).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/update-outbreak-management-team-10-november-2020/">
+                                            <img src="/media/1497/minister-amar-ramadhin-1.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132495568610000000" alt="Update Outbreak Management Team 10 november 2020" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/update-outbreak-management-team-10-november-2020/" class="card-title">Update Outbreak Management Team 10 november 2020</a></h3>
+                                Landelijk is het aantal nieuwe COVID-19 besmettingsgevallen de afgelopen weken verder gedaald. We kunnen nu spreken van sporadisch/cluster besmettingen en door PAHO/WHO is aanbevolen dat we nu terug naar code oranje of zelfs geel zijn. We moeten echter alert blijven aangezien meer dan 90% van onze bevolking nog geen immuniteit heeft tegen het coronavirus. Met andere woorden: een grote uitbraak zoals in Europa gaande is, kan Suriname overkomen als de bevolking de maatregelen niet meer naleeft.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/pahowho-ondersteunen-volksgezondheid-met-testkits/">
+                                            <img src="/media/1496/paho2-300x171.jpeg?center=0.232,0.49090909090909091&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132494718020000000" alt="PAHO/WHO ondersteunen Volksgezondheid met testkits" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/pahowho-ondersteunen-volksgezondheid-met-testkits/" class="card-title">PAHO/WHO ondersteunen Volksgezondheid met testkits 17 hours ago Volksgezondheid</a></h3>
+                                De Pan American Health Organization (PAHO) heeft het ministerie van Volksgezondheid ondersteund met materiaal in het kader van de bestrijding van de COVID-19 epidemie in ons land. Het gaat om de donatie van 30.000 stuks antigeen sneltesten. Voor Suriname is het goed dat deze testen zijn overhandigd, zei minister Amar Ramadhin van Volksgezondheid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/malaria-programma-overhandigt-covid-materialen-aan-centraal-lab-bog/">
+                                            <img src="/media/1495/foto4-768x621.jpg?center=0.22140221402214022,0.49850746268656715&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132494714580000000" alt="Malaria Programma overhandigt COVID-materialen aan Centraal Lab BOG" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/malaria-programma-overhandigt-covid-materialen-aan-centraal-lab-bog/" class="card-title">Malaria Programma overhandigt COVID-materialen aan Centraal Lab BOG</a></h3>
+                                Het Malaria Programma van het Ministerie van Volksgezondheid is door haar belangrijkste donor, het Global Fund, in staat gesteld om diagnostische materialen ter waarde van 83,000 USD aan te kopen voor de nationale COVID-19 respons in Suriname. De aangeschafte laboratorium supplies werden met support van de Pan American Health Organization (PAHO) het land binnengehaald.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/venezuela-doneert-covid-sneltesten-aan-volksgezondheid/">
+                                            <img src="/media/1494/venezuela-300x289.jpg?center=0.24766355140186916,0.47747747747747749&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132494712110000000" alt="Venezuela doneert Covid sneltesten aan Volksgezondheid" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/venezuela-doneert-covid-sneltesten-aan-volksgezondheid/" class="card-title">Venezuela doneert Covid sneltesten aan Volksgezondheid</a></h3>
+                                De Ambassadeur van de Bolivariaanse Republiek Venezuela, Ayerin Yesenia Flores Rivas, heeft op dinsdag 3 november 2020 in totaal 7000 Covid sneltesten gedoneerd aan het Ministerie van Volksgezondheid. Het betreft in deze Antibody Rapid Detection Tests.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/minister-ramadhin-brengt-bezoek-aan-bureau-dak-en-thuislozen/">
+                                            <img src="/media/1493/foto2-768x513.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132494705340000000" alt="Minister Ramadhin brengt bezoek aan Bureau Dak- en Thuislozen" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/minister-ramadhin-brengt-bezoek-aan-bureau-dak-en-thuislozen/" class="card-title">Minister Ramadhin brengt bezoek aan Bureau Dak- en Thuislozen</a></h3>
+                                De minister van Volksgezondheid, Amar Ramadhin, heeft een bezoek gebracht aan het Bureau Dak- en Thuislozen (BDT) te Latour. Dit gebeurde op vrijdag 6 november 2020. In de maand oktober was er reeds een onderhoud met de bond van het bureau, waarbij minister Ramadhin geïnformeerd werd over de stand van zaken. Tijdens dit onderhoud gaf de minister te kennen een werkbezoek aan het Bureau Dak- en Thuislozen te zullen brengen, waarbij de wens is dat er een duidelijke organisatiestructuur moet worden opgezet.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/covid-19-maatregelen-blijven-gehandhaafd-ondanks-dalende-trend/">
+                                            <img src="/media/1492/minister-ramadhin-768x432.jpg?center=0.39267015706806285,0.5&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132493859730000000" alt="COVID-19 maatregelen blijven gehandhaafd ondanks dalende trend" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/covid-19-maatregelen-blijven-gehandhaafd-ondanks-dalende-trend/" class="card-title">COVID-19 maatregelen blijven gehandhaafd ondanks dalende trend</a></h3>
+                                Hoewel het aantal COVID-besmettingen de afgelopen twee weken een dalende trend vertoond, blijven de maatregelen gehandhaafd en moeten wij als samenleving alert blijven. Deze informatie gaf minister Amar Ramadhin van Volksgezondheid tijdens een televisietoespraak. “Twee weken terug heeft de President reeds aangegeven dat er een dalende trend met hoopvolle cijfers was. Ik mag u mededelen dat deze trend zich verder heeft voortgezet. Hierdoor kunnen wij het pad naar verdere normalisatie gestadig voortzetten. De vorige week hebben wij een gemiddeld aantal van 6 besmettingen per dag gehad. Elke besmetting is er 1 teveel. Echter zijn wij nu dus wel ver beneden de gestelde gevarenzone van 25 besmettingen per dag.”
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <h3><a href="/actueel/2020/wachtdienstregeling-rgd-zaterdag-7-tot-maandag-9-november-2020/" class="card-title">Wachtdienstregeling RGD zaterdag 7 tot maandag 9 november 2020</a></h3>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/nog-geen-akkoord-bereikt-tussen-survam-en-particuliere-laboratoria/">
+                                            <img src="/media/1163/logo-volksgezondheid-640x351.png?center=1.126984126984127,1.5478260869565217&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132295176820000000" alt="Nog geen akkoord bereikt tussen Survam en Particuliere Laboratoria" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/nog-geen-akkoord-bereikt-tussen-survam-en-particuliere-laboratoria/" class="card-title">Nog geen akkoord bereikt tussen Survam en Particuliere Laboratoria</a></h3>
+                                Het ministerie van Volksgezondheid heeft als bemiddelaar een gesprek bijgewoond tussen de Survam en de Particuliere Laboratoria. Dit gesprek vond plaats nadat eerdere onderhandelingen over tarieven waren vastgelopen. Partijen hebben aangegeven zich niet te kunnen vinden in voorstellen van elkaar. De gesprekken werden gevoerd op maandag 2 november 2020.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/eerste-offici&#235;le-overhandiging-kussens-aan-azp/">
+                                            <img src="/media/1487/groep-768x432.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132487802020000000" alt="Eerste offici&#235;le overhandiging kussens aan AZP" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/eerste-offici&#235;le-overhandiging-kussens-aan-azp/" class="card-title">Eerste offici&#235;le overhandiging kussens aan AZP</a></h3>
+                                De president van Inner Wheel Paramaribo (IWP), Es Ataoellah, heeft de overhandiging van kussens gedaan aan het Academisch Ziekenhuis Paramaribo (AZP), bestemd voor borstkanker patiënten. De kussens in de vorm van een hart zijn gedoneerd in het kader van de Borstkanker Awareness maand, namelijk de maand oktober.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/world-stroke-day-suriname-29th-october-2020/">
+                                            <img src="/media/1486/world-stroke-day-300x171.jpg?anchor=center&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132487796900000000" alt="World Stroke Day Suriname 29th October 2020" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/world-stroke-day-suriname-29th-october-2020/" class="card-title">World Stroke Day Suriname 29th October 2020</a></h3>
+                                Volgens de WHO zijn Cerebro Vasculaire Accidenten (CVA), meer bekend als beroertes, doodsoorzaak nummer 2 in Suriname.
+
+Uit een recent onderzoek, welke lokaal is uitgevoerd, blijkt dat drie op de honderd mensen een CVA heeft gehad in Paramaribo.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 rounded-0 border-0">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-12">
+                                <a href="/actueel/2020/verlenging-szf-kaarten-bazo-en-bzv-verzekerden/">
+                                            <img src="/media/1163/logo-volksgezondheid-640x351.png?center=1.126984126984127,1.5478260869565217&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132295176820000000" alt="Verlenging SZF-kaarten Bazo- en BZV-verzekerden" class="img-fluid float-left mr-3 mb-3" />
+
+                                </a>
+                                <h3><a href="/actueel/2020/verlenging-szf-kaarten-bazo-en-bzv-verzekerden/" class="card-title">Verlenging SZF-kaarten Bazo- en BZV-verzekerden</a></h3>
+                                Het ministerie van Volksgezondheid brengt onder uw aandacht dat in de Onderraad het besluit is genomen om de geldigheidsduur op de SZF-kaarten van de Bazo- en BZV-verzekerden met een einddatum liggende in de periode 31 oktober 2020 tot en met 31 december 2020, nog eens automatisch te verlengen naar 31 december 2020.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination border-0 rounded-0">
+                    <li class="page-item active"><a class="page-link border-0" href="/?page=1">1</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=2">2</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=3">3</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=4">4</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=5">5</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=6">6</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=7">7</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=8">8</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=9">9</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=10">10</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=11">11</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=12">12</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=13">13</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=14">14</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=15">15</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=16">16</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=17">17</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=18">18</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=19">19</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=20">20</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=21">21</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=22">22</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=23">23</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=24">24</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=25">25</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=26">26</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=27">27</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=28">28</a></li>
+            <li class="page-item "><a class="page-link border-0" href="/?page=29">29</a></li>
+                     <li class="page-item">
+              <a class="page-link border-0" href="/?page=1" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+      </ul>
+    </nav>
+        
+    </div>
+    <div class="col-md-4">
+        <div id="sideMenu" class="card rounded-0 border-top-0 border-right-0 border-left-0 mb-4">
+            <div class="card-header rounded-0">
+                <a href="/">
+                    Home
+                </a>
+            </div>
+            
+                <img class="card-img-top rounded-0" src="/media/1067/img_1875.jpg?anchor=center&amp;amp;mode=crop&amp;amp;width=510&amp;amp;height=279&amp;amp;rnd=132460171090000000" alt="Home">
+
+            <ul class="list-group list-group-flush mb-2">
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/actueel/">
+                            Actueel
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/minister-staf/">
+                            Minister &amp; Staf
+                        </a>
+                    </li>
+                    <li class="list-group-item border-0 rounded-0 py-1">
+                        <a href="/over-ministerie/">
+                            Over Ministerie
+                        </a>
+                    </li>
+            </ul>
+        </div>
+        
+        <div class="home-sec-title">Minister &amp; Staf</div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/minister-van-volksgezondheid/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1027/amar-ramadhin.jpg?center=0.3964757709251101,0.53235294117647058&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132404146240000000" alt="Amar Ramadhin" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Minister<br/>
+                                        Amar Ramadhin
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Minister van Volksgezondheid
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirekteur-administratieve-diensten/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1465/tania-1.jpg?center=0.32442748091603052,0.47647058823529409&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132466218210000000" alt="Tania  F Sanrochman-Kioe A Sen" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Tania  F Sanrochman-Kioe A Sen
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirekteur Administratieve Diensten
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="card-body p-0 home-bp-item">
+                        <a href="/minister-staf/onderdirecteur-financieel-beheer/" class="text-uppercase" target="_blank">
+                        <div class="row">
+                            <div class="departementFoto col-4 pr-0">
+        <img src="/media/1112/img_9944.jpg?center=0.2839506172839506,1.4754098360655739&amp;mode=crop&amp;width=109&amp;height=109&amp;rnd=132084512740000000" alt="Georgian Singorawi" class="img-fluid" />
+                            </div>
+                            <div class="col-8 position-relative home-bp-item-title">
+                                        <p>
+Onderdirecteur<br/>
+                                        Georgian Singorawi
+                                        </p>
+
+                                
+                                <div class="bewindspersoon position-absolute font-weight-bold">
+                                    Onderdirecteur Financieel Beheer
+                                </div>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+    </div>
+    
+                    </div>
+                </div>
+                <div id="footer" class="container-fluid px-0 ">
+                    <div class="row border-top pt-3 pb-5">
+                        <div class="col-lg-3 col-md-6">
+                <h3>Gezondheidtips</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/gezondheidstips/">Tip </a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Vacatures</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="/over-ministerie/vacatures/">vacature</a>
+                        </li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3>Gerelateerde Instellingen</h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.malariasuriname.com/">Malaria programma</a>
+                        </li>
+                        <li>
+                            <a href="http://derma.sr/">Dienst Dermatologie</a>
+                        </li>
+                        <li>
+                            <a href="http://www.rgd.sr/">Regionale Gezondheids Dienst</a>
+                        </li>
+                        <li>
+                            <a href="https://www.szf.sr/">Stichting Staatsziekenfonds</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bogsuriname.com/">BOG Suriname</a>
+                        </li>
+                    </ul>
+            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" id="footer">
+                <p>Copyright 2019</p>
+            </div>
+        </div>
+    </div>
+    
+
+	
+	
+
+
+	<script>
+	
+	    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+            
+	</script>
+</body>
+</html>

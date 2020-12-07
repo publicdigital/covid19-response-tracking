@@ -1,0 +1,656 @@
+
+
+<!DOCTYPE html>
+
+<html lang="da" >
+<head>
+    <base href="https://www.ssi.dk/">
+    
+<title>Statens Serum Institut</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="name">
+<meta name="google-site-verification" content="SF2doIIiUCj_aT0-HujSi-XMmErnpnYBXf-DgUAlwg0" />
+<meta name="google-site-verification" content="J0fqRTIWl-WyuJjP6_ALh16hfq7-mmJnQiGt9FkfI2w" />
+<meta name="google-site-verification" content="g24Q5rTXamMJ9Bvm6M914msrpoLvkZP3VP1SMmGlSLg" />
+    <meta name="Last-Modified" content="2020-03-20T14:13:00Z" />
+    <link rel="canonical" href="https://www.ssi.dk/" />
+<meta name="description" content="Statens Serum Institut (SSI) sikrer forskningsbaseret sundhedsdokumentation, rationel udnyttelse af it i sundhedsv&#230;senet og beredskab og forebyggelse i relation til smitsomme sygdomme, biologiske trusler og medf&#248;dte lidelser.">
+<meta property="title" content="Statens Serum Institut">
+<meta property="og:title" content="Statens Serum Institut">
+<meta property="og:description" content="Statens Serum Institut (SSI) sikrer forskningsbaseret sundhedsdokumentation, rationel udnyttelse af it i sundhedsv&#230;senet og beredskab og forebyggelse i relation til smitsomme sygdomme, biologiske trusler og medf&#248;dte lidelser.">
+    <meta property="og:image" content="https://www.ssi.dk/-/media/arkiv/dk/forside/pige-fodrer-hons.jpg?ca=teaser&r=1e1d337e-2fd7-4517-989f-cd6f79bf3830">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/webmanifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7b848f">
+<meta name="apple-mobile-web-app-title" content="SSI">
+<meta name="application-name" content="SSI">
+<meta name="msapplication-TileColor" content="#7b848f">
+<meta name="theme-color" content="#7b848f">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap" />
+    
+    
+    
+    
+        <link rel="stylesheet" href="/styles/main.min.20201005.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bbf3hlf.css">
+    <link rel="stylesheet" media="print" href="/styles/print.min.20201005.css">
+<body ng-app="illumi.SSI" class="preload theme-rusty-red" version="20201005" navigation ng-controller="debugController as $debug" ng-class="{ 'nav-open': nav.isNavOpen, 'search-open': nav.isSearchOpen }">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header ng-class="{ 'active': nav.lastScrollDir == 1 }">
+    <nav class="nav-primary navbar navbar-expand-md navbar-light" aria-label="Primary navigation">
+        
+
+<a class="navbar-brand" href="/">
+            <img src="/assets/images/ssi-logo-optimeret.svg" alt="logo" />
+
+</a>
+
+            <button class="navbar-toggler navbar-search-toggler d-md-none" type="button" aria-expanded="false" aria-label="Toggle search" ng-click="nav.toggleSearch()">
+                <svg class="icon close" focusable="false"><use xlink:href="/assets/icons/icons.svg#close"></use></svg>
+                <svg class="icon open" focusable="false"><use xlink:href="/assets/icons/icons.svg#search"></use></svg>
+            </button>
+
+        <button class="navbar-toggler navbar-nav-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" ng-click="nav.toggleNav()">
+            <svg class="icon close" focusable="false"><use xlink:href="/assets/icons/icons.svg#close"></use></svg>
+            <svg class="icon open" focusable="false"><use xlink:href="/assets/icons/icons.svg#burger"></use></svg>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" ng-class="{ 'show': nav.isNavOpen }">
+            
+
+
+<ul class="navbar-primary navbar-nav">
+            <li data-guid="f623a504-0a14-493a-bdbf-9401bb99cc00" class="nav-item">
+            <a class="nav-link" href="https://www.ssi.dk/aktuelt">
+                Aktuelt
+                    <span ng-click="nav.toggleSub($event)">
+                        <svg class="icon">
+                            <use xlink:href="/assets/icons/icons.svg#down"></use>
+                        </svg>
+                    </span>
+            </a>
+        </li>
+        <li data-guid="090ba19e-bab2-4007-bf7a-141d852ebbe3" class="nav-item">
+            <a class="nav-link" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning">
+                Sygdomme, beredskab og forskning
+                    <span ng-click="nav.toggleSub($event)">
+                        <svg class="icon">
+                            <use xlink:href="/assets/icons/icons.svg#down"></use>
+                        </svg>
+                    </span>
+            </a>
+        </li>
+        <li data-guid="2cbf829b-01f4-4d4b-869a-c39792898a97" class="nav-item">
+            <a class="nav-link" href="https://www.ssi.dk/vaccinationer">
+                Vaccination
+                    <span ng-click="nav.toggleSub($event)">
+                        <svg class="icon">
+                            <use xlink:href="/assets/icons/icons.svg#down"></use>
+                        </svg>
+                    </span>
+            </a>
+        </li>
+        <li data-guid="c625206c-fbc7-4a6b-a170-743ec8c89b4b" class="nav-item">
+            <a class="nav-link" href="https://www.ssi.dk/produkter-og-ydelser">
+                Produkter og ydelser
+                    <span ng-click="nav.toggleSub($event)">
+                        <svg class="icon">
+                            <use xlink:href="/assets/icons/icons.svg#down"></use>
+                        </svg>
+                    </span>
+            </a>
+        </li>
+        <li data-guid="bdfead97-0f92-42b2-880a-846a6d0e175e" class="nav-item">
+            <a class="nav-link" href="https://www.ssi.dk/om-ssi">
+                Om SSI
+                    <span ng-click="nav.toggleSub($event)">
+                        <svg class="icon">
+                            <use xlink:href="/assets/icons/icons.svg#down"></use>
+                        </svg>
+                    </span>
+            </a>
+        </li>
+
+        <li class="nav-search-item">
+            <button class="navbar-toggler navbar-search-toggler" type="button" aria-expanded="false" aria-label="Toggle search" ng-click="nav.toggleSearch()">
+                <svg class="icon close" focusable="false"><use xlink:href="/assets/icons/icons.svg#close"></use></svg>
+                <svg class="icon open" focusable="false"><use xlink:href="/assets/icons/icons.svg#search"></use></svg>
+            </button>
+        </li>
+</ul>
+
+
+                    <ul class="navbar-service navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://antibiotika.ssi.dk">
+                            Antibiotikaresistens
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ssi.dk/produkter-og-ydelser/diagnostik">
+                            Diagnostik
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.ssi.dk/produkter-og-ydelser/diagnostik-veterinaer">
+                            Veterin&#230;r diagnostik og vacciner
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://hygiejne.ssi.dk">
+                            Infektionshygiejne
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://rejse.ssi.dk">
+                            Rejsevaccination
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://en.ssi.dk">
+                            English
+                        </a>
+                    </li>
+        </ul>
+
+        </div>
+    </nav>
+    <header-search active="nav.isSearchOpen" ng-show="nav.isSearchOpen" ng-cloak>
+            <form action="https://www.ssi.dk/resultat" novalidate>
+                <div class="input-group">
+                    <label for="headerSearch" class="sr-only">S&#248;g her</label>
+                    <input type="text" id="headerSearch" name="q" class="form-control form-control-lg" ng-model="$ctrl.query" placeholder="S&#248;g her">
+                    <div class="input-group-append">
+                        <button class="btn btn-theme" type="submit">S&#248;g</button>
+                    </div>
+                </div>
+            </form>
+        <div class="results list-group">
+            
+        </div>
+    </header-search>
+    <button class="scroll-top-button btn btn-theme" type="button" onclick="scrolltop();" title="scroll.top"><svg class="icon"><use xlink:href="/assets/icons/icons.svg#down"></use></svg></button>
+    <script>
+        function scrolltop() {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</header>
+
+
+<div class="main" id="top">
+    
+
+    <div class="main-content">
+        
+        
+
+        <section class="media-slideshow">
+                            <figure class="figure">
+                    <picture>
+                        <source media="(min-width: 1200px)" data-srcset="https://www.ssi.dk/-/media/arkiv/dk/forside/coronavirus.jpg?ca=slideshow-xl&r=c1f237e2-53b5-451b-8a04-33978927fb90" />
+                        <source media="(min-width: 1000px)" data-srcset="https://www.ssi.dk/-/media/arkiv/dk/forside/coronavirus.jpg?ca=slideshow-l&r=c1f237e2-53b5-451b-8a04-33978927fb90" />
+                        <source media="(min-width: 800px)" data-srcset="https://www.ssi.dk/-/media/arkiv/dk/forside/coronavirus.jpg?ca=slideshow-m&r=c1f237e2-53b5-451b-8a04-33978927fb90" />
+                        <source media="(min-width: 400px)" data-srcset="https://www.ssi.dk/-/media/arkiv/dk/forside/coronavirus.jpg?ca=slideshow-s&r=c1f237e2-53b5-451b-8a04-33978927fb90" />
+                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/forside/coronavirus.jpg?ca=slideshow-xs&r=c1f237e2-53b5-451b-8a04-33978927fb90" alt="Overv&amp;aring;gning af COVID-19" class="figure-img lazyload" style="max-height: 480px;" />
+                        <div class="preloader la-ball-scale-pulse la-3x"><div></div><div></div></div>
+                    </picture>
+                        <figcaption class="figure-caption rte"><p><strong><a href="https://www.ssi.dk:443/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning">Overv&aring;gning af COVID-19</a></strong></p></figcaption>
+                </figure>
+            
+        </section>
+
+
+<section class="search-slogan bg-theme">
+    <form name="sloganSearch" action="https://www.ssi.dk/resultat" method="get">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1 class="lead">Vi styrker sundhed gennem sygdomskontrol og forskning</h1>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="input-group">
+                    <label for="sloganSearchInput" class="sr-only">S&#248;g her</label>
+                    <input type="text" id="sloganSearchInput" name="q" class="form-control form-control-lg" placeholder="S&#248;g her" />
+                    <div class="input-group-append">
+                        <button type="submit">
+                            <svg class="icon">
+                                <use xlink:href="/assets/icons/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
+    <section class="news-focus image-dont-crop">
+            <div class="row no-gutters">
+                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center bg-gray-light">
+                                <picture>
+                                    <img src="https://www.ssi.dk/-/media/arkiv/dk/aktuelt/nyheder/2019/medicin-01.jpg?w=650&r=6b3b936b-bfbe-46ae-8cfe-768f04caced8" alt="Webinar om antibiotikaforbrug og -resistens" />
+                                </picture>
+                        <div class="focus-content">
+                            <h3 class="h2 mt-0">Vær med og hør om antibiotikaforbrug og -resistens i Danmark - webinar den 18. november 2020</h3>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/webinar-om-antibiotikaforbrug-og--resistens" class="btn btn-white">L&#230;s mere</a>
+                        </div>
+                    </div>
+
+                <div class="col-12 col-lg-6">
+                    
+        <div class="news-list">
+            <h3 class="h2 mt-0">Nyheder</h3>
+            <ul>
+                    <li>
+                        <h5>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/status-pa-influenza--og-pneumokok-vaccination" class="text-wrap">Status på influenza- og pneumokok-vaccination</a>
+                        </h5>
+                        <div class="small text-muted">4. november 2020</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/forskning-blandt-bloddonorer-bekrafter---afstand-virker" class="text-wrap">Forskning blandt bloddonorer bekræfter: Afstand virker</a>
+                        </h5>
+                        <div class="small text-muted">2. november 2020</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/webinar-om-antibiotikaforbrug-og--resistens" class="text-wrap">Webinar om antibiotikaforbrug og -resistens</a>
+                        </h5>
+                        <div class="small text-muted">29. oktober 2020</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/bakterievirus-gor-husdyr-mrsa-mere-smitsomme-over-for-mennesker" class="text-wrap">Bakterievirus gør husdyr-MRSA mere smitsomme over for mennesker</a>
+                        </h5>
+                        <div class="small text-muted">29. oktober 2020</div>
+                        <hr />
+                    </li>
+                    <li>
+                        <h5>
+                            <a href="https://www.ssi.dk/aktuelt/nyheder/2020/minkavlere-fik-ikke-brev-om-ansatte" class="text-wrap">Minkavlere fik ikke brev om ansatte</a>
+                        </h5>
+                        <div class="small text-muted">28. oktober 2020</div>
+                        <hr />
+                    </li>
+            </ul>
+                <a href="https://www.ssi.dk/aktuelt/nyheder" class="btn btn-gray-light">Flere nyheder</a>
+        </div>
+
+
+                </div>
+            </div>
+    </section>
+
+        <section class="teaser-list">
+            <h3 class="h2 mt-0">Temaer</h3>
+
+            <div class="slider">
+                <div teaser-list-slider class="swiper-container">
+                    <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/aktuelt/sygdomsudbrud/covid19/covid-19-rejsekriterier/rent_kort.png?ca=teaser-m&r=d355d945-8a9d-451f-b8c2-2bb16db2db97" alt="Rejse og COVID-19, kort over lande" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/aktuelt/sygdomsudbrud/coronavirus/rejse-og-covid-19-kort-over-lande" class="a-block">
+                                    <h4>Rejse og COVID-19, kort over lande</h4>
+                                    <div class="rte small text-wrap">
+                                        Her finder du information om, hvilke lande i EU og Schengenomr&aring;det samt Storbritannien, der overholder kriterierne vedr. COVID-19-smitte, og dermed som udgangspunkt kategoriseres som &rdquo;&aring;bne&rdquo;.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/subsites/testcenter-danmark/forsidebillede-med-podning-4.png?ca=teaser-m&r=9bd63a19-ddb6-49b7-b06c-9a833c5af09b" alt="TestCenter Danmark" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://tcdk.ssi.dk" class="a-block">
+                                    <h4>TestCenter Danmark</h4>
+                                    <div class="rte small text-wrap">
+                                        Find informationer om TestCenter Danmark og hvordan du bestiller tid til en test for COVID-19 i en af TCDK&rsquo;s teststationer.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/covid19/meta-image-overvaagning-covid19.png?ca=teaser-m&r=f41a0769-ce99-4629-9e79-d1fb66889f6c" alt="COVID-19-overv&#229;gning" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/c/covid19-overvaagning" class="a-block">
+                                    <h4>COVID-19-overvågning</h4>
+                                    <div class="rte small text-wrap">
+                                        Find de nyeste opg&oslash;relser og f&oslash;lg udvikling af COVID-19 p&aring; denne side.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/aktuelt/nyheder/2018/presse-01.jpg?ca=teaser-m&r=e4087be8-6e17-40ea-a3da-4138eadaad04" alt="Presserum" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/aktuelt/presserum" class="a-block">
+                                    <h4>Presserum</h4>
+                                    <div class="rte small text-wrap">
+                                        Velkommen til presserummet p&aring; ssi.dk. Her kan journalister finde nyheder, fakta, fotos og indgange til nogle af de v&aelig;rkt&oslash;jer, der kan v&aelig;re brugbare til research og grafik.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/projekt-sites/vetdiagnostik/forside/and.jpg?ca=teaser-m&r=44a31555-e6f3-43af-8f4c-3622711b4989" alt="Veterin&#230;r Diagnostik" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.vetssi.dk" class="a-block">
+                                    <h4>Veterinær Diagnostik</h4>
+                                    <div class="rte small text-wrap">
+                                        Veterin&aelig;r Diagnostik under Dansk Veterin&aelig;r Konsortium (DK-VET) tilbyder diagnostiske analyser til det veterin&aelig;re omr&aring;de.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/produkter-og-ydelser/diagnostik/blodproever-i-stativer.jpg?ca=teaser-m&r=31400131-171b-40bd-a039-c9ff781da453" alt="Diagnostik" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/produkter-og-ydelser/diagnostik" class="a-block">
+                                    <h4>Diagnostik</h4>
+                                    <div class="rte small text-wrap">
+                                        Statens Serum Institut (SSI) udf&oslash;rer unders&oslash;gelser af patientpr&oslash;ver med henblik p&aring; p&aring;visning af infektionssygdomme for&aring;rsaget af bakterier, virus, svampe og parasitter. 
+Vi udf&oslash;rer ogs&aring; unders&oslash;gelser for medf&oslash;dte sygdomme hos fostre og nyf&oslash;dte, samt unders&oslash;gelser for visse genetiske mark&oslash;rer.
+Ansvar ifm. rekvirentoplysninger
+Laboratoriet (SSI) er ikke ansvarlig for oplysninger givet af rekvirenten. SSI fraskriver sig ansvar, hvis oplysningerne leveret af rekvirent kan p&aring;virke resultaternes validitet. Hvor SSI ikke er ansvarlig for pr&oslash;veudtagning, g&aelig;lder resultaterne kun for pr&oslash;ven, som den er og forefindes ved modtagelsen.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/produkter-og-ydelser/bestilling-og-levering/blanket-6.png?ca=teaser-m&r=423ff63c-a8e8-4f3e-b407-cebff1174a42" alt="Bestilling" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/produkter-og-ydelser/bestilling" class="a-block">
+                                    <h4>Bestilling</h4>
+                                    <div class="rte small text-wrap">
+                                        Bestilling af produkter fra SSI kan ske via ordremodtagelsen og elektronisk via Blanket 6.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/subsites/rejsevaccination/rygsaek-rejsende.jpg?ca=teaser-m&r=c0ba90cc-7a72-459a-b4ed-211537f69113" alt="Rejsevaccination" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://rejse.ssi.dk" class="a-block">
+                                    <h4>Rejsevaccination</h4>
+                                    <div class="rte small text-wrap">
+                                        Se hvilke vaccinationer og evt. forebyggelse mod malaria, som Statens Serum Institut anbefaler ved rejser til udlandet.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/sygdomme-beredskab-og-forskning/sygdomsleksikon/sygdomsleksikon.png?ca=teaser-m&r=94c0056f-2878-44e2-8b78-18baf91c5e3d" alt="Sygdomsleksikon" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsleksikon" class="a-block">
+                                    <h4>Sygdomsleksikon</h4>
+                                    <div class="rte small text-wrap">
+                                        Her finder du beskrivelser af en række af de sygdomme som Statens Serum Institut forsker i, medvirker til diagnosticering af eller distribuerer vacciner mod.
+
+Leksikonet bliver løbende udbygget med nye sygdomsbeskrivelser.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/subsites/dnb-dk/forside.jpg?ca=teaser-m&r=3a9698a1-1564-4758-be0d-a53d907ef601" alt="Danmarks Nationale Biobank" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.nationalbiobank.dk" class="a-block">
+                                    <h4>Danmarks Nationale Biobank</h4>
+                                    <div class="rte small text-wrap">
+                                        Danmarks Nationale Biobank lagrer millioner af biologiske pr&oslash;ver, som kan udleveres til konkrete forskningsprojekter.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/dk/sygdomme-beredskab-og-forskning/forside/dna.jpg?ca=teaser-m&r=d0fa7683-b3ce-4a42-a3b0-8011b9ea8cc9" alt="Forskning" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/forskning" class="a-block">
+                                    <h4>Forskning</h4>
+                                    <div class="rte small text-wrap">
+                                        Her finder du beskrivelser af SSI’s forskning inden for bl.a. infektionsberedskabet, epidemiologi, udvikling af vacciner og medfødte sygdomme. Gå via den alfabetiske liste eller brug søgefunktionen.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                    <picture>
+                                        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.ssi.dk/-/media/arkiv/subsites/antibiotikaresistens/staphylococci.png?ca=teaser-m&r=3f4c5edb-fb86-4b1c-b7ca-6f55db2f6672" alt="Antibiotikaresistens" class="lazyload">
+                                        <div class="preloader la-ball-scale-pulse"><div></div><div></div></div>
+                                    </picture>
+                                <a href="https://antibiotika.ssi.dk" class="a-block">
+                                    <h4>Antibiotikaresistens</h4>
+                                    <div class="rte small text-wrap">
+                                        P&aring; SSI overv&aring;ger og forsker vi i antibiotikaresistens.
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+    </div>
+</div>
+<footer>
+    <div class="row no-gutters">
+            <div class="box col-sm-12 col-md-4">
+        <div class="p-default py-50">
+                <h2 class="mt-0">Borgere</h2>
+            <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/vaccinationer/boernevaccination">
+                                Det danske b&#248;rnevaccinationsprogram
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/vaccinationer/influenzavaccination">
+                                Influenzavaccination
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/om-ssi/job-hos-ssi">
+                                Job p&#229; SSI
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://rejse.ssi.dk">
+                                Rejsevaccination
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/screening-for-medfodte-sygdomme">
+                                Screening&#160;for medf&#248;dte sygdomme
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsleksikon">
+                                Sygdomsleksikon
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box col-sm-12 col-md-4">
+        <div class="p-default py-50">
+                <h2 class="mt-0">Sundhedsfaglige</h2>
+            <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/anmeldelse-af-sygdomme">
+                                Anmeldelse af sygdomme
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://antibiotika.ssi.dk">
+                                Antibiotikaresistens
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/produkter-og-ydelser/bestilling">
+                                Bestilling
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/produkter-og-ydelser/diagnostik/diagnostiskhaandbog">
+                                Diagnostisk H&#229;ndbog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://hygiejne.ssi.dk">
+                                Infektionshygiejne
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://miba.ssi.dk">
+                                MiBa og HAIBA
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/aktuelt/sygdomsudbrud">
+                                Sygdomsudbrud
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/vagtberedskab">
+                                Vagtberedskab
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+    <div class="box col-sm-12 col-md-4">
+        <div class="p-default py-50">
+                <h2 class="mt-0">Forskere</h2>
+            <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/danmarks-nationale-biobank">
+                                Danmarks Nationale Biobank
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/forskning/e/epidemiologi">
+                                Epidemiologi
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/forskning">
+                                Forskning
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://statistik.ssi.dk">
+                                Overv&#229;gning i tal, grafer og kort
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/sygdomsovervaagning/r/referencelaboratorier-paa-ssi">
+                                Referencelaboratorier p&#229; SSI
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/sygdomme-beredskab-og-forskning/forskning/v/vaccineforskning">
+                                Vaccineforskning
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+
+<div class="col-12 text-center p-4">
+    <section>
+        <address>
+            <span>Statens Serum Institut</span>
+            <span>Artillerivej 5, 2300 Kbh S.</span>
+            <span>T. <a href="tel:3268 3268">3268 3268</a></span>
+            <span>@. <a href="mailto:serum@ssi.dk">serum@ssi.dk</a></span>
+            <span>F. <a href="tel:3268 3868" >3268 3868</a></span>
+            <span>EAN 5798000362192</span>
+        </address>
+
+            <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/om-ssi/om-hjemmesiden/tilgaengelighedserklaering">
+                                Webtilg&#230;ngelighedserkl&#230;ring
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/om-ssi/om-hjemmesiden/cookies">
+                                Cookies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/om-ssi/om-hjemmesiden/persondatapolitik">
+                                Persondatapolitik
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/om-ssi/kontakt">
+                                Kontakt
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ho-u" href="https://www.ssi.dk/aktuelt/folg-os">
+                                F&#248;lg os
+                            </a>
+                        </li>
+            </ul>
+    </section>
+</div>
+
+    </div>
+</footer>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="c8e919ce-2e6e-4e8f-a02c-e61cd78fd120" data-culture="DA" data-blockingmode="manual" type="text/javascript"></script>
+
+
+        <script src="/application/libs.min.20201005.js" defer></script>
+        <script src="/application/application.min.20201005.js" defer></script>
+            <script>!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){function e(){t.media=n}var n=t.media||"all";t.addEventListener?t.addEventListener("load",e):t.attachEvent&&t.attachEvent("onload",e),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(e,3e3)},e.poly=function(){if(!e.support())for(var n=t.document.getElementsByTagName("link"),a=0;a<n.length;a++){var i=n[a];"preload"!==i.rel||"style"!==i.getAttribute("as")||i.getAttribute("data-loadcss")||(i.setAttribute("data-loadcss",!0),e.bindMediaToggle(i))}},!e.support()){e.poly();var n=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(n)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(n)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this),function(t,e){var n=function(t,e){"use strict";if(e.getElementsByClassName){var n,a,i=e.documentElement,r=t.Date,o=t.HTMLPictureElement,s=t.addEventListener,l=t.setTimeout,d=t.requestAnimationFrame||l,u=t.requestIdleCallback,c=/^picture$/i,f=["load","error","lazyincluded","_lazyloaded"],v={},g=Array.prototype.forEach,m=function(t,e){return v[e]||(v[e]=new RegExp("(\\s|^)"+e+"(\\s|$)")),v[e].test(t.getAttribute("class")||"")&&v[e]},y=function(t,e){m(t,e)||t.setAttribute("class",(t.getAttribute("class")||"").trim()+" "+e)},p=function(t,e){var n;(n=m(t,e))&&t.setAttribute("class",(t.getAttribute("class")||"").replace(n," "))},h=function(t,e,n){var a=n?"addEventListener":"removeEventListener";n&&h(t,e),f.forEach(function(n){t[a](n,e)})},z=function(t,a,i,r,o){var s=e.createEvent("CustomEvent");return i||(i={}),i.instance=n,s.initCustomEvent(a,!r,!o,i),t.dispatchEvent(s),s},b=function(e,n){var i;!o&&(i=t.picturefill||a.pf)?i({reevaluate:!0,elements:[e]}):n&&n.src&&(e.src=n.src)},A=function(t,e){return(getComputedStyle(t,null)||{})[e]},C=function(t,e,n){for(n=n||t.offsetWidth;n<a.minSize&&e&&!t._lazysizesWidth;)n=e.offsetWidth,e=e.parentNode;return n},E=function(){var t,n,a=[],i=[],r=a,o=function(){var e=r;for(r=a.length?i:a,t=!0,n=!1;e.length;)e.shift()();t=!1},s=function(a,i){t&&!i?a.apply(this,arguments):(r.push(a),n||(n=!0,(e.hidden?l:d)(o)))};return s._lsFlush=o,s}(),S=function(t,e){return e?function(){E(t)}:function(){var e=this,n=arguments;E(function(){t.apply(e,n)})}},L=function(t){var e,n=0,i=a.throttleDelay,o=a.ricTimeout,s=function(){e=!1,n=r.now(),t()},d=u&&o>49?function(){u(s,{timeout:o}),o!==a.ricTimeout&&(o=a.ricTimeout)}:S(function(){l(s)},!0);return function(t){var a;(t=!0===t)&&(o=33),e||(e=!0,a=i-(r.now()-n),a<0&&(a=0),t||a<9?d():l(d,a))}},M=function(t){var e,n,a=function(){e=null,t()},i=function(){var t=r.now()-n;t<99?l(i,99-t):(u||a)(a)};return function(){n=r.now(),e||(e=l(i,99))}};!function(){var e,n={lazyClass:"lazyload",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:!0,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:!0,ricTimeout:0,throttleDelay:125};a=t.lazySizesConfig||t.lazysizesConfig||{};for(e in n)e in a||(a[e]=n[e]);t.lazySizesConfig=a,l(function(){a.init&&T()})}();var w=function(){var o,d,u,f,v,C,w,T,_,x,W,B,k,F,R=/^img$/i,D=/^iframe$/i,I="onscroll"in t&&!/glebot/.test(navigator.userAgent),H=0,O=0,P=-1,$=function(t){O--,t&&t.target&&h(t.target,$),(!t||O<0||!t.target)&&(O=0)},q=function(t,n){var a,r=t,o="hidden"==A(e.body,"visibility")||"hidden"!=A(t,"visibility");for(T-=n,W+=n,_-=n,x+=n;o&&(r=r.offsetParent)&&r!=e.body&&r!=i;)(o=(A(r,"opacity")||1)>0)&&"visible"!=A(r,"overflow")&&(a=r.getBoundingClientRect(),o=x>a.left&&_<a.right&&W>a.top-1&&T<a.bottom+1);return o},j=function(){var t,r,s,l,u,c,v,g,m,y=n.elements;if((f=a.loadMode)&&O<8&&(t=y.length)){r=0,P++,null==k&&("expand"in a||(a.expand=i.clientHeight>500&&i.clientWidth>500?500:370),B=a.expand,k=B*a.expFactor),H<k&&O<1&&P>2&&f>2&&!e.hidden?(H=k,P=0):H=f>1&&P>1&&O<6?B:0;for(;r<t;r++)if(y[r]&&!y[r]._lazyRace)if(I)if((g=y[r].getAttribute("data-expand"))&&(c=1*g)||(c=H),m!==c&&(C=innerWidth+c*F,w=innerHeight+c,v=-1*c,m=c),s=y[r].getBoundingClientRect(),(W=s.bottom)>=v&&(T=s.top)<=w&&(x=s.right)>=v*F&&(_=s.left)<=C&&(W||x||_||T)&&(a.loadHidden||"hidden"!=A(y[r],"visibility"))&&(d&&O<3&&!g&&(f<3||P<4)||q(y[r],c))){if(Y(y[r]),u=!0,O>9)break}else!u&&d&&!l&&O<4&&P<4&&f>2&&(o[0]||a.preloadAfterLoad)&&(o[0]||!g&&(W||x||_||T||"auto"!=y[r].getAttribute(a.sizesAttr)))&&(l=o[0]||y[r]);else Y(y[r]);l&&!u&&Y(l)}},G=L(j),J=function(t){y(t.target,a.loadedClass),p(t.target,a.loadingClass),h(t.target,Q),z(t.target,"lazyloaded")},K=S(J),Q=function(t){K({target:t.target})},U=function(t,e){try{t.contentWindow.location.replace(e)}catch(n){t.src=e}},V=function(t){var e,n=t.getAttribute(a.srcsetAttr);(e=a.customMedia[t.getAttribute("data-media")||t.getAttribute("media")])&&t.setAttribute("media",e),n&&t.setAttribute("srcset",n)},X=S(function(t,e,n,i,r){var o,s,d,f,v,m;(v=z(t,"lazybeforeunveil",e)).defaultPrevented||(i&&(n?y(t,a.autosizesClass):t.setAttribute("sizes",i)),s=t.getAttribute(a.srcsetAttr),o=t.getAttribute(a.srcAttr),r&&(d=t.parentNode,f=d&&c.test(d.nodeName||"")),m=e.firesLoad||"src"in t&&(s||o||f),v={target:t},m&&(h(t,$,!0),clearTimeout(u),u=l($,2500),y(t,a.loadingClass),h(t,Q,!0)),f&&g.call(d.getElementsByTagName("source"),V),s?t.setAttribute("srcset",s):o&&!f&&(D.test(t.nodeName)?U(t,o):t.src=o),r&&(s||f)&&b(t,{src:o})),t._lazyRace&&delete t._lazyRace,p(t,a.lazyClass),E(function(){(!m||t.complete&&t.naturalWidth>1)&&(m?$(v):O--,J(v))},!0)}),Y=function(t){var e,n=R.test(t.nodeName),i=n&&(t.getAttribute(a.sizesAttr)||t.getAttribute("sizes")),r="auto"==i;(!r&&d||!n||!t.getAttribute("src")&&!t.srcset||t.complete||m(t,a.errorClass)||!m(t,a.lazyClass))&&(e=z(t,"lazyunveilread").detail,r&&N.updateElem(t,!0,t.offsetWidth),t._lazyRace=!0,O++,X(t,e,r,i,n))},Z=function(){if(!d){if(r.now()-v<999)return void l(Z,999);var t=M(function(){a.loadMode=3,G()});d=!0,a.loadMode=3,G(),s("scroll",function(){3==a.loadMode&&(a.loadMode=2),t()},!0)}};return{_:function(){v=r.now(),n.elements=e.getElementsByClassName(a.lazyClass),o=e.getElementsByClassName(a.lazyClass+" "+a.preloadClass),F=a.hFac,s("scroll",G,!0),s("resize",G,!0),t.MutationObserver?new MutationObserver(G).observe(i,{childList:!0,subtree:!0,attributes:!0}):(i.addEventListener("DOMNodeInserted",G,!0),i.addEventListener("DOMAttrModified",G,!0),setInterval(G,999)),s("hashchange",G,!0),["focus","mouseover","click","load","transitionend","animationend","webkitAnimationEnd"].forEach(function(t){e.addEventListener(t,G,!0)}),/d$|^c/.test(e.readyState)?Z():(s("load",Z),e.addEventListener("DOMContentLoaded",G),l(Z,2e4)),n.elements.length?(j(),E._lsFlush()):G()},checkElems:G,unveil:Y}}(),N=function(){var t,n=S(function(t,e,n,a){var i,r,o;if(t._lazysizesWidth=a,a+="px",t.setAttribute("sizes",a),c.test(e.nodeName||""))for(i=e.getElementsByTagName("source"),r=0,o=i.length;r<o;r++)i[r].setAttribute("sizes",a);n.detail.dataAttr||b(t,n.detail)}),i=function(t,e,a){var i,r=t.parentNode;r&&(a=C(t,r,a),i=z(t,"lazybeforesizes",{width:a,dataAttr:!!e}),i.defaultPrevented||(a=i.detail.width)&&a!==t._lazysizesWidth&&n(t,r,i,a))},r=function(){var e,n=t.length;if(n)for(e=0;e<n;e++)i(t[e])},o=M(r);return{_:function(){t=e.getElementsByClassName(a.autosizesClass),s("resize",o)},checkElems:o,updateElem:i}}(),T=function(){T.i||(T.i=!0,N._(),w._())};return n={cfg:a,autoSizer:N,loader:w,init:T,uP:b,aC:y,rC:p,hC:m,fire:z,gW:C,rAF:E}}}(t,t.document);t.lazySizes=n,"object"==typeof module&&module.exports&&(module.exports=n)}(window);</script>
+        <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+                var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+                sz.src = '//ssl.siteimprove.com/js/siteanalyze_6351.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+            })();
+                    /*]]>*/
+        </script>
+    
+</body>
+</html>
